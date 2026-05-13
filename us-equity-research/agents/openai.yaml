@@ -1,0 +1,3 @@
+display_name: US Equity Research
+short_description: Deep research and earnings tracking.
+default_prompt: Analyze a selected US-listed public company with deep research or post-earnings tracking.
