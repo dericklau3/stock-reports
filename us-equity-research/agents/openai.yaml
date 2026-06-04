@@ -1,3 +1,3 @@
 display_name: US Equity Research
-short_description: Deep research and earnings tracking.
-default_prompt: Analyze a selected US-listed public company with deep research or post-earnings tracking.
+short_description: Deep research, earnings tracking, and plain-language business model explanation.
+default_prompt: Analyze a selected US-listed public company with deep research, beginner-friendly business model explanation, or post-earnings tracking.

@@ -1,6 +1,6 @@
 ---
 name: us-equity-research
-description: Use this skill to perform professional US equity research for selected US-listed public companies. Default every ticker or company request to deep company research. Use post-earnings tracking when the user asks about earnings, quarterly results, guidance, 10-Q, shareholder letters, or earnings calls. Trigger on prompts such as "Analyze LMND", "Deep analysis of NVDA", "Analyze TEM's latest earnings", "Track PLTR after earnings", or Chinese equivalents such as "深度分析 NVDA" and "分析 TEM 最新财报".
+description: Use this skill to perform professional US equity research for selected US-listed public companies, while explaining every researched company's products, technical terms, business model, and profit engine in plain beginner-friendly language. Default every ticker or company request to deep company research. Use post-earnings tracking when the user asks about earnings, quarterly results, guidance, 10-Q, shareholder letters, or earnings calls. Trigger on prompts such as "Analyze TICKER", "Deep analysis of COMPANY", "Analyze TICKER's latest earnings", "Track COMPANY after earnings", or "Explain how COMPANY makes money".
 ---
 
 # US Equity Research Skill
@@ -78,18 +78,18 @@ Save research outputs as Markdown files unless the user explicitly asks not to s
 
 ```text
 research/
-└── COMPANIES/
-    └── TICKER/
-        ├── deep-research/
-        │   ├── YYYY-MM-DD-deep-research.md
-        │   └── YYYY-MM-DD-deep-research-v2.md
-        ├── earnings-tracking/
-        │   ├── YYYY-QN-earnings-tracking.md
-        │   └── YYYY-MM-DD-earnings-tracking.md
-        └── tracker.md
+`-- COMPANIES/
+    `-- TICKER/
+        |-- deep-research/
+        |   |-- YYYY-MM-DD-deep-research.md
+        |   `-- YYYY-MM-DD-deep-research-v2.md
+        |-- earnings-tracking/
+        |   |-- YYYY-QN-earnings-tracking.md
+        |   `-- YYYY-MM-DD-earnings-tracking.md
+        `-- tracker.md
 ```
 
-Use uppercase ticker symbols for company folders, such as `LMND`, `NVDA`, or `PLTR`.
+Use uppercase ticker symbols for company folders, such as `TICKER`.
 
 ### deep-research/
 
@@ -128,14 +128,28 @@ The tracker should summarize:
 For every non-trivial analysis:
 
 1. Identify the company, ticker, exchange, sector, and business model.
-2. Verify current price, market cap, recent performance, and the latest reporting period.
-3. Read the latest company materials and recent news if the analysis depends on current facts.
-4. Classify the company type before selecting valuation methods.
-5. Build the initial thesis from business quality, growth drivers, financial trend, valuation, and catalysts.
-6. Identify supporting evidence, disconfirming evidence, and the largest uncertainty.
-7. Stress-test downside risk, dilution, balance sheet risk, and valuation multiple compression.
-8. State the research view with confidence level, time horizon, risk/reward, and conditions that would change the thesis.
-9. Save the output using the Saving Research Results rules and update `tracker.md`.
+2. Translate the company's products, technical terms, customers, and revenue streams into a beginner-friendly "how the business actually works and makes money" explanation before using industry jargon.
+3. Verify current price, market cap, recent performance, and the latest reporting period.
+4. Read the latest company materials and recent news if the analysis depends on current facts.
+5. Classify the company type before selecting valuation methods.
+6. Build the initial thesis from business quality, growth drivers, financial trend, valuation, and catalysts.
+7. Identify supporting evidence, disconfirming evidence, and the largest uncertainty.
+8. Stress-test downside risk, dilution, balance sheet risk, and valuation multiple compression.
+9. State the research view with confidence level, time horizon, risk/reward, and conditions that would change the thesis.
+10. Save the output using the Saving Research Results rules and update `tracker.md`.
+
+## Beginner Business Explanation
+
+Every company research output must include a plain-language explanation of how the company operates and how it earns money now or could earn money in the future. This is required for all researched companies, not only technically complex companies.
+
+Write this for a smart non-specialist investor, not for an industry expert:
+
+- Define important jargon in one sentence before relying on it. For example, explain terms like OCS, coherent optics, RPO, ARR, take rate, GMV, loss ratio, or combined ratio when they matter.
+- Describe the value chain: what the company sells, who buys it, why the buyer needs it, who pays, when revenue is recognized if relevant, and what costs must be paid to deliver it.
+- Separate "today's profit engine" from "future monetization option" when a business line is early, experimental, cyclical, or not yet profitable.
+- For segment-heavy companies, give a one-line plain-language explanation for each major segment before analyzing growth and margins.
+- Use simple analogies only when they clarify the mechanism. Do not let analogies replace factual explanation.
+- End the explanation with the core economic question: what has to happen for this business to produce durable profits or free cash flow?
 
 ## Company-Type Adjustments
 
@@ -200,6 +214,8 @@ Begin with this fixed summary block:
    - Strongest reason against the view.
 
 2. **Business Model and Industry Structure**
+   - Beginner explanation: in plain language, what the company sells, who pays, why customers buy, and how cash eventually becomes profit or free cash flow.
+   - Jargon translation: define the important product, accounting, or industry terms needed to understand the business.
    - How the company makes money.
    - Unit economics where available.
    - Market size, penetration, and growth drivers.
@@ -207,6 +223,7 @@ Begin with this fixed summary block:
    - Customer concentration, pricing power, and switching costs.
 
 3. **Segment and Product Analysis**
+   - Plain-language explanation of each major segment or product before the professional analysis.
    - Revenue by segment or product when available.
    - Growth, margin, and strategic importance by segment.
    - Product roadmap or innovation pipeline.
@@ -297,7 +314,8 @@ Begin with this fixed summary block:
 ## Output Style
 
 - Start with the research view, not a long setup.
-- Match the user's language: answer in Chinese when the user asks in Chinese, and answer in English when the user asks in English. Keep the formal section labels clear and consistent.
+- Match the user's requested language. Keep the formal section labels clear and consistent.
+- For every researched company, include a beginner-friendly business explanation before the technical or professional analysis. Avoid assuming the user already understands specialized technical, financial, or industry vocabulary.
 - Use tables only when they make comparison or assumptions easier to read.
 - Make deep research comprehensive, but keep each section focused on decision-useful evidence.
 - Include dates for earnings, filings, prices, and news when relevant.

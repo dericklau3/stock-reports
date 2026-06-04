@@ -2,21 +2,23 @@
 
 ## 用途
 
-这个 skill 用于帮助 Codex 对你已经选定的美股上市公司做深度投研和财报后追踪。
+这个 skill 用于帮助 Codex 对你已经选定的美股上市公司做深度投研和财报后追踪，并且默认用小白能懂的话解释公司业务如何运转、现在如何赚钱、未来可能如何赚钱。
 
 默认逻辑是：只要输入股票代码或公司名，就做深度个股研究；如果问题提到财报、季报、指引、10-Q、股东信或业绩电话会，就做财报后追踪。其他形式的问题也应归入这两种模式之一。
+
+无论公司业务看起来简单还是术语很多，都必须先讲清楚“卖什么、谁买、为什么买、谁付钱、收入如何变成利润或现金流”，再进入专业分析。
 
 ## 调用示例
 
 ```text
-Analyze LMND
-Do a deep analysis of NVDA
-Analyze TEM's latest earnings
-Track PLTR after earnings
-分析 LMND
-深度分析 NVDA
-分析 TEM 最新财报
-追踪 PLTR 财报后的变化
+Analyze TICKER
+Do a deep analysis of COMPANY
+Analyze TICKER's latest earnings
+Track COMPANY after earnings
+分析 TICKER
+深度分析 COMPANY
+分析 TICKER 最新财报
+追踪 COMPANY 财报后的变化
 ```
 
 ## 支持模式
@@ -34,6 +36,8 @@ Track PLTR after earnings
 - 当估值是关键判断依据时，使用 bear / base / bull 三档情景。
 - 关键数据不足时，使用 `Insufficient evidence`，不要强行给方向性观点。
 - 核心输出开头固定包含五行摘要：Research view、Confidence、Time horizon、Main thesis、Key risk。
+- 所有公司都必须包含小白业务解释：产品是什么、客户是谁、客户为什么买、收入来源是什么、主要成本是什么、现在或未来如何盈利。
+- 遇到专业术语必须先翻译成人话，例如 OCS、coherent optics、ARR、RPO、GMV、take rate、loss ratio、combined ratio 等。
 - 输出语言匹配用户语言：中文提问用中文，英文提问用英文。
 
 ## thesis 是什么意思
@@ -57,7 +61,7 @@ Track PLTR after earnings
 ```text
 research/
 └── COMPANIES/
-    └── LMND/
+    └── TICKER/
         ├── deep-research/
         │   ├── 2026-05-12-deep-research.md
         │   └── 2026-11-20-deep-research-v2.md
