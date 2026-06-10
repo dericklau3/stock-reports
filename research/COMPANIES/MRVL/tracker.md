@@ -1,72 +1,89 @@
 # Marvell Technology（MRVL）Tracker
 
-Last updated: 2026-05-26
+Last updated: 2026-06-10
 
 ## Current Research View
 
-**建设性但需观察**，中等置信度，12-24 个月视角。
+**中性 / 等待确认**，中等置信度，12-24 个月视角。
 
-MRVL 已经从传统存储/网络半导体公司重塑为 AI data infrastructure 供应商。FY2026 revenue 81.95 亿美元、同比 +42%，data center 占收入约 74%，custom silicon 与 electro-optics 是核心增长引擎。但 2026-05-22 股价 196.33 美元、市值约 1717 亿美元、forward PE 约 51x，已经要求 FY2027 收入、margin、客户订单和 AI ASIC 节奏持续超预期。
+Marvell 已经成为 AI 数据中心定制计算和高速互连平台。Q1 FY2027 revenue 24.178 亿美元、同比 +28%；data center revenue 18.327 亿美元、同比 +27%、占收入 76%；Q2 revenue guidance 中值 27 亿美元，对应同比增长约 35%。但 2026-06-09 MRVL 收于 266.88 美元，市值约 2334.7 亿美元，EV/Sales 约 26.4x、forward P/E 约 58.9x、P/FCF 约 137x，估值已经要求多年高速增长和接近完美执行。
 
 ## Current Main Thesis
 
-- FY2026 net revenue 为 81.946 亿美元，同比增长 42%。
-- FY2026 GAAP diluted EPS 为 3.07 美元，non-GAAP EPS 为 2.84 美元。
-- Q4 FY2026 revenue 为 22.187 亿美元，同比增长 22%，创公司纪录。
-- Q4 FY2026 GAAP gross margin 为 51.7%，non-GAAP gross margin 为 59.0%。
-- Q4 FY2026 GAAP diluted EPS 为 0.46 美元，non-GAAP diluted EPS 为 0.80 美元。
-- Q4 FY2026 data center revenue 为 16.51 亿美元，约占季度收入 74%。
-- FY2026 data center revenue 约占全年收入 74%。
-- Custom silicon 已从几年前几乎为零增长到约占 data center revenue 25%。
-- FY2027 Q1 guidance：revenue 24 亿美元 +/-5%，non-GAAP EPS 0.74-0.84 美元。
-- 下一次财报：FY2027 Q1，将于美国时间 2026-05-27 盘后公布。
+- Q1 FY2027 revenue 24.178 亿美元，同比增长 28%，创季度纪录。
+- Data center revenue 18.327 亿美元，同比增长 27%，占总收入 76%。
+- Communications and other revenue 5.851 亿美元，同比增长 29%。
+- GAAP gross margin 52.1%，同比提高 180 bps。
+- GAAP operating income 3.394 亿美元，operating margin 14.0%。
+- GAAP net income 3450 万美元，diluted EPS 0.04 美元。
+- Non-GAAP net income 7.180 亿美元，diluted EPS 0.80 美元。
+- Operating cash flow 6.388 亿美元；capex 1.557 亿美元；简化 FCF 约 4.831 亿美元。
+- Q2 FY2027 revenue guidance：27 亿美元 +/-5%。
+- Q2 non-GAAP gross margin guidance：58.25%-59.25%。
+- Q2 non-GAAP EPS guidance：0.93 美元 +/-0.05。
+- Celestial AI 收购对价约 35 亿美元，增加 Photonic Fabric scale-up optical technology。
+- XConn 收购对价约 4.69 亿美元，增加 PCIe/CXL/UALink switching。
+- NVIDIA 投资 20 亿美元，优先股初始可转换为最多约 2178 万股。
+- MRVL 将于 2026-06-22 开盘前纳入 S&P 500。
 
 ## Key Risks
 
-- 当前估值高：约 64x TTM PE、51x forward PE、21x EV/Sales、123x P/FCF。
-- 客户集中高，AI custom silicon 项目依赖少数 hyperscaler。
-- 客户可能 dual-source、自研或把份额分给 Broadcom/internal teams。
-- Custom silicon mix 可能拉低 gross margin。
-- Electro-optics 受 cloud capex、module inventory、speed transition 影响，季度波动可能大。
-- 先进节点、先进封装、HBM 配套、3nm wafer allocation 可能限制 ramp。
-- FY2027 Q1 财报临近，股价已反映很高预期。
-- 传统 communications/enterprise/carrier/auto 业务仍有周期性。
+- 当前估值高：约 92x TTM P/E、59x forward P/E、26x EV/Sales、137x P/FCF。
+- Q1 GAAP EPS 仅 0.04 美元，远低于 non-GAAP EPS 0.80 美元。
+- Q1 SBC 2.076 亿美元，占收入约 8.6%。
+- 客户和 data center end market 高度集中。
+- Custom silicon 面对 Broadcom、客户内部团队和其他 ASIC 供应商竞争。
+- NVIDIA 转股、收购股份和 Celestial earnout 的追加股份对价带来潜在稀释。
+- Celestial 和 XConn 商业化、整合及 goodwill/intangible impairment 风险。
+- 晶圆、基板和封装采购承诺在 AI 周期下行时可能成为负担。
+- Custom silicon mix 提升可能压低 gross margin。
+- 股价 beta 约 2.28，短期波动极大。
 
 ## Latest Earnings or Company Update
 
-- 最新正式财务结果：FY2026 Q4 / FY2026 full year，季度结束 2026-01-31，结果发布 2026-03-05。
-- FY2027 Q1 results 尚未发布，将于美国时间 2026-05-27 盘后公布。
-- StockAnalysis 最新市场数据：2026-05-22 收盘价 196.33 美元。
-- Market cap：1716.8 亿美元；enterprise value：1738.3 亿美元。
-- Shares outstanding：8.7446 亿股。
-- TTM revenue：81.9 亿美元；TTM net income：26.7 亿美元；TTM EPS：3.07 美元。
-- Cash：26.4 亿美元；total debt：47.9 亿美元；net debt：21.5 亿美元。
-- TTM operating cash flow：17.5 亿美元；FCF：14.0 亿美元。
+- 最新季度：Q1 FY2027，季度截至 2026-05-02，结果发布于 2026-05-27。
+- Revenue：24.178 亿美元，同比增长 28%。
+- Data center revenue：18.327 亿美元，同比增长 27%。
+- GAAP gross margin：52.1%；non-GAAP gross margin：58.9%。
+- GAAP diluted EPS：0.04 美元；non-GAAP diluted EPS：0.80 美元。
+- Cash and equivalents：38.436 亿美元。
+- Total debt face value：约 50 亿美元。
+- Q1 operating cash flow：6.388 亿美元。
+- 2026-06-09 close：266.88 美元；market cap 约 2334.7 亿美元；EV 约 2299.8 亿美元。
+- Shares outstanding：约 8.748 亿股；Q1 diluted weighted-average shares 约 8.933 亿股。
 
 ## What Changed Since Prior View
 
-这是本 workspace 中第一份 MRVL 研究观点。
+- 2026-05-26：观点为 **建设性但需观察**；股价 196.33 美元，Q1 FY2027 尚未发布。
+- Q1 FY2027 收入和 Q2 指引证明 AI 基本面继续增强。
+- NVIDIA 20 亿美元优先股投资强化生态合作，但增加约 2178 万股潜在稀释。
+- Celestial 和 XConn 已并表，技术组合更完整，收购和整合风险也提高。
+- 股价升至 266.88 美元，较上次研究点位上涨约 36%，52 周涨幅约 290%。
+- 由于估值上升速度快于已兑现的每股 GAAP 利润和 FCF，研究观点下调为 **中性 / 等待确认**。
 
 ## Metrics or Events to Monitor Next
 
-- FY2027 Q1 actual revenue versus 24 亿美元 guidance。
-- FY2027 Q2 guidance and whether sequential growth continues。
-- FY2027 Q4 revenue run-rate 是否接近或超过 30 亿美元。
-- Data center revenue and mix of total revenue。
-- Custom silicon revenue mix, customer breadth, design wins。
-- Electro-optics / 800G / 1.6T demand and inventory signals。
-- Non-GAAP gross margin and operating margin。
-- GAAP vs non-GAAP EPS reconciliation。
-- Operating cash flow, FCF, SBC, dilution。
-- Customer concentration disclosures in future filings。
-- NVIDIA NVLink Fusion partnership commercialization。
+- 2026-06-22 S&P 500 inclusion 后的资金流和波动。
+- Q2 FY2027 revenue versus 27 亿美元 guidance midpoint。
+- Data center revenue growth and mix。
+- Custom silicon customers、design wins 和量产节奏。
+- 800G/1.6T optical revenue 以及 3.2T roadmap。
+- 102.4T Teralynx 10 design wins。
+- Celestial Photonic Fabric 商业化里程碑。
+- XConn PCIe/CXL/UALink 产品量产。
+- GAAP vs non-GAAP profit gap。
+- SBC、amortization、contingent consideration 和 acquisition costs。
+- OCF、capex、FCF margin 和 FCF per diluted share。
+- Fully diluted share count。
+- Inventory、wafer commitments 和 capacity deposits。
 
 ## What Would Change the Research View
 
-- 若 FY2027 Q1/Q2 连续超预期、data center revenue 继续高增长、custom silicon 客户数量扩展、non-GAAP gross margin 稳在 58%-60%、FY2028 consensus revenue/EPS 被明显上修，可上调至 **Positive**。
-- 若业务继续强但估值需要消化，维持 **建设性但需观察**。
-- 若 FY2027 Q1 或 Q2 指引低于高预期、客户集中/dual-source/项目延期导致 data center 放缓、gross margin 因 custom silicon mix 下行、electro-optics 库存修正，或股价继续上涨但 FY2028 预期不上修，下调至 **Neutral / Negative**。
+- 若 Q2/Q3 连续超预期、FY2028/FY2029 revenue visibility 提高、GAAP operating margin 和 FCF margin 改善、SBC 占比下降、Celestial/XConn/102.4T 获得明确量产客户，可上调至 **建设性或 Positive**。
+- 若业务保持强劲但估值继续需要时间消化，维持 **中性 / 等待确认**。
+- 若 data center 增长放缓、custom silicon 项目延期或丢单、gross margin 下行、GAAP/non-GAAP 差距扩大、稀释高于预期，或股价上涨但 EPS/FCF 预期没有同步上修，下调至 **Negative / thesis weakening**。
 
 ## Research Files
 
 - `deep-research/2026-05-26-deep-research.md`
+- `deep-research/2026-06-10-deep-research.md`
