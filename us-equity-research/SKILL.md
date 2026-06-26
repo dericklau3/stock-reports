@@ -63,6 +63,13 @@ Before issuing a thesis, valuation range, or post-earnings view, verify and stat
 
 If data is unavailable or inconsistent across sources, flag the uncertainty instead of forcing precision.
 
+For decision-critical numbers, use a two-source check whenever practical:
+
+- Cross-check revenue, net income or loss, cash, debt, diluted shares, market cap, enterprise value, free cash flow, and major KPIs against at least two reputable sources.
+- Prefer company filings or investor relations as the source of record when third-party data conflicts with company materials.
+- If the difference is small and explainable, state the likely reason, such as reporting date, TTM versus fiscal-year period, GAAP versus non-GAAP, or basic versus diluted share count.
+- If the difference is material or cannot be reconciled quickly, flag the exact conflict, lower confidence, and avoid making the conflicted number carry the thesis or valuation conclusion.
+
 ## Mode Selection
 
 Use only these two modes:
@@ -114,8 +121,13 @@ The tracker should summarize:
 - Key risks.
 - Latest earnings or company update.
 - What changed since the prior view.
+- Core thesis assumptions that must remain true.
+- Red-line conditions that would force a thesis review or downgrade.
+- Management promises, targets, or strategic milestones that need follow-up.
 - Metrics or events to monitor next.
 - What would change the research view.
+
+Treat `tracker.md` as the active monitoring dashboard, not a shorter copy of the latest memo. Keep the current state concise, but make it easy to check later whether the original thesis is being confirmed or disproved.
 
 ### Update Rules
 
@@ -238,6 +250,8 @@ Begin with this fixed summary block:
 
 5. **Management and Capital Allocation**
    - Management credibility and execution history.
+   - Management promise tracking: prior targets, guidance, strategic claims, product milestones, margin goals, capital allocation promises, and whether they were met, delayed, reframed, or abandoned.
+   - Earnings-call answer quality when transcripts are available: whether management answers hard questions directly, explains tradeoffs with numbers, acknowledges misses, changes tone, or relies mainly on vague external excuses.
    - Insider ownership or incentives when relevant.
    - Buybacks, dilution, M&A, capex, and R&D allocation.
 
@@ -292,6 +306,8 @@ Begin with this fixed summary block:
    - Important management comments.
    - Changes from prior narrative.
    - Any change in management tone or strategic priority.
+   - Whether management met, missed, delayed, or reframed prior commitments.
+   - Quality of Q&A answers when available, especially directness, specificity, consistency with filings, and willingness to address weak spots.
 
 4. **Quality of the Quarter**
    - Was growth high quality or one-off?
@@ -308,6 +324,9 @@ Begin with this fixed summary block:
    - What improved.
    - What worsened.
    - Which assumptions changed.
+   - Which core thesis assumptions were confirmed or weakened.
+   - Whether any red-line condition was triggered.
+   - Which management promises or milestones need follow-up.
    - What to monitor before the next earnings report.
    - What would change the research view.
 
