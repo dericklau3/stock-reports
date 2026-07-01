@@ -14,7 +14,7 @@ Default supported tasks:
 - Produce a deep company research memo for a selected stock.
 - Track the company after earnings or major financial updates.
 - Reassess the thesis, valuation, risks, and monitoring points.
-- Estimate valuation ranges only when assumptions and sources are clear.
+- Estimate valuation ranges when assumptions and sources are clear. For deep research, the default expectation is that bear/base/bull scenarios include explicit implied share-price or valuation ranges, unless the security type or missing data makes a range unreliable.
 
 Default investment horizons:
 
@@ -196,7 +196,10 @@ Always explain why the chosen valuation method fits the company:
 - Use P/E, PEG, EV/EBITDA, EV/EBIT, or FCF yield for profitable companies, and adjust for cyclicality, one-time items, and quality of earnings.
 - Use DCF only when assumptions can be stated clearly; show revenue growth, margin, FCF conversion, discount rate, terminal growth or terminal multiple, and sensitivity.
 - Use book value, tangible book, ROE, combined ratio, loss ratio, or credit metrics for financials and insurers where relevant.
-- Use scenario valuation for important conclusions: bear, base, and bull. Each scenario must include assumptions, implied value, and key trigger.
+- Use scenario valuation for important conclusions: bear, base, and bull. Each scenario must include assumptions, explicit implied value range, and key trigger.
+- For common stocks, the implied value should normally be a per-share price range and upside/downside versus the current price. For preferred stocks, bonds, funds, warrants, or unusual securities, use the most relevant range such as price range, yield range, NAV discount/premium, asset-coverage range, recovery range, or liquidation-preference discount.
+- Do not replace explicit valuation ranges with vague labels like "upside," "downside," "near fair value," or "price may recover" when current price, share count, financials, and method assumptions are available.
+- If an explicit range is not defensible, state "No reliable valuation range" and explain the missing data, source conflict, security structure, or assumption sensitivity that prevents a range. Then provide a bounded proxy, such as the revenue, margin, multiple, yield, or NAV condition that would make the security attractive or unattractive.
 - Include dilution and SBC impact when meaningful. Prefer diluted shares and enterprise value over simplistic market-cap math.
 
 ## Risk / Reward Framework
@@ -204,6 +207,7 @@ Always explain why the chosen valuation method fits the company:
 For deep research and post-earnings tracking, include:
 
 - Base-case upside and downside case when data allows.
+- For deep research, include a concise scenario table with bear/base/bull price or valuation ranges by default. The table should show current price, implied upside/downside, core assumptions, and the trigger that would move the thesis toward that scenario.
 - What must go right for the bull case.
 - What could break the thesis.
 - Whether risk is mainly valuation, execution, balance sheet, competition, regulation, macro, or timing.
