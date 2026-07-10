@@ -134,7 +134,7 @@ Before suggesting an entity for deeper research, state the question that could i
 
 ## Required output contract
 
-For a substantial radar, write and save a markdown document first, then summarize the saved result for the user with the file path. Use this order in the saved document:
+For any substantial radar, automatically save a markdown document first, even if the user did not explicitly ask for saving. Then summarize the saved result for the user with the file path. Use this order in the saved document:
 
 1. **Research thesis and layout judgment** — several paragraphs, not a compressed summary. Explain the selected chains, why they rank above rejected hot themes, what is already proven, what is still uncertain, and how a patient investor/operator would monitor the next transmission step. Do not use a short standalone verdict section.
 2. **Scope and as-of date** — market, geography, horizon, sources checked, and material data gaps.
@@ -155,7 +155,7 @@ Do not compress the evidence into a few short bullets when the user is looking f
 
 ## Updates and saving
 
-Treat each radar as a dated snapshot. For substantial radar work, save by default in this repository:
+Treat each radar as a dated snapshot. For substantial radar work, saving is the default behavior and requires no prompt wording from the user. Save in this repository:
 
 ```text
 research/industry-chain-radar/YYYY-MM-DD-<theme-or-discovery-slug>-industry-chain-radar.md
@@ -168,7 +168,7 @@ Do not write to `research/INDUSTRY-CHAINS/`, `/home/ubuntu/stock-reports`, or ot
 
 ## Common failures
 
-- **Answer only, no saved document:** substantial radar work must save a markdown file under `research/industry-chain-radar/` and then link it in the final response.
+- **Answer only, no saved document:** substantial radar work must save a markdown file under `research/industry-chain-radar/` even when the user did not mention saving, then link it in the final response.
 - **Ticker instead of entity:** replace `VRT` with `Vertiv Holdings Co. (VRT)`; replace symbols-only crypto references with full protocol/project names.
 - **Thin evidence:** add source-by-source evidence and limitations; if evidence is unavailable, downgrade the chain rather than shortening the analysis.
 - **Compressed thesis:** replace with a multi-paragraph research judgment and layout logic.
@@ -182,7 +182,7 @@ Do not write to `research/INDUSTRY-CHAINS/`, `/home/ubuntu/stock-reports`, or ot
 
 ## Final checklist
 
-- [ ] A markdown radar was saved under `research/industry-chain-radar/` for substantial work.
+- [ ] A markdown radar was automatically saved under `research/industry-chain-radar/` for substantial work, without requiring the user to ask for saving.
 - [ ] Every high-priority link has a complete claim ledger or is explicitly downgraded.
 - [ ] If no starting theme was supplied, a current hot-industry scan was performed and dated.
 - [ ] Facts, inferences, assumptions, and unknowns are visibly separated.
