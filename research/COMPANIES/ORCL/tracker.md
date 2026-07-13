@@ -6,7 +6,7 @@ Last updated: 2026-07-14
 
 **建设性但需观察；估值吸引力提高**，中等置信度，12–24 个月视角。
 
-ORCL 2026-07-13 收盘 131.54 美元，较 2026-06-26 的 148.53 美元再跌约 11.4%。按 FY2027 non-GAAP EPS 指引 8.05 美元，forward non-GAAP P/E 约 16.3 倍；按当前股价和 2026-06-12 流通股数估算市值约 3,789 亿美元，粗略 EV 约 5,144 亿美元，对 FY2027 900 亿美元 revenue guidance 约 5.7 倍 EV/Sales。
+ORCL 2026-07-13 Nasdaq 正式收盘 131.68 美元，较 2026-06-26 的 148.53 美元再跌约 11.3%。Yahoo 日线收盘为 131.54 美元，两者相差约 0.11%。按 FY2027 non-GAAP EPS 指引 8.05 美元，forward non-GAAP P/E 约 16.4 倍；按当前股价和 2026-06-12 流通股数估算市值约 3,793 亿美元，StockAnalysis 同源口径 EV 约 5,144 亿美元，对 FY2027 900 亿美元 revenue guidance 约 5.7 倍 EV/Sales。
 
 股价下降改善了安全边际，但没有改变核心矛盾：OCI 和 RPO 证明 AI 云需求强劲；FY2026 FCF -236.86 亿美元、借款 1,295.41 亿美元、2,600 亿美元额外数据中心租赁承诺、FY2027 约 400 亿美元融资与 200 亿美元 ATM 则要求 Oracle 证明 OCI 合同能够产生足够高的每股资本回报。
 
@@ -48,13 +48,14 @@ ORCL 2026-07-13 收盘 131.54 美元，较 2026-06-26 的 148.53 美元再跌约
 - 最新年报：FY2026 Form 10-K，2026-06-22 提交。
 - 最新资本市场文件：424B5，2026-06-23 提交，允许最多 200 亿美元普通股 ATM，并新增销售代理。
 - SEC submissions 截至 2026-07-14 核验：2026-06-26 之后没有新的 Oracle 8-K、10-Q 或 10-K。
-- 2026-07-13 ORCL 收盘：131.54 美元；日内低点 131.35 美元；成交量约 5,610 万股。
+- 2026-07-13 Nasdaq 正式收盘：131.68 美元；日内低点 131.35 美元；成交量约 5,666 万股；单日下跌 6.37%。
 - 2026-07-02 Courthouse News 报道投资者对 2026 年 2 月债券发行披露提起诉讼；Oracle 拒绝评论。
+- 2026-07-01/02 Oracle 官方披露 Project Jupiter 改用超过 2GW、带冗余的 Bloom Energy 燃料电池资源，并明确由 Oracle 承担能源基础设施和全部电力成本；许可可行性改善，但能源资本责任更清楚。
 
 ## What Changed Since Prior View
 
 - 新增 `deep-research/2026-07-14-deep-research.md`，明确比较 2026-06-27 观点。
-- 股价从 148.53 美元降至 131.54 美元，forward non-GAAP P/E 从约 18.5 倍降至约 16.3 倍。
+- 股价从 148.53 美元降至 131.68 美元，forward non-GAAP P/E 从约 18.5 倍降至约 16.4 倍。
 - 研究观点仍为 **建设性但需观察**，但估值吸引力评分由 6.5/10 上调至 7.4/10。
 - 当前价格从“接近 base 下沿”进入“可接受观察/小仓分批区上沿”。
 - 公司基本面逻辑未发生新变化；近期主要是资本回报、融资和客户集中风险继续被市场重估。
@@ -62,7 +63,7 @@ ORCL 2026-07-13 收盘 131.54 美元，较 2026-06-26 的 148.53 美元再跌约
 
 ## Valuation Snapshot
 
-Price used: 131.54 美元，2026-07-13 close。
+Price used: 131.68 美元，Nasdaq 2026-07-13 official close；Yahoo alternate close 131.54 美元。
 
 | 情景 | 假设 | 隐含价格 |
 |---|---|---:|
@@ -111,6 +112,7 @@ Practical price zones:
 - OpenAI 相关诉讼进展及 Oracle 是否提供额外披露。
 - Cloud applications、software support 和 license revenue。
 - Oracle Health AI 与 Multicloud Database 使用量。
+- Project Jupiter 空气许可、施工、电力系统落地和实际能源成本。
 
 ## Mission and Portfolio Classification
 
