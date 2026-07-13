@@ -145,27 +145,6 @@ research/
 - 公司逻辑大变：新增一版 `deep-research/...-v2.md`，再更新 `tracker.md`。
 - 单独的情景估值刷新、按当前股价更新估值，或单一事件对估值的影响，通常属于小变化：在 `tracker.md` 中加入带日期的估值快照、熊 / 基准 / 牛区间、实际价格分区、来源，以及相对上次观点的变化。除非商业 thesis、公司逻辑或估值框架发生重大变化，否则**不要**新增深度研究报告。
 
-### 为本用户提交至 GitHub
-
-在本用户的美股深度分析流程中，保存中文报告并不是最后一步。完成深度研究报告并更新 `tracker.md` 后，除非用户明确要求不要提交，否则应把相关文件 commit 并 push 到 `stock-reports` GitHub 仓库。
-
-建议在 `/home/ubuntu/stock-reports` 中执行：
-
-```bash
-git status --short
-git pull --rebase --autostash origin main
-git add research/COMPANIES/TICKER/deep-research/YYYY-MM-DD-deep-research.md research/COMPANIES/TICKER/tracker.md
-git diff --cached --check
-git diff --cached --stat
-git commit -m "docs: add TICKER equity research report"
-git push origin main
-git status --short
-git log -1 --oneline
-git ls-remote origin refs/heads/main
-```
-
-只能暂存目标股票对应的文件。如果 `git diff --cached --check` 报告 Markdown 行尾空格，先修复并重新暂存，不能跳过检查。如果 `git push` 因远端已有新提交而被拒绝，应运行 `git pull --rebase origin main`，明确解决冲突或中止 rebase，然后重新 push。最终回复要报告完整或短 commit SHA、推送分支、保存文件路径，以及本地 HEAD 是否与远端分支 SHA 一致。
-
 ## 核心研究流程
 
 每次非简单分析都要：

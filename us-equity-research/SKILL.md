@@ -147,27 +147,6 @@ Treat `tracker.md` as the active monitoring dashboard, not a shorter copy of the
 - Major company logic change: create a new `deep-research/...-v2.md`, then update `tracker.md`.
 - Standalone scenario-valuation refreshes, current-price valuation updates, or single-event valuation implications normally count as a small change: update `tracker.md` with a dated valuation snapshot, bear/base/bull ranges, practical price zones, sources, and what changed since the prior view. Do **not** create a new deep-research memo unless the business thesis, company logic, or valuation framework materially changed.
 
-### GitHub Submission for This User
-
-For this user's US stock deep-analysis workflow, saving the Chinese report is not the final step. After writing the deep research memo and updating `tracker.md`, commit and push the saved files to the `stock-reports` GitHub repository unless the user explicitly asks not to.
-
-Recommended workflow from `/home/ubuntu/stock-reports`:
-
-```bash
-git status --short
-git pull --rebase --autostash origin main
-git add research/COMPANIES/TICKER/deep-research/YYYY-MM-DD-deep-research.md research/COMPANIES/TICKER/tracker.md
-git diff --cached --check
-git diff --cached --stat
-git commit -m "docs: add TICKER equity research report"
-git push origin main
-git status --short
-git log -1 --oneline
-git ls-remote origin refs/heads/main
-```
-
-Stage only the intended ticker files. If `git diff --cached --check` reports Markdown trailing whitespace, fix it and re-stage before committing; do not bypass the check. If `git push` is rejected because the remote has newer commits, run `git pull --rebase origin main`, resolve or abort any conflict explicitly, then push again. In the final response, report the full or short commit SHA, pushed branch, saved file paths, and whether local HEAD matches the remote branch SHA.
-
 ## Core Research Workflow
 
 For every non-trivial analysis:
