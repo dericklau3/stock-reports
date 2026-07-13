@@ -50,6 +50,15 @@ Use the best available sources for the question:
 
 If a required source is unavailable, say what is missing and lower confidence accordingly.
 
+### SEC Filing Retrieval Pattern
+
+For newly listed companies, recent IPOs, post-earnings updates, or cases where the earnings release is filed as an exhibit rather than embedded in the 8-K body:
+
+- Use SEC company tickers to resolve the CIK, then inspect `https://data.sec.gov/submissions/CIK##########.json` for recent filings.
+- For a filing accession, check the filing directory `index.json`, because earnings releases and presentations often appear as `EX-99.1`, `final_*.htm`, `ex99*.htm`, or similar exhibits that are not obvious from the primary 8-K document.
+- Extract text from the exhibit and quote the filing/exhibit source in the memo when using KPI, guidance, or management-commentary data.
+- For recent IPOs, compare S-1 / 424B4 disclosures with the first 10-Q/10-K after listing, and explicitly flag share-count/SBC discontinuities caused by IPO conversion, lockups, and one-time vesting triggers.
+
 ## Data Verification Checklist
 
 Before issuing a thesis, valuation range, or post-earnings view, verify and state the date or period for:
@@ -68,6 +77,7 @@ For decision-critical numbers, use a two-source check whenever practical:
 
 - Cross-check revenue, net income or loss, cash, debt, diluted shares, market cap, enterprise value, free cash flow, and major KPIs against at least two reputable sources.
 - Prefer company filings or investor relations as the source of record when third-party data conflicts with company materials.
+- If an investor-relations site blocks automation or returns bot-detection/access-denied pages, do not stall: use SEC filings/exhibits, company press releases mirrored in 8-Ks, market-data pages such as StockAnalysis/Yahoo chart APIs, and reputable secondary sources; explicitly state the IR access limitation and lower confidence for any unavailable materials such as Investor Day PDFs.
 - If the difference is small and explainable, state the likely reason, such as reporting date, TTM versus fiscal-year period, GAAP versus non-GAAP, or basic versus diluted share count.
 - If the difference is material or cannot be reconciled quickly, flag the exact conflict, lower confidence, and avoid making the conflicted number carry the thesis or valuation conclusion.
 
@@ -135,6 +145,28 @@ Treat `tracker.md` as the active monitoring dashboard, not a shorter copy of the
 - Small change: update only `tracker.md`.
 - Earnings change: create a new `earnings-tracking/...md`, then update `tracker.md`.
 - Major company logic change: create a new `deep-research/...-v2.md`, then update `tracker.md`.
+- Standalone scenario-valuation refreshes, current-price valuation updates, or single-event valuation implications normally count as a small change: update `tracker.md` with a dated valuation snapshot, bear/base/bull ranges, practical price zones, sources, and what changed since the prior view. Do **not** create a new deep-research memo unless the business thesis, company logic, or valuation framework materially changed.
+
+### GitHub Submission for This User
+
+For this user's US stock deep-analysis workflow, saving the Chinese report is not the final step. After writing the deep research memo and updating `tracker.md`, commit and push the saved files to the `stock-reports` GitHub repository unless the user explicitly asks not to.
+
+Recommended workflow from `/home/ubuntu/stock-reports`:
+
+```bash
+git status --short
+git pull --rebase --autostash origin main
+git add research/COMPANIES/TICKER/deep-research/YYYY-MM-DD-deep-research.md research/COMPANIES/TICKER/tracker.md
+git diff --cached --check
+git diff --cached --stat
+git commit -m "docs: add TICKER equity research report"
+git push origin main
+git status --short
+git log -1 --oneline
+git ls-remote origin refs/heads/main
+```
+
+Stage only the intended ticker files. If `git diff --cached --check` reports Markdown trailing whitespace, fix it and re-stage before committing; do not bypass the check. If `git push` is rejected because the remote has newer commits, run `git pull --rebase origin main`, resolve or abort any conflict explicitly, then push again. In the final response, report the full or short commit SHA, pushed branch, saved file paths, and whether local HEAD matches the remote branch SHA.
 
 ## Core Research Workflow
 
@@ -175,6 +207,9 @@ Adapt the research and valuation approach to the company:
 - **Financials / insurance / fintech lenders**: focus on credit quality, loss ratios, funding costs, capital adequacy, regulatory risk, book value, ROE, and reserve adequacy.
 - **Biotech / healthcare innovation**: focus on pipeline stage, clinical milestones, probability of success, cash runway, dilution, regulatory path, and addressable market.
 - **Turnaround or distressed company**: focus on liquidity, debt maturities, covenant risk, cash burn, asset sales, and whether the turnaround is measurable.
+- **Industrial / capital-equipment / infrastructure-cycle companies**: focus on orders, book-to-bill, backlog/RPO, backlog margin quality, equipment versus service mix, project execution risk, warranty/quality reserves, working-capital swings, capex required to expand capacity, installed-base service revenue, and whether current earnings are peak-cycle or normalized. For companies with large one-time tax, M&A, or mark-to-market gains, do not annualize GAAP EPS; use normalized Adjusted EBITDA/EBIT/FCF scenarios and explicitly separate operating improvement from non-operating gains.
+- **Capital-intensive multi-segment infrastructure platforms**: for companies that combine a proven infrastructure profit engine with high-optionality segments (space launch, satellite broadband, AI compute, founder-controlled software acquisitions, energy infrastructure, or similar), analyze each segment separately. Identify which segment funds the rest of the company today, incorporate pro forma debt/interest after major financings, separate current cash-flow evidence from future optionality, and explicitly evaluate governance, dilution, and mission-drift risk. Use scenario valuation plus practical price zones rather than a single blended multiple.
+- **Digital-asset treasury companies and former miners that pivoted into treasury strategies**: value the common stock as a dated common-equity NAV bridge, not on total token holdings or headline GAAP earnings. Subtract debt, liabilities, preferred liquidation preferences, and other senior claims; reconcile basic and conservative fully diluted shares; calculate token and NAV per share over time; and test whether ATM issuance was accretive at the actual mNAV. Analyze staking as gross yield minus validator/custody/security/compliance costs, reconcile option premium with realized and unrealized derivative P/L, and treat self-treasury validator activity as unproven platform optionality until external AUM and fees are disclosed. Explicitly assess mission drift and whether incentives based on total market cap or total tokens can be achieved through dilution. Use token-price × common-NAV × mNAV bear/base/bull scenarios.
 
 ## Research View Framework
 
