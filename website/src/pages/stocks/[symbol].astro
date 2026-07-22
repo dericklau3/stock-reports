@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import index from "../../data/report-index.json";
+import { renderMarkdown, reportUrl, rewriteResearchLinks, withBase } from "../../lib/markdown.js";
+
+export function getStaticPaths() {
+  return index.companies.map((company) => ({
+    params: { symbol: company.symbol },
+    props: { company },
+  }));
+}
+
+const { company } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const trackerHtml = renderMarkdown(rewriteResearchLinks(company.tracker.content, base, company.symbol));
+---
+
+<BaseLayout title={`${company.symbol} · ${company.companyName}`}>
+  <section class="detail-head">
+    <a class="back-link" href={withBase(base)}>← 返回股票列表</a>
+    <div class="detail-title">
+      <div>
+        <p class="eyebrow">{company.symbol}</p>
+        <h1>{company.companyName}</h1>
+      </div>
+      <span class="report-pill">{company.reports.length} reports</span>
+    </div>
+    <p class="lede">{company.currentView}</p>
+    <div class="detail-meta">
+      <span>Last updated: {company.lastUpdated || "Unknown"}</span>
+      <span>Source: research/COMPANIES/{company.symbol}</span>
+    </div>
+  </section>
+
+  <section class="two-column">
+    <aside class="report-list-panel">
+      <h2>研究报告</h2>
+      <div class="report-list">
+        {
+          company.reports.map((report) => (
+            <a href={reportUrl(base, company.symbol, report.fileName)}>
+              <span>{report.date || report.slug}</span>
+              <strong>{report.title}</strong>
+            </a>
+          ))
+        }
+      </div>
+    </aside>
+
+    <article class="markdown-body tracker-body" set:html={trackerHtml} />
+  </section>
+</BaseLayout>

@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import index from "../data/report-index.json";
+import { withBase } from "../lib/markdown.js";
+
+const base = import.meta.env.BASE_URL;
+const companies = index.companies;
+const reportCount = companies.reduce((total, company) => total + company.reports.length, 0);
+---
+
+<BaseLayout title="Stock Research Reports">
+  <section class="page-head">
+    <div>
+      <p class="eyebrow">Research Library</p>
+      <h1>股票研究报告</h1>
+      <p class="lede">从 <code>research/COMPANIES</code> 自动生成，可按股票代码、公司名和研究观点检索。</p>
+    </div>
+    <dl class="stats">
+      <div>
+        <dt>{companies.length}</dt>
+        <dd>Stocks</dd>
+      </div>
+      <div>
+        <dt>{reportCount}</dt>
+        <dd>Reports</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="toolbar" aria-label="Stock filters">
+    <label class="search-field">
+      <span>Search</span>
+      <input id="stock-search" type="search" autocomplete="off" />
+    </label>
+    <p id="result-count" class="result-count">{companies.length} stocks</p>
+  </section>
+
+  <section class="stock-grid" id="stock-grid" aria-label="Stock list">
+    {
+      companies.map((company) => (
+        <a
+          class="stock-card"
+          href={withBase(base, `stocks/${company.symbol}/`)}
+          data-stock-card
+          data-search={`${company.symbol} ${company.companyName} ${company.currentView} ${company.summary}`}
+        >
+          <div class="stock-card-top">
+            <span class="ticker">{company.symbol}</span>
+            <span class="report-pill">{company.reports.length} reports</span>
+          </div>
+          <h2>{company.companyName}</h2>
+          <p>{company.currentView}</p>
+          <div class="card-meta">
+            <span>Updated {company.lastUpdated || "Unknown"}</span>
+            <span>Open</span>
+          </div>
+        </a>
+      ))
+    }
+  </section>
+
+  <script>
+    const input = document.querySelector("#stock-search");
+    const cards = Array.from(document.querySelectorAll("[data-stock-card]"));
+    const count = document.querySelector("#result-count");
+
+    input?.addEventListener("input", () => {
+      const query = input.value.trim().toLowerCase();
+      let visible = 0;
+
+      for (const card of cards) {
+        const haystack = card.dataset.search?.toLowerCase() ?? "";
+        const match = !query || haystack.includes(query);
+        card.hidden = !match;
+        if (match) visible += 1;
+      }
+
+      if (count) count.textContent = `${visible} stocks`;
+    });
+  </script>
+</BaseLayout>

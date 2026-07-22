@@ -100,7 +100,29 @@ For each arrow, give a concise but substantive explanation of the mechanism and 
 
 Do not force every theme into a linear chain. Branches, substitutes, and losing links belong on the map when material.
 
-### 4. Classify entities by evidence, not familiarity
+### 4. Write the derivation before the result
+
+The user must be able to understand how the radar moved from a hot industry to the final chain. Do not jump from "AI is hot" to "power equipment is attractive" without showing the intermediate steps.
+
+For every promoted chain, write a **transmission derivation ledger** before the candidate map:
+
+| Step | From | To | Why this link exists | Evidence type | What would break the link |
+|---|---|---|---|---|---|
+| 0 | Hot theme / event | Starting demand | Why the theme is active now and what real buyer/user behavior is visible | sourced fact | attention fades without spending/usage |
+| 1 | Starting demand | First operational bottleneck | What must happen physically, economically, technically, or legally for demand to be fulfilled | sourced fact or inference | customer delays, self-build, substitution |
+| 2 | First bottleneck | Required product/service/protocol | What is purchased, integrated, deployed, staked, or used to solve the bottleneck | sourced fact or inference | supply response, different architecture |
+| 3 | Required product/service/protocol | Entity class | Which type of supplier, protocol, distributor, toll collector, or loser is exposed | inference, then entity proof | commoditization or weak value capture |
+| 4 | Entity class | Named entities | Why each named entity belongs here and what still needs verification | entity-level evidence | missing disclosure, margin pressure, valuation reset |
+
+Rules for the derivation:
+
+- Each arrow needs a short paragraph, not just a label. Explain the economic or operating behavior in plain language.
+- Name the buyer/user at every step. If nobody clearly pays, deploys, integrates, or uses the solution, downgrade the link.
+- Separate **industry-chain derivation** from **entity selection**. First prove the chain class; then ask which entities have exposure.
+- Show rejected branches. If a hot theme is parked, write which arrow failed: no real starting demand, no bottleneck, no value capture, weak evidence, or too crowded.
+- Include a "could be wrong because" sentence for every promoted chain. Good radar is falsifiable, not just persuasive.
+
+### 5. Classify entities by evidence, not familiarity
 
 For every named company, project, protocol, product, asset, or private supplier, write the full entity name and a plain-language paragraph covering what it provides, its chain link, who buys or uses it, why it could benefit, what would prove the benefit, and what would break the thesis. Then classify it:
 
@@ -114,7 +136,7 @@ For every named company, project, protocol, product, asset, or private supplier,
 | Early observation | Plausible mechanism, but one ledger claim is missing | Name the missing proof and monitoring date |
 | Concept risk | Theme association without a proven product-to-buyer path | Do not promote without new primary evidence |
 
-### 5. Assign stage and confidence
+### 6. Assign stage and confidence
 
 Assign a stage to each **link**, not just each named entity:
 
@@ -126,7 +148,7 @@ Assign a stage to each **link**, not just each named entity:
 
 Use **high / medium / low** confidence. Confidence measures evidence quality and completeness, not expected return.
 
-### 6. Use attention, market, and valuation discipline
+### 7. Use attention, market, and valuation discipline
 
 For high-priority links, record available attention and market signals that fit the domain: public-market price and volume, private funding, search interest, app/store ranking, developer activity, on-chain usage, TVL, fees, or procurement cadence. Record the data date and do not call old data current.
 
@@ -138,20 +160,23 @@ For any substantial radar, automatically save a markdown document first, even if
 
 1. **Research thesis and layout judgment** — several paragraphs, not a compressed summary. Explain the selected chains, why they rank above rejected hot themes, what is already proven, what is still uncertain, and how a patient investor/operator would monitor the next transmission step. Do not use a short standalone verdict section.
 2. **Scope and as-of date** — market, geography, horizon, sources checked, and material data gaps.
-3. **Hot-industry scan** — if in discovery mode, list candidates screened and why the final focus was chosen.
-4. **Causal chain overview** — compact arrows, with parallel themes explicitly labeled.
-5. **Evidence pack** — detailed source-by-source evidence for each promoted chain. For every important source, state the fact proved, date/as-of period, direct link, limitation, and how it connects to the chain.
-6. **Why the starting demand is real** — sourced driver evidence; distinguish history from current facts.
-7. **Bottleneck test** — constraint, supply response, buyer, substitute, and earnings/usage transmission.
-8. **Candidate map** — direct beneficiary / proxy / substitute / loser / signal source / early observation / concept risk. For each high-priority entity: full name, optional ticker/symbol in parentheses, what it provides, exposure evidence, confirmation metric and date, disproof, and key risk.
-9. **Stage, triggers, and failure conditions** — include specific next events or metrics, not generic "watch earnings".
-10. **Final comparison table** — the mandatory columns are below.
-11. **Next-research queue** — 3-5 full entity names, assets, projects, or chain links ranked by bottleneck importance, evidence quality, uncertainty, and a specific unanswered question.
+3. **Hot-industry scan and rejection ledger** — if in discovery mode, list candidates screened and explain why each was promoted or parked. For parked themes, identify the failed arrow: weak starting demand, unclear bottleneck, weak value capture, insufficient evidence, or crowded/late cycle.
+4. **Step-by-step transmission derivation** — mandatory. For each promoted chain, show the path from hot theme/event → starting demand → bottleneck → required product/service/protocol → entity class → named entities. Every arrow needs a plain-language explanation, a source or clearly marked inference, and a failure condition.
+5. **Causal chain overview** — compact arrows, with parallel branches, substitutes, and losers explicitly labeled. This is a summary of the derivation, not a replacement for it.
+6. **Evidence pack** — detailed source-by-source evidence for each promoted chain. For every important source, state the fact proved, date/as-of period, direct link, limitation, and how it connects to the chain.
+7. **Why the starting demand is real** — sourced driver evidence; distinguish history from current facts.
+8. **Bottleneck test** — constraint, supply response, buyer, substitute, and earnings/usage transmission.
+9. **Candidate map** — direct beneficiary / proxy / substitute / loser / signal source / early observation / concept risk. For each high-priority entity: full name, optional ticker/symbol in parentheses, what it provides, exposure evidence, confirmation metric and date, disproof, and key risk.
+10. **Stage, triggers, and failure conditions** — include specific next events or metrics, not generic "watch earnings".
+11. **Final comparison table** — the mandatory columns are below.
+12. **Next-research queue** — 3-5 full entity names, assets, projects, or chain links ranked by bottleneck importance, evidence quality, uncertainty, and a specific unanswered question.
 
 | Chain link | Causal mechanism | Representative full entity name and role | Stage / confidence | Detailed evidence and source | Next confirmation | Disproof / risk | Action |
 |---|---|---|---|---|---|---|---|
 
 Do not compress the evidence into a few short bullets when the user is looking for layout or positioning research. The conclusion must survive this test: a reader can identify what would have to happen operationally or behaviorally for the entity to benefit, which data would prove it, which data would prove it wrong, and where every key factual claim came from.
+
+Before finalizing, run the **reader confusion test**: if a reader only sees the final industry direction and cannot explain the intermediate operating steps, the output failed. Add the missing derivation before summarizing.
 
 ## Updates and saving
 
@@ -172,6 +197,8 @@ Do not write to `research/INDUSTRY-CHAINS/`, `/home/ubuntu/stock-reports`, or ot
 - **Ticker instead of entity:** replace `VRT` with `Vertiv Holdings Co. (VRT)`; replace symbols-only crypto references with full protocol/project names.
 - **Thin evidence:** add source-by-source evidence and limitations; if evidence is unavailable, downgrade the chain rather than shortening the analysis.
 - **Compressed thesis:** replace with a multi-paragraph research judgment and layout logic.
+- **Result without derivation:** add the step-by-step transmission ledger from hot theme to starting demand, bottleneck, required product/service/protocol, entity class, and named entities.
+- **Arrow labels without explanation:** each arrow needs a paragraph explaining buyer behavior, constraint, timing, evidence, and failure condition.
 - **Theme list instead of a chain:** remove names until every remaining entity has a product/service/protocol-to-buyer-or-user path.
 - **Cycle-specific tunnel vision:** avoid writing the skill as if the current hot theme is permanent; AI, crypto, metaverse, energy, defense, biotech, and consumer cycles all require the same chain proof.
 - **Correlation mistaken for causation:** add the missing mechanism, timing, and substitute; otherwise downgrade it.
@@ -185,6 +212,9 @@ Do not write to `research/INDUSTRY-CHAINS/`, `/home/ubuntu/stock-reports`, or ot
 - [ ] A markdown radar was automatically saved under `research/industry-chain-radar/` for substantial work, without requiring the user to ask for saving.
 - [ ] Every high-priority link has a complete claim ledger or is explicitly downgraded.
 - [ ] If no starting theme was supplied, a current hot-industry scan was performed and dated.
+- [ ] The saved document includes a step-by-step transmission derivation ledger before the candidate map.
+- [ ] Every promoted arrow explains buyer/user behavior, constraint, required solution, evidence/inference status, and failure condition.
+- [ ] Parked themes identify the exact failed arrow rather than simply saying they are less attractive.
 - [ ] Facts, inferences, assumptions, and unknowns are visibly separated.
 - [ ] Every factual claim has a direct source link and current claims have an as-of date.
 - [ ] Every promoted chain includes a detailed evidence pack with source limitations.

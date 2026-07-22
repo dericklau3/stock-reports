@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import index from "../../../data/report-index.json";
+import { renderMarkdown, withBase } from "../../../lib/markdown.js";
+
+export function getStaticPaths() {
+  return index.companies.flatMap((company) =>
+    company.reports.map((report) => ({
+      params: { symbol: company.symbol, report: report.slug },
+      props: { company, report },
+    })),
+  );
+}
+
+const { company, report } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const reportHtml = renderMarkdown(report.content);
+---
+
+<BaseLayout title={`${report.title} · ${company.symbol}`}>
+  <section class="report-head">
+    <a class="back-link" href={withBase(base, `stocks/${company.symbol}/`)}>← 返回 {company.symbol}</a>
+    <p class="eyebrow">{company.symbol} · {report.date || "Research Report"}</p>
+    <h1>{report.title}</h1>
+    <div class="detail-meta">
+      <span>{company.companyName}</span>
+      <span>{report.fileName}</span>
+    </div>
+  </section>
+
+  <article class="markdown-body report-body" set:html={reportHtml} />
+</BaseLayout>
