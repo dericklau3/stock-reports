@@ -1,14 +1,15 @@
 # CRCL Research Tracker
 
-> Last updated: 2026-07-10
+> Last updated: 2026-08-09
+> Latest earnings memo: [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
 > Latest full memo: [2026-07-10 deep research](deep-research/2026-07-10-deep-research.md)
 
 ## Current view
 
 - **View**: Neutral / wait for a better price or stronger non-interest revenue evidence
 - **Confidence**: Medium
-- **Reference price**: $63.01 (2026-07-09 close)
-- **Base present-value range**: $54–63
+- **Reference price**: $66.67 (2026-08-07 close)
+- **Base present-value range**: $54–70, but quality of upside now depends more on recurring Arc/CPN monetization after excluding ARC Token presale revenue.
 - **Practical price zones**:
   - Stronger margin of safety: ≤$40
   - Watch / small-position research zone: $40–52
@@ -21,116 +22,128 @@ Circle is the most direct listed exposure to regulated digital-dollar infrastruc
 
 > Average USDC circulation × reserve yield × Circle's retained economics after distribution costs.
 
-The long-term upside requires Circle to convert USDC distribution into durable platform economics through CPN, Arc, wallets/APIs, USYC/EURC and related services. The stock at $63 already prices in the upper end of the base case and does not offer a clear margin of safety.
+Q2 2026 improved the strategic case: RLDC margin rose, USDC on-platform percentage improved, Arc mainnet now has a concrete launch date and high-profile validators, and CPN volume/participating institutions grew. However, reserve yield is falling, Q2 ending and post-quarter USDC circulation were below Q1 end, and FY2026 other revenue/RLDC margin guidance includes ARC Token presale revenue. At $66.67 the stock remains near the upper part of the base fair-value zone, not a clear margin-of-safety entry.
 
 ## Latest company update
 
-### Q1 2026
+### Q2 2026
 
-- USDC at period end: $77.0B, +28% YoY.
-- Average USDC: $75.2B, +39% YoY.
-- Reserve return rate: 3.5%, down 66bps YoY.
-- Total revenue and reserve income: $694.1M, +20%.
-- RLDC: $287.4M; margin 41%.
-- Net income from continuing operations: $55.2M, -15%.
-- Adjusted EBITDA: $151.4M, +24%.
-- Other revenue: $41.6M, +102%, but only about 6% of total revenue.
-- Coinbase distribution costs: $330.6M, about 81.5% of distribution/transaction costs and 50.7% of reserve income.
-- SBC: $51.8M, about 18% of RLDC.
+- USDC at period end: $73.269B, +19% YoY, but below Q1 2026 end balance of about $77.0B.
+- Average USDC: $76.524B, +25% YoY.
+- Reserve return rate: 3.5%, down 66 bps YoY.
+- Total revenue and reserve income: $701.315M, +7% YoY.
+- Reserve income: $667.733M, about 95.2% of total revenue and reserve income.
+- Other revenue: $33.582M, +41% YoY.
+- Distribution, transaction and other costs: $412.470M.
+- RLDC: $289M, +15% YoY; RLDC margin 41%, up about 302 bps YoY.
+- Net income from continuing operations: $48.214M versus -$482.100M in Q2 2025; prior-year comparison is distorted by IPO stock-based-compensation impacts.
+- Adjusted EBITDA: $143M, up from about $126M.
+- USDC on platform, end of period: $12.442B, +106% YoY.
+- USDC on platform, daily weighted-average percentage: 19.5%, up from 7.4%.
+- Diluted weighted-average shares: 268.637M.
+- Corporate cash and cash equivalents: $1.730B. Segregated stablecoin-holder reserves are paired with stablecoin-holder liabilities and should not be treated as shareholder net cash.
 
 ### Current operating signal
 
-Circle transparency showed about $73.0B USDC in circulation as of 2026-07-06, down about 5% from Q1 end. Over the preceding 30 days, issuance was $30.4B and redemption $32.7B, a net reduction of about $2.3B.
+Circle official pages showed about **$71.8B USDC in circulation as of 2026-08-06**, below Q2 end $73.3B and below Q2 average $76.5B. The transparency page also showed 7-day issuance/redeem flows of about $6.28B issued versus $6.37B redeemed, and 30-day flows of about $26.32B issued versus $27.73B redeemed, implying net contraction over both windows.
 
-### Arc Token
+### Guidance / milestones
 
-Two disclosed presale closings imply about $242.25M total gross proceeds at a $3B fully diluted network valuation. This is mission-aligned financing, but Arc network value may accrue partly to token holders rather than CRCL shareholders; repayment rights apply in specified circumstances if milestones are not met.
+- Multi-year through-cycle USDC circulation target: 40% CAGR, unchanged.
+- FY2026 other revenue guidance raised from $150M-$170M to $310M-$330M, but includes recognized ARC Token presale revenue.
+- FY2026 RLDC margin guidance raised from 38%-40% to 41.7%-43.7%, also includes ARC Token presale revenue.
+- FY2026 adjusted operating expenses guidance unchanged at $570M-$585M.
+- Arc public mainnet launch planned for 2026-09-16; Circle disclosed 100+ ecosystem and institutional builders.
+- Arc validator cohort includes BlackRock, DTCC, Galaxy, Global Payments, ICE, Mastercard, MoneyGram, SBI Group, Standard Chartered, Sumitomo, Visa and Circle.
+- CPN trailing-30-day annualized transaction volume reached $14.7B at Q2 end, +76% QoQ; enrolled financial institutions reached 175, +29% QoQ.
+- Agent Stack had 900+ paid services, with 99.3% of x402 agent-payment volume settling in USDC.
 
 ## What changed since the prior view
 
-- This is the 2026-07-10 update to the 2026-07-01 v2 memo, not initial coverage.
-- New high-frequency evidence: USDC circulation was about $73.0B on 2026-07-06, below $77.0B at Q1 end; the near-term view is therefore slightly more cautious.
-- Added the second ARC Token presale closing: 67.5M tokens and about $20.25M, taking disclosed gross proceeds across two closings to about $242.25M.
-- Quantified Q1 Coinbase dependence at $330.6M, about 81.5% of distribution/transaction costs and 50.7% of reserve income.
-- Rebuilt valuation from explicit USDC balance, reserve yield, RLDC margin, operating-cost and dilution assumptions. Present-value ranges changed from $14–26 / $45–77 / $112–189 to $15–25 / $54–63 / $158–196.
-- Strong margin-of-safety and watch zones tightened from $35–45 / $45–55 to ≤$40 / $40–52.
-- Regulatory clarity is a structural positive, but it also invites bank and payment-network competition.
+- The Q2 earnings memo supersedes the 2026-07-10 update for current KPI tracking, but does not replace the full deep-research valuation framework.
+- Positive: RLDC margin and on-platform USDC improved; Arc and CPN gained more concrete institutional traction.
+- Caution: USDC circulation was about $71.8B on 2026-08-06, below Q2 end and Q2 average; this keeps the reserve-income base under watch.
+- The other revenue guidance raise is not purely recurring because it includes ARC Token presale revenue.
+- Price moved to $66.67, within but near the upper part of the base fair-value zone; watch/add zone remains $40-$52.
 
 ## Core assumptions that must remain true
 
 1. USDC maintains institutional trust, 1:1 redeemability and a material regulated-stablecoin market position.
-2. Average USDC circulation resumes durable growth after the current pullback.
-3. RLDC margin remains at least 35–40% despite Coinbase, Binance and new distributors.
+2. Average USDC circulation resumes durable growth after the post-Q1/Q2 pullback.
+3. RLDC margin remains at least 38%-40% after excluding one-time ARC Token presale effects.
 4. Circle can offset lower rates through circulation growth and recurring non-reserve revenue.
-5. Arc and CPN generate economic value that accrues to CRCL shareholders.
+5. Arc and CPN generate economic value that accrues to CRCL shareholders, not primarily to token holders or ecosystem partners.
 6. SBC and diluted share growth normalize after the IPO period.
-7. GENIUS Act implementation does not materially impair Circle's distribution or reserve-income model.
+7. Federal trust charter and New York Trust progress strengthen rather than complicate regulatory positioning.
 
 ## Red-line conditions
 
 - Average USDC circulation declines for two consecutive quarters.
 - USDC loses material market share despite a growing stablecoin market.
+- 7/30/90-day transparency flows show persistent net redemptions without offsetting market-share explanation.
 - Reserve attestation, liquidity, custody or redemption issues weaken 1:1 confidence.
-- RLDC margin falls below 35% without a clear temporary explanation.
-- Coinbase agreement renewal materially worsens economics or triggers trademark/IP risk.
+- RLDC margin falls below 35%-38% after adjusting for ARC Token presale revenue.
+- Coinbase/Binance distribution economics materially worsen.
 - Arc mainnet is materially delayed, fails to attract external usage, or token economics divert most network value away from CRCL.
-- Diluted share count grows more than 5% annually for a sustained period, or SBC/RLDC remains above 15%.
-- Non-interest revenue fails to rise above 10% of revenue as rates normalize.
+- Diluted share count grows more than 5% annually for a sustained period, or SBC/RLDC remains too high.
+- Non-interest revenue fails to rise above 10% of revenue after excluding one-time token revenue.
 
 ## Management promises and milestones
 
 | Promise / target | Current status | Follow-up |
 |---|---|---|
-| USDC multi-year through-cycle CAGR of 40% | Q1 end balance +28% YoY; July balance below Q1 end | Track average balance and market share each quarter |
-| FY2026 other revenue $150–170M | Q1 $41.6M | Check repeatability and revenue mix |
-| FY2026 RLDC margin 38–40% | Q1 41% | Monitor distributor mix and on-platform balance |
-| FY2026 adjusted operating expenses $570–585M | Q1 $135.7M | Watch Arc/mainnet and hiring spend |
-| Arc mainnet launch in 2026 | Testnet and token presale underway | Verify launch, users, fees and value capture |
-| CPN expansion | $8.3B annualized volume at 2026-03-31 | Require TPV growth plus disclosed monetization |
-| Circle National Trust | Conditional OCC approval | Track final approval and implementation |
+| USDC multi-year through-cycle CAGR of 40% | Q2 average +25% YoY; 2026-08-06 circulation below Q2 average | Track average balance, 7/30/90-day flows and market share |
+| FY2026 other revenue $310-$330M | Raised, but includes ARC Token presale revenue | Separate recurring revenue from token presale revenue |
+| FY2026 RLDC margin 41.7%-43.7% | Raised, but includes ARC Token presale revenue | Monitor adjusted RLDC margin excluding one-time token effects |
+| FY2026 adjusted operating expenses $570-$585M | Unchanged | Watch hiring, Arc/mainnet and compliance costs |
+| Arc mainnet launch in 2026 | Public mainnet planned 2026-09-16 | Verify launch, users, fees, validator operations and value capture |
+| CPN expansion | $14.7B annualized TPV; 175 institutions enrolled | Require TPV growth plus take-rate/monetization disclosure |
+| Circle trust-bank strategy | Federal trust bank charter and NY Trust approval disclosed | Track final operating permissions and reserve-management economics |
 
-## Valuation snapshot (2026-07-10)
+## Valuation snapshot (2026-08-09)
 
 | Scenario | Present-value range | Core assumptions |
 |---|---:|---|
-| Bear | $15–25 | 2028 average USDC $80B, 2.25% yield, 35% RLDC margin, near break-even |
-| Base | $54–63 | 2028 average USDC $140B, 3.0% yield, 40% RLDC margin, about $736M normalized net income |
-| Bull | $158–196 | 2028 average USDC $220B, 3.5% yield, 44% RLDC margin, Arc/CPN materially monetize |
+| Bear | $15–30 | USDC average stagnates/declines, reserve yield falls, RLDC margin ex-token revenue compresses toward 35%, Arc/CPN fail to monetize |
+| Base | $54–70 | USDC average resumes growth, reserve yield normalizes around 3%, RLDC margin near 40%, recurring other revenue scales gradually |
+| Bull | $150+ | USDC average grows toward $200B+, Arc/CPN create material recurring revenue, shareholder value capture is clear, dilution normalizes |
 
-Assumptions: 280–285M diluted shares, about $1.5B excess corporate assets, 20% tax rate, 12% discount rate over about 2.5 years.
+At $66.67, CRCL is not obviously overvalued if the base case is achieved, but the margin of safety is thin because the stock already prices meaningful USDC growth and Arc/CPN execution.
 
 ## Metrics and events to monitor next
 
 - Average and period-end USDC circulation.
+- 7-day, 30-day and 365-day official transparency issuance/redemption flows.
 - Stablecoin market share.
 - Reserve return rate and Fed policy.
 - USDC on-platform percentage.
-- Coinbase and Binance distribution costs.
-- RLDC and RLDC margin.
-- Other revenue mix and recurring character.
+- Coinbase/Binance distribution costs and renewal economics.
+- RLDC and RLDC margin excluding ARC Token presale revenue.
+- Other revenue mix, especially recurring non-token revenue.
 - SBC/RLDC and diluted shares.
-- Operating cash flow and free-cash-flow conversion.
+- Operating cash flow and free-cash-flow conversion excluding ARC presale working-capital effects.
 - CPN participating institutions, TPV and take rate.
 - Arc mainnet launch, external developers, fees and token/shareholder value allocation.
-- GENIUS Act implementing rules and Circle National Trust final approval.
+- Federal trust bank and New York Trust implementation.
 
 ## What would change the view
 
 ### Upgrade
 
 - Price falls into $40–52 without structural deterioration; or
-- Two or more quarters show average USDC growth above 30%, RLDC margin at/above 40%, other revenue above 10% of total, and SBC/RLDC below 12%; or
+- Two or more quarters show average USDC growth above 30%, RLDC margin at/above 40% after excluding one-time token effects, recurring other revenue above 10% of total, and SBC/RLDC below 12%; or
 - Arc/CPN demonstrate material recurring revenue attributable to CRCL shareholders.
 
 ### Downgrade
 
 - Two consecutive quarters of declining average USDC;
-- Material market-share loss, redemption/reserve credibility issue, or Coinbase economics deterioration;
+- Material market-share loss, redemption/reserve credibility issue, or Coinbase/Binance economics deterioration;
 - Arc value accrues primarily to ARC Token rather than CRCL; or
-- Persistent dilution and no credible path to diversified earnings.
+- Persistent dilution and no credible path to diversified recurring earnings.
 
 ## Linked memos
 
 - [2026-07-01 initial deep research](deep-research/2026-07-01-deep-research.md)
 - [2026-07-01 valuation update v2](deep-research/2026-07-01-deep-research-v2.md)
 - [2026-07-10 current deep research](deep-research/2026-07-10-deep-research.md)
+- [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
