@@ -1,117 +1,175 @@
 # Rocket Lab（RKLB）Tracker
 
-Last updated: 2026-07-08
+Last updated: 2026-08-20
 
 ## Current Research View
 
-**建设性但需观察**，中等置信度，12-24 个月视角。
+**Constructive but watchful（建设性但需观察）**，中等偏高置信度，12-24 个月视角。
 
-RKLB 是少数已经证明 Electron 发射执行、Space Systems 制造能力、国防订单获取和端到端航天供应链整合能力的上市航天公司。2026Q1 revenue 2.003 亿美元、同比 +63.5%，GAAP gross margin 38.2%，backlog 22.20 亿美元，流动性强。和 2026-05-13 版本相比，股价从 117.56 美元回落到 2026-07-07 收盘 83.41 美元，市值从约 680 亿美元降至约 483 亿美元，EV/Sales 从约 98x 降到约 69x，风险回报改善。
+RKLB 的 Q2 2026 再次确认业务动能：record revenue **$234.1M**、同比 **+62%**；record backlog **$2.356B**，同比 **+137%**；Q3 2026 revenue 指引 **$250M-$265M**，继续指向 record revenue quarter。Launch contracts、Space Systems defense awards、SB-AMTI Flatellite contract、Neutron hardware milestone 都强化了“真实航天基础设施平台” thesis。
 
-但 2026-06-28 宣布与 Iridium Communications 签署 merger agreement 是重大新增变量：若完成，RKLB 将从“发射 + 空间系统制造”扩展为“发射/制造 + 在轨卫星通信网络运营商”；若失败或整合不佳，将带来稀释、审批、现金/债务、战略分心和管理复杂度风险。因此当前仍维持 **建设性但需观察**，不升至 Positive。
+但维持建设性而不是 Positive：2026-08-19 收盘 **$75.84** 下，market cap **$45.39B**、EV **$43.13B**、EV/TTM Sales 约 **56.1x**，按 Q3 指引年化 revenue 算 EV/Sales 仍约 **41.9x**。公司仍亏损并烧现金，Neutron 尚未首飞，Iridium 交易未完成且可能显著改变资本结构、股数和管理复杂度。
 
 ## Current Main Thesis
 
-- Q1 2026 revenue 为 2.003 亿美元，同比增长 63.5%。
-- Q1 2026 GAAP gross margin 为 38.2%，non-GAAP gross margin 为 43.0%。
-- Q1 2026 adjusted EBITDA loss 为 1175 万美元，较 Q1 2025 的 -2996 万美元改善。
-- Q1 2026 backlog 达 22.20 亿美元，较 2025 年底 18.47 亿美元增长约 20%。
-- Q1 backlog 中 Space Systems 为 12.98 亿美元，Launch Services 为 9.21 亿美元。
-- Launch Services Q1 revenue 为 6366 万美元，同比增长 79%；Space Systems revenue 为 1.367 亿美元，同比增长 57%。
-- Q1 2026 完成 6 次 Electron launch missions；revenue per launch 从 Q1 2025 的 710 万美元升至 930 万美元，cost per launch 从 570 万美元降至 540 万美元。
-- 截至 2026-03-31，cash + marketable securities 约 14.77 亿美元，convertible notes principal outstanding 仅 3760 万美元。
-- 公司仍亏损和烧现金，Q1 2026 operating cash flow 为 -5033 万美元，粗略 FCF 约 -7740 万美元。
-- StockAnalysis 2026-07-07/08：TTM revenue 6.7958 亿美元，TTM net loss -1.8262 亿美元，TTM FCF -3.1630 亿美元，cash 13.8 亿美元，debt 1.3867 亿美元，net cash 约 13.4 亿美元。
-- 2026-07-07 收盘价 83.41 美元，盘后约 83.75 美元，market cap 约 482.8 亿美元，enterprise value 约 469.5 亿美元，EV/Sales 约 69.08x，Forward PS 约 49.40x，beta 约 2.55。
-- 2026-06-28 签署 Iridium merger agreement：每股 Iridium 获 27 美元现金 + RKLB 股票；股票部分按 RKLB 股价 collar，低于/等于 67.50 美元时 exchange ratio 0.4000，高于/等于 112.50 美元时 0.2400，中间按约 27 美元股票价值换算。
+- RKLB 是少数已证明 Electron 发射执行、Space Systems 制造能力、国防订单获取、垂直整合和资本市场融资能力的上市航天公司。
+- Q2 2026 revenue **$234.066M**，Q2 2025 为 $144.498M，同比增长 **+62.0%**。
+- Q2 2026 gross profit **$84.576M**，GAAP gross margin **36.1%**。
+- Q2 2026 operating loss **-$57.514M**，net loss **-$49.258M**，EPS **-$0.08**。
+- H1 2026 revenue **$434.414M**，net loss **-$94.280M**。
+- Backlog 截至 2026-06-30 为 **$2.356B**，约 **45%** 预计 12 个月内确认，55% 在 12 个月后确认。
+- Q2 及季后 secured more than **$437M** launch contracts across Electron/HASTE/Neutron，launch backlog 超过 **90 launches**。
+- 获得 **$397M** U.S. Space Force SB-AMTI Flatellite spacecraft contract。
+- 获得 **$160M+** defense space systems contracts。
+- Neutron first-flight hardware assembly / integration / testing 持续推进，Stage 1 tank production aligned with target delivery of Neutron to launch pad in Q4 2026。
+- Q3 2026 guidance：revenue **$250M-$265M**，GAAP gross margin **29%-31%**，non-GAAP gross margin **35%-37%**，adjusted EBITDA loss **-$17M to -$23M**，basic WA shares including preferred **~641M**。
+- 截至 2026-06-30：cash + marketable securities 约 **$2.388B**，convertible senior notes net **$13.1M**，total liabilities **$695.2M**，stockholders' equity **$3.492B**。
+- H1 2026 operating cash flow **-$134.4M**，capex **-$53.1M**，rough FCF **-$187.5M**。
+- StockAnalysis 2026-08-19 close：price **$75.84**，market cap **$45.39B**，EV **$43.13B**，TTM revenue **$769.15M**，TTM net loss **-$165.46M**，shares outstanding **598.46M**，shares YoY **+15.68%**。
+
+## Iridium Transaction Watch
+
+- Announced / signed: 2026-06-29.
+- Consideration: each IRDM share gets **$27 cash + RKLB stock**.
+- Notional value: **$54 per IRDM share**.
+- Collar: RKLB stock collar **$67.50-$112.50**.
+- Implied Iridium enterprise value: approximately **$8.0B**.
+- Financing: **$3.6B** 364-day senior secured bridge term loan commitment from Deutsche Bank and Wells Fargo.
+- Expected close: **mid-2027**, subject to Iridium shareholder approval, regulatory approvals, S-4 effectiveness and customary conditions.
+- Strategic upside: RKLB gains global satellite communications network, L-band spectrum, 2.55M+ active subscribers, recurring service revenue, and future constellation replenishment/manufacturing/launch synergy.
+- Core concern: transaction may add debt, dilution, regulatory complexity, integration burden and mission-drift / conglomerate-discount risk.
 
 ## Key Risks
 
-- 当前估值仍极高：约 69x EV/Sales、约 49x forward PS。
-- Neutron 尚未首飞，技术、进度、成本和复用风险高。
-- Iridium 交易带来审批、整合、资本结构、股票稀释、战略分心和通信监管风险。
-- 经营和自由现金流仍为负，TTM FCF 约 -3.163 亿美元。
-- Share count 稀释明显：StockAnalysis 显示 shares outstanding YoY +11.16%，QoQ +5.75%。
-- 2026-05-20 filed up to $3B common stock ATM / forward sale prospectus supplement，后续仍可能稀释。
-- Space Systems 项目成本估计变化可能侵蚀毛利率；Q2 gross margin guidance 33%-35%，低于 Q1 38.2%。
-- 国防/政府订单受预算、审批和政治周期影响。
-- SpaceX 在发射价格、复用和 cadence 上仍是强竞争压力。
-- Mynaric、Motiv、GEOST 以及潜在 Iridium 整合增加执行复杂度。
+- Current valuation remains high: **56.1x EV/TTM Sales**, **41.9x EV/Q3 guide annualized sales**.
+- Neutron remains unproven: first launch, reusability, cadence, cost and customer acceptance still pending.
+- Iridium deal risk: approval, financing, debt refinancing, equity issuance, integration, telecom regulation and strategic distraction.
+- Company remains loss-making and FCF-negative: H1 2026 rough FCF about **-$187.5M**.
+- Dilution remains material: StockAnalysis shares outstanding YoY **+15.68%**, Q3 guide basic WA shares including preferred **~641M**.
+- Space Systems project execution: costs, schedule, contract modifications and working capital can hurt margin/cash flow.
+- Customer concentration: 10-Q disclosed a government customer accounted for **42%** of H1 2026 revenue.
+- Defense/government budget cycles can delay or resize orders.
+- SpaceX remains the strongest launch competitor, especially if Neutron enters medium launch.
+- Narrative risk: market may overpay for “second SpaceX” framing while ignoring per-share economics.
 
 ## Latest Earnings or Company Update
 
-- 最新季度：2026 Q1，财报与 10-Q 发布于 2026-05-07。
-- Total revenue：2.003 亿美元，Q1 2025 为 1.226 亿美元。
-- Product revenue：1.275 亿美元；service revenue：7286 万美元。
-- Gross profit：7649 万美元，gross margin 38.2%。
-- R&D expense：8051 万美元；SG&A expense：5195 万美元。
-- Operating loss：5597 万美元。
-- Net loss：4502 万美元，diluted EPS -0.07 美元。
-- SBC：2812 万美元，Q1 2025 为 1923 万美元。
-- Q2 2026 guidance：revenue 2.25-2.40 亿美元，GAAP gross margin 33%-35%，adjusted EBITDA loss -2000 万至 -2600 万美元。
-- 下一次预计财报：2026-08-06 after market close。
-- 2026-05-20 filed prospectus supplement for up to $3B common stock ATM / forward sales.
-- 2026-06-28 signed merger agreement with Iridium Communications; filed 8-K on 2026-06-29.
+Latest quarter: **Q2 2026**, released 2026-08-10.
+
+| Metric | Q2 2026 |
+|---|---:|
+| Revenue | **$234.066M** |
+| Revenue YoY | **+62.0%** |
+| Gross profit | **$84.576M** |
+| GAAP gross margin | **36.1%** |
+| Operating loss | **-$57.514M** |
+| Net loss | **-$49.258M** |
+| EPS | **-$0.08** |
+| Weighted avg shares | **629.682M** |
+| Backlog | **$2.356B** |
+
+Q3 2026 guide:
+
+| Metric | Guidance |
+|---|---:|
+| Revenue | **$250M-$265M** |
+| GAAP gross margin | **29%-31%** |
+| Non-GAAP gross margin | **35%-37%** |
+| GAAP operating expenses | **$143M-$149M** |
+| Non-GAAP operating expenses | **$121M-$127M** |
+| Interest income, net | **$21M** |
+| Adjusted EBITDA loss | **-$17M to -$23M** |
+| Basic WA shares incl. preferred | **~641M** |
 
 ## What Changed Since Prior View
 
-- 股价从 2026-05-12 的 117.56 美元降至 2026-07-07 的 83.41 美元，估值从极端过热回到仍贵但可研究区。
-- Market cap 从约 680 亿美元降至约 483 亿美元；EV/Sales 从约 98x 降至约 69x。
-- 新增 Iridium merger agreement，战略意义很大：有机会让 RKLB 获得在轨通信网络和 recurring service revenue，但同时显著提高整合、监管、融资和稀释风险。
-- 2026-05-20 30 亿美元 ATM/forward sale prospectus supplement 增强融资灵活性，但也强化稀释风险。
-- 当前观点维持 **建设性但需观察**，不因股价回落直接上调至 Positive，因为 Neutron 未首飞、Iridium 交易未完成、公司仍烧现金且估值仍高。
+- Q2 2026 confirmed the Q1 growth trajectory: revenue increased from Q1 **$200.3M** to Q2 **$234.1M**.
+- Backlog increased from Q1 **$2.220B** to Q2 **$2.356B**.
+- Q3 guide implies another record revenue quarter and a quarterly revenue run-rate above **$1.0B annualized**.
+- Stock price moved from 2026-07-07 **$83.41** to 2026-08-19 **$75.84**; valuation improved but remains high.
+- Iridium transaction remains pending and is now fully integrated into the monitoring framework.
+- Share count / preferred / ATM / bridge debt risk remains central; Q3 guide shares including preferred **~641M** is higher than StockAnalysis current shares **598.46M**.
+
+## Scenario Valuation Snapshot
+
+Using diluted-ish **641M** share count and approximately **$2.25B net cash** before Iridium close. This is a stand-alone / pre-pro-forma framework; update after S-4 and final financing terms.
+
+| Scenario | Revenue assumption | EV/Sales | Implied price | vs $75.84 |
+|---|---:|---:|---:|---:|
+| Bear reset | $0.95B | 18x | **$30.2** | **-60.2%** |
+| Downside growth normalizes | $1.05B | 28x | **$49.4** | **-34.9%** |
+| Base backlog converts | $1.25B | 40x | **$81.5** | **+7.5%** |
+| Base plus optionality | $1.55B | 50x | **$124.4** | **+64.0%** |
+| Bull platform | $2.10B | 60x | **$200.1** | **+163.8%** |
+| Hyper-bull scarce space infra | $2.80B | 75x | **$331.1** | **+336.6%** |
 
 ## Practical Price Zones
 
-- 强安全边际区：35-45 美元。
-- 可观察 / 小仓试错区：45-70 美元。
-- 合理但仍贵区：70-95 美元；当前 83.41 美元在此区间。
-- 偏贵区：95-120 美元，需要持续好消息和 Q2 后上修。
-- 过热区：120 美元以上，除非 Neutron 首飞和 Iridium 协同显著超预期。
+- **Strong safety margin**: below **$35**, if Neutron/cash/backlog thesis is not broken.
+- **Contrarian research / small tranche zone**: **$35-$50**.
+- **Attractive but confirmation-needed zone**: **$50-$70**.
+- **Current high-but-trackable zone**: **$70-$90**; current **$75.84** is here.
+- **Needs strong execution support**: **$90-$125**.
+- **Bull-case zone**: **$125-$200**, needs Neutron + Space Systems + Iridium evidence.
+- **Hyper-bull / narrative-risk zone**: above **$200**.
 
 ## Core Thesis Assumptions That Must Remain True
 
-- Electron/HASTE launch cadence、mission success rate 和 unit economics 持续改善。
-- Space Systems revenue 维持高增长，gross margin 大致稳定在 35% 左右或更高。
-- Backlog 持续增长，book-to-bill 维持 >1。
-- Neutron 2026/2027 能实现关键首飞和后续商业 manifest。
-- Iridium 交易若完成，融资结构和稀释可控，并能带来真实运营/制造/发射协同。
-- FCF burn 在 2026-2027 逐步收窄，而不是随并购和 Neutron 扩大。
+- Electron/HASTE cadence, reliability and unit economics continue improving.
+- Space Systems revenue remains high-growth and avoids major project-cost blowups.
+- Backlog remains high quality and converts roughly on schedule; 45% within 12 months is credible.
+- Neutron reaches launch pad / first-flight milestones without major technical delay.
+- Defense contracts such as SB-AMTI convert into profitable, referenceable programs.
+- Iridium transaction, if completed, strengthens recurring revenue without excessive debt/dilution.
+- Operating cash burn and rough FCF burn narrow over 2026-2027.
+- Share count growth slows or is offset by faster per-share revenue / per-share gross profit growth.
 
 ## Red-Line Conditions For Thesis Review
 
-- Neutron 明显延期、首飞失败或复用/成本指标低于预期。
-- Q2/Q3 revenue 低于指引，或 gross margin 明显低于 33%-35%。
-- Space Systems 项目出现重大成本超支、合同损失或 backlog cancellation。
-- Iridium 交易审批受阻、融资结构显著恶化或股票稀释超预期。
-- Share count 持续快速增长而收入/毛利/FCF 没有同步改善。
-- TTM FCF burn 扩大并持续超过 -3 亿美元/年。
+- Neutron Q4 2026 pad-delivery milestone slips materially or first flight fails in a way that delays commercial cadence.
+- Q3 revenue misses **$250M-$265M** or gross margin falls below guide without a credible mix explanation.
+- Backlog growth reverses or large contracts are delayed/cancelled.
+- Space Systems gross margin deteriorates from project execution problems.
+- Iridium transaction financing becomes materially more expensive or dilutive than expected.
+- H1 cash-burn pattern worsens and TTM FCF burn moves materially beyond **-$300M/year** without growth justification.
+- Share count continues rising rapidly while per-share operating metrics do not improve.
 
 ## Metrics or Events to Monitor Next
 
-- Q2 2026 earnings，预计 2026-08-06 after market close。
-- Q2 revenue vs 2.25-2.40 亿美元 guidance。
-- Q2 GAAP gross margin vs 33%-35% guidance。
-- Adjusted EBITDA loss vs -2000 万至 -2600 万美元 guidance。
-- Neutron first flight timing and result。
-- Archimedes engine qualification、stage/fairing/reusability milestones。
-- Electron/HASTE launch cadence、mission success rate、revenue per launch、cost per launch。
-- Quarterly backlog、book-to-bill、backlog expected within 12 months。
-- Space Systems revenue growth、gross margin、project cost adjustments。
-- Defense program wins, especially SDA/Raytheon/Golden Dome/MACH-TB/SBI related progress。
-- Mynaric and Motiv integration。
-- Iridium transaction: stockholder vote、HSR、FCC、foreign investment/satellite telecom approvals、S-4 effectiveness。
-- Iridium transaction financing, pro forma debt/cash and dilution.
-- Operating cash flow、free cash flow、cash + marketable securities。
-- Shares outstanding、preferred conversion、ATM issuance、SBC。
+- Q3 2026 results vs revenue/gross-margin/adjusted-EBITDA guidance.
+- Neutron Q4 2026 launch-pad delivery and first-flight schedule.
+- Electron/HASTE launch cadence and mission success.
+- Launch backlog: total launches under contract, revenue value and customer mix.
+- Space Systems: SB-AMTI execution, defense awards, contract profitability.
+- Backlog conversion: expected 45% within 12 months.
+- Cash + marketable securities, operating cash flow, capex and rough FCF.
+- Shares outstanding, preferred conversion, SBC and ATM issuance.
+- Iridium S-4 filing, shareholder vote, HSR/FCC/regulatory approvals.
+- Iridium bridge loan replacement / final capital structure.
+- Customer concentration, especially government customer exposure.
 
 ## What Would Change the Research View
 
-- 若 Neutron 2026 首飞成功、后续 manifest 清晰、backlog 继续增长、Space Systems revenue 维持高增长且毛利率稳定，同时 Iridium 交易审批顺利、融资/稀释可控、adjusted EBITDA/FCF burn 明显改善，可上调至 **Positive**。
-- 若业务继续强劲但估值需要消化，维持 **建设性但需观察**。
-- 若 Neutron 再次明显延期或失败、Iridium 交易造成显著稀释/债务/审批拖延、gross margin 被项目成本侵蚀、backlog 增长放缓、cash burn 扩大或稀释加速，下调至 **Neutral / Negative**。
+Upgrade toward **Positive** if:
+
+- Neutron hits key Q4 2026 / first-flight milestones;
+- Q3/Q4 results beat guidance while gross margin stabilizes;
+- adjusted EBITDA and FCF burn improve;
+- backlog continues growing and converting;
+- Iridium financing and approval path are clear and not overly dilutive;
+- share count growth slows.
+
+Downgrade toward **Neutral / Negative** if:
+
+- Neutron is materially delayed or technically weak;
+- Iridium becomes a debt/dilution/approval overhang;
+- Space Systems margin deteriorates;
+- backlog quality weakens;
+- cash burn expands;
+- valuation rises back above bull-case levels without corresponding execution proof.
 
 ## Research Files
 
 - `deep-research/2026-05-13-deep-research.md`
 - `deep-research/2026-07-08-deep-research-v2.md`
+- `deep-research/2026-08-20-deep-research-update.md`
