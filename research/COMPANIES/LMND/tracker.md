@@ -1,95 +1,162 @@
 # Lemonade（LMND）Tracker
 
-Last updated: 2026-07-02
+- **Ticker**: LMND
+- **Company**: Lemonade, Inc.
+- **Exchange**: NYSE
+- **Sector**: Insurance / Insurtech / AI-native P&C insurance
+- **Last updated**: 2026-08-17
+- **Current research view**: 建设性但需观察 / 价格回到可研究区，但仍不适合重仓
+- **Confidence**: Medium
+- **Latest report**: `deep-research/2026-08-17-deep-research-update.md`
+- **Prior report**: `deep-research/2026-05-12-deep-research.md`
 
 ## Current Research View
 
 **建设性但需观察**，中等置信度，12-24 个月视角。
 
-LMND 的基本面改善明显：IFP 增长重新加速、gross loss ratio 改善、gross profit 快速增长、adjusted free cash flow 转正，且管理层仍预计 2026 Q4 adjusted EBITDA 单季转正。2026-06-24 披露的 Hannover Re 增长融资协议为 2027-2028 年 growth spend 提供额外资金弹性，提高了高增长延续的可实现性；但股价升至约 69 美元后，估值已接近基准情景中上段，安全边际下降。
+LMND 的 Q2 2026 继续支持原 thesis：增长重新加速、loss ratio 改善、AI 费用杠杆开始体现、adjusted EBITDA 接近转正。股价从 2026-07-01 附近约 $69.33 回落到 2026-08-17 盘中约 $51.41，估值从 base case 中上段回到观察/小仓区。
+
+但 LMND 仍不是低风险股票：GAAP 仍亏损、SBC 高、P/B 约 8x、保险承保波动和 car/homeowners 风险仍在。它适合继续跟踪和小仓研究，不适合重仓押 Q4 adjusted EBITDA 转正。
 
 ## Current Main Thesis
 
-- 2026 Q1 IFP 13.33 亿美元，同比增长 32%，连续第 10 个季度 IFP 增速加速。
-- 客户数 314.3 万，同比增长 23%；premium/customer 为 424 美元，同比增长 7%。
-- 2026 Q1 revenue 2.58 亿美元，同比增长 71%；gross profit 1.001 亿美元，同比增长 159%。
-- 2025 gross loss ratio 降至 64%，较 2024 年的 73% 明显改善。
-- 2026 Q1 adjusted EBITDA 亏损 1710 万美元，adjusted FCF 为正 1700 万美元。
-- 管理层指引 2026 全年 revenue 11.97-12.03 亿美元，adjusted EBITDA loss 4700-5100 万美元，并继续预期 Q4 单季 adjusted EBITDA 转正。
-- 2026-06-24 8-K 披露，公司与 Hannover Re 达成新业务融资协议：2027 年最高 outstanding capital 1.5 亿美元，2028 年最高 2.5 亿美元；每月 growth spend 最多可融资 80%，但每个 reference cohort 不超过 2000 万美元；公司未来以相关 cohort 的保费收入分成偿还。
+- Q2 2026 IFP $1.434B，同比增长 32.4%，连续第 11 个季度 IFP 增速加速。
+- Customers 3,308,666，同比增长 23%；premium/customer $433，同比增长 8%；ADR 85%。
+- Q2 revenue $294.4M，同比增长 79%；gross earned premium $332.4M，同比增长 32%；gross profit $113.2M，同比增长 76%。
+- Q2 gross loss ratio 60%，同比从 67% 改善；H1 gross loss ratio 61%，同比从 73% 改善。
+- Q2 adjusted EBITDA loss -$18.7M，较去年 -$40.9M 明显改善；管理层继续预计 Q4 2026 adjusted EBITDA positive。
+- Q2 adjusted FCF +$18.8M，但 H1 operating cash flow 仍 -$4.0M；SBC H1 $45.7M，全年指引 $95M。
+- 新 reinsurance program 将 effective quota share cession rate 从约 20% 降至约 18%，提高收入留存，同时新增 CAT/named storm protection。
+- Hannover Re synthetic agents financing 自 2027 年起提供最多 $250M outstanding capital，成本约 9.8%，较旧融资下降 >600bps，但仍是有成本资本。
+
+## Latest Earnings / Company Update
+
+最新季度：**Q2 2026**，shareholder letter 于 2026-07-29 发布，10-Q 于 2026-08-04 filed。
+
+| Metric | Q2 2026 | Q2 2025 | Change |
+|---|---:|---:|---:|
+| Customers | 3,308,666 | n.a. | +23% YoY |
+| IFP | $1.434B | $1.083B | +32.4% |
+| Premium/customer | $433 | $402 | +8% |
+| ADR | 85% | 84% | +1 ppt |
+| GEP | $332.4M | $252.3M | +32% |
+| Revenue | $294.4M | $164.1M | +79% |
+| Gross profit | $113.2M | $64.3M | +76% |
+| Adjusted gross profit | $114.4M | $65.6M | +74% |
+| Gross loss ratio | 60% | 67% | -7 ppts |
+| Net loss ratio | 61% | 69% | -8 ppts |
+| Net loss | -$43.4M | -$43.9M | roughly flat |
+| Adjusted EBITDA | -$18.7M | -$40.9M | improved 54% |
+| Adjusted FCF | +$18.8M | +$25.0M | positive but lower |
+
+## Guidance
+
+Q2 2026 shareholder letter guidance:
+
+| Metric | Q3 2026 guidance | FY2026 guidance |
+|---|---:|---:|
+| IFP | $1.537B-$1.540B | $1.632B-$1.639B |
+| GEP | $356M-$359M | $1.374B-$1.378B |
+| Revenue | $323M-$326M | $1.214B-$1.220B |
+| Adjusted EBITDA loss | -$23M to -$20M | -$51M to -$47M |
+| SBC | $24M | $95M |
+| Weighted avg. shares | 77M | 78M |
+
+Management says full-year guidance implies **Q4 2026 adjusted EBITDA of approximately +$8M**.
 
 ## Current Valuation Snapshot
 
-截至 2026-07-01 美股收盘附近，LMND 股价约 69.33 美元；按约 7682 万股估算，市值约 53.3 亿美元。基于 2026 指引，当前约为 4.4x 2026E revenue、3.25x 2026E IFP、约 10x 2026 Q1 book value。相比 2026-05-12 深度研究时约 54 美元的价格，市场已经更充分地反映盈利拐点预期。
+StockAnalysis snapshot accessed 2026-08-17, regular-session intraday around $51.41:
 
-### Scenario Valuation Update
+| Metric | Value |
+|---|---:|
+| Price | $51.41 |
+| Previous close | $52.64 |
+| Market cap | $3.98B |
+| Enterprise value | $3.84B |
+| Shares outstanding | 77.40M |
+| TTM revenue | $975.0M |
+| TTM net income | -$138.4M |
+| Cash | $376.8M |
+| Total debt | $226.4M |
+| Net cash | $141.2M |
+| Book value | $499.5M |
+| PS ratio | 4.18x |
+| Forward PS | 2.85x |
+| EV/Sales | 4.03x |
+| P/B | 8.15x |
+| Short interest | 13.54% shares out |
+| Analyst consensus | Hold |
+| Analyst price target | $60.22 |
 
-这是基于 2026 Q1 财报、2026 指引、2026-06-24 Hannover Re 8-K 和 2026-07-01 附近市场价格的情景估值更新；不是新的完整深度研究报告。
+Using FY2026 guidance midpoint:
 
-- **Bear case：30-45 美元/股**。假设 2027 revenue 13.5-14.5 亿美元、股权收入倍数 1.8-2.4x、稀释后股数约 7800-8200 万股。触发条件包括 loss ratio 反弹、car 业务赔付恶化、growth spend 效率下降、Q4 2026 adjusted EBITDA 转正落空。
-- **Base case：55-80 美元/股**。假设 2027 revenue 15.0-16.5 亿美元、股权收入倍数 3.0-3.8x、稀释后股数约 7900-8200 万股。触发条件包括 Q4 2026 adjusted EBITDA 转正、IFP 维持约 25%+ 增长、gross loss ratio 稳定在 60%-65% 附近。
-- **Bull case：95-140 美元/股**。假设 2027 revenue 17.5-20.0 亿美元、股权收入倍数 4.5-5.5x、稀释后股数约 8000-8400 万股。触发条件包括 pet/car 高增长且 loss ratio 稳定、AI 费用杠杆显著、市场相信 LMND 可长期产生高 ROE。
+- Market cap / 2026E revenue: ~3.27x.
+- EV / 2026E revenue: ~3.16x.
+- Market cap / 2026E IFP: ~2.43x.
+- P/B: ~8.0x.
 
-实用价格区间：40-48 美元为强安全边际区；50-58 美元为观察/小仓试探区；58-78 美元为合理但不便宜区；80 美元以上需要更多 Q2/Q3 数据和 Investor Day 证明。当前约 69 美元处于 base case 中上段，更像“持有观察”而非高安全边际买点。
+## Scenario Valuation
 
-## Key Risks
+| Scenario | Implied price | Core assumptions | Trigger |
+|---|---:|---|---|
+| Bear | ~$30 | 2027 revenue $1.35B, 1.8x revenue, 82M diluted shares | loss ratio rebounds, Q4 EBITDA miss, growth spend efficiency worsens |
+| Base | ~$59 | 2027 revenue $1.60B, 3.0x revenue, 81M diluted shares | Q4 adjusted EBITDA positive, GLR 60%-65%, IFP 25%+ growth |
+| Bull | ~$110 | 2027 revenue $1.90B, 4.8x revenue, 83M diluted shares | car/pet growth, durable AI expense advantage, credible path to ROE |
+| 2028 upside | ~$114 | 2028 revenue $2.45B, 4.0x revenue, 86M diluted shares | net income breakeven/positive and sustained 30% IFP growth |
 
-- Loss ratio 反弹，尤其 car、homeowners 和巨灾暴露。
-- 估值已不便宜，盈利拐点若推迟可能压缩倍数。
-- 再保险 cession rate 下降提高收入留存，也提高净赔付波动和资本需求。
-- Hannover Re 增长融资降低短期现金压力，但并非免费资本；若 cohort economics 下降，未来保费分成偿还会放大获客回报风险。
-- Growth spend 增加后 LTV/CAC 可能下滑。
-- Car 业务高增长但执行难度高。
-- 2026 SBC 预计约 9500 万美元，影响 GAAP 盈利质量和稀释。
-- AI 定价、telematics、隐私和保险监管风险。
+## Price Discipline
 
-## Latest Earnings or Company Update
-
-- 最新季度：2026 Q1，股东信和 10-Q 于 2026-04-29/2026-04-30 发布。
-- IFP 13.33 亿美元，+32% YoY。
-- Customers 3,142,581，+23% YoY。
-- Premium/customer 424 美元，+7% YoY。
-- ADR 85%，同比 +1pct，环比持平。
-- GEP 3.062 亿美元，+31% YoY。
-- Revenue 2.580 亿美元，+71% YoY。
-- Gross profit 1.001 亿美元，gross profit margin 39%。
-- Net loss -3580 万美元，EPS -0.47 美元。
-- Adjusted EBITDA -1710 万美元。
-- Operating cash flow -60 万美元，adjusted FCF +1700 万美元。
-- 2026-06-24：公司披露与 Hannover Re 的 2027-2028 新业务融资协议，最高 outstanding capital 2027 年 1.5 亿美元、2028 年 2.5 亿美元。
-- 2026-11-17 将举行 Investor Day。
+| Price Zone | Research implication |
+|---|---|
+| <$35 | Strong margin-of-safety research zone if loss ratio and capital remain healthy. |
+| $35-$45 | Attractive observation / phased-buy zone. |
+| $45-$58 | Current area; small-position research zone, not heavy add zone. |
+| $58-$75 | Base-case upper range; requires Q4 EBITDA proof. |
+| $75-$100 | Requires Investor Day and 2027 profitability evidence. |
+| >$100 | Bull-case pricing; do not chase without strong GAAP/ROE proof. |
 
 ## What Changed Since Prior View
 
-- 新增 2026-07-02 情景估值更新：股价从 2026-05-12 报告时约 54 美元升至约 69 美元，当前估值已由较合理变为接近 base case 中上段。
-- 新增 Hannover Re 增长融资协议影响：该协议提高 2027-2028 年增长投入的资金弹性，但也引入 cohort premium 偿还和资本成本约束，需要等 2026 Q2 10-Q 查看完整条款。
-- 研究观点维持 **建设性但需观察**；价格纪律更重要，当前不再是高安全边际区间。
+- Prior 2026-07-02 tracker used price around $69.33 and viewed the stock as base-case mid/upper-zone. Current price around $51.41 is materially more attractive.
+- Q2 2026 confirmed continued IFP growth acceleration and improved loss ratios.
+- FY2026 revenue guidance updated to $1.214B-$1.220B; adjusted EBITDA loss guide -$51M to -$47M, with Q4 implied adjusted EBITDA around +$8M.
+- Reinsurance renewal lowers effective quota share cession from ~20% to ~18%, adding income retention but also more net risk.
+- Hannover Re financing details are clearer: up to $250M outstanding capital, about 9.8% cost of capital, cohort/funding constraints; useful but not free money.
+- Research view remains **建设性但需观察**. The price is better, but the business is not yet low-risk enough for heavy sizing.
+
+## Key Risks
+
+- Gross loss ratio or net loss ratio rebounds, especially car/homeowners/CAT.
+- Q4 2026 adjusted EBITDA positive target is missed or achieved only via low-quality cost timing.
+- Q3 growth spend increase lowers LTV/CAC or brings worse cohorts.
+- Lower reinsurance cession increases capital need and earnings volatility.
+- Hannover Re financing costs and cohort premium sharing reduce future economics.
+- SBC/revenue remains high; H1 SBC $45.7M, FY guidance $95M.
+- Car insurance execution risk: claims complexity, inflation, regulatory pricing delay.
+- Valuation remains high vs book value and current GAAP losses.
+- High beta and short interest create large price swings.
 
 ## Metrics or Events to Monitor Next
 
-- 2026 Q2 IFP 增速、GEP、revenue 和 gross profit。
-- Gross loss ratio、gross loss ratio ex-CAT、net loss ratio。
-- Car IFP 增长和 car gross loss ratio。
-- LTV/CAC 是否维持约 3x。
-- Growth spend 与新增 IFP 的效率。
-- Hannover Re 融资协议完整条款：covenants、termination、cohort premium 分成、资金成本和偿还机制。
-- 再保险自留比例变化和资本需求。
-- 2026 Q4 adjusted EBITDA 转正目标。
-- SBC/revenue 和股数稀释。
+- Q3 2026: IFP $1.537B-$1.540B, revenue $323M-$326M, adjusted EBITDA loss -$23M to -$20M.
+- Q4 2026 adjusted EBITDA positive target and implied +$8M adjusted EBITDA.
+- 2026-11-17 Investor Day: long-term ROE/FCF/combined-ratio framework.
+- Gross loss ratio, gross loss ratio ex-CAT, net loss ratio.
+- Car IFP, car gross loss ratio, car LAE ratio.
+- Growth spend vs IFP growth and LTV/CAC.
+- Operating cash flow and adjusted FCF after Q2.
+- SBC and shares outstanding.
+- Regulatory surplus and borrowings under financing agreements.
+- Reinsurance renewal economics and catastrophe exposure.
 
 ## What Would Change the Research View
 
-- 若 Q4 2026 adjusted EBITDA 转正兑现、loss ratio 稳定、IFP 增长保持 30% 左右，且 2026-11 Investor Day 给出可信长期 ROE/FCF 路径，观点可上调至 **Positive**。
-- 若增长和承保改善持续但估值仍需要消化，维持 **建设性但需观察**。
-- 若 loss ratio 回升、growth spend 效率下降、ADR 走弱、Hannover Re 融资条款显示资本成本或偿还压力高于预期，或盈利路径后移，观点下调至 **Neutral/Negative**。
+- **Upgrade to Positive**: Q4 adjusted EBITDA positive is achieved, Q3/Q4 GLR stays around 60%-65%, IFP growth remains 25%+, Investor Day gives credible long-term ROE/FCF roadmap, and the stock remains near or below $55-$60.
+- **Maintain constructive but watchful**: growth and loss ratio remain good, but GAAP/SBC/FCF are not yet fully proven or stock returns to $60-$75.
+- **Downgrade to Neutral/Negative**: Q4 adjusted EBITDA target slips, loss ratio rebounds, car underwriting worsens, growth spend efficiency declines, or financing/SBC/dilution pressure rises.
 
 ## Research Files
 
-- `deep-research/2026-05-12-deep-research.md`
-- `tracker.md` updated 2026-07-02 with scenario valuation and Hannover Re financing update.
-
-## Sources
-
-- Lemonade Q1 2026 shareholder letter and Q1 2026 Form 10-Q, filed/released 2026-04-29/2026-04-30.
-- Lemonade 2026-06-24 Form 8-K: New Business Financing Agreement with Hannover Re.
-- Yahoo Finance chart API market snapshot for LMND, regular market price around 2026-07-01 close.
+- `deep-research/2026-05-12-deep-research.md` — prior deep research.
+- `deep-research/2026-08-17-deep-research-update.md` — current Q2 2026 / valuation update.
