@@ -64,6 +64,7 @@ For newly listed companies, recent IPOs, post-earnings updates, or cases where t
 Before issuing a thesis, valuation range, or post-earnings view, verify and state the date or period for:
 
 - Current share price, market cap, enterprise value, and diluted share count.
+- Current forward P/E plus the stock's highest and lowest forward P/E over the last one year when available; state the market-data date, earnings-estimate basis, and source.
 - Latest fiscal quarter and trailing twelve-month financials.
 - Revenue growth, gross margin, operating margin, net income or loss, free cash flow, and cash balance.
 - Debt, lease obligations, maturity schedule, and net cash or net debt.
@@ -76,6 +77,7 @@ If data is unavailable or inconsistent across sources, flag the uncertainty inst
 For decision-critical numbers, use a two-source check whenever practical:
 
 - Cross-check revenue, net income or loss, cash, debt, diluted shares, market cap, enterprise value, free cash flow, and major KPIs against at least two reputable sources.
+- Cross-check forward P/E data when practical. If only one source provides a usable current and one-year range, label it as a single-source market-data snapshot instead of treating it as fully verified.
 - Prefer company filings or investor relations as the source of record when third-party data conflicts with company materials.
 - If an investor-relations site blocks automation or returns bot-detection/access-denied pages, do not stall: use SEC filings/exhibits, company press releases mirrored in 8-Ks, market-data pages such as StockAnalysis/Yahoo chart APIs, and reputable secondary sources; explicitly state the IR access limitation and lower confidence for any unavailable materials such as Investor Day PDFs.
 - If the difference is small and explainable, state the likely reason, such as reporting date, TTM versus fiscal-year period, GAAP versus non-GAAP, or basic versus diluted share count.
@@ -208,6 +210,7 @@ Always explain why the chosen valuation method fits the company:
 
 - Use EV/Sales or EV/Gross Profit mainly for high-growth or unprofitable companies, and explicitly connect the multiple to expected growth, margin potential, and cash burn.
 - Use P/E, PEG, EV/EBITDA, EV/EBIT, or FCF yield for profitable companies, and adjust for cyclicality, one-time items, and quality of earnings.
+- For deep research on companies where earnings-based valuation is meaningful, include a forward P/E valuation snapshot table in the Valuation Work section. The table must show current forward P/E, the highest forward P/E in the last one year, and the lowest forward P/E in the last one year, with dates or periods, source, and a brief interpretation of whether the current multiple is near the high, middle, or low of its recent range.
 - Use DCF only when assumptions can be stated clearly; show revenue growth, margin, FCF conversion, discount rate, terminal growth or terminal multiple, and sensitivity.
 - Use book value, tangible book, ROE, combined ratio, loss ratio, or credit metrics for financials and insurers where relevant.
 - Use scenario valuation for important conclusions: bear, base, and bull. Each scenario must include assumptions, explicit implied value range, and key trigger.
@@ -215,6 +218,19 @@ Always explain why the chosen valuation method fits the company:
 - Do not replace explicit valuation ranges with vague labels like "upside," "downside," "near fair value," or "price may recover" when current price, share count, financials, and method assumptions are available.
 - If an explicit range is not defensible, state "No reliable valuation range" and explain the missing data, source conflict, security structure, or assumption sensitivity that prevents a range. Then provide a bounded proxy, such as the revenue, margin, multiple, yield, or NAV condition that would make the security attractive or unattractive.
 - Include dilution and SBC impact when meaningful. Prefer diluted shares and enterprise value over simplistic market-cap math.
+- Do not force forward P/E for loss-making companies, companies with negative or unreliable forward EPS, digital-asset treasury/NAV situations, or cases where consensus estimates are unavailable or stale. In those cases, write "Forward P/E not meaningful" in the table and explain the reason, then use the valuation method that fits the company.
+
+### Forward P/E Snapshot Table
+
+When forward P/E is meaningful, use this table in deep company research:
+
+| Metric | Value | Date / period | Source | Research interpretation |
+|---|---:|---|---|---|
+| Current forward P/E | | | | |
+| 1-year high forward P/E | | | | |
+| 1-year low forward P/E | | | | |
+
+Interpretation must answer, in plain language, whether the stock is statistically cheaper or more expensive than its own recent one-year valuation history, while reminding the reader that a lower multiple is not automatically a buy signal if earnings estimates are falling or business quality is deteriorating.
 
 ## Risk / Reward Framework
 
@@ -419,6 +435,7 @@ Begin with this fixed summary block:
 
 6. **Valuation Work**
    - Current multiples and historical context.
+   - Forward P/E snapshot table: current forward P/E, 1-year high forward P/E, and 1-year low forward P/E, including date/period, source, and what the current position in the range implies for cheap/expensive judgment.
    - Peer comparison where useful.
    - Scenario valuation: bear, base, bull.
    - Explicit assumptions for revenue growth, margins, multiples, discount rate, or terminal value.
