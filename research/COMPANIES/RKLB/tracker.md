@@ -1,16 +1,16 @@
 # Rocket Lab（RKLB）Tracker
 
-Last updated: 2026-09-01
+Last updated: 2026-09-14
 
 ## Current Research View
 
 **Constructive but watchful（建设性但需观察）**，中等偏高置信度，12-24 个月视角。
 
-2026-09-01 更新的核心不是基本面恶化，而是价格回落后的风险回报重估：上一版用 2026-08-19 close **$75.84**；本次可交叉到的 2026-09-01 报价约 **$63.92-$63.94**，较 $75.84 低约 **15.7%**。这让 RKLB 从“$70-$90 高但可跟踪区”回到“$50-$70 有吸引力但仍需确认区”。
+2026-09-14 更新的核心是：基本面继续有执行进展，但估值仍要求多个未来节点同时兑现。最新已完成常规交易日 2026-09-11 收盘 **$62.95**；相对 2026-08-19 close **$75.84** 低约 **17.0%**。这仍把 RKLB 放在“$50-$70 有吸引力但需确认区”。
 
-维持建设性：Q2 2026 revenue **$234M**、同比 **+62%**；backlog **$2.36B**、同比 **+137%**；Q3 2026 revenue guide **$250M-$265M**；Launch / HASTE / Space Systems / defense orders 继续强化“真实航天基础设施平台” thesis。
+维持建设性：Q2 2026 revenue **$234M**、同比 **+62%**；backlog **$2.36B**、同比 **+137%**；Q3 2026 revenue guide **$250M-$265M**；9月11日年内第16次 Electron 发射成功。Launch / HASTE / Space Systems / defense orders 继续强化“真实航天基础设施平台” thesis。
 
-仍不升级 Positive：公司仍亏损并烧现金，TTM FCF 约 **-$371M**；Neutron 尚未首飞；Iridium 交易仍待股东/监管/融资/整合；即使用约 $63.92，EV/TTM Sales 仍约 **46.8x-50.3x**，EV/Q3 guide annualized sales 约 **35.0x-37.6x**。
+仍不升级 Positive：公司仍亏损并烧现金，TTM FCF 约 **-$371M**；Neutron 尚未首飞；Iridium 交易仍待股东/监管/融资/整合；按 $62.95，EV/TTM Sales 约 **46.1x-49.5x**，EV/Q3 guide annualized sales 约 **34.4x-37.0x**。
 
 ## Current Main Thesis
 
@@ -59,7 +59,7 @@ Last updated: 2026-09-01
 
 ## Latest Earnings or Company Update
 
-Latest quarter: **Q2 2026**, released 2026-08-10.
+最新 quarter: **Q2 2026**, released 2026-08-10；最新公司运营更新为 **2026-09-11 年内第16次 Electron 发射成功**。
 
 | Metric | Q2 2026 |
 |---|---:|
@@ -177,3 +177,4 @@ Downgrade toward **Neutral / Negative** if:
 - `deep-research/2026-07-08-deep-research-v2.md`
 - `deep-research/2026-08-20-deep-research-update.md`
 - `deep-research/2026-09-01-deep-research-update.md`
+- `deep-research/2026-09-14-deep-research-update.md`
