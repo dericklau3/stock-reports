@@ -1,32 +1,35 @@
 # Oracle（ORCL）Tracker
 
-Last updated: 2026-07-14
+Last updated: 2026-09-14
 
 ## Current Research View
 
-**建设性但需观察；估值吸引力提高**，中等置信度，12–24 个月视角。
+**建设性但需观察；Q1 FY2027 需求强、资本回报仍待验证**，中等置信度，12–24 个月视角。
 
-ORCL 2026-07-13 Nasdaq 正式收盘 131.68 美元，较 2026-06-26 的 148.53 美元再跌约 11.3%。Yahoo 日线收盘为 131.54 美元，两者相差约 0.11%。按 FY2027 non-GAAP EPS 指引 8.05 美元，forward non-GAAP P/E 约 16.4 倍；按当前股价和 2026-06-12 流通股数估算市值约 3,793 亿美元，StockAnalysis 同源口径 EV 约 5,144 亿美元，对 FY2027 900 亿美元 revenue guidance 约 5.7 倍 EV/Sales。
+ORCL 最新可核验的 2026-09-11 Oracle IR/Nasdaq 收盘为 **$150.28**。按 Q1 FY2027 更新后的 non-GAAP EPS 指引 $8.10，forward non-GAAP P/E 约 **18.6x**；按 2026-09-07 流通股数 3,023.736M 估算市值约 **$454.4B**，按现金、短期证券及 notes payable 的窄口径 EV 约 **$542.7B**，对 FY2027 $90B revenue guidance 约 **6.0x EV/Sales**。
 
-股价下降改善了安全边际，但没有改变核心矛盾：OCI 和 RPO 证明 AI 云需求强劲；FY2026 FCF -236.86 亿美元、借款 1,295.41 亿美元、2,600 亿美元额外数据中心租赁承诺、FY2027 约 400 亿美元融资与 200 亿美元 ATM 则要求 Oracle 证明 OCI 合同能够产生足够高的每股资本回报。
+Q1 FY2027 进一步证明 OCI/RPO 需求强劲，但也确认单季 capex **$28.5B**、FCF **-$5.4B**，并通过 ATM 净融资约 **$19.9B**、发行约 **141M 股**。借款约 **$125.3B**、长期数据中心租赁和电力承诺，要求 Oracle 证明 AI 云合同能够产生高于资本成本的每股回报。
 
 ## Current Main Thesis
 
+- Q1 FY2027 revenue **$19.345B**，同比 **+30%**。
+- Q1 FY2027 cloud revenue **$11.607B**，同比 **+62%**；OCI 同比 **+121%**。
 - FY2026 revenue 673.57 亿美元，同比增长 17%。
 - FY2026 cloud revenue 339.89 亿美元，同比增长 39%。
 - FY2026 OCI revenue 181.01 亿美元，同比增长 77%。
 - Q4 OCI revenue 57.87 亿美元，同比增长 93%。
 - FY2026 cloud applications revenue 158.88 亿美元，同比增长 11%。
 - FY2026 software revenue 245.41 亿美元，同比下降 1%。
-- RPO 6,380 亿美元，同比增长 363%。
+- RPO **$664B**，较 FY2026 年末 $638B 增加；去年同期 $455B。
 - 约 12% RPO 预计未来 12 个月确认，34% 在第 13–36 个月确认，34% 在第 37–60 个月确认。
 - 大型 AI 合同中客户预付或自行提供硬件部分累计约 750 亿美元。
 - FY2027 revenue guidance：900 亿美元。
-- FY2027 non-GAAP EPS guidance：8.05 美元。
+- FY2027 non-GAAP EPS guidance：**$8.10**。
 - Q1 FY2027 revenue growth guidance：27%–29%。
 - Q1 cloud revenue growth guidance：58%–64%。
 - Q1 non-GAAP EPS guidance：1.72–1.76 美元。
-- FY2026 OCF 319.77 亿美元；capex 556.63 亿美元；FCF -236.86 亿美元。
+- Q1 FY2027 OCF **$23.103B**；capex **$28.499B**；FCF **-$5.396B**。
+- Q1 FY2027 ATM 净融资约 **$19.909B**，发行约 **141M 股**。
 
 ## Key Risks
 
@@ -44,39 +47,38 @@ ORCL 2026-07-13 Nasdaq 正式收盘 131.68 美元，较 2026-06-26 的 148.53 �
 
 ## Latest Earnings or Company Update
 
-- 最新季度：Q4 FY2026，结果发布于 2026-06-10。
-- 最新年报：FY2026 Form 10-K，2026-06-22 提交。
+- 最新季度：Q1 FY2027，结果发布于 2026-09-10。
+- 最新 10-Q：截至 2026-08-31，2026-09-11 提交。
 - 最新资本市场文件：424B5，2026-06-23 提交，允许最多 200 亿美元普通股 ATM，并新增销售代理。
-- SEC submissions 截至 2026-07-14 核验：2026-06-26 之后没有新的 Oracle 8-K、10-Q 或 10-K。
-- 2026-07-13 Nasdaq 正式收盘：131.68 美元；日内低点 131.35 美元；成交量约 5,666 万股；单日下跌 6.37%。
+- SEC submissions 截至 2026-09-14 核验：最新 8-K 为 2026-09-10 Q1 业绩及 2026-09-14 Ellison 10b5-1 取消计划文件。
+- 2026-09-11 Oracle IR/Nasdaq 正式收盘：**$150.28**；开盘 $164.43，最高 $166.00，最低 $149.84，成交量约 80.44M。
+- 2026-09-12 Ellison 取消最多 50M 股出售计划；此前没有通过该计划出售股票。该信息不改变 FCF/资本结构判断。
 - 2026-07-02 Courthouse News 报道投资者对 2026 年 2 月债券发行披露提起诉讼；Oracle 拒绝评论。
 - 2026-07-01/02 Oracle 官方披露 Project Jupiter 改用超过 2GW、带冗余的 Bloom Energy 燃料电池资源，并明确由 Oracle 承担能源基础设施和全部电力成本；许可可行性改善，但能源资本责任更清楚。
 
 ## What Changed Since Prior View
 
-- 新增 `deep-research/2026-07-14-deep-research.md`，明确比较 2026-06-27 观点。
-- 股价从 148.53 美元降至 131.68 美元，forward non-GAAP P/E 从约 18.5 倍降至约 16.4 倍。
-- 研究观点仍为 **建设性但需观察**，但估值吸引力评分由 6.5/10 上调至 7.4/10。
-- 当前价格从“接近 base 下沿”进入“可接受观察/小仓分批区上沿”。
-- 公司基本面逻辑未发生新变化；近期主要是资本回报、融资和客户集中风险继续被市场重估。
-- 新增证券诉讼监控项，但不把未经证实的原告指控当作事实。
+- 新增 `deep-research/2026-09-14-deep-research-update.md`，覆盖 Q1 FY2027 业绩与新 10-Q。
+- 相比旧报告，云收入、OCI、RPO 和经营现金流显著增强，但 capex、负 FCF 和 ATM 稀释也同步确认。
+- 研究观点仍为 **建设性但需观察**；需求证据升级，资本回报证据尚未升级到 Positive。
+- 最新 $150.28 接近 base 区间下沿；估值比高位合理，但不是强安全边际。
 
 ## Valuation Snapshot
 
-Price used: 131.68 美元，Nasdaq 2026-07-13 official close；Yahoo alternate close 131.54 美元。
+Price used: **$150.28**，Oracle IR/Nasdaq 2026-09-11 official close。
 
 | 情景 | 假设 | 隐含价格 |
 |---|---|---:|
 | Bear | 12–14x FY2027 non-GAAP EPS；指引/RPO/FCF/稀释恶化 | 97–113 美元 |
-| Base | 18–22x；FY2027 指引大致兑现，但 FCF 尚未完全证明 | 145–177 美元 |
-| Bull | 25–30x；OCI 交付顺利，客户预付增加，FCF 路径清晰 | 201–242 美元 |
+| Base | 18–22x；FY2027 指引大致兑现，但 FCF 尚未完全证明 | 146–178 美元 |
+| Bull | 25–30x；OCI 交付顺利，客户预付增加，FCF 路径清晰 | 203–243 美元 |
 
 Practical price zones:
 
 - **≤110 美元**：强安全边际候选区。
 - **110–135 美元**：可接受观察/小仓分批区。
-- **135–175 美元**：基准公允价值区。
-- **175–200 美元**：偏贵，需要 FCF 和 OCI margin 进一步证明。
+- **135–180 美元**：基准公允价值与合理波动区。
+- **180–200 美元**：偏贵，需要 FCF 和 OCI margin 进一步证明。
 - **>200 美元**：依赖 bull case，不宜证据不足时追价。
 
 ## Core Thesis Assumptions That Must Remain True
@@ -102,11 +104,11 @@ Practical price zones:
 
 ## Metrics or Events to Monitor Next
 
-- Q1 FY2027 revenue、cloud revenue 和 non-GAAP EPS 指引执行。
+- Q2 FY2027 revenue、cloud revenue 和 non-GAAP EPS 指引执行。
 - OCI revenue growth、cloud margin 和数据中心利用率。
 - RPO 新增量、收入确认速度、客户集中和合同质量。
 - Customer prepayments 和 customer-supplied GPU。
-- FY2027 capex、net cash outlay、OCF 与 FCF。
+- FY2027 capex、net cash outlay、OCF 与 FCF；重点观察单季 capex 是否接近 $28.5B 的高位。
 - Debt、interest expense、credit ratings 和租赁负债。
 - 200 亿美元 ATM 的发行进度、均价和 fully diluted shares。
 - OpenAI 相关诉讼进展及 Oracle 是否提供额外披露。
@@ -133,3 +135,4 @@ Downgrade to **Neutral / Negative** if guidance is cut, RPO is delayed or renego
 - `deep-research/2026-06-12-deep-research.md`
 - `deep-research/2026-06-27-deep-research.md`
 - `deep-research/2026-07-14-deep-research.md`
+- `deep-research/2026-09-14-deep-research-update.md`
