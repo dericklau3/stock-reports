@@ -1,6 +1,6 @@
 ---
 name: us-options-structure
-description: Use when a user provides a US-listed stock or ETF ticker with listed options and wants a compact current-day options table, including calls, puts, volume, OI, premium, moneyness, IV, and put premium yield / annualized yield.
+description: Use when a user provides a US-listed stock or ETF ticker with listed options and wants a compact current-day options table with strike, expiration, DTE, option price, IV, and Put premium yield / annualized yield.
 ---
 
 # US Options Structure Research
@@ -9,7 +9,7 @@ description: Use when a user provides a US-listed stock or ETF ticker with liste
 
 Analyze the current trading day's listed-options structure for one US stock or ETF and return a **single compact table**.
 
-This is descriptive market-structure research, not a market-wide screener, fundamental analysis, price forecast, or trade recommendation.
+This is descriptive market-structure research, not fundamental analysis, a price forecast, or a trade recommendation.
 
 If the user gives only a ticker such as `$AAPL`, `NVDA`, `TSLA`, or `SPY`, begin directly without asking follow-up questions.
 
@@ -17,13 +17,13 @@ Use the user's language unless asked otherwise.
 
 ## Core rules
 
-1. Never mix trading dates. Previous-session data may be used only as clearly labeled background.
-2. Never describe contract-level daily Volume as one trade.
-3. Never infer Buy/Sell from stale Last versus current Bid/Ask.
-4. Never fabricate missing values.
-5. If fewer than 10 valid current-day contracts are available, show only the available rows.
-6. Calls and Puts must appear in the **same table**.
-7. Keep prose minimal. The table is the main output.
+1. Never mix trading dates. Previous-session data may be used only when clearly labeled as prior-session context.
+2. Never fabricate missing values.
+3. Calls and Puts must appear in the **same table**.
+4. Keep prose minimal. The table is the main output.
+5. Do not output extra analytical sections unless the user explicitly asks for them.
+6. If a source date is ambiguous or contradictory, exclude that contract from the main table.
+7. If current-day option prices cannot be verified, say `今日数据不足` rather than filling the table with stale prices.
 
 ## Session gate
 
@@ -35,84 +35,64 @@ Start with one short line:
 
 Rules:
 
-- Pre-market: no current-day listed-options trading yet. Use prior-session chain only if clearly labeled.
-- Intraday: only current-day records may enter the main table.
+- Pre-market: there is no current-day listed-options trading yet. Use prior-session chain only if clearly labeled.
+- Intraday: only current-day prices may enter the main table.
 - Post-close: prefer completed-session data.
-- If a source date is ambiguous or contradictory, exclude that row from the main table.
+- If a source's date is unclear, do not use it in the main table.
 
 ## Source priority
 
-Prefer:
+Prefer, in order:
 
 1. exchange / official option-chain data;
-2. primary market-data pages with current chain fields;
+2. primary market-data pages with current option-chain fields;
 3. established financial-data providers;
 4. unusual-options aggregators only as supporting evidence.
 
-If current-day data cannot be verified, say `今日数据不足` rather than filling the table with older activity.
+Cross-check current-day option prices when practical.
 
-## Dataset modes
+## Contract selection
 
-### Trade-print mode
+The final answer should be useful rather than exhaustive.
 
-Use when current-day individual option executions are available.
+Default target: up to 20 contracts total.
 
-Rank primarily by verified Premium:
+Use current-day activity internally to choose the most relevant contracts, considering where available:
 
-`Premium = Contracts × Trade Price × 100`
+- trading activity;
+- proximity to spot;
+- near-term expirations;
+- unusual implied volatility;
+- meaningful Call or Put concentration.
 
-### Chain-activity mode
+These ranking inputs are internal selection signals and should **not** be added as table columns.
 
-Use when only current-day option-chain activity is available.
+Include both Calls and Puts when meaningful contracts exist on both sides.
 
-Daily Volume is aggregate contract activity, not one trade.
+Do not pad the table with stale contracts just to reach a target count.
 
-If a representative current-day option price is verified, calculate:
+## Option price
 
-`Premium Proxy = Today Volume × Current-day Option Price × 100`
+The `期权价格` column must use a price attributable to the current trading day.
 
-Label it as `Premium Proxy`, not as one trade's premium.
+Prefer, in order:
 
-If current-day option price cannot be verified, leave Premium as `N/A` and rank primarily by Volume.
+1. a verified current-day trade/last price;
+2. a reliable current-day mark or midpoint when clearly identified;
+3. another clearly current-day representative option price from a reputable source.
 
-## Buy / Sell direction
+Do not use a stale Last from a prior trading day to calculate Put yield.
 
-Allowed labels:
+If a current-day option price cannot be verified, use `N/A`.
 
-- Buy Call
-- Sell Call
-- Buy Put
-- Sell Put
-- Unknown
+## DTE
 
-Only infer Buy/Sell when either:
+`DTE` means calendar days remaining until expiration.
 
-- a reliable source explicitly identifies the aggressor side; or
-- execution price and contemporaneous Bid/Ask are available.
+- Expiring today: `DTE = 0`.
+- Expiring tomorrow: `DTE = 1`.
 
-Otherwise use `Unknown`.
-
-Do not infer side from a stale Last price.
-
-## OI and Volume
-
-Treat intraday OI as the latest published OI, normally reflecting positions through the prior session.
-
-`Volume > OI` may indicate fresh activity but does not prove opening positions.
-
-Do not claim opening/closing status unless stronger evidence exists.
-
-## Moneyness
-
-For Calls:
-
-`OTM % = max(Strike - Spot, 0) / Spot × 100`
-
-For Puts:
-
-`OTM % = max(Spot - Strike, 0) / Spot × 100`
-
-If ITM, display `ITM` plus the corresponding percentage distance through spot.
+Use the US trading date when calculating DTE.
 
 ## Put yield calculations
 
@@ -134,13 +114,11 @@ Example:
 - Strike = $50
 - Put price = $2
 
-Then:
-
 `收益率 = 2 / 50 × 100% = 4.00%`
 
-### Annualized put premium yield
+### Annualized Put premium yield
 
-For DTE > 0:
+For `DTE > 0`:
 
 `年化收益率 = 收益率 × 365 / DTE`
 
@@ -148,101 +126,77 @@ Example with DTE = 30:
 
 `年化收益率 = 4.00% × 365 / 30 = 48.67%`
 
-For 0DTE:
+For `DTE = 0`:
 
 `年化收益率 = N/A`
 
 ### Interpretation
 
-When the direction is `Sell Put`, this approximates the gross option-premium yield relative to strike-based cash-secured capital.
+For a Put, these two fields represent the option premium as a percentage of strike-based cash-secured capital and its simple annualized equivalent.
 
-When the direction is `Buy Put` or `Unknown`, the same numeric ratio may still be displayed for comparison, but it must not be described as an earned return. It is only the option premium as a percentage of strike.
+They are most naturally interpreted from a Sell Put / cash-secured Put perspective, but the table does not need a separate direction column.
 
-These metrics do not include:
+These are simple gross yield metrics and do not include commissions, taxes, margin treatment, early assignment, opportunity cost, collateral interest, mark-to-market changes, or compounding.
 
-- commissions;
-- margin treatment;
-- early assignment;
-- opportunity cost;
-- interest on collateral;
-- taxes;
-- mark-to-market changes;
-- compounding.
-
-Only calculate these metrics using a current-day option price. If the price is stale or its date is unclear, use `N/A`.
+Only calculate them from a current-day option price. If the price is stale or uncertain, use `N/A`.
 
 ## Main output table
 
 The report should primarily consist of **one table** combining Calls and Puts.
 
-Use this exact column order when data is available:
+Use this exact column order:
 
-| 类型 | 方向 | Strike | 到期日 | DTE | 期权价格 | Volume | OI | Vol/OI | Premium / Proxy | 现货价 | ITM/OTM | IV | 收益率 | 年化收益率 | 数据状态 |
-|---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---:|---:|---|
+| 类型 | Strike | 到期日 | DTE | 期权价格 | IV | 收益率 | 年化收益率 | 数据状态 |
+|---|---:|---|---:|---:|---:|---:|---:|---|
 
 ### Column rules
 
 - 类型: `Call` or `Put`.
-- 方向: Buy Call / Sell Call / Buy Put / Sell Put / Unknown.
 - Strike: option strike.
 - 到期日: expiration date.
 - DTE: calendar days to expiration.
-- 期权价格: verified current-day trade price or current-day representative chain price.
-- Volume: current-day volume.
-- OI: latest published OI.
-- Vol/OI: `Volume / OI`; if OI = 0 or unavailable, use `N/A`.
-- Premium / Proxy: real trade Premium in trade-print mode; Premium Proxy in chain mode; otherwise `N/A`.
-- 现货价: spot price used for moneyness calculation.
-- ITM/OTM: status plus percentage distance.
+- 期权价格: verified current-day option price.
 - IV: implied volatility when available.
 - 收益率: Put only; Calls show `N/A`.
 - 年化收益率: Put only; Calls show `N/A`; 0DTE shows `N/A`.
-- 数据状态: use short labels such as `Verified`, `Derived`, `Unknown side`, `Stale price`, or `Date conflict`.
+- 数据状态: short labels only, such as `Verified`, `Stale price`, `Date conflict`, or `N/A`.
 
-## Row selection and ordering
+Do **not** add these columns unless the user explicitly asks:
 
-Keep the table useful rather than exhaustive.
+- 方向;
+- Volume;
+- OI;
+- Vol/OI;
+- Premium / Proxy;
+- 现货价;
+- ITM/OTM.
 
-Default target: up to 20 rows total.
+## Formatting
 
-Prefer rows with the strongest combination of:
+Keep the answer visually compact.
 
-1. current-day Volume;
-2. Premium / Premium Proxy;
-3. Volume relative to OI;
-4. proximity to spot;
-5. near-term expiration relevance;
-6. unusual IV or activity when clearly supported.
+Default format:
 
-Include both Calls and Puts when meaningful activity exists on both sides.
+1. one short `As of` line;
+2. the single table;
+3. at most one short sentence after the table.
 
-Do not pad the table with stale rows merely to reach a target count.
+Do not create separate Dashboard, Top Calls, Top Puts, Expiry Map, OI analysis, Structural Checks, Raw vs Adjusted, or long narrative sections unless explicitly requested.
 
-## Optional one-line summary
-
-After the table, add at most 1–2 concise sentences summarizing only the most obvious structure, for example:
-
-- which expiry / strike has the most activity;
-- whether activity is concentrated in Calls or Puts;
-- which Put contracts have the highest premium yield / annualized yield;
-- whether data quality prevents directional interpretation.
-
-Do not create separate Dashboard, Top Calls, Top Puts, Expiry Map, Structural Checks, or long narrative sections unless the user explicitly asks for them.
+When useful, order the table by expiration first and then Strike, or by relevance if current-day activity clearly identifies the most important contracts.
 
 ## Failure-prevention checklist
 
 Before finalizing, verify:
 
-- main-table rows belong to the correct trading date;
-- prior-session data is not mixed into today's rows;
-- daily Volume is not described as one trade;
-- stale Last is not multiplied by current Volume;
-- Buy/Sell labels have contemporaneous evidence;
+- table rows belong to the correct trading date;
+- stale option prices are not presented as current-day prices;
 - Call yield columns are `N/A`;
 - Put yield uses `Option Price / Strike`;
 - annualized Put yield uses `Yield × 365 / DTE`;
 - 0DTE annualized yield is `N/A`;
-- stale or ambiguous option prices do not produce yield values;
-- missing values are shown as `N/A` instead of invented.
+- missing values are shown as `N/A` instead of invented;
+- no removed columns reappear unless explicitly requested;
+- the final answer stays focused on the one compact table.
 
 Prefer a short, accurate table over a long narrative report.
