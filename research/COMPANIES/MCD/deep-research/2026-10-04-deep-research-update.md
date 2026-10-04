@@ -6,7 +6,7 @@
 - **Main thesis**：品牌、加盟费与租金形成稳健利润引擎；低估值提供更好的起点，但必须验证客流、加盟商回报和NEXT投入的每股现金回报。
 - **Key risk**：长期增长预期降低，加盟商支持与门店改造消耗现金，低倍数成为合理的新常态。
 
-数据截至2026-10-04；最新完成交易日2026-10-02，常规收盘$231.89。StockAnalysis、Barchart历史表及ChartExchange日线一致；ChartExchange即时尾盘栏为$231.95，与日线差约0.026%，不混用盘后。本文是对2026-07-01报告的更新，不是首次覆盖。旧报告参考价$270.31，现价低约14.21%。事实、管理层目标与研究假设分别标注。本报告是研究支持，不是交易指令。
+数据截至2026-10-04；最新完成交易日2026-10-02，常规收盘$231.89。StockAnalysis与Barchart历史表一致，不混用盘后。本文是对2026-07-01报告的更新，不是首次覆盖。旧报告参考价$270.31，现价低约14.21%。事实、管理层目标与研究假设分别标注。本报告是研究支持，不是交易指令。
 
 ## 1. Executive View：便宜了，但不是没有原因
 
@@ -64,6 +64,8 @@
 来源[S1,S2]。Q2经营利润率计算约47.0%；不能直接套在系统销售上。
 
 2025收入$26.885B，EPS$11.95；2025 FCF$7.186B，对比2024的$6.672B。[S6及历史报告] H1 2026经营现金流$5.222B，capex$1.516B，FCF$3.706B，约85.3%的净利润转化率；改善也包含营运资金影响，不应简单翻倍。[S2]
+
+核验限制：2025年10-K现金流表支持FCF为$7.186B、2024年为$6.672B，但同一文件MD&A文字称2025年FCF下降$510M，存在内部不一致。本文优先使用现金流表的经营现金流减capex计算，不把MD&A的增减叙述用于估值或趋势判断。[S6]
 
 第三方TTM快照：收入$27.70B，净利润$8.79B，EPS$12.31，FCF$7.76B。[S5] FCF可用2025全年加2026H1减2025H1复核，口径约一致。
 
@@ -211,9 +213,9 @@ MCD可作为低beta核心候选，第三方5年beta约0.45，但不是现金替�
 - [S3] 2026-09-23官方NEXT战略：https://corporate.mcdonalds.com/corpmcd/our-stories/article/NEXT-growth-strategy-advances.html
 - [S4] 2026-09-17股息公告：https://www.prnewswire.com/news-releases/mcdonalds-marks-50-consecutive-years-of-dividend-increases-joining-the-ranks-of-dividend-kings-302882422.html
 - [S5] StockAnalysis估值与财务快照：https://stockanalysis.com/stocks/mcd/statistics/
-- [S6] 2025官方全年结果及10-K：https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/pdf/MCD%20Q4-25%20-%20Exhibit%2099.1%20-%20vF.pdf ; https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd1231202510k.pdf
+- [S6] 2025官方全年结果及10-K：https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/pdf/MCD%20Q4-25%20-%20Exhibit%2099.1%20-%20vF.pdf ; https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm
 - [S7] 历史季度估值：https://stockanalysis.com/stocks/mcd/financials/ratios/?p=quarterly
-- [S8] 收盘与日线：https://stockanalysis.com/stocks/mcd/ ; https://sogotrade2.websol.barchart.com/?1_selected=stockQuote&module=stockDetail&region=&symbol=MCD ; https://chartexchange.com/symbol/nyse-mcd/historical/
+- [S8] 收盘与日线：https://stockanalysis.com/stocks/mcd/ ; https://stockanalysis.com/stocks/mcd/history/ ; https://sogotrade2.websol.barchart.com/?1_selected=stockQuote&module=stockDetail&region=&symbol=MCD
 - [S9] Reuters 2026-09-23市场反应：https://www.marketscreener.com/news/mcdonald-s-outlines-8-5-billion-plan-to-support-franchisees-ce785ad9dc8ff523
 
 限制：未验证每日forward P/E极值、完整债券到期分布、完整投资者日逐字Q&A；预计业绩日期未完成公司确认。历史报告保留作为研究演变记录，不代表其数据仍然最新。
