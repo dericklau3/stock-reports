@@ -1,128 +1,99 @@
 # MCD Tracker — McDonald's Corporation
 
-Last updated: 2026-07-01
+Last updated: 2026-10-04
 
-## Current research view
+## Current Research View
 
-**Constructive but watchful / 优质防御型复利资产，但当前价格只接近合理，不算明显便宜。** MCD 是高质量、低 beta、现金流强的全球餐饮加盟体系，适合长期跟踪和作为防御型核心资产候选；但当前约 **$270.31** 对 2025 EPS $11.95 是约 **22.6x P/E**，FCF yield 约 **3.7%**，安全边际一般。
+**建设性但需观察：估值吸引力提高，经营修复未确认。** 商业模式置信度中高，修复时间与估值置信度中等。中期12–24个月，长期3–5年以上。
 
-## Current main thesis
+参考2026-10-02常规收盘$231.89，相较2026-07-01报告参考$270.31下跌约14.21%。适合低beta核心候选研究，但不等于现金替代或无条件重仓。
 
-MCD 的核心不是“卖汉堡”，而是通过全球品牌、加盟体系、地产/租金结构、供应链、Drive Thru、Delivery 和数字会员体系，把全球餐饮流量转化为高利润率、强现金流和持续股东回报。长期价值取决于同店销售质量、客流、加盟商经济性、数字化会员和新店扩张能否支撑 EPS/FCF 稳定增长。
+Latest report: `deep-research/2026-10-04-deep-research-update.md`
+Prior report: `deep-research/2026-07-01-deep-research.md`
 
-## Current valuation framework
+## Main Thesis
 
-当前参考价：约 **$270.31**。
+品牌、地点、加盟费与租金、标准化运营支持强现金引擎。NEXT通过菜单、服务与技术改善门店生产率，符合核心使命，但总部投入和加盟商收益到总部每股现金回报的桥梁尚未验证。最大反方理由：支持计划只是维持竞争力的成本，低估值可能是较低增长的合理新常态。
 
-- Bear 情景：**$180–220**，相对当前 **-33% 到 -19%**。假设同店销售疲弱、低收入消费者承压、利润率回落。
-- Base 情景：**$262–336**，相对当前 **-3% 到 +24%**。假设同店销售温和恢复、特许经营利润率稳定、回购延续。
-- Bull 情景：**$375–476**，相对当前 **+39% 到 +76%**。假设国际市场和数字化推动增长、利润率扩张、估值溢价恢复。
+## Latest Quarter and Major Update
 
-安全边际判断：
+Q2 2026（2026-08-04公告，8月7日10-Q）：
+- 全球同店+1.3%，美国+0.8%，IOM+1.5%，IDL+1.9%。美国客单增长但客流下降，中国同店负增长。
+- 收入$7.099B，同比增长4%、固定汇率2%；经营利润$3.338B，同比增长3%。
+- GAAP EPS $3.32、调整EPS $3.38；稀释加权股数711.1M。
+- H1经营现金流$5.222B，capex$1.516B，FCF$3.706B；股息+回购$3.891B。
+- H1 SBC $99M；现金$0.822B，账面债务$39.863B，租赁负债约$14.729B。
 
-- 强安全边际：**$220–240**。
-- 可分批观察：**$240–260**。
-- 基准合理区间：**$260–300**。
-- 高于 **$310–330** 需要更强增长证据。
+9月17日季度股息增至$1.93，年化$7.72；官方称连续50年提高股息。12月15日支付，12月1日登记。
 
-## Key risks
+9月23日NEXT：
+- 至2036年约$8.5B加盟商支持，至2030年约$5B；租金减免与资本支持组合，非今年一次性费用。
+- 2030经营利润率目标低至中50%，FCF转化率中至高80%。
+- 2027–2030年基础capex约$3B/年，另累计$1.5–2B资本合作支持；注意不可重复叠加项目。
+- 餐厅毛效率改善目标约250bp，平均美国店年现金收益约$100k，加盟商支持后回收期约4年；这些不是已兑现数据，也不全属于总部。
+- 新店贡献2027接近2.5%，2030约2%。
 
-- 低收入消费者承压，客流疲弱。
-- 涨价透支品牌性价比，同店销售质量下降。
-- 加盟商人工、食材、租金、促销成本上升，影响再投资和开店意愿。
-- 债务较高，利率上升推高利息费用。
-- 估值倍数压缩，防御型资产溢价下降。
-- 食品安全、品牌声誉或地缘政治事件。
+## What Changed Since July
 
-## Latest company update
+- 价格与估值更低，但Q2同店增速明显放缓、美国客流下降。
+- 新增长期现金与租金支持承诺，不能沿用旧“强安全边际”标签。
+- 最新10-Q将50,000家门店目标列为2028年，修正旧报告2027年表述。
+- 收紧旧情景上限；保留历史报告，不覆盖旧研究。
 
-2025 Form 10-K：
+## Valuation and Price Discipline
 
-- Consolidated revenues: $26.885B, +4% reported / +2% constant currency。
-- Systemwide sales: $139.4B, +7% reported / +5% constant currency。
-- Operating income: $12.393B, +6%。
-- Operating margin: 46.1%，高于 2024 的 45.2%。
-- Diluted EPS: $11.95, +5%。
-- Operating cash flow: $10.551B。
-- Capex: $3.365B。
-- Free cash flow: about $7.186B。
-- 2025 股息 + 回购合计返还股东 $7.1B。
+2026-10-02基准：市值约$164.09B；EV不含租赁约$203.14B，含租赁约$217.86B。TTM EPS $12.31、FCF约$7.76B；P/E18.84x、供应商forward P/E17.53x、FCF yield4.73%、年化股息yield3.33%。Forward EPS反推约$13.23，是供应商预测口径不是公司指引。
 
-2026 Q1 Form 10-Q：
+近一年可得季末样本forward P/E高值23.61x（2025-12-31），含当前样本低值17.53x；真实每日最高/最低未验证。
 
-- Comparable sales: +3.8%。
-- U.S. comparable sales: +3.9%。
-- International Operated Markets comparable sales: +3.9%。
-- International Developmental Licensed Markets comparable sales: +3.4%。
-- Revenues: $6.517B, +9% reported / +4% constant currency。
-- Systemwide sales: +11% reported / +6% constant currency。
-- Operating income: $2.953B, +12%。
-- Diluted EPS: $2.78, +7%；adjusted EPS $2.83。
-- Diluted shares: 713.5M。
+2028年前后终值情景（不含股息；不是今天的公允价）：
+- Bear EPS$11–12 × 17–19x：$187–228。
+- Base EPS$13.5–14.5 × 20–22x：$270–319。
+- Bull EPS$15.5–16.5 × 24–26x：$372–429。
+- 按两年8%折现，Base终值现值约$231–273，期间股息另折现。
 
-2026 outlook：
+研究区间：<$210更厚缓冲；$210–230较吸引；$230–250可研究小仓；$250–280合理、需证据；>$300需明显复苏。低价均以原业务假设未破坏为条件。
 
-- Net restaurant unit expansion expected to contribute about 2.5% to constant-currency Systemwide sales growth。
-- SG&A about 2.2% of Systemwide sales。
-- Operating margin expected in the mid-to-high 40% range。
-- Interest expense expected to increase 4%–6%。
-- Effective tax rate 21%–23%。
-- Capex $3.7–3.9B。
-- About 2,600 gross new restaurants and about 2,100 net additions。
-- Free cash flow conversion expected in the low-to-mid 80% range。
+## Core Assumptions
 
-## What changed since prior view
+1. 美国客流恢复，而不是仅靠价格/组合提升。
+2. 加盟商利润支持持续投资与开店。
+3. NEXT支出可控，实际效率改善覆盖投入。
+4. 总部每股FCF增长，非仅系统销售增长。
+5. 杠杆与利息可管理，不为维持回购持续透支现金。
+6. 鸡肉/饮料与技术继续强化快餐核心，不发生使命漂移。
 
-No prior local MCD tracker/report was found. This is the initial tracker created from the 2026-07-01 deep research memo.
+## Red Lines
 
-## Core thesis assumptions that must remain true
+- 美国客流连续恶化，促销亦无法稳定。
+- 加盟商支持后仍不愿投资，经济性持续恶化。
+- 新支出上调而看不到门店生产率回报。
+- FCF持续弱于股息与回购，债务增加却无收益。
+- 食品安全或品牌事件造成持续客流损伤。
 
-1. MCD continues to maintain brand relevance and value perception across income cohorts.
-2. Comparable sales remain positive and are not driven only by price increases.
-3. Guest counts / transactions stabilize or improve.
-4. Franchisee economics remain healthy enough to support remodeling and new unit growth.
-5. Operating margin remains in the mid-to-high 40% range.
-6. Free cash flow conversion remains strong despite elevated capex.
-7. Debt and interest expense remain manageable.
+## Management Promises and Next Monitoring
 
-## Red-line conditions
+- 2026 operating margin中至高40%；capex$3.7–3.9B；净增店约2,100；FCF conversion低至中80%；利息增4%–6%。
+- 50,000店目标2028；旧版会员2027目标未重新核验，不自动当成最新承诺。
+- 2030 NEXT目标如上，逐季跟踪部署与租金支持费用。
+- 美国客流/客单拆分、加盟商现金回报、季度FCF、营运资金、回购与负债、新店贡献、国际市场分化。
+- 第三方预计Q3业绩2026-11-04，公司正式日期尚未交叉确认。
 
-- U.S. comparable sales turn negative for multiple quarters with weak guest counts.
-- Franchisee cash flow deteriorates enough to slow reinvestment or create public conflict.
-- Operating margin drops materially below the mid-40% range without a clear temporary reason.
-- Capex rises materially without visible unit or sales productivity payoff.
-- Debt/interest expense grows faster than operating income for multiple periods.
-- Brand/food safety event causes sustained traffic damage.
+## Portfolio Rules
 
-## Management promises / milestones to track
+可作为低beta核心候选（第三方5年beta约0.45），但不是现金。消费/餐饮风险桶合并≤15%，现金加低beta核心≥30%。现有Put接货承诺不能被忽略；缺少最新净清算价值不提供精确可买股数。周线布林入场条件未核验。
 
-- 2027 target of 50,000 restaurants.
-- 2027 target of 250M 90-day active loyalty users.
-- 2027 target of $45B annual Systemwide sales to loyalty members.
-- 2026 capex $3.7–3.9B.
-- 2026 gross openings about 2,600 and net additions about 2,100.
-- 2026 operating margin in mid-to-high 40% range.
-- FCF conversion low-to-mid 80%.
+## What Would Change the View
 
-## Metrics to monitor next
+上调：客流改善，加盟商投资回报兑现，NEXT支出可控且每股FCF上升，价格仍在合理区。
+下调：交易量持续下降、资金投入仅弥补老化、债务/回购牵制现金，或估值先行升高而经营未兑现。
 
-- Comparable sales by segment.
-- Guest counts / transaction growth.
-- Average check versus traffic mix.
-- Franchisee cash flow and restaurant-level margin.
-- Operating margin.
-- Digital/loyalty users and loyalty sales.
-- Delivery and mobile app ordering mix.
-- Net restaurant additions.
-- Capex and FCF conversion.
-- Debt, interest expense, dividends, and buybacks.
+## Sources and Reports
 
-## What would change the research view
-
-**Upgrade** if MCD shows improving guest counts, strong loyalty/digital contribution, stable franchisee economics, operating margin near the high end of guidance, and stock price remains below or near the base-case range.
-
-**Downgrade** if comparable sales are mainly price-driven while guest counts weaken, franchisee economics deteriorate, interest expense drags EPS, or valuation moves above $310–330 without stronger EPS/FCF growth evidence.
-
-## Linked memo
-
+- SEC Q2 2026 10-Q: https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm
+- Q2 earnings: https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm
+- Official NEXT: https://corporate.mcdonalds.com/corpmcd/our-stories/article/NEXT-growth-strategy-advances.html
+- Official dividend: https://www.prnewswire.com/news-releases/mcdonalds-marks-50-consecutive-years-of-dividend-increases-joining-the-ranks-of-dividend-kings-302882422.html
+- Market snapshot: https://stockanalysis.com/stocks/mcd/statistics/
 - `deep-research/2026-07-01-deep-research.md`
+- `deep-research/2026-10-04-deep-research-update.md`
