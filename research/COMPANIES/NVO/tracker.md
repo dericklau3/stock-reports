@@ -1,99 +1,120 @@
 # NVO / Novo Nordisk A/S Tracker
 
-Last updated：2026-09-14
-Ticker：NVO  
-Company：Novo Nordisk A/S  
-Exchange：NYSE  
+Last updated：2026-10-05
+Ticker：NVO
+Exchange：NYSE（丹麦B股1:1 ADR）
 CIK：0000353278
 
 ## Current Research View
 
-- **Rating**：Constructive but not a clean buy（建设性但不是无条件买入）
-- **Core thesis**：高质量 GLP-1 医药龙头，但 2026 年处于价格、竞争、专利和产品组合切换压力下的修复期。
-- **Current key question**：Wegovy pill / Wegovy HD 是否能抵消 Ozempic/Rybelsus 价格压力、Lilly 竞争和 semaglutide 专利到期压力？
-- **Best risk/reward zone**：35-40 美元风险回报更好；40-50 美元适合观察/分批；50 美元以上需要净价、利润率和新品放量验证。
+- **Constructive but watchful**：成熟慢病平台有逆向研究价值，盈利底及净单位经济未确认。
+- **核心问题**：美国患者/处方增长能否抵消净价、支付渠道和产品组合变化，形成可持续每股现金？
+- **最大风险**：量增利减；Lilly竞争、2027 WAC/现金影响及新旧产品接替时间差。
+- **价格纪律**：<$30更厚缓冲候选；$30–35较吸引；$35–40小规模观察；$40–50需经营确认；>$55需超出保守Base。任何价格均非保证底。
+- **定位**：有产品与监管风险的医药修复股，不因历史beta低而机械视作防御核心。
 
-## Latest Report
+## Latest Report / Historical Snapshots
 
-- [2026-07-08 Deep Research](deep-research/2026-07-08-deep-research.md)
+- [2026-10-05 Deep Research Update](deep-research/2026-10-05-deep-research-update.md)
 - [2026-09-14 Deep Research Update](deep-research/2026-09-14-deep-research-update.md)
+- [2026-07-08 Deep Research](deep-research/2026-07-08-deep-research.md)
 
-## Snapshot — 2026-09-14
+旧报告保留为当时观点。本轮是明确请求的深度更新，不是初始覆盖。
 
-- Price：**43.07 美元**（2026-09-11 close）
-- Market cap：约 **1,900–1,922 亿美元**
-- Enterprise value：约 **2,090 亿美元**（沿用净债务近似口径）
-- TTM revenue：约 **505.7 亿美元**（旧报告口径）
-- TTM net income：约 **188.1 亿美元**（旧报告口径）
-- TTM EPS：约 **4.23 美元**（旧报告口径）
-- PE：约 **10–11x**（按旧口径近似）
-- Forward PE：约 **13.3x**（按第三方 2026E EPS $3.24 近似，不是公司正式指引）
-- EV/Sales：约 **4.1x**
-- EV/EBITDA：8.97x
-- P/FCF：24.04x
-- Dividend yield：2.59%
-- Beta：0.36
-- 52-week range：35.12 - 71.80 美元
-- Next earnings：**2026-11-04**（公司财务日历）
-- Capital Markets Day：**2026-09-21**
+## Dated Snapshot — 2026-10-05
 
-## 2026Q2 / H1 Key Data
+- 最新完成常规交易日：2026-10-02，$37.32；相对9/11 $43.07下降13.35%。
+- 最新完整财务：H1/Q2 2026。9月CMD和10月监管消息不是Q3财报。
+- 市场供应商市值/EV：$165.74B / $180.08B；不与自算另一套分母混搭。
+- 自算流通股：4.415580124B（9/25总股本减库藏股）；自算市值$164.79B。
+- H1公司净债务：DKK86.523B，剔除租赁；模型FX假设6.50 DKK/USD。
+- 自算EV：不含租赁$178.10B，含租赁$179.43B。
+- 供应商TTM P/E约9.31x，包含340B等非持续影响，不当作干净利润倍数。
+- 当前forward P/E快照StockAnalysis11.75x、GuruFocus10/5为10.80x；预测窗口与调整项目未完全协调。一年每日一致预期高低缺失；FinanceCharts旧索引13.87x不作为当前数据。
+- 2026E DKK21.64共识EPS按假设FX转换，约11.21x；不是公司EPS指引，亦非必然同一NTM口径。
+- 正式2026 FCF指引45–55B DKK，隐含FCF yield4.20%–5.13%、P/FCF19.48–23.80x。
 
-- Q2 adjusted sales：**784.88 亿 DKK，+7% CER**
-- Q2 adjusted operating profit：**333.89 亿 DKK，+11% CER**
-- H1 adjusted sales：**1485.51 亿 DKK，+2% CER**
-- H1 adjusted operating profit：**662.47 亿 DKK，+2% CER**
-- Wegovy pill weekly prescriptions：截至 7 月中旬超过 **265,000**
-- Wegovy pill launch prescriptions：超过 **500 万**
-- Q2 reported operating profit：受 **63 亿 DKK** pipeline impairment 影响
+## Latest Financial / Product Evidence
 
-## 2026 Guidance
+- Q2调整后销售DKK78.488B，CER+7%；调整后经营利润DKK33.389B，CER+11%。
+- H1调整后销售DKK148.551B，CER+2%；调整后经营利润DKK66.247B，CER+2%。
+- Q2/H1调整后经营利润率42.5%/44.6%。
+- H1报告收入含DKK26.760B 340B准备转回；转回本身无现金影响。
+- Q2重大管线减值DKK6.328B；非现金仍是资本配置损失，不能在研究评价中完全忽略。
+- H1 FCF55.297B、OCF79.283B、PP&E capex23.986B DKK。
+- 全年减H1，自算H2 FCF约-10.3至-0.3B DKK；不是可以把H1乘二的运行率。
+- 自2026 FCF改为OCF减PP&E，比较期重述；并非扣完全部M&A、许可和融资现金支出的最终股东现金。
+- Q2美国Wegovy injectable调整后销售-22% CER，国际+46%。
+- CMD：美国GLP-1 Q2售出单位+26%，美国H1调整后销售-4% CER。期间不同，不相除推净价跌幅。
+- CMD数据截至8月：Wegovy处方渠道自费>50%，2025约15%；不是收入渠道占比。
+- Wegovy pill周处方估算约285k、年内累计>7m；约80%用户此前未使用GLP-1肥胖药，约90%处方自费。累计处方不是累计独立患者，数据不是10月实时值。
 
-- Adjusted sales growth：**0% 到 -6% CER**
-- Adjusted operating profit growth：**0% 到 -6% CER**
-- Main positives：Wegovy pill strong launch, Wegovy HD, International Operations volume growth
-- Main negatives：US realized price, MFN, competition, reduced Medicaid obesity coverage, semaglutide patent expiry in certain IO markets
+## What Changed Since Prior View
 
-## Key Products to Track
+1. 9/21 CMD已举行，战略方向是同业水平增长和大体稳定利润率，不是恢复超高增长的正式指引。
+2. 用实际渠道证据替代泛化“处方强劲”；区分新品增量、留存、自费净单位经济及旧品替代。
+3. 公司已明确2027-01-01相关产品WAC至$675并影响2027现金流；标价下降不等于净销售同幅下降。
+4. 10/2 denecimig美国审批延长，原因按公司公告为制造设施整改，没有新FDA时间。公司称2026指引不受影响，目标审批后2027H1上市。
+   - 正面：9/30 CagriSema进食行为/器官脂肪数据、10/1 Wegovy肝脂事后分析支持临床价值，暂不新增确定收入。
+   - 反面：已知ZEUS试验未达主要终点，Q3可能有非现金减值；研发项目不能全部提前计入成功价值。
+5. 重新计算股数、债务、FCF及2028情景，不继承旧$67中枢作为新的价格目标。
+6. 收紧“低beta核心”与≤$35“强安全边际”的旧措辞，价格与证据共同决定缓冲。
+7. 9月Orbis、Nanexa、Hengrui外部研发交易已核验当事方公告；HRS-1596为phase1-ready，$300M首付且待2026Q4交割。潜在总额/里程碑/分成不能当全部当期现金，也不能当已兑现利润。
 
-- **Ozempic**：糖尿病现金牛；关注价格、份额和 Lilly Mounjaro 压力。
-- **Wegovy injection**：肥胖基础盘；关注 TRx/NBRx、医保覆盖、供应。
-- **Wegovy pill**：2026 年最关键变量；关注周处方量、渠道 mix、ASP、复购和国际上市。
-- **Wegovy HD / 7.2mg**：关注美国放量、EU 批准和对 Lilly Zepbound 的疗效定位。
-- **Rybelsus / Ozempic pill**：口服糖尿病产品；关注是否被更高优先级 GLP-1 产品挤压。
-- **CagriSema**：下一代组合药；关注监管、真实疗效和 endpoint 风险。
-- **Zenagamtide / amycretin**：关注 phase 3 设计和 readout。
+## Management Promise Dashboard
 
-## Monitoring Checklist
+| 承诺/目标 | 状态 | 下次核验 |
+|---|---|---|
+| 2026调整后销售/经营利润0%至-6% CER | Q2上调后最新正式指引 | Q3是否兑现或重修 |
+| 2030收入增长与同业一致、利润率大体稳定 | CMD战略ambition，不是正式指引 | 量价、成本和研发再投入桥接 |
+| 口服扩大患者池 | 初期处方/新用户有支持 | 留存、维持剂量、净患者增量和净销售 |
+| CagriSema美国决定2026Q4，潜在上市2027 | 公司预期 | 实际审批、标签、准入、供货 |
+| REDEFINE11读数2027Q1、HD2028H1 | 公司预期 | 按预设endpoint评估，不挑最好亚组 |
+| Zenagamtide潜在2029、UBT251等2030/2030+ | CMD潜在时间，不是保证 | 临床、审批和现金投入 |
+| Denecimig美国目标2027H1 | 原先审批延长，FDA未给新日期 | 制造整改闭环与监管更新 |
+| 年度回购上限DKK15B | 截至9/25已约DKK9.940B | 每股净收益及现金预算 |
 
-1. 2026-09-21 Capital Markets Day 的中期目标与资本配置框架。
-2. Wegovy pill weekly prescriptions and sales quality。
-3. Commercial formulary access for Wegovy pill。
-4. Wegovy HD adoption and EU approval/launch timing。
-5. Adjusted sales growth excluding 340B reversal。
-6. US realized price and gross-to-net trend。
-7. GLP-1 market share vs Eli Lilly。
-8. Semaglutide patent expiry impact in China and other international markets。
-9. Gross margin and FCF margin as capex and Catalent integration continue。
-10. CagriSema / zenagamtide clinical and regulatory updates。
-11. Dividend and DKK 15 billion buyback execution。
+## Valuation Guardrails — New 2028 Framework
 
-## Valuation Guardrails
+FX假设6.50 DKK/USD、流通股4.41558B；正常化净利润、P/E主估值；不是正式目标价。低端与高端各配相应利润率/倍数，非统计置信区间。
 
-- Bear case fair value：约 21 美元/ADR（收入停滞、FCF margin 20%、18x FCF）
-- Base-low：约 40 美元/ADR（4% CAGR、25% FCF margin、22x FCF）
-- Base：约 67 美元/ADR（8% CAGR、30% FCF margin、25x FCF）
-- Bull：约 97 美元/ADR（12% CAGR、33% FCF margin、28x FCF）
-- Current $43.07：处于 base-low 与 base 之间，仍需净价与新品放量确认
+| 情景 | 2028收入DKKB | 净利率 | P/E | 2028终值 | 简化两年10%折现现值，不计股息 |
+|---|---:|---:|---:|---:|---:|
+| Bear | 280–300 | 24%–27% | 10–12x | $23.4–33.9 | $19.4–28.0 |
+| Base | 330–350 | 28%–30% | 13–15x | $41.9–54.9 | $34.6–45.4 |
+| Bull | 390–420 | 30%–32% | 17–19x | $69.3–89.0 | $57.3–73.5 |
 
-## Portfolio Fit Under User Rules
+当前$37.32在Base折现区间内，非低于整段价值；Bear仍有显著下行。实际到2028年末期限较两年长，现值应更低；未来股息不保证。
 
-- Low beta/core candidate：是，beta 约 0.36。
-- Same asset category cap：若已有 LLY、GLP-1、制药或医药大仓位，合并控制同类敞口 ≤15%。
-- Cash + low-beta/core stocks ≥30%：NVO 可贡献低 beta/core，但单股仍有产品周期风险。
-- Mission drift：无明显偏离，仍聚焦糖尿病、肥胖和慢病治疗。
+## Thesis Assumptions / Red Lines
 
-## Files
+必须保持：成熟产品仍有患者价值与利润；口服净增量和持续治疗不是短促销幻觉；新管线能逐步接替；现金能覆盖必要研发、资本投入和债务；管理层量价和现金解释可信。
 
-- `research/COMPANIES/NVO/deep-research/2026-07-08-deep-research.md`
-- `research/COMPANIES/NVO/deep-research/2026-09-14-deep-research-update.md`
+红线：连续量增利减、正常化每股利润/现金不断下修、指引再降；关键新品上市迟于旧利润侵蚀；扩产利用率差或高价外部研发吞噬现金；制造合规问题反复。
+
+## Monitoring Checklist / Next Catalyst
+
+1. **2026-11-04 Q3**：同口径调整后净销售、利润、毛利、美国净价及全年现金桥接。
+2. Wegovy pill：TRx与NBRx不混用；净收入、维持剂量、复购、停药、渠道费用。
+3. 2027 WAC/返利影响：标价、厂家净价和患者自付分开；要求可量化现金时点解释。
+   - CVS Caremark 2026-10-01起最大商业模板目录增加Wegovy以外减重药；已发生的竞争变化，实际份额/净价影响尚待核验。
+4. CagriSema、denecimig：实际监管决定、标签与上市，不以公司潜在时间当承诺。
+5. 国际量、LoE及毛利率；Lilly口服/注射竞争已是现实。
+6. Capex、产能利用率、全部资本需求及新FCF定义以外现金支出。
+7. 债务：报告有当前listed债券逐笔到期汇总，仍需结合非债券借款、租赁与现金预算。
+
+## Portfolio Rule Implications
+
+- 不因beta低自动贡献防御核心；现金＋低波动/核心≥30%需按当前组合判断。
+- 与LLY、GLP-1及高度相关制药持仓合并检查同类≤15%；没有当前完整持仓，无法确认。
+- 使命延伸仍可解释，外部研发及并购资本纪律需独立检查。
+- 周线布林入场信号未验证，不声称交易合规，不给数量建议。
+
+## What Would Change My View
+
+- **上调**：净价/产品组合、正常化盈利连续改善，口服留存和净单位收益清楚，2027现金桥接可信，近端新品兑现。
+- **下调**：持续量增利减、指引再下修、关键临床/审批/制造延迟、资本消耗失控。
+
+## Sources / Limits
+
+原始来源、假设、债券表及缺口详见最新报告。完整Q&A、forward P/E一年一致每日序列及EASD完整最新演讲未充分核验；不把未读到内容补成事实。历史报告保留，非追溯重写。
