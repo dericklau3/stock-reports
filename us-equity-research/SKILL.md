@@ -1,9 +1,14 @@
 ---
 name: us-equity-research
-description: Use this skill to perform professional US equity research for selected US-listed public companies, while explaining every researched company's products, technical terms, business model, and profit engine in plain beginner-friendly language. Default every ticker or company request to deep company research. Use post-earnings tracking when the user asks about earnings, quarterly results, guidance, 10-Q, shareholder letters, or earnings calls. Trigger on prompts such as "Analyze TICKER", "Deep analysis of COMPANY", "Analyze TICKER's latest earnings", "Track COMPANY after earnings", or "Explain how COMPANY makes money".
+description: Use when researching US stocks. Track value and execution.
 ---
 
 # US Equity Research Skill
+
+## When to Use
+
+Use for selected US-listed company research, valuation/buyability questions, earnings and major-event tracking, and questions such as **这家公司正在做什么、做到哪一步、接下来要验证什么**. Default to deep company research; use the existing post-earnings mode for earnings/material-event updates. Do not create a separate initiative-research mode or substitute a price verdict for an operating-progress explanation.
+
 
 ## Purpose
 
@@ -11,7 +16,8 @@ Use this skill to analyze selected US-listed public companies for medium-term an
 
 Default supported tasks:
 
-- Produce a deep company research memo for a selected stock.
+- Produce a deep company research memo for a selected stock, covering both its existing profit engine and what management is actually building, changing, launching, scaling, or fixing now.
+- Track the material operating agenda: what each initiative aims to do, what has been completed, the latest evidenced stage, the next gate, required resources, and how execution can become shareholder returns.
 - Track the company after earnings or major financial updates.
 - Reassess the thesis, valuation, risks, and monitoring points.
 - Estimate valuation ranges when assumptions and sources are clear. For deep research, the default expectation is that bear/base/bull scenarios include explicit implied share-price or valuation ranges, unless the security type or missing data makes a range unreliable.
@@ -133,7 +139,8 @@ The tracker should summarize:
 - Current main thesis.
 - Key risks.
 - Latest earnings or company update.
-- What changed since the prior view.
+- **Operating Agenda / Execution Progress**: retain stable initiative names/keys, latest evidenced stage and evidence date, schedule status, the next gate/date, bottleneck and shareholder relevance. Preserve original commitments when targets are changed.
+- What changed since the prior view, including each material initiative's prior stage → new evidence → current stage; distinguish no new disclosure from no progress.
 - Core thesis assumptions that must remain true.
 - Red-line conditions that would force a thesis review or downgrade.
 - Management promises, targets, or strategic milestones that need follow-up.
@@ -156,14 +163,33 @@ For every non-trivial analysis:
 1. Identify the company, ticker, exchange, sector, and business model.
 2. Translate the company's products, technical terms, customers, and revenue streams into a beginner-friendly "how the business actually works and makes money" explanation before using industry jargon.
 3. Verify current price, market cap, recent performance, and the latest reporting period.
-4. Read the latest company materials and recent news if the analysis depends on current facts.
-5. Classify the company type before selecting valuation methods.
-6. Build the initial thesis from business quality, growth drivers, financial trend, valuation, and catalysts.
-7. Identify supporting evidence, disconfirming evidence, and the largest uncertainty.
-8. Stress-test downside risk, dilution, balance sheet risk, and valuation multiple compression.
-9. Apply the four investor-style decision lenses when producing a deep company research memo.
-10. State the research view with confidence level, time horizon, risk/reward, and conditions that would change the thesis.
-11. Save the output using the Saving Research Results rules and update `tracker.md`.
+4. Read current filings and earnings materials, then discover material operating initiatives through product/technical documentation, investor days, regulatory records, customer or partner disclosures, and operating updates as relevant. Compare with earlier commitments and saved research, not only the latest news.
+5. Build the Operating Agenda and Execution Progress inventory before selecting a research view: identify what the company is doing now, why, what it has actually completed, its current technical/regulatory/commercial/economic stages, and the next verifiable gate. Load `references/operating-agenda-execution-progress.md` for both deep research and material post-earnings/event updates.
+6. Trace each material initiative from execution evidence through customer adoption, revenue, costs, cash requirements and dilution to potential per-share returns. Separate company plans, completed milestones, analyst assumptions and unknowns.
+7. Classify the company type and choose valuation methods that fit the existing business and the maturity of the initiatives.
+8. Build the thesis from business quality, observed execution progress, financial trend, valuation, and catalysts; do not conclude solely from backward-looking financials.
+9. Identify supporting evidence, disconfirming evidence, and the largest uncertainty; report progress even when monetization is not yet proven.
+10. Stress-test downside risk, execution dependencies, dilution, debt, competitive pressure, margin risk and multiple compression.
+11. Apply the four investor-style decision lenses when producing a deep company research memo.
+12. State the research view with confidence level, time horizon, risk/reward, and conditions that would change the thesis.
+13. Save the output using the Saving Research Results rules and update `tracker.md`, including initiative-level changes, next gates and overdue or unverified commitments.
+
+## Operating Agenda and Execution Progress (Required)
+
+Every deep research memo must visibly answer **公司正在做什么、做到哪一步** before its valuation conclusion. A financial snapshot, product catalog, news list or generic catalyst paragraph does not satisfy this requirement. This is a required component of the existing two research modes, not a third mode.
+
+- Load `references/operating-agenda-execution-progress.md`; use its evidence discipline, sector-specific stage gates and output template.
+- Discover and prioritize the material active initiatives, normally 3–8 when supported by evidence. Cover core-business improvements as well as new products/platforms: capacity and delivery, commercialization, distribution/pricing, efficiency, repair programs, M&A integration, and regulatory execution. Do not invent initiatives to fill a quota or report only speculative future bets.
+- For each initiative state its objective and customer problem; strategic significance; original commitment/date; actual completed work; latest evidence/date; current technical, regulatory, adoption and economic stage as applicable; next milestone/timing; dependencies and resource needs; and the path to issuer/per-share returns.
+- Grade schedule separately as on track, ahead, delayed, reframed, paused, failed, or not assessable. Do not force a completion percentage or claim failure simply because a promised date passed without a fresh disclosure.
+- Distinguish announced plans, prototypes/tests, permissions, contracts, actual deliveries/availability, paid recurring adoption, revenue recognition, profitability and cash generation. A company can be technically ready but commercially early; use multiple stage dimensions rather than one misleading completion score.
+- For thesis-driving initiatives go beyond the announcement when practical: inspect product documentation or release evidence, customer/partner confirmation, regulatory decisions, delivery/capacity data and usage or revenue metrics. Label evidence as company-reported, corroborated or independently observed; a mirrored press release is not independent confirmation.
+- Identify the main execution bottleneck and the next observable proof of success or failure. Link scenario assumptions to those gates without capitalizing all announced pipeline value as achieved revenue.
+- Report verified operational progress even when financial contribution is undisclosed. Conversely, do not infer profitability from launch, cooperation, registrations, backlog, TAM or transaction volume. Unknown is not zero and is not success.
+- End with a concise synthesis: the most consequential work underway, which initiatives are furthest along, which remain promises or trials, which could change earnings, and what to check next.
+
+For repeat research, retain initiative names/keys and compare **prior stage → new evidence → current stage → thesis/valuation implication**. For post-earnings/event updates, show material stage changes and explicit unchanged or unverified statuses for key initiatives; do not rewrite the whole inventory unnecessarily. For a narrow price-only update, reuse the saved inventory and check only decision-critical new developments.
+
 
 ## Beginner Business Explanation
 
@@ -191,6 +217,10 @@ Adapt the research and valuation approach to the company:
 - **Industrial / capital-equipment / infrastructure-cycle companies**: focus on orders, book-to-bill, backlog/RPO, backlog margin quality, equipment versus service mix, project execution risk, warranty/quality reserves, working-capital swings, capex required to expand capacity, installed-base service revenue, and whether current earnings are peak-cycle or normalized. For companies with large one-time tax, M&A, or mark-to-market gains, do not annualize GAAP EPS; use normalized Adjusted EBITDA/EBIT/FCF scenarios and explicitly separate operating improvement from non-operating gains.
 - **Capital-intensive multi-segment infrastructure platforms**: for companies that combine a proven infrastructure profit engine with high-optionality segments (space launch, satellite broadband, AI compute, founder-controlled software acquisitions, energy infrastructure, or similar), analyze each segment separately. Identify which segment funds the rest of the company today, incorporate pro forma debt/interest after major financings, separate current cash-flow evidence from future optionality, and explicitly evaluate governance, dilution, and mission-drift risk. Use scenario valuation plus practical price zones rather than a single blended multiple.
 - **Digital-asset treasury companies and former miners that pivoted into treasury strategies**: value the common stock as a dated common-equity NAV bridge, not on total token holdings or headline GAAP earnings. Subtract debt, liabilities, preferred liquidation preferences, and other senior claims; reconcile basic and conservative fully diluted shares; calculate token and NAV per share over time; and test whether ATM issuance was accretive at the actual mNAV. Analyze staking as gross yield minus validator/custody/security/compliance costs, reconcile option premium with realized and unrealized derivative P/L, and treat self-treasury validator activity as unproven platform optionality until external AUM and fees are disclosed. Explicitly assess mission drift and whether incentives based on total market cap or total tokens can be achieved through dilution. Use token-price × common-NAV × mNAV bear/base/bull scenarios.
+
+### Research References
+
+- **Required for operating-agenda work:** `references/operating-agenda-execution-progress.md` — material initiative discovery, evidence-backed multidimensional stage assessment, commitment tracking, commercialization-to-shareholder bridges, sector-specific gates, and report/tracker acceptance checks.
 
 ## Research View Framework
 
@@ -412,11 +442,13 @@ Begin with this fixed summary block:
    - Competitive landscape and moat.
    - Customer concentration, pricing power, and switching costs.
 
-3. **Segment and Product Analysis**
+3. **Segment, Product and Execution Progress**
    - Plain-language explanation of each major segment or product before the professional analysis.
-   - Revenue by segment or product when available.
-   - Growth, margin, and strategic importance by segment.
-   - Product roadmap or innovation pipeline.
+   - Revenue, growth, margins and strategic importance by segment where disclosed.
+   - Include a prominent subsection **公司正在做什么、做到哪一步 / Operating Agenda & Execution Progress**, not just a product list or future roadmap.
+   - Use the initiative inventory/table in `references/operating-agenda-execution-progress.md`: objective, prior commitment, completed work and latest dated evidence, current stage(s), schedule, next gate, bottleneck/resources and financial/shareholder implications.
+   - Deep-dive the initiatives most likely to change the earnings engine or downside risk; explain what evidence demonstrates actual progress and what is still unproven.
+   - Close with the work that matters most over the coming quarters, without forcing a near-term payoff for long-duration projects.
 
 4. **Financial Deep Dive**
    - Multi-year revenue growth and growth quality.
@@ -489,7 +521,9 @@ Begin with this fixed summary block:
    - Compare with prior year, prior quarter, guidance, and consensus when available.
    - Separate reported results from non-GAAP or adjusted results.
 
-3. **Guidance and Management Commentary**
+3. **Guidance, Management Commentary and Execution Progress**
+   - **公司正在做什么、做到哪一步**: update the material initiative inventory from `tracker.md`; show prior stage → new evidence → current stage and separate technical/regulatory progress from paid adoption and economics. Carry unchanged or unverified statuses explicitly for thesis-driving initiatives.
+   - Next gates, original versus revised dates, execution bottlenecks, resource needs and implications for revenue, cash and dilution.
    - New guidance.
    - Important management comments.
    - Changes from prior narrative.
@@ -520,7 +554,7 @@ Begin with this fixed summary block:
 
 ## Output Style
 
-- Start with the research view, not a long setup.
+- Start with the research view, not a long setup. The chat summary must also include a brief **正在做什么 / 最新进度 / 下一关** explanation for the most consequential initiatives; do not deliver only a buyability or valuation verdict.
 - Match the user's requested language. Keep the formal section labels clear and consistent.
 - For every researched company, include a beginner-friendly business explanation before the technical or professional analysis. Avoid assuming the user already understands specialized technical, financial, or industry vocabulary.
 - Use tables only when they make comparison or assumptions easier to read.
