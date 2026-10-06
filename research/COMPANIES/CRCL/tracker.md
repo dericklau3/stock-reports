@@ -1,149 +1,131 @@
 # CRCL Research Tracker
 
-> Last updated: 2026-08-09
-> Latest earnings memo: [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
-> Latest full memo: [2026-07-10 deep research](deep-research/2026-07-10-deep-research.md)
+> Last updated: 2026-10-06
+> Latest full update: [2026-10-06 deep research update](deep-research/2026-10-06-deep-research-update.md)
+> Latest completed earnings: [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
 
 ## Current view
 
-- **View**: Neutral / wait for a better price or stronger non-interest revenue evidence
-- **Confidence**: Medium
-- **Reference price**: $66.67 (2026-08-07 close)
-- **Base present-value range**: $54–70, but quality of upside now depends more on recurring Arc/CPN monetization after excluding ARC Token presale revenue.
-- **Practical price zones**:
-  - Stronger margin of safety: ≤$40
-  - Watch / small-position research zone: $40–52
-  - Base fair-value zone: $53–70
-  - Requires stronger execution evidence: >$71
+- **观点**：Neutral / wait for confirmation。平台化战略有进展，但当前价格缺少基准情景缓冲。
+- **置信度**：财报/利润机制中高；2028 平台经济性和估值中等偏低。
+- **价格锚**：2026-10-05 常规收盘 **$83.30**，StockAnalysis 单供应商；不采用盘后 $83.73。Nasdaq API 超时，Yahoo 429，独立交叉核验未完成。
+- **最新财务期**：2026 Q2 / H1；Q3 尚未发布。
+- **本次 Base 当前价值**：**$58.8–69.9**，对应 2028 年末终值 $75.8–90.2，以 12% 折现约 2.25 年；不把终值当现值。
+- **价格纪律**：≤$40 相对 Base 有较厚缓冲；$40–52 值得研究；$53–70 基准区间；>$70 需更强经营证据。不是保证底部或自动买单。
+- **组合定位**：高 beta 加密/金融基础设施，不算现金或低波动核心。无当前完整持仓，不给数量或组合合规结论；周线布林入场未核验。
 
 ## Main thesis
 
-Circle is the most direct listed exposure to regulated digital-dollar infrastructure. Its current earnings engine remains dominated by:
+> 平均 USDC × 储备收益率 × 扣除分销后的留存 + 经常性服务贡献 − 全部经济经营成本。
 
-> Average USDC circulation × reserve yield × Circle's retained economics after distribution costs.
+Arc 已宣布公共主网上线，信托银行已经开业，CPN 和机构接入强化长期可行性。但 Q2 95.2% 收入仍来自储备收益，Coinbase 渠道拿走大量经济价值。必须证明流通量、网络使用和付费增长能变成稀释后每股持续盈利，不能用 ARC 预售、平台名单或外部客户储备替代。
 
-Q2 2026 improved the strategic case: RLDC margin rose, USDC on-platform percentage improved, Arc mainnet now has a concrete launch date and high-profile validators, and CPN volume/participating institutions grew. However, reserve yield is falling, Q2 ending and post-quarter USDC circulation were below Q1 end, and FY2026 other revenue/RLDC margin guidance includes ARC Token presale revenue. At $66.67 the stock remains near the upper part of the base fair-value zone, not a clear margin-of-safety entry.
+## Key risks
 
-## Latest company update
+- 95.2% Q2 收入来自储备收益；利率与流通量组合变化仍支配盈利。
+- Coinbase 占主要渠道成本，新币安激励比例未披露；规模增长不保证股东净留存增长。
+- ARC 预售同时影响递延收入和现金流，不能给一次性收款持续业务倍数。
+- Arc/CPN 股东净盈利未验证；SBC、股票收购和后续 RSU 影响每股价值。
+- CFO/董事交接、监管/赎回信任及高估值压缩风险需持续监控。
 
-### Q2 2026
+## Latest verified facts
 
-- USDC at period end: $73.269B, +19% YoY, but below Q1 2026 end balance of about $77.0B.
-- Average USDC: $76.524B, +25% YoY.
-- Reserve return rate: 3.5%, down 66 bps YoY.
-- Total revenue and reserve income: $701.315M, +7% YoY.
-- Reserve income: $667.733M, about 95.2% of total revenue and reserve income.
-- Other revenue: $33.582M, +41% YoY.
-- Distribution, transaction and other costs: $412.470M.
-- RLDC: $289M, +15% YoY; RLDC margin 41%, up about 302 bps YoY.
-- Net income from continuing operations: $48.214M versus -$482.100M in Q2 2025; prior-year comparison is distorted by IPO stock-based-compensation impacts.
-- Adjusted EBITDA: $143M, up from about $126M.
-- USDC on platform, end of period: $12.442B, +106% YoY.
-- USDC on platform, daily weighted-average percentage: 19.5%, up from 7.4%.
-- Diluted weighted-average shares: 268.637M.
-- Corporate cash and cash equivalents: $1.730B. Segregated stablecoin-holder reserves are paired with stablecoin-holder liabilities and should not be treated as shareholder net cash.
+### Q2 / H1 2026
 
-### Current operating signal
+- Q2 总收入及储备收入 $701.315M；储备 $667.733M；其他 $33.582M。
+- Q2 分销、交易及其他直接成本 $412.470M；RLDC $288.845M，margin 41.19%。
+- Q2 GAAP 经营利润 $34.359M；持续经营净利润 $48.214M；稀释 EPS $0.18。
+- Q2 平均 USDC $76.524B；期末 $73.269B；储备收益率约 3.5%，同比低 66bps。
+- Q2 Coinbase 分销费用 $324.6M，占分销/交易费用约 79.1%，相当于储备收入 48.6%。
+- On-platform 日加权占比 19.5%；期末 $12.442B。指标增长不自动代表没有渠道激励。
+- Q2 Adjusted EBITDA **同新定义 $143.478M vs $132.997M，约 +7.9%**。旧 tracker $143M vs $126M 混定义，当前不再沿用。
+- H1 OCF $538.505M；现金软件资本化 $35.764M、长期资产购置 $10.389M；简单现金流代理 $492.352M。
+- 剔除 H1 ARC 预售收款 $222M 后代理 $270.352M，仍有营运资本和 SBC 影响，不是干净 owner earnings。
+- H1 SBC 费用 $105.435M，另软件资本化 SBC $23.211M；合计 $128.646M。
+- 6/30 公司普通现金 $1.730126B + 公司自持稳定币隔离现金 $0.889311B = 公司流动性约 **$2.619437B**，不是全部无条件超额现金。
+- 外部持有人隔离现金 $73.161172B 与稳定币负债 $72.927544B 配对，不加进股东净现金。
+- 可转债余额零；经营租赁负债 $15.951M，未折现付款 $24.512M，无巨额普通借款到期墙。
+- 当前工作稀释分母约 270M，基于 Q2 268.637M 加币安 1.237M；不是精确当日 fully diluted 股本。
 
-Circle official pages showed about **$71.8B USDC in circulation as of 2026-08-06**, below Q2 end $73.3B and below Q2 average $76.5B. The transparency page also showed 7-day issuance/redeem flows of about $6.28B issued versus $6.37B redeemed, and 30-day flows of about $26.32B issued versus $27.73B redeemed, implying net contraction over both windows.
+### Official high-frequency snapshot
 
-### Guidance / milestones
+- 10/6 访问官方 USDC 页面仍显示 **9/24 约 $75.2B**；透明度页精细字段 $75.24B，不宣称是 10/6 实时值。
+- 比旧 8/6 $71.8B 回升约 4.8%；比 Q2 末高约 2.7%；比 Q2 平均仍低约 1.7%。
+- 页面 7 日发行/赎回 $11.4B / $9.9B，净 +$1.5B；30 日 $41.62B / $40B，净 +$1.62B。
+- 两个流量窗口独立截止时间未充分核验，不能用它们替代 Q3 平均余额。
+- 最新页面列出的 8 月鉴证 PDF 403，恢复未取到有效正文；不宣称已读其结论，不从残缺储备图表算实时覆盖率。
 
-- Multi-year through-cycle USDC circulation target: 40% CAGR, unchanged.
-- FY2026 other revenue guidance raised from $150M-$170M to $310M-$330M, but includes recognized ARC Token presale revenue.
-- FY2026 RLDC margin guidance raised from 38%-40% to 41.7%-43.7%, also includes ARC Token presale revenue.
-- FY2026 adjusted operating expenses guidance unchanged at $570M-$585M.
-- Arc public mainnet launch planned for 2026-09-16; Circle disclosed 100+ ecosystem and institutional builders.
-- Arc validator cohort includes BlackRock, DTCC, Galaxy, Global Payments, ICE, Mastercard, MoneyGram, SBI Group, Standard Chartered, Sumitomo, Visa and Circle.
-- CPN trailing-30-day annualized transaction volume reached $14.7B at Q2 end, +76% QoQ; enrolled financial institutions reached 175, +29% QoQ.
-- Agent Stack had 900+ paid services, with 99.3% of x402 agent-payment volume settling in USDC.
+### September events
 
-## What changed since the prior view
+- **9/16 Arc**：公司宣布公共主网上线。上线日期承诺已兑现；独立链上审计、净手续费及股东归属待证。
+- **9/17 币安，9/22 披露**：五年新商业安排，按 Modular Smart Contract Wallet USDC 余额付月度激励；未披露具体比例。币安 $100M / $80.84 认购 1,237,011 股，已交割，一般两年限制附例外。$80.84 不是股价保底。
+- **9/4 Tazapay 签约，9/8 披露**：$400M 调整后股票对价，交割前 20 日 VWAP 定价，另 $25M 激励 RSU。实际交割及股数未核验，完整目标财务未取得，不能认定财务增厚。使命暂不漂移，但价格合理性待证。
+- **9/25 治理**：联合创始人董事 Sean Neville 因个人原因立即退出，董事会八人变七人；CFO Jeremy Fox-Geen 计划至 12 月末/继任者提前到任时交接，公司称无经营政策分歧。不推断为财务造假，也不写成 CFO 当日已经离任。
+- **9/16 美联储**：实际加息 25bps 至 3.75%–4.00%，不是降息。短期支持储备收益，未来情景仍需压力测试低利率。
 
-- The Q2 earnings memo supersedes the 2026-07-10 update for current KPI tracking, but does not replace the full deep-research valuation framework.
-- Positive: RLDC margin and on-platform USDC improved; Arc and CPN gained more concrete institutional traction.
-- Caution: USDC circulation was about $71.8B on 2026-08-06, below Q2 end and Q2 average; this keeps the reserve-income base under watch.
-- The other revenue guidance raise is not purely recurring because it includes ARC Token presale revenue.
-- Price moved to $66.67, within but near the upper part of the base fair-value zone; watch/add zone remains $40-$52.
+## Guidance and token bridge
 
-## Core assumptions that must remain true
+- 公司多年度跨周期 USDC CAGR 目标 40%，不是每年保证。
+- FY2026 other revenue $310–330M，RLDC margin 41.7%–43.7%，都含 ARC 预售确认效果。
+- FY2026 adjusted opex $570–585M，不是包含全部 SBC/资本消耗的经济成本。
+- Q2 合同共 807.5M ARC × $0.30，毛额约 $242.2M；Q2 已收现金 $222M，其余应收，金额暂列递延收入。
+- IDG 关联方 $25M 已在总额内，不能重复相加；预售现金不等于本期已确认收入，也不加网络 FDV 到股票市值。
+- Q2 CPN：30 日短窗口年化 TPV $14.7B、175 enrolled；不要当全年实现额或全数成熟活跃收费客户。
+- 信托银行：7/9 OCC 最终批准，7/24 Circle National Trust 开业，7/31 纽约有限目的信托牌照。USDC 不是因此获 FDIC 保险。
 
-1. USDC maintains institutional trust, 1:1 redeemability and a material regulated-stablecoin market position.
-2. Average USDC circulation resumes durable growth after the post-Q1/Q2 pullback.
-3. RLDC margin remains at least 38%-40% after excluding one-time ARC Token presale effects.
-4. Circle can offset lower rates through circulation growth and recurring non-reserve revenue.
-5. Arc and CPN generate economic value that accrues to CRCL shareholders, not primarily to token holders or ecosystem partners.
-6. SBC and diluted share growth normalize after the IPO period.
-7. Federal trust charter and New York Trust progress strengthen rather than complicate regulatory positioning.
+## What changed from prior view
 
-## Red-line conditions
+- 价格由 8/7 $66.67 至 10/5 $83.30，约 +24.94%；新 Base 现值只温和变化，不随价格追高。
+- 正面：Arc 主网上线、官方供应快照回升、流量转正、新币安久期及资本绑定。
+- 风险：币安月度激励比例未知、拟议股票收购与 RSU、CFO/董事交接、token 收入确认更重要。
+- 修正：EBITDA 同定义比较；公司自持稳定币流动性要计入公司资产但不能和代币重复算；九月 Fed 是加息。
+- 当前观点仍中性，战略更好不自动等于当前股票更便宜。
 
-- Average USDC circulation declines for two consecutive quarters.
-- USDC loses material market share despite a growing stablecoin market.
-- 7/30/90-day transparency flows show persistent net redemptions without offsetting market-share explanation.
-- Reserve attestation, liquidity, custody or redemption issues weaken 1:1 confidence.
-- RLDC margin falls below 35%-38% after adjusting for ARC Token presale revenue.
-- Coinbase/Binance distribution economics materially worsen.
-- Arc mainnet is materially delayed, fails to attract external usage, or token economics divert most network value away from CRCL.
-- Diluted share count grows more than 5% annually for a sustained period, or SBC/RLDC remains too high.
-- Non-interest revenue fails to rise above 10% of revenue after excluding one-time token revenue.
+## Valuation snapshot — 2026-10-06
 
-## Management promises and milestones
+| 情景 | 2028 假设概要 | 2028 终值 | 当前价值 |
+|---|---|---:|---:|
+| Bear | 平均 USDC $80B，收益率2.25%，留存35%，非储备$150M；全经济成本$800M；300M股，4–6x RLDC | $14.0–19.0 | $10.8–14.7 |
+| Base | $140B，3%，40%，非储备$350M；成本$900M；300M股，25–30x NOPAT | $75.8–90.2 | $58.8–69.9 |
+| Bull | $220B，3.5%，44%，非储备$600M；成本$1.25B；320M股，30–35x NOPAT | $202.4–235.5 | $156.8–182.5 |
 
-| Promise / target | Current status | Follow-up |
-|---|---|---|
-| USDC multi-year through-cycle CAGR of 40% | Q2 average +25% YoY; 2026-08-06 circulation below Q2 average | Track average balance, 7/30/90-day flows and market share |
-| FY2026 other revenue $310-$330M | Raised, but includes ARC Token presale revenue | Separate recurring revenue from token presale revenue |
-| FY2026 RLDC margin 41.7%-43.7% | Raised, but includes ARC Token presale revenue | Monitor adjusted RLDC margin excluding one-time token effects |
-| FY2026 adjusted operating expenses $570-$585M | Unchanged | Watch hiring, Arc/mainnet and compliance costs |
-| Arc mainnet launch in 2026 | Public mainnet planned 2026-09-16 | Verify launch, users, fees, validator operations and value capture |
-| CPN expansion | $14.7B annualized TPV; 175 institutions enrolled | Require TPV growth plus take-rate/monetization disclosure |
-| Circle trust-bank strategy | Federal trust bank charter and NY Trust approval disclosed | Track final operating permissions and reserve-management economics |
+各情景均假设超额现金 $1.2B；盈利情景税率20%；非储备贡献率 Bear80%、Base/Bull85%；以12%折现约2.25年。参数均为研究假设，不给情景概率或保证回报。
 
-## Valuation snapshot (2026-08-09)
+- 现价反推：在 Base 其他参数与27.5x倍数不变的条件下，需要2028平均USDC约$167.8B，较$75.24B规模锚近似年化扩张42.8%。
+- 当前 forward P/E 69.42x 为单提供商快照，隐含EPS约$1.20；预测窗口/调整定义未完全协调。一年每日高低值未取得，不拿季度点或股价极值冒充。
+- 工作稀释市值 $22.491B；以6/30现金计算，cash-only含租赁EV $20.777B，加入公司自持稳定币流动性EV $19.888B；不要和提供商basic市值$21.25B、EV$19.54B混搭。
 
-| Scenario | Present-value range | Core assumptions |
-|---|---:|---|
-| Bear | $15–30 | USDC average stagnates/declines, reserve yield falls, RLDC margin ex-token revenue compresses toward 35%, Arc/CPN fail to monetize |
-| Base | $54–70 | USDC average resumes growth, reserve yield normalizes around 3%, RLDC margin near 40%, recurring other revenue scales gradually |
-| Bull | $150+ | USDC average grows toward $200B+, Arc/CPN create material recurring revenue, shareholder value capture is clear, dilution normalizes |
+## Red lines and next monitoring
 
-At $66.67, CRCL is not obviously overvalued if the base case is achieved, but the margin of safety is thin because the stock already prices meaningful USDC growth and Arc/CPN execution.
+- 平均余额连续两季收缩、行业增长但USDC份额持续下降。
+- 剔除ARC预售后留存持续低于35%–38%，Coinbase/币安经济安排明显恶化。
+- 储备鉴证、赎回、托管或安全事件损害信任。
+- Arc/CPN使用增长不转为上市股东经常性净收益；价值主要流向token或渠道。
+- 持续股数增长超过约5%而没有每股增厚，SBC/RLDC长期较高。
+- CFO交接后的正式内控负面披露、重述或明显披露质量下降。
 
-## Metrics and events to monitor next
+下一财报：第三方**预计2026-11-11盘前**，不是已核验公司正式日程。优先查Q3平均USDC、留存、剔除预售的服务收入/现金、Arc实际净收费、CPN付费机构和take rate、Tazapay交割/目标经济性、新股与SBC、CFO继任。
 
-- Average and period-end USDC circulation.
-- 7-day, 30-day and 365-day official transparency issuance/redemption flows.
-- Stablecoin market share.
-- Reserve return rate and Fed policy.
-- USDC on-platform percentage.
-- Coinbase/Binance distribution costs and renewal economics.
-- RLDC and RLDC margin excluding ARC Token presale revenue.
-- Other revenue mix, especially recurring non-token revenue.
-- SBC/RLDC and diluted shares.
-- Operating cash flow and free-cash-flow conversion excluding ARC presale working-capital effects.
-- CPN participating institutions, TPV and take rate.
-- Arc mainnet launch, external developers, fees and token/shareholder value allocation.
-- Federal trust bank and New York Trust implementation.
+## Evidence gaps
 
-## What would change the view
+完整Q2电话会Q&A、一年每日forward P/E极值、8月鉴证PDF正文、独立第二行情来源、实时10/6余额及Q3平均、独立Arc链上审计、完整最新token合同条件、Tazapay目标完整财务/实际交割、币安激励比例和公司确认下一财报日期，均未充分取得。不因Git/网站发布完成而声称研究每项均达标。
 
-### Upgrade
+## Source entry points
 
-- Price falls into $40–52 without structural deterioration; or
-- Two or more quarters show average USDC growth above 30%, RLDC margin at/above 40% after excluding one-time token effects, recurring other revenue above 10% of total, and SBC/RLDC below 12%; or
-- Arc/CPN demonstrate material recurring revenue attributable to CRCL shareholders.
-
-### Downgrade
-
-- Two consecutive quarters of declining average USDC;
-- Material market-share loss, redemption/reserve credibility issue, or Coinbase/Binance economics deterioration;
-- Arc value accrues primarily to ARC Token rather than CRCL; or
-- Persistent dilution and no credible path to diversified recurring earnings.
+- [SEC Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm)
+- [Q2 earnings release/reconciliation](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000246/augustepr-circle_q22026f.htm)
+- [Arc mainnet announcement](https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet)
+- [Binance 8-K](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000276/crcl-20260917.htm)
+- [Tazapay 8-K](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000267/crcl-20260904.htm)
+- [CFO/director 8-K](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000279/crcl-20260925.htm)
+- [USDC page](https://www.circle.com/en/usdc) / [Transparency](https://www.circle.com/en/transparency)
+- [Valuation](https://stockanalysis.com/stocks/crcl/statistics/) / [Historical close](https://stockanalysis.com/stocks/crcl/history/)
+- [Fed 9/16 statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)
 
 ## Linked memos
 
-- [2026-07-01 initial deep research](deep-research/2026-07-01-deep-research.md)
-- [2026-07-01 valuation update v2](deep-research/2026-07-01-deep-research-v2.md)
-- [2026-07-10 current deep research](deep-research/2026-07-10-deep-research.md)
+- [2026-10-06 deep research update](deep-research/2026-10-06-deep-research-update.md)
 - [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
+- [2026-07-10 deep research](deep-research/2026-07-10-deep-research.md)
+- [2026-07-01 valuation update v2](deep-research/2026-07-01-deep-research-v2.md)
+- [2026-07-01 initial deep research](deep-research/2026-07-01-deep-research.md)
