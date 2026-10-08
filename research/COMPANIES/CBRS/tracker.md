@@ -1,131 +1,114 @@
 # Cerebras Systems（CBRS）Tracker
 
-Last updated: 2026-08-25
+Last updated: 2026-10-08
 
 ## Current Research View
 
-**中性偏建设性 / 价格回落后更值得跟踪，但仍不属于低风险买点**，中等置信度，12-24 个月视角。
+**中性偏建设性 / 真实经营进展，但现价没有厚安全边际**；中等置信度，12–24个月跟踪。
 
-CBRS 是 AI 推理基础设施中少数拥有差异化 wafer-scale 硬件路线、OpenAI/AWS/AMD 等顶级客户背书和高速收入增长的新上市标的。Q2 2026 强化了 fast inference cloud thesis：core revenue 同比 +103%，core cloud revenue 同比 +287%，RPO 达 $25.4B，FY2026 指引全面上调，管理层称 2027 revenue 计划超过三倍增长。2026-08-18 CS-4 发布进一步强化技术叙事。
-
-但普通股投资不能只看 headline。Q2 GAAP gross margin 只有 14%，GAAP operating margin -265%，SBC $377M，customer warrants issued H1 约 $1.022B，working capital loan、客户权证、数据中心租赁和 capex 让财务质量复杂。2026-08-24 Yahoo Finance 收盘价约 $185.43，市值约 $44.05B；价格已明显低于 8 月 13 日财报后约 $228 的高增长定价，但仍未进入 <$140 的强安全边际区。
-
-## Current Main Thesis
-
-- Cerebras Systems Inc.，NASDAQ: CBRS，CIK 0002021728，AI infrastructure / semiconductor-related company。
-- 公司用 Wafer-Scale Engine、AI systems 和 cloud inference 服务，为 OpenAI、AWS、企业 AI、主权 AI 和开发者生态提供高速推理能力。
-- Q2 2026 GAAP total revenue 为 $180.1M，同比增长 74%；core total revenue 为 $209.9M，同比增长 103%。
-- Q2 2026 core cloud and other services revenue 为 $127.7M，同比增长 287%，说明 cloud inference 正在成为主要增长引擎。
-- Q2 2026 core gross margin 为 41%，同比改善约 940bps；core operating margin 为 -16%，同比改善约 2600bps。
-- RPO / remaining performance obligations 达 $25.4B；10-Q 显示约 22% expected to be recognized over initial 24 months ending 2028-06-30，43% between months 25 and 48，remaining thereafter。
-- Data center capacity live and under contract for delivery by end-2027 exceeds 600MW；manufacturing capacity planned to increase more than 10x in 2026。
-- FY2026 core revenue guidance raised to $880M-$890M，core gross margin 41%-43%，core operating margin -19% to -17%。
-- 管理层称 plan to more than triple revenue in 2027。
-- 2026-08-18 发布 CS-4，称相对 CS-3 最高 2x 速度、相对 GPU 方案最高 30x tokens-per-second-per-user、最高 10x throughput per watt；该技术叙事需要真实客户收入、毛利和第三方验证继续确认。
+- **Research view**: 中性偏建设性；不视作低风险核心仓
+- **Confidence**: 中等；单位经济性、实时FD股数及估值中低
+- **Time horizon**: 12–24个月；模型统一2028年末
+- **Main thesis**: 高速推理客户价值和收入已经真实存在，下一关是规模交付、付费扩散和扣除资本/权益成本后的每股回报。
+- **Key risk**: 将技术、RPO、MW和大客户关系直接等同股东收益，或漏算B/N类经济股本。
 
 ## Key Risks
 
-- 估值仍高：当前约 $185 虽较 $228 明显回落，但仍依赖 2027 revenue triple 和高倍数支持。
-- 客户集中：OpenAI 是 RPO 和 long-term capacity commitments 的核心；G42、MBZUAI、AWS 等客户依赖仍需跟踪。
-- GAAP 与 core 差异巨大：Q2 GAAP gross margin 14% vs core gross margin 41%；GAAP operating margin -265% vs core operating margin -16%。
-- SBC 高：Q2 stock-based compensation $377M，H1 $386.6M。
-- Customer warrants 高：Q2 customer warrants issued $656.6M，H1 issued about $1.022B，assets about $1.128B。
-- FCF 仍承压：H1 operating cash flow -$47.5M，purchases of property and equipment -$548.9M，粗略 FCF 约 -$596M。
-- Capital intensity：数据中心、租赁、设备、电力和供应链建设可能长期压低 FCF。
-- IPO 后交易历史短，Form 144、内部人/早期投资者卖股、解禁和二次发行风险可能放大波动。
+- 最新模型适配与主要客户ramp、机房/硬件交付，是收入兑现的核心瓶颈。
+- core指标排除权益成本；资本消耗、持续稀释和高终值倍数可能吞噬股东回报。
+- 解禁增加可售资格，不等于已售；当前完整组合及技术入场条件未核验。
 
-## Latest Earnings or Company Update
+## Latest Financial / Market Snapshot
 
-### Q2 2026（reported 2026-08-12）
+2026-10-07 Nasdaq已完成交易日价格**$175.05**，接口market Closed。Exa页面最后记录15:55为$175.07，不当独立16:00收盘；研究日为北京时间10/8。[4][5]
 
-| 指标 | Q2 2026 | Q2 2025 | 变化 / 解读 |
-|---|---:|---:|---|
-| GAAP total revenue | $180.1M | $103.3M | +74% |
-| Core total revenue | $209.9M | ~103M | +103% |
-| GAAP cloud and other services revenue | $126.0M | ~$33.0M | +281% |
-| Core cloud and other services revenue | $127.7M | ~$33M | +287% |
-| Hardware revenue | $54.1M | $70.3M | mix 转向 cloud |
-| GAAP gross margin | 14% | 31% | 受 pass-through/warrant/cost mix 影响 |
-| Core gross margin | 41% | ~32% | +940bps |
-| GAAP operating margin | -265% | -55% | SBC/IPO 相关成本巨大 |
-| Core operating margin | -16% | -42% | +2600bps |
-| GAAP loss from operations | -$477.2M | -$57.2M | 扩大 |
-| Core operating loss | -$33.6M | -$43.9M | 收窄 |
-| Adjusted EBITDA | -$53.1M | -$38.3M | 仍为负 |
-| GAAP net income/loss | -$450.5M | +$309.5M | 去年受非经营收益影响 |
-| Core net loss | -$6.9M | -$40.5M | 接近 breakeven |
+最新完整报表仍为2026Q2/H1，8/12公布。研究日SEC清单严格晚于8/25共25件（19 Form4、6 Form144），没有新增季度/8-K；新10/7 Form4正文抓取受阻，未纳入售股统计，不等于没有新经营消息。[24]
 
-Balance sheet / liquidity as of 2026-06-30：
+| 指标 | 最新披露 / 解释 |
+|---|---|
+| Q2 GAAP / core收入 | $180.110M / $209.869M[3] |
+| Q2 GAAP / core云及其他服务 | $125.991M / $127.728M[3] |
+| Q2 GAAP / core硬件 | $54.119M / $82.141M；GAAP下降含权证影响，core约+17%[3] |
+| Q2 GAAP / core毛利率 | 14.2% / 40.6%[3] |
+| Q2 core经营损益 / adjusted EBITDA | −$33.613M / −$53.070M，两种调整不同[3] |
+| Q2 SBC | $377.008M；IPO RSU追认$273.6M，不把剩余全部年化[1] |
+| H1 OCF / 现金capex / 普通FCF | −$47.488M / $548.873M / −$596.361M[1] |
+| 6/30现金 / 投资 / 受限现金 | $6,742.157M / $1,179.390M / $684.680M[1] |
+| OpenAI贷款 / 入表经营租赁 | $918.244M / $568.827M[1] |
+| 未开始机房租约 | 总约$2.3B，不把1.5B和753.4M再重复累加[1] |
+| 8/5三类basic股数 | A112.247M+B111.601M+N13.716M=237.564M，非实时FD[1] |
+| RPO | $25.4B，含部分转付费用，22%预计至2028/6/30的初始24个月确认[1] |
 
-- Cash and equivalents: $6.742B.
-- Restricted cash: $684.7M.
-- Investments: $1.179B.
-- Cash + restricted cash + investments: about $8.606B.
-- Property and equipment, net: $986.8M.
-- Working capital loan current + non-current: $918.2M.
-- Operating lease liabilities: $568.8M.
-- Total liabilities: $2.473B.
-- Stockholders' equity: $9.155B.
-- Shares outstanding as of 2026-08-05: about 237.6M.
+年度利润口径：FY2025总GAAP净利润$237.827M，而common-attribution basic约$87.88M，不互换；一次性远期负债消灭收益使净利不可作稳态盈利。2024 OCF强亦主要受预收款影响。[2]
 
-Market / latest price：
+## Operating Agenda / Execution Progress
 
-- StockAnalysis 2026-08-13 10:57 ET：price $228.00，-13.00%，previous close $262.06；market cap about $54.16B；EV about $47.73B；TTM revenue $680.67M；net cash about $6.43B。
-- Yahoo Finance 2026-08-24 close：price about $185.43，market cap about $44.052B；52-week range $160.81-$386.34；1y target estimate about $291.64。
+| 稳定事项 | 最新已证实阶段 / 日期 | 原目标 → 当前时间表状态 | 下一关 / 瓶颈 | 自上次变化 / 股东意义 |
+|---|---|---|---|---|
+| OPENAI-CAPACITY | Q2相关收入$56.8M；10/2 Altman重申合作[1][23] | 750MW合同持续跟踪；新模型路由份额未完整核验 | ramp、最新模型、SLA、贷款credits | CNBC报道新Sol Ultrafast使用Nvidia，不直接等同合同终止[22] |
+| CS4-DELIVERY | 8/18发布；每瓦10x对CS-3[6] | 原Q3首批发货；现完成未核验，不擅自判定成功/失败 | 发货、验收、客户全成本 | 修正GPU比较分母，待商业兑现 |
+| AMD-DISAGG | 10/1早期5x吞吐、相同WSE但新增prefill[7] | 原Q4 2026生产目标仍未验收[3] | GPU/网络、生产可靠性、成本 | 技术进展加强，不写成同总功耗/成本5x |
+| AWS-BEDROCK | AWS确认Trainium+CS-3方案[10] | 原Q1 2027目标是Bedrock[3] | AWS侧GA、使用、租赁/服务收入 | Marketplace已有入口，不是同一未来里程碑[9] |
+| MULTICUSTOMER | Gimlet私有流量、GC采购融资确认[18][19] | Gimlet公开云2026稍后/CS-4访问2027；GC Q1 2027 | 公开容量、付费复购、收入份额 | 从供应商logo延伸到伙伴独立证据，但收入未量化 |
+| DC-DELIVERY | Finland9/1首期50MW开建[20] | 50→80→165MW分期，投产日期未披露；原>600MW至2027[3] | 带电验收、利用率、资本投入 | 不与旧600MW/Gimlet重复相加 |
 
 ## What Changed Since Prior View
 
-- 2026-07-07 tracker 观点为 **中性偏建设性 / 继续等待确认**。
-- 2026-08-13 Q2 财报追踪后，观点更新为 **中性偏建设性 / 高估值下继续等待确认**。
-- 2026-08-25 深度研究更新后，观点为 **中性偏建设性 / 价格回落后更值得跟踪，但仍不属于低风险买点**。
-- 正向变化：Q2 core revenue beat、core margin 超预期、FY2026 指引全面上调、RPO $25.4B、2027 revenue triple 目标、OpenAI/AWS/AMD/CrowdStrike/customer ecosystem 扩张、CS-4 发布。
-- 负向/未解变化：GAAP loss、SBC、customer warrants、capex/lease/working capital loan 使普通股财务质量复杂；Q3 revenue guide 只是环比小幅增长；IPO 后卖股/锁定期供给压力上升。
-- 价格纪律更新：$185 附近已经低于 8/13 表中 15x FY2027 EV/Sales 对应约 $195，明显比 $228 更合理；但仍高于 12x 对应约 $161 和 10x 对应约 $139，因此接近观察/小仓试错区上沿，不是强安全边际。
+1. 2026-08-25中性偏建设性观点维持，经营证据有增量，不重写成首次覆盖。
+2. 修正CS-4每瓦效率基准、AWS渠道名称；避免把原承诺过期后偷偷改期。[6][3]
+3. 股本清楚协调：112M只是A类；237.564M是8/5三类经济股本，不用Q2加权平均或全部反稀释证券机械堆加。[1]
+4. 旧$185.43至现$175.05约−5.6%（历史价沿用旧快照）；估值改善有限。主要方法更新为折现、未来股数和现金消耗，而不是新季度财务出现。
+5. 旧“<$140强安全边际”措辞撤回为过强；本轮Base本身仍要求快速扩张和高终值倍数。
+6. 实际Form4 S代码9/25–29售股共549,820股，申报均价机械约$112.760M；Lie与Patel分别120,000、1,320股。[25][28]
+7. Mallick396,000、Komin32,500股，均为实际申报，非Form144假设出售；不按价格波动猜内幕动机。[26][27]
 
 ## Valuation / Price Discipline
 
-Using FY2026 core revenue midpoint $885M and management's statement that 2027 revenue should more than triple, implied FY2027 revenue is about $2.655B+.
+条件桥：$175.05×8/5三类股数=$41.59B经济市值；6/30现金+投资−OpenAI贷款−入表租赁=$6.434B调整净现金，EV约$35.15B。不是10/8实时资产负债表。[1][4]
 
-| FY2027 EV/Sales | Implied share price | Interpretation |
-|---:|---:|---|
-| 8x | ~$116 | Bear / growth or margin disappointment |
-| 10x | ~$139 | Stronger margin-of-safety zone |
-| 12x | ~$161 | Watch zone lower end |
-| 15x | ~$195 | High-growth but still execution-dependent |
-| 18x | ~$228 | 2026-08-13 intraday level; already prices 2027 growth credit |
-| 20x | ~$251 | Near pre-earnings level |
-| 25x | ~$306 | Bull case / scarcity premium |
+FY2026 core中点$885M对应约39.7x；2027三倍口径假设$2.655B对应约13.2x。管理层三倍预期不是完整正式指引，不将RPO转付费用全部等同core收入。[3][1]
 
-Practical zones：
+分析假设统一2028年末、16%年折现：
 
-- **<$140**: strong safety margin zone.
-- **$140-$180**: observation / small-position trial zone.
-- **$180-$230**: high-growth explainable but not cheap；2026-08-24 $185.43 位于此区间下沿。
-- **$230-$300**: requires 2027 revenue triple + margin expansion + lower dilution to be validated.
-- **>$300**: bull-case pricing; avoid chasing unless fundamentals materially exceed plan.
+| 情景 | 2028 core收入 / EV倍数 | 期末调整净现金 / 未来股数 | 研究日现值 |
+|---|---|---|---|
+| Bear | $1.8B / 5–8x | $1B / 280M | $25.6–39.5 |
+| Base | $4B / 12–16x | $3B / 270M | $135.6–178.2 |
+| Bull | $6B / 18–22x | $2B / 300M | $263.3–320.7 |
 
-## Metrics or Events to Monitor Next
+Base需AMD/Bedrock生产、OpenAIramp、多客户付费和稀释可控；未来经济FCF率假设10%–15%，12–16x收入仍约80–160xFCF，不能称保守稳态估值。
 
-- Q3 2026 core revenue vs $214M-$216M guide.
-- Q3 2026 core gross margin vs 38%-40% guide.
-- Q3 2026 core operating margin vs -25% to -23% guide.
-- Q4 ramp needed to hit FY2026 $880M-$890M core revenue and -19% to -17% operating margin.
-- 2027 revenue triple proof：formal 2027 guide, capacity utilization, backlog conversion, customer launches.
-- RPO conversion timing and whether OpenAI-related RPO remains dominant.
-- Data center capacity delivery to >600MW by end-2027.
-- AWS Marketplace availability in Q1 2027 and actual customer usage.
-- OpenAI GPT-5.6 Sol launch partner economics：revenue, service credits, working capital loan offset, customer warrants.
-- AMD Sol partnership adoption.
-- CS-4 third-party benchmarks, shipments, customer adoption and margin impact.
-- New customer revenue from Cognition, Lovable, Block, Figma, AlphaSense, GSK, CrowdStrike.
-- SBC, customer warrant amortization, share count and potential secondary/lock-up selling.
-- Operating cash flow, capex, lease liabilities, FCF burn.
+- >$180：依赖更强执行和高倍数，不以峰值作价值锚。
+- $140–180：偏乐观Base区，研究观察而非自动买点。
+- $100–120：条件性风险补偿检查区；先验证业务未坏，不是保底价。
+- 任何价：客户/毛利/现金恶化先重做论点，不自动补仓。
 
-## What Would Change the Research View
+## Management Promise Tracking / Next Gates
 
-- Upgrade to **Constructive / Positive** if CBRS delivers Q3/Q4 above guidance, proves 2027 revenue triple with diversified customers, keeps core gross margin 40%+, narrows core operating loss, shows SBC/warrants/capex are not overwhelming ordinary-share value, and CS-4 produces third-party/customer economics evidence.
-- Maintain **Neutral-constructive** if growth remains strong but valuation stays above 15x FY2027 revenue and GAAP/core gap remains wide.
-- Downgrade to **Negative / thesis weakening** if Q3/Q4 growth misses, RPO conversion slips, OpenAI/AWS deployment delays, core gross margin falls below 38%, cash burn/capex/lease/customer-warrant economics worsen materially, or insider/early-investor supply coincides with weaker fundamentals.
+| 原始承诺 | 当前监控 |
+|---|---|
+| Q3 core收入$214–216M、毛利38%–40%、经营利润率−25%至−23%[3] | Q3已结束未公布；官方财报日期未核实 |
+| FY2026 core收入$880–890M、毛利41%–43%、经营利润率−19%至−17%[3] | 按中点需Q4约$268.8M、约+25%环比 |
+| 2027收入超过三倍 | 战略预期；待正式指引和交付，不作保证 |
+| CS-4 Q3首批发货[6] | 完成未核验 |
+| AMD Q4 2026 / Bedrock Q1 2027[3] | 需伙伴产品与客户验收 |
+| >600MW在运+合同至2027、制造>10x[3] | 在运拆分、利用率、capex和现金/股 |
+| 10/14与10/28各最多约19.4M解禁资格[2] | 资格不是出售；查真实S交易 |
+
+## Thesis Conditions and Red Lines
+
+维持论点需：客户实际付费增长、产能按期可用、毛利与现金回收不被资本和权益成本吞掉。
+
+升级：AMD/Bedrock跨生产关、多客户收入扩散、core利润之外普通FCF改善、稀释和贷款抵偿有解释。
+
+降级：核心客户ramp实质下修、模型迁移造成收入损害、交付/SLA问题、毛利及自由现金共同恶化、固定租约和融资拖累超预期。
+
+## Research Limits / Portfolio Discipline
+
+- 最新Sol硬件路由：CNBC报道与Altman原帖分别引用，不假装已读OpenAI完整技术声明。[22][23]
+- 未知：实时FD股数、当前LC、合同SLA/精确罚款、客户单位经济性、MW去重、10/7新增Form4正文。
+- 本轮读了完整二手Q&A，未逐字核对官方音频，不称已覆盖全部会议和社交渠道。
+- 归入高波动AI算力/半导体基础设施；同类≤15%、现金+低波动/核心≥30%。无完整当前持仓或周线布林证据，不判交易合规，不给股数。
 
 ## Research Files
 
@@ -133,3 +116,26 @@ Practical zones：
 - `deep-research/2026-07-07-deep-research-v2.md`
 - `earnings-tracking/2026-Q2-earnings-tracking.md`
 - `deep-research/2026-08-25-deep-research-update.md`
+- `deep-research/2026-10-08-deep-research-update.md`
+
+## Sources
+
+[1] https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm — 2026Q2 10-Q（SEC原件及镜像核验）
+[2] https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm — IPO 424B4：年度财务、解禁
+[3] https://investors.cerebras.ai/node/7286/pdf — 2026Q2业绩及core对账
+[4] https://api.nasdaq.com/api/quote/CBRS/info?assetclass=stocks — Nasdaq常规交易日报价：2026-10-07
+[5] https://exa.ai/library/markets/stock/CBRS?date=2026-10-07 — Exa行情交叉检查（15:55，不等于官方收盘）
+[6] https://investors.cerebras.ai/news-releases/news-release-details/cerebras-unveils-cs-4-30-times-faster-gpu-based-solutions — CS-4发布，2026-08-18
+[7] https://www.cerebras.ai/blog/disaggregated-inference-from-the-ground-up — 异构推理早期实验，2026-10-01
+[9] https://aws.amazon.com/marketplace/pp/prodview-ph4bdvplhhz3o — AWS Marketplace在售listing
+[10] https://www.aboutamazon.com/news/aws/aws-cerebras-ai-inference — AWS Bedrock合作方原文
+[18] https://gimletlabs.ai/blog/cerebras-announcement — Gimlet私有部署及扩张目标
+[19] https://www.generalcompute.com/blog/general-compute-cerebras-multi-year-agreement — General Compute：采购融资及2027Q1交付
+[20] https://investors.cerebras.ai/node/7541/pdf — Finland容量合同，2026-09-01
+[22] https://www.cnbc.com/2026/10/05/cerebras-cbrs-sam-altman-close-partner.html — CNBC关于硬件路由及合作表态的报道
+[23] https://x.com/sama/status/2106147184693620924 — Sam Altman原帖（X syndication原始JSON读回）
+[24] https://data.sec.gov/submissions/CIK0002021728.json — SEC文件清单，2026-10-08检索
+[25] https://www.sec.gov/Archives/edgar/data/2021728/000162828026063713/wk-form4_1790625937.xml — Sean Lie实际Form4售股
+[26] https://www.sec.gov/Archives/edgar/data/2021728/000162828026064042/wk-form4_1790807666.xml — Dhiraj Mallick实际Form4售股
+[27] https://www.sec.gov/Archives/edgar/data/2021728/000162828026064044/wk-form4_1790807735.xml — Robert Komin实际Form4售股
+[28] https://www.sec.gov/Archives/edgar/data/2021728/000162828026064040/wk-form4_1790807613.xml — Yagnesh Patel实际Form4售股
