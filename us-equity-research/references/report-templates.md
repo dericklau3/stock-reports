@@ -37,13 +37,22 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue and cost detail to Financial Deep Dive, dilution or price assumptions to Valuation Work, and major risks to Risk Register. Cite key facts in the table.
    - Expand one project only when the user explicitly requests a project deep dive. A short update on a thesis-changing fact belongs in its analytical section instead of recreating the whole project list.
 
-3. **Financial Deep Dive**
-   - Multi-year revenue growth and growth quality; reconcile organic/M&A/FX effects and earnings-to-cash conversion using [company-type checks](company-types.md).
-   - Gross margin, operating margin, and operating leverage.
-   - Free cash flow and capital intensity.
-   - Balance sheet strength, debt maturity, cash runway, and dilution risk.
-   - Key accounting issues or non-GAAP adjustments if relevant.
-   - SBC, share count trend, working capital, and one-time items.
+3. **Financial Position / 财务状况：收入、利润和现金**
+   - Write for a reader with **zero accounting background**. Explain how much the company sells, whether it earns a sustainable profit, where cash is flowing, and whether it can fund ongoing operations/expansion.
+   - Default to **one compact table with three columns and normally 4–6 selected indicators** (fewer if data or sector makes rows inapplicable). A model format:
+     | 关键指标 | 最新数据（注明期间） | 这说明什么 |
+     |---|---|---|
+     | 收入及同比增长 | Latest comparable period, dated | Is customer spending growing? |
+     | 净利润或亏损 | Reported figure, dated | Does accounting profit exist, and is it recurring? |
+     | 经营产生的现金 | Relevant reported cash flow | Is the business collecting more cash than it spends running operations? |
+     | 建设及设备投入 | Material capital expenditures | How much cash goes into expansion or upkeep? |
+     | 投入后现金结余（自由现金流） | Only if meaningful/reconcilable | Is cash generated after capital spending, or being consumed? |
+     | 现金储备及主要债务 | Same balance-sheet date | Does it have enough liquidity/financing headroom? |
+   - **Select rather than mechanically print every example row**: growth/profitability/cash are the default focus; choose sector-specific indicators where important. Show one or two **comparable** periods per indicator, not the old FY2024 + FY2025 + H1 2026 + TTM grid. Do not compare a six-month subtotal with an entire fiscal year as if it were year-over-year growth. Use sensible rounded Chinese units (e.g., 亿美元), retaining exact values in the calculation records.
+   - In the final column, explain **what the number means for this specific company**, without simply restating the label. Limit the body after the table to **one 2–3-sentence financial judgment** about growth, sustainable earnings, cash burn/runway and main financial risk.
+   - Avoid separate 4.1, 4.2... financial subsections, dense line-by-line reconciling footnotes, professional acronym lists and duplicate metric tables by default. Define necessary concepts at first appearance; replace bare GAAP, TTM, OCF, FCF, SBC and similar jargon with plain language.
+   - **Do not simplify away a material contradiction**: if a one-time gain makes profit appear positive despite weak operating earnings, or adjusted figures diverge materially, disclose the actual issue and its interpretation **briefly beside the relevant figure** and cite the filing/table. Keep verified source lineage, unit/period/accounting basis and reproducible calculations in the relevant tracker/valuation work; don't force all audit-trail details into the reading flow.
+   - Preserve decision-critical discussion of gross/operating margin quality, working capital, debt maturity, leases, equity compensation/dilution and financing when they change the investment conclusion; surface them in the appropriate valuation/risk section or one concise financial note, rather than generating exhaustive accounting commentary.
 
 4. **Management and Capital Allocation**
    - Management credibility and execution history.
@@ -103,10 +112,10 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - What materially changed in the investment judgment, if anything, and the new evidence behind it. Do not repeat the opening investment-view statement.
    - Whether the quarter strengthened or weakened the long-term thesis, and why.
 
-2. **Headline Results**
-   - Revenue, growth, EPS or net income, margins, cash flow.
-   - Compare with prior year, prior quarter, original guidance and consensus when available. Record the consensus snapshot timestamp and metric basis; a post-release snapshot cannot establish a pre-release beat/miss. Explain seasonality and fiscal-period mismatches.
-   - Separate reported results from non-GAAP or adjusted results.
+2. **Headline Results / 本期财务发生什么变化**
+   - Use a concise **three-column table of 3–5 decision-driving metrics**, showing the actual number and same-period comparable change (when available), plus a one-line plain-language meaning. Prioritize revenue, profit/loss, operating cash and any material financing/capex/sector-specific measure.
+   - Explain in one short paragraph whether this quarter reflects better/worse business economics. Only mention guidance and pre-release consensus when verifiable and material. Preserve forecast basis and reporting period, but avoid a second full-year/TTM grid or an exhaustive accounting reconciliation.
+   - Distinguish published accounting profit from adjusted measures and one-time gains if they change the conclusion; explain differences briefly near the relevant value.
 
 3. **Guidance, Management Commentary and Progress**
    - Keep the same compact three-column progress format (**项目 / 为什么做、希望达到什么结果 / 当前进展与下一步**), usually **3–5 top items**, focusing on important changes since the last period. Explain the customer problem and intended business outcome even in updates; indicate previous-to-current change briefly inside the last column. Distinguish verified delivery or paid use from plans.
@@ -114,11 +123,8 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Put earnings and cash consequences in the financial/valuation sections, not another broad operating recap.
 
 4. **Quality of the Quarter**
-   - Was growth high quality or one-off?
-   - Margin trend.
-   - Cash flow and balance sheet changes.
-   - Customer, product, or segment signals.
-   - Industry-specific KPIs when relevant, such as ARR, RPO, NRR, GMV, take rate, bookings, backlog, loss ratio, combined ratio, same-store sales, or clinical milestones.
+   - Add **only new interpretation, not a repeated set of the Headline Results table**. In at most 2–3 concise sentences, call out any single decisive nonrecurring gain, deteriorating margins, cash conversion or customer/sector indicator that changes the apparent results.
+   - If the key insight has already been clearly explained next to a number above, omit this separate subsection entirely. Keep complete verification and calculation records in the tracker or research notes instead of adding a lengthy accounting audit trail.
 
 5. **Market Reaction in Context**
    - Assess whether the post-earnings market reaction is consistent with changes in fundamentals, guidance, and valuation.

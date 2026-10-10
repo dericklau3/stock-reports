@@ -105,6 +105,18 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('Never generate the former five-column initiative inventory', template)
         self.assertIn('only the top 3–5 milestones', skill)
 
+    def test_beginner_financial_summary_contract(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        self.assertIn('## Beginner-readable financial picture', skill)
+        self.assertIn('one compact three-column table, normally 4–6 meaningful indicators', skill)
+        self.assertIn('3. **Financial Position / 财务状况：收入、利润和现金**', template)
+        self.assertIn('| 关键指标 | 最新数据（注明期间） | 这说明什么 |', template)
+        self.assertIn('Do not simplify away a material contradiction', template)
+        self.assertIn('a six-month subtotal with an entire fiscal year', template)
+        self.assertNotIn('3. **Financial Deep Dive**', template)
+        self.assertIn('only new interpretation', template)
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():
