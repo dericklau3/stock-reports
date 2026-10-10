@@ -137,7 +137,7 @@ class SkillPackageTests(unittest.TestCase):
             self.assertIn("| " + name + " |", section)
         self.assertIn("完整深度报告的最后一段", section)
         self.assertNotRegex(content, r"(?m)^\s*(?:\d+\.\s*)?(?:Final Research Framework|最终研究结论)\s*$")
-        self.assertIn("研究记录", (ROOT / "references/investor-lenses.md").read_text(encoding="utf-8"))
+        self.assertIn("研究资料", (ROOT / "references/investor-lenses.md").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":
