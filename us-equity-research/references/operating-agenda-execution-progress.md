@@ -7,7 +7,7 @@ Use this reference with deep company research and material earnings/event update
 1. Read the saved tracker/latest memo before a repeat pass. Extract initiative names, original commitments, stages, dates, dependencies and previously missing evidence.
 2. Read the latest filing, earnings release/slides and available call Q&A. Search material developments since that reporting period. Look back far enough to compare original promises with delivery; usually the prior annual report and relevant earlier milestones are more useful than an arbitrary news window.
 3. Inspect operating evidence relevant to the company: product release notes and documentation, investor-day roadmaps, regulator/clinical records, plant or deployment updates, contract/delivery disclosures, customer or partner announcements, adoption metrics, integration milestones and unit economics.
-4. Select the material active initiatives, normally 3–8 if supported. Include efforts to improve or repair the existing profit engine, not just high-profile new projects. Rank by strategic importance, committed capital, earnings sensitivity, competitive impact and risk; do not force a numerical ranking or populate an invented quota.
+4. Investigate the full set of material initiatives (often 3–8, if supported) for internal analysis and `tracker.md`, but select only **3–5 highest-impact items (or fewer)** for the reader-facing report. Include core-business improvement as well as new projects; group related items, and never hide a thesis-critical failure or delay. Do not force a quota or invent project counts.
 5. Identify important discontinued, paused or completed commitments from prior research. Do not silently drop a failed project from the inventory because management stopped mentioning it.
 
 Do not confuse a product taxonomy with an initiative. “Cloud segment” names a business; “deploying contracted capacity and bringing customer workloads into paid production” describes active work. Mature consumer companies can have pricing/channel resets, franchise upgrades and supply-chain improvements instead of speculative technology launches.
@@ -61,32 +61,24 @@ High-materiality initiatives deserve more than one announcement source when prac
 
 These are research checklists, not facts about any particular ticker.
 
-## 5. Mandatory report output
+## 5. Mandatory report output — brief progress snapshot
 
-Include a visible subsection titled **公司正在做什么、做到哪一步** before valuation. Open with a plain-language operating summary: the most consequential work underway, its purpose, and the distinction between today's earnings engine and tomorrow's potential engine.
+Full research includes one compact **公司正在做什么、做到哪一步** section before valuation, not a second report inside the report. The thorough research lives in `tracker.md`.
 
-Use a concise table, splitting fields into a second table or initiative notes rather than creating an unreadable wide table:
+**Default reader-facing format:** optional introduction of at most one plain-language sentence, then **one three-column table with normally 3–5 rows** (fewer if not justified). Use brief text and concise inline dated source references:
 
-| 重点事项 / 目标 | 已完成什么：证据与日期 | 当前阶段 / 时间表状态 | 下一关 / 时间与主要瓶颈 | 对收入、现金与股东的意义 |
-|---|---|---|---|---|
-| Evidence-backed initiative name | Actual work, latest evidence date and source | Separate product, permission, paid adoption and economics where relevant | Specific gate; disclosed date or 未披露; key dependency | Disclosed contribution versus assumption or unknown; cost/dilution/value capture |
+| 重点项目 | 当前进展 | 下一步关注什么 |
+|---|---|---|
+| Name in ordinary language, not an internal key | One actual completed milestone or qualified announcement/test and relevant source | The next observable deliverable, customer use or commercial proof |
 
-For the initiatives that drive the thesis, add a short deep dive:
+- **No five-column table** (do not display separate evidence, stage, original deadline, bottleneck, capital use and shareholder-meaning columns).
+- **No 3.1/3.2/3.3 item-by-item essays below the table**, no extended bullet list rephrasing the rows, no second "execution synthesis" recap.
+- Choose the most important 3–5 projects by impact on the thesis, group closely related efforts, and include material delays or failures rather than suppressing them. An announcement is not delivery; signed contracts are not automatically paid use; sales are not automatically cash/profit.
+- Leave dates, original commitments, stage-by-stage evidence, extra project rows, financing and resource dependencies in the tracker. Place material capital, unit economics, dilutive financing and downside implications in the corresponding financial/valuation/risk chapters; don't erase critical facts merely to shorten the report.
+- Use simple, reader-friendly project names and explain necessary acronyms at first mention. Only make the progress section longer **when the user expressly asks for a detailed initiative breakdown**.
+- If there is no material new information, say so briefly rather than regenerating a comprehensive history.
 
-1. **要解决什么：** product/customer/operating problem, strategy and original commitment.
-2. **确实做到哪里：** completed deliverable and sourced progress, including incomplete commercial or economic stages.
-3. **还差哪一步：** bottleneck, dependency, next observable milestone and expected/unknown timeline.
-4. **钱怎么来、成本谁承担：** recognition, capex/opex, funding, dilution and value allocation; do not demand mature financial proof to acknowledge early progress.
-5. **相比上次有什么变化：** previous stage → new evidence → current stage, including delays or reframed targets.
-
-Finish with an execution synthesis, not another news list:
-
-- Which work is already delivering real customer/operating results?
-- Which work remains technical/regulatory/commercial validation?
-- What could materially change earnings, how, and over what disclosed or explicitly assumed horizon?
-- What is the main bottleneck, and the next fact that would change the view?
-
-For chat delivery, include a brief **正在做什么 / 最新进度 / 下一关** explanation for the most important initiatives. The long table stays in the report; do not deliver only “cheap/expensive” or buy/sell framing.
+For chat delivery, summarize the main work, one recent progress fact and the next check in one or two sentences; do not paste the full tracker.
 
 ## 6. Connect progress to valuation without killing optionality
 
@@ -123,6 +115,7 @@ Keep a compact **Operating Agenda / Execution Progress** section with stable ini
 - Are lack of disclosure and lack of progress distinguished? Is genuine early execution acknowledged even before proven monetization?
 - Do scenario assumptions reflect required gates without double counting future optionality?
 - Does the tracker preserve initiative-level changes and the next monitoring point?
+- Is the reader-facing progress a concise three-column, normally 3–5-row table without repetitive initiative deep dives, while full milestone history remains in `tracker.md`?
 - Does the Chinese chat summary include important operating progress, not only an investment verdict?
 
 If evidence cannot establish a material initiative's current state, mark it unverified, explain the retrieval/coverage gap and lower confidence. Formatting a complete table is not proof of research completeness.

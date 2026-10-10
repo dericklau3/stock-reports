@@ -25,13 +25,15 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - **Only afterward:** explain at most the necessary technical/business terms at their first appearance (usually two to four), with a practical explanation in everyday language. Never make a jargon glossary, acronym list, architectural comparison, market sizing or financial multiples the main beginner explanation.
    - After the reader understands the buying/payment path, cover unit economics when available, industry size and growth, competitive advantage, customer concentration, pricing power and switching costs. Avoid duplicating the later product-progress or valuation sections.
 
-2. **Segment, Product and Execution Progress**
-   - Plain-language explanation of each major segment or product before the professional analysis.
-   - Revenue, growth, margins and strategic importance by segment where disclosed.
-   - Include a prominent subsection **公司正在做什么、做到哪一步 / Operating Agenda & Execution Progress**, not just a product list or future roadmap.
-   - Use the initiative inventory/table in [execution-progress reference](operating-agenda-execution-progress.md): objective, prior commitment, completed work and latest dated evidence, current stage(s), schedule, next gate, bottleneck/resources and financial/shareholder implications.
-   - Deep-dive the initiatives most likely to change the earnings engine or downside risk; explain what evidence demonstrates actual progress and what is still unproven.
-   - Close with the work that matters most over the coming quarters, without forcing a near-term payoff for long-duration projects.
+2. **Business Progress / 公司正在做什么、做到哪一步**
+   - Reader-facing output: **one compact three-column table of normally 3–5 high-priority items** (fewer if less evidence), optionally preceded by one plain-language context sentence:
+     | 重点项目 | 当前进展 | 下一步关注什么 |
+     |---|---|---|
+     | Simple project name | One specific proved development (include concise date/source) | One measurable next gate, with a date only if disclosed |
+   - **Never generate the former five-column initiative inventory or 3.1, 3.2, 3.3... essays for each row by default.** Do not copy table entries into follow-up paragraphs, another list or a concluding recap.
+   - Select projects by potential effect on future sales, cash or downside risk; group related work if useful. Do not hide consequential delays or cancellations. Describe announcements, tests, deliveries and actual paid usage separately, in beginner-friendly language.
+   - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue and cost detail to Financial Deep Dive, dilution or price assumptions to Valuation Work, and major risks to Risk Register. Cite key facts in the table.
+   - Expand one project only when the user explicitly requests a project deep dive. A short update on a thesis-changing fact belongs in its analytical section instead of recreating the whole project list.
 
 3. **Financial Deep Dive**
    - Multi-year revenue growth and growth quality; reconcile organic/M&A/FX effects and earnings-to-cash conversion using [company-type checks](company-types.md).
@@ -104,15 +106,10 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Compare with prior year, prior quarter, original guidance and consensus when available. Record the consensus snapshot timestamp and metric basis; a post-release snapshot cannot establish a pre-release beat/miss. Explain seasonality and fiscal-period mismatches.
    - Separate reported results from non-GAAP or adjusted results.
 
-3. **Guidance, Management Commentary and Execution Progress**
-   - **公司正在做什么、做到哪一步**: update the material initiative inventory from `tracker.md`; show prior stage → new evidence → current stage and separate technical/regulatory progress from paid adoption and economics. Carry unchanged or unverified statuses explicitly for thesis-driving initiatives.
-   - Next gates, original versus revised dates, execution bottlenecks, resource needs and implications for revenue, cash and dilution.
-   - New guidance.
-   - Important management comments.
-   - Changes from prior narrative.
-   - Any change in management tone or strategic priority.
-   - Whether management met, missed, delayed, or reframed prior commitments.
-   - Quality of Q&A answers when available, especially directness, specificity, consistency with filings, and willingness to address weak spots.
+3. **Guidance, Management Commentary and Progress**
+   - Keep the same compact three-column progress format, usually **3–5 top items**, focusing on important changes since the last period. Indicate previous-to-current change briefly inside the relevant row. Distinguish verified delivery or paid use from plans.
+   - Highlight only decision-relevant guidance changes, missed promises and management answers; no per-project 3.1/3.2 essays or repetition of the progress table. Preserve complete original dates and evidence in `tracker.md`.
+   - Put earnings and cash consequences in the financial/valuation sections, not another broad operating recap.
 
 4. **Quality of the Quarter**
    - Was growth high quality or one-off?

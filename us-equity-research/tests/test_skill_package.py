@@ -93,6 +93,16 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('hypothetical illustration', template)
         self.assertIn('do not mistake partnerships', template.lower())
 
+    def test_short_progress_summary_contract(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        progress = (ROOT / 'references/operating-agenda-execution-progress.md').read_text(encoding='utf-8')
+        self.assertIn('one three-column table with normally 3–5 rows', progress)
+        self.assertIn('| 重点项目 | 当前进展 | 下一步关注什么 |', progress)
+        self.assertIn('No 3.1/3.2/3.3 item-by-item essays', progress)
+        self.assertIn('Never generate the former five-column initiative inventory', template)
+        self.assertIn('only the top 3–5 milestones', skill)
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():
