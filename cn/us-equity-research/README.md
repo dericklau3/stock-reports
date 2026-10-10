@@ -36,7 +36,7 @@ Track COMPANY after earnings
 
 ## 输出要求
 
-- 先给研究观点。
+- 完整报告开头先给「投资观点、核心逻辑、主要风险」三项简短结论，用通俗中文说明。
 - 使用最新且可引用的来源，不编造财务数据或估值假设。
 - 会影响结论的关键数据要尽量做双源核验；如果来源冲突，要标出差异和置信度影响。
 - 深度研究报告的估值分析中，应加入 forward P/E 快照表：当前 forward P/E、最近 1 年最高 forward P/E、最近 1 年最低 forward P/E，并写清日期、预测期间、会计口径和来源。只有历史数据覆盖与口径可比时才判断高/中/低位；季度样本不能冒充全年极值，不能用今日 EPS 回填历史股价。历史未取得与 P/E 不适用分别说明。
@@ -45,7 +45,7 @@ Track COMPANY after earnings
 - 估值方法要匹配公司类型。
 - 当估值是关键判断依据时，使用 bear / base / bull 三档情景。
 - 关键数据不足时，使用 `Insufficient evidence`，不要强行给方向性观点。
-- 核心输出开头固定包含五行摘要：Research view、Confidence、Time horizon、Main thesis、Key risk。
+- 核心输出开头仅保留三项摘要：「投资观点、核心逻辑、主要风险」，每项尽量用 1–2 句人话说明；不再单列 Confidence 或 Time horizon。关键证据不足要放在对应分析中说清楚；估值年份放在估值部分。后文不重复这三项摘要。
 - 所有公司都必须包含小白业务解释：产品是什么、客户是谁、客户为什么买、收入来源是什么、主要成本是什么、现在或未来如何盈利。
 - 遇到专业术语必须先翻译成人话，例如 OCS、coherent optics、ARR、RPO、GMV、take rate、loss ratio、combined ratio 等。
 - 深度研究要加入巴菲特、芒格、段永平、李录四种投资风格视角，作为最终决策前的压测框架。
@@ -104,8 +104,8 @@ research/
 
 建议 `tracker.md` 持续维护：
 
-- 当前 Research view
-- 当前 Main thesis
+- 当前投资观点
+- 当前核心逻辑
 - 核心 thesis 假设
 - 红线条件，也就是触发后必须重新审视或下调观点的信号
 - 关键风险

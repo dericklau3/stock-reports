@@ -47,7 +47,17 @@ Read only the references needed for the selected task; the shared data rules app
 - **Negative / thesis weakening:** adverse fundamentals, valuation, dilution, financing or competitive developments.
 - **Insufficient evidence:** decision-critical inputs are missing or materially conflicted; name the evidence needed.
 
-Report confidence separately: high requires reconciled critical inputs and a conclusion robust to plausible sensitivity; medium means bounded uncertainties could change valuation/conviction; low means unresolved critical dependencies dominate. High confidence is not certainty of returns. Information richness or a long report does not establish high confidence. Identify mixed confidence across operating progress and valuation when relevant.
+Assess confidence in the underlying evidence while researching: high requires reconciled critical inputs and a view robust to plausible sensitivity; medium means bounded uncertainties could alter valuation or conviction; low means unresolved thesis-driving dependencies dominate. Confidence does not predict stock returns and is not determined by report length. Do not present a standalone confidence score or heading by default; instead, identify material evidence gaps in the sections they affect, explain their consequences and name what would resolve them. Provide an explicit confidence rating only if the user asks.
+
+## Reader-facing report summary
+
+For full deep research and post-earnings/material-event updates, open the written report with **exactly three concise, plain-language items**, in the user's language:
+
+- **投资观点 / Investment view**: overall business and valuation judgment, including whether the current price offers an attractive risk/reward when supportable.
+- **核心逻辑 / Core thesis**: why that judgment could be right, emphasizing the actual commercial/earnings drivers.
+- **主要风险 / Key risks**: the 1–3 most important failure modes, stated clearly rather than as jargon lists.
+
+Use **投资观点、核心逻辑、主要风险** for Chinese output; **Investment view, Core thesis, Key risks** for English output. The bilingual labels above are instructions, not headings to print together. Aim for 1–2 short sentences per item. Explain necessary technical terms in everyday language. Do not add standalone **Confidence** or **Time horizon** fields. State research/quote dates and relevant valuation target years once in compact metadata or the valuation analysis; discuss material uncertainty beside the affected evidence instead of creating a confidence field. Do not repeat these three summary items in a separate executive summary or at the end; use later sections for fresh evidence, calculations, changes and observable view-changing conditions. For narrow questions, answer only the requested scope.
 
 ## Saving Research Results
 
@@ -114,5 +124,5 @@ Treat `tracker.md` as the active monitoring dashboard, not a shorter copy of the
 - In full research, include understandable business economics, evidenced operating progress, material financial risks, suitable scenarios, the forward P/E table or justified gaps, four lenses and thesis invalidation conditions.
 - Every valuation needs reproducible inputs/formula, a value date, suitable shares, explicit net claims and sensitivity. Recompute arithmetic with a calculator or code. A future scenario price is not today's fair value without a consistent discounting method.
 - Updates must preserve original commitments and explain what changed. Mark invalidated old estimates stale; do not silently rewrite prior snapshots.
-- Start the chat response with the research view. Include a brief **正在做什么 / 最新进度 / 下一关** summary for material initiatives, the main valuation condition and material verification limits; link the saved memo. For narrow questions, keep delivery proportionate to the request.
+- Start the chat response with the concise three-item summary (投资观点 / 核心逻辑 / 主要风险 in Chinese), not a five-field technical block. Include a brief **正在做什么 / 最新进度 / 下一关** summary for material initiatives, the main valuation condition and material verification limits; link the saved memo. For narrow questions, keep delivery proportionate to the request.
 - End with concise **What would change my view / 什么会改变我的观点** conditions.

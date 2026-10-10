@@ -4,23 +4,17 @@
 
 Read this section for a full deep-research memo. For a narrow question, use only relevant sections. Before writing, load [data rules](data-verification.md), [valuation rules](valuation.md), [execution progress](operating-agenda-execution-progress.md), [company types](company-types.md) and [investor lenses](investor-lenses.md).
 
-Begin with this fixed summary block:
+Open with **exactly three brief, reader-facing items** in the user's language. For Chinese reports use **投资观点**, **核心逻辑**, **主要风险**; for English reports use **Investment view**, **Core thesis**, **Key risks**. Do not print both languages together.
 
-- **Research view**:
-- **Confidence**:
-- **Time horizon**:
-- **Main thesis**:
-- **Key risk**:
+- **Investment view / 投资观点:** In 1–2 plain-language sentences, say how the company looks as an investment at the current valuation; reflect the supported research-view category without using unexplained labels.
+- **Core thesis / 核心逻辑:** In 1–2 sentences, explain the main business and cash-generation drivers behind the investment view.
+- **Key risks / 主要风险:** In 1–2 sentences, identify the most important realistic ways the thesis could fail, translating jargon into everyday language.
 
-Then state the research cutoff, quote timestamp/session, latest fiscal period/end date and valuation horizon.
+The bilingual labels above specify meaning only: render each heading in the user's language. **Do not add standalone Confidence or Time horizon fields.** Evaluate evidence strength internally and discuss decision-critical uncertainty where it matters. State the research cutoff, quote timestamp/session, latest fiscal period/end date and valuation target year(s) once in a compact metadata line or relevant valuation section.
 
-1. **Executive View**
-   - Research view: Positive / Constructive but watchful / Neutral / Negative / Insufficient evidence.
-   - Confidence and time horizon.
-   - Core thesis in three bullets.
-   - Strongest reason against the view.
+Do not repeat this opening summary in another executive section or at the end. Subsequent sections should add evidence, quantitative work, company progress and concrete conditions that would change the view.
 
-2. **Business Model and Industry Structure**
+1. **Business Model and Industry Structure**
    - Beginner explanation: in plain language, what the company sells, who pays, why customers buy, and how cash eventually becomes profit or free cash flow.
    - Jargon translation: define the important product, accounting, or industry terms needed to understand the business.
    - How the company makes money.
@@ -29,7 +23,7 @@ Then state the research cutoff, quote timestamp/session, latest fiscal period/en
    - Competitive landscape and moat.
    - Customer concentration, pricing power, and switching costs.
 
-3. **Segment, Product and Execution Progress**
+2. **Segment, Product and Execution Progress**
    - Plain-language explanation of each major segment or product before the professional analysis.
    - Revenue, growth, margins and strategic importance by segment where disclosed.
    - Include a prominent subsection **公司正在做什么、做到哪一步 / Operating Agenda & Execution Progress**, not just a product list or future roadmap.
@@ -37,7 +31,7 @@ Then state the research cutoff, quote timestamp/session, latest fiscal period/en
    - Deep-dive the initiatives most likely to change the earnings engine or downside risk; explain what evidence demonstrates actual progress and what is still unproven.
    - Close with the work that matters most over the coming quarters, without forcing a near-term payoff for long-duration projects.
 
-4. **Financial Deep Dive**
+3. **Financial Deep Dive**
    - Multi-year revenue growth and growth quality; reconcile organic/M&A/FX effects and earnings-to-cash conversion using [company-type checks](company-types.md).
    - Gross margin, operating margin, and operating leverage.
    - Free cash flow and capital intensity.
@@ -45,14 +39,14 @@ Then state the research cutoff, quote timestamp/session, latest fiscal period/en
    - Key accounting issues or non-GAAP adjustments if relevant.
    - SBC, share count trend, working capital, and one-time items.
 
-5. **Management and Capital Allocation**
+4. **Management and Capital Allocation**
    - Management credibility and execution history.
    - Management promise tracking: prior targets, guidance, strategic claims, product milestones, margin goals, capital allocation promises, and whether they were met, delayed, reframed, or abandoned.
    - Earnings-call answer quality when transcripts are available: whether management answers hard questions directly, explains tradeoffs with numbers, acknowledges misses, changes tone, or relies mainly on vague external excuses.
    - Insider ownership or incentives when relevant.
    - Buybacks, dilution, M&A, capex, and R&D allocation.
 
-6. **Valuation Work**
+5. **Valuation Work**
    - Current multiples and historical context.
    - Forward P/E snapshot table: current forward P/E, 1-year high forward P/E, and 1-year low forward P/E, with dates, EPS basis, sources and coverage. Interpret range position only if comparable; explicitly distinguish unavailable history, sparse observations and a method that is not meaningful.
    - Peer comparison where useful.
@@ -60,18 +54,18 @@ Then state the research cutoff, quote timestamp/session, latest fiscal period/en
    - Reproducible formula, unit/period definitions, EV-to-common-equity bridge, selected shares, value date, sensitivity and arithmetic check under [valuation rules](valuation.md). Include current-price implied operating requirements when supportable.
    - Valuation method selection by company type.
 
-7. **Catalysts and Monitoring Plan**
+6. **Catalysts and Monitoring Plan**
    - Near-term catalysts.
    - Medium-term thesis milestones.
    - Metrics to monitor in future quarters.
 
-8. **Risk Register**
+7. **Risk Register**
    - Qualitative likelihood and severity of key risks; numerical probabilities require a defensible basis.
    - Downside case.
    - Thesis invalidation signals.
    - The strongest disconfirming evidence.
 
-9. **Four Investor-Style Decision Lenses**
+8. **Four Investor-Style Decision Lenses**
    - Anti-bias note: information richness rating, main research blind spot, and strongest reason smart investors may disagree.
    - Buffett-style lens: conclusion, key question, evidence for and against, decision implication, and follow-up question covering business durability, moat, cash conversion, management, valuation, and margin of safety.
    - Munger-style lens: conclusion, key question, inversion table or concise failure paths, fragile assumptions, incentives, psychological traps, major stupidity risk, decision implication, and follow-up question.
@@ -80,30 +74,28 @@ Then state the research cutoff, quote timestamp/session, latest fiscal period/en
    - Scoring table with evidence rationale and coarse anchors from [investor lenses](investor-lenses.md); N/A is permitted. Do not repeat earlier analysis.
    - Integrated decision memo and action-framing table for no position, existing position, add/upgrade signal, and reduce/downgrade signal.
 
-10. **Final Research Framework**
-   - What the thesis depends on.
-   - What would make the thesis stronger.
-   - What would change the research view.
+9. **Final Research Framework**
+   - Briefly name the measurable assumptions and future events that would strengthen or invalidate the thesis.
+   - Do not repeat the opening three-part summary or copy the risk section; focus on observable thresholds and evidence to watch.
 
 ## Post-Earnings Tracking Template
 
 Read this section for earnings or material-event updates. Load [data rules](data-verification.md) and [execution progress](operating-agenda-execution-progress.md); load [valuation rules](valuation.md) when updating values. For non-earnings events, replace earnings-specific fields with event facts and implications; do not force a beat/miss verdict.
 
-Begin with this fixed summary block:
+Open with **exactly three brief, reader-facing items** in the user's language. For Chinese reports use **投资观点**, **核心逻辑**, **主要风险**; for English reports use **Investment view**, **Core thesis**, **Key risks**. Do not print both languages together.
 
-- **Research view**:
-- **Confidence**:
-- **Time horizon**:
-- **Main thesis**:
-- **Key risk**:
+- **Investment view / 投资观点:** In 1–2 plain-language sentences, say how the company looks as an investment at the current valuation; reflect the supported research-view category without using unexplained labels.
+- **Core thesis / 核心逻辑:** In 1–2 sentences, explain the main business and cash-generation drivers behind the investment view.
+- **Key risks / 主要风险:** In 1–2 sentences, identify the most important realistic ways the thesis could fail, translating jargon into everyday language.
 
-Then state the research cutoff, quote timestamp/session, latest fiscal period/end date and valuation horizon.
+The bilingual labels above specify meaning only: render each heading in the user's language. **Do not add standalone Confidence or Time horizon fields.** Evaluate evidence strength internally and discuss decision-critical uncertainty where it matters. State the research cutoff, quote timestamp/session, latest fiscal period/end date and valuation target year(s) once in a compact metadata line or relevant valuation section.
+
+Do not repeat this opening summary in another executive section or at the end. Subsequent sections should add evidence, quantitative work, company progress and concrete conditions that would change the view.
 
 1. **Post-Earnings Verdict**
    - Better than expected / mixed / worse than expected only against an identified pre-release benchmark. Separate management guidance from consensus; if pre-release consensus is missing, write “consensus surprise unverified.”
-   - Updated research view: Positive / Constructive but watchful / Neutral / Negative / Insufficient evidence.
-   - Key reason.
-   - Whether the quarter changed the long-term thesis.
+   - What materially changed in the investment judgment, if anything, and the new evidence behind it. Do not repeat the opening investment-view statement.
+   - Whether the quarter strengthened or weakened the long-term thesis, and why.
 
 2. **Headline Results**
    - Revenue, growth, EPS or net income, margins, cash flow.
