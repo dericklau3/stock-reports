@@ -1,53 +1,43 @@
-# Offline Behavioral Evaluation
+# 离线行为验收案例
 
-These synthetic cases test research decisions, not wording. Give a fresh evaluator only the skill path and the **Inputs** section, without the acceptance criteria or prior outputs. Ask it to read the entrypoint and required references, return concise answers and calculation assumptions, and avoid web access or file changes. Evaluate each case separately; a package-test pass does not count as a behavioral pass. Real company source retrieval requires separate live verification.
+本文件用于检查技能是否会在复杂情境下维持正确的财务和研究判断。每个案例要分清来源、时间、口径、缺失数据与事实/推断；不强制固定措辞。
 
-## Inputs
+## 测试输入
 
-1. **Sparse historical valuation:** today price $100 and FY1 adjusted EPS $5. Last-year price high $150 and low $60. Only historical forward P/E observations are quarterly 25x, 30x, 22x; today 20x. Provide current/one-year high/low table and cheapness interpretation. The user wants a firm answer despite missing daily data.
-2. **Future price versus present value:** EBITDA in two years $200m, exit multiple 10x, debt $300m, unrestricted cash $100m plus restricted cash $50m, preferred claims $100m. Current actual shares 100m; last-year weighted-average diluted shares 90m; forecast diluted shares 110m including RSUs. Current quote $15; assumed equity discount rate 10%. Give a conditional two-year exit value and its present value, assuming the stated claims/cash are unchanged at exit and no interim distributions. Explain limitations.
-3. **Post-release consensus:** quarterly revenue 110, prior company guidance 100–105, consensus 108 observed only two days after release; no earlier research exists. Write the earnings verdict and assumption-change table. Can this establish a consensus beat?
-4. **Launch versus economics:** product launched, 100 trial accounts, no disclosed paid usage/economics or original schedule. Assess current progress and next proof.
-5. **Source lineage:** issuer release says revenue 110; a mirror republishes it; aggregator says 120 without a comparable period. Give the usable input, verification status and confidence limits.
-6. **ADR/share consistency:** one ADS represents two ordinary shares. Ordinary equity is $600m, 200m ordinary shares; all dollars are USD. ADS quote $8, forecast annual EPS $0.50 per ordinary share. Give value per ADS and forward P/E; explain why ordinary-share price/EPS cannot be mixed with ADS units.
-7. **Missing baseline and stale scenario:** an old two-year scenario used EBITDA $100m, 10x, net debt $200m and 100m shares. New dated disclosure implies a research assumption of $80m EBITDA, net debt $300m, 120m shares; keep multiple/horizon fixed. Current quote $6. Explain the revised scenario and changes without rewriting the old snapshot.
-8. **Unavailable versus meaningless:** profitable company has current price $60 and reliable next-year EPS $3 but no historical P/E series. Another company has negative forward EPS. Explain which fields are unavailable versus not meaningful.
-9. **Zero-jargon business model:** fictional AI firm sells servers outright to enterprise IT teams and separately offers pay-per-use model-computing services to application developers. Its website lists CloudCo as a technology partner without saying CloudCo buys anything. No prices, performance results, costs or named paying customers are disclosed. Write the beginner-facing Business Model section for a new retail investor, with a simple illustrative purchase-to-payment scenario.
-10. **Bloated progress section:** a researched AI company has six initiatives: contracted compute capacity with actual paid use, an announced chip not yet shipped, an early laboratory partnership, an unfinished cloud integration, a new data center under construction and a secondary technical proof-of-concept. Full evidence, original promises, dates, economics and schedule history already exist in the tracker. Produce only the reader-facing progress section for a full deep research report. For each listed item, explain what problem it addresses and the practical result it is intended to deliver, without treating goals as accomplished outcomes.
-11. **Beginner financial presentation:** a capital-intensive hardware/software company reports FY2024/FY2025 revenue $290m/$510m and operating losses $101m/$146m, plus FY2026 H1 revenue $374m, net loss $465m, operating cash flow -$47m, capex $549m and free cash flow -$596m. FY2025 net income was positive due in material part to a nonoperating gain; other metrics and current cash/debt are not supplied. Produce a historical period-column financial table, small-font explanatory glossary and single summary without inventing missing data or comparing FY2025 and H1 2026 directly as year-over-year growth.
+1. **历史估值缺样本**：当前股价 100 美元，下一财年调整后 EPS 5 美元；过去一年股价最高 150、最低 60 美元，但可获得的历史 Forward P/E 观察值只有三个季度 25、30、22 倍，当前 20 倍。用户希望了解当前和过去一年的估值高低，应怎样说明数据局限？
+2. **未来价格与现值**：两年后的 EBITDA 预计 2 亿美元，退出倍数 10x，债务 3 亿、自由可用现金 1 亿、受限现金 0.5 亿、优先索偿 1 亿。当前股份 1 亿，去年加权平均稀释股数 9000 万，情景预计稀释股数 1.1 亿（含 RSU）。当前股价 15 美元，假设股权折现率 10%，且索偿、现金在退出时不变，无中途分配。计算条件性退出价格及折现到今天的价值。
+3. **财报后才获得共识**：单季收入 110，原公司指引 100–105，市场共识 108 直到财报两天后才看到；没有旧研究。如何写业绩判断与假设变化？能否宣称超一致预期？
+4. **上线不代表赚钱**：产品已发布，100 个试用账号，但没有付费采用、经济性及原定时间披露。如何认定进度与下一关？
+5. **数据来源谱系**：公司公告收入 110，镜像网站转载，同期不一致的数据商显示 120。应采用什么输入、如何处理冲突与可信度？
+6. **ADR 与普通股换算**：一份 ADS 代表两股普通股。普通股权益总额 6 亿美元，普通股总数 2 亿股，ADS 报价 8 美元，预计年 EPS 每普通股 0.50 美元。求 ADS 合理价值与未来市盈率，不能混用哪些口径？
+7. **无旧基线与过期估值**：旧两年情景预计 EBITDA 1 亿、10x、净债务 2 亿、股份 1 亿。新披露使研究假设变成 EBITDA 8000 万、净债务 3 亿、股份 1.2 亿，其余保持。当前价 6 美元。说明新旧估值与跟踪要求。
+8. **没有数据与没有意义**：盈利公司股价 60 美元，可靠下一年 EPS 3 美元，缺历史 P/E。另一家公司下一年预计 EPS 为负。解释「历史数据缺失」与「市盈率不适用」。
+9. **完全零术语商业模式**：虚构 AI 企业向企业 IT 部门销售整套服务器，同时向应用开发者提供按计算用量收费的服务。官网列 CloudCo 为技术合作伙伴，没说它付钱；未披露价格、性能、成本或已核实付费客户。向新手解释生意并提供清楚标注为假设的完整付费例子。
+10. **过长的进度章节**：研究已确认六类 AI 公司事项：实际付费客户容量、仅宣布未交付芯片、早期实验室合作、尚未上线的云集成、新建中的机房及次要技术演示。详细原承诺与日期都在 tracker。只输出正式报告的项目进度表，说明每项实际用途，不把目标写成成绩。
+11. **初学者财务展示**：一家公司 2024/2025 年收入分别为 2.90 亿和 5.10 亿美元，经营亏损分别为 1.01 亿和 1.46 亿。2026 上半年收入 3.74 亿、净亏损 4.65 亿、经营现金流 -4700 万、资本支出 5.49 亿、自由现金流 -5.96 亿。2025 年净利润为正，但包含重大非经营收益；其他数据与当前现金、债务未披露。只输出财务章节，不能把完整财年与半年直接计算同比。
+12. **估值读者版**：某公司有已核实参考价格 175.05 美元、全部经济股权对应市值 415.9 亿美元，2028 年经营假设折现到研究日的每股区间为保守 25.6–39.5、基础 135.6–178.2、乐观 263.3–320.7。仍在亏损，Forward P/E 不适用。计算细节已在 tracker；只输出简洁估值章节。
+13. **过长的未来事件**：前文已讲过六个项目，未来可能包括财报（官方日期未公布）、计划中的付费部署、只有数据商预计季度的云服务、官方确定的股票解禁、早期演示、相似芯片演示及市场传闻监管决定。只写未来重要事件章节，不把传闻当确定日程。
+14. **过度复杂的风险登记**：重资产 AI 算力公司依赖少数大客户，面临机房延迟、持续现金消耗和稀释融资、偏高估值、技术替代以及股票解禁风险。此前已讨论项目、日历和估值；只生成给新手的主要风险章节。
+15. **四位投资人长篇重复**：增长期 AI 硬件/云公司已验证一定需求和技术性能，但自由现金流为负、前期投入大、估值高、买方集中。前文已覆盖业务、财务、估值和风险。仅编写四种投资视角，不冒充四位本人真实观点。
+16. **重复的最后结论**：报告已具备开头三项结论、业务进度、未来事件、风险及四种视角的简短总结。旧模板最后又追加 Final Research Framework、升降级条件和资料缺口列表。请写出新模板的正确结尾。
 
-12. **Compact valuation report:** All calculations are already documented in a tracker. A researched issuer has a dated stock quote of $175.05, all-economic-class market capitalization of $41.59B, and three *discounted-to-today* per-share scenario ranges for future 2028 operating assumptions: bear $25.6–39.5, base $135.6–178.2, bull $263.3–320.7. The company is unprofitable and forward P/E is not meaningful. Write only the valuation chapter for a nonexpert reader without rederiving the share counts, forward-P/E history, EV bridge or scenario formulas.
+## 验收标准（供评测人员检查）
 
-13. **Overlong monitoring plan:** a research memo already explained six ongoing AI-compute initiatives in an earlier progress table. Available upcoming evidence includes a quarterly earnings report (official date not yet published), a planned paid-customer deployment, a new cloud service with only an unverified projected launch quarter, a stock unlock with an officially confirmed date, a lab proof-of-concept, another closely overlapping chip demo, and a rumored regulator decision. Write only the reader-facing "未来值得关注的事件" section for a nonexpert and preserve detailed tracking in the existing tracker.
+- **案例 1**：当前 20x 合理可算；历史完整年度最高/最低不可核实。不能用过去股价高低除今天 EPS 冒充历史 P/E；稀疏样本只称样本范围。
+- **案例 2**：EV 20 亿，普通股价值 17 亿，退出每股约 15.4545 美元（相对现价 +3.03%），折现到今天约 12.7724 美元（相对现价 -14.85%）。不能算进受限现金或用旧股数；不能重复扣优先权益；RSU 对未来授予是否覆盖仍未知。
+- **案例 3**：相对公司指引上限多 5（4.76%），相对中点多 7.5（7.32%）。共识仅在发布后看到，不能证明财报前超市场预期；没有旧研究就建基线。
+- **案例 4**：承认已上线和试用成果，但付费与经济性未知、原排期不明。下一关是实际付费、留存和单位经济，不能编完成率。
+- **案例 5**：110 是公司披露，转载不构成独立确认；120 先核对日期和口径，不取平均。披露真实性与经营事实独立证明须区分。
+- **案例 6**：每普通股价值 3 美元，每 ADS 价值 6 美元；ADS EPS 1 美元，报价 8 美元对应 Forward P/E 8x。换算股份与币种不可混淆。
+- **案例 7**：旧每股退出价值 8 美元，新约 4.1667 美元，比当前 6 美元低约 30.56%。桥接盈利、净债务、稀释，保留旧日期；未来退出价不自动是今天价值。
+- **案例 8**：可得当前 P/E 20x、历史缺失；负 EPS 时 P/E 无解释意义，选替代方法而非硬给数。
+- **案例 9**：先说明产品、客户痛点、不同买方/付款方式、收费与成本，再给明显标注「举例假设」的流程。CloudCo 只能称合作方，不能当实际付费客户。不得编价格或性能。
+- **案例 10**：一张三列表，3–5 项或更少，逐行解释项目目的、真实进展及下一关，不要 3.1–3.6 长篇、五列宽表或额外总结；重要延期不能隐藏。
+- **案例 11**：一张多年财务表，指标为行、期间为列，数据缺失须标注；下方 1–3 行小号术语解释，再用 2–4 句「总结：」。2025 年一次性收益不等于持续盈利；自由现金流 -5.96 亿 = 经营现金 -0.47 亿 − 投入 5.49 亿。缺现金/债务不能算现金寿命，半年和全年不能直接比同比。
+- **案例 12**：一张两列估值表，列价格、完整股权市值与三档区间，必要时一条说明写明 2028 经营假设已折现到今天；总结说明估值条件与风险。不编负利润公司的 P/E，不重复股数或公式。
+- **案例 13**：一张两列表，最多 5 项，说明什么新结果可能改变判断；只用官方确认日期，未公布的财报日不冒充官方、传闻不作确定事件。表下短总结，无项目历史复述。
+- **案例 14**：一张三列表，4–5 个最重要风险，含后果和可观察信号；表下一段 2–3 句总结。不额外展示严重度/概率/机制列或八条清单。
+- **案例 15**：一张三列表、四行视角、每人独特且有证据的一句判断，表下一段总结。无 Anti-bias、十分制评分、长篇分论、持仓动作表，不冒充本人实际建议。
+- **案例 16**：完整深度研究在四种投资视角的短总结处**直接结束**。不得追加最终结论、What would change my view 或资料完整性清单；必要缺口应回到相关章节，完整核查留 tracker。
 
-14. **Overengineered risk register:** A capital-intensive AI compute issuer faces concentration in one customer, construction delivery delays, high cash burn and dilutive fundraising, aggressive growth valuation, technology substitution and a stock-unlock event. The investment memo has already covered project milestones, the upcoming-event schedule and scenario-price assumptions. Source evidence and impact/severity assessments exist in `tracker.md`. Draft only the reader-facing Key Investment Risks section for a beginner.
-
-15. **Overlong four-investor analysis:** a growth-stage AI hardware and cloud firm has verified some customer demand and technical performance but negative free cash flow, heavy upfront capacity spending, unusually high valuation and dependence on a few large buyers. All financial, business, valuation and risk evidence has already been covered. Write only the four-investor-style decision section for a novice reader without pretending these are the actual opinions or trades of the four named investors.
-
-16. **Redundant final research chapter:** A full report already has a three-item opening (investment view, core logic, key risks), concise operating-progress and future-events tables, a risk table with warning signs, and a four-investor-perspective table ending in a brief summary. The old report then appends a "Final Research Framework" with another investment verdict, What would change my view upgrade/hold/downgrade bullets, and a source/completeness checklist. Produce only the proper closing portion of the updated full report.
-
-## Acceptance criteria — withhold from evaluator
-
-- Case 1: current 20x; true annual extrema unavailable. Sample range may be 20–30x including current, but only if comparability is qualified. Must not label $150/$5 or $60/$5 as actual historical P/E, or claim a verified annual low.
-- Case 2: EV $2,000m; common equity $1,700m; exit $15.4545/share (+3.03%); present conditional value $12.7724/share (−14.85%). Exclude restricted cash, use forecast 110m shares, distinguish terminal from present. These inputs do not prove RSUs capture future grants or all reinvestment/financing needs. Do not also subtract preferred claims a second time.
-- Case 3: above company guidance by 5 over the ceiling (4.76%) or 7.5 over midpoint (7.32%); pre-release consensus surprise unverified. Establish a baseline without inventing prior estimates or claiming a proven upgrade.
-- Case 4: launch/trial evidence acknowledged; paid adoption and economics unknown; schedule not assessable. Next gate seeks actual usage/conversion/retention and economics, not an invented completion percentage.
-- Case 5: 110 is issuer-reported, mirror is not independent confirmation. Investigate 120's period/basis; no average or false two-source verification. Confidence in the issuer's reported figure is distinct from independent validation.
-- Case 6: $3 per ordinary share, $6 per ADS; annual EPS $1 per ADS, forward P/E 8x. ADR ratio and currency explicitly aligned.
-- Case 7: old exit $8; revised exit $4.1667 (−30.56% versus current quote). Bridge EBITDA, net debt and dilution changes; preserve prior assumptions/date, update tracker or event memo as scope requires. Neither future price is automatically present fair value.
-- Case 8: profitable current P/E 20x is usable, history unavailable; negative-forward-EPS P/E not meaningful. Keep distinction and explain an appropriate alternative rather than forcing a number.
-- Case 9: first identify the ordinary product/service and customer pain point; distinguish a company buying servers from an app developer paying per use; clarify who benefits and why, the sales/usage fee path, and major cost categories only as conceptual examples (not invented disclosed amounts). Use one clearly hypothetical end-to-end customer story. Say CloudCo is only a disclosed technology partner, not a verified paying customer. No unexplained technical acronyms, fabricated direct customer names, prices or speed claims; technical deep dive goes after the plain-language explanation.
-- Case 10: one compact, three-column progress table with no more than five main rows (fewer if justified), optionally a single introduction sentence. For every row, explain the real-world purpose (customer need addressed, practical hoped-for result and who benefits) rather than presenting opaque project names. Third column summarizes verified progress and one next check. No 5-column inventory, 3.1–3.6 essays or duplicate recaps. Keep full evidence, dates, original commitments, economic bridges and lesser projects in the tracker/appropriate analysis. Preserve any thesis-changing delays and distinguish goals, plans, tests, actual payment and profit.
-- Case 11: one multi-period table with fiscal/interim columns and meaningful metric rows (no invented missing numbers; unavailable cells marked), followed immediately by 1–3 small-font lines explaining only relevant GAAP/gross profit/operating loss/net loss/operating cash/capex/free cash and FY/H1/TTM terms, then a 2–4 sentence 总结： paragraph. Mention FY2025 nonoperating net gain rather than claiming recurring profit. Half-year FCF -$596m equals operating cash -$47m minus capex $549m. Do not compare a full year to H1 as同比 or estimate runway from missing cash/debt. No per-metric essays, other tables or a long reconciliation.
-
-- Case 12: one readable two-column table including quote date, whole-company market cap and three scenario ranges; no fabricated P/E ratio, scenario formula pages or separate 6.1–6.4 subsections. A single short note clarifies that 2028 operating assumptions have been discounted to today and are not future price promises. A 2–4-sentence 总结： paragraph explains contingent cheap/fair/expensive judgment and major assumptions. Do not require detailed worksheets in the reader-facing output, but preserve accurate calculations in the tracker.
-
-- Case 13: show one 2-column table (重要事件 | 为什么值得关注) with no more than five genuinely decision-moving upcoming items and one brief 总结： paragraph. Explain what result would matter and why, include both upside and downside where material, group overlapping work, and do not repeat past project-progress descriptions. Treat an unannounced earnings date as unconfirmed and a speculative cloud-launch date as tentative; do not treat the rumor as a confirmed upcoming event. Keep official confirmed dates only and leave complete calendar/history in the tracker. No long eight-item list, 7.1/7.2 essays or another watchlist.
-
-- Case 14: one three-column table (主要风险 | 可能产生什么影响 | 需要警惕的信号) with 4–5 truly important grouped risks; keep each impact and observable warning easy to understand, specific to the issuer and defensible. Distinguish adverse possibilities from already confirmed harm. End with one 2–3-sentence 总结： paragraph naming the key investment-failure path and indicators. No judgment/severity, mechanism, red-line or likelihood columns; no long multi-project recaps or duplicated upcoming events. Preserve severity, triggers, evidence and downside calculations in tracker; no invented statistics.
-
-- Case 15: exactly one four-row three-column table (投资视角 | 最关注什么 | 对公司的判断), with each perspective offering a distinct evidenced one-sentence assessment: Buffett durability/cash/price, Munger failure paths/fragile assumptions, Duan paying customers/product/management, Li Lu structural trend/uncertainty/downside protection. Add one 2–3-sentence 总结： paragraph. Do not add Anti-bias letter grades, four individual essays, support/against/question bullets, ten-point scoring, integrated decision or action-state tables. Preserve uncertainty and never ascribe an actual opinion to the named investors.
-
-- Case 16: end the full report immediately after the four-investor-perspective table's short summary. Do not regenerate Final Research Framework, a concluding investment verdict, a What would change my view section, or completeness/gaps inventory under any other heading. Material warning signals and upcoming events have already appeared earlier; if an unresolved evidence gap changes the conclusion, mention it in the affected earlier chapter and keep the detailed checklist, source audit and change-of-view thresholds in tracker/research records.
-
-Check semantic decisions and material arithmetic with tolerances appropriate to displayed rounding. Do not require identical prose, section names or a fixed confidence score. Preserve execution-progress coverage, source integrity and user-requested scope across refactoring.
+容许不影响含义的措辞差异和合理四舍五入；不能把测试中的示例数字当成任何真实股票资料。
