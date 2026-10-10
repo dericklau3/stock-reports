@@ -1,4 +1,4 @@
 interface:
   display_name: "美股个股研究"
-  short_description: "美股业务、财务、估值与经营进展研究"
+  short_description: "分析美股公司业务、真实经营进度、历史财务、未来估值、风险与财报变化"
   default_prompt: "使用 $us-equity-research 研究指定的美国上市公司，用中文说明公司业务、真实项目进展、财务与估值、主要风险，以及相对上次研究的变化。报告保持简洁、数据准确。"
