@@ -121,6 +121,20 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('period-comparison table → small-font definitions → one summary paragraph', template)
         self.assertNotIn('3. **Financial Deep Dive**', template)
 
+    def test_compact_reader_facing_valuation_contract(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        valuation = (ROOT / 'references/valuation.md').read_text(encoding='utf-8')
+        section = template.split('5. **Valuation / 估值分析：当前股价贵不贵？**', 1)[1].split('6. **Catalysts and Monitoring Plan**', 1)[0]
+        self.assertIn('| 关键指标 | 估算结果 |', section)
+        for key in ('保守情景估值', '基础情景估值', '乐观情景估值'):
+            self.assertIn(key, section)
+        self.assertIn('one concise summary paragraph starting 总结：', section)
+        self.assertIn('discounted estimates of today', section)
+        self.assertNotIn('5. **Valuation Work**', template)
+        self.assertIn('## Beginner-readable valuation display', skill)
+        self.assertIn('## What the reader sees versus what the research retains', valuation)
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():
