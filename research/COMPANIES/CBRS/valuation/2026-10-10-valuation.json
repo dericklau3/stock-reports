@@ -1,0 +1,117 @@
+{
+  "price": 164.17,
+  "basic_shares_m": 237.564041,
+  "market_cap_m": 39000.888610969996,
+  "adjusted_net_cash_m": 6434.476000000001,
+  "lease_adjusted_ev_m": 32566.412610969994,
+  "ev_to_2026_core_mid": 36.79820634007909,
+  "ev_to_hypothetical_2027": 12.266068780026362,
+  "years": 2.2258726899383983,
+  "discount_factor": 1.391474583161974,
+  "price_change": -0.06215367037989161,
+  "ttm": {
+    "revenue": 680.673,
+    "gross_profit": 237.10299999999998,
+    "operating_loss": -552.4799999999999,
+    "net_loss": -512.352,
+    "ocf": 66.305,
+    "capex": 746.518,
+    "fcf": -680.213
+  },
+  "bear": {
+    "2028_revenue_m": 1800,
+    "multiples": [
+      5,
+      8
+    ],
+    "net_cash_m": 1000,
+    "future_shares_m": 280,
+    "future_price": [
+      35.714285714285715,
+      55.0
+    ],
+    "pv": [
+      25.666502389953042,
+      39.52641368052768
+    ],
+    "pv_vs_price": [
+      -0.8436589974419624,
+      -0.759234856060622
+    ]
+  },
+  "base": {
+    "2028_revenue_m": 4000,
+    "multiples": [
+      12,
+      16
+    ],
+    "net_cash_m": 3000,
+    "future_shares_m": 270,
+    "future_price": [
+      188.88888888888889,
+      248.14814814814815
+    ],
+    "pv": [
+      135.74727930686274,
+      178.33466105019224
+    ],
+    "pv_vs_price": [
+      -0.17312980869304528,
+      0.08628044740325436
+    ]
+  },
+  "bull": {
+    "2028_revenue_m": 6000,
+    "multiples": [
+      18,
+      22
+    ],
+    "net_cash_m": 2000,
+    "future_shares_m": 300,
+    "future_price": [
+      366.6666666666667,
+      446.6666666666667
+    ],
+    "pv": [
+      263.5094245368512,
+      321.002389890346
+    ],
+    "pv_vs_price": [
+      0.6051009595958532,
+      0.9553048053258577
+    ]
+  },
+  "reverse_base_multiple": 14.669590806444834,
+  "sensitivity_base_14x": {
+    "value": 157.0409701785275,
+    "cash_minus_1000": 2.661711358958093,
+    "shares_plus_10pct": 142.76451834411588,
+    "multiple_minus_4": 114.45358843519801
+  },
+  "basis": {
+    "research_date": "2026-10-10 Asia/Shanghai",
+    "quote_date": "2026-10-09 16:00 EDT regular close",
+    "balance_sheet_date": "2026-06-30",
+    "actual_share_date": "2026-08-05",
+    "target_date": "2028-12-31",
+    "currency": "USD",
+    "units": "millions except per-share values",
+    "model": "Conditional future equity exit-value model; 16 percent required equity return; no interim distributions assumed",
+    "assumptions": "Scenario revenues, cash, shares, multiples and discount rate are researcher assumptions, not company guidance. Net cash is adjusted for outstanding debt and operating lease liabilities. Uncommenced leases enter future cash assumptions; not deducted twice. Restricted cash excluded. No complete cash forecast or contemporaneous fully diluted share register available.",
+    "financial_primary_sources": [
+      "https://www.sec.gov/Archives/edgar/data/2021728/000162828026056357/cbrs-20260630.htm",
+      "https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm"
+    ],
+    "guidance_source": "https://investors.cerebras.ai/node/7286/pdf",
+    "quote_source": "https://stockanalysis.com/stocks/cbrs/history/",
+    "formulas": [
+      "market_cap=price*(ClassA+ClassB+ClassN)",
+      "adjusted_net_cash=cash+short_term_investments-working_capital_loan-operating_lease_liabilities",
+      "lease_adjusted_EV=market_cap-adjusted_net_cash",
+      "TTM=FY2025+H12026-H12025",
+      "FCF=OCF-cash_property_equipment_purchases",
+      "future_equity_per_share=(2028coreRevenue*exitEVRevenueMultiple+2028adjustedNetCash)/2028shares",
+      "present_value=future_equity_per_share/(1.16**actual_days_to_2028_12_31_divided_by_365.25)"
+    ]
+  }
+}
