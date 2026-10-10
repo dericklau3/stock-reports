@@ -496,3 +496,12 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Small footnotes immediately below financial tables in research reports. */
+.markdown-body small.financial-glossary {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  margin-top: 0.35rem;
+}

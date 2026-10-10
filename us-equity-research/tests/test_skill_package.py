@@ -108,20 +108,18 @@ class SkillPackageTests(unittest.TestCase):
     def test_beginner_financial_summary_contract(self):
         skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
-        self.assertIn('## Beginner-readable financial picture', skill)
-        self.assertIn('exactly one concise two-column data table, normally 4–6 meaningful indicators', skill)
-        self.assertIn('3. **Financial Position / 财务状况：收入、利润和现金**', template)
         financial = template.split('3. **Financial Position / 财务状况：收入、利润和现金**', 1)[1].split('4. **Management and Capital Allocation**', 1)[0]
-        self.assertIn('| 财务指标 | 数据 |', financial)
-        self.assertIn('|---|---:|', financial)
-        self.assertNotIn('| 关键指标 | 最新数据（注明期间） | 这说明什么 |', financial)
-        self.assertIn('Never include a “这说明什么”', financial)
-        self.assertIn('Directly below the table', financial)
-        self.assertIn('one compact two-column data table', template)
-        self.assertIn('Material exceptions that reverse the apparent story', template)
-        self.assertIn('a six-month subtotal with an entire fiscal year', template)
+        self.assertIn('one multi-period financial table', skill)
+        self.assertIn('5–8 important rows', skill)
+        self.assertIn('| 指标 | FY2024 | FY2025 | H1 2026 | TTM至2026Q2 |', financial)
+        self.assertIn('| GAAP收入 |', financial)
+        self.assertIn('| GAAP毛利 |', financial)
+        self.assertIn('| 自由现金流 |', financial)
+        self.assertIn('<small class="financial-glossary">', financial)
+        self.assertIn('one paragraph starting 总结：', financial)
+        self.assertIn('Avoid false comparisons between full fiscal years and H1', financial)
+        self.assertIn('period-comparison table → small-font definitions → one summary paragraph', template)
         self.assertNotIn('3. **Financial Deep Dive**', template)
-        self.assertIn('only new interpretation', template)
 
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
