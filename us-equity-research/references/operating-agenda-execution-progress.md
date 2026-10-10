@@ -1,123 +1,99 @@
-# Operating Agenda and Execution Progress
+# 公司经营事项与执行进度：证据和展示规范
 
-Use this reference with deep company research and material earnings/event updates. The user needs an operating picture, not only backward-looking financial judgment: **what is this company working on, what has it actually done, and what remains before the work becomes durable shareholder value?**
+完整深度研究、财报与重大事件更新时读取。核心问题：**公司究竟正在推进什么、实际完成了什么、还差什么才能带来持续的股东回报？** 除了财报数据，还要核查业务执行过程。
 
-## 1. Discover the work, not just the story
+## 1. 发现真实事项，而非重复宣传
 
-1. Read the saved tracker/latest memo before a repeat pass. Extract initiative names, original commitments, stages, dates, dependencies and previously missing evidence.
-2. Read the latest filing, earnings release/slides and available call Q&A. Search material developments since that reporting period. Look back far enough to compare original promises with delivery; usually the prior annual report and relevant earlier milestones are more useful than an arbitrary news window.
-3. Inspect operating evidence relevant to the company: product release notes and documentation, investor-day roadmaps, regulator/clinical records, plant or deployment updates, contract/delivery disclosures, customer or partner announcements, adoption metrics, integration milestones and unit economics.
-4. Investigate the full set of material initiatives (often 3–8, if supported) for internal analysis and `tracker.md`, but select only **3–5 highest-impact items (or fewer)** for the reader-facing report. Include core-business improvement as well as new projects; group related items, and never hide a thesis-critical failure or delay. Do not force a quota or invent project counts.
-5. Identify important discontinued, paused or completed commitments from prior research. Do not silently drop a failed project from the inventory because management stopped mentioning it.
+1. 重复覆盖时先读 `tracker.md` 和上次报告，提取稳定项目名称、原始承诺、阶段、时间、依赖与尚缺证据。
+2. 查看最新申报、财报、业绩展示和电话会问答，向前追踪足够久以核对原始承诺，不只搜最近几条新闻。
+3. 按业务类型寻找产品更新、技术文档、监管/临床记录、生产交付与运营、合同、客户/合作方披露、真实采用指标和单位经济数据。
+4. **内部**调查所有重要项目（有证据时往往为 3–8 项）；**正式报告只选最重要的 3–5 项或更少**，包括改善现有主业与开拓新收入的项目。合并高度相关事项，但不能隐藏决定投资逻辑的重大失败或延期。
+5. 不能因为管理层不再提及就把过去的重大失败项目从追踪记录删除。
 
-Do not confuse a product taxonomy with an initiative. “Cloud segment” names a business; “deploying contracted capacity and bringing customer workloads into paid production” describes active work. Mature consumer companies can have pricing/channel resets, franchise upgrades and supply-chain improvements instead of speculative technology launches.
+「云业务」只是业务分类；「交付已经签约的算力容量、使客户真正付费使用」才是具体执行事项。传统企业的事项也可能是提价、渠道调整、门店升级或供应链改善，而非新技术发布。
 
-## 2. Required questions for each material initiative
+## 2. 每个重要项目的完整内部问题
 
-- **What and why:** what is being built, expanded, launched, integrated, fixed or changed? What recurring customer problem or operating constraint does it address?
-- **Strategic role:** protects the existing cash cow, expands market/distribution, opens a new profit engine, reduces cost/risk, or fulfills a regulatory requirement? Does it reinforce the mission or represent drift?
-- **Original commitment:** original deliverable, target metric and date, if disclosed; preserve the original when a target is revised. Distinguish a strategic ambition from formal financial guidance or a contractual obligation.
-- **What is already done:** specific completed work, not present-tense paraphrases of future plans. State the latest event date and source/data date, with evidence appropriate to the stage.
-- **Current stage:** technical/product, regulatory, customer/adoption and economic stages as applicable. Describe stage in plain language; do not infer that progress on one axis completes the others.
-- **Schedule:** original versus revised target; ahead/on track/delayed/reframed/paused/failed/not assessable, with the reason and supporting evidence. A past deadline with no fresh source is “status unverified,” not automatically “failed.”
-- **Next gate:** concrete observable deliverable or metric, its announced timing if any, and what would count as crossing it. If no date is disclosed, say so rather than inventing one.
-- **Bottleneck/resources:** technical reliability, permits, manufacturing/yield, supply, customer validation, integration, distribution, compliance or unit economics; identify material capex/R&D, working capital, funding and dilution needs where disclosed.
-- **Economic bridge:** who pays, when revenue could be recognized, incremental costs/incentives, expected cash conversion and who captures the value. Identify disclosed contribution, analyst assumptions and undisclosed items separately.
-- **Research implication:** what the observed progress changes, what it does not prove, and what would cause an upgrade or downgrade.
+- **具体做什么、为什么做**：建设、推出、集成、修复或改变什么？解决客户什么长期问题或运营约束？
+- **战略目的**：保护原有现金业务、开拓市场渠道、新盈利业务、降低成本风险，还是满足监管要求？是否偏离原有方向？
+- **原始承诺**：原计划交付什么、目标指标与日期（披露时），修订目标必须保留原版。区分愿景、正式财务指引和合同义务。
+- **已完成事项**：记录实际完成的里程碑、事件发生日与证据披露日，不把未来计划换时态写成已完成。
+- **当前阶段**：分别评价技术/产品、监管、客户采用与经济回报。某个维度成功不代表其他维度完成。
+- **时间状态**：原目标与修订目标、提前/正常/延期/重新定义/暂停/失败/无法判断，解释原因。日期已过但没有新消息应记为「状态未核实」，不能直接断言失败。
+- **下一关**：可观察的交付或指标、公司确认的日期（如有）及达到什么程度才算过关。没有披露日期就明确未披露。
+- **瓶颈和资源**：可靠性、许可、生产良率、供应、客户验证、集成、分销、合规和单位经济；重要时估算研发、资本支出、营运资金、融资与稀释需求。
+- **经济收益链**：谁付款、何时确认收入、新增成本与客户让利、收入能转多少现金、最终谁获得价值。把披露数、研究假设和未知分开。
+- **研究影响**：新事实证明了什么、没证明什么，以及哪些后续结果会强化或削弱判断。
 
-Use “not disclosed/not independently verified/not applicable” in missing fields. Lack of public economics does not erase verified engineering or adoption progress.
+未知项用「未披露、未独立核实、不适用」标记。没有盈利披露不应抹杀已经被证实的工程或采用进展。
 
-## 3. Stage and evidence discipline
+## 3. 阶段与证据纪律
 
-These are evidence gates, not a compulsory linear ladder. Projects can progress in parallel or regress. Choose the gates applicable to the industry; do not invent percentage completion.
+这些是证据门槛，不是每个行业都必须走的固定路线。项目可以并行进展也可能退步，不能编造成「完成 80%」。
 
-| Dimension | Illustrative stages | Evidence to seek | What the evidence does not prove |
+| 维度 | 典型阶段 | 需要的证据 | 不能由此证明什么 |
 |---|---|---|---|
-| Technical/product | concept → prototype → tests/validation → production release → reliable scale | test results, release docs, delivery records, reliability/yield/uptime | paid demand, profit or durable competitive advantage |
-| Regulatory/legal | application → conditional clearance → final permission → permitted operating activities | regulator decisions, official registers, actual operating authorization | all products or geographies are approved, or risk disappears |
-| Commercial/adoption | interest/MOU → pilot/design-in → firm contract → delivery/active use → paid repeat use → broad rollout | customer confirmation, terms, shipments, actual usage, retention | recognized revenue, attractive pricing or positive cash flow |
-| Economics/shareholder | spending/funding → revenue recognized → contribution margin evidence → sustainable cash generation → per-share returns | segment revenue, costs, working capital, capex, SBC/dilution, profit allocation | large total volumes or corporate revenue automatically mean per-share accretion |
+| 技术/产品 | 概念→原型→测试→正式发布→可靠规模化 | 测试、发布说明、交付、良率/稳定性 | 真实付费或利润 |
+| 监管/法律 | 申请→附条件批准→最终许可→实际合规运营 | 官方审批、许可记录 | 全部地区都获批、风险消失 |
+| 客户/商业采用 | 意向→试点→正式合同→交付/使用→持续付费→扩大部署 | 客户确认、订单、使用、留存 | 收入全部确认或现金已经到账 |
+| 经济/股东权益 | 投入→确认收入→验证贡献利润→持续现金流→每股回报 | 分部利润、成本、资本投入、股权激励/稀释 | 总交易量或收入必然转成每股价值 |
 
-Label the evidence strength:
+证据强度要区分：
 
-- **Company-reported:** a dated issuer statement or filing supports what management reports. A marketing claim remains attributed; a filing can strongly establish contract terms or recorded financials without independently validating all operational claims.
-- **Corroborated:** relevant customer/partner/regulator evidence confirms the specific milestone. Republishing the same press release is not independent corroboration.
-- **Independently observed:** direct public artifact or measurement supports the narrowly observed fact, such as product availability or recorded deployment. Do not overclaim functionality, complete safety or broad usage from a landing page or one test.
-- **Target / analyst inference / unverified:** keep these separate from completed facts. Do not use them to silently upgrade the stage.
+- **公司披露**：证实公司这样说过；营销说法仍需注明来源，不等于完全独立验证。
+- **第三方确认**：客户、合作方、监管方独立确认具体里程碑。转载公司公告不算独立确认。
+- **公开直接观察**：可直接核查的产品上线或部署等事实；一次测试不能证明长期安全性、性能或广泛采用。
+- **目标/研究推断/未核实**：不能悄悄升格为已完成事实。
 
-High-materiality initiatives deserve more than one announcement source when practical. If a source is blocked, use a legitimate alternative or disclose the gap. State when the newest usable evidence predates the research date; “no recent disclosure found” is not “no work is occurring.”
+重要项目最好取得多于一份独立证据；来源不可访问时如实说明。不能把「没有找到最近披露」写成「公司没做工作」。
 
-## 4. Adapt gates to the sector
+## 4. 行业不同，验证节点不同
 
-- **Software/AI/cloud:** demo/benchmark, developer preview, customer pilot, GA release, production workloads, paid seats/usage, retention, recurring contribution. Capacity reservations, RPO and design wins are not already operating billable capacity.
-- **Semiconductors/hardware:** design/tape-out, first silicon, validation, customer qualification, firm orders, production yields, shipments, recognized revenue and economic margins. Distinguish sample availability from volume production.
-- **Industrial/energy/infrastructure:** announced project, permits/financing, equipment orders, construction, installation, commissioning, available operating capacity and contracted cash returns. Keep planned/nameplate capacity separate from available/delivered capacity.
-- **Space/defense:** design, component tests, integrated tests, qualification/regulatory gates, first mission, repeat reliability, funded contracts, accepted deliveries and contract profit. A first successful demonstration is not mature cadence.
-- **Biopharma:** target/asset, preclinical, trial phase and enrollment, readout, submission, approval, reimbursement/launch, uptake and net revenue. Trial endpoints, indications and geographies must match; successful science is not approval or commercial success.
-- **Consumer/franchise:** rollout scope, store/channel participation, product/service adoption, traffic/retention, realized price, gross contribution, franchisee and issuer payback. Preserve the distinction between systemwide activity and shareholder earnings.
-- **Fintech/payments/crypto:** licensed scope, technical launch, integrated institutions, actual active use, paid transaction flow, net take rate, risk-adjusted contribution and value allocation. Registered members, blockchain volume and token value are not common-equity income.
-- **Insurance/turnarounds:** implemented underwriting/pricing or restructuring, cohort retention, claims/loss development, distribution economics, cost run-rate and capital release. Do not declare improvement solely from an accounting or reporting change.
-- **M&A:** signed agreement, financing/approvals, closing, integration, retained customers, realized synergies and per-share cash return. Separate a completed acquisition from completed integration and actual accretion.
+- **软件/AI/云**：演示/基准测试、开发者预览、试点、正式上线、生产负载、付费用量、留存、持续收入。签容量意向、RPO、设计导入不等于实际可计费容量。
+- **半导体/硬件**：设计、流片、首片、验证、客户认证、确定订单、良率、出货、确认收入、利润率。样品不等于量产。
+- **工业/能源/基础设施**：宣布计划、许可融资、设备采购、施工、安装、验收、可用运营产能、合同现金回报。规划兆瓦与可交付兆瓦必须分开。
+- **航天/国防**：设计、部件测试、系统联调、监管/认证、首次任务、重复可靠性、已拨款合同、验收交付、利润。一次成功不是稳定运营。
+- **创新医药**：靶点、临床前、临床试验与入组、结果、申报、批准、医保支付/上市、采用及净收入。试验终点、适应症、地区必须对应；科研成功不等于获批。
+- **消费/加盟**：铺设范围、门店参与、采用、客流与复购、价格、毛利贡献、加盟商与上市公司的回本。全系统活动不等于股东利润。
+- **金融科技/支付/加密**：许可范围、技术上线、机构集成、真实活跃使用、付费交易、净抽成、风险调整后利润及价值分配。注册用户、链上成交量和代币价值不是普通股净利润。
+- **保险/扭亏**：承保定价或重组实际落地、客户留存、赔付发展、渠道经济、成本和释放资本，不以会计展示变化冒充经济改善。
+- **并购**：签约、融资和审批、交割、整合、客户保留、协同利润、每股现金回报。完成收购不等于完成整合。
 
-These are research checklists, not facts about any particular ticker.
+以上为研究清单，不代表任何个股已经通过这些阶段。
 
-## 5. Mandatory report output — brief progress snapshot
+## 5. 正式报告：只展示简短进度表
 
-Full research includes one compact **公司正在做什么、做到哪一步** section before valuation, not a second report inside the report. The thorough research lives in `tracker.md`.
-
-**Default reader-facing format:** optional introduction of at most one plain-language sentence, then **one three-column table with normally 3–5 rows** (fewer if not justified). Use brief text and concise inline dated source references:
+估值前保留「**公司正在做什么、做到哪一步**」一节。可在表格前写最多一句背景说明；随后使用**一张三列表格，通常 3–5 行**，证据不够则更少：
 
 | 重点项目 | 为什么做？希望达到什么结果？ | 当前进展与下一步 |
 |---|---|---|
-| Name in ordinary language, not an internal key | The concrete customer/operational problem, how the project addresses it, who benefits and intended measurable commercial result, if known; use one short understandable sentence | One verified current milestone and one next observable deliverable or proof, with concise source/date |
+| 通俗项目名称，不用内部全大写标记 | 解决什么实际问题、帮助谁、预期带来什么具体业务效果 | 一条已证实进展（简短来源与日期）和一项下一步验证 |
 
-A project title alone tells readers nothing. The purpose column must answer **what the initiative actually does and why the company is spending money or collaborating on it**. When available, translate strategy into an expected operational/business result: faster service, broader customer reach, ability to fulfill contracts, lower unit costs or more paid demand. These are illustrations, not automatic outcomes: verify issuer-specific intent and separate management objectives, analysis-based expectations and proven delivered benefits. If no reliable purpose is disclosed, say "目标未披露" rather than inventing one.
+**第二列不可省略**：不能让读者只看到「AMD 合作、CS-4 系统」却不清楚用途。应解释是让客户使用更快、成本更低、覆盖更多客户、履行合同还是增加真实付费。目标属于公司披露或研究推断必须区分，没依据就写「目标未披露」，不能把设想写成成果。
 
-- **No five-column table** (do not display separate evidence, stage, original deadline, bottleneck, capital use and shareholder-meaning columns). Keep three columns by combining progress with next steps, **not** by dropping each project's problem/purpose and desired outcome.
-- **No 3.1/3.2/3.3 item-by-item essays below the table**, no extended bullet list rephrasing the rows, no second "execution synthesis" recap.
-- Choose the most important 3–5 projects by impact on the thesis, group closely related efforts, and include material delays or failures rather than suppressing them. An announcement is not delivery; signed contracts are not automatically paid use; sales are not automatically cash/profit.
-- Leave dates, original commitments, stage-by-stage evidence, extra project rows, financing and resource dependencies in the tracker. Place material capital, unit economics, dilutive financing and downside implications in the corresponding financial/valuation/risk chapters; don't erase critical facts merely to shorten the report.
-- Use simple, reader-friendly project names and explain necessary acronyms at first mention. Only make the progress section longer **when the user expressly asks for a detailed initiative breakdown**.
-- If there is no material new information, say so briefly rather than regenerating a comprehensive history.
+- 不再生成五列详细进度矩阵，也不按 3.1、3.2、3.3 分别写长篇项目研究。
+- 表格下面不重复每行内容，不再给第二张进展表、延伸列表或重复的总结。
+- 重要延期、取消或失败必须保留在 3–5 项里；已宣布≠已交付，合同≠已付费，收入≠现金/利润。
+- 完整日期、原承诺、融资、阶段、额外项目放 `tracker.md`。重大成本放财务，股本稀释放估值，重要不利后果放风险，而不是删掉。
+- 避免生僻缩写；没有实质新披露时用一句话说明，不重写整个项目历史。
+- **仅用户明确要求逐项目深度解释时**再扩写。
 
-For chat delivery, summarize the main work, one recent progress fact and the next check in one or two sentences; do not paste the full tracker.
+聊天里只需 1–2 句概括公司最重要进度与下一关，不要复制整张追踪清单。
 
-## 6. Connect progress to valuation without killing optionality
+## 6. 将进度连接到估值而不重复计算
 
-- Keep technical execution, commercial adoption and financial returns separate. State an initiative's verified progress even if its revenues are undisclosed; unknown does not mean zero.
-- Tie bear/base/bull assumptions to gates: what must be delivered, adopted and paid for to justify the assumed volumes, timing, retention, margins and dilution?
-- Avoid double counting an initiative already included in corporate revenue forecasts or assigning separate option value and the same terminal earnings again.
-- Separate incremental costs/financing from benefits. A launch or contract may increase near-term spending before it produces margin or cash.
-- Give bounded sensitivities or conditional upside if useful and supportable. If no reliable contribution estimate exists, state the missing inputs and milestone-based conditions instead of inventing revenue, success probabilities or a precise valuation premium.
-- Do not declare an initiative worthless merely because it is pre-revenue, and do not capitalize management ambitions as achieved revenue. Report strategic potential and execution risk together.
+为每条重要情景识别最关键的经营验收节点，并在内部计算收入时点、成本、融资和股本稀释。已列入基础情景的项目不能在乐观情景下再次完整额外加价。长期选择权可以保留，但应标出其兑现条件与资本需要。将新事实对应旧承诺与旧估值假设，解释真正改变了什么。不能把工程效率直接当成股东回报。
 
-## 7. Persist the tracker
+## 7. 保存至 tracker
 
-Keep a compact **Operating Agenda / Execution Progress** section with stable initiative names/keys:
+每个重要项目保持稳定名称/标识、目的、原始承诺与时间、当前各阶段、最新证据日期与来源、是否延期、下一节点、资源约束、已经实现和仍未验证的经济效果、研究判断变化。每次更新追加「原阶段→新证据→当前阶段」，不覆盖历史；若没有新披露写明未披露。后续相关研究引用该记录。
 
-| 事项 | 最新已证实阶段 / 证据日期 | 原始目标 → 最新时间表 / 状态 | 下一关 / 瓶颈 | 自上次变化 / 股东意义 |
-|---|---|---|---|---|
-| Stable name/key | Dated evidence; source | Keep the original and revised commitments | Gate and date, or undisclosed | Progress / unchanged / unverified / regressed; why it matters |
+## 8. 最终验收
 
-- Reuse initiative names across updates rather than silently replacing the agenda.
-- Update current status with new evidence and preserve history in dated memos; do not rewrite an old snapshot to make a delayed target appear met.
-- Carry key unchanged initiatives forward. Record “no new public evidence” separately from operational stagnation.
-- Flag completed, paused, failed or abandoned commitments rather than deleting them without explanation.
-- A small status change may update only the tracker under the parent skill's saving rules; earnings/material-event updates and explicit deep requests keep their existing file conventions. Do not invent a new research mode or mandatory separate project database.
-
-## 8. Acceptance checks before finalizing
-
-- Does the memo explain what the company is actively doing, rather than only its products, historical results or valuation?
-- Are material core-business efforts included alongside future bets? Is the selection grounded rather than forced to a quota?
-- Does each thesis-driving initiative have a dated source, actual completed work, current stage, next gate, bottleneck and financial/value-capture bridge or explicit unknown?
-- Are technical, regulatory, paid adoption and economic milestones distinguished? Are no invented completion percentages used?
-- Have original promises been compared with current evidence, with schedule status appropriately qualified?
-- Are company statements, corroboration, observations, targets and analysis separated?
-- Are product announcements, collaborations, registrations, backlog and transaction volumes kept distinct from delivery, recurring revenue and profit?
-- Are lack of disclosure and lack of progress distinguished? Is genuine early execution acknowledged even before proven monetization?
-- Do scenario assumptions reflect required gates without double counting future optionality?
-- Does the tracker preserve initiative-level changes and the next monitoring point?
-- Is the reader-facing progress a concise three-column, normally 3–5-row table in which **every project explains its actual purpose and expected customer/business result**, distinguishes that goal from verified progress, and avoids repetitive deep dives, while full milestone history remains in `tracker.md`?
-- Does the Chinese chat summary include important operating progress, not only an investment verdict?
-
-If evidence cannot establish a material initiative's current state, mark it unverified, explain the retrieval/coverage gap and lower confidence. Formatting a complete table is not proof of research completeness.
+- [ ] 已识别公司真正推进的重要项目，而非仅罗列产品名称。
+- [ ] 对核心项目保留原承诺、日期与最新证据；重大失败没有被隐藏。
+- [ ] 技术进步、监管许可、真实客户采用、利润和现金分别判断。
+- [ ] 来源能定位，事实与推断分开，第三方公告转载不冒充独立验证。
+- [ ] 读者版只有三列、通常 3–5 行，**每个项目都解释具体用途和预期结果**。
+- [ ] 无五列宽表、3.1/3.2 长篇重复、无未经确认的准确日程。
+- [ ] 重要融资和估值影响在适当章节出现，详细里程碑仍可从 `tracker.md` 复核。
