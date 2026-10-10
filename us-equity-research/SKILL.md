@@ -19,12 +19,24 @@ A narrow price or business question does not require a full memo or all four len
 ## Essential research contract
 
 - Verify time-sensitive facts; never invent financials, consensus, quotes, sources, progress, probabilities or valuation ranges. Separate facts, management targets, analyst assumptions, estimates and opinion.
-- Explain every company's products and jargon in plain language: what is sold, who pays, why they buy, major costs, revenue recognition where material, and how revenue becomes profit/cash. Explain major segments separately; distinguish today's earnings engine from future monetization.
+- Explain the business to a reader with zero industry background **before** any technical or financial analysis. Answer what the company actually does, which customer problem it solves, exactly who buys/pays for what, why they buy, and how payment becomes profit or cash. Show a concrete customer-use/payment example and separate verified facts from illustrations. Follow the beginner-first rules below; avoid unexplained jargon or acronym dumps.
 - Present **公司正在做什么、做到哪一步 / Operating Agenda & Execution Progress** before valuation in full research. Distinguish technical/regulatory readiness, paid adoption and economics. Verified early progress matters even without disclosed revenue; a launch or contract does not establish profitable adoption.
 - Use primary filings/IR materials as the financial source of record, with independent cross-checks where practical. Key facts need direct links and document/table/page locators, not just source names. A mirror of one release is not another independent source.
 - Match valuation to company stage, sector and security structure. Inspect cash conversion, SBC/dilution, debt, leases, reinvestment, accounting adjustments, concentration, competition, regulation and management credibility.
 - Support each view with evidence, the strongest counterargument, downside and observable conditions that would change it. Lower confidence for decision-critical gaps; do not replace missing evidence with precision.
 - Frame conclusions as research support. Investor-style lenses describe analytical approaches, not those investors' actual opinions or endorsements.
+
+## Beginner-first business model (mandatory for full deep research)
+
+Before describing products, segments, industry structure, or technical advantages, explain the company as if the reader knows **nothing** about its industry. The "beginner version" must actually be understandable without searching for terminology:
+
+1. **What does it do?** Start with one concrete sentence naming the everyday product/service and what it enables someone to do; avoid abstract sector labels.
+2. **What problem does it solve?** Explain the customer's situation before the product, what improves after buying, and why that improvement matters (time, cost, revenue, risk, convenience, etc.). Explain comparisons only where supported.
+3. **Who buys and who pays?** Name the real buyer types and, when verified, one or two recognizable actual customers. Distinguish direct paying customers from users, channel partners, suppliers, financiers, prospective customers and merely announced collaborations. If customer/payment status is undisclosed, say so.
+4. **What exactly is delivered and how does money change hands?** For each material revenue stream, describe the deliverable, the paying party, the charging model (one-off equipment, subscription, usage, transaction fee, etc., only if supported), major company-paid costs, and how this could yield profit. Separate current sales from plans not yet monetized.
+5. **Make it tangible.** Include one short end-to-end example: customer need → product/service used → benefit → who pays the company and for what. Mark invented illustrative scenarios clearly as hypothetical; never invent customer names, contract terms, prices, or proven performance.
+
+In Chinese, prefer straightforward everyday Chinese over English financial/technical language. Explain a technical term **immediately** if unavoidable; do not open with acronyms, chip architectures, metrics, or a glossary. Move only the necessary detailed terminology, market size, unit economics and competitive technology **after** this explanation. Use short paragraphs or a compact five-question structure rather than a long vocabulary list; keep the initial explanation concise while preserving key business distinctions. For material multi-segment companies, explain each major revenue stream separately without repeating the entire introduction. For focused business-model questions, prioritize these answers rather than a full research memo.
 
 ## Required workflow and references
 
@@ -32,7 +44,7 @@ Read only the references needed for the selected task; the shared data rules app
 
 1. Resolve issuer, ticker, exchange, share class and reporting period. Read the previous tracker/memo on repeat coverage and set the research cutoff and quote timestamp.
 2. Load [data verification](references/data-verification.md): source retrieval, time/period definitions, critical-number provenance and confidence.
-3. Explain the business in beginner-friendly terms. For full research or material updates, load [operating agenda and execution progress](references/operating-agenda-execution-progress.md). Discover current work, compare original commitments and show prior stage → new evidence → current stage. Retain stable initiative names and distinguish no new disclosure from no progress.
+3. Explain the business using the mandatory five-part beginner-first business model and a concrete customer/payment example. For full research or material updates, load [operating agenda and execution progress](references/operating-agenda-execution-progress.md). Discover current work, compare original commitments and show prior stage → new evidence → current stage. Retain stable initiative names and distinguish no new disclosure from no progress.
 4. Load [company types and conditional checks](references/company-types.md) when choosing metrics/methods, including foreign issuers/ADRs, peer comparability and material financial-quality bridges.
 5. For any valuation, load [valuation discipline](references/valuation.md). Full research normally includes bear/base/bull per-share ranges and a current/1-year high/1-year low forward P/E table, with explicit unavailable/not-meaningful fields where necessary.
 6. For full memos or earnings/material-event updates, use the relevant section of [report templates](references/report-templates.md). Updates require a prior-assumption → new-fact → revised-estimate → valuation-impact bridge; first coverage establishes a baseline.

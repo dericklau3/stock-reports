@@ -14,14 +14,16 @@ The bilingual labels above specify meaning only: render each heading in the user
 
 Do **not** create a separate or numbered executive overview under any name (including **Executive View**, **Executive Summary**, **执行摘要**, or **先给结论**). The three short items above are the only opening verdict; do not append a second recap, "three most important judgments", lengthy quote/price discussion, or "changes since last report" digest. Relocate unique details to the relevant sections: prices and share-count assumptions → **Valuation Work** (or relevant valuation analysis); product and customer progress → **Segment, Product and Execution Progress** (or the relevant progress section); changes versus previous reports → **Updated Thesis and Tracking Plan** or the pertinent update section. Later sections should add original evidence, numbers, and conditions, not rewrite the initial summary.
 
-1. **Business Model and Industry Structure**
-   - Beginner explanation: in plain language, what the company sells, who pays, why customers buy, and how cash eventually becomes profit or free cash flow.
-   - Jargon translation: define the important product, accounting, or industry terms needed to understand the business.
-   - How the company makes money.
-   - Unit economics where available.
-   - Market size, penetration, and growth drivers.
-   - Competitive landscape and moat.
-   - Customer concentration, pricing power, and switching costs.
+1. **Business Model and Industry Structure / 公司到底是做什么生意的？**
+   - **First: the beginner explanation**, before any industry jargon, acronyms, accounting detail, valuation ratios or competitive claims. In natural, straightforward language answer these questions in order:
+     1. **What does this company actually do?** Say what product/service it provides and what a customer can accomplish with it, in a concrete sentence.
+     2. **What customer problem does it solve?** Describe the before-versus-after situation and the business benefit. Avoid unsupported claims of lower cost/faster speed.
+     3. **Who buys it and why?** Identify direct buyer types and, if independently verifiable, actual customer examples. Say who ultimately pays; do not mistake partnerships, announced integrations or end users for proven paying customers.
+     4. **What is sold and how is the company paid?** Describe each major product/service and the charging mechanism in simple terms, distinguishing equipment sales from rented/usage-based service, subscriptions, transaction fees, etc. only as applicable.
+     5. **Where does the money go?** Describe the main costs and why revenue does or does not turn into profit/cash; distinguish today's proven revenue from future plans.
+   - **Then a relatable example:** narrate a short real, sourced case if available; otherwise label it a *hypothetical illustration* that shows customer need → product delivery → benefit → payment path. Do not fabricate customer names, contract prices, measured outcomes or adoption.
+   - **Only afterward:** explain at most the necessary technical/business terms at their first appearance (usually two to four), with a practical explanation in everyday language. Never make a jargon glossary, acronym list, architectural comparison, market sizing or financial multiples the main beginner explanation.
+   - After the reader understands the buying/payment path, cover unit economics when available, industry size and growth, competitive advantage, customer concentration, pricing power and switching costs. Avoid duplicating the later product-progress or valuation sections.
 
 2. **Segment, Product and Execution Progress**
    - Plain-language explanation of each major segment or product before the professional analysis.

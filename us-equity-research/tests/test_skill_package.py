@@ -78,6 +78,21 @@ class SkillPackageTests(unittest.TestCase):
         self.assertNotIn('- **Confidence**:', template)
         self.assertNotIn('- **Time horizon**:', template)
 
+    def test_beginner_business_model_contract(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        self.assertIn('## Beginner-first business model', skill)
+        for prompt in (
+            'What does this company actually do?',
+            'What customer problem does it solve?',
+            'Who buys it and why?',
+            'What is sold and how is the company paid?',
+            'Where does the money go?',
+        ):
+            self.assertIn(prompt, template)
+        self.assertIn('hypothetical illustration', template)
+        self.assertIn('do not mistake partnerships', template.lower())
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():
