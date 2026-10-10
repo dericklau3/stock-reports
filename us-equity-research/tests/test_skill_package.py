@@ -135,6 +135,19 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('## Beginner-readable valuation display', skill)
         self.assertIn('## What the reader sees versus what the research retains', valuation)
 
+    def test_compact_catalysts_and_monitoring_contract(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        section = template.split('6. **Future Events to Watch / 未来值得关注的事件**', 1)[1].split('7. **Risk Register**', 1)[0]
+        self.assertIn('## Concise future events and monitoring', skill)
+        self.assertIn('| 重要事件 | 为什么值得关注 |', section)
+        self.assertIn('3–5 key upcoming events', section)
+        self.assertIn('one 2–3-sentence paragraph beginning 总结：', section)
+        self.assertIn('include it only if officially confirmed', section)
+        self.assertIn('do not mechanically repeat the earlier', section)
+        self.assertNotIn('6. **Catalysts and Monitoring Plan**', template)
+        self.assertIn('same **重要事件 | 为什么值得关注** two-column format', template)
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():

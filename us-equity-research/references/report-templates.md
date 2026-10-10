@@ -81,10 +81,16 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Default report **must not contain** standalone Forward P/E historical extrema tables, full A/B/N share-class calculations, EV-to-equity formula bridges, peer/parameter/sensitivity grids, separate price zones, or pages of valuation notes. When the user explicitly requests those details, give them.
    - **Underlying research remains complete and auditable:** preserve direct sources, price/evidence dates, scenario assumptions, full economic share counts, EV-to-equity bridge, debt/lease/cash and forecast dilution, discounting, comparable multiples where meaningful, sensitivity and arithmetic checks under [valuation discipline](valuation.md) in `tracker.md` or linked calculation records.
 
-6. **Catalysts and Monitoring Plan**
-   - Near-term catalysts.
-   - Medium-term thesis milestones.
-   - Metrics to monitor in future quarters.
+6. **Future Events to Watch / 未来值得关注的事件**
+   - Reader-facing output is **one concise two-column table of normally 3–5 key upcoming events**, then **one 2–3-sentence 总结： paragraph**. Select only material events that could change the investment view; fewer rows are fine.
+     | 重要事件 | 为什么值得关注 |
+     |---|---|
+     | Upcoming earnings / actual relevant event (use confirmed timing only) | In a single plain-language sentence, specify what business result would matter and why |
+     | Customer usage, product commercialization or cash/financing milestone | Distinguish a paid/completed result from a plan, and name the investment implication |
+   - These table rows are **format examples, not required events or confirmed schedules**. Events may be positive or negative. Prioritize the next earnings release, verified major commercial results, important capital/stock dilution developments, policy or regulatory decisions when relevant. Group overlapping AMD/AWS/chip launches or similar items if they test the same thesis; do not mechanically repeat the earlier 3–5 ongoing projects.
+   - A date is optional: **include it only if officially confirmed** and label company targets/estimated dates properly; do not invent deadlines or treat estimated calendar dates as issuer announcements. Use sourced evidence concisely. Exclude already-past events as of the report cutoff.
+   - **No eight-item dense lists, project-status recaps, 7.1/7.2 detailed subsections or extra watchlists**. Do not copy earlier progress table entries or repeat valuation numbers. Under the table write **one 2–3-sentence paragraph beginning 总结：** explaining the main one or two proof points or risk events to watch.
+   - Keep the full dated monitoring calendar, source links, targets, original commitments and evolving triggers in `tracker.md`, not repeated in the readable report.
 
 7. **Risk Register**
    - Qualitative likelihood and severity of key risks; numerical probabilities require a defensible basis.
@@ -102,8 +108,8 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Integrated decision memo and action-framing table for no position, existing position, add/upgrade signal, and reduce/downgrade signal.
 
 9. **Final Research Framework**
-   - Briefly name the measurable assumptions and future events that would strengthen or invalidate the thesis.
-   - Do not repeat the opening three-part summary or copy the risk section; focus on observable thresholds and evidence to watch.
+   - Add only distinct, measurable conditions that would materially invalidate or change the thesis and are **not already covered** in the future-events table or risk section.
+   - Never regenerate an upcoming-events list or repeat the opening summary. If nothing new is added, omit this redundant section.
 
 ## Post-Earnings Tracking Template
 
@@ -143,14 +149,9 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Separate fundamental changes from sentiment, positioning, and valuation reset only as needed for the earnings conclusion.
 
 6. **Updated Thesis and Tracking Plan**
-   - What improved.
-   - What worsened.
-   - Which assumptions changed.
-   - Which core thesis assumptions were confirmed or weakened.
-   - Whether any red-line condition was triggered.
-   - Which management promises or milestones need follow-up.
-   - What to monitor before the next earnings report.
-   - What would change the research view.
+   - Briefly identify the one or two most important changed assumptions, including any triggered red line and the evidence behind it; do not reiterate the opening view or the earlier business-progress table.
+   - When future events matter, use at most the same **重要事件 | 为什么值得关注** two-column format with 3–5 rows (fewer if warranted), followed by **one 2–3-sentence 总结： paragraph**. If the future-events material adds nothing beyond the operating-progress section, omit the redundant table and give only the new change or next verification point.
+   - Preserve detailed event dates, original targets and prior-to-current status changes in `tracker.md`; do not invent exact dates or add another long monitoring checklist.
 
 ### Required before/after bridge
 
