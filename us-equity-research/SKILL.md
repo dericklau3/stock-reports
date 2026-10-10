@@ -1,195 +1,192 @@
 ---
 name: us-equity-research
-description: Use when researching a selected US-listed company, its business model, operating progress, valuation or buyability, or tracking earnings, guidance and material company events. Applies to deep research and focused follow-up questions, including foreign issuers and ADRs listed in the US.
+description: 用于研究选定的美国上市公司，解释业务模式、真实经营进展、财务、估值、投资风险，并追踪财报、经营指引及重大事件；适用于完整深度研究或针对单个问题的分析。
 ---
 
-# US Equity Research
+# 美股个股研究
 
-## Scope and routing
+这是 `us-equity-research` 的正式中文执行规范。技能名称、调用标识、参考文档路径和输出文件命名保持稳定；所有面向读者的解释与报告标题默认使用中文。金融或技术缩写首次出现时应作简短解释。
 
-Support medium-term (weeks/months) and long-term (over one year) research on selected companies. A bare ticker or broad “analyze this company” request defaults to deep company research. Preserve the user's language and requested scope.
+## 适用范围与模式
 
-Use only these two modes:
+研究已选定的美股上市公司，包括在美国上市的外国发行人及 ADR。服务于中期（数周至数月）和长期（一年以上）研究。用户只给公司名、代码或要求全面分析时，默认深度研究；明确的窄问题按实际范围回答。
 
-- **Deep company research:** full initial/reassessment memo, or focused business/valuation follow-up using the relevant subset.
-- **Post-earnings tracking:** earnings, guidance, filings and material-event updates, compared with prior research where available.
+只支持两种模式：
 
-A narrow price or business question does not require a full memo or all four lenses. Reuse prior research only after checking decision-critical changes; do not treat old prices or assumptions as current. These modes do not authorize trades, messages, publication or scheduled monitoring.
+- **深度个股研究**：完整初次研究、重新评估，或选取相关部分回答业务和估值追问。
+- **财报后追踪**：财报、指引、申报和重大事件更新，结合此前研究进行对照。非财报事件不强行套用超预期/低于预期判断。
 
-## Essential research contract
+单独问当前估值或某项业务，不必重写全篇或四种投资风格视角；全文默认遵守当前的精简报告模板。复用旧材料前核实影响结论的新变化，不能把旧股价或旧假设当成当前数据。Skill 不授权交易、发消息、发布报告或创建定时监控。
 
-- Verify time-sensitive facts; never invent financials, consensus, quotes, sources, progress, probabilities or valuation ranges. Separate facts, management targets, analyst assumptions, estimates and opinion.
-- Explain the business to a reader with zero industry background **before** any technical or financial analysis. Answer what the company actually does, which customer problem it solves, exactly who buys/pays for what, why they buy, and how payment becomes profit or cash. Show a concrete customer-use/payment example and separate verified facts from illustrations. Follow the beginner-first rules below; avoid unexplained jargon or acronym dumps.
-- Present **公司正在做什么、做到哪一步 / Operating Progress** before valuation as a short, plain-language overview: normally one three-column table with 3–5 material items (or fewer if justified), showing **the project, why it exists and the concrete outcome it aims to deliver, plus verified progress and the next proof to watch**. For each initiative, name the customer/operational problem it addresses, how the initiative helps solve it, and the intended business result (e.g., new paid use, lower cost, more capacity) in everyday language; distinguish goals from achieved results. Avoid wide inventories and **never add serial per-project deep dives by default**. Preserve comprehensive dated milestone analysis and stage/economic distinctions in `tracker.md`; locate relevant figures in financial/valuation/risk sections, not repeated here.
-- Use primary filings/IR materials as the financial source of record, with independent cross-checks where practical. Key facts need direct links and document/table/page locators, not just source names. A mirror of one release is not another independent source.
-- Match valuation to company stage, sector and security structure. Inspect cash conversion, SBC/dilution, debt, leases, reinvestment, accounting adjustments, concentration, competition, regulation and management credibility. **Research all critical financial details, but show only a short, understandable financial snapshot in the reader-facing report** as specified below; do not equate many rows of accounting data with a better explanation.
-- Support each view with evidence, the strongest counterargument, downside and observable conditions that would change it. Lower confidence for decision-critical gaps; do not replace missing evidence with precision.
-- Frame conclusions as research support. Investor-style lenses describe analytical approaches, not those investors' actual opinions or endorsements. In complete reports, **compress all four investor-style views into one four-row table and one brief conclusion**, never four separate writeups or multiple scoring and action tables.
+## 核心研究要求
 
-## Beginner-first business model (mandatory for full deep research)
+- 不编造财务、市场预期、引文、新闻、业务进度、成功概率或估值区间。区分已发生事实、管理层目标、研究者假设、估算和观点。
+- Business Model 必须**先让毫无行业基础的读者弄懂一笔生意**：①公司具体做什么，②解决客户什么痛点、解决前后有什么不同，③客户是谁、谁实际付费、为什么付费，④交付什么产品/服务及如何计费，⑤主要成本和收入如何转化为利润或现金。接着给一个「客户需求→交付→获得好处→付费」的短例子（真实案例要有来源，虚构示例明确标“假设”）。在此之前禁止堆砌术语或缩写；术语首次出现用通俗话解释。多业务公司分别交代已验证的收入与尚在规划的商业化，客户、合作方和最终用户不能混为一谈。
+- 完整研究必须在估值前呈现**公司正在做什么、做到哪一步**。技术/监管通过、付费采用和盈利是不同维度；早期进展即使没有收入也应被承认，但产品上线或签约不能证明持续盈利。
+- 财务以适用的公司申报/IR 为主要依据，尽可能独立交叉核验。关键事实给直接链接和表格、页码或章节定位；转载同一公告不是独立来源。
+- 估值匹配行业、阶段和证券结构。检查现金转化、SBC/稀释、债务与租赁、再投资、会计调整、客户集中度、竞争、监管和管理层兑现。
+- 结论必须包括最强反证、下行情景、可观察的改判条件。关键证据缺失时降低置信度，不能用精确数字填空。
+- 四位投资人视角仅为分析框架，不代表本人观点。输出是研究支持，不以定性评分机械生成买卖或仓位指令。
 
-Before describing products, segments, industry structure, or technical advantages, explain the company as if the reader knows **nothing** about its industry. The "beginner version" must actually be understandable without searching for terminology:
+## 核心研究流程与按需资料
 
-1. **What does it do?** Start with one concrete sentence naming the everyday product/service and what it enables someone to do; avoid abstract sector labels.
-2. **What problem does it solve?** Explain the customer's situation before the product, what improves after buying, and why that improvement matters (time, cost, revenue, risk, convenience, etc.). Explain comparisons only where supported.
-3. **Who buys and who pays?** Name the real buyer types and, when verified, one or two recognizable actual customers. Distinguish direct paying customers from users, channel partners, suppliers, financiers, prospective customers and merely announced collaborations. If customer/payment status is undisclosed, say so.
-4. **What exactly is delivered and how does money change hands?** For each material revenue stream, describe the deliverable, the paying party, the charging model (one-off equipment, subscription, usage, transaction fee, etc., only if supported), major company-paid costs, and how this could yield profit. Separate current sales from plans not yet monetized.
-5. **Make it tangible.** Include one short end-to-end example: customer need → product/service used → benefit → who pays the company and for what. Mark invented illustrative scenarios clearly as hypothetical; never invent customer names, contract terms, prices, or proven performance.
+1. 确认发行人、代码、交易所、股份类别、财报期间和研究截止时间；重复研究先读 tracker 和上次报告。
+2. 非简单研究都读取[数据核验](references/data-verification.md)，建立关键数据来源及口径记录。
+3. 先按「做什么、解决什么问题、谁买、交付/收费方式、成本/盈利」五步说明商业模式，并给一个有付款路径的例子；技术术语置后。完整研究或重大更新读取[经营事项与执行进度](references/operating-agenda-execution-progress.md)，比较原始承诺与最新证据，保留事项名称。
+4. 选估值方法、处理特殊证券或财务质量问题时读取[公司类型与条件检查](references/company-types.md)。
+5. 任何估值都读取[估值规则](references/valuation.md)。完整研究核查熊/基础/牛情景以及适用的当前与历史 Forward P/E，**详细市盈率极值和算式只存研究记录，正式报告用简表展示估值结果**。
+6. 完整报告和财报/重大事件更新采用[报告模板](references/report-templates.md)对应部分；更新必须比较旧假设、新事实、新预测及估值影响。
+7. 完整深研读取[四位投资人视角](references/investor-lenses.md)，引用前文证据并说明各视角增加了什么判断，避免重写财务分析。
+8. 复核计算、来源和局限，保存报告并更新 tracker。
 
-In Chinese, prefer straightforward everyday Chinese over English financial/technical language. Explain a technical term **immediately** if unavoidable; do not open with acronyms, chip architectures, metrics, or a glossary. Move only the necessary detailed terminology, market size, unit economics and competitive technology **after** this explanation. Use short paragraphs or a compact five-question structure rather than a long vocabulary list; keep the initial explanation concise while preserving key business distinctions. For material multi-segment companies, explain each major revenue stream separately without repeating the entire introduction. For focused business-model questions, prioritize these answers rather than a full research memo.
+## 数据核验与置信度
 
-## Beginner-readable financial picture (mandatory for full deep research)
+报告标明研究截止时间、报价时间/时区/交易时段、最新财季及期末日期、估值目标年份。非交易日说明最新可用交易日。历史时点研究不能混入当时尚未披露的信息；后续重述单独注明。
 
-The financial section should be clear to nonexperts but **retain the historical comparison table the user wants**. Use this exact order: **one multi-period financial table → a compact small-font glossary directly below → one short plain-language summary**. Do not replace the comparison grid with the recent two-column value-only format.
+仅为影响判断的关键数据记录以下字段，可放在对应计算旁边，不强制创建数据库：
 
-- **Table:** financial indicators as rows; typically 2 previous fiscal years, latest available half-year/quarter and trailing twelve months as columns (e.g., 指标 | FY2024 | FY2025 | H1 2026 | TTM至2026Q2). Adapt labels and column count to actual periods with verified comparable data; example dates are not fixed. Normally 5–8 important rows: GAAP revenue, GAAP gross profit, operating profit/loss, consolidated net profit/loss, operating cash flow, cash capital spending and free cash flow, as applicable. Include a consistent currency/unit note and cited source(s). Missing items may be marked unavailable; do not invent values or force special-sector companies into irrelevant rows.
-- **Accuracy:** show historical years and interim/TTM periods side-by-side only as labeled; do not compare six-month totals directly with twelve-month totals to infer growth. Keep reported GAAP and adjusted values separate, calculate TTM from matched periods, distinguish consolidated net income from common-shareholder income, and preserve exact source inputs internally.
-- **Small glossary:** directly after the one table, explain **every unfamiliar financial label actually used** (e.g., GAAP收入、GAAP毛利、GAAP经营损益、GAAP净损益、经营现金流、资本开支、自由现金流, FY, H1 and TTM) in **1–3 short compact lines**. Render each as <small class="financial-glossary">short explanations…</small> in Markdown/HTML. Only define terms here; do not interpret company performance or bury key risks in tiny type. No extra glossary heading, second table or long explanations.
-- **Summary:** immediately after these small-font definitions, provide **one 2–4-sentence plain-language paragraph labeled 总结：** in Chinese. Explain what the numbers indicate about revenue, real profitability, use of cash, financial endurance and a key risk. This is where to flag one-time gains, material accounting differences and missing cash/debt evidence, with citations. No financial 4.1/4.2 subsection essays, repetitive metric-by-metric paragraphs, additional tables or lengthy audit-trail footnotes.
-- **Research quality remains unchanged:** check original fiscal/accounting bases, cash reconciliations, debt/leases, cash constraints and dilution fully; keep detailed verification and original assumptions in the dated tracker and relevant valuation/risk analyses, not a long reader-facing finance section. Specialized industries may use different metrics while following the same presentation order.
+| 指标 | 数值/单位/币种 | 期间或时点 | 定义与口径 | 直接来源、定位、披露日 | 核验或冲突处理 |
+|---|---|---|---|---|---|
+| 关键输入 | 原始值或未取得 | 季度/年度/TTM/预测期 | GAAP/调整后、报告值/自算值、股份类别 | 文件表格/章节/页码或数据商快照 | 单源、独立确认、差异解释；自算须给公式 |
 
-## Required workflow and references
+重点覆盖股价与股数、市值/企业价值、收入与利润率、现金流、现金/受限现金、债务/租赁/到期结构、SBC/融资/回购、指引、共识及核心经营指标。
 
-Read only the references needed for the selected task; the shared data rules apply to every non-trivial research pass.
+- 区分财年与自然年、单季与累计现金流、TTM 与年度预测、百万与十亿。推算季度/TTM 必须使用可比期间，考虑重述。
+- GAAP 与调整后数字分别呈现；不能和不同口径的共识比较。
+- 当前实际股数、历史加权平均股数、预测稀释股数分别记录，按用途选取。
+- 两个数据商可能共用同一数据源。公告及其转载只能证明公司披露了该数字，不算独立验证。
+- 冲突先检查日期、期间、币种、定义和股数口径；不能取平均。无法调和的关键冲突不能支撑精确估值。
+- 财报超预期判断须使用发布前有效的共识快照；发布后观察到的共识不能证明发布前预期。未取得时写“共识超预期情况未核实”。
+- IR/SEC 无法访问时使用合法替代来源并记录缺口，不能声称读过被阻止的文档；搜索摘要不能替代关键原始财务表。
 
-1. Resolve issuer, ticker, exchange, share class and reporting period. Read the previous tracker/memo on repeat coverage and set the research cutoff and quote timestamp.
-2. Load [data verification](references/data-verification.md): source retrieval, time/period definitions, critical-number provenance and confidence.
-3. Explain the business using the mandatory five-part beginner-first business model and a concrete customer/payment example. For full research or material updates, load [operating agenda and execution progress](references/operating-agenda-execution-progress.md). Research all important initiative histories and preserve stable names, commitments and statuses in the tracker; **only the top 3–5 milestones appear in a three-column, no-deep-dive progress table with project purpose/desired result and actual progress/next verification** in the reader-facing report.
-4. Load [company types and conditional checks](references/company-types.md) when choosing metrics/methods, including foreign issuers/ADRs, peer comparability and material financial-quality bridges. Investigate detailed financial quality internally, but write the visible section as one historical comparison table, small-font financial definitions and one summary, not a long financial essay.
-5. For any valuation, load [valuation discipline](references/valuation.md). Full research checks bear/base/bull per-share values and meaningful forward P/E history, but shows only a compact valuation result table and summary; preserve detailed assumptions, P/E history, formulas, dilution and sensitivity in the tracker or linked valuation record.
-6. For full memos or earnings/material-event updates, use the relevant section of [report templates](references/report-templates.md). Show the short upcoming-event table and summary without duplicating operating progress; keep detailed trigger/calendar history in the tracker. Updates require a prior-assumption → new-fact → revised-estimate → valuation-impact bridge; first coverage establishes a baseline.
-7. For full deep research, load [four investor-style lenses](references/investor-lenses.md), but the **reader-facing four-style section is one four-row summary table + one short conclusion only**; keep detailed supporting/contrary analysis and scoring checks in the research record. The visible risk section follows its compact risk-table rule. Do not repeat previous business, financial, valuation or risk sections and do not turn style labels into buy signals.
-8. Verify calculations, sources, limits and view-changing conditions. Save using the rules below and update the tracker.
+置信度与商业质量分开：高置信度要求关键输入已调和、结论能承受合理敏感性；中等表示存在有边界但影响估值的未知；低表示未解决的关键依赖主导判断。高置信度不意味着高收益确定性，也不由报告长度决定。默认仅在内部评估证据可信程度，不作为单独的 Confidence 字段展示；真正影响判断的证据缺口，应在相关分析里说明影响与后续验证方式。
 
-## Concise four-investor-style comparison (mandatory for full deep research)
+## 报告固定开头与去重原则
 
-For Chinese deep research, title this chapter **四种投资视角：怎么看这家公司？**. Distill four **analytical styles**, not the named investors’ real opinions, into **exactly one three-column table with four rows**:
+完整深度研究与财报/重大事件追踪都以「**投资观点 / 核心逻辑 / 主要风险**」三项简短结论开头，每项尽量 1–2 句话。不单独显示 Research view、Confidence、Time horizon，也不得生成独立的 Executive View、执行摘要、先给结论等重复章节。不同章节只讲新的事实，不把已经讲过的内容换一组术语再说一遍。
+
+报告按照「公司卖什么与解决什么问题 → 重要项目的用途与进度 → 财务状况 → 管理层与资本分配（只保留确实影响判断的事实）→ 估值 → 未来重要事件 → 投资风险 → 四种投资视角」组织。每个精简章节最多一张表加必要的短总结；**四种投资视角的总结就是完整报告的末尾**。必要的研究完整性核验、估值公式和改判阈值保存在 `tracker.md`，不要把它们作为「最终研究结论」附在最后。
+
+## 财务状况（多年对比表格 + 小字号术语解释 + 总结）
+
+沿用原始截图的**多期财务表**，一张表格即可。第一列为财务指标，后续列按财报选择近两财年、最新上半年/季度和最近12个月（如 FY2024 / FY2025 / H1 2026 / TTM至2026Q2，仅是示例），通常 5–8 项指标：GAAP收入、GAAP毛利、GAAP经营损益、GAAP净损益、经营现金流、现金资本开支、自由现金流。需注明单位、币种、数据来源及期间，所有数字必须核实；不要把上半年和全年直接算同比，也不要混用 GAAP 和调整值。不得恢复「财务指标 | 数据」两列表格或增加「这说明什么」解释列。
+
+**紧接表格下方**用 1–3 行小号字解释表里出现的专业术语，特别是 GAAP、收入、毛利、经营损益、净损益、经营现金流、资本开支、自由现金流，以及 FY/H1/TTM，示例 HTML 语法 <small class="financial-glossary">GAAP收入：按会计准则确认的收入；GAAP毛利：收入减去直接成本；……</small>。不得另建术语表；小号字体不承担公司风险提示。
+
+**最后是唯一一段「总结：」**，2–4 句话写清收入、盈利、资金消耗、重大风险和难以判断的地方。对一次性收益、不同利润口径及缺少可用现金/债务信息，不得因简化而略过；有关核查、计算和历史判断在 tracker / 估值与风险章节中完整保留。
+
+## 主要投资风险（短表格 + 总结）
+
+研究正文把 `Risk Register` 改成「**主要投资风险**」。默认只展示**一张三列表格（通常 4–5 行）**，下方一段总结，不采用「判断/严重度」「机制」「可观察红线」或概率评分等难懂列名：
+
+| 主要风险 | 可能产生什么影响 | 需要警惕的信号 |
+|---|---|---|
+| 有证据支持的公司特有风险，名称简短易懂 | 用一句人话说明可能怎样影响收入、利润、现金、融资、市场地位或估值 | 一个可以通过数据或官方披露验证的预警指标或不利事件 |
+
+挑最关键、彼此不同的 4–5 项，必要时更少，不强凑。要讲清公司发生什么会导致投资逻辑失败；不得把风险情景写成已实现事实、凭空推算统计发生概率或列出几乎任何公司都面临的泛泛风险。避免重复报告开头三项摘要，以及前面的重点项目、未来事件和估值分析。
+
+表格正下方用 **2–3 句话写唯一一段「总结：」**，说明最大潜在损失路径与最应观察的一两项信号。不要 8.1/8.2 逐项长文、额外风险矩阵或一大堆英文术语。**深度核验不能省略：**风险证据与出处、严重程度、触发阈值、下行情景、管理层缓解措施、可能稀释和历史变化仍完整留在 `tracker.md`/风险核算资料；用户明确要求才输出完整专业风险登记表。
+
+## 未来值得关注的事件
+
+完整研究中将「Catalysts and Monitoring Plan」缩减为「**未来值得关注的事件**」，正文只用**一张两列表格，通常 3–5 行**，下方一段总结：
+
+| 重要事件 | 为什么值得关注 |
+|---|---|
+| 未来尚未发生的重大财报、商业交付、客户使用、资金或监管事件 | 一句话说清什么结果会改变投资判断，利好和利空都可；有可靠来源 |
+
+只保留有较大经营、盈利、估值或股票供需影响的事件，优先重要性和临近程度；不为凑数列满。不能与前面「公司正在做什么、做到哪一步」重复叙述项目进展，重点说明未来需要什么新证据。紧密相关的合作、产品和扩张项目尽量合并。**只使用官方确认的准确日期**；未确认写时间未披露或明确标注预计，不能凭空指定财报日。报告截止日前已经发生的事件不能写成未来事件。
+
+表格之后只写**一段 2–3 句「总结：」**，指出最关键的一两项验证与可能影响；不要 7.1/7.2 逐项分析、八项密集列表或额外跟踪清单。完整事件日历、项目原始承诺、来源、历史状态和改判条件继续保留到 `tracker.md`；财报后更新也按同样原则避免重复。
+
+## 公司正在做什么、做到哪一步
+
+调查和跟踪完整重要事项，但报告中只展示一张**三列表格，通常 3–5 行**；不要把跟踪档案完整搬到正文。少于 3 个重要项目就照实少写，不强行凑数。
+
+| 重点项目 | 为什么做？希望达到什么结果？ | 当前进展与下一步 |
+|---|---|---|
+| 通俗项目名称 | 要解决什么客户/业务问题、做完对谁有何用、期待哪种实际结果；用一句人话说明，不编造成果 | 已完成的可核实进展（简短来源/日期）；下一项交付或付费验证 |
+
+第二列是必须回答的业务解释，而不是可省略的口号。应把合作、产品更新、扩建等项目说清楚：是让客户用得更快、让更多客户容易买到、降低成本，还是让公司具备交付合同的能力。仅在有依据时说明公司目标；推断应标明，结果尚未实现时不可写成已经带来收入或利润。
+
+**禁止**旧五列进度大表，禁止表格后重复 3.1、3.2、3.3 等逐项目长篇解读；没有重大新进展时一句话说明即可。已宣布、实验、已交付、开始付费及产生利润不可混淆。重要延误或失败必须体现，但完整原始/修订目标、证据、日期、阶段、成本和股东价值影响应存入 `tracker.md` 或后文对应财务、估值、风险章节。除非用户明确要求深入某个项目，否则保持简洁。
+
+## 估值分析：简洁展示、完整核算
+
+研究报告的估值章节只展示**一张表格（关键指标 / 估算结果）+ 一条必要说明 + 一段总结**，默认不再生成 6.1 股数、6.2 当前倍数、6.3 情景计算、6.4 价格区间等逐项长文。
+
+| 关键指标 | 估算结果 |
+|---|---|
+| 当前参考股价 | 核实报价日期与币种 |
+| 公司整体市值 | 包含所有具有经济权益的股份，缺数据注明无法核实 |
+| 当前适用估值指标 | 适用时展示市盈率/市销率等一个关键指标；不适用不强行给数 |
+| 保守情景估值 | 每股合理区间及关键不利假设 |
+| 基础情景估值 | 每股合理区间及主要经营假设 |
+| 乐观情景估值 | 每股合理区间及关键有利假设 |
+
+这只是模板，不是要求为每家公司硬填六个数字；证据不足写「无法可靠估值」，说明缺什么。表后用一句话注明研究与报价基准日、预测目标年份，并**明确区分「折现到今天的价值」和「未来某年未折现的股价情景」**。然后写唯一一段 **「总结：」**，2–4 句判断当前偏贵、合理还是便宜（取决于情景和假设），以及什么业务、现金、稀释变化会改变判断。不要机械给出买入价、止损线或保证收益。
+
+**严谨性不减，只改变展示形式。** 模型必须核实行业适用的估值方法、全部经济权益股份、历史与预测股数、优先索偿、现金/受限现金、债务和租赁、员工股权激励、资本支出与融资、折现时间和方法、熊/基准/牛的相容假设，并用计算器/代码复算。适合盈利估值的公司要核查当前及过去一年的 Forward P/E 观察范围，不能用今日 EPS 回填旧时点股价，也不能把稀疏数据当全年极值。**上述详细数据与计算过程保存在 `tracker.md` 或关联计算文件，正文不单列长表**；如用户明确要求估值公式、倍数历史或某个区间，再按要求展开。
+
+关键数据缺失时不能虚构区间；高增长预期和股数稀释可能使结果对假设敏感，必须在简短总结中说明影响。
+
+## 按公司和证券类型补充
+
+具体内容按需读取公司类型参考：成长亏损公司、复利型企业、周期公司、金融/保险、创新医药、困境企业、资本设备/基础设施、多业务重资产平台、数字资产财库。
+
+- 外国发行人/ADR 核对适用的 20-F/6-K 或本地披露、财报币种、汇率、ADS 与普通股比例、EPS/股数对应关系，不强行要求国内发行人季度申报格式。
+- 同业比较对齐时点、预测期、会计与租赁/企业价值口径；同行选择看盈利模式、增长、资本强度，不能只看行业标签。
+- 重大增长变化拆分有机增长、并购、汇率、价格/销量/组合；披露不足不能编解释。利润到现金流检查营运资本、资本化支出、SBC、税与一次性项目，不能把短期现金释放当永久改善。
+
+## 研究观点与证据可信度
+
+内部按「积极、谨慎看好、中性等待、负面转弱、关键证据不足」进行总体判断，结合商业基本面和股价而非仅看技术优势。证据可信度单独判断：关键财务口径已核对、情景对假设敏感性有界时可较高；存在影响结论的未核实合同、现金/股数等信息时应降低。**默认不在正文单独展示置信度评分**，而是把重要未知放在对应章节说明。主观结论不写成确定收益概率。
+
+## 财报与事件更新
+
+深研与财报/事件追踪报告均以「投资观点、核心逻辑、主要风险」三项简短摘要开头，每项尽量 1–2 句、用通俗语言。不单列 Confidence 或 Time horizon；**不得生成独立的 Executive View、Executive Summary、执行摘要、先给结论等章节，也不能换个标题重复同类大段总结**。摘要仅给观点、依据和主要风险，不堆叠股价快照、三条重要判断或上次研究以来的变化。关键证据缺口放相应分析，报价和估值年份放估值章节，运营进度和前后变化分别放业务进度与追踪章节。报告模板还包括业务解释、重点结果、进展、财务质量、市场反应和跟踪条件。
+
+更新必须呈现：
+
+| 项目/口径 | 上次假设与日期 | 新事实与证据日期 | 新预测或沿用假设 | 估值影响 | 观点与下一验证条件 |
+|---|---|---|---|---|---|
+| 收入/利润率/股数/进度/倍数 | 原记录或无历史基线 | 事实区别于目标 | 研究假设区别于指引 | 可量化时重算，否则说明方向与缺项 | 确认/削弱/失效/未核实 |
+
+首次覆盖建立基线，不虚构“此前预测”或上调/下调。区分股价变化、盈利预期变化、股数与净索偿变化、估值方法或倍数变化。重要事件影响旧估值时重算相关情景，或明确标记旧估值失效/待更新。盘后与常规交易价格分开，不因股价波动直接推断因果。
+
+## 四种投资视角（一个简表）
+
+正文固定采用 **一张三列表格、四个投资视角、最后一段总结**，不再逐人撰写多段论证和后续追问：
 
 | 投资视角 | 最关注什么 | 对公司的判断 |
 |---|---|---|
-| 巴菲特式 | 生意能否长期稳定赚钱，当前价格是否合理 | One company-specific plain-language assessment |
-| 芒格式 | 哪些假设最容易出错、哪里可能造成永久损失 | One distinct company-specific assessment |
-| 段永平式 | 产品是否真正让客户愿意持续付钱，管理层是否可靠 | One distinct assessment |
-| 李录式 | 是否处在长期趋势里、下跌风险有没有保护 | One distinct assessment |
+| 巴菲特式 | 生意是否能长期稳定赚钱、估值是否合理 | 针对本公司用人话给一条有证据的判断 |
+| 芒格式 | 哪些错误假设可能使投资失败 | 与其他视角不同的一条判断 |
+| 段永平式 | 用户是否愿意持续付费、产品和管理层是否可靠 | 一条具体判断 |
+| 李录式 | 长期趋势、理解边界与下跌保护 | 一条具体判断 |
 
-Each row should be **one concise real judgment**, not a question list, a checklist or generic praise. Explicitly tie conclusions to evidence from earlier sections; when unknown, say what has not been proven. Four lenses should add different perspectives, not restate identical financial, valuation or risk passages.
+表后只写 **2–3 句话「总结：」**，提炼四种视角共同揭示的最重要结论和未证实问题。**正式深度报告到此结束，禁止再生成 Final Research Framework、最终研究结论、What would change my view、研究完整性与缺口等独立章节或更名的结语**。禁止 Anti-bias A/B/C 评分、各投资人分章节、逐人列「关键问题/支持/反对/后续问题」、十分制评分、第二张综合评分表及未持仓/持仓决策表。底层分析仍应检查四种视角的重要正反证据、现金回报、风险、激励与估值，但放入研究记录/`tracker.md`；重大资料缺口必须在相关正文段落说明，不得掩盖。四种视角只是分析方法，绝不宣称代表四位投资者本人对股票的实际观点。
 
-**Immediately below the one table, write one 2–3-sentence paragraph labeled 总结：** that combines the four perspectives without repeating the report’s opening view. **This is the last paragraph of a standard full deep-research report.** Do not append a standalone **Final Research Framework / 最终研究结论 / 研究完整性与缺口 / What would change my view** section (including renamed equivalents). **Do not** print separate Buffett/Munger/Duan/Li Lu subsections, Anti-bias A/B/C information-richness rating, one table per investor, composite 1–10 scorecard, integrated decision memo, position-state/action table, or long follow-up-question lists by default. Keep full evidence and completeness verification internal; decision-critical unknowns must still appear at the relevant earlier point. Run the deeper checks in [investor lenses](references/investor-lenses.md) and retain supporting evidence/contradictions in the research notes or `tracker.md`; show full breakdown only when explicitly requested.
+## 研究观点
 
-## Beginner-readable investment risks (mandatory for full deep research)
+沿用 Positive、Constructive but watchful、Neutral / wait for confirmation、Negative / thesis weakening、Insufficient evidence。分别表示基本面与价格共同支持、仍需估值或执行确认、暂不足方向性判断、逻辑走弱、关键证据不足。每种观点都要同时给出最强反对理由。
 
-Display the former **Risk Register** as **主要投资风险** in Chinese (or **Key Investment Risks** in English): **one short three-column table → one plain-language summary**. Explain what might go wrong, what it could do to the business or stock, and what concrete signal should prompt renewed investigation. This is an investment-thesis stress test, not an assertion that the risks have already happened.
+## 核验完成条件
 
-- Select normally **4–5 distinct material risks** (fewer if justified), prioritized by downside to revenue, margins, cash/financing, valuation or the company’s competitive position. The table headings in Chinese are exactly **主要风险 | 可能产生什么影响 | 需要警惕的信号**. Keep cells brief, understandable and grounded: one real consequence and one verifiable leading indicator per row.
-- Never make **判断/严重度、发生概率、机制、可观察红线** or numerical scores into extra reader-facing columns. Estimate relative severity and evidence **internally**, but do not pretend that qualitative risk assessments are statistical probabilities. If a risk is genuinely imminent or thesis-breaking, show it prominently even if that means replacing a less important row.
-- Risks must remain company-specific; group overlapping customer/revenue-concentration, delivery, cash-burn/dilution, competition, valuation, regulation or share-supply topics as appropriate. Avoid generic filler, a list of every possible risk, unexplained acronyms, and duplicating the opening **主要风险** summary, the forward-looking events table or the operating-progress table.
-- After the single table, write **one 2–3-sentence paragraph starting 总结：**, identifying the biggest realistic downside path and the one or two observations that could require changing the view. No 8.1/8.2 item-by-item essays, second risk matrix, paragraphs after every row or detached probability/valuation analysis.
-- Full research is **not removed**: maintain severity judgments, source provenance, thesis-invalidating red lines, warning thresholds, downside calculations, mitigations and review triggers in the dated `tracker.md` or the relevant valuation/monitoring record. If the user requests a complete risk register or likelihood analysis, then show the supporting detail. Treat an unverified warning as a scenario, never as a confirmed event.
+提交报告前核对研究截止时间、最新财报期、股价交易时段与日期、原始申报和其他证据、可比会计口径、股份类别和预计稀释、债务/现金、估值算式、重大合同和项目状态。原始资料无法取得要说明，搜索摘要不能冒充已阅读的申报文件；冲突无法解决不应支撑精确估值。不要让精简的正文掩盖重要风险。
 
-## Concise future events and monitoring (mandatory for full deep research)
+## 保存与跟踪
 
-In Chinese title the chapter **未来值得关注的事件** rather than "Catalysts and Monitoring Plan". Its job is to answer **what is coming next, why it could change the investment view, and what factual outcome to watch**—not repeat the prior **公司正在做什么、做到哪一步** project progress.
+除非用户明确不保存，否则使用 `research/COMPANIES/TICKER/`，目录代码大写：
 
-- Show **one brief two-column table**, usually **3–5 high-impact events** (fewer if justified), with headers **重要事件 | 为什么值得关注**. Prefer the next earnings report or relevant guidance, a few real business/commercial tests, financing/dilution, regulatory rulings or shareholder selling restrictions when materially relevant.
-- Give each row **one short everyday-language explanation** of the effect investors need to verify (e.g., paid revenue, adoption, cost, profitability, dilution), including potential upside **or downside**, not just "catalyst" jargon. Use verified event dates **only when the organizer/issuer/regulator has confirmed them**; where unconfirmed, do not invent a date or represent a third-party estimate as an official date.
-- Rank by potential decision impact and immediacy; **group overlapping initiatives**. Do not recite the project history, delivery stages or already-described collaboration details. Do not mechanically list 8–10 press releases or force a quota.
-- **Immediately under the table, write one plain-language 总结： paragraph of 2–3 sentences**, explaining the 1–2 most consequential developments to watch and why those outcomes, not announcements alone, would strengthen or weaken the thesis. No extra numbered 7.1/7.2 subsections, per-event essays, another monitoring checklist or repeated thesis conclusion.
-- Continue recording the full calendar, source evidence, event-status changes and monitoring triggers in `tracker.md`. If this is a dated report, exclude events already completed before the research cutoff and distinguish prior history from upcoming events. For earnings/event updates use the same priority filter; don't duplicate the operating-progress table.
+- `deep-research/YYYY-MM-DD-deep-research.md`：完整研究时点快照；用户明确重做或逻辑重大变化时新建版本，不覆盖旧报告。
+- `earnings-tracking/YYYY-QN-earnings-tracking.md`：YYYY 是财年，文中写期末日期。非定期事件可用日期命名；同名已存在则添加日期/版本，不覆盖。
+- `tracker.md`：当前状态、最新估值时点及假设、风险、原始承诺、经营进展、下一关、改判条件，以及到报告的链接。
 
-## Beginner-readable valuation display (mandatory)
+小变化和单独价格/情景刷新通常只更新 tracker，并追加简洁带日期的“旧值 → 新值”记录，保留历史可追溯性。财报变化新增追踪报告；重大逻辑变化或用户明确要求完整报告时新增深研。不要为每次报价变化生成全篇。
 
-For full written reports, use **one compact valuation table + bear/base/bull estimates + one plain-language summary**, rather than a long "Valuation Work" essay. In Chinese, title this chapter **估值分析：当前股价贵不贵？**
+## 最终验收与交付
 
-- Show **only one two-column table** (normally 5–7 rows, **关键指标 | 估算结果**): the dated stock price; entire equity market capitalization including all economically entitled share classes; at most one meaningful current valuation multiple; then **保守 / 基础 / 乐观** per-share estimate ranges. State currency and dates; do not invent unknown ratios or ranges.
-- Beneath the table, at most **one compact date/method note** must distinguish estimates of value **discounted to today** from **undiscounted future share-price scenarios**, and identify any forecast year. Never imply an assumption is a guaranteed price target.
-- Finish with **one 2–4-sentence paragraph starting 总结：**, answering whether the stock appears expensive, fair or cheap **under the assumptions**, why, and which business/financing conditions could materially change that conclusion. If key inputs do not support precise ranges, say **无法可靠估值**, describe missing evidence, and do not force scenarios.
-- Do not normally show 6.1/6.2/6.3/6.4 mini-chapters, separate historical Forward P/E tables, capitalization walkthroughs, EV-to-equity equations, peer grids, scenario input tables, sensitivity grids or buy-price ladders. Expand these only if the user requests such detail.
-- **Keep analytical depth:** validate all share classes, stock/earnings dates, debt, cash/leases, dilution, scenario assumptions, discounting, forward-P/E comparisons when meaningful and reproducible arithmetic under [valuation rules](references/valuation.md). Retain full inputs, citations and calculations in `tracker.md` or a small linked calculation record; never hide a limitation that reverses the result.
+核查最新期间和报价时点、关键来源/口径冲突、估值公式/股数/期限、原始承诺和新证据、历史变更及数据局限。主观数字不得装成已验证事实。
 
-## Research view and confidence
-
-- **Positive:** durable/improving fundamentals and attractive risk/reward under reasonable assumptions.
-- **Constructive but watchful:** attractive business with unresolved valuation, timing or execution confirmation.
-- **Neutral / wait for confirmation:** no sufficiently supported directional thesis.
-- **Negative / thesis weakening:** adverse fundamentals, valuation, dilution, financing or competitive developments.
-- **Insufficient evidence:** decision-critical inputs are missing or materially conflicted; name the evidence needed.
-
-Assess confidence in the underlying evidence while researching: high requires reconciled critical inputs and a view robust to plausible sensitivity; medium means bounded uncertainties could alter valuation or conviction; low means unresolved thesis-driving dependencies dominate. Confidence does not predict stock returns and is not determined by report length. Do not present a standalone confidence score or heading by default; instead, identify material evidence gaps in the sections they affect, explain their consequences and name what would resolve them. Provide an explicit confidence rating only if the user asks.
-
-## Reader-facing report summary
-
-For full deep research and post-earnings/material-event updates, open the written report with **exactly three concise, plain-language items**, in the user's language:
-
-- **投资观点 / Investment view**: overall business and valuation judgment, including whether the current price offers an attractive risk/reward when supportable.
-- **核心逻辑 / Core thesis**: why that judgment could be right, emphasizing the actual commercial/earnings drivers.
-- **主要风险 / Key risks**: the 1–3 most important failure modes, stated clearly rather than as jargon lists.
-
-Use **投资观点、核心逻辑、主要风险** for Chinese output; **Investment view, Core thesis, Key risks** for English output. The bilingual labels above are instructions, not headings to print together. Aim for 1–2 short sentences per item. Explain necessary technical terms in everyday language. Do not add standalone **Confidence** or **Time horizon** fields. State research/quote dates and relevant valuation target years once in compact metadata or the valuation analysis; discuss material uncertainty beside the affected evidence instead of creating a confidence field. Strictly prohibit any additional executive-overview section in full reports, update reports, and chat responses. Never create a standalone or numbered **Executive View**, **Executive Summary**, **执行摘要**, **先给结论**, or equivalent recap under another heading. The three-item opening is the **only** top-level verdict summary; keep it short, without extra paragraphs, lists of judgments, detailed price commentary, or a historical-change digest. Put prices and valuation assumptions in the valuation section, operating progress in the company-progress section, and changes since earlier research in update/tracking sections. Do not repeat the opening verdict at the end; later content must add new evidence, calculations or actionable verification conditions. For narrow questions, answer only the requested scope.
-
-## Saving Research Results
-
-Save research outputs as Markdown files unless the user explicitly asks not to save them. Use one directory per company:
-
-```text
-research/
-`-- COMPANIES/
-    `-- TICKER/
-        |-- deep-research/
-        |   |-- YYYY-MM-DD-deep-research.md
-        |   `-- YYYY-MM-DD-deep-research-v2.md
-        |-- earnings-tracking/
-        |   |-- YYYY-QN-earnings-tracking.md
-        |   `-- YYYY-MM-DD-earnings-tracking.md
-        `-- tracker.md
-```
-
-Use uppercase ticker symbols for company folders, such as `TICKER`.
-
-### deep-research/
-
-Save each full deep company research memo in `research/COMPANIES/TICKER/deep-research/`.
-
-Do not overwrite older deep research files. Treat each file as a point-in-time thesis snapshot. Create a new version when the user explicitly requests a new full memo or company logic materially changes; use the small-update rule otherwise.
-
-### earnings-tracking/
-
-Save each post-earnings tracking memo in `research/COMPANIES/TICKER/earnings-tracking/`.
-
-Prefer `YYYY-QN-earnings-tracking.md` when the fiscal quarter is clear; YYYY is the fiscal year, and the memo must state the period end date. If a filename already exists, add the update date or a version suffix rather than overwriting it. Use `YYYY-MM-DD-earnings-tracking.md` when the quarter is unclear or the update is not tied to a regular quarter.
-
-### tracker.md
-
-Maintain `research/COMPANIES/TICKER/tracker.md` as the current state file. Update it after every deep research memo and every post-earnings tracking memo.
-
-The tracker should summarize:
-
-- Current research view.
-- Current main thesis.
-- Key risks.
-- Latest earnings or company update.
-- **Operating Agenda / Execution Progress**: retain stable initiative names/keys, latest evidenced stage and evidence date, schedule status, the next gate/date, bottleneck and shareholder relevance. Preserve original commitments when targets are changed.
-- What changed since the prior view, including each material initiative's prior stage → new evidence → current stage; distinguish no new disclosure from no progress.
-- Core thesis assumptions that must remain true.
-- Red-line conditions that would force a thesis review or downgrade.
-- Management promises, targets, or strategic milestones that need follow-up.
-- Metrics or events to monitor next.
-- What would change the research view.
-
-Treat `tracker.md` as the active monitoring dashboard, not a shorter copy of the latest memo. Preserve dated assumption/valuation changes and links to their source memos. Keep the current state concise, but make it easy to check later whether the original thesis is being confirmed or disproved.
-
-### Update Rules
-
-- Small change: update only `tracker.md`; append a compact dated change entry with prior and new assumptions so earlier valuation snapshots remain recoverable.
-- Earnings change: create a new `earnings-tracking/...md`, then update `tracker.md`.
-- Major company logic change: create a new `deep-research/...-v2.md`, then update `tracker.md`.
-- Standalone scenario-valuation refreshes, current-price valuation updates, or single-event valuation implications normally count as a small change: update `tracker.md` with a dated valuation snapshot, bear/base/bull ranges, practical price zones, sources, and what changed since the prior view. Create a new deep-research memo only when explicitly requested or when the business thesis, company logic, or valuation framework materially changed.
-
-## Final acceptance and delivery
-
-- Confirm the latest reporting period, quote session/time zone and cutoff; flag older evidence and missing materials. Do not claim to have read blocked documents.
-- Check units, fiscal periods, adjusted/GAAP basis, estimate timestamps and share/security definitions. Resolve critical conflicts or disclose their effect.
-- In full research, include understandable business economics, evidenced operating progress, material financial risks, suitable valuation scenarios (or explicit evidence gaps), four lenses and thesis invalidation conditions. Forward P/E details are research evidence, not an obligatory extra public table.
-- Every valuation still needs reproducible inputs/formula, a value date, suitable shares, explicit net claims and sensitivity in the tracker or linked calculations. Recompute arithmetic with a calculator or code. Explicitly distinguish future share prices from today's discounted fair-value estimates in the short report.
-- Updates must preserve original commitments and explain what changed. Mark invalidated old estimates stale; do not silently rewrite prior snapshots.
-- Start the chat response with the concise three-item summary (投资观点 / 核心逻辑 / 主要风险 in Chinese), not a five-field technical block. Include a brief **正在做什么 / 最新进度 / 下一关** summary for material initiatives, the main valuation condition and material verification limits; link the saved memo. For narrow questions, keep delivery proportionate to the request.
-- Do **not** append a second closing verdict, **What would change my view / 什么会改变我的观点** list, research-completeness appendix, or renamed Final Research Framework to the chat response or full research memo. Place material warning signals in **主要投资风险**, future milestones in **未来值得关注的事件**, and important unknowns beside affected evidence; keep detailed audit and thesis-change criteria in `tracker.md`.
+聊天先给「投资观点、核心逻辑、主要风险」三项简短结论，并概括重要事项的**正在做什么 / 最新进度 / 下一关**、估值关键条件、验证限制及报告链接；窄问题按实际范围控制篇幅。**不再额外追加「什么会改变我的观点」或第二段最终结论**；真正影响判断的预警信号放在风险表和未来事件表，底层核验及改判条件保留在 `tracker.md`。
