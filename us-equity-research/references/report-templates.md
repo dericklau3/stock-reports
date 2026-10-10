@@ -34,7 +34,7 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - The third column combines progress and next proof to keep the table at three columns. Do not sacrifice the purpose column merely to present more milestones, dates or financial metrics.
    - **Never generate the former five-column initiative inventory or 3.1, 3.2, 3.3... essays for each row by default.** Do not copy table entries into follow-up paragraphs, another list or a concluding recap.
    - Select projects by potential effect on future sales, cash or downside risk; group related work if useful. Do not hide consequential delays or cancellations. Describe announcements, tests, deliveries and actual paid usage separately, in beginner-friendly language.
-   - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue and cost detail to Financial Deep Dive, dilution or price assumptions to Valuation Work, and major risks to Risk Register. Cite key facts in the table.
+   - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue/cost detail to the financial chapter, valuation/dilution calculations to the tracker or linked valuation file, and major risks to Risk Register. Cite key facts in the table.
    - Expand one project only when the user explicitly requests a project deep dive. A short update on a thesis-changing fact belongs in its analytical section instead of recreating the whole project list.
 
 3. **Financial Position / 财务状况：收入、利润和现金**
@@ -64,13 +64,22 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Insider ownership or incentives when relevant.
    - Buybacks, dilution, M&A, capex, and R&D allocation.
 
-5. **Valuation Work**
-   - Current multiples and historical context.
-   - Forward P/E snapshot table: current forward P/E, 1-year high forward P/E, and 1-year low forward P/E, with dates, EPS basis, sources and coverage. Interpret range position only if comparable; explicitly distinguish unavailable history, sparse observations and a method that is not meaningful.
-   - Peer comparison where useful.
-   - Scenario valuation: bear, base, bull.
-   - Reproducible formula, unit/period definitions, EV-to-common-equity bridge, selected shares, value date, sensitivity and arithmetic check under [valuation rules](valuation.md). Include current-price implied operating requirements when supportable.
-   - Valuation method selection by company type.
+5. **Valuation / 估值分析：当前股价贵不贵？**
+   - Show **one compact two-column valuation table**, optionally one short methodology/date note, and **one 2–4-sentence 总结： paragraph**. Do not expand into 6.1 股数、6.2 当前估值、6.3 公式和情景、6.4 价格纪律 mini-essays.
+   - Use the reader's language. In Chinese the single table is **关键指标 | 估算结果**. Model rows (format-only placeholders, never reported company data):
+     | 关键指标 | 估算结果 |
+     |---|---|
+     | 当前参考股价 | 已核实股价、币种、报价日期 |
+     | 公司整体市值 | 包含全部有经济权益股份的正确总市值 |
+     | 当前适用估值指标 | 如市盈率/市销率，只有适用且核实才列 |
+     | 保守情景估值 | 估算每股区间；可在行名简述不利假设 |
+     | 基础情景估值 | 估算每股区间；可在行名简述主要假设 |
+     | 乐观情景估值 | 估算每股区间；可在行名简述有利假设 |
+   - Select relevant rows. If evidence cannot establish market cap or trustworthy bear/base/bull ranges, **do not invent them**: state **无法可靠估值** and identify missing inputs. Base scenarios on defensible operating assumptions; never use user-provided examples as verified prices.
+   - Include at most **one short note below the table** to explain forecast year and whether scenarios are **discounted estimates of today's value** or **undiscounted future scenario prices**, quote/value dates and material methodological limitations. Never confuse future with present value, omit economically entitled shares, or treat forecasts as guarantees.
+   - Provide **one concise summary paragraph starting 总结：**. In 2–4 plain-language sentences judge expensive/reasonable/cheap conditionally on the scenarios and identify the main revenue/profit/capital-spending/dilution assumptions that could alter the conclusion.
+   - Default report **must not contain** standalone Forward P/E historical extrema tables, full A/B/N share-class calculations, EV-to-equity formula bridges, peer/parameter/sensitivity grids, separate price zones, or pages of valuation notes. When the user explicitly requests those details, give them.
+   - **Underlying research remains complete and auditable:** preserve direct sources, price/evidence dates, scenario assumptions, full economic share counts, EV-to-equity bridge, debt/lease/cash and forecast dilution, discounting, comparable multiples where meaningful, sensitivity and arithmetic checks under [valuation discipline](valuation.md) in `tracker.md` or linked calculation records.
 
 6. **Catalysts and Monitoring Plan**
    - Near-term catalysts.
