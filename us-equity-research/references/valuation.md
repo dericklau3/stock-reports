@@ -2,6 +2,12 @@
 
 Read whenever issuing or revising a multiple, price zone, fair value or scenario range. Choose methods using [company-type checks](company-types.md); preserve input provenance under [data verification](data-verification.md).
 
+## What the reader sees versus what the research retains
+
+The default reader-facing valuation chapter is **one concise result table** (quote, correct whole-company market capitalization, meaningful current multiple if applicable, and bear/base/bull per-share value ranges), **at most one dated methodology note**, then **one short 总结： paragraph**. Do not output separate capitalization, forward-P/E-history, scenario-input, sensitivity or price-zone tables by default.
+
+The complete calculations below must still be done wherever material. Keep their dates, definitions, assumptions, source links, formulas and verified arithmetic in the company's `tracker.md` or a linked small valuation-calculation file, even when omitted from the public-facing summary. If the user explicitly requests specific valuation mechanics, show those details. If the evidence is insufficient, state that no reliable value range is available rather than manufacturing a precise answer.
+
 ## Choose and label the method
 
 - Use P/E, EV/EBIT, EV/EBITDA or FCF yield for suitable profitable businesses, adjusted for cyclicality, reinvestment and earnings quality. PEG is supporting context only; equal growth rates do not imply equal risk or cash returns.
@@ -11,7 +17,7 @@ Read whenever issuing or revising a multiple, price zone, fair value or scenario
 
 ## Forward P/E snapshot
 
-For full deep research where earnings-based valuation is meaningful, retain all three rows:
+For full research where earnings-based valuation is meaningful, **compute or verify and keep these three rows in the research record**. The full comparison is **not a mandatory second table in the reader-facing report**; show it only on user request or if it is essential to avoid a misleading result:
 
 | Metric | Multiple | Observation date / coverage | EPS window and accounting basis | Source / coverage limitation | Interpretation |
 |---|---:|---|---|---|---|
@@ -30,7 +36,7 @@ For full deep research where earnings-based valuation is meaningful, retain all 
 
 Full research normally includes bear/base/bull ranges; focused updates recompute only affected scenarios. If a reliable range is impossible, state **No reliable valuation range**, identify missing inputs and offer supportable operating/valuation conditions instead. Do not invent probabilities to force an expected value.
 
-For each material scenario show:
+For each material scenario **calculate and record** the following underlying details. The reader-facing table normally shows only its per-share range and the essential valuation date/discounting caveat:
 
 1. Value date/horizon, current quote, units/currency, operating assumptions, multiple or discount rate, and why the assumptions are plausible. Label management guidance versus analyst assumptions. Connect execution gates to revenue timing, costs and cash generation.
 2. Formula and the method-specific bridge. For an enterprise-multiple model: `enterprise value = operating metric × multiple`; `common equity = EV − debt − preferred claims − minority interests + eligible excess cash/non-operating assets`, adjusted for items already included and the model's conventions. Match claim/asset dates to the value date, and exclude restricted/customer cash unless availability to common holders is established.
@@ -38,8 +44,8 @@ For each material scenario show:
 4. SBC treatment: explain whether continuing grants are modeled as an economic expense, future net dilution or offsetting repurchase cash. Existing claims and future grants are different. Do not mechanically deduct the same modeled economic cost twice; a claim that SBC is “included in the multiple” needs an explicit rationale and sensitivity.
 5. Per-share range and `(scenario price / current price) − 1`. State endpoints and pair consistent operating/multiple/claim assumptions; do not assemble favorable endpoints from incompatible cases. Future percentage price change is not an annualized return or total return; include holding period and dividends where applicable.
 6. Sensitivity to the variables that actually drive the decision (typically margins, multiple/discount rate, financing and shares). Reverse valuation when supportable: what earnings, cash flow or growth does today's price require, and is that consistent with capacity, adoption and funding evidence?
-7. Recompute all material arithmetic using a calculator or code. Show enough input/formula detail for replication; preserve a small calculation artifact beside the memo only when complexity warrants it. Check units, signs, endpoint ordering, discount horizon and no double counting of optionality already included in forecasts.
+7. Recompute all material arithmetic using a calculator or code. Preserve enough input/formula detail for replication in the tracker or a linked calculation file instead of copying the full derivation into the reader-facing chapter. Check units, signs, endpoint ordering, discount horizon and no double counting of optionality already included in forecasts.
 
 Discount consistently: discount future common-equity proceeds with an appropriate equity return assumption and include interim distributions if modeled; or discount enterprise cash flows to today and reconcile today's claims/assets. Do not mix a discounted future EV with undated balance-sheet figures and call it precise present fair value. If future financing/claims are unknown, label a hold-constant assumption and show its sensitivity.
 
-Practical price zones must derive from these scenarios and business conditions, not arbitrary rounded buy/sell levels. Separate business quality, valuation attractiveness and evidence confidence.
+Practical price zones, when specifically requested, must derive from scenario work and business conditions, not arbitrary rounded buy/sell levels. They are not a mandatory part of the concise reader-facing chapter. Separate business quality, valuation attractiveness and evidence confidence.
