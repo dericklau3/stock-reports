@@ -1,225 +1,210 @@
 ---
 name: industry-chain-radar
-description: Use when the user asks to discover current hot industries, find the next industry-chain transmission, map bottlenecks, second-order beneficiaries, hidden suppliers, substitutes, losers, or build an industry-chain watchlist from a theme, leader, policy, capex cycle, technology shift, or adoption curve.
+description: 用于用户要求发现当前热门行业、寻找下一条产业链传导、从主题/龙头/政策/capex 周期/技术变化/采用曲线出发，梳理产业链瓶颈、二阶受益者、隐藏供应商、替代方案、受损环节或观察清单时。
 license: MIT
 metadata:
   hermes:
-    tags: [industry-chain, supply-chain, thematic-research, bottleneck-analysis, investment-research]
+    tags: [industry-chain, supply-chain, thematic-research, bottleneck-analysis, investment-research ]
 ---
 
-# Industry Chain Radar
+# 产业链雷达
 
-## Purpose
+## 目标
 
-Turn a validated demand or narrative change into a falsifiable industry-chain map: who must spend, what becomes constrained, who supplies the constraint, who can substitute it, who loses, and which entities deserve deeper research. The radar finds links and candidates; it never turns a hot theme, token cycle, asset move, or media narrative into an investment conclusion.
+把已验证的需求变化或叙事变化，转化为可证伪的产业链地图：谁必须花钱、哪里会卡住、谁供应瓶颈、谁能替代、谁会受损、哪些实体值得继续深研。雷达只发现链条与候选对象，不能把热点主题、代币周期、股价涨幅或媒体叙事直接变成投资结论。
 
-## Non-negotiable evidence rules
+## 不可省略的证据规则
 
-- Verify current facts whenever the answer uses current prices, recent earnings, backlog, capex, policy, contracts, or market stage. State the as-of date.
-- Cite factual claims with direct links. Prefer primary sources: company/project disclosures, filings, protocol documentation, customer disclosures, regulators, standards bodies, technical architecture, and procurement or budget documents. Use news or industry research only for context.
-- For each promoted chain, include an evidence pack with several independent current sources. Explain what each source proves, what it does not prove, and how recent the source is. Thin evidence is a downgrade, not a reason to write a shorter answer.
-- Keep four labels distinct: **fact** (sourced), **inference** (reasoned from facts), **assumption** (not yet verified), and **unknown** (required evidence is missing).
-- Do not call an entity a beneficiary merely because it is "AI", "crypto", "metaverse", "power", "defense", or otherwise theme-adjacent. Establish the product or service, buyer/user, exposure path, and measurable confirmation metric.
-- Do not use price momentum, TVL, social attention, search interest, or funding hype as the thesis. Market signals can confirm or challenge a thesis only after the causal evidence exists.
-- Do not manufacture a precise theme-revenue percentage, order number, wallet/user count, customer relationship, market-share claim, or protocol usage claim. If disclosure does not isolate the exposure, say so.
-- An entity can be a direct beneficiary, an indirect proxy, a signal source, a substitute, a loser, or a narrative-only name. Do not present those categories as equivalent.
-- Show complete entity names. If a public company has a ticker, write the full company name first and put the ticker in parentheses, e.g. `Vertiv Holdings Co. (VRT)`. Never show only the ticker in tables or queues. For protocols, projects, private companies, and assets, use the full project/entity name and put symbols only as secondary identifiers.
+- 只要引用现价、最新财报、订单、backlog、capex、政策或市场阶段，就必须核验当前资料并写明截至日期。
+- 每条事实性主张必须给出直达链接。优先一手来源：公司/项目披露、申报文件、协议文档、客户披露、监管机构、标准组织、技术架构、采购或预算文件；新闻或行业研究只作背景。
+- 每条升级为重点的产业链，都必须有详细证据包，包含多条相互独立的当前来源。写清每个来源证明了什么、不能证明什么、资料日期是什么。证据薄弱时要降级，不能把回答写短来掩盖。
+- 明确区分：**事实**（有来源）、**推断**（由事实推演）、**假设**（尚未核验）与**未知**（缺少何种证据）。
+- 不能因为某个实体“和 AI/加密货币/元宇宙/电力/军工相关”就称为受益者；必须证明产品或服务、买方或用户、受益路径和可量化的确认指标。
+- 涨幅、TVL、社交热度、搜索热度、融资热度只能在因果证据之后作为确认或反证，不能当 thesis。
+- 不编造主题收入占比、订单金额、钱包/用户数、客户关系、份额、协议使用量或精确估值；披露没有拆出时，直接说明无法隔离。
+- 直接受益者、间接受益代理、信号源、替代者、受损环节和概念票不是同一类，不能混排。
+- 实体必须显示完整名称。上市公司先写完整公司名，再把股票代码放括号里，例如 `Vertiv Holdings Co. (VRT)`；表格和队列里不能只写代码。协议、项目、非上市公司、资产也要写完整名称，符号只能作为辅助标识。
 
-## Source order and claim ledger
+## 来源优先级与主张台账
 
-For every high-priority chain link, assemble the smallest useful claim ledger before ranking names:
+每个高优先级环节，先建立最小“主张台账”，再做排名：
 
-| Required claim | Minimum proof | Examples of usable evidence |
+| 必须证明的主张 | 最低证据 | 可用证据示例 |
 |---|---|---|
-| Demand driver is real | One primary-demand source | customer capex, budget, utilization, regulation, product adoption, on-chain usage, developer adoption |
-| Bottleneck is plausible | Constraint plus reason supply cannot respond quickly | lead time, qualification, capacity, scarce input, standards, distribution, liquidity, trust, engineering cycle |
-| Entity benefits | Product/service and buyer/user are connected to the bottleneck | segment disclosure, product/customer announcement, filing, protocol docs, technical architecture |
-| Transmission | A metric that should move and expected lag | bookings, backlog, revenue, margin, utilization, active users, transaction volume, fees, retention, attach rate |
-| Disproof | Observable failure condition | demand cut, lead-time normalization, lost design win, oversupply, substitution, fee compression, usage decay |
+| 需求驱动真实 | 一条一手需求证据 | 客户 capex、预算、利用率、政策、产品采用、链上使用、开发者采用 |
+| 瓶颈合理 | 约束加上供给无法快速响应的原因 | 交期、认证、产能、稀缺投入、标准、分发、流动性、信任、工程周期 |
+| 实体会受益 | 产品/服务与买方/用户确实连到瓶颈 | 分部披露、产品/客户公告、申报文件、协议文档、技术架构 |
+| 会产生传导 | 一个会变化的指标与预期滞后 | bookings、backlog、收入、毛利率、利用率、活跃用户、交易量、手续费、留存、attach rate |
+| 可以被证伪 | 可观察的失败条件 | 需求下调、交期正常化、丢失设计导入、过剩、替代方案成功、手续费压缩、使用量衰退 |
 
-Use this source order:
+来源顺序：
 
-1. Primary entity material: company/project disclosures, filings, earnings material, protocol documentation, whitepapers, technical docs, governance posts, product specifications.
-2. Buyer, customer, user, or regulator material: capex, projects, budgets, procurement, policy, adoption data, chain data, developer docs, standards.
-3. Technical primary material: architecture/vendor documentation, standards bodies, benchmark data, supply specifications, integration guides.
-4. Competitor, substitute, and ecosystem data for cross-checking.
-5. Market-data and news sources for price, breadth, attention, timing, and context.
+1. 实体一手材料：公司/项目披露、申报文件、财报材料、协议文档、白皮书、技术文档、治理帖子、产品规格。
+2. 买方、客户、用户或监管方材料：capex、项目、预算、采购、政策、采用数据、链上数据、开发者文档、标准。
+3. 技术一手资料：架构商文件、标准组织、基准数据、供应规格、集成指南。
+4. 竞争对手、替代方案与生态数据，用于交叉验证。
+5. 市场数据与新闻，用于价格、广度、热度、时间点和背景。
 
-If any of the first four ledger claims is missing, classify the link as **early observation** or **concept risk**; do not rank it as the current focus.
+前四项主张中缺任意一项，只能归为“早期观察”或“概念风险”，不能列为当前焦点。
 
-## Workflow
+## 工作流
 
-### 1. Decide discovery mode or theme mode
+### 1. 先判断发现模式还是主题模式
 
-Use **discovery mode** when the user asks to "run this skill", "find current hot industries", "find the next industry to position for", "what comes after the current hot theme", or gives no specific starting theme.
+当用户说“运行这个 skill”“找当前热门行业”“找下一个可以布局的行业”“当前热点之后传导到哪里”，或没有给定具体主题时，使用**发现模式**。
 
-In discovery mode, first identify 3-7 currently hot industry candidates, then choose 1-3 with the strongest transmission potential for full chain mapping. Use current sources and state the as-of date. Do not rely on attention alone.
+发现模式下，先找出 3-7 个当前热门行业候选，再挑 1-3 个最有传导潜力的主题做完整产业链地图。必须使用当前资料并写明截至日期，不能只靠热度或涨幅。
 
-Screen candidates across these signal buckets:
+按这些信号桶筛选候选：
 
-- market leadership, breadth, volume, relative strength, or funding momentum;
-- leader earnings, guidance, backlog, capex, pricing, utilization, or margin expansion;
-- policy, procurement, budget, regulation, standards, or subsidy changes;
-- product adoption, customer deployment, app ranking, developer activity, or technical architecture change;
-- on-chain usage, TVL, fees, active users, stablecoin flow, protocol revenue, or infrastructure load where relevant;
-- supply stress: lead times, shortages, capacity, qualification, permitting, liquidity, distribution, or trust bottlenecks.
+- 市场领导力、广度、成交量、相对强度或一级市场融资热度；
+- 龙头业绩、指引、backlog、capex、价格、利用率或利润率扩张；
+- 政策、采购、预算、监管、标准或补贴变化；
+- 产品采用、客户部署、应用排名、开发者活跃度或技术架构变化；
+- 链上使用、TVL、手续费、活跃用户、稳定币流量、协议收入或基础设施负载；
+- 供给压力：交期、短缺、产能、认证、审批、流动性、分发或信任瓶颈。
 
-For each candidate, write: **why hot now**, **what first-order demand is proven**, **what could transmit next**, **what evidence is missing**, and **whether it is already too crowded**. Promote only candidates with a plausible next bottleneck; park themes that are hot but lack a transmission path.
+每个候选都写清：**为什么现在热**、**一阶需求是否被证明**、**可能向哪里传导**、**还缺什么证据**、**是否已经拥挤**。只有存在合理“下一瓶颈”的主题才升级；只有热度但没有传导路径的主题先搁置。
 
-Use **theme mode** when the user names a theme, leader, technology, policy, or capex cycle. Skip the broad scan and start from that supplied anchor.
+当用户已经给出主题、龙头、技术、政策或 capex 周期时，使用**主题模式**，跳过大范围扫描，直接从用户给定的锚点开始。
 
-### 2. Choose the correct starting point
+### 2. 从可观察事件开始
 
-Start from one observable event, not a preselected list of names:
+起点只能是一个已观察到的事件，而不是预设名单：需求冲击/客户 capex、技术或架构转型、产能/审批/认证约束、政策/预算/采购变化，或龙头已确认的订单和业绩加速。
 
-- demand shock or customer capex cycle;
-- technology transition or architecture change;
-- capacity, permitting, qualification, or supply constraint;
-- regulation, budget, or procurement change; or
-- already-confirmed leader earnings/backlog acceleration.
+把独立主题与真正的下游传导分开。例如，加密交易所收入、AI 数据中心电力、元宇宙设备都可能是不同周期里的有效主题，但除非支出路径能证明，不能把一个主题硬说成另一个主题的下游。
 
-Separate independent themes from true causal descendants. For example, crypto exchange revenue, AI data-center power, and metaverse devices may all be valid themes in different cycles, but one is not downstream of another unless the spending path proves it.
+### 3. 先画机制，再报候选对象
 
-### 3. Map the mechanism before naming candidates
-
-Write the causal chain in this form:
+每条链先写成：
 
 ```text
-Demand driver or narrative catalyst → buyer/user behavior → physical/economic/technical constraint
-→ required product, service, protocol, or distribution channel → supplier/enabler/substitute
-→ measurable transmission
+需求驱动或叙事催化 → 买方/用户行为 → 物理/经济/技术约束
+→ 必需产品、服务、协议或分发渠道 → 供应商/赋能方/替代方案 → 可量化传导
 ```
 
-For each arrow, give a concise but substantive explanation of the mechanism and one source or clearly marked inference. Ask:
+每个箭头都要给出简洁但有内容的机制解释，并给一个来源或标为推断。逐一回答：需求超预期时先卡哪里、为什么不能快速扩供/替代/自建/开源替代/协议分叉、谁付款/使用/质押/部署/集成以及节奏、这是定价权瓶颈、用量受益、收费关口、分发入口还是仅有代理属性、传导到该实体前可能在哪里中断。
 
-- What breaks first if demand grows faster than expected?
-- Why cannot supply, substitution, self-build, open-source alternatives, or protocol forks solve it quickly?
-- Who actually pays, uses, stakes, deploys, or integrates, and on what cadence?
-- Is the link a bottleneck with pricing power, a volume/usage beneficiary, a toll collector, a distribution gate, or only a proxy?
-- What can break the transmission before it reaches this entity?
+不能把所有主题硬塞成直线；有分支、替代方案或受损环节时，也要画进来。
 
-Do not force every theme into a linear chain. Branches, substitutes, and losing links belong on the map when material.
+### 4. 先写推演过程，再写结果
 
-### 4. Write the derivation before the result
+用户必须看得懂雷达是如何从一个热点行业，逐步推到最后的产业链方向。不能从“AI 很热”直接跳到“电力设备值得看”，中间必须写清楚为什么会发生传导。
 
-The user must be able to understand how the radar moved from a hot industry to the final chain. Do not jump from "AI is hot" to "power equipment is attractive" without showing the intermediate steps.
+每条升级为重点的产业链，都必须在候选地图前写一张**传导推演台账**：
 
-For every promoted chain, write a **transmission derivation ledger** before the candidate map:
-
-| Step | From | To | Why this link exists | Evidence type | What would break the link |
+| 步骤 | 从哪里来 | 传到哪里 | 为什么会传到这里 | 证据类型 | 什么会打断这一跳 |
 |---|---|---|---|---|---|
-| 0 | Hot theme / event | Starting demand | Why the theme is active now and what real buyer/user behavior is visible | sourced fact | attention fades without spending/usage |
-| 1 | Starting demand | First operational bottleneck | What must happen physically, economically, technically, or legally for demand to be fulfilled | sourced fact or inference | customer delays, self-build, substitution |
-| 2 | First bottleneck | Required product/service/protocol | What is purchased, integrated, deployed, staked, or used to solve the bottleneck | sourced fact or inference | supply response, different architecture |
-| 3 | Required product/service/protocol | Entity class | Which type of supplier, protocol, distributor, toll collector, or loser is exposed | inference, then entity proof | commoditization or weak value capture |
-| 4 | Entity class | Named entities | Why each named entity belongs here and what still needs verification | entity-level evidence | missing disclosure, margin pressure, valuation reset |
+| 0 | 热点主题/事件 | 起始需求 | 为什么现在热，已经看到什么真实买方/用户行为 | 有来源事实 | 热度退潮但没有支出/使用 |
+| 1 | 起始需求 | 第一层运营瓶颈 | 需求要兑现，物理、经济、技术或法律上先卡在哪里 | 有来源事实或推断 | 客户延后、自建、替代 |
+| 2 | 第一层瓶颈 | 必需产品/服务/协议 | 为解决瓶颈，需要购买、集成、部署、质押或使用什么 | 有来源事实或推断 | 供给快速响应或架构变化 |
+| 3 | 必需产品/服务/协议 | 实体类别 | 哪类供应商、协议、分发入口、收费关口或受损环节暴露在这里 | 推断，再用实体证据验证 | 商品化或价值捕获弱 |
+| 4 | 实体类别 | 具体实体 | 为什么每个实体属于这一环，还缺什么验证 | 实体层证据 | 披露缺失、利润率压力、估值重估 |
 
-Rules for the derivation:
+推演规则：
 
-- Each arrow needs a short paragraph, not just a label. Explain the economic or operating behavior in plain language.
-- Name the buyer/user at every step. If nobody clearly pays, deploys, integrates, or uses the solution, downgrade the link.
-- Separate **industry-chain derivation** from **entity selection**. First prove the chain class; then ask which entities have exposure.
-- Show rejected branches. If a hot theme is parked, write which arrow failed: no real starting demand, no bottleneck, no value capture, weak evidence, or too crowded.
-- Include a "could be wrong because" sentence for every promoted chain. Good radar is falsifiable, not just persuasive.
+- 每个箭头都要写一小段解释，不能只写标签。用白话讲清经济行为或运营行为。
+- 每一步都要点名买方或用户。若看不出谁付款、部署、集成或使用，就降级该环节。
+- 把**产业链推演**和**实体筛选**分开。先证明这类链条成立，再判断哪些实体有敞口。
+- 写出被淘汰的分支。如果某个热门方向被搁置，要说明是哪一跳失败：起始需求不足、瓶颈不清、价值捕获弱、证据不足，还是已经过于拥挤。
+- 每条重点链都要有一句“这条链可能错在什么地方”。好的雷达必须可证伪，而不只是听起来有道理。
 
-### 5. Classify entities by evidence, not familiarity
+### 5. 按证据给实体分类
 
-For every named company, project, protocol, product, asset, or private supplier, write the full entity name and a plain-language paragraph covering what it provides, its chain link, who buys or uses it, why it could benefit, what would prove the benefit, and what would break the thesis. Then classify it:
+每个公司、项目、协议、产品、资产或非上市供应商，都先写完整实体名称，并用一段白话说明“提供什么、位于哪一环、谁买或谁用、为什么可能受益、什么数据能证明、什么情况会推翻”。再归类：
 
-| Classification | Meaning | Required next step |
+| 分类 | 含义 | 下一步 |
 |---|---|---|
-| Signal source | Validates upstream demand; may already be crowded | Monitor the leading metric |
-| Direct beneficiary | Sells a necessary bottleneck product/service with disclosed or strongly evidenced exposure | Verify orders, revenue, margins, valuation |
-| Indirect proxy | Benefits if the chain expands but exposure or pricing power is not isolated | Verify segment exposure and alternatives |
-| Substitute / workaround | Benefits if the bottleneck is painful enough to force substitution | Verify adoption trigger and switching friction |
-| Loser / pressure point | Hurt by the constraint, substitution, regulation, or margin shift | Verify exposure and timing |
-| Early observation | Plausible mechanism, but one ledger claim is missing | Name the missing proof and monitoring date |
-| Concept risk | Theme association without a proven product-to-buyer path | Do not promote without new primary evidence |
+| 信号源 | 验证上游需求，可能已经拥挤 | 跟踪龙头指标 |
+| 直接受益者 | 卖必要瓶颈产品/服务，且敞口有披露或强证据 | 查订单、收入、毛利和估值 |
+| 间接受益代理 | 会随产业链扩张受益，但敞口/定价权未拆出 | 查分部敞口与替代方案 |
+| 替代方案 | 瓶颈足够痛时可能被采用 | 查采用触发条件和切换摩擦 |
+| 受损环节 | 受约束、替代、监管或利润转移影响 | 查暴露程度与时间点 |
+| 早期观察 | 机制合理，但台账缺一项 | 写清缺的证据和观察日期 |
+| 概念风险 | 只有题材关联，没有产品到买方路径 | 没有一手证据前不升级 |
 
-### 6. Assign stage and confidence
+### 6. 给环节而非单个对象定阶段
 
-Assign a stage to each **link**, not just each named entity:
+1. **已经爆发**：基本面和/或估值已重估；只作信号源，不能包装成早期发现。
+2. **第二波确认**：传导已出现，但需下一轮运营、使用、订单或采用数据确认持续性。
+3. **当前焦点**：所有关键台账均已支持，下一项数据能验证或否定 thesis。
+4. **早期观察**：机制合理但证据不完整。
+5. **概念风险/避免追高**：叙事或价格领先于证据。
 
-1. **Already exploded** — fundamentals and/or valuation have already re-rated; use as a signal source, not an early discovery claim.
-2. **Second-wave confirmation** — transmission is visible, but the next operating, usage, ordering, or adoption cycle must confirm durability.
-3. **Current focus** — all material ledger claims are supported and the next data point can validate or falsify the thesis.
-4. **Early observation** — mechanism is plausible but evidence is incomplete.
-5. **Concept risk / avoid chasing** — narrative or price leads evidence.
+置信度只用高/中/低，衡量证据质量和完整性，不代表预期收益率。
 
-Use **high / medium / low** confidence. Confidence measures evidence quality and completeness, not expected return.
+### 7. 热度、市场与估值纪律
 
-### 7. Use attention, market, and valuation discipline
+高优先级环节要记录适合该领域的热度与市场信号：公开市场价格/成交量、一级市场融资、搜索热度、应用商店排名、开发者活跃度、链上使用、TVL、手续费或采购节奏。必须标数据日期，旧数据不得被说成当前状态。
 
-For high-priority links, record available attention and market signals that fit the domain: public-market price and volume, private funding, search interest, app/store ranking, developer activity, on-chain usage, TVL, fees, or procurement cadence. Record the data date and do not call old data current.
+推荐进入深研前，明确那个可能推翻正确产业链 thesis 的问题：周期顶利润、backlog 转收入、客户集中、代币/资产价值捕获、单位经济、供给反应、监管、稀释或估值压缩。本 skill 不给精确估值结论，也不输出买入/卖出建议。
 
-Before suggesting an entity for deeper research, state the question that could invalidate an otherwise correct industry-chain thesis: peak-cycle margins, backlog conversion, customer concentration, token/value capture, unit economics, supply response, regulation, dilution, or multiple compression. Do not issue precise valuation targets or buy/sell guidance inside this skill.
+## 正式输出契约
 
-## Required output contract
+正式产业链雷达必须自动先保存 markdown 文档，即使用户没有明确说“保存”。然后在最终回复里给用户文件路径和摘要。保存文档按此顺序：
 
-For any substantial radar, automatically save a markdown document first, even if the user did not explicitly ask for saving. Then summarize the saved result for the user with the file path. Use this order in the saved document:
+1. **研究判断与布局逻辑**：必须是多段分析，不要写压缩式短结论。讲清选中的链条、为什么比被淘汰的热点更值得看、哪些已经被证明、哪些仍不确定、投资者或经营者应该如何观察下一步传导。
+2. **范围与截至日期**：市场、地区、期限、查过的来源和重要缺口。
+3. **热门行业扫描与淘汰台账**：发现模式下列出筛过的候选，并解释为什么升级或搁置。被搁置的主题要写清是哪一跳失败：起始需求弱、瓶颈不清、价值捕获弱、证据不足，或已经拥挤/周期偏晚。
+4. **一步步传导推演**：必写。每条重点链都要展示路径：热点主题/事件 → 起始需求 → 瓶颈 → 必需产品/服务/协议 → 实体类别 → 具体实体。每个箭头都要有白话解释、来源或明确标注的推断、失败条件。
+5. **因果链总览**：紧凑箭头；并行分支、替代方案和受损环节必须标明。这里是推演的摘要，不可替代前面的逐步推演。
+6. **详细证据包**：逐条来源说明每条重点链的证据。每条重要来源都要写清证明的事实、日期/截至期、直达链接、局限性、如何连接到产业链。
+7. **起始需求为什么真实**：有来源的驱动证据，历史与当前事实分开。
+8. **瓶颈测试**：约束、供给反应、买方、替代方案、业绩/使用量传导。
+9. **候选地图**：直接受益者/代理/替代方案/受损环节/信号源/早期观察/概念风险；每个高优先级实体写完整名称、括号内可选代码、提供什么、敞口证据、确认指标和日期、证伪条件、主要风险。
+10. **阶段、升级与失败条件**：给出具体下一事件或指标，不能只写“关注财报”。
+11. **最终对比表**：使用下表列名。
+12. **下一步研究队列**：3-5 个完整实体名称、资产、项目或链条环节，按瓶颈重要性、证据质量、不确定性和未解决问题排序。
 
-1. **Research thesis and layout judgment** — several paragraphs, not a compressed summary. Explain the selected chains, why they rank above rejected hot themes, what is already proven, what is still uncertain, and how a patient investor/operator would monitor the next transmission step. Do not use a short standalone verdict section.
-2. **Scope and as-of date** — market, geography, horizon, sources checked, and material data gaps.
-3. **Hot-industry scan and rejection ledger** — if in discovery mode, list candidates screened and explain why each was promoted or parked. For parked themes, identify the failed arrow: weak starting demand, unclear bottleneck, weak value capture, insufficient evidence, or crowded/late cycle.
-4. **Step-by-step transmission derivation** — mandatory. For each promoted chain, show the path from hot theme/event → starting demand → bottleneck → required product/service/protocol → entity class → named entities. Every arrow needs a plain-language explanation, a source or clearly marked inference, and a failure condition.
-5. **Causal chain overview** — compact arrows, with parallel branches, substitutes, and losers explicitly labeled. This is a summary of the derivation, not a replacement for it.
-6. **Evidence pack** — detailed source-by-source evidence for each promoted chain. For every important source, state the fact proved, date/as-of period, direct link, limitation, and how it connects to the chain.
-7. **Why the starting demand is real** — sourced driver evidence; distinguish history from current facts.
-8. **Bottleneck test** — constraint, supply response, buyer, substitute, and earnings/usage transmission.
-9. **Candidate map** — direct beneficiary / proxy / substitute / loser / signal source / early observation / concept risk. For each high-priority entity: full name, optional ticker/symbol in parentheses, what it provides, exposure evidence, confirmation metric and date, disproof, and key risk.
-10. **Stage, triggers, and failure conditions** — include specific next events or metrics, not generic "watch earnings".
-11. **Final comparison table** — the mandatory columns are below.
-12. **Next-research queue** — 3-5 full entity names, assets, projects, or chain links ranked by bottleneck importance, evidence quality, uncertainty, and a specific unanswered question.
-
-| Chain link | Causal mechanism | Representative full entity name and role | Stage / confidence | Detailed evidence and source | Next confirmation | Disproof / risk | Action |
+| 产业链环节 | 因果机制 | 代表实体完整名称及角色 | 阶段/置信度 | 详细证据与来源 | 下一项确认 | 证伪/风险 | 动作 |
 |---|---|---|---|---|---|---|---|
 
-Do not compress the evidence into a few short bullets when the user is looking for layout or positioning research. The conclusion must survive this test: a reader can identify what would have to happen operationally or behaviorally for the entity to benefit, which data would prove it, which data would prove it wrong, and where every key factual claim came from.
+用户做布局研究时，不要把证据压缩成几条短 bullet。交付标准：读者应看得出实体要在哪个运营或行为环节受益、哪项数据可以证明、哪项数据会推翻结论，以及每个关键事实来自哪里。
 
-Before finalizing, run the **reader confusion test**: if a reader only sees the final industry direction and cannot explain the intermediate operating steps, the output failed. Add the missing derivation before summarizing.
+最终交付前做一次**读者困惑测试**：如果读者只能看到最后行业方向，却讲不出中间运营步骤，输出就不合格。必须先补上推演过程，再写摘要。
 
-## Updates and saving
+## 更新与保存
 
-Treat each radar as a dated snapshot. For substantial radar work, saving is the default behavior and requires no prompt wording from the user. Save in this repository:
+雷达是带日期的快照。正式产业链雷达默认保存到本仓库，用户提示词里不需要专门写“保存”：
 
 ```text
 research/industry-chain-radar/YYYY-MM-DD-<theme-or-discovery-slug>-industry-chain-radar.md
 research/industry-chain-radar/tracker.md
 ```
 
-Use lowercase hyphenated slugs, e.g. `2026-07-10-current-hot-industries-industry-chain-radar.md`. Do not overwrite old radar files. Create `research/industry-chain-radar/` if it does not exist. Update `tracker.md` with the current stage, as-of date, evidence that changed, next confirmation date/metric, disproof conditions, and links to saved radar files.
+slug 用小写英文和连字符，例如 `2026-07-10-current-hot-industries-industry-chain-radar.md`。不覆盖旧雷达。目录不存在时创建 `research/industry-chain-radar/`。每次更新 `tracker.md`：当前阶段、截至日期、变化的证据、下一个确认日期/指标、证伪条件，以及已保存 radar 的链接。
 
-Do not write to `research/INDUSTRY-CHAINS/`, `/home/ubuntu/stock-reports`, or other legacy paths unless the user explicitly requests that path.
+除非用户明确要求，不要写入 `research/INDUSTRY-CHAINS/`、`/home/ubuntu/stock-reports` 或其他旧路径。
 
-## Common failures
+## 常见失败
 
-- **Answer only, no saved document:** substantial radar work must save a markdown file under `research/industry-chain-radar/` even when the user did not mention saving, then link it in the final response.
-- **Ticker instead of entity:** replace `VRT` with `Vertiv Holdings Co. (VRT)`; replace symbols-only crypto references with full protocol/project names.
-- **Thin evidence:** add source-by-source evidence and limitations; if evidence is unavailable, downgrade the chain rather than shortening the analysis.
-- **Compressed thesis:** replace with a multi-paragraph research judgment and layout logic.
-- **Result without derivation:** add the step-by-step transmission ledger from hot theme to starting demand, bottleneck, required product/service/protocol, entity class, and named entities.
-- **Arrow labels without explanation:** each arrow needs a paragraph explaining buyer behavior, constraint, timing, evidence, and failure condition.
-- **Theme list instead of a chain:** remove names until every remaining entity has a product/service/protocol-to-buyer-or-user path.
-- **Cycle-specific tunnel vision:** avoid writing the skill as if the current hot theme is permanent; AI, crypto, metaverse, energy, defense, biotech, and consumer cycles all require the same chain proof.
-- **Correlation mistaken for causation:** add the missing mechanism, timing, and substitute; otherwise downgrade it.
-- **A product announcement treated as revenue:** separate architecture, qualification, order, shipment, revenue, and margin evidence.
-- **Leader's success automatically transferred downstream:** test buyer timing, contract structure, capacity, and supplier competition.
-- **Stale snapshot presented as current:** label the old date or refresh primary sources and market data.
-- **Correct chain, weak value capture:** keep it in the radar until deeper research proves revenue, fees, margins, token capture, or strategic value.
+- **只回答不保存文档**：正式产业链雷达必须保存 markdown 到 `research/industry-chain-radar/`，即使用户没有说保存，最终回复也要给出链接。
+- **代码代替实体名称**：把 `VRT` 改成 `Vertiv Holdings Co. (VRT)`；加密协议也不能只写符号，必须写完整协议/项目名。
+- **证据太薄**：补充逐来源证据和局限性；证据拿不到就降级，不要缩短分析。
+- **压缩式结论**：改成多段“研究判断与布局逻辑”。
+- **只有结果没有推演**：补上从热点主题到起始需求、瓶颈、必需产品/服务/协议、实体类别、具体实体的逐步传导台账。
+- **箭头只有标签没有解释**：每个箭头都要解释买方行为、约束、时间、证据和失败条件。
+- **名单代替产业链**：删去不能证明“产品/服务/协议→买方或用户”路径的实体。
+- **被当前热点绑架**：不要把 skill 写成只服务当前热门主题；AI、加密货币、元宇宙、能源、军工、医药、消费周期都必须回到同一套链条证明。
+- **相关性被当因果**：补上机制、时间与替代方案；补不上就降级。
+- **产品发布被当收入**：区分架构、认证、订单、发货、收入、利润率。
+- **龙头成功自动传导下游**：检查买方节奏、合同、产能和供应商竞争。
+- **旧快照冒充当前**：标旧日期，或刷新一手与市场数据。
+- **链条正确但价值捕获弱**：先停在雷达，等深研证明收入、手续费、毛利、代币捕获或战略价值。
 
-## Final checklist
+## 交付前检查
 
-- [ ] A markdown radar was automatically saved under `research/industry-chain-radar/` for substantial work, without requiring the user to ask for saving.
-- [ ] Every high-priority link has a complete claim ledger or is explicitly downgraded.
-- [ ] If no starting theme was supplied, a current hot-industry scan was performed and dated.
-- [ ] The saved document includes a step-by-step transmission derivation ledger before the candidate map.
-- [ ] Every promoted arrow explains buyer/user behavior, constraint, required solution, evidence/inference status, and failure condition.
-- [ ] Parked themes identify the exact failed arrow rather than simply saying they are less attractive.
-- [ ] Facts, inferences, assumptions, and unknowns are visibly separated.
-- [ ] Every factual claim has a direct source link and current claims have an as-of date.
-- [ ] Every promoted chain includes a detailed evidence pack with source limitations.
-- [ ] Every named entity uses the full entity name first; ticker/symbol is secondary and parenthetical only.
-- [ ] Every named entity has a concrete product/service/protocol, buyer or user, exposure path, confirmation metric, and disproof condition.
-- [ ] Independent themes are not presented as downstream beneficiaries.
-- [ ] Market, attention, and usage signals are confirmation only.
-- [ ] The final table and a ranked next-research queue are present.
+- [ ] 正式产业链雷达已自动保存 markdown 到 `research/industry-chain-radar/`，不依赖用户提示词里写“保存”。
+- [ ] 高优先级环节都有完整台账，或已明确降级。
+- [ ] 如果用户没有提供起始主题，已执行并注明日期的当前热门行业扫描。
+- [ ] 保存文档在候选地图前包含一步步传导推演台账。
+- [ ] 每条重点箭头都说明买方/用户行为、约束、所需解决方案、证据/推断状态和失败条件。
+- [ ] 被搁置的热门主题写清具体是哪一跳失败，而不是只说“不够好”。
+- [ ] 事实、推断、假设、未知清晰分开。
+- [ ] 每项事实都有直达来源；当前判断写明截至日期。
+- [ ] 每条重点链都有详细证据包，并写明来源局限性。
+- [ ] 每个实体先写完整名称，代码/符号只能放括号里作为辅助。
+- [ ] 每个实体都有产品/服务/协议、买方或用户、受益路径、确认指标与证伪条件。
+- [ ] 并行主题没有伪装成下游受益者。
+- [ ] 市场、热度和使用信号只作为确认。
+- [ ] 有最终表和按理由排序的下一步研究队列。

@@ -1,202 +1,145 @@
 ---
 name: us-options-structure
-description: Use when a user provides a US-listed stock or ETF ticker with listed options and wants a compact current-day options table with strike, expiration, DTE, option price, IV, and Put premium yield / annualized yield.
+description: 用于用户提供有上市期权的美股或 ETF 代码，要求查看当日 Call/Put 期权、行权价、到期日、剩余天数、期权价格、隐含波动率以及卖出 Put 的权利金收益率和简单年化收益率。
 ---
 
-# US Options Structure Research
+# 美股期权结构研究
 
-## Purpose
+## 目标
 
-Analyze the current trading day's listed-options structure for one US stock or ETF and return a **single compact table**.
+分析一只美股或 ETF 当日的上市期权交易结构，主要输出**一张紧凑表格**，而不是基本面报告、股价预测或交易建议。
 
-This is descriptive market-structure research, not fundamental analysis, a price forecast, or a trade recommendation.
+用户只提供 `$AAPL`、`NVDA`、`TSLA`、`SPY` 等代码时，直接开始研究，无须反复追问。默认用中文作答；用户明确要求其他语言时按要求切换。
 
-If the user gives only a ticker such as `$AAPL`, `NVDA`, `TSLA`, or `SPY`, begin directly without asking follow-up questions.
+## 核心规则
 
-Use the user's language unless asked otherwise.
+1. 不混用不同交易日的行情。上一交易日的数据只能明确标注为历史参考。
+2. 不补编任何缺失数字。
+3. Call 与 Put 必须放在**同一张表**。
+4. 文字简短，表格为核心输出。
+5. 除非用户要求，不添加额外分析章节。
+6. 数据日期含糊或来源矛盾的合约，不纳入当日主表。
+7. 无法核实当天期权价格时，说明「今日数据不足」，不能用旧价格填充。
 
-## Core rules
+## 交易时段核实
 
-1. Never mix trading dates. Previous-session data may be used only when clearly labeled as prior-session context.
-2. Never fabricate missing values.
-3. Calls and Puts must appear in the **same table**.
-4. Keep prose minimal. The table is the main output.
-5. Do not output extra analytical sections unless the user explicitly asks for them.
-6. If a source date is ambiguous or contradictory, exclude that contract from the main table.
-7. If current-day option prices cannot be verified, say `今日数据不足` rather than filling the table with stale prices.
+先确认当前美国东部时间及美股期权市场状态。第一行采用：
 
-## Session gate
+`截至：YYYY-MM-DD HH:MM（美东时间）— 盘前 / 盘中 / 盘后`
 
-Determine current US Eastern Time and market state first.
+- **盘前**：当日期权尚未开始常规交易；若使用上一交易日期权链，必须标注「上一交易日数据」。
+- **盘中**：主表只允许使用当日价格。
+- **盘后**：优先采用当日完整交易时段数据。
+- 无法确认来源日期的报价不能作为当日主表价格。
 
-Start with one short line:
+## 数据来源优先级
 
-`As of: YYYY-MM-DD HH:MM ET — Pre-market / Intraday / Post-close`
+按优先顺序选择：
 
-Rules:
+1. 交易所或官方期权链。
+2. 有当日合约字段的一手市场数据页面。
+3. 可靠金融数据服务商。
+4. 异动期权聚合站，仅供辅助交叉验证。
 
-- Pre-market: there is no current-day listed-options trading yet. Use prior-session chain only if clearly labeled.
-- Intraday: only current-day prices may enter the main table.
-- Post-close: prefer completed-session data.
-- If a source's date is unclear, do not use it in the main table.
+有条件时交叉核验当日期权价格。
 
-## Source priority
+## 合约筛选
 
-Prefer, in order:
+默认挑选最多 **20 个具有代表性的合约**，而不是罗列整个期权链。依据可得的当日活动，结合：
 
-1. exchange / official option-chain data;
-2. primary market-data pages with current option-chain fields;
-3. established financial-data providers;
-4. unusual-options aggregators only as supporting evidence.
+- 成交活跃程度；
+- 行权价距离正股现价的远近；
+- 临近到期日；
+- 隐含波动率异常；
+- 有意义的 Call 或 Put 活跃集中区域。
 
-Cross-check current-day option prices when practical.
+这些是**内部筛选依据**，不要添加成交量、持仓量等额外列。两边有可靠数据时同时纳入 Call 和 Put，不为凑够 20 行混入旧合约。
 
-## Contract selection
+## 期权价格
 
-The final answer should be useful rather than exhaustive.
+「期权价格」必须能归属于**当前交易日**，依次优先：
 
-Default target: up to 20 contracts total.
+1. 已核实的当日最近成交价；
+2. 明确为当日的可信标记价或买卖价中间值（说明口径）；
+3. 其他可靠来源的当日代表价格。
 
-Use current-day activity internally to choose the most relevant contracts, considering where available:
+不能拿上个交易日的 Last 价格计算 Put 收益率。无法核实当日价格填 `N/A`。
 
-- trading activity;
-- proximity to spot;
-- near-term expirations;
-- unusual implied volatility;
-- meaningful Call or Put concentration.
+## 到期剩余天数 DTE
 
-These ranking inputs are internal selection signals and should **not** be added as table columns.
+`DTE` 表示按自然日计算的距离到期日的剩余天数，以**美国市场交易日期**计算。
 
-Include both Calls and Puts when meaningful contracts exist on both sides.
+- 当天到期：`DTE = 0`
+- 次日到期：`DTE = 1`
 
-Do not pad the table with stale contracts just to reach a target count.
+## Put 权利金收益率
 
-## Option price
+「收益率」与「年化收益率」**只适用于 Put 行**。Call 行均填 `N/A`。
 
-The `期权价格` column must use a price attributable to the current trading day.
+Put 的行权价、有效当日期权价格、剩余天数已知时：
 
-Prefer, in order:
+**权利金收益率：**
 
-1. a verified current-day trade/last price;
-2. a reliable current-day mark or midpoint when clearly identified;
-3. another clearly current-day representative option price from a reputable source.
+`收益率 = 期权价格 / 行权价 × 100%`
 
-Do not use a stale Last from a prior trading day to calculate Put yield.
+例如行权价为 50 美元，Put 价格为 2 美元：
 
-If a current-day option price cannot be verified, use `N/A`.
+`2 / 50 × 100% = 4.00%`
 
-## DTE
+**简单年化收益率：**
 
-`DTE` means calendar days remaining until expiration.
-
-- Expiring today: `DTE = 0`.
-- Expiring tomorrow: `DTE = 1`.
-
-Use the US trading date when calculating DTE.
-
-## Put yield calculations
-
-The `收益率` and `年化收益率` columns are **Put-only metrics**.
-
-For Call rows:
-
-- 收益率 = `N/A`
-- 年化收益率 = `N/A`
-
-For Put rows, when Strike, valid current-day option price, and DTE are available:
-
-### Put premium yield
-
-`收益率 = Option Price / Strike × 100%`
-
-Example:
-
-- Strike = $50
-- Put price = $2
-
-`收益率 = 2 / 50 × 100% = 4.00%`
-
-### Annualized Put premium yield
-
-For `DTE > 0`:
+当 `DTE > 0` 时：
 
 `年化收益率 = 收益率 × 365 / DTE`
 
-Example with DTE = 30:
+例如 `DTE = 30`：
 
-`年化收益率 = 4.00% × 365 / 30 = 48.67%`
+`4.00% × 365 / 30 = 48.67%`
 
-For `DTE = 0`:
+当 `DTE = 0` 时，年化收益率填写 `N/A`。
 
-`年化收益率 = N/A`
+**含义与限制：** 从卖出现金担保 Put 的视角，这相当于权利金占按行权价计算的担保资金的比例，以及简单年化后的比例。本技能无须另加「买入/卖出方向」列。以上是毛收益指标，**不含**佣金、税费、保证金处理、提前指派、机会成本、担保资金利息、持仓价格波动或复利。价格过期或不确定时只填 `N/A`。
 
-### Interpretation
+## 主表格式
 
-For a Put, these two fields represent the option premium as a percentage of strike-based cash-secured capital and its simple annualized equivalent.
-
-They are most naturally interpreted from a Sell Put / cash-secured Put perspective, but the table does not need a separate direction column.
-
-These are simple gross yield metrics and do not include commissions, taxes, margin treatment, early assignment, opportunity cost, collateral interest, mark-to-market changes, or compounding.
-
-Only calculate them from a current-day option price. If the price is stale or uncertain, use `N/A`.
-
-## Main output table
-
-The report should primarily consist of **one table** combining Calls and Puts.
-
-Use this exact column order:
+**只输出一张同时含 Call 和 Put 的表格**，列顺序固定：
 
 | 类型 | Strike | 到期日 | DTE | 期权价格 | IV | 收益率 | 年化收益率 | 数据状态 |
 |---|---:|---|---:|---:|---:|---:|---:|---|
 
-### Column rules
+字段含义：
 
-- 类型: `Call` or `Put`.
-- Strike: option strike.
-- 到期日: expiration date.
-- DTE: calendar days to expiration.
-- 期权价格: verified current-day option price.
-- IV: implied volatility when available.
-- 收益率: Put only; Calls show `N/A`.
-- 年化收益率: Put only; Calls show `N/A`; 0DTE shows `N/A`.
-- 数据状态: short labels only, such as `Verified`, `Stale price`, `Date conflict`, or `N/A`.
+- **类型**：`Call` 或 `Put`。
+- **Strike**：行权价。
+- **到期日**：合约到期日期。
+- **DTE**：剩余自然日天数。
+- **期权价格**：已核实的当日期权价格。
+- **IV**：隐含波动率；没有可靠数据填 `N/A`。
+- **收益率**：仅 Put，Call 填 `N/A`。
+- **年化收益率**：仅 Put，Call 和当日到期合约填 `N/A`。
+- **数据状态**：简短用语，例如「当日已核实」「价格已过期」「日期冲突」或 `N/A`。数据冲突的合约通常应排除而不是展示。
 
-Do **not** add these columns unless the user explicitly asks:
+**除非用户明确要求，不添加以下列：** 方向、Volume（成交量）、OI（未平仓量）、Vol/OI、Premium/Proxy、正股现价、ITM/OTM。
 
-- 方向;
-- Volume;
-- OI;
-- Vol/OI;
-- Premium / Proxy;
-- 现货价;
-- ITM/OTM.
+## 输出排版
 
-## Formatting
+默认只有：
 
-Keep the answer visually compact.
+1. 一行美东日期、时间和交易时段；
+2. 上述唯一一张期权表格；
+3. 表后最多一句必要解释。
 
-Default format:
+优先按到期日再按行权价排序；当日成交明显集中时可按相关性排序。不要默认生成仪表盘、热门 Call/Put 分表、到期日分布、OI 分析、结构检查、原始/调整对比或长篇解读，除非用户专门要求。
 
-1. one short `As of` line;
-2. the single table;
-3. at most one short sentence after the table.
+## 交付前核查
 
-Do not create separate Dashboard, Top Calls, Top Puts, Expiry Map, OI analysis, Structural Checks, Raw vs Adjusted, or long narrative sections unless explicitly requested.
+- [ ] 行情属于正确交易日，旧价格未冒充当日价格。
+- [ ] Call 的两列收益率均为 `N/A`。
+- [ ] Put 收益率按「期权价格 / 行权价」计算。
+- [ ] Put 年化按「收益率 × 365 / DTE」计算。
+- [ ] 0DTE 年化为 `N/A`。
+- [ ] 缺失数字显示 `N/A`，没有编造数据。
+- [ ] 没有未经要求恢复被移除的列。
+- [ ] 最终答案聚焦一张紧凑表。
 
-When useful, order the table by expiration first and then Strike, or by relevance if current-day activity clearly identifies the most important contracts.
-
-## Failure-prevention checklist
-
-Before finalizing, verify:
-
-- table rows belong to the correct trading date;
-- stale option prices are not presented as current-day prices;
-- Call yield columns are `N/A`;
-- Put yield uses `Option Price / Strike`;
-- annualized Put yield uses `Yield × 365 / DTE`;
-- 0DTE annualized yield is `N/A`;
-- missing values are shown as `N/A` instead of invented;
-- no removed columns reappear unless explicitly requested;
-- the final answer stays focused on the one compact table.
-
-Prefer a short, accurate table over a long narrative report.
+**准确、简短的表格优先于冗长的分析报告。**
