@@ -41,13 +41,13 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Render **exactly one compact numeric table with two columns**. For Chinese output use only **财务指标 | 数据** (for English, Financial metric | Value). Normally keep **4–6 essential rows**, fewer when data are unavailable or irrelevant. Put the fiscal period (e.g., 2026上半年) directly in the metric label, or in the numeric value when clearer. One permitted illustrative shape:
      | 财务指标 | 数据 |
      |---|---:|
-     | 2025年全年收入 | 5.10亿美元 |
-     | 2026年上半年收入 | 3.74亿美元 |
-     | 2026年上半年净亏损 | 4.65亿美元 |
-     | 2026年上半年经营现金流 | -0.47亿美元 |
-     | 2026年上半年设备及建设支出 | 5.49亿美元 |
-     | 2026年上半年自由现金流 | -5.96亿美元 |
-     The figures above illustrate formatting only; **never recycle example numbers as if they belong to another company**.
+     | 最近完整财年收入 | 按核实财报填金额和币种 |
+     | 最新可比期间收入 | 按核实财报填金额和币种 |
+     | 最新期间净利润或亏损 | 按核实财报填金额和币种 |
+     | 最新期间经营现金流 | 按核实财报填金额和币种 |
+     | 最新期间设备及建设支出 | 按核实财报填金额和币种 |
+     | 最新期间自由现金流 | 按核实财报填金额和币种 |
+     This is a **format-only placeholder**, not a mandatory six-row list. In final reports, replace every placeholder with verified, explicitly dated figures or omit unsupported rows; never print placeholders as reported values.
    - Table content is **data only**: indicator names, actual numbers, reporting periods, currencies, units and inline citations. **Never include a “这说明什么”, “含义”, “解读”, “备注” or other commentary column** and never write explanatory sentences inside table cells.
    - Select the most useful industry-appropriate data: revenue/same-period growth, profit/loss, operating cash flow, capital expenditures, investment-adjusted cash use, balance-sheet cash/debt or runway as material. **Do not force all six rows**; use a different set for financial, biopharma or other sector types. No multi-year GAAP/TTM mega-grid; do not calculate growth by comparing a half-year total with a full-year total.
    - **Directly below the table**, write **one short 2–4-sentence paragraph labeled “总结：”** in Chinese (Summary: in English). Interpret the combined data in plain language: sales trend, real profitability, cash burn/sustainability, and the most important financing or quality risk. **Interpretation belongs here only, not inside the table**. If cash, debt, or comparables are missing and prevent a conclusion, briefly say so.
