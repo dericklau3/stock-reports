@@ -38,21 +38,21 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Expand one project only when the user explicitly requests a project deep dive. A short update on a thesis-changing fact belongs in its analytical section instead of recreating the whole project list.
 
 3. **Financial Position / 财务状况：收入、利润和现金**
-   - Write for a reader with **zero accounting background**. Explain how much the company sells, whether it earns a sustainable profit, where cash is flowing, and whether it can fund ongoing operations/expansion.
-   - Default to **one compact table with three columns and normally 4–6 selected indicators** (fewer if data or sector makes rows inapplicable). A model format:
-     | 关键指标 | 最新数据（注明期间） | 这说明什么 |
-     |---|---|---|
-     | 收入及同比增长 | Latest comparable period, dated | Is customer spending growing? |
-     | 净利润或亏损 | Reported figure, dated | Does accounting profit exist, and is it recurring? |
-     | 经营产生的现金 | Relevant reported cash flow | Is the business collecting more cash than it spends running operations? |
-     | 建设及设备投入 | Material capital expenditures | How much cash goes into expansion or upkeep? |
-     | 投入后现金结余（自由现金流） | Only if meaningful/reconcilable | Is cash generated after capital spending, or being consumed? |
-     | 现金储备及主要债务 | Same balance-sheet date | Does it have enough liquidity/financing headroom? |
-   - **Select rather than mechanically print every example row**: growth/profitability/cash are the default focus; choose sector-specific indicators where important. Show one or two **comparable** periods per indicator, not the old FY2024 + FY2025 + H1 2026 + TTM grid. Do not compare a six-month subtotal with an entire fiscal year as if it were year-over-year growth. Use sensible rounded Chinese units (e.g., 亿美元), retaining exact values in the calculation records.
-   - In the final column, explain **what the number means for this specific company**, without simply restating the label. Limit the body after the table to **one 2–3-sentence financial judgment** about growth, sustainable earnings, cash burn/runway and main financial risk.
-   - Avoid separate 4.1, 4.2... financial subsections, dense line-by-line reconciling footnotes, professional acronym lists and duplicate metric tables by default. Define necessary concepts at first appearance; replace bare GAAP, TTM, OCF, FCF, SBC and similar jargon with plain language.
-   - **Do not simplify away a material contradiction**: if a one-time gain makes profit appear positive despite weak operating earnings, or adjusted figures diverge materially, disclose the actual issue and its interpretation **briefly beside the relevant figure** and cite the filing/table. Keep verified source lineage, unit/period/accounting basis and reproducible calculations in the relevant tracker/valuation work; don't force all audit-trail details into the reading flow.
-   - Preserve decision-critical discussion of gross/operating margin quality, working capital, debt maturity, leases, equity compensation/dilution and financing when they change the investment conclusion; surface them in the appropriate valuation/risk section or one concise financial note, rather than generating exhaustive accounting commentary.
+   - Render **exactly one compact numeric table with two columns**. For Chinese output use only **财务指标 | 数据** (for English, Financial metric | Value). Normally keep **4–6 essential rows**, fewer when data are unavailable or irrelevant. Put the fiscal period (e.g., 2026上半年) directly in the metric label, or in the numeric value when clearer. One permitted illustrative shape:
+     | 财务指标 | 数据 |
+     |---|---:|
+     | 2025年全年收入 | 5.10亿美元 |
+     | 2026年上半年收入 | 3.74亿美元 |
+     | 2026年上半年净亏损 | 4.65亿美元 |
+     | 2026年上半年经营现金流 | -0.47亿美元 |
+     | 2026年上半年设备及建设支出 | 5.49亿美元 |
+     | 2026年上半年自由现金流 | -5.96亿美元 |
+     The figures above illustrate formatting only; **never recycle example numbers as if they belong to another company**.
+   - Table content is **data only**: indicator names, actual numbers, reporting periods, currencies, units and inline citations. **Never include a “这说明什么”, “含义”, “解读”, “备注” or other commentary column** and never write explanatory sentences inside table cells.
+   - Select the most useful industry-appropriate data: revenue/same-period growth, profit/loss, operating cash flow, capital expenditures, investment-adjusted cash use, balance-sheet cash/debt or runway as material. **Do not force all six rows**; use a different set for financial, biopharma or other sector types. No multi-year GAAP/TTM mega-grid; do not calculate growth by comparing a half-year total with a full-year total.
+   - **Directly below the table**, write **one short 2–4-sentence paragraph labeled “总结：”** in Chinese (Summary: in English). Interpret the combined data in plain language: sales trend, real profitability, cash burn/sustainability, and the most important financing or quality risk. **Interpretation belongs here only, not inside the table**. If cash, debt, or comparables are missing and prevent a conclusion, briefly say so.
+   - Material exceptions that reverse the apparent story (one-time gains, nonoperating profit, adjusted figures hiding losses, serious accounting conflicts, or funding constraints) **must appear briefly in this same summary**; provide source citations in numeric cells or the summary. Preserve full audit calculations and basis in the valuation materials or `tracker.md`, not as additional reader-facing notes.
+   - No extra financial mini-essays, 4.1/4.2 numbered subsections, second table, row-by-row commentary paragraphs or unexpanded jargon. Retain appropriate financial/valuation/risk research internally; explain a financial term only as needed in the single summary paragraph.
 
 4. **Management and Capital Allocation**
    - Management credibility and execution history.
@@ -113,9 +113,9 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Whether the quarter strengthened or weakened the long-term thesis, and why.
 
 2. **Headline Results / 本期财务发生什么变化**
-   - Use a concise **three-column table of 3–5 decision-driving metrics**, showing the actual number and same-period comparable change (when available), plus a one-line plain-language meaning. Prioritize revenue, profit/loss, operating cash and any material financing/capex/sector-specific measure.
-   - Explain in one short paragraph whether this quarter reflects better/worse business economics. Only mention guidance and pre-release consensus when verifiable and material. Preserve forecast basis and reporting period, but avoid a second full-year/TTM grid or an exhaustive accounting reconciliation.
-   - Distinguish published accounting profit from adjusted measures and one-time gains if they change the conclusion; explain differences briefly near the relevant value.
+   - Use **one compact two-column data table** (财务指标 | 数据), usually **3–5 material rows**. Show period-labeled numbers and truly comparable period changes when verified. Do **not** create a third explanation/commentary column or explanatory text inside table cells.
+   - Follow that table **immediately with one short 2–4-sentence summary paragraph** interpreting the overall change in ordinary language. Distinguish recurring profit from one-time or adjusted gains and material cash pressures here, not in the table. Only discuss guidance and pre-release consensus if reliable and material.
+   - Do not reproduce a second long historical table or an exhaustive line-by-line accounting reconciliation.
 
 3. **Guidance, Management Commentary and Progress**
    - Keep the same compact three-column progress format (**项目 / 为什么做、希望达到什么结果 / 当前进展与下一步**), usually **3–5 top items**, focusing on important changes since the last period. Explain the customer problem and intended business outcome even in updates; indicate previous-to-current change briefly inside the last column. Distinguish verified delivery or paid use from plans.
