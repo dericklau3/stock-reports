@@ -26,10 +26,12 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - After the reader understands the buying/payment path, cover unit economics when available, industry size and growth, competitive advantage, customer concentration, pricing power and switching costs. Avoid duplicating the later product-progress or valuation sections.
 
 2. **Business Progress / 公司正在做什么、做到哪一步**
-   - Reader-facing output: **one compact three-column table of normally 3–5 high-priority items** (fewer if less evidence), optionally preceded by one plain-language context sentence:
-     | 重点项目 | 当前进展 | 下一步关注什么 |
+   - Reader-facing output: **one compact three-column table of normally 3–5 high-priority items** (fewer if less evidence), optionally preceded by one plain-language context sentence. Crucially, **every initiative must explain its purpose**, not just name a partnership or product:
+     | 重点项目 | 为什么做？希望达到什么结果？ | 当前进展与下一步 |
      |---|---|---|
-     | Simple project name | One specific proved development (include concise date/source) | One measurable next gate, with a date only if disclosed |
+     | Simple project name | State the real problem this work solves, who benefits and the practical intended outcome for customers/company (1 concise sentence; don't repeat generic "growth") | One verified development with date/source and one concrete next check, brief enough for one cell |
+   - The **second column is mandatory and substantive**: e.g., a chip upgrade may aim to serve more customer requests per unit of power, a cloud distribution partnership may make it easier for customers to access the service, and a capacity buildout may enable delivery of already contracted services. These are explanatory examples, not asserted facts about a particular issuer; verify actual objectives and mark analyst inference clearly. Distinguish **the result being sought** from **the result already achieved**.
+   - The third column combines progress and next proof to keep the table at three columns. Do not sacrifice the purpose column merely to present more milestones, dates or financial metrics.
    - **Never generate the former five-column initiative inventory or 3.1, 3.2, 3.3... essays for each row by default.** Do not copy table entries into follow-up paragraphs, another list or a concluding recap.
    - Select projects by potential effect on future sales, cash or downside risk; group related work if useful. Do not hide consequential delays or cancellations. Describe announcements, tests, deliveries and actual paid usage separately, in beginner-friendly language.
    - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue and cost detail to Financial Deep Dive, dilution or price assumptions to Valuation Work, and major risks to Risk Register. Cite key facts in the table.
@@ -107,7 +109,7 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Separate reported results from non-GAAP or adjusted results.
 
 3. **Guidance, Management Commentary and Progress**
-   - Keep the same compact three-column progress format, usually **3–5 top items**, focusing on important changes since the last period. Indicate previous-to-current change briefly inside the relevant row. Distinguish verified delivery or paid use from plans.
+   - Keep the same compact three-column progress format (**项目 / 为什么做、希望达到什么结果 / 当前进展与下一步**), usually **3–5 top items**, focusing on important changes since the last period. Explain the customer problem and intended business outcome even in updates; indicate previous-to-current change briefly inside the last column. Distinguish verified delivery or paid use from plans.
    - Highlight only decision-relevant guidance changes, missed promises and management answers; no per-project 3.1/3.2 essays or repetition of the progress table. Preserve complete original dates and evidence in `tracker.md`.
    - Put earnings and cash consequences in the financial/valuation sections, not another broad operating recap.
 

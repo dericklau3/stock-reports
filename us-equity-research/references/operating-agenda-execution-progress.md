@@ -67,11 +67,13 @@ Full research includes one compact **公司正在做什么、做到哪一步** s
 
 **Default reader-facing format:** optional introduction of at most one plain-language sentence, then **one three-column table with normally 3–5 rows** (fewer if not justified). Use brief text and concise inline dated source references:
 
-| 重点项目 | 当前进展 | 下一步关注什么 |
+| 重点项目 | 为什么做？希望达到什么结果？ | 当前进展与下一步 |
 |---|---|---|
-| Name in ordinary language, not an internal key | One actual completed milestone or qualified announcement/test and relevant source | The next observable deliverable, customer use or commercial proof |
+| Name in ordinary language, not an internal key | The concrete customer/operational problem, how the project addresses it, who benefits and intended measurable commercial result, if known; use one short understandable sentence | One verified current milestone and one next observable deliverable or proof, with concise source/date |
 
-- **No five-column table** (do not display separate evidence, stage, original deadline, bottleneck, capital use and shareholder-meaning columns).
+A project title alone tells readers nothing. The purpose column must answer **what the initiative actually does and why the company is spending money or collaborating on it**. When available, translate strategy into an expected operational/business result: faster service, broader customer reach, ability to fulfill contracts, lower unit costs or more paid demand. These are illustrations, not automatic outcomes: verify issuer-specific intent and separate management objectives, analysis-based expectations and proven delivered benefits. If no reliable purpose is disclosed, say "目标未披露" rather than inventing one.
+
+- **No five-column table** (do not display separate evidence, stage, original deadline, bottleneck, capital use and shareholder-meaning columns). Keep three columns by combining progress with next steps, **not** by dropping each project's problem/purpose and desired outcome.
 - **No 3.1/3.2/3.3 item-by-item essays below the table**, no extended bullet list rephrasing the rows, no second "execution synthesis" recap.
 - Choose the most important 3–5 projects by impact on the thesis, group closely related efforts, and include material delays or failures rather than suppressing them. An announcement is not delivery; signed contracts are not automatically paid use; sales are not automatically cash/profit.
 - Leave dates, original commitments, stage-by-stage evidence, extra project rows, financing and resource dependencies in the tracker. Place material capital, unit economics, dilutive financing and downside implications in the corresponding financial/valuation/risk chapters; don't erase critical facts merely to shorten the report.
@@ -115,7 +117,7 @@ Keep a compact **Operating Agenda / Execution Progress** section with stable ini
 - Are lack of disclosure and lack of progress distinguished? Is genuine early execution acknowledged even before proven monetization?
 - Do scenario assumptions reflect required gates without double counting future optionality?
 - Does the tracker preserve initiative-level changes and the next monitoring point?
-- Is the reader-facing progress a concise three-column, normally 3–5-row table without repetitive initiative deep dives, while full milestone history remains in `tracker.md`?
+- Is the reader-facing progress a concise three-column, normally 3–5-row table in which **every project explains its actual purpose and expected customer/business result**, distinguishes that goal from verified progress, and avoids repetitive deep dives, while full milestone history remains in `tracker.md`?
 - Does the Chinese chat summary include important operating progress, not only an investment verdict?
 
 If evidence cannot establish a material initiative's current state, mark it unverified, explain the retrieval/coverage gap and lower confidence. Formatting a complete table is not proof of research completeness.
