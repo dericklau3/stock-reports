@@ -12,7 +12,7 @@ Open with **exactly three brief, reader-facing items** in the user's language. F
 
 The bilingual labels above specify meaning only: render each heading in the user's language. **Do not add standalone Confidence or Time horizon fields.** Evaluate evidence strength internally and discuss decision-critical uncertainty where it matters. State the research cutoff, quote timestamp/session, latest fiscal period/end date and valuation target year(s) once in a compact metadata line or relevant valuation section.
 
-Do not repeat this opening summary in another executive section or at the end. Subsequent sections should add evidence, quantitative work, company progress and concrete conditions that would change the view.
+Do **not** create a separate or numbered executive overview under any name (including **Executive View**, **Executive Summary**, **执行摘要**, or **先给结论**). The three short items above are the only opening verdict; do not append a second recap, "three most important judgments", lengthy quote/price discussion, or "changes since last report" digest. Relocate unique details to the relevant sections: prices and share-count assumptions → **Valuation Work** (or relevant valuation analysis); product and customer progress → **Segment, Product and Execution Progress** (or the relevant progress section); changes versus previous reports → **Updated Thesis and Tracking Plan** or the pertinent update section. Later sections should add original evidence, numbers, and conditions, not rewrite the initial summary.
 
 1. **Business Model and Industry Structure**
    - Beginner explanation: in plain language, what the company sells, who pays, why customers buy, and how cash eventually becomes profit or free cash flow.
@@ -90,7 +90,7 @@ Open with **exactly three brief, reader-facing items** in the user's language. F
 
 The bilingual labels above specify meaning only: render each heading in the user's language. **Do not add standalone Confidence or Time horizon fields.** Evaluate evidence strength internally and discuss decision-critical uncertainty where it matters. State the research cutoff, quote timestamp/session, latest fiscal period/end date and valuation target year(s) once in a compact metadata line or relevant valuation section.
 
-Do not repeat this opening summary in another executive section or at the end. Subsequent sections should add evidence, quantitative work, company progress and concrete conditions that would change the view.
+Do **not** create a separate or numbered executive overview under any name (including **Executive View**, **Executive Summary**, **执行摘要**, or **先给结论**). The three short items above are the only opening verdict; do not append a second recap, "three most important judgments", lengthy quote/price discussion, or "changes since last report" digest. Relocate unique details to the relevant sections: prices and share-count assumptions → **Valuation Work** (or relevant valuation analysis); product and customer progress → **Segment, Product and Execution Progress** (or the relevant progress section); changes versus previous reports → **Updated Thesis and Tracking Plan** or the pertinent update section. Later sections should add original evidence, numbers, and conditions, not rewrite the initial summary.
 
 1. **Post-Earnings Verdict**
    - Better than expected / mixed / worse than expected only against an identified pre-release benchmark. Separate management guidance from consensus; if pre-release consensus is missing, write “consensus surprise unverified.”

@@ -62,6 +62,22 @@ class SkillPackageTests(unittest.TestCase):
         for path in (ROOT / 'references').glob('*.md'):
             self.assertIn(path.resolve(), seen, path.name)
 
+    def test_single_three_item_report_summary(self):
+        """Block regressions that bring back duplicate executive summaries."""
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        self.assertIn('Strictly prohibit any additional executive-overview section', skill)
+        self.assertEqual(template.count('Open with **exactly three brief, reader-facing items**'), 2)
+        self.assertEqual(template.count('Do **not** create a separate or numbered executive overview'), 2)
+        # A reference to a forbidden title in a prohibition is OK; a section is not.
+        forbidden_heading = re.compile(
+            r'(?mi)^\\s*(?:\\d+\\.\\s*|\\#{1,6}\\s*)?'
+            r'\\*{0,2}(?:Executive View|Executive Summary|执行摘要|先给结论)\\*{0,2}\\s*(?:[:：]|$)'
+        )
+        self.assertIsNone(forbidden_heading.search(template))
+        self.assertNotIn('- **Confidence**:', template)
+        self.assertNotIn('- **Time horizon**:', template)
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():
