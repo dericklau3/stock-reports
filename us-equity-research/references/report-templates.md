@@ -103,17 +103,20 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Beneath the table, write **one 2–3-sentence paragraph starting 总结：** about the principal ways the investment thesis could fail and the one or two warning signs to monitor. No 8.1/8.2 subsections, seven-row dense matrix, second checklist, long severity debate or row-by-row essays.
    - Retain traceable risk origins, assessed severity, management incentives, cash/dilution exposure, measurable thesis-invalidating thresholds and updates in `tracker.md` or the valuation/monitoring evidence. Expand the risk inventory only on explicit user request.
 
-8. **Four Investor-Style Decision Lenses**
-   - Anti-bias note: information richness rating, main research blind spot, and strongest reason smart investors may disagree.
-   - Buffett-style lens: conclusion, key question, evidence for and against, decision implication, and follow-up question covering business durability, moat, cash conversion, management, valuation, and margin of safety.
-   - Munger-style lens: conclusion, key question, inversion table or concise failure paths, fragile assumptions, incentives, psychological traps, major stupidity risk, decision implication, and follow-up question.
-   - Duan Yongping-style lens: conclusion, one-sentence business essence, user value, product or brand strength, culture/people, long-term certainty, right price, decision implication, and follow-up question.
-   - Li Lu-style lens: conclusion, circle of competence, long-term industry or civilization trend, value-chain position, downside protection, margin of safety, research-depth decision, and follow-up question.
-   - Scoring table with evidence rationale and coarse anchors from [investor lenses](investor-lenses.md); N/A is permitted. Do not repeat earlier analysis.
-   - Integrated decision memo and action-framing table for no position, existing position, add/upgrade signal, and reduce/downgrade signal.
+8. **Four Investment Perspectives / 四种投资视角：怎么看这家公司？**
+   - Present **exactly one compact three-column table with four rows**, then **one 2–3-sentence 总结： paragraph**. This is an evidence-based comparison of four thinking styles, not opinions attributed to the actual investors:
+     | 投资视角 | 最关注什么 | 对公司的判断 |
+     |---|---|---|
+     | 巴菲特式 | 企业能否长期持续赚钱，当前估值是否有余地 | One concise judgment tied to this company's proven or missing evidence |
+     | 芒格式 | 哪个错误假设可能带来最大损失 | One different concrete weakness or evidence gap |
+     | 段永平式 | 客户为何愿意长期付钱，产品与管理是否可靠 | One plain-language assessment |
+     | 李录式 | 长期行业趋势、最坏情况与资金安全 | One plain-language assessment |
+   - Use 1 short sentence per cell wherever possible; each viewpoint must add a **distinct insight**, not a copy of the risk, operating-progress, finance or valuation sections. A plain statement such as "仍需观察，因为尚未证明设备投入能转化为持续现金收入" is better than an opaque "Needs further observation" without explanation.
+   - **After the table**, include only **one 2–3-sentence paragraph beginning 总结：** describing what the combined checks imply and the single most important unknown. Do not restate the opening three-item investment judgment in different words.
+   - Default output **must not include** stand-alone Anti-bias A/B/C rating, four separate investor essays, each investor's support/counterargument/follow-up bullets, 1–10 score table, integrated decision memo, position-sizing/action table, or a second table. Perform critical thinking and source checks internally using [investor lenses](investor-lenses.md), preserving substantial contradictory evidence and key question(s) in `tracker.md` / research notes; expand only if explicitly requested.
 
 9. **Final Research Framework**
-   - Add only distinct, measurable conditions that would materially invalidate or change the thesis and are **not already covered** in the future-events table or the risk-warning-signal column.
+   - Add only distinct, measurable conditions that would materially invalidate or change the thesis and are **not already covered** in the future-events table, risk-warning-signal column or four-perspective summary.
    - Never regenerate an upcoming-events list or repeat the opening summary. If nothing new is added, omit this redundant section.
 
 ## Post-Earnings Tracking Template

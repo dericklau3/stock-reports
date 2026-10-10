@@ -24,7 +24,7 @@ A narrow price or business question does not require a full memo or all four len
 - Use primary filings/IR materials as the financial source of record, with independent cross-checks where practical. Key facts need direct links and document/table/page locators, not just source names. A mirror of one release is not another independent source.
 - Match valuation to company stage, sector and security structure. Inspect cash conversion, SBC/dilution, debt, leases, reinvestment, accounting adjustments, concentration, competition, regulation and management credibility. **Research all critical financial details, but show only a short, understandable financial snapshot in the reader-facing report** as specified below; do not equate many rows of accounting data with a better explanation.
 - Support each view with evidence, the strongest counterargument, downside and observable conditions that would change it. Lower confidence for decision-critical gaps; do not replace missing evidence with precision.
-- Frame conclusions as research support. Investor-style lenses describe analytical approaches, not those investors' actual opinions or endorsements.
+- Frame conclusions as research support. Investor-style lenses describe analytical approaches, not those investors' actual opinions or endorsements. In complete reports, **compress all four investor-style views into one four-row table and one brief conclusion**, never four separate writeups or multiple scoring and action tables.
 
 ## Beginner-first business model (mandatory for full deep research)
 
@@ -58,8 +58,23 @@ Read only the references needed for the selected task; the shared data rules app
 4. Load [company types and conditional checks](references/company-types.md) when choosing metrics/methods, including foreign issuers/ADRs, peer comparability and material financial-quality bridges. Investigate detailed financial quality internally, but write the visible section as one historical comparison table, small-font financial definitions and one summary, not a long financial essay.
 5. For any valuation, load [valuation discipline](references/valuation.md). Full research checks bear/base/bull per-share values and meaningful forward P/E history, but shows only a compact valuation result table and summary; preserve detailed assumptions, P/E history, formulas, dilution and sensitivity in the tracker or linked valuation record.
 6. For full memos or earnings/material-event updates, use the relevant section of [report templates](references/report-templates.md). Show the short upcoming-event table and summary without duplicating operating progress; keep detailed trigger/calendar history in the tracker. Updates require a prior-assumption → new-fact → revised-estimate → valuation-impact bridge; first coverage establishes a baseline.
-7. For full deep research, load [four investor-style lenses](references/investor-lenses.md) as a concise evidence-based pressure test. The visible risk section must follow the compact three-column risk table + summary rule; preserve the complete risk register in the tracker. Do not repeat earlier sections or turn qualitative scores into mechanical buy signals.
+7. For full deep research, load [four investor-style lenses](references/investor-lenses.md), but the **reader-facing four-style section is one four-row summary table + one short conclusion only**; keep detailed supporting/contrary analysis and scoring checks in the research record. The visible risk section follows its compact risk-table rule. Do not repeat previous business, financial, valuation or risk sections and do not turn style labels into buy signals.
 8. Verify calculations, sources, limits and view-changing conditions. Save using the rules below and update the tracker.
+
+## Concise four-investor-style comparison (mandatory for full deep research)
+
+For Chinese deep research, title this chapter **四种投资视角：怎么看这家公司？**. Distill four **analytical styles**, not the named investors’ real opinions, into **exactly one three-column table with four rows**:
+
+| 投资视角 | 最关注什么 | 对公司的判断 |
+|---|---|---|
+| 巴菲特式 | 生意能否长期稳定赚钱，当前价格是否合理 | One company-specific plain-language assessment |
+| 芒格式 | 哪些假设最容易出错、哪里可能造成永久损失 | One distinct company-specific assessment |
+| 段永平式 | 产品是否真正让客户愿意持续付钱，管理层是否可靠 | One distinct assessment |
+| 李录式 | 是否处在长期趋势里、下跌风险有没有保护 | One distinct assessment |
+
+Each row should be **one concise real judgment**, not a question list, a checklist or generic praise. Explicitly tie conclusions to evidence from earlier sections; when unknown, say what has not been proven. Four lenses should add different perspectives, not restate identical financial, valuation or risk passages.
+
+**Immediately below the one table, write one 2–3-sentence paragraph labeled 总结：** that combines the four perspectives without repeating the report’s opening view. **Do not** print separate Buffett/Munger/Duan/Li Lu subsections, Anti-bias A/B/C information-richness rating, one table per investor, composite 1–10 scorecard, integrated decision memo, position-state/action table, or long follow-up-question lists by default. Run the deeper checks in [investor lenses](references/investor-lenses.md) and retain supporting evidence/contradictions in the research notes or `tracker.md`; show full breakdown only when explicitly requested.
 
 ## Beginner-readable investment risks (mandatory for full deep research)
 

@@ -161,6 +161,20 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('not in extra public tables', section)
         self.assertNotIn('7. **Risk Register**', template)
 
+    def test_four_investor_lenses_compact_table(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        lenses = (ROOT / 'references/investor-lenses.md').read_text(encoding='utf-8')
+        section = template.split('8. **Four Investment Perspectives / 四种投资视角：怎么看这家公司？**', 1)[1].split('9. **Final Research Framework**', 1)[0]
+        self.assertIn('| 投资视角 | 最关注什么 | 对公司的判断 |', section)
+        for name in ('巴菲特式', '芒格式', '段永平式', '李录式'):
+            self.assertIn('| ' + name + ' |', section)
+        self.assertIn('one 2–3-sentence paragraph beginning 总结：', section)
+        self.assertIn('must not include', section)
+        self.assertIn('## Reader-facing format — one table, one conclusion', lenses)
+        self.assertIn('## Concise four-investor-style comparison', skill)
+        self.assertNotIn('8. **Four Investor-Style Decision Lenses**', template)
+
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name
         if not directory.is_dir():
