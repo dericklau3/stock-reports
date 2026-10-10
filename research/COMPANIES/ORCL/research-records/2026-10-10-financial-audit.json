@@ -1,0 +1,341 @@
+{
+  "as_of": "2026-10-10",
+  "units": "USD millions unless explicitly shares, ratio or EPS",
+  "sources": {
+    "Q27": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "mirror": "https://app.boardroomalpha.com/sec_feed/2026/QTR3/0001193125-26-389274/orcl-20260831.htm",
+      "accession": "0001193125-26-389274",
+      "filing_date": "2026-09-11",
+      "period_end": "2026-08-31",
+      "local": "q127-mirror.txt",
+      "status": "full SEC document text retrieved through mirror; SEC direct blocked"
+    },
+    "K26": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+      "mirror": "https://app.boardroomalpha.com/sec_feed/2026/QTR2/0001193125-26-277521/orcl-20260531.htm",
+      "accession": "0001193125-26-277521",
+      "period_end": "2026-05-31",
+      "local": "k26.txt",
+      "status": "full SEC document text retrieved through mirror",
+      "filing_date": "2026-06-22"
+    },
+    "K25": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm",
+      "mirror": "https://app.boardroomalpha.com/sec_feed/2025/QTR2/0000950170-25-087926/orcl-20250531.htm",
+      "accession": "0000950170-25-087926",
+      "period_end": "2025-05-31",
+      "local": "k25.txt",
+      "status": "full SEC document text retrieved through mirror",
+      "filing_date": "2025-06-18"
+    },
+    "ER27": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "mirror": "https://app.boardroomalpha.com/sec_feed/2026/QTR3/0001193125-26-387905/orcl-ex99_1.htm",
+      "local": "release.txt",
+      "date": "2026-09-10",
+      "status": "full official exhibit text through mirror"
+    },
+    "8K14": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389753/d20034d8k.htm",
+      "mirror": "https://app.boardroomalpha.com/sec_feed/2026/QTR3/0001193125-26-389753/d20034d8k.htm",
+      "local": "8k-sep14.txt",
+      "filing_date": "2026-09-14",
+      "event_date": "2026-09-12",
+      "status": "full official text through mirror"
+    }
+  },
+  "financials": {
+    "FY2025": {
+      "start": "2024-06-01",
+      "end": "2025-05-31",
+      "revenue": 57399,
+      "direct_costs": [
+        11569,
+        782,
+        4576
+      ],
+      "operating_income": 17678,
+      "net_income": 12443,
+      "preferred_dividends": 0,
+      "common_net_income": 12443,
+      "ocf": 20821,
+      "cash_capex": 21215,
+      "sbc": 4674,
+      "depreciation": 3867,
+      "significant_financing_customer_prepayment": 0,
+      "source": "K25 pp65,68; K26 pp65,68 reclassified comparative",
+      "gross_profit_proxy_excluding_separate_intangible_amortization": 40472,
+      "fcf": -394
+    },
+    "FY2026": {
+      "start": "2025-06-01",
+      "end": "2026-05-31",
+      "revenue": 67357,
+      "direct_costs": [
+        17597,
+        868,
+        4556
+      ],
+      "operating_income": 20606,
+      "net_income": 17087,
+      "preferred_dividends": 103,
+      "common_net_income": 16984,
+      "ocf": 31977,
+      "cash_capex": 55663,
+      "sbc": 4811,
+      "depreciation": 7623,
+      "significant_financing_customer_prepayment": 4592,
+      "source": "K26 pp65,68",
+      "gross_profit_proxy_excluding_separate_intangible_amortization": 44336,
+      "fcf": -23686
+    },
+    "Q1FY2026": {
+      "start": "2025-06-01",
+      "end": "2025-08-31",
+      "revenue": 14926,
+      "direct_costs": [
+        3607,
+        178,
+        1099
+      ],
+      "operating_income": 4277,
+      "net_income": 2927,
+      "preferred_dividends": 0,
+      "common_net_income": 2927,
+      "ocf": 8140,
+      "cash_capex": 8502,
+      "sbc": 1124,
+      "depreciation": 1351,
+      "significant_financing_customer_prepayment": 0,
+      "source": "Q27 pp2,5 comparative",
+      "gross_profit_proxy_excluding_separate_intangible_amortization": 10042,
+      "fcf": -362
+    },
+    "Q1FY2027": {
+      "start": "2026-06-01",
+      "end": "2026-08-31",
+      "revenue": 19345,
+      "direct_costs": [
+        6400,
+        281,
+        1052
+      ],
+      "operating_income": 6728,
+      "net_income": 4760,
+      "preferred_dividends": 81,
+      "common_net_income": 4679,
+      "ocf": 23103,
+      "cash_capex": 28499,
+      "sbc": 1127,
+      "depreciation": 3156,
+      "significant_financing_customer_prepayment": 11363,
+      "source": "Q27 pp2,5",
+      "gross_profit_proxy_excluding_separate_intangible_amortization": 11612,
+      "fcf": -5396
+    },
+    "TTM20260831": {
+      "revenue": 71776,
+      "operating_income": 23057,
+      "net_income": 18920,
+      "preferred_dividends": 184,
+      "common_net_income": 18736,
+      "ocf": 46940,
+      "cash_capex": 75660,
+      "sbc": 4814,
+      "depreciation": 9428,
+      "significant_financing_customer_prepayment": 15955,
+      "gross_profit_proxy_excluding_separate_intangible_amortization": 45906,
+      "fcf": -28720,
+      "start": "2025-09-01",
+      "end": "2026-08-31",
+      "source": "self-calculated: FY2026 - Q1FY2026 + Q1FY2027"
+    }
+  },
+  "balance_sheet": {
+    "2025-05-31": {
+      "cash": 10786,
+      "marketable_securities": 417,
+      "notes_current": 7271,
+      "notes_noncurrent": 85297,
+      "finance_leases_current": 257,
+      "finance_leases_noncurrent": 2677,
+      "operating_leases_current": 1914,
+      "operating_leases_noncurrent": 11536,
+      "ppe_net": 43522,
+      "uncommenced_lease_commitments": 43400,
+      "purchase_commitments": 2226,
+      "notes_total": 92568,
+      "finance_leases_total": 2934,
+      "operating_leases_total": 13450,
+      "notes_plus_finance_leases": 95502,
+      "notes_plus_all_recognized_leases": 108952,
+      "net_notes_debt": 81365
+    },
+    "2026-05-31": {
+      "cash": 31289,
+      "marketable_securities": 605,
+      "notes_current": 7199,
+      "notes_noncurrent": 122342,
+      "finance_leases_current": 620,
+      "finance_leases_noncurrent": 7081,
+      "operating_leases_current": 3542,
+      "operating_leases_noncurrent": 26648,
+      "ppe_net": 99957,
+      "uncommenced_lease_commitments": 260000,
+      "purchase_commitments": 13309,
+      "preferred_carrying_value": 4954,
+      "notes_total": 129541,
+      "finance_leases_total": 7701,
+      "operating_leases_total": 30190,
+      "notes_plus_finance_leases": 137242,
+      "notes_plus_all_recognized_leases": 167432,
+      "net_notes_debt": 97647
+    },
+    "2026-08-31": {
+      "cash": 36369,
+      "marketable_securities": 708,
+      "restricted_cash_rounded": 2600,
+      "restricted_cash_derived": 2565,
+      "notes_current": 7625,
+      "notes_noncurrent": 117712,
+      "finance_leases_current": 749,
+      "finance_leases_noncurrent": 8436,
+      "operating_leases_current": 4027,
+      "operating_leases_noncurrent": 30594,
+      "ppe_net": 127845,
+      "uncommenced_lease_commitments": 288000,
+      "purchase_commitments": 34150,
+      "preferred_carrying_value": 4954,
+      "notes_total": 125337,
+      "finance_leases_total": 9185,
+      "operating_leases_total": 34621,
+      "notes_plus_finance_leases": 134522,
+      "notes_plus_all_recognized_leases": 169143,
+      "net_notes_debt": 88260
+    }
+  },
+  "eps_bridge": {
+    "gaap_net_income": 4760,
+    "preferred_dividends": 81,
+    "gaap_common_income": 4679,
+    "sbc_addback": 1127,
+    "intangible_amortization_addback": 202,
+    "restructuring_and_other_addback": 94,
+    "increase_in_tax_provision": 344,
+    "non_gaap_common_income": 5758,
+    "diluted_shares_millions": 3000,
+    "gaap_eps_reported": 1.56,
+    "non_gaap_eps_reported": 1.92,
+    "gaap_eps_recalculated": 1.5596666666666668,
+    "non_gaap_eps_recalculated": 1.9193333333333333
+  },
+  "calculations": {
+    "q1_ocf_ex_financing_component_prepayment": 11740,
+    "q1_fcf_ex_financing_component_prepayment": -16759,
+    "q1_ocf_ex_all_deferred_revenue_changes": 7743,
+    "q1_net_cash_outlay_for_capex": 17966,
+    "q1_double_counted_cashflow_wrong": 5137,
+    "fy26_net_cash_outlay_for_capex": 47726,
+    "q1_prepayment_fraction_of_ocf": 0.49184088646496127,
+    "preferred_min_common_shares": 24990630.0,
+    "preferred_max_common_shares": 31238285.000000004,
+    "preferred_annual_dividend_usd_millions": 325.0,
+    "atm_average_net_proceeds_per_share_approx": 141.19858156028369,
+    "cover_share_growth_jun12_to_sep07": 0.04973665765078006
+  },
+  "formulas": {
+    "gross_profit_proxy": "revenue - sum(direct_costs); separately presented intangible amortization not allocated",
+    "fcf": "ocf - cash_capex",
+    "ttm": "FY2026 - Q1FY2026 + Q1FY2027",
+    "net_notes_debt": "notes_total - cash - marketable_securities; restricted cash excluded",
+    "net_cash_outlay": "cash_capex - supplier_financing_net_proceeds - significant_financing_customer_prepayment"
+  },
+  "cover_shares": {
+    "2025-06-13": 2808833000,
+    "2026-06-12": 2880471000,
+    "2026-09-07": 3023736000
+  },
+  "atm": {
+    "gross_authorization": 20000,
+    "net_proceeds_Q1": 19909,
+    "issued_common_shares_approx_millions": 141,
+    "authorization_remaining_as_of_20260831": 0,
+    "status": "fully utilized; remaining buyback authorization 6300 is NOT ATM authorization"
+  },
+  "rpo": {
+    "20250531": {
+      "amount": 137800,
+      "buckets_percent": [
+        33,
+        41,
+        23,
+        3
+      ]
+    },
+    "20260531": {
+      "amount": 638000,
+      "buckets_percent": [
+        12,
+        34,
+        34,
+        20
+      ]
+    },
+    "20260831": {
+      "amount": 664000,
+      "buckets_percent": [
+        13,
+        37,
+        34,
+        16
+      ]
+    },
+    "bucket_definitions": [
+      "months1-12",
+      "months13-36",
+      "months37-60",
+      "after60"
+    ]
+  },
+  "limitations": [
+    "SEC document direct access blocked; full official-document mirrors used. Official submissions response retrieved by parent and independently parsed in shared scratch to verify filing timeline.",
+    "Post-period potential chip-SPV financing is a press lead, not a verified executed financing; not added to debt",
+    "Lessor guarantee scheduled September maturity settlement/extension and current actual share count remain unverified; absence of new 8-K is not proof of no commercial financing activity"
+  ],
+  "sec_filing_timeline": {
+    "url": "https://data.sec.gov/submissions/CIK0001341439.json",
+    "local": "submissions.raw",
+    "provenance": "parent-fetch-manifest.json status200; independently parsed saved official response",
+    "latest_filing": {
+      "filingDate": "2026-10-01",
+      "form": "4",
+      "accessionNumber": "0001341439-26-000099",
+      "primaryDocument": "xslF345X06/form4.xml",
+      "reportDate": "2026-09-29"
+    },
+    "relevant_since_Q1_end": [
+      {
+        "filingDate": "2026-09-14",
+        "form": "8-K",
+        "accessionNumber": "0001193125-26-389753",
+        "primaryDocument": "d20034d8k.htm",
+        "reportDate": "2026-09-12"
+      },
+      {
+        "filingDate": "2026-09-11",
+        "form": "10-Q",
+        "accessionNumber": "0001193125-26-389274",
+        "primaryDocument": "orcl-20260831.htm",
+        "reportDate": "2026-08-31"
+      },
+      {
+        "filingDate": "2026-09-10",
+        "form": "8-K",
+        "accessionNumber": "0001193125-26-387905",
+        "primaryDocument": "orcl-20260910.htm",
+        "reportDate": "2026-09-10"
+      }
+    ]
+  }
+}

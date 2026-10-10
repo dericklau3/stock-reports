@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-10-10",
+  "price": 141.4,
+  "quote_date": "2026-10-09",
+  "quote_source": "Nasdaq regular close",
+  "actual_common_shares_billion": 3.023736,
+  "shares_date": "2026-09-07",
+  "cash_and_securities_billion": 37.077,
+  "notes_debt_billion": 125.337,
+  "finance_leases_billion": 9.185,
+  "operating_leases_billion": 34.621,
+  "preferred_liquidation_billion": 5.0,
+  "noncontrolling_interests_book_proxy_billion": 0.424,
+  "market_cap_billion": 427.5562704,
+  "notes_only_ev_billion": 515.8162704,
+  "ev_finance_lease_preferred_nci_billion": 530.4252703999999,
+  "ev_all_recognized_leases_preferred_nci_billion": 565.0462703999999,
+  "guidance_eps_non_gaap": 8.1,
+  "guidance_revenue_billion_floor": 90,
+  "forward_non_gaap_pe": 17.45679012345679,
+  "sbc_cost_assumption": "annualized Q1 SBC, 18% illustrative tax shield, current cover shares; economic-cost sensitivity, not GAAP EPS forecast",
+  "sbc_aftertax_per_share": 1.2225141348318769,
+  "normalized_eps_base": 6.877485865168123,
+  "target_date": "2027-05-31",
+  "years_to_target": 0.6379192334017796,
+  "required_equity_return": 0.12,
+  "discount_factor": 1.0749719283259145,
+  "dividends_in_pv": 0,
+  "scenario_notes": "May2027 exit equity prices discounted to research date; no guaranteed intrinsic value. Bear EPS includes adverse guidance/capital cost shock; base keeps 8.10 guide less economic SBC; bull requires additional operating beat and efficient capex. P/E already equity, no second deduction of debt/preferred. No extra share dilution from the same future SBC cost in this economic-cost representation. New financing dilution beyond guide must be tested separately; preferred standard mandatory conversion is January2029, not May2027.",
+  "scenarios": {
+    "bear": {
+      "economic_eps": [
+        5.5,
+        6.0
+      ],
+      "exit_multiple": [
+        12,
+        15
+      ],
+      "future_price": [
+        66.0,
+        90.0
+      ],
+      "present_value": [
+        61.39695210719014,
+        83.72311650980473
+      ],
+      "change_vs_price": [
+        -0.5657924179123752,
+        -0.4078987516986936
+      ]
+    },
+    "base": {
+      "economic_eps": [
+        6.877485865168123,
+        6.877485865168123
+      ],
+      "exit_multiple": [
+        20,
+        24
+      ],
+      "future_price": [
+        137.54971730336246,
+        165.05966076403496
+      ],
+      "present_value": [
+        127.95656675200132,
+        153.5478801024016
+      ],
+      "change_vs_price": [
+        -0.09507378534652533,
+        0.08591145758416974
+      ]
+    },
+    "bull": {
+      "economic_eps": [
+        7.5,
+        8.0
+      ],
+      "exit_multiple": [
+        26,
+        30
+      ],
+      "future_price": [
+        195.0,
+        240.0
+      ],
+      "present_value": [
+        181.4000857712436,
+        223.26164402614594
+      ],
+      "change_vs_price": [
+        0.28288603798616396,
+        0.578936662136817
+      ]
+    }
+  },
+  "sensitivities": {
+    "base_extra_financing_share_increase_5pct_pv": [
+      121.86339690666792,
+      146.2360762880015
+    ],
+    "base_extra_financing_share_increase_10pct_pv": [
+      116.32415159272847,
+      139.58898191127417
+    ],
+    "prior_to_current_price_change": -0.05908969922810747,
+    "daily_unadjusted_close_change": 0.042081214533127076,
+    "preferred_standard_conversion_shares_million": [
+      24.99063,
+      31.238285
+    ]
+  }
+}
