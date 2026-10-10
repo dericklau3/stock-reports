@@ -56,10 +56,20 @@ Read only the references needed for the selected task; the shared data rules app
 2. Load [data verification](references/data-verification.md): source retrieval, time/period definitions, critical-number provenance and confidence.
 3. Explain the business using the mandatory five-part beginner-first business model and a concrete customer/payment example. For full research or material updates, load [operating agenda and execution progress](references/operating-agenda-execution-progress.md). Research all important initiative histories and preserve stable names, commitments and statuses in the tracker; **only the top 3–5 milestones appear in a three-column, no-deep-dive progress table with project purpose/desired result and actual progress/next verification** in the reader-facing report.
 4. Load [company types and conditional checks](references/company-types.md) when choosing metrics/methods, including foreign issuers/ADRs, peer comparability and material financial-quality bridges. Investigate detailed financial quality internally, but write the visible section as one historical comparison table, small-font financial definitions and one summary, not a long financial essay.
-5. For any valuation, load [valuation discipline](references/valuation.md). Full research normally includes bear/base/bull per-share ranges and a current/1-year high/1-year low forward P/E table, with explicit unavailable/not-meaningful fields where necessary.
+5. For any valuation, load [valuation discipline](references/valuation.md). Full research checks bear/base/bull per-share values and meaningful forward P/E history, but shows only a compact valuation result table and summary; preserve detailed assumptions, P/E history, formulas, dilution and sensitivity in the tracker or linked valuation record.
 6. For full memos or earnings/material-event updates, use the relevant section of [report templates](references/report-templates.md). Updates require a prior-assumption → new-fact → revised-estimate → valuation-impact bridge; first coverage establishes a baseline.
 7. For full deep research, load [four investor-style lenses](references/investor-lenses.md) as a concise evidence-based pressure test. Do not repeat earlier sections or turn qualitative scores into mechanical buy signals.
 8. Verify calculations, sources, limits and view-changing conditions. Save using the rules below and update the tracker.
+
+## Beginner-readable valuation display (mandatory)
+
+For full written reports, use **one compact valuation table + bear/base/bull estimates + one plain-language summary**, rather than a long "Valuation Work" essay. In Chinese, title this chapter **估值分析：当前股价贵不贵？**
+
+- Show **only one two-column table** (normally 5–7 rows, **关键指标 | 估算结果**): the dated stock price; entire equity market capitalization including all economically entitled share classes; at most one meaningful current valuation multiple; then **保守 / 基础 / 乐观** per-share estimate ranges. State currency and dates; do not invent unknown ratios or ranges.
+- Beneath the table, at most **one compact date/method note** must distinguish estimates of value **discounted to today** from **undiscounted future share-price scenarios**, and identify any forecast year. Never imply an assumption is a guaranteed price target.
+- Finish with **one 2–4-sentence paragraph starting 总结：**, answering whether the stock appears expensive, fair or cheap **under the assumptions**, why, and which business/financing conditions could materially change that conclusion. If key inputs do not support precise ranges, say **无法可靠估值**, describe missing evidence, and do not force scenarios.
+- Do not normally show 6.1/6.2/6.3/6.4 mini-chapters, separate historical Forward P/E tables, capitalization walkthroughs, EV-to-equity equations, peer grids, scenario input tables, sensitivity grids or buy-price ladders. Expand these only if the user requests such detail.
+- **Keep analytical depth:** validate all share classes, stock/earnings dates, debt, cash/leases, dilution, scenario assumptions, discounting, forward-P/E comparisons when meaningful and reproducible arithmetic under [valuation rules](references/valuation.md). Retain full inputs, citations and calculations in `tracker.md` or a small linked calculation record; never hide a limitation that reverses the result.
 
 ## Research view and confidence
 
@@ -143,8 +153,8 @@ Treat `tracker.md` as the active monitoring dashboard, not a shorter copy of the
 
 - Confirm the latest reporting period, quote session/time zone and cutoff; flag older evidence and missing materials. Do not claim to have read blocked documents.
 - Check units, fiscal periods, adjusted/GAAP basis, estimate timestamps and share/security definitions. Resolve critical conflicts or disclose their effect.
-- In full research, include understandable business economics, evidenced operating progress, material financial risks, suitable scenarios, the forward P/E table or justified gaps, four lenses and thesis invalidation conditions.
-- Every valuation needs reproducible inputs/formula, a value date, suitable shares, explicit net claims and sensitivity. Recompute arithmetic with a calculator or code. A future scenario price is not today's fair value without a consistent discounting method.
+- In full research, include understandable business economics, evidenced operating progress, material financial risks, suitable valuation scenarios (or explicit evidence gaps), four lenses and thesis invalidation conditions. Forward P/E details are research evidence, not an obligatory extra public table.
+- Every valuation still needs reproducible inputs/formula, a value date, suitable shares, explicit net claims and sensitivity in the tracker or linked calculations. Recompute arithmetic with a calculator or code. Explicitly distinguish future share prices from today's discounted fair-value estimates in the short report.
 - Updates must preserve original commitments and explain what changed. Mark invalidated old estimates stale; do not silently rewrite prior snapshots.
 - Start the chat response with the concise three-item summary (投资观点 / 核心逻辑 / 主要风险 in Chinese), not a five-field technical block. Include a brief **正在做什么 / 最新进度 / 下一关** summary for material initiatives, the main valuation condition and material verification limits; link the saved memo. For narrow questions, keep delivery proportionate to the request.
 - End with concise **What would change my view / 什么会改变我的观点** conditions.
