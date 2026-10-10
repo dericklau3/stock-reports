@@ -1,3 +1,4 @@
-display_name: US Equity Research
-short_description: US equity research, execution progress, and earnings tracking.
-default_prompt: Analyze a selected US-listed public company with deep research or post-earnings tracking. Explain its business and profit engine in plain language, then show what it is actively doing, actual completed milestones with dated evidence, separate technical/regulatory/adoption/economic stages, the next gate and bottleneck, resource needs, and implications for per-share returns before valuation. Maintain initiative-level changes in tracker.md and distinguish plans or launches from paid adoption and durable profits.
+interface:
+  display_name: "US Equity Research"
+  short_description: "US equity research, valuation, and execution tracking."
+  default_prompt: "Use $us-equity-research to analyze a selected US-listed company, explaining its business, evidenced execution progress, valuation assumptions, risks, and changes since prior research."

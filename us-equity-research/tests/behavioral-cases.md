@@ -1,0 +1,27 @@
+# Offline Behavioral Evaluation
+
+These synthetic cases test research decisions, not wording. Give a fresh evaluator only the skill path and the **Inputs** section, without the acceptance criteria or prior outputs. Ask it to read the entrypoint and required references, return concise answers and calculation assumptions, and avoid web access or file changes. Evaluate each case separately; a package-test pass does not count as a behavioral pass. Real company source retrieval requires separate live verification.
+
+## Inputs
+
+1. **Sparse historical valuation:** today price $100 and FY1 adjusted EPS $5. Last-year price high $150 and low $60. Only historical forward P/E observations are quarterly 25x, 30x, 22x; today 20x. Provide current/one-year high/low table and cheapness interpretation. The user wants a firm answer despite missing daily data.
+2. **Future price versus present value:** EBITDA in two years $200m, exit multiple 10x, debt $300m, unrestricted cash $100m plus restricted cash $50m, preferred claims $100m. Current actual shares 100m; last-year weighted-average diluted shares 90m; forecast diluted shares 110m including RSUs. Current quote $15; assumed equity discount rate 10%. Give a conditional two-year exit value and its present value, assuming the stated claims/cash are unchanged at exit and no interim distributions. Explain limitations.
+3. **Post-release consensus:** quarterly revenue 110, prior company guidance 100–105, consensus 108 observed only two days after release; no earlier research exists. Write the earnings verdict and assumption-change table. Can this establish a consensus beat?
+4. **Launch versus economics:** product launched, 100 trial accounts, no disclosed paid usage/economics or original schedule. Assess current progress and next proof.
+5. **Source lineage:** issuer release says revenue 110; a mirror republishes it; aggregator says 120 without a comparable period. Give the usable input, verification status and confidence limits.
+6. **ADR/share consistency:** one ADS represents two ordinary shares. Ordinary equity is $600m, 200m ordinary shares; all dollars are USD. ADS quote $8, forecast annual EPS $0.50 per ordinary share. Give value per ADS and forward P/E; explain why ordinary-share price/EPS cannot be mixed with ADS units.
+7. **Missing baseline and stale scenario:** an old two-year scenario used EBITDA $100m, 10x, net debt $200m and 100m shares. New dated disclosure implies a research assumption of $80m EBITDA, net debt $300m, 120m shares; keep multiple/horizon fixed. Current quote $6. Explain the revised scenario and changes without rewriting the old snapshot.
+8. **Unavailable versus meaningless:** profitable company has current price $60 and reliable next-year EPS $3 but no historical P/E series. Another company has negative forward EPS. Explain which fields are unavailable versus not meaningful.
+
+## Acceptance criteria — withhold from evaluator
+
+- Case 1: current 20x; true annual extrema unavailable. Sample range may be 20–30x including current, but only if comparability is qualified. Must not label $150/$5 or $60/$5 as actual historical P/E, or claim a verified annual low.
+- Case 2: EV $2,000m; common equity $1,700m; exit $15.4545/share (+3.03%); present conditional value $12.7724/share (−14.85%). Exclude restricted cash, use forecast 110m shares, distinguish terminal from present. These inputs do not prove RSUs capture future grants or all reinvestment/financing needs. Do not also subtract preferred claims a second time.
+- Case 3: above company guidance by 5 over the ceiling (4.76%) or 7.5 over midpoint (7.32%); pre-release consensus surprise unverified. Establish a baseline without inventing prior estimates or claiming a proven upgrade.
+- Case 4: launch/trial evidence acknowledged; paid adoption and economics unknown; schedule not assessable. Next gate seeks actual usage/conversion/retention and economics, not an invented completion percentage.
+- Case 5: 110 is issuer-reported, mirror is not independent confirmation. Investigate 120's period/basis; no average or false two-source verification. Confidence in the issuer's reported figure is distinct from independent validation.
+- Case 6: $3 per ordinary share, $6 per ADS; annual EPS $1 per ADS, forward P/E 8x. ADR ratio and currency explicitly aligned.
+- Case 7: old exit $8; revised exit $4.1667 (−30.56% versus current quote). Bridge EBITDA, net debt and dilution changes; preserve prior assumptions/date, update tracker or event memo as scope requires. Neither future price is automatically present fair value.
+- Case 8: profitable current P/E 20x is usable, history unavailable; negative-forward-EPS P/E not meaningful. Keep distinction and explain an appropriate alternative rather than forcing a number.
+
+Check semantic decisions and material arithmetic with tolerances appropriate to displayed rounding. Do not require identical prose, section names or a fixed confidence score. Preserve execution-progress coverage, source integrity and user-requested scope across refactoring.
