@@ -13,7 +13,7 @@ Read for full deep company research. These are **analytical styles inspired by t
 | 段永平式 | 用户价值、复购、管理层与合适的价格 | A distinct one-sentence judgment |
 | 李录式 | 长期行业趋势、理解边界及下行保护 | A distinct one-sentence judgment |
 
-Then **one short 2–3-sentence 总结： paragraph**, focusing on the combined decision-relevant insight and largest unresolved evidence gap. No additional table or subsection, no introductory Anti-bias rating, no score or position-state recommendation.
+Then **one short 2–3-sentence 总结： paragraph**, focusing on the combined decision-relevant insight and largest unresolved evidence gap. **End the full deep-research report here.** Do not follow it with a Final Research Framework, concluding recap, What would change my view, or research-completeness/gaps appendix. Critical limitations must have been explained in the earlier section they affect; complete evidence inventories and review triggers stay in `tracker.md`. No additional table or subsection, no introductory Anti-bias rating, no score or position-state recommendation.
 
 ## Internal research and evidence requirements
 

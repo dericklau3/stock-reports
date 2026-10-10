@@ -165,7 +165,7 @@ class SkillPackageTests(unittest.TestCase):
         skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
         lenses = (ROOT / 'references/investor-lenses.md').read_text(encoding='utf-8')
-        section = template.split('8. **Four Investment Perspectives / 四种投资视角：怎么看这家公司？**', 1)[1].split('9. **Final Research Framework**', 1)[0]
+        section = template.split('8. **Four Investment Perspectives / 四种投资视角：怎么看这家公司？**', 1)[1].split('## Post-Earnings Tracking Template', 1)[0]
         self.assertIn('| 投资视角 | 最关注什么 | 对公司的判断 |', section)
         for name in ('巴菲特式', '芒格式', '段永平式', '李录式'):
             self.assertIn('| ' + name + ' |', section)
@@ -174,6 +174,16 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('## Reader-facing format — one table, one conclusion', lenses)
         self.assertIn('## Concise four-investor-style comparison', skill)
         self.assertNotIn('8. **Four Investor-Style Decision Lenses**', template)
+
+    def test_no_final_research_framework_or_duplicate_outro(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        deep = template.split('## Deep Research Template', 1)[-1].split('## Post-Earnings Tracking Template', 1)[0]
+        self.assertNotIn('9. **Final Research Framework**', deep)
+        self.assertNotIn('**Final Research Framework**\\n', deep)
+        self.assertIn('**End the deep-research report after this section', deep)
+        self.assertIn('This is the last paragraph of a standard full deep-research report', skill)
+        self.assertIn('Do **not** append a second closing verdict', skill)
 
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name

@@ -114,10 +114,7 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Use 1 short sentence per cell wherever possible; each viewpoint must add a **distinct insight**, not a copy of the risk, operating-progress, finance or valuation sections. A plain statement such as "仍需观察，因为尚未证明设备投入能转化为持续现金收入" is better than an opaque "Needs further observation" without explanation.
    - **After the table**, include only **one 2–3-sentence paragraph beginning 总结：** describing what the combined checks imply and the single most important unknown. Do not restate the opening three-item investment judgment in different words.
    - Default output **must not include** stand-alone Anti-bias A/B/C rating, four separate investor essays, each investor's support/counterargument/follow-up bullets, 1–10 score table, integrated decision memo, position-sizing/action table, or a second table. Perform critical thinking and source checks internally using [investor lenses](investor-lenses.md), preserving substantial contradictory evidence and key question(s) in `tracker.md` / research notes; expand only if explicitly requested.
-
-9. **Final Research Framework**
-   - Add only distinct, measurable conditions that would materially invalidate or change the thesis and are **not already covered** in the future-events table, risk-warning-signal column or four-perspective summary.
-   - Never regenerate an upcoming-events list or repeat the opening summary. If nothing new is added, omit this redundant section.
+   - **End the deep-research report after this section's one summary paragraph.** Do not add a separate **Final Research Framework / 最终研究结论 / 研究完整性与缺口 / What would change my view** chapter or its equivalent under a different title. Major data gaps must be stated briefly where they affect the analysis (e.g. finance or valuation); internal completeness checks and detailed view-changing thresholds belong in `tracker.md`, not in an appendix-like ending.
 
 ## Post-Earnings Tracking Template
 
