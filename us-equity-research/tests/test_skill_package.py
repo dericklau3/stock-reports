@@ -138,7 +138,7 @@ class SkillPackageTests(unittest.TestCase):
     def test_compact_catalysts_and_monitoring_contract(self):
         skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
-        section = template.split('6. **Future Events to Watch / 未来值得关注的事件**', 1)[1].split('7. **Risk Register**', 1)[0]
+        section = template.split('6. **Future Events to Watch / 未来值得关注的事件**', 1)[1].split('7. **Key Investment Risks / 主要投资风险**', 1)[0]
         self.assertIn('## Concise future events and monitoring', skill)
         self.assertIn('| 重要事件 | 为什么值得关注 |', section)
         self.assertIn('3–5 key upcoming events', section)
@@ -147,6 +147,19 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn('do not mechanically repeat the earlier', section)
         self.assertNotIn('6. **Catalysts and Monitoring Plan**', template)
         self.assertIn('same **重要事件 | 为什么值得关注** two-column format', template)
+
+    def test_compact_investment_risks_contract(self):
+        skill = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
+        template = (ROOT / 'references/report-templates.md').read_text(encoding='utf-8')
+        section = template.split('7. **Key Investment Risks / 主要投资风险**', 1)[1].split('8. **Four Investor-Style Decision Lenses**', 1)[0]
+        self.assertIn('## Beginner-readable investment risks', skill)
+        self.assertIn('| 主要风险 | 可能产生什么影响 | 需要警惕的信号 |', section)
+        self.assertIn('normally 4–5 company-specific material risks', section)
+        self.assertIn('one 2–3-sentence paragraph starting 总结：', section)
+        self.assertIn('No reader-facing "判断/严重度"', section)
+        self.assertIn('observable warning signals', section)
+        self.assertIn('not in extra public tables', section)
+        self.assertNotIn('7. **Risk Register**', template)
 
     def test_chinese_maintenance_links(self):
         directory = ROOT.parent / 'cn' / ROOT.name

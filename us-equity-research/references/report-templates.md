@@ -34,7 +34,7 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - The third column combines progress and next proof to keep the table at three columns. Do not sacrifice the purpose column merely to present more milestones, dates or financial metrics.
    - **Never generate the former five-column initiative inventory or 3.1, 3.2, 3.3... essays for each row by default.** Do not copy table entries into follow-up paragraphs, another list or a concluding recap.
    - Select projects by potential effect on future sales, cash or downside risk; group related work if useful. Do not hide consequential delays or cancellations. Describe announcements, tests, deliveries and actual paid usage separately, in beginner-friendly language.
-   - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue/cost detail to the financial chapter, valuation/dilution calculations to the tracker or linked valuation file, and major risks to Risk Register. Cite key facts in the table.
+   - Preserve the complete dated initiative inventory, original versus updated deadlines, stage/finance evidence and bottlenecks in `tracker.md`; move material revenue/cost detail to the financial chapter, valuation/dilution calculations to the tracker or linked valuation file, and risk consequences to the brief Key Investment Risks table. Cite key facts in the table.
    - Expand one project only when the user explicitly requests a project deep dive. A short update on a thesis-changing fact belongs in its analytical section instead of recreating the whole project list.
 
 3. **Financial Position / 财务状况：收入、利润和现金**
@@ -92,11 +92,16 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - **No eight-item dense lists, project-status recaps, 7.1/7.2 detailed subsections or extra watchlists**. Do not copy earlier progress table entries or repeat valuation numbers. Under the table write **one 2–3-sentence paragraph beginning 总结：** explaining the main one or two proof points or risk events to watch.
    - Keep the full dated monitoring calendar, source links, targets, original commitments and evolving triggers in `tracker.md`, not repeated in the readable report.
 
-7. **Risk Register**
-   - Qualitative likelihood and severity of key risks; numerical probabilities require a defensible basis.
-   - Downside case.
-   - Thesis invalidation signals.
-   - The strongest disconfirming evidence.
+7. **Key Investment Risks / 主要投资风险**
+   - In full reports, render **one three-column table of normally 4–5 company-specific material risks**, then **one 2–3-sentence 总结： paragraph**. Choose fewer when warranted; do not fill the table with generic risks just to hit a count.
+     | 主要风险 | 可能产生什么影响 | 需要警惕的信号 |
+     |---|---|---|
+     | A material company-specific risk in plain language | In one sentence, explain a plausible consequence for sales, earnings, funding or valuation | One observable factual warning or disclosure that would prompt reassessment |
+   - These are format placeholders, **not verified risks for a named company**. Explain risk pathways in everyday language: for example, a major customer leaving might lower revenue; delayed delivery could defer income; financing may dilute shareholders; weak results can cause an expensive stock's valuation to fall. Include financial/competition/regulatory risks when company-specific evidence makes them important.
+   - **No reader-facing "判断/严重度", "机制", "可观察红线", probability or scoring columns**. Assess severity, likelihood (qualitatively only unless statistically defensible), supporting evidence, downside scenarios and invalidation triggers in the underlying risk register/`tracker.md`, not in extra public tables.
+   - Distinguish current adverse facts from hypothetical downside risks. Do not duplicate the three-item opening "主要风险", upcoming events, operating project progress or valuation chapter; the table adds concrete consequences and **observable warning signals**.
+   - Beneath the table, write **one 2–3-sentence paragraph starting 总结：** about the principal ways the investment thesis could fail and the one or two warning signs to monitor. No 8.1/8.2 subsections, seven-row dense matrix, second checklist, long severity debate or row-by-row essays.
+   - Retain traceable risk origins, assessed severity, management incentives, cash/dilution exposure, measurable thesis-invalidating thresholds and updates in `tracker.md` or the valuation/monitoring evidence. Expand the risk inventory only on explicit user request.
 
 8. **Four Investor-Style Decision Lenses**
    - Anti-bias note: information richness rating, main research blind spot, and strongest reason smart investors may disagree.
@@ -108,7 +113,7 @@ Do **not** create a separate or numbered executive overview under any name (incl
    - Integrated decision memo and action-framing table for no position, existing position, add/upgrade signal, and reduce/downgrade signal.
 
 9. **Final Research Framework**
-   - Add only distinct, measurable conditions that would materially invalidate or change the thesis and are **not already covered** in the future-events table or risk section.
+   - Add only distinct, measurable conditions that would materially invalidate or change the thesis and are **not already covered** in the future-events table or the risk-warning-signal column.
    - Never regenerate an upcoming-events list or repeat the opening summary. If nothing new is added, omit this redundant section.
 
 ## Post-Earnings Tracking Template
