@@ -1,35 +1,33 @@
-# Company Types and Conditional Checks
+# 公司类型与特殊情况核查
 
-Read when selecting valuation methods or when issuer structure needs adjustment.
+选择估值方法或遇到特殊证券结构时读取。**按公司实际商业模式挑指标，不能把一种行业的指标套给所有公司。**
 
-## Company-Type Adjustments
+## 不同类型公司的重点
 
-Adapt the research and valuation approach to the company:
+- **高增长、尚未盈利的软件或互联网企业**：收入持续性、毛利率、客户净收入留存、获客效率、经营杠杆、现金消耗、员工股权激励及稀释；可使用企业价值/收入或未来自由现金流路径分析，但必须解释盈利与融资前提。
+- **已盈利、可长期复利的企业**：收入增长、利润率稳定性、投入资本回报率 ROIC、自由现金流转化、再投资空间与竞争优势；适用时考虑市盈率、EV/EBIT、EV/EBITDA、自由现金流收益率。
+- **周期性企业**：结合周期高低点调整收入、利润率与倍数，不把景气顶点利润当作长期正常利润。
+- **金融、保险与信贷科技**：信用质量、坏账/赔付率、融资成本、资本充足度、监管风险、账面价值、净资产收益率 ROE 和准备金质量。
+- **生物科技和创新医药**：研发管线阶段、临床试验、成功概率证据、现金可支撑时间、稀释、审批路径、可服务市场。
+- **困境与扭亏企业**：流动性、债务到期、契约约束、现金消耗、资产处置及扭亏目标是否能用数据验证。
+- **工业、资本设备与基础设施周期企业**：订单/出货比、在手订单和剩余履约义务 RPO、订单利润质量、设备与服务构成、执行、保修准备、营运资金、扩产资本投入和存量设备服务收入。一次性税收、并购或公允价值收益不能机械年化为正常 GAAP EPS，应评估正常化 EBIT/EBITDA/自由现金流，区分经营改善与非经营收益。
+- **重资产多业务基础设施平台**：例如现有稳定现金流业务同时投资卫星、AI 算力、能源或收购新业务。必须逐业务识别今天谁赚钱、谁耗钱，重大融资后的债务与利息，以及治理、股权稀释、战略偏离。对未来业务使用情景估值并核验价格条件，不以单一倍数混算。
+- **数字资产财库公司或由挖矿转型持币的公司**：以普通股权益净资产价值（NAV）桥接估值，不能只看持有代币总量或 GAAP 账面收益。债务、优先股、其他优先索偿只能扣一次；核对基本股数和保守完全稀释股数，逐期计算每股代币与 NAV。检验 ATM 增发在实际 mNAV 下是否增厚每股价值。质押收益要扣验证器、托管、安全、合规等成本；期权费与已实现/未实现损益分开。公司用自有资产开展验证器业务，不等于已经获得外部 AUM 与手续费。警惕管理层以代币数量或总市值为目标而通过增发实现。情景中应由代币价格与持仓推到普通股 NAV，再按 mNAV、情景股数计算每股价值；已经以美元计价的 NAV 不能再乘一遍币价。
 
-- **High-growth unprofitable software / internet**: focus on revenue durability, gross margin, net revenue retention, customer acquisition efficiency, operating leverage, cash burn, SBC, dilution, and EV/Sales or path-to-FCF valuation.
-- **Profitable compounder**: focus on revenue growth, margin durability, ROIC, free cash flow conversion, reinvestment runway, competitive advantage, and P/E, EV/EBIT, EV/EBITDA, or FCF yield.
-- **Cyclical company**: normalize revenue, margins, and multiples across the cycle; do not value peak earnings as normal earnings.
-- **Financials / insurance / fintech lenders**: focus on credit quality, loss ratios, funding costs, capital adequacy, regulatory risk, book value, ROE, and reserve adequacy.
-- **Biotech / healthcare innovation**: focus on pipeline stage, clinical milestones, probability of success, cash runway, dilution, regulatory path, and addressable market.
-- **Turnaround or distressed company**: focus on liquidity, debt maturities, covenant risk, cash burn, asset sales, and whether the turnaround is measurable.
-- **Industrial / capital-equipment / infrastructure-cycle companies**: focus on orders, book-to-bill, backlog/RPO, backlog margin quality, equipment versus service mix, project execution risk, warranty/quality reserves, working-capital swings, capex required to expand capacity, installed-base service revenue, and whether current earnings are peak-cycle or normalized. For companies with large one-time tax, M&A, or mark-to-market gains, do not annualize GAAP EPS; use normalized Adjusted EBITDA/EBIT/FCF scenarios and explicitly separate operating improvement from non-operating gains.
-- **Capital-intensive multi-segment infrastructure platforms**: for companies that combine a proven infrastructure profit engine with high-optionality segments (space launch, satellite broadband, AI compute, founder-controlled software acquisitions, energy infrastructure, or similar), analyze each segment separately. Identify which segment funds the rest of the company today, incorporate pro forma debt/interest after major financings, separate current cash-flow evidence from future optionality, and explicitly evaluate governance, dilution, and mission-drift risk. Use scenario valuation plus practical price zones rather than a single blended multiple.
-- **Digital-asset treasury companies and former miners that pivoted into treasury strategies**: value the common stock as a dated common-equity NAV bridge, not on total token holdings or headline GAAP earnings. Deduct each applicable senior claim once, including debt, other liabilities and preferred liquidation preferences; reconcile overlaps rather than subtracting total liabilities and their components twice; reconcile basic and conservative fully diluted shares; calculate token and NAV per share over time; and test whether ATM issuance was accretive at the actual mNAV. Analyze staking as gross yield minus validator/custody/security/compliance costs, reconcile option premium with realized and unrealized derivative P/L, and treat self-treasury validator activity as unproven platform optionality until external AUM and fees are disclosed. Explicitly assess mission drift and whether incentives based on total market cap or total tokens can be achieved through dilution. Build bear/base/bull scenarios from token prices and holdings to common-equity NAV, then apply mNAV and divide by scenario shares. Do not multiply token price by an already dollar-denominated NAV.
+## 外国发行人、ADR 与多类别股份
 
-## Foreign issuers, ADRs and share classes
+- 核实法律发行主体、上市交易所、股份类别与存托凭证换算比例，再计算股价、每股收益与股数。对适用发行人检查 20-F/6-K、母国公告及会计准则，不能一律假设采用美国公司 10-Q 季报制度。
+- 记录财报币种、交易币种、汇率日期与数值、每普通股还是每存托凭证（ADS）。若一份 ADS 代表 N 股普通股，EPS、价值和股数必须一致换算。
+- 区分自由可用现金、受限现金与代客户保管资产；必要时核实预提税、存托费与股东权利。
 
-- Confirm legal issuer, listing, security class and depositary ratio before combining prices, EPS and share counts. Use applicable annual/interim filings (including 20-F/6-K where applicable), home-market disclosures and accounting basis; do not assume a US domestic 10-Q schedule.
-- Record reporting currency, quote currency, FX date/rate and whether each number is per ordinary share or per ADS. If one ADS represents N ordinary shares, convert EPS and equity/share counts consistently before calculating a multiple or target.
-- Separate freely available issuer cash from restricted cash and assets held for customers. Consider withholding, depositary fees and shareholder rights when material; verify applicable terms rather than assuming them.
+## 同行业可比性
 
-## Peer comparability
+同行应按收入与盈利模式、成长阶段、周期性和资本强度选择，不只是行业分类一致。对齐估值日期、盈利期间、GAAP/调整后口径、汇率及租赁、少数股权的企业价值计算。估值溢价要由可测量的差异支撑。无法对齐的倍数应标记不可比，而非借用过期数字。
 
-Select peers by revenue engine, economics, growth, cycle and capital intensity, not just sector labels. Align valuation date, earnings window, GAAP/adjusted basis, FX and EV treatment of leases/minority interests. Explain premiums using measurable differences. Where reconciliation fails, use qualitative comparison or mark the numerical comparison unavailable rather than borrowing stale multiples.
+## 财务质量核对
 
-## Financial quality bridges
+披露充分时，将收入增长拆分为有机增长、收购/剥离、汇率及价格/销量/产品结构影响；没有披露的项保持未知，不编造剩余贡献。
 
-For material changes, reconcile reported growth to organic growth, acquisitions/divestitures, FX and price/volume/mix where disclosed. Unknown components stay unknown; do not manufacture a residual explanation.
+将利润连接到经营现金流和自由现金流，核查营运资金、税费、SBC 股权激励、资本化的软件/研发支出、维持与增长性资本支出、租赁和一次性项目，明确发行人对自由现金流的定义。短期回收营运资金不等于持续赚钱。检查再投资和并购后 ROIC 与每股现金回报是否改善，而不是只看收入变大。
 
-Bridge earnings to operating cash flow and free cash flow: working capital, taxes, SBC, capitalized development/software, maintenance/growth capex, leases and one-time items. Identify the issuer's FCF definition. Distinguish temporary working-capital releases from recurring conversion. Check whether ROIC or cash returns improve after reinvestment and acquisitions; headline revenue growth alone is insufficient.
-
-Apply sector details only where material. For other sectors, retrieve authoritative definitions and choose relevant operating/capital metrics rather than forcing software or EBITDA conventions.
+**行业特殊指标仅在影响判断时使用。** 其他领域应找可靠定义后挑选适用的经营与资本指标，不能强制使用软件业或 EBITDA 口径。

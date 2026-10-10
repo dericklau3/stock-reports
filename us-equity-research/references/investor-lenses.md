@@ -1,29 +1,29 @@
-# Four Investor-Style Decision Lenses
+# 四种投资视角：研究规范
 
-Read for full deep company research. These are **analytical styles inspired by the named investors**, never their real personal views, endorsements or actual trades.
+完整深度研究时读取。**这是借鉴巴菲特、芒格、段永平、李录的分析方式，不代表本人对公司的观点、背书或交易。**
 
-## Reader-facing format — one table, one conclusion
+## 读者版：一张表格、一段总结
 
-**Only one three-column table, exactly four perspective rows**, in the user's language. Chinese heading: **四种投资视角：怎么看这家公司？**
+只展示一张**三列表格、四个视角**：
 
 | 投资视角 | 最关注什么 | 对公司的判断 |
 |---|---|---|
-| 巴菲特式 | 企业能否持久盈利、护城河与合理价格 | A company-specific one-sentence judgment |
-| 芒格式 | 哪些错误假设、激励和认知偏差会造成损失 | A distinct one-sentence judgment |
-| 段永平式 | 用户价值、复购、管理层与合适的价格 | A distinct one-sentence judgment |
-| 李录式 | 长期行业趋势、理解边界及下行保护 | A distinct one-sentence judgment |
+| 巴菲特式 | 企业能否持续赚钱、竞争优势与估值安全边际 | 针对该公司的简短、有证据的判断 |
+| 芒格式 | 投资可能错在哪、激励及认知偏差 | 一条不同的具体判断 |
+| 段永平式 | 用户价值、持续付费、产品和管理层 | 一条不同的具体判断 |
+| 李录式 | 长期趋势、理解边界与下跌保护 | 一条不同的具体判断 |
 
-Then **one short 2–3-sentence 总结： paragraph**, focusing on the combined decision-relevant insight and largest unresolved evidence gap. **End the full deep-research report here.** Do not follow it with a Final Research Framework, concluding recap, What would change my view, or research-completeness/gaps appendix. Critical limitations must have been explained in the earlier section they affect; complete evidence inventories and review triggers stay in `tracker.md`. No additional table or subsection, no introductory Anti-bias rating, no score or position-state recommendation.
+表下只写 **2–3 句「总结：」**，聚焦四种视角共同显示的关键判断与最大未知。**完整深度报告在此结束。** 禁止继续追加「最终研究结论」「Final Research Framework」「What would change my view」或资料完整性附录；影响结论的数据缺口要在前面相关章节说明，详细核查存入 `tracker.md`。
 
-## Internal research and evidence requirements
+不再默认展示 Anti-bias A/B/C 等级、十分制评分、四套独立长文、仓位动作表或第二张评分表。
 
-Still examine each distinct style rigorously. Record important supportive and conflicting evidence with prior-source citations in research notes/`tracker.md`, but avoid repeating those records in the reader-facing chapter.
+## 内部仍须执行的研究
 
-- **Buffett-style**: can the business and its durable moat be understood and forecast conservatively? Test sustained earnings, free cash generation after capital spending, management capital allocation and whether the quoted price leaves a safety margin.
-- **Munger-style**: invert the thesis. What would make it fail? Stress the most fragile operating/financing assumptions, customer/supplier/management incentives, narrative bias and expensive avoidable errors.
-- **Duan Yongping-style**: who receives real value and pays repeatedly? Test product experience, alternatives, pricing power, repeat demand, people/culture and whether business quality justifies the price.
-- **Li Lu-style**: does the issuer occupy a knowable, lasting part of a structural industry change? Test the circle of competence, resilience in the downside scenario, cash and debt exposure, and protection against permanent capital loss.
+针对四类思路形成关键问题、支持证据、反方证据、条件性结论和一个最重要后续核验点，记录来源到研究资料/`tracker.md`。对外只输出高度概括且彼此不同的四条判断。
 
-For each style, determine internally: the key question, what the sources support, what they do not prove, the distinct conditional judgment and the one most important future verification. The reader-facing row should summarize those findings in plain language **without repetitive evidence bullets**. An evidence gap warrants "仍需观察" with a specific why, not fabricated confidence.
+- **巴菲特式：**能否理解和保守预测利润来源？竞争优势是否持久？扣除资本开支及员工股权激励后的现金回报如何？管理层资本分配与当前股价是否留下安全余地？
+- **芒格式：**把论点倒过来：什么会使投资失败？识别脆弱假设、管理层及客户激励、故事偏见、估值锚定和可以避免的重大错误。
+- **段永平式：**真实付费客户是谁、为什么愿意重复采购？产品替代方案、定价权、客户粘性、管理层文化以及价格是否合理？
+- **李录式：**企业是否处于可长期持续的重要产业环节？自己真正理解哪些部分？最坏情景下资产、现金流、债务和股价能否避免永久损失？
 
-A qualitative information-richness/anti-bias check, 1–10 attribute scores, detailed inversion worksheet or investor-state action matrix can be used **privately if helpful** but is **not required in normal output**. Do not convert scores to mechanistic buy recommendations. Show such expanded analysis only at the user's express request. Avoid attributing any style conclusion to what the actual named investor thinks about the specific issuer.
+若尚无证据，不应强行给出「适合投资」结论，改为「仍需观察」并具体说明缺哪项事实。不把这四种方法当机械买卖信号。若用户明确要求完整四人比较、信息偏差或评分，可提供详细版，并区分事实与推断。

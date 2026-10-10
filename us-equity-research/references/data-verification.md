@@ -1,45 +1,45 @@
-# Data Verification and Evidence
+# 数据核验与证据规范
 
-Read for every non-trivial research pass. Keep provenance proportional to the decision: track critical inputs, not every incidental number.
+所有非简单投研任务均须读取。**只为影响投资结论的关键数字建立证据链**，不需要把无关小数逐项录库。
 
-## Cutoff and identity
+## 时间与证券身份
 
-State the research date/cutoff, quote timestamp/time zone and regular/extended session, fiscal year/quarter and period end date. On non-trading days, identify the last available session rather than implying a live quote. For a historical-as-of request, use only information available by that cutoff; later restatements belong in a separately labeled subsequent-information note.
+报告写清研究截止日期、报价时间/时区、盘中/盘前/盘后，所属财年与季度、财务期间结束日。非交易日要注明最后有效交易日，不得冒充实时报价。历史时点研究只能用该时点已经公开的材料，后续更正或重述应另列为事后信息。
 
-Confirm legal issuer, ticker, exchange, share class, currency and corporate actions. For ADRs/foreign issuers, load [company-type checks](company-types.md). Never combine an ordinary-share denominator with an ADS quote without conversion.
+确认法律发行人、股票代码、交易所、股份类别、币种、拆股及其他公司行为。ADR、海外公司需要读取[公司类型与特殊检查](company-types.md)；未经换算不能把 ADS 价格与普通股 EPS 混用。
 
-## Retrieval
+## 数据检索次序
 
-Prefer company filings, earnings releases, shareholder letters, presentations and official call materials; supplement with market-data providers for quotes/estimates, competitor filings and industry sources for benchmarks, and reputable news for catalysts. Analyst ratings are supporting context, not the thesis.
+优先公司向监管提交的报告、业绩公告、股东信、投资者演示和官方电话会资料。报价、预期和同行口径可补充可靠市场数据，行业背景用同行报告和新闻。分析师评级只能作参考，不能代替商业逻辑。
 
-- Resolve the CIK using SEC company tickers, then inspect `https://data.sec.gov/submissions/CIK##########.json`.
-- For a selected accession, inspect the filing directory `index.json` and relevant exhibits (often EX-99.1/ex99/final files); the 8-K body may not contain the earnings tables. Record accession, document/exhibit and table/page/section where usable.
-- For recent IPOs, compare S-1/424B4 with the first periodic filings. Flag conversion, share-count, lockup and vesting/SBC discontinuities. Use the applicable foreign-issuer filings rather than forcing a domestic schedule.
-- If IR/SEC retrieval is blocked, use a legitimate alternate official filing, mirrored issuer release, or reputable secondary source and disclose the missing coverage. Respect access limits; avoid repeated retries of the same blocked endpoint. A search snippet is a discovery lead, not a substitute for a decision-critical table.
-- A mirrored issuer release supports what the issuer reported, not independent corroboration. Product documentation, customer disclosures and regulatory records support only the specific operational facts they establish.
+- 先通过 SEC 公司代码表确认 CIK，再查看 `https://data.sec.gov/submissions/CIK##########.json`。
+- 对目标申报的 accession 查文件目录 `index.json` 和相关附件（例如 EX-99.1）；很多 8-K 正文不含完整财务表。记录申报编号、附件、表格/页码/章节。
+- 新上市公司核对 S-1、424B4 与首次季报，留意上市转换、解禁、归属、员工股权激励及股数口径变化。海外发行人采用适用的申报制度。
+- IR/SEC 不能访问时，使用合法的其他官方申报、发行人公告副本或可靠二手来源，明确资料缺口；不要反复请求被拒绝的地址。搜索摘要只能用于寻找线索，不是财务数字的最终证据。
+- 官方公告的转载只能确认“公司曾这样披露”，不能算独立核验。产品、客户与监管资料只能支持自身实际证明的事实。
 
-## Critical-data record
+## 关键输入记录
 
-Place a compact source/input table in the memo or alongside the relevant calculation; no separate database is required.
+在研究记录、`tracker.md` 或计算材料中保留简洁来源表；不强制额外数据库，也不需要把完整核验台账堆进读者报告。
 
-| Metric | Value / unit / currency | Period or as-of time | Definition / basis | Source link + locator / disclosure date | Status / reconciliation |
+| 指标 | 数值/单位/币种 | 期间或时点 | 定义与口径 | 来源直链/定位及披露日 | 核验状态与差异 |
 |---|---|---|---|---|---|
-| Decision-critical input | Raw value or unavailable | Fiscal/TTM/instant/estimate horizon | GAAP/adjusted; reported/calculated; share class | Filing table, exhibit, page or provider observation | Single source / corroborated / conflict; formula if derived |
+| 决策关键输入 | 原始值或未获得 | 财年/季度/TTM/预测期 | GAAP/调整后、报告/自算、股份类别 | 文件表格、附件、页码或提供商快照 | 单源/独立确认/冲突；自算公式 |
 
-Cover the inputs that carry the conclusion: price, actual shares/market cap, EV bridge, revenue/growth, margins, income, cash flow/capex, cash/restricted cash, debt/leases/maturities, SBC/dilution/buybacks, guidance, estimates and thesis-driving KPIs. State the next earnings/catalyst date if verified; distinguish announced from provider-estimated dates.
+优先覆盖股价、实际股数/市值、企业价值桥接、收入增长、利润率、净利润、现金流与资本投入、受限现金、债务/租赁到期、SBC、增发/回购、指引、市场预期和决定逻辑的经营指标。下次财报/事件日只有经证实才能写为确定日期；数据商预计日期应标注预计。
 
-## Period and accounting reconciliation
+## 期间与会计口径
 
-- Distinguish fiscal from calendar years, quarterly from cumulative cash-flow figures, TTM from annual forecasts, and millions from billions. Derive standalone quarters or TTM only from comparable periods; label calculations and adjust for fiscal changes/restatements.
-- Preserve reported and adjusted values separately with material adjustments. Do not blend GAAP earnings with an adjusted consensus benchmark.
-- Market cap normally uses current actual shares of the relevant equity classes, with class treatment explained; EPS weighted-average shares are a period measure. Valuation may require forecast dilution. Keep these denominators separate.
-- Separate consolidated cash from restricted/customer cash, debt from other claims, and balance-sheet date from quote date. Reflect material subsequent financing with a dated pro forma bridge.
-- Record the timestamp and earnings window of consensus. For earnings surprises, use a snapshot demonstrably available before release. Data captured afterward is not evidence of pre-release expectations; unavailable pre-release consensus means the consensus beat/miss is unverified.
+- 区分财年与自然年、单季与累计现金流、TTM 与未来一年预测，百万与十亿单位。单季或 TTM 自算必须来自可比时间段，考虑重述与财年变更。
+- 报告值与调整后值分开列出重要差异，不能把 GAAP 净利润与调整后的市场预期相比较。
+- 当前市值通常采用当前有经济权益的实际股数；EPS 加权平均股数是财务期间平均值；估值情景可能需要未来稀释股数。不能混用三个分母。
+- 区分可用现金、受限/客户现金、债务与其他索偿，并核对资产负债表日与报价日。期后重大融资应给有日期的调整后桥接。
+- 记录市场一致预期的时间戳和预测期间。“超预期”必须有财报披露**之前**的预期证据，发布后取得的数值不能证明发布前市场预期；缺失时写「财报前一致预期未核实」。
 
-## Cross-checks and confidence
+## 交叉验证与可信度
 
-Cross-check decision-critical figures against another reputable source when practical, but identify source lineage. Two aggregators using the same feed or a release and its mirror are not two independent confirmations. Direct filing evidence plus a transparent arithmetic reconciliation can be more useful than an unexplained second number.
+有条件时对关键数字独立复核，并追溯两个来源是否共用数据流。公告与其转载、使用同一数据商的两个网站并非独立来源。原始申报加上透明的计算核对，可能比无来源的两个不同数字更可靠。
 
-When figures differ, reconcile date, currency, fiscal/TTM window, adjusted/GAAP definitions, consolidated/common attribution and actual/weighted-average/diluted shares. Do not average conflicting values. Prefer the applicable primary filing (including a relevant amendment); explain what was excluded and why. If still material and unresolved, do not let that number carry a precise valuation.
+来源冲突先核查日期、币种、财年/TTM、会计口径、合并利润或归属普通股利润、实际与平均及稀释股数。**不能取冲突数字的平均值。**优先适用的原始申报及有效修订，说明舍弃什么及原因。重大差异无法调和时，不能以该数字支持精确估值。
 
-Assess confidence in the specific claim: confidence that an issuer reported a number is different from independent verification of operating outcomes. Describe inaccessible evidence and the decision it prevents; a missing non-critical document need not invalidate verified results. Use the main skill's confidence rubric and identify the weakest thesis-driving input.
+分别评估“公司披露过某数字”的可信度和“独立证明经营成果”的可信度。说明无法取得的关键证据，以及具体导致什么判断无法完成。非关键文件缺失不必否定所有已核实结果。按主 Skill 的可信度原则明确最薄弱的核心假设。

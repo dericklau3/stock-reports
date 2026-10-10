@@ -1,51 +1,54 @@
-# Valuation Discipline and Reproducibility
+# 估值纪律与可复算规则
 
-Read whenever issuing or revising a multiple, price zone, fair value or scenario range. Choose methods using [company-type checks](company-types.md); preserve input provenance under [data verification](data-verification.md).
+每当输出市盈率、合理价值、每股情景价格或价格区间时读取。根据[公司类型](company-types.md)选择方法，数据来源遵守[数据核验规范](data-verification.md)。
 
-## What the reader sees versus what the research retains
+## 正式报告与计算底稿分开
 
-The default reader-facing valuation chapter is **one concise result table** (quote, correct whole-company market capitalization, meaningful current multiple if applicable, and bear/base/bull per-share value ranges), **at most one dated methodology note**, then **one short 总结： paragraph**. Do not output separate capitalization, forward-P/E-history, scenario-input, sensitivity or price-zone tables by default.
+读者版只显示**一张两列估值结果表**：最新有效股价、包含所有有经济权益股份的公司总市值、适用时的一个当前估值指标、保守/基础/乐观每股区间；下方最多一条日期/方法说明，再用 **2–4 句「总结：」**解释当前是否偏贵、合理或便宜以及关键假设。
 
-The complete calculations below must still be done wherever material. Keep their dates, definitions, assumptions, source links, formulas and verified arithmetic in the company's `tracker.md` or a linked small valuation-calculation file, even when omitted from the public-facing summary. If the user explicitly requests specific valuation mechanics, show those details. If the evidence is insufficient, state that no reliable value range is available rather than manufacturing a precise answer.
+股本桥接、Forward P/E 极值、市盈率历史、情景输入、敏感性和不同价格区间**默认不另起长表**。所有验证过的日期、输入、公式、来源和复算过程仍完整记在 `tracker.md` 或独立估值计算文件；用户要求时可以展示细节。没有可靠区间时必须写「无法可靠估值」，不能硬编价格。
 
-## Choose and label the method
+## 选择与标注估值方法
 
-- Use P/E, EV/EBIT, EV/EBITDA or FCF yield for suitable profitable businesses, adjusted for cyclicality, reinvestment and earnings quality. PEG is supporting context only; equal growth rates do not imply equal risk or cash returns.
-- Use EV/Sales or EV/Gross Profit for suitable growth/unprofitable companies only with a bridge to sustainable margins, capital needs, cash burn and dilution. Use book/tangible book and ROE/capital measures where appropriate for financials, or a common-equity NAV bridge for asset-backed situations.
-- DCF requires explicit growth, margins, reinvestment/FCF conversion, discount rate, terminal assumptions and sensitivity. Match enterprise cash flows with an enterprise discount rate and equity cash flows with an equity rate; avoid deducting debt twice. Check that terminal assumptions are economically plausible and disclose terminal-value dependence.
-- Distinguish **today's intrinsic-value estimate** from a **future market-price scenario**. State valuation date, target year, and whether discounted. Future EBITDA times an exit multiple is a future value unless the method explicitly values that forecast at today's date; explain the convention.
+- 稳定盈利企业：在适用时使用市盈率 P/E、EV/EBIT、EV/EBITDA 或自由现金流收益率，考虑周期、再投资和会计利润质量。PEG 只是辅助，同样增速不代表相同风险或现金回报。
+- 高增长/尚未盈利公司：可用 EV/Sales、EV/Gross Profit，但必须把收入倍数连接到未来可持续毛利率、现金需求、资本支出和股权稀释；不能只乘收入就宣称合理价格。
+- 金融企业：按适用情况选择市净率、有形净资产、ROE 和资本指标；资产支持型公司做普通股 NAV 桥接。
+- 折现现金流 DCF：明确增长、利润率、资本投入/现金转化、折现率、终值假设及敏感性。企业自由现金流与企业资本成本匹配，股东现金流与股权资本成本匹配，不得重复扣债；检查终值合理性和终值占比。
+- **必须区分折现到研究日的内在价值与未来某年的情景价格。** 未来 EBITDA 乘退出倍数得到的是未来价值；未折现不能冒充今日合理价值。写明估值日、目标年份和折现方式。
 
-## Forward P/E snapshot
+## 未来市盈率 Forward P/E 核对
 
-For full research where earnings-based valuation is meaningful, **compute or verify and keep these three rows in the research record**. The full comparison is **not a mandatory second table in the reader-facing report**; show it only on user request or if it is essential to avoid a misleading result:
+盈利预测估值有意义时，在研究底稿核实以下三项，而不是强制在读者报告增一张表：
 
-| Metric | Multiple | Observation date / coverage | EPS window and accounting basis | Source / coverage limitation | Interpretation |
-|---|---:|---|---|---|---|
-| Current forward P/E | Value or unavailable | Quote/estimate timestamps | NTM, FY1 or FY2, fiscal end date; GAAP or adjusted | Provider or price/EPS calculation | Comparable or not comparable |
-| 1-year high forward P/E | Value or unavailable | Rolling-year start/end and extreme date if known | Same defined historical convention | Daily series / provider-reported range / sparse sample | Verified range position only if comparable |
-| 1-year low forward P/E | Value or unavailable | Rolling-year start/end and extreme date if known | Same defined historical convention | Daily series / provider-reported range / sparse sample | State missing coverage |
+| 指标 | 倍数 | 观察日期与覆盖 | EPS 预测期间及口径 | 数据来源及局限 |
+|---|---:|---|---|---|
+| 当前未来市盈率 | 实值或未取得 | 股价及预测快照 | NTM、FY1 或 FY2，GAAP/调整后 | 提供商或自算 |
+| 过去一年最高未来市盈率 | 实值或未取得 | 覆盖起止日期与极值日 | 历史当时有效的预测口径 | 日频完整序列或有局限的样本 |
+| 过去一年最低未来市盈率 | 实值或未取得 | 覆盖起止日期与极值日 | 同一可比口径 | 覆盖缺口必须标注 |
 
-- NTM means next twelve months; FY1/FY2 labels vary by provider. State the actual fiscal period, not just the acronym. Record both price and estimate dates and identify stale estimates.
-- Historical forward P/E requires the earnings forecast available at each historical observation. **Never divide old share-price highs/lows by today's EPS estimate and label the result historical forward P/E.** Price extrema need not coincide with multiple extrema.
-- Keep complete daily extrema, a provider's reported one-year range and sparse monthly/quarterly observations distinct. A sample minimum/maximum is only an observed-sample extreme, not the true one-year extreme. A provider range with unavailable methodology remains a qualified single-source snapshot.
-- Align estimate-window conventions, adjusted/GAAP basis and split/share adjustments. Flag fiscal rollovers and denominator discontinuities. Do not force a high/middle/low judgment when periods or definitions are not comparable, or assert “cheapest in a year” from sparse samples.
-- If historical data cannot be obtained, write **historical range unavailable** and optionally show labeled sample observations. Missing historical data does not make a valid current P/E meaningless. If earnings are negative/unreliable or the method does not fit the business, write **Forward P/E not meaningful** and explain the alternative method.
-- Cross-check when practical; otherwise label the single-source limitation. Explain whether comparable evidence suggests relative cheapness, and whether earnings revisions or business deterioration undermine that conclusion. Lower P/E alone is not a buy signal.
+- NTM 为未来12个月，FY1/FY2 是数据商对未来财年的标记，实际财年期间必须明确写出来。
+- **历史未来市盈率必须使用历史时点有效的盈利预测，不能用今天的 EPS 预测去除以过去的高低股价。** 股价最高/最低时刻不一定是估值倍数高低点。
+- 区分完整日频一年极值、提供商定义的一年区间与稀疏月度/季度样本。后者只能声称「样本极值」，不能冒充完整年度最高/最低。
+- 统一预测区间、GAAP/调整后口径、拆股与财年滚动；不匹配时不能强行判断处于高位还是低位。
+- 历史数据缺失写「历史区间无法核实」。当前 P/E 可以有效，而历史 P/E 不可得；如果预计盈利为负或该方法不适用，则写「Forward P/E 不具有解释意义」，并选择合理替代方法。
+- 低倍数不必然是机会；盈利预期下调、业务恶化可能抵消低估值。单来源需要标明局限。
 
-## Reproducible scenario contract
+## 保守/基础/乐观情景计算契约
 
-Full research normally includes bear/base/bull ranges; focused updates recompute only affected scenarios. If a reliable range is impossible, state **No reliable valuation range**, identify missing inputs and offer supportable operating/valuation conditions instead. Do not invent probabilities to force an expected value.
+完整研究通常评估三种情景；窄范围更新只复算受影响情景。无法合理估算区间时明确说出缺少什么输入，不以捏造概率强行计算预期价格。
 
-For each material scenario **calculate and record** the following underlying details. The reader-facing table normally shows only its per-share range and the essential valuation date/discounting caveat:
+针对每种情景，在**研究底稿**保留：
 
-1. Value date/horizon, current quote, units/currency, operating assumptions, multiple or discount rate, and why the assumptions are plausible. Label management guidance versus analyst assumptions. Connect execution gates to revenue timing, costs and cash generation.
-2. Formula and the method-specific bridge. For an enterprise-multiple model: `enterprise value = operating metric × multiple`; `common equity = EV − debt − preferred claims − minority interests + eligible excess cash/non-operating assets`, adjusted for items already included and the model's conventions. Match claim/asset dates to the value date, and exclude restricted/customer cash unless availability to common holders is established.
-3. Denominator reconciliation: current actual shares, historical weighted-average shares and scenario diluted shares, with dates. Use the denominator appropriate to the value being estimated; do not use an old EPS denominator merely because it is labeled diluted. Explain options, RSUs, convertibles and planned issuance/repurchases when material. A conversion scenario changes both claims and shares consistently.
-4. SBC treatment: explain whether continuing grants are modeled as an economic expense, future net dilution or offsetting repurchase cash. Existing claims and future grants are different. Do not mechanically deduct the same modeled economic cost twice; a claim that SBC is “included in the multiple” needs an explicit rationale and sensitivity.
-5. Per-share range and `(scenario price / current price) − 1`. State endpoints and pair consistent operating/multiple/claim assumptions; do not assemble favorable endpoints from incompatible cases. Future percentage price change is not an annualized return or total return; include holding period and dividends where applicable.
-6. Sensitivity to the variables that actually drive the decision (typically margins, multiple/discount rate, financing and shares). Reverse valuation when supportable: what earnings, cash flow or growth does today's price require, and is that consistent with capacity, adoption and funding evidence?
-7. Recompute all material arithmetic using a calculator or code. Preserve enough input/formula detail for replication in the tracker or a linked calculation file instead of copying the full derivation into the reader-facing chapter. Check units, signs, endpoint ordering, discount horizon and no double counting of optionality already included in forecasts.
+1. **时点与假设：**估值基准日、当前股价、币种单位、目标年份、收入/利润/现金假设、倍数或折现率，并说明假设为什么合理。公司指引与研究者假设必须分开，经营里程碑要与确认收入、成本和现金时间相符。
+2. **企业价值到股东价值：**倍数法下企业价值 = 相应经营指标 × 倍数；普通股价值 = 企业价值 − 债务 − 优先索偿 − 少数股权 + 合规可用的多余现金/非经营资产，注意模型已计入项不能再扣一次。受限/客户现金通常不能当普通股可用现金。
+3. **股数分母：**分别核对当前真实股份、历史加权平均股数及预测稀释股数和日期；股票期权、RSU、可转债、新增/回购发行须一致处理。转换情景要同步更改债权和股数，不能拿历史 EPS 分母充作未来股数。
+4. **员工股权激励 SBC：**持续授予的经济费用、未来净稀释、回购抵消现金的处理必须明确。既有索偿与未来授予不同，不能对同一成本双扣；声称「倍数已包含 SBC」须有解释和敏感性。
+5. **每股估值与变化：**计算区间两端及 `（情景每股价值 / 当前股价）−1`，不能把互不兼容的乐观经营假设、资本结构、估值倍数拼成同一端点。未来价差比例不等于年化回报或含股息总回报。
+6. **敏感性与反向估值：**重点检查利润率、倍数/折现率、现金和融资、股份数。反推目前股价要求公司未来赚多少、需要多少客户/算力/现金，是否与真实交付证据一致。
+7. **计算核对：**用计算器或代码重算关键数，检查正负号、单位、区间端点、折现时间和未来想象空间是否被重复计算；公式与来源可复算并存底稿。
 
-Discount consistently: discount future common-equity proceeds with an appropriate equity return assumption and include interim distributions if modeled; or discount enterprise cash flows to today and reconcile today's claims/assets. Do not mix a discounted future EV with undated balance-sheet figures and call it precise present fair value. If future financing/claims are unknown, label a hold-constant assumption and show its sensitivity.
+一致折现规则：预测未来普通股价值时使用合理股权回报率并处理期间股东分配；若预测企业现金流，则折现企业价值到研究日后，再以**同一时点**的债务/现金索偿桥接普通股价值。不能将未来现金流直接加进今日股权价值，也不能把未来价格误写成当前安全边际。
 
-Practical price zones, when specifically requested, must derive from scenario work and business conditions, not arbitrary rounded buy/sell levels. They are not a mandatory part of the concise reader-facing chapter. Separate business quality, valuation attractiveness and evidence confidence.
+## 价格纪律与结论
+
+只有用户明确要求「买入价/价格区间」时，才依据可复算的情景和真实经营条件推导，不根据整数关口画线。分别评价公司品质、股票估值吸引力及证据可信度，不把一个分数当作确定买卖信号。关键数据缺失时优先给出可核实的经营验证条件。
