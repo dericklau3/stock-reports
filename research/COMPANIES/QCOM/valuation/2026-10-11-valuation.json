@@ -1,0 +1,173 @@
+{
+  "ticker": "QCOM",
+  "valuationDate": "2026-10-11",
+  "quote": {
+    "date": "2026-10-09",
+    "session": "NASDAQ regular close",
+    "priceUSD": 175.5,
+    "source": "https://stockanalysis.com/stocks/qcom/history/"
+  },
+  "latestFilings": {
+    "FY2025": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
+    "FY2026_Q3": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm",
+    "earningsRelease": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000085/qcom062826erex991.htm"
+  },
+  "units": "Unless noted, USD millions; FY2026 YTD is nine months ended 2026-06-28.",
+  "auditedFinancialsAndComputedTTM": {
+    "FY2024": {
+      "revenue": 38962,
+      "cost": 17060,
+      "op": 10071,
+      "net": 10142,
+      "ocf": 12202,
+      "capex": 1041,
+      "gross": 21902,
+      "fcf": 11161
+    },
+    "FY2025": {
+      "revenue": 44284,
+      "cost": 19738,
+      "op": 12355,
+      "net": 5541,
+      "ocf": 14012,
+      "capex": 1192,
+      "gross": 24546,
+      "fcf": 12820
+    },
+    "YTD2025": {
+      "revenue": 33013,
+      "cost": 14704,
+      "op": 9437,
+      "net": 8658,
+      "ocf": 10016,
+      "capex": 785,
+      "gross": 18309,
+      "fcf": 9231
+    },
+    "YTD2026": {
+      "revenue": 32798,
+      "cost": 15138,
+      "op": 7302,
+      "net": 12377,
+      "ocf": 8405,
+      "capex": 1578,
+      "gross": 17660,
+      "fcf": 6827
+    },
+    "TTM_to_2026_06_28": {
+      "revenue": 44069,
+      "cost": 20172,
+      "op": 10220,
+      "net": 9260,
+      "ocf": 12401,
+      "capex": 1985,
+      "gross": 23897,
+      "fcf": 10416
+    },
+    "calculation": "TTM = FY2025 + 2026 9M − 2025 9M; free cash flow = CFO − cash capex."
+  },
+  "capital": {
+    "shares2026_06_28Millions": 1057,
+    "modularNewSharesJuly28Millions": 18,
+    "illustrativePostModularSharesMillions": 1075,
+    "notVerifiedActualOctShares": true,
+    "equityMarketCapUSDmillions": 188662.5,
+    "shortDebtUSDmillions": 2489,
+    "longDebtUSDmillions": 12781,
+    "availableCashUSDmillions": 4533,
+    "marketableSecuritiesUSDmillions": 3771,
+    "netDebtProxyUSDmillions": 6966,
+    "enterpriseValueProxyUSDmillions": 195628.5,
+    "TTMPriceToFCF": 18.11275921658986,
+    "TTMFCFYield": 0.05520969986086265,
+    "source": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm"
+  },
+  "model": {
+    "targetFiscalYear": 2029,
+    "yearsToValue": 3,
+    "discountRateEquity": 0.1,
+    "method": "FY2029 estimated non-GAAP EPS × scenario exit P/E, discounted to valuation date. Price is not a guaranteed target, excludes interim dividends.",
+    "companyFY2029EPSNonGAAPTarget": ">18 USD (management aspiration, NOT reported)",
+    "scenarios": [
+      {
+        "name": "bear",
+        "epsFY2029NonGAAPAssumptionUSD": 12,
+        "exitPERange": [
+          11,
+          13
+        ],
+        "undiscountedFY2029SharePriceUSD": [
+          132,
+          156
+        ],
+        "estimatedPresentValueUSD": [
+          99.174,
+          117.205
+        ],
+        "upsideVs175_5": [
+          -0.43491,
+          -0.33216
+        ]
+      },
+      {
+        "name": "base",
+        "epsFY2029NonGAAPAssumptionUSD": 16,
+        "exitPERange": [
+          14,
+          16
+        ],
+        "undiscountedFY2029SharePriceUSD": [
+          224,
+          256
+        ],
+        "estimatedPresentValueUSD": [
+          168.295,
+          192.337
+        ],
+        "upsideVs175_5": [
+          -0.04106,
+          0.09593
+        ]
+      },
+      {
+        "name": "bull",
+        "epsFY2029NonGAAPAssumptionUSD": 20,
+        "exitPERange": [
+          17,
+          19
+        ],
+        "undiscountedFY2029SharePriceUSD": [
+          340,
+          380
+        ],
+        "estimatedPresentValueUSD": [
+          255.447,
+          285.5
+        ],
+        "upsideVs175_5": [
+          0.45554,
+          0.62678
+        ]
+      }
+    ],
+    "assumptions": "Researcher EPS and P/E stress scenarios are subjective; EPS non-GAAP excludes economic costs incl some SBC; multiples haircut partly for dilution/quality. Actual future shares, capital needs and economic ownership require review.",
+    "sensitivity": {
+      "baseEPS16_PE15_discount10": 180.31555221637862,
+      "baseEPS16_PE15_discount12": 170.8272594752186,
+      "lowerEPS14_PE14_discount10": 147.2577009767092,
+      "higherEPS18_PE16_discount10": 216.37866265965434
+    }
+  },
+  "sources": {
+    "fy25": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
+    "q3": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm",
+    "er": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000085/qcom062826erex991.htm",
+    "invest": "https://investor.qualcomm.com/news-events/press-releases/news-details/2026/Qualcomm-Accelerates-Diversification-with-Comprehensive-Strategy-for-Data-Center-and-Sees-Multiple-Inflection-Points-Over-the-Next-3-to-5-Years/default.aspx",
+    "dc": "https://www.qualcomm.com/news/releases/2026/06/qualcomm-unveils-comprehensive-data-center-roadmap-for-the-agent",
+    "snap": "https://www.qualcomm.com/news/releases/2026/09/snapdragon-leads-the-agentic-ai-age-with-two-of-the-world-s-fast",
+    "quote": "https://stockanalysis.com/stocks/qcom/history/",
+    "arm": "https://www.reuters.com/business/media-telecom/qualcomm-arm-set-jury-verdict-contract-breach-feud-2026-10-09/",
+    "huawei": "https://www.reuters.com/legal/litigation/huawei-agrees-multi-year-patent-licensing-deal-with-qualcomm-2026-10-05/",
+    "investDay": "https://www.qualcomm.com/company/events/investor-day/2026"
+  }
+}
