@@ -202,4 +202,3 @@ Q2毛赔付分解为 **59% attritional＋3% CAT＋5% LAE－7% PPD＝60%**；去�
 [9] https://www.lemonade.com/investor/news/lemonade-brings-autonomous-car-insurance-to-tennessee — Lemonade Autonomous Car launches Tennessee, 2026-08-03
 [11] https://www.sec.gov/Archives/edgar/data/1691421/000169142126000050/lmnd-20260727.htm — Lemonade CFO transition 8-K, filed 2026-07-29
 [12] https://data.sec.gov/submissions/CIK0001691421.json — SEC Lemonade submissions, retrieved 2026-10-07
-

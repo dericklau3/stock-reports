@@ -119,4 +119,3 @@ Bloom Energy is a highly leveraged beneficiary of AI data-center power scarcity.
 - Any SEC or auditor/accounting issue related to revenue recognition.
 - New short-seller report or company rebuttal on supply chain.
 - Major change in share count, convertibles, warrants or capital raise.
-

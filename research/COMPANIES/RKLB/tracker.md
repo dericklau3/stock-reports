@@ -212,4 +212,3 @@ Downgrade toward **Neutral / Negative** if:
 - `deep-research/2026-08-20-deep-research-update.md`
 - `deep-research/2026-09-01-deep-research-update.md`
 - `deep-research/2026-09-14-deep-research-update.md`
-

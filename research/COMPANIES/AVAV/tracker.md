@@ -157,4 +157,3 @@ Last updated: 2026-10-09（北京时间）
 - 历史：deep-research/2026-07-08-deep-research.md；deep-research/2026-09-11-deep-research.md。
 
 部分 IR/SEC 下载受限，未完整读取年度 10-K；日频历史 forward P/E 和产品单机利润未取得。当前结论不依赖旧报告未复核的精确客户集中度或旧同行倍数。
-

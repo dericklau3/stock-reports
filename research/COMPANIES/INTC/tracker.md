@@ -256,4 +256,3 @@ Intel reported Q2 2026 results on 2026-07-23; Q2 10-Q filed/published 2026-07-24
 - Intel Q2 2026 Form 10-Q, published 2026-07-24, via StockAnalysis/Quartr filing mirror.
 - Intel Q2 2026 earnings slides, published 2026-07-23, via StockAnalysis/Quartr filing mirror.
 - StockAnalysis INTC overview/statistics/financials/filings pages, accessed 2026-08-20.
-

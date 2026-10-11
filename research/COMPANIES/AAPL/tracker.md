@@ -109,4 +109,3 @@ AAPL 仍是全球最强消费科技生态之一。FY2026 Q2 revenue 1112 亿美�
 ## Research Files
 
 - `deep-research/2026-05-20-deep-research.md`
-
