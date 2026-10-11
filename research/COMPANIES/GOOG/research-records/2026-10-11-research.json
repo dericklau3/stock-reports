@@ -1,0 +1,368 @@
+{
+  "ticker": "GOOG",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/GOOG/deep-research/2026-05-20-deep-research.md",
+  "quote": {
+    "price": 347.86,
+    "currency": "USD",
+    "date": "2026-10-09",
+    "session": "regular close",
+    "source": "https://api.nasdaq.com/api/quote/GOOG/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "parent_verified_exchange_history",
+    "alternative_full_text": "quote-exa.txt347.89 differs$0.03"
+  },
+  "identity": {
+    "issuer": "Alphabet Inc.",
+    "CIK": "0001652044",
+    "exchange": "NASDAQ",
+    "security": "GOOG Class C nonvoting common; GOOGL Class A, private Class B all equal economic rights except votes; not ADR",
+    "class_A_m": 5868,
+    "class_B_m": 835,
+    "class_C_m": 5527,
+    "all_common_shares_m": 12230,
+    "actual_date": "2026-07-15",
+    "Q2_weighted_diluted_common_m": 12309,
+    "preferred_depositary_shares_m": 385,
+    "preferred_actual_shares_m": 19.25,
+    "preferred_liquidation_m": 19250.0,
+    "preferred_dividend_rate": 0.0625,
+    "mandatory_conversion": "on/about2029-05-15",
+    "series_A_conversion": {
+      "min": 2.252,
+      "max": 2.816
+    },
+    "series_B_conversion": {
+      "min": 2.274,
+      "max": 2.842
+    },
+    "full_conversion_new_common_m_range": [
+      43.56275,
+      54.45824999999999
+    ],
+    "capped_calls": "$1bn premium already spent; caps A532.6704/C527.7974; no guaranteed complete dilution offset assumed"
+  },
+  "financial_periods": {
+    "FY2024": {
+      "revenue": 350018,
+      "cost_of_revenue": 146306,
+      "operating_income": 112390,
+      "net_income_total": 100118,
+      "net_income_common": 100118,
+      "OCF": 125299,
+      "cash_capex": 52535,
+      "gross_profit": 203712,
+      "FCF": 72764
+    },
+    "FY2025": {
+      "revenue": 402836,
+      "cost_of_revenue": 162535,
+      "operating_income": 129039,
+      "net_income_total": 132170,
+      "net_income_common": 132170,
+      "OCF": 164713,
+      "cash_capex": 91447,
+      "gross_profit": 240301,
+      "FCF": 73266
+    },
+    "H1_2026": {
+      "revenue": 229692,
+      "cost_of_revenue": 87214,
+      "operating_income": 80466,
+      "net_income_total": 174771,
+      "net_income_common": 174685,
+      "OCF": 84859,
+      "cash_capex": 80598,
+      "gross_profit": 142478,
+      "FCF": 4261
+    },
+    "H1_2025": {
+      "revenue": 186662,
+      "cost_of_revenue": 75400,
+      "operating_income": 61877,
+      "net_income_total": 62736,
+      "net_income_common": 62736,
+      "OCF": 63897,
+      "cash_capex": 39643,
+      "gross_profit": 111262,
+      "FCF": 24254
+    },
+    "TTM_2026-06-30": {
+      "revenue": 445866,
+      "cost_of_revenue": 174349,
+      "operating_income": 147628,
+      "net_income_total": 244205,
+      "net_income_common": 244119,
+      "OCF": 185675,
+      "cash_capex": 132402,
+      "gross_profit": 271517,
+      "FCF": 53273
+    }
+  },
+  "valuation": {
+    "method": "capital-intensity-aware EV/normalized EBIT terminal; preferred outstanding at target2028",
+    "formula": "PVcommon=(revenue*EBIT_margin*EV_EBIT/1.10^years + current_excess_cash - current_borrowings - finance_leases - preferred_liquidation - PVpreference_dividends)/forecast_common_shares",
+    "target": "2028-12-31",
+    "discount_rate": 0.1,
+    "discount_years": 2.223134839151266,
+    "cash_and_marketable_m": 242474,
+    "required_operating_and_reinvestment_reserve_assumption_m": 80000,
+    "surplus_cash_assumption_m": 162474,
+    "nonmarketable_securities_excluded_m": 131461,
+    "borrowings_carrying_m": 100164,
+    "finance_lease_m": 2590,
+    "operating_lease_m": 18037,
+    "lease_not_commenced_future_undiscounted_m": 85200,
+    "short_term_uncommenced_commitment_m": 5800,
+    "contractual_supply_and_energy_commitment_m": 707000,
+    "preferred_liquidation_m": 19250.0,
+    "preferred_annual_dividend_m": 1203.125,
+    "preferred_dividend_PV_to_target_m": 2404.131343665744,
+    "SBC_H1_m": 14708,
+    "SBC_handling": "EBIT includes SBC; future 12400-12800m shares add ongoing dilution/ATM conservatively; do not subtract SBC again",
+    "lease_handling": "operating rent embedded EBIT; deduct finance lease claim, not operating lease again; future supply/energy costs addressed margins/multiples/reserve, not subtract entire707bn as immediate debt",
+    "ATM_authorized_m": 40000,
+    "ATM_issued_as_of_2026-06-30_m": 0,
+    "ATM_full_authorization_shares_at_quote_m": 114.98878859311216,
+    "scenarios": [
+      {
+        "scenario": "bear",
+        "endpoints": [
+          {
+            "revenue": 500000,
+            "EBIT_margin_including_SBC_and_depreciation": 0.25,
+            "EBIT": 125000.0,
+            "EV_EBIT": 16,
+            "future_enterprise_terminal": 2000000.0,
+            "PV_enterprise_terminal": 1618111.6145815349,
+            "current_claims_adjustment": 38065.868656334256,
+            "PV_common_equity": 1656177.483237869,
+            "forecast_common_diluted_shares_m": 12800,
+            "PV_per_share": 129.38886587795852,
+            "vs_quote": -0.6280432763814221
+          },
+          {
+            "revenue": 540000,
+            "EBIT_margin_including_SBC_and_depreciation": 0.28,
+            "EBIT": 151200.0,
+            "EV_EBIT": 19,
+            "future_enterprise_terminal": 2872800.0,
+            "PV_enterprise_terminal": 2324255.5231849165,
+            "current_claims_adjustment": 38065.868656334256,
+            "PV_common_equity": 2362321.391841251,
+            "forecast_common_diluted_shares_m": 12700,
+            "PV_per_share": 186.00955841269692,
+            "vs_quote": -0.4652746552846061
+          }
+        ]
+      },
+      {
+        "scenario": "base",
+        "endpoints": [
+          {
+            "revenue": 590000,
+            "EBIT_margin_including_SBC_and_depreciation": 0.32,
+            "EBIT": 188800.0,
+            "EV_EBIT": 23,
+            "future_enterprise_terminal": 4342400.0,
+            "PV_enterprise_terminal": 3513243.9375794283,
+            "current_claims_adjustment": 38065.868656334256,
+            "PV_common_equity": 3551309.806235763,
+            "forecast_common_diluted_shares_m": 12600,
+            "PV_per_share": 281.84998462188594,
+            "vs_quote": -0.1897602925835511
+          },
+          {
+            "revenue": 650000,
+            "EBIT_margin_including_SBC_and_depreciation": 0.34,
+            "EBIT": 221000.00000000003,
+            "EV_EBIT": 26,
+            "future_enterprise_terminal": 5746000.000000001,
+            "PV_enterprise_terminal": 4648834.668692751,
+            "current_claims_adjustment": 38065.868656334256,
+            "PV_common_equity": 4686900.537349085,
+            "forecast_common_diluted_shares_m": 12500,
+            "PV_per_share": 374.9520429879268,
+            "vs_quote": 0.0778820300923555
+          }
+        ]
+      },
+      {
+        "scenario": "bull",
+        "endpoints": [
+          {
+            "revenue": 700000,
+            "EBIT_margin_including_SBC_and_depreciation": 0.36,
+            "EBIT": 252000.0,
+            "EV_EBIT": 28,
+            "future_enterprise_terminal": 7056000.0,
+            "PV_enterprise_terminal": 5708697.776243655,
+            "current_claims_adjustment": 38065.868656334256,
+            "PV_common_equity": 5746763.6448999895,
+            "forecast_common_diluted_shares_m": 12450,
+            "PV_per_share": 461.5874413574289,
+            "vs_quote": 0.3269345177871237
+          },
+          {
+            "revenue": 780000,
+            "EBIT_margin_including_SBC_and_depreciation": 0.38,
+            "EBIT": 296400.0,
+            "EV_EBIT": 31,
+            "future_enterprise_terminal": 9188400.0,
+            "PV_enterprise_terminal": 7433928.379710487,
+            "current_claims_adjustment": 38065.868656334256,
+            "PV_common_equity": 7471994.248366822,
+            "forecast_common_diluted_shares_m": 12400,
+            "PV_per_share": 602.5801813199049,
+            "vs_quote": 0.7322491270048437
+          }
+        ]
+      }
+    ],
+    "market_cap_all_classes_proxy_m": 4254327.8,
+    "capital_EV_proxy_m": 4133857.8,
+    "TTM_EV_EBIT_proxy": 28.00185466171729,
+    "forward_PE_current": "not reliable from raw gain-inflated EPS; synchronized normalized consensus unavailable",
+    "forward_PE_1y_high_low": "unavailable; no currentEPS/historical-price backfill",
+    "time_bridge": "EV discounted before same current capital claims; future equity shares forecasts are dilution stress not exact legal count; no interim FCFF or common dividends included, terminal-only conservative"
+  },
+  "sources": [
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-release.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "q2-release",
+      "disclosure_date": "2026-07-22"
+    },
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/fy2025-release.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "fy2025-release",
+      "disclosure_date": "2026-02-04"
+    },
+    {
+      "url": "https://abc.xyz/investor/",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://exa.ai/library/markets/stock/GOOG?date=2026-10-09",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/quote-exa.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "quote-exa",
+      "disclosure_date": null
+    },
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/GOOG-10-Q-Q2-2026.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-10q.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "q2-10q",
+      "disclosure_date": "2026-07-22"
+    },
+    {
+      "url": "https://www.justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://justice.gov/opa/pr/department-justice-again-wins-substantial-relief-against-google",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://api.nasdaq.com/api/quote/GOOG/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "read_status": "parent read exact historical row",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/parent-nasdaq-quote.json"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "Cloud24768m, +82%, operating8814m; Search63271m,+17%; backlog519.5bn includes shortercontracts",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-10q.txt",
+      "locator": "Note2; segment; releasePAGE2"
+    },
+    {
+      "fact": "Q2 common profit112107 versus total112193; securities gain EPSimpact6.26; cashFCF negative",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-release.txt",
+      "locator": "PAGE6,7,9"
+    },
+    {
+      "fact": "New common/mandatoryconvertible49.6bn, ATM40bn unused, no H1repurchases",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-10q.txt",
+      "locator": "Note11,12 PAGE35-37"
+    },
+    {
+      "fact": "707bn supply/energy commitments,85.2bn uncommenced leases, finance2590m and operating18037m",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-10q.txt",
+      "locator": "Notes4,6,10"
+    },
+    {
+      "fact": "Wiz closedMarch11 for29.5bn; IntersectMarch10 for5.9bn; antitrust cashfineJuly5.2bn",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/GOOG/q2-10q.txt",
+      "locator": "Notes8,10"
+    }
+  ],
+  "gaps": [
+    "2026-09-16 DOJ广告技术救济公告在搜索发现，但403且archive429；未读裁决/公告全文，不可把7月仍待救济沿用为10月最新，也不采纳二级全面胜诉标题",
+    "完整最新财报问答与全年capex指引未核实；旧180-190bn不声明仍适用",
+    "GOOGL价格及Class B逐类估值差异未核验；GOOG报价已核验，全类市值仍为代理",
+    "SECsubmissions无法全面核实期后ATM使用与融资，6月未使用不代表10月未使用",
+    "当前及历史ForwardPE同期核心预测不可得"
+  ],
+  "changes_from_previous": {
+    "facts": [
+      "Cloud63%→82%增长，Search19%→17%仍正增长",
+      "从回购叙事转向普通股/强制可转优先股/ATM融资，并且H1无回购",
+      "TTM利润被进一步投资收益放大，Q2总利润不等普通股利润",
+      "旧FY2025收入402843m本次官方402836m；不得静默沿用旧数字",
+      "新增大额承诺和租赁、并购与股本桥"
+    ],
+    "price": {
+      "old": 384.9,
+      "new": 347.86,
+      "change": -0.09623278773707444
+    },
+    "model": [
+      "取消原始EPS与未折现未来P/E锚，采用含SBC与折旧EBIT并扣优先索偿",
+      "不对同一mandatorypreferred既扣清算又加转股；2028未转，2029敏感性另列"
+    ]
+  },
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "2026-09-16 DOJ广告技术救济公告在搜索发现，但403且archive429；未读裁决/公告全文，不可把7月仍待救济沿用为10月最新，也不采纳二级全面胜诉标题",
+      "完整最新财报问答与全年capex指引未核实；旧180-190bn不声明仍适用",
+      "GOOGL价格及Class B逐类估值差异未核验；GOOG报价已核验，全类市值仍为代理",
+      "SECsubmissions无法全面核实期后ATM使用与融资，6月未使用不代表10月未使用",
+      "当前及历史ForwardPE同期核心预测不可得"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  },
+  "resolved_during_parent_review": [
+    {
+      "initial_gap": "交易所收盘原件未取到，347.86多源搜索与347.89全文差异0.03；GOOGL价及ClassB估值差异未核实，市值仅全类GOOG价代理",
+      "resolution": "Nasdaq历史原页明确返回2026-10-09常规收盘，优先于不同供应商快照，不取平均"
+    }
+  ]
+}

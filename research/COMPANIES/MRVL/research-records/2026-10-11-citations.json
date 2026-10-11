@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000025/mrvl-20260801.htm",
+      "title": "q2-10q",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Member us-gaap:SalesRevenueNetMember 2026-05-03 2026-08-01 0001835632 mrvl:DataCenterMember 2025-05-04 2025-08-02 0001835632 mrvl:DataCenterMember us-gaap:ProductConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-05-04 2025-08-02 0001835632 mrvl:DataCenterMember 2026-02-01 2026-08-01 0001835632 mrvl:DataCenterMember us-gaap:ProductConcentrationRiskMember us-gaap:SalesRevenueNetMember",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+      "title": "q2-release",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "PDF XBRL Zip Q2 Net Revenue: $2.739 billion, a new record, grew by 37% year-on-year Q2 Gross Margin: 53.1% GAAP gross margin;",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://d1io3yog0oux5.cloudfront.net/_ae5866d878a09f08b5b89a421aa4d890/marvell/files/654831/marvell-investor-day-2026-presentaion-deck.pdf",
+      "title": "investor-day",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "xternal market data\nRevenue and addressable markets\n▪Marvell reports revenue disaggregated in two broad end markets: \nData Center and Communications and Other",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000011/mrvl-20260131.htm",
+      "title": "fy26-10k",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Member us-gaap:SalesRevenueNetMember 2025-02-02 2026-01-31 0001835632 mrvl:CustomerAMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2024-02-04 2025-02-01 0001835632 mrvl:DistributorAMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-02-02 2026-01-31 0001835632 mrvl:DistributorAMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2024-02-04 2025-02-01",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://stockanalysis.com/stocks/mrvl/history",
+      "title": "quote-history",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "8 (0.25%) At close: Oct 9, 2026, 4:00 PM EDT 274.73 -0.55 (-0.20%) After-hours: Oct 9, 2026, 7:59 PM EDT Marvell Technology",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

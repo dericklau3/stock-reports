@@ -1,5 +1,46 @@
 # CRCL Research Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：** 中性等待。相对10月6日研究，平台进展逻辑没有被新财报推翻，但官方流通快照与净发行方向转弱，原有增长假设需要更多验证；父代理已核验10月9日常规收盘84.51美元，仍高于基础情景现值区间。
+
+## Current Main Thesis
+
+**核心逻辑：** Circle靠美元稳定币储备利息及金融基础设施收费赚钱，股东得到的是扣除渠道分成、经营投入和股权薪酬后的剩余，而非储备本金。Arc和支付网络可能增强长期需求，但上线与交易量不能直接证明股东利润。
+
+## Key Risks
+
+**主要风险：** 储备收益率、流通量和渠道留存共同决定利润；代币预售、股票收购与激励可能让总量增长看起来比每股持续收益更强。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11 深研更新（追加历史）
+- 观点：中性等待；原增长逻辑更需验证，不把数据商盘中涨幅当当前估值支持。
+- 真正变化：官方日期9月24日75.24B→10月8日约73.0B，-2.98%；低于Q2平均约4.60%。7日9.70−10.51=-0.81B，30日41.28−42.62=-1.34B，修正此前正净发行状态。官方储备73.2B属于客户偿付，不是股东净现金。
+- 财务沿用：实际读取10月6日完整报告/tracker，季度2.619437B公司流动性与73.161172B外部储备拆分；H1现金代理剔除222M预售后270.352M，SBC费用及资本化合计128.646M。SEC全文原件本次未恢复，不冒称重新读过原件。
+- 报价：10月9日真实常规收盘未核实，Yahoo429、Nasdaq超时；拒绝沿用10月5日83.30或10月9日盘中86.28。当前市值/forward P/E暂缺。
+- 情景：旧2028假设不改，以实际日数/365.25重新折现至10月11日；三档现值见research-record及validation，不将日期推进说成经营上修。当前股数不清，270M仍为旧工作稀释，不是实际股数。
+- 改判：平均余额连续两季下降或剔除预售留存<35%–38%转弱；外部平台持续净利润、留存约40%及每股增厚被验证才上调。新快照不证明储备信用受损。
+- 申报变化：CapEdge完整索引读到最新10-Q8月5日、8-K9月25日，近期开示主要Form4；不声称全网无新信息。
+- 仍缺：8月鉴证PDF正文403、Q2完整原件副本、Binance费率/Tazapay完整财务与交割、token价值分配、Q&A与日频forward P/E。
+- 历史链接：[10月6日](deep-research/2026-10-06-deep-research-update.md)、[7月10日](deep-research/2026-07-10-deep-research.md)、[Q2追踪](earnings-tracking/2026-Q2-earnings-tracking.md)。新：[10月11日](deep-research/2026-10-11-deep-research-update.md)。
+- 证据与估值绝对路径：`/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/transparency.txt`、`usdc.txt`、`transparency-flow-snippets.json`、`filings.txt`、`previous-verified-research.md`、`research-record.json`、`calculate.py`、`validation.json`。尚有价格与原件缺口，需父代理出版前补核。
+
+父代理报价补核：Nasdaq 2026-10-09常规收盘84.51美元；此前未取得收盘为研究阶段限制，本次已解决。
+
+
+
+### 父代理复核补充：报价缺口已解决
+
+Nasdaq历史原页核验2026-10-09常规收盘 84.51 美元；本次采用该交易所记录。初稿中的报价未核验限制已解决，其余股数、合同和来源缺口继续保留。详见可复算记录中的 `resolved_during_parent_review`。
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# CRCL Research Tracker
+
 > Last updated: 2026-10-06
 > Latest full update: [2026-10-06 deep research update](deep-research/2026-10-06-deep-research-update.md)
 > Latest completed earnings: [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
@@ -129,3 +170,4 @@ Arc 已宣布公共主网上线，信托银行已经开业，CPN 和机构接入
 - [2026-07-10 deep research](deep-research/2026-07-10-deep-research.md)
 - [2026-07-01 valuation update v2](deep-research/2026-07-01-deep-research-v2.md)
 - [2026-07-01 initial deep research](deep-research/2026-07-01-deep-research.md)
+

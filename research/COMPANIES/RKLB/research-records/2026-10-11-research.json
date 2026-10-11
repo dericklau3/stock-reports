@@ -1,0 +1,315 @@
+{
+  "ticker": "RKLB",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/RKLB/deep-research/2026-09-14-deep-research-update.md",
+  "quote": {
+    "price": 68.21,
+    "date": "2026-10-09",
+    "session": "regular 16:00 America/New_York EDT",
+    "previous_price": 62.95,
+    "source": "https://stockanalysis.com/stocks/rklb/history/",
+    "status": "已实取，单数据商"
+  },
+  "identity": {
+    "issuer": "Rocket Lab Corporation",
+    "ticker": "RKLB",
+    "exchange": "NASDAQ",
+    "CIK": "1819994",
+    "class_of_stock": "listed common；非公开participating convertible preferred另计经济分母",
+    "currency": "USD",
+    "evidence": "q2-10q封面及Notes12、17"
+  },
+  "financial_periods": {
+    "FY2024": {
+      "revenue": 436.214,
+      "gross": 116.149,
+      "op": -189.801,
+      "net": -190.175,
+      "ocf": -48.89,
+      "capex": 67.093,
+      "fcf": -115.983
+    },
+    "FY2025": {
+      "revenue": 601.799,
+      "gross": 207.181,
+      "op": -228.838,
+      "net": -198.209,
+      "ocf": -165.521,
+      "capex": 156.285,
+      "fcf": -321.806
+    },
+    "H12026": {
+      "revenue": 434.414,
+      "gross": 161.069,
+      "op": -113.483,
+      "net": -94.28,
+      "ocf": -134.407,
+      "capex": 53.112,
+      "fcf": -187.519
+    },
+    "H12025": {
+      "revenue": 267.067,
+      "gross": 81.635,
+      "op": -118.827,
+      "net": -127.03,
+      "ocf": -77.467,
+      "capex": 60.719,
+      "fcf": -138.186
+    },
+    "TTM": {
+      "revenue": 769.146,
+      "gross": 286.615,
+      "op": -223.49400000000003,
+      "net": -165.45900000000003,
+      "ocf": -222.461,
+      "capex": 148.678,
+      "fcf": -371.139
+    }
+  },
+  "valuation": {
+    "method": "2030独立经营GAAP EBIT压力测试，非并购后综合估值",
+    "quote_date_exact_shares": "未核实",
+    "actual_common_m": 598.180438,
+    "actual_preferred_m": 40.95125,
+    "economic_shares_m": 639.131688,
+    "economic_shares_date": "2026-06-30",
+    "cover_actual_common_m": 598.350482,
+    "cover_date": "2026-08-05",
+    "weighted_Q2_m": 629.682,
+    "Q3_guidance_weighted_m": 641,
+    "treasury": "40.951250M已交换的普通股库藏不能再重复算；参与型优先股计一次",
+    "preferred_claims": "economic stock one-for-one参加分红/清算；面值优先总40.951美元=0.000040951M，忽略而非第二次按市价扣",
+    "market_cap_m": 43595.172438479996,
+    "cash_m": 2129.485,
+    "marketable_m": 258.105,
+    "restricted_cash_m": 8.413,
+    "debt_principal_m": 13.366,
+    "other_borrowing_m": 1.716,
+    "finance_leases_noncurrent_m": 14.468,
+    "enterprise_value_reference_m": 41237.132438479995,
+    "minority_m": 0,
+    "lease_treatment": "经营租赁租金留于GAAP EBIT不重复扣；融资租赁当前部分未分列导致EV小额下估，披露缺口",
+    "convertible": "尚余13.366M本金，若全部股结算约2.607744M股；承接目标股数并转为净现金路径，不扣本金又加全转换。H1已发行27.760779M股计入实际分母。cappedcall cap8.04远低现价，不视为全额保护",
+    "SBC_H1_m": 47.677,
+    "SBC": "持续费用包含于GAAP EBIT，目标股数另计净授股与潜在融资；公司未指引未来分母",
+    "discount_rate": 0.16,
+    "discount_years": 4.2217659137577,
+    "target_date": "2030-12-31",
+    "dividends": 0,
+    "scenarios": {
+      "bear": {
+        "revenue_m": [
+          1500,
+          1800
+        ],
+        "GAAP_EBIT_margin": [
+          0.08,
+          0.1
+        ],
+        "GAAP_EBIT_m": [
+          120.0,
+          180.0
+        ],
+        "EV_EBIT_multiple": [
+          20,
+          24
+        ],
+        "net_cash_m": 300,
+        "shares_m": 700,
+        "FCF_margin_crosscheck": [
+          0.02,
+          0.04
+        ],
+        "future_price": [
+          3.857142857142857,
+          6.6
+        ],
+        "present_value": [
+          2.0612904081707883,
+          3.527096920647793
+        ],
+        "relative": [
+          -0.9697802315178011,
+          -0.948290618374904
+        ]
+      },
+      "base": {
+        "revenue_m": [
+          3000,
+          4000
+        ],
+        "GAAP_EBIT_margin": [
+          0.16,
+          0.2
+        ],
+        "GAAP_EBIT_m": [
+          480.0,
+          800.0
+        ],
+        "EV_EBIT_multiple": [
+          30,
+          35
+        ],
+        "net_cash_m": 1000,
+        "shares_m": 740,
+        "FCF_margin_crosscheck": [
+          0.09,
+          0.12
+        ],
+        "future_price": [
+          20.81081081081081,
+          39.189189189189186
+        ],
+        "present_value": [
+          11.121476776817365,
+          20.943040683617117
+        ],
+        "relative": [
+          -0.8369524002812291,
+          -0.692962312217899
+        ]
+      },
+      "bull": {
+        "revenue_m": [
+          8000,
+          10000
+        ],
+        "GAAP_EBIT_margin": [
+          0.25,
+          0.28
+        ],
+        "GAAP_EBIT_m": [
+          2000.0,
+          2800.0000000000005
+        ],
+        "EV_EBIT_multiple": [
+          40,
+          45
+        ],
+        "net_cash_m": 2000,
+        "shares_m": 800,
+        "FCF_margin_crosscheck": [
+          0.16,
+          0.2
+        ],
+        "future_price": [
+          102.5,
+          160.00000000000003
+        ],
+        "present_value": [
+          54.77688399490891,
+          85.50537989449197
+        ],
+        "relative": [
+          -0.19693763385267682,
+          0.2535607666689925
+        ]
+      }
+    },
+    "Iridium": "待完成，不加收入协同，不扣未支付收购款，不加未发行对价股；因此不能当整合后目标价",
+    "cash_bridge": "目标净现金需已包含Neutron研发/资本开支、收付款/预收变动与未来融资；资本开支占收入约3–5%、FCF margin约2–4/9–12/16–20%，未扣并购。任一现金缺口需增股或减净现金，假设而非公司指引",
+    "historical_forward_PE": "GAAP亏损，无可靠日频序列"
+  },
+  "sources": [
+    {
+      "title": "q2-release",
+      "url": "https://files.quartr.com/reports/a8c693ff911344feee76b75f508473a6-2026-08-10-20-09-38.pdf?ref=U0E=",
+      "disclosure_date": "2026-08-10",
+      "read_status": "全文提取；关键财务表与证券附注已复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-release.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-release.txt"
+    },
+    {
+      "title": "q2-10q",
+      "url": "https://files.quartr.com/reports/82d8ed2a20541d7863682ed535280779-2026-08-10-20-20-59.pdf?ref=U0E=",
+      "disclosure_date": "2026-08-10",
+      "read_status": "全文提取；关键财务表与证券附注已复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-10q.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-10q.txt"
+    },
+    {
+      "title": "fy2025-10k",
+      "url": "https://files.quartr.com/reports/46112-2026-02-26-09-50-32.pdf?ref=U3RvY2tBbmFseXNpcw==",
+      "disclosure_date": "2026-02-26",
+      "read_status": "全文提取；关键财务表与证券附注已复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/fy2025-10k.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/fy2025-10k.txt"
+    },
+    {
+      "title": "iridium-merger",
+      "url": "https://files.quartr.com/reports/7f0f2603537a4026847ceaf17e02bed8-2026-06-29-11-07-58.pdf?ref=U0E=",
+      "disclosure_date": "2026-06-29",
+      "read_status": "全文提取；关键财务表与证券附注已复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/iridium-merger.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/iridium-merger.txt"
+    },
+    {
+      "title": "iridium-vote",
+      "url": "https://investor.iridium.com/2026-09-24-Iridium-Stockholders-Approve-Acquisition-by-Rocket-Lab?asPDF=1",
+      "disclosure_date": "2026-09-24",
+      "read_status": "全文提取；关键财务表与证券附注已复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/iridium-vote.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/iridium-vote.txt"
+    },
+    {
+      "title": "StockAnalysis regular historical close",
+      "url": "https://stockanalysis.com/stocks/rklb/history/",
+      "disclosure_date": "2026-10-09",
+      "read_status": "已读常规收盘，与盘后分开",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/quote.txt"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "H1 OCF -134.407、cash capex53.112、ATM gross1529.639M",
+      "locator": "q2-10q现金流第8页",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-10q.txt"
+    },
+    {
+      "fact": "40.951250M参与优先股、598.180438M普通股、库藏股；一比一交换",
+      "locator": "q2-10q第5页、Note12",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-10q.txt"
+    },
+    {
+      "fact": "剩余performance obligations2355.9M约45%下一12个月，H1单客户42%",
+      "locator": "q2-10q收入附注及分部注释",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/q2-10q.txt"
+    },
+    {
+      "fact": "9月24日股东已批准，但预计2027年中完成且监管条件未满足",
+      "locator": "iridium-vote第1页",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/iridium-vote.txt"
+    }
+  ],
+  "gaps": [
+    "交易后pro forma股数、融资、Iridium自身最新财务未完整调和，三情景只覆盖独立经营，无法可靠给交易后综合每股价值",
+    "报价日精确经济股数与独立第二行情源未获得；用6月30日639.131688M经济股份及8月5日普通股598.350482M作证券核验而非同日分母",
+    "SEC全类型最新申报直连403；发行人目录仅覆盖特定材料，不能断言无新增8-K",
+    "最新独立Neutron测试/首飞公告全文未取得；只能采用Q2公司材料的Q4到台目标、10-Q年末窗口收窄描述",
+    "融资租赁当前部分在其他流动负债未分解，参考EV只计已单列14.468M非流动部分，可能低估索偿；当前EV非精确成交价值",
+    "Q3正式财报日期未核实；政府合同逐年拨款和选项未逐项审计；未得到完整最新电话会Q&A"
+  ],
+  "changes_from_previous": [
+    "Iridium股东批准已发生，仍未交割；旧待批准催化失效",
+    "价格62.95→68.21；旧641M加权股数不应当实际经济股本，重算common+preferred=639.131688M",
+    "不新增经营恶化叙事：Q2基本事实已在旧报告，增量是投票和报价与证券/估值口径校正",
+    "从2028收入40–60x高叙事倍数改为2030GAAP EBIT与现金路径压力测试，明确16%折现；旧范围非可靠今日公平价值",
+    "Iridium新业务可能有经济价值，但最终合并资本结构未取得不强行捏造proforma"
+  ],
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "交易后pro forma股数、融资、Iridium自身最新财务未完整调和，三情景只覆盖独立经营，无法可靠给交易后综合每股价值",
+      "报价日精确经济股数与独立第二行情源未获得；用6月30日639.131688M经济股份及8月5日普通股598.350482M作证券核验而非同日分母",
+      "SEC全类型最新申报直连403；发行人目录仅覆盖特定材料，不能断言无新增8-K",
+      "最新独立Neutron测试/首飞公告全文未取得；只能采用Q2公司材料的Q4到台目标、10-Q年末窗口收窄描述",
+      "融资租赁当前部分在其他流动负债未分解，参考EV只计已单列14.468M非流动部分，可能低估索偿；当前EV非精确成交价值",
+      "Q3正式财报日期未核实；政府合同逐年拨款和选项未逐项审计；未得到完整最新电话会Q&A"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  }
+}

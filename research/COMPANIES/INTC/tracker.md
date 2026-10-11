@@ -1,5 +1,38 @@
 # INTC Tracker — Intel Corporation
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：**中性等待，估值保护较8月更弱。服务器产品恢复仍是重要事实，但现金资本投入和融资稀释没有随着会计利润改善而消失。
+
+## Current Main Thesis
+
+- **核心逻辑：**产品业务能赚利润，制造业务若提升良率、得到外部客户并形成资本回报，才会将技术进步变成普通股价值；仅靠内部制造收入不能证明外部代工成功。
+
+## Key Risks
+
+- **主要风险：**高投入、政府托管股份和融资继续消耗每股价值，而市场已经为代工成功付出高价；“国家战略资产”不是普通股本金保证。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11 深研更新（追加历史）
+
+- 观点：中性等待；业务恢复承接8月，但报价104.70高于92.80，没有新季报验证现金改善。历史 [2026-08-20](deep-research/2026-08-20-deep-research-update.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 重要修正：此前遗漏8月公开发行；Aug12 8K显示210,526,315股@$95、额外31,578,947全行使，合计242,105,262股、gross23bn。最终现金到账未获得，不能当已证实现金。
+- 股数：July17 actual5.044bn；机械发行后5.286bn+剩余escrow143m≈5.429bn，vendor5.25bn冲突不取平均。Escrow衍生负债不再与同一股份重复扣；DOC241m warrants条件触发。
+- 现金口径：投资+融资栏H1 PP&E7.615bn，非仅6.192bn；adjustedFCF -10.435bn，自算与FY24/FY25官方调节公式一致。买回Ireland权益一次性支出非永久烧钱率。
+- 估值：折现正常化EBIT、NCI扣除、资本投入及稀释；只有附条件情景，最终现金/股份/租赁需要Q3调和。
+- 下一验收：官方2026-10-29盘后财报；Foundry外部客户收入、亏损收窄、资本回报；若持续约2bn季亏且capex上升/融资扩大，下调；客户及现金回报兑现后再增强。
+- 底稿 research-records/2026-10-11-research.json；决定性原件 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/INTC/aug-8k.txt、/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/INTC/q2-10q.txt；脚本 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/INTC/build.py；验证 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/INTC/validation.json。
+- 未解决：发行最终到账、报价日股数、最新租赁、完整Q&A、历史日频ForwardPE。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# INTC Tracker — Intel Corporation
+
 - **Ticker**: INTC
 - **Company**: Intel Corporation
 - **Exchange**: NASDAQ
@@ -223,3 +256,4 @@ Intel reported Q2 2026 results on 2026-07-23; Q2 10-Q filed/published 2026-07-24
 - Intel Q2 2026 Form 10-Q, published 2026-07-24, via StockAnalysis/Quartr filing mirror.
 - Intel Q2 2026 earnings slides, published 2026-07-23, via StockAnalysis/Quartr filing mirror.
 - StockAnalysis INTC overview/statistics/financials/filings pages, accessed 2026-08-20.
+

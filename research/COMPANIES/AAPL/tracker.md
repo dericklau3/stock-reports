@@ -1,5 +1,44 @@
 # Apple（AAPL）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：中性等待。** 生意继续改善，但当前价格已经要求比正常化基础情景更强的利润增长；不能因为生态质量高，就忽略约38倍的历史盈利估值。
+
+## Current Main Thesis
+
+- **核心逻辑：** iPhone增长、大中华区恢复和服务变现均有最新财务支持；Siri AI从路线图进入英文测试版推送阶段，但尚不能把功能上线当作换机或服务盈利贡献。
+
+## Key Risks
+
+- **主要风险：** 关税退款抬高了最新季度利润，组件涨价与供应约束可能反向挤压毛利；服务抽成监管和新CEO交接增加执行不确定性。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11追加研究更新（保留旧历史）
+
+- 研究观点：中性等待；由2026-05-20建设性但需观察调整。理由是当前参考价格更高、一次性退款须正常化、旧未来价没有折现，非经营转坏结论。
+- 历史：[2026-05-20深研](deep-research/2026-05-20-deep-research.md)；新增：[2026-10-11深研](deep-research/2026-10-11-deep-research-update.md)。
+- 事实变化：FY2026 Q3收入109417百万美元、iPhone54252、服务30739；Q3 EPS2.02含退款0.11，50.1%毛利率含约2个百分点退款。Siri AI于9月14日开始英文beta推送，付费/换机增量未确认。John Ternus 9月1日接任CEO；旧报告遗漏交接公告，不写成10月突发。
+- 价格桥：298.97 → 约336.64美元（2026-10-09 regular close），+12.6%；父代理已核验Nasdaq收盘336.64，Exa不同快照336.63不采用。市值按7月17日14594.180百万实际股数，不能当10月最新实股。
+- 模型桥：FY2027收入×正常化GAAP净利率÷预测稀释股数×P/E，10%折现到研究日；151–195 /234–294 /323–402美元。利润含SBC利息，权益法不重复加现金扣债。未计股息；预测股数13900–14700百万和回购是研究假设。旧未折现172–221/266–326/352–468不再作为今天价值直接比较。
+- 改判条件：连续两季手机与中国增长、服务双位数及退款后产品毛利稳定，AI留存/真实付费及每股现金改善可强化；连续两季服务增长跌至个位数、手机/中国反转、库存明显积压或平台佣金实质下调应转弱。阈值为研究观察规则，不是公司指引。
+- 最强反证：真实现金与回购支持每股增长超过本次保守假设；AI上线不能直接算独立利润，但不能说公司仍只停留路线图。
+- 未解决：SEC submissions 403，期后8-K不穷尽；完整租赁注释/电话会Q&A、Forward P/E日频与最新一致预期未取得；FY2026 Q4尚未核验披露。
+- 原件、定位、完整公式：`research-records/2026-10-11-research.json`；执行脚本`build_record.py`；数学和限制`validation.json`。决定性原件：`q3-10q.pdf/.txt`（封面、Notes3/4/6/8及PartII）、`q3-financials.pdf/.txt`、`fy2025-financials.pdf/.txt`、`q3-release.txt`、`siri-progress.txt`、`ceo-transition.txt`。报价检索快照`quote-search.json`与`quote-exa.txt`。
+
+
+
+### 父代理复核补充：报价缺口已解决
+
+Nasdaq历史原页核验2026-10-09常规收盘 336.64 美元；本次采用该交易所记录。初稿中的报价未核验限制已解决，其余股数、合同和来源缺口继续保留。详见可复算记录中的 `resolved_during_parent_review`。
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Apple（AAPL）Tracker
+
 Last updated: 2026-05-20
 
 ## Current Research View
@@ -70,3 +109,4 @@ AAPL 仍是全球最强消费科技生态之一。FY2026 Q2 revenue 1112 亿美�
 ## Research Files
 
 - `deep-research/2026-05-20-deep-research.md`
+

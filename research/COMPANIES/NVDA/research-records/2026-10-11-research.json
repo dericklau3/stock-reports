@@ -1,0 +1,272 @@
+{
+  "ticker": "NVDA",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/NVDA/deep-research/2026-05-20-deep-research.md",
+  "quote": {
+    "price": 229.28,
+    "date": "2026-10-09",
+    "session": "regular close 16:00 EDT",
+    "source": "https://stockanalysis.com/stocks/nvda/history/",
+    "status": "verified vendor; exchange unavailable"
+  },
+  "identity": {
+    "issuer": "NVIDIA Corporation",
+    "CIK": "0001045810",
+    "exchange": "Nasdaq",
+    "security": "common stock USD",
+    "actual_shares_bn": 24.1,
+    "actual_shares_date": "2026-08-21",
+    "Q2_weighted_diluted_shares_bn": 24.285
+  },
+  "financial_periods": {
+    "unit": "USD million",
+    "columns": [
+      "FY2025",
+      "FY2026",
+      "H1FY2027",
+      "TTM July26 2026"
+    ],
+    "rows": {
+      "收入": [
+        130497,
+        215938,
+        177837,
+        302970
+      ],
+      "毛利": [
+        97858,
+        153463,
+        133299,
+        226241
+      ],
+      "经营损益": [
+        81453,
+        130387,
+        117270,
+        197579
+      ],
+      "净损益": [
+        72880,
+        120067,
+        118010,
+        192880
+      ],
+      "经营现金流": [
+        64089,
+        102718,
+        74421,
+        134360
+      ],
+      "现金资本开支": [
+        3236,
+        6042,
+        4434,
+        7354
+      ],
+      "简化自由现金流": [
+        60853,
+        96676,
+        69987,
+        127006
+      ]
+    },
+    "TTM_formula": "FY2026+H1FY2027-H1FY2026",
+    "cash_capex_correction": "FY2025 3236; FY2026 6042; principal payments excluded; official FCF includes principal payments 129 and 101"
+  },
+  "valuation": {
+    "formula": "revenue*normalized_net_margin/diluted_shares*PE/(1+r)^1.30",
+    "scenarios": {
+      "保守": {
+        "target": "FY2028 ended approximately January 2028",
+        "revenue_usd_bn": 450,
+        "normalized_net_margin_after_SBC": 0.45,
+        "diluted_shares_bn": 24.5,
+        "EPS": 8.26530612244898,
+        "PE_range": [
+          18,
+          22
+        ],
+        "discount_rate": 0.13,
+        "years": 1.3,
+        "PV_price_range": [
+          126.91982708882286,
+          155.1242331085613
+        ],
+        "relative_to_quote": [
+          -0.44644178694686476,
+          -0.32342885071283456
+        ]
+      },
+      "基础": {
+        "target": "FY2028 ended approximately January 2028",
+        "revenue_usd_bn": 700,
+        "normalized_net_margin_after_SBC": 0.52,
+        "diluted_shares_bn": 24.2,
+        "EPS": 15.041322314049587,
+        "PE_range": [
+          24,
+          28
+        ],
+        "discount_rate": 0.11,
+        "years": 1.3,
+        "PV_price_range": [
+          315.19359738120585,
+          367.72586361140685
+        ],
+        "relative_to_quote": [
+          0.3747103863451058,
+          0.6038287840692902
+        ]
+      },
+      "乐观": {
+        "target": "FY2028 ended approximately January 2028",
+        "revenue_usd_bn": 825,
+        "normalized_net_margin_after_SBC": 0.55,
+        "diluted_shares_bn": 24.0,
+        "EPS": 18.906250000000004,
+        "PE_range": [
+          30,
+          34
+        ],
+        "discount_rate": 0.1,
+        "years": 1.3,
+        "PV_price_range": [
+          501.09048980453116,
+          567.9025551118019
+        ],
+        "relative_to_quote": [
+          1.1854958557420234,
+          1.476895303174293
+        ]
+      }
+    },
+    "SBC": "normal margin after recurrent SBC; future shares separately reflect net issuance/buyback, not SBC cash addback",
+    "cash_debt_claims_usd_bn": {
+      "cash": 22.443,
+      "marketable_debt": 34.143,
+      "marketable_equity_not_cash": 42.783,
+      "private_equity_not_cash": 51.157,
+      "debt_carrying": 33.366,
+      "long_term_operating_lease": 4.985,
+      "guarantees_max": 108.5,
+      "AI_cloud_commitments": 36,
+      "supply_commitments": 279
+    },
+    "claim_handling": "P/E equity method: no separate EV bridge and no duplicate net debt subtraction; no separate value for risky investments; guarantee max stress 108.5/24.1 per share, not booked debt",
+    "forward_PE": {
+      "vendor_current": 18.96,
+      "period_and_basis": "unverified",
+      "historical_daily_extrema": "unavailable"
+    },
+    "market_cap_price_times_shares_bn": 5525.648,
+    "price_change_from_previous": 0.03930012238792435
+  },
+  "sources": [
+    {
+      "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "title": "q2-10q",
+      "disclosure_date": "2026-08-27",
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.txt"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "title": "q2-release-news",
+      "disclosure_date": "2026-08-26",
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-release-news.txt"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "title": "fy26-release-news",
+      "disclosure_date": "2026-02-25",
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/fy26-release-news.txt"
+    },
+    {
+      "url": "https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf",
+      "title": "q2-transcript",
+      "disclosure_date": "2026-08-26",
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-transcript.txt"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/nvda/history/",
+      "title": "quote-history",
+      "disclosure_date": "2026-10-09",
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/quote-history.txt"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/nvda/statistics/",
+      "title": "statistics",
+      "disclosure_date": "2026-10-09",
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/statistics.txt"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/nvda/filings/",
+      "title": "filings",
+      "disclosure_date": null,
+      "read_status": "downloaded; decisive sections read; transcript includes Q&A saved",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/filings.txt"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "Q2 revenue 96.221bn / H1 177.837bn",
+      "location": "10Q p3",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.txt"
+    },
+    {
+      "fact": "H1 equity gains 23.707bn, CFO74.421bn",
+      "location": "10Q p8",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.txt"
+    },
+    {
+      "fact": "AI cloud 36bn; SB Energy guarantee105bn; aggregate108.5bn",
+      "location": "Note10 p18-19",
+      "short_quote": "commitments, which are typically six years in duration",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.txt"
+    },
+    {
+      "fact": "FY28 revenue growth ~70% target; margin72-73% target",
+      "location": "call prepared remarks and Q&A",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-transcript.txt"
+    },
+    {
+      "fact": "229.28 regular close October9",
+      "location": "vendor top and historical row",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/quote-history.txt"
+    }
+  ],
+  "gaps": [
+    "SEC submissions403; filing listing alternative used, no exhaustive subsequent8K review",
+    "Official quote interface not obtained; vendor close",
+    "FY28 growth forward statement not assured",
+    "Past-year daily forwardPE unavailable",
+    "Current exact actual shares and lease total post-quarter not obtained; latest dated actual used"
+  ],
+  "changes_from_previous": [
+    "New Q1/Q2 financial actuals replace pending earnings",
+    "Credit-support and cloud-demand-risk materially greater than prior light-asset narrative",
+    "Annual cash capex corrected and uniform; prior estimates were approximate",
+    "Scenario now discounted; normalized profit excludes equity gains",
+    "Price220.61 to229.28 only +3.93%, not justification of thesis alone"
+  ],
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "SEC submissions403; filing listing alternative used, no exhaustive subsequent8K review",
+      "Official quote interface not obtained; vendor close",
+      "FY28 growth forward statement not assured",
+      "Past-year daily forwardPE unavailable",
+      "Current exact actual shares and lease total post-quarter not obtained; latest dated actual used"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  }
+}

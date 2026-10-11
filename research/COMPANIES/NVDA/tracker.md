@@ -1,5 +1,38 @@
 # NVIDIA（NVDA）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：**谨慎看好。计算平台的盈利兑现比5月研究更强，但公司正从单纯卖设备走向支持客户建设与融资，不能再把低自有资本开支等同于低资本风险。
+
+## Current Main Thesis
+
+- **核心逻辑：**数据中心收入、系统交付和软件生态继续形成相互强化的优势；研究重点从“能否兑现780亿美元季度指引”转为更大规模增长能否形成真实收款与可持续每股现金回报。
+
+## Key Risks
+
+- **主要风险：**客户采购、融资和公司担保同时依赖AI算力利用率；若终端付费需求转弱，库存、应收账款与信用支持可能共同放大损失。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11 深研更新（待父代理合并，不删除历史）
+
+- 观点：谨慎看好；最强反证为信用支持与真实需求混在一起。
+- 历史：[2026-05-20](deep-research/2026-05-20-deep-research.md)；新稿：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 财务：Q2收入96.221bn；H1经营利润117.270bn、净利118.010bn、CFO74.421bn，证券收益23.707bn。资本开支统一现金口径，年度FY26为6.042bn，非旧粗略6.062bn。
+- 项目：Rubin已全面量产但须看现金；AI云容量36bn、供应279bn、担保最大108.5bn是新的核心风险，不能全部当即时债务，不能当无资本风险。
+- 价格220.61→229.28；不是凭股价改评级。模型为FY28利润情景折现，完整输入见 research-records/2026-10-11-research.json；原件 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.pdf、/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-transcript.pdf。
+- 改判：持续毛利低于管理层FY28的72%-73%或应收/库存增长持续高于收入且容量承诺不消化，降低；兑现70%增长同时CFO增长、风险余额下降，增强。
+- 缺口：历史日频ForwardPE、报价日精确股数、逐项最新租赁总额；SEC403采用IR原件，后续非财报申报核查不穷尽。
+- 情景/证据原文及可复算脚本：/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/build.py；验证 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/validation.json。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# NVIDIA（NVDA）Tracker
+
 Last updated: 2026-05-20
 
 ## Current Research View
@@ -73,3 +106,4 @@ NVDA 是 AI data center scale infrastructure 的核心平台公司。FY2026 reve
 ## Research Files
 
 - `deep-research/2026-05-20-deep-research.md`
+

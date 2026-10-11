@@ -1,5 +1,39 @@
 # Tempus AI（TEM）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**中性等待进一步证据，经营方向仍建设性。较5月研究，调整盈利和检测采用有进步，但现价更高、Personalis并购后的每股价值尚不能可靠核定。
+
+## Current Main Thesis
+
+**核心逻辑：**检测服务形成临床与分子数据，药企付费使用数据和模型；这不是纯软件生意，报销、实验室成本与合同续约决定平台溢价。
+
+## Key Risks
+
+**主要风险：**市场过早把投资资产涨价形成的净利润当作主营盈利，并忽略并购换股、可转债与SBC造成的股东索偿变化。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11追加研究
+
+观点：中性等待，经营建设性但价格和结构约束更严格。保留[2026-05-12](deep-research/2026-05-12-deep-research.md)、7月20日事件历史；[新拟稿](deep-research/2026-10-11-deep-research-update.md)。
+
+Q2收入382.486M、数据收入93.153M增28%、调整EBITDA8.044M；净利润5.642M含证券未实现收益98.5M，GAAP经营仍-75.913M。H1普通现金流-80.802M，扣设备和软件FCF-101.961M。SBC106.827M另雇主税5.051M。新票据实际460M而非旧400M，旧设施已还；仍有750M2030票据/Google票据。
+
+价格70.93（10/9收盘）较旧49.47上升43.38%。当前股数只核实7/24A+B180.435M，市值12.798B；机械独立EV13.483B，不等于并购后EV。Personalis最终S4、现金选择、换股及目标亏损未取得，禁止沿用粗估16%–17%稀释或未折现旧目标。三档合并每股价值无法可靠计算；独立现金流敏感性仅底稿，不是合并公允价。
+
+升级：合并每股桥、MRD与数据续约、回款/现金盈利、SBC强度改善。下调：报销/续约恶化、目标亏损及支付成本扩大、增长无法覆盖稀释。CMS历史0473U初始4500美元不得写成2026全部测试净价。
+
+底稿及公式：`research-records/2026-10-11-research.json`；原件全文Q2-earnings.txt、Q2-10Q.txt、FY2025.txt、merger-original.txt、CMS-list.txt。验证：`/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/validation.json`；正式下一财报日未核实，旧7月预计日期不得保留为未来。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Tempus AI（TEM）Tracker
+
 Last updated: 2026-07-20
 
 ## Current Research View
@@ -117,3 +151,4 @@ Tempus 是一个差异化的精准医疗平台，拥有规模化诊断业务、�
 - StockAnalysis TEM/PSNL market data checked 2026-07-20.
 - Yahoo Finance chart API market snapshot for TEM, regular market price around 2026-07-01 close.
 - StockAnalysis/S&P Global market data, valuation statistics, analyst consensus and forecast pages, checked 2026-07-02.
+

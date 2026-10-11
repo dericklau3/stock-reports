@@ -1,0 +1,261 @@
+{
+  "ticker": "MRVL",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/MRVL/deep-research/2026-07-14-deep-research.md",
+  "quote": {
+    "price": 275.28,
+    "date": "2026-10-09",
+    "session": "16:00 EDT regular",
+    "source": "https://stockanalysis.com/stocks/mrvl/history/",
+    "status": "vendor verified"
+  },
+  "identity": {
+    "issuer": "Marvell Technology Inc",
+    "CIK": "0001835632",
+    "exchange": "Nasdaq",
+    "security": "common USD; participating Series A preferred",
+    "actual_common_bn": 0.8769,
+    "actual_date": "2026-08-21",
+    "preferred_as_converted_bn": 0.0218,
+    "economic_bn": 0.8987,
+    "Q2_weighted_diluted_bn": 0.9212
+  },
+  "financial_periods": {
+    "units": "USD million",
+    "columns": [
+      "FY2025",
+      "FY2026",
+      "H1FY2027",
+      "TTM August1 2026"
+    ],
+    "rows": {
+      "收入": [
+        5767.3,
+        8194.6,
+        5157.1,
+        9450.3
+      ],
+      "毛利": [
+        2382.2,
+        4180.7,
+        2716.4,
+        4934.1
+      ],
+      "经营损益": [
+        -720.3,
+        1322.9,
+        799.1,
+        1561.3
+      ],
+      "净损益": [
+        -885.0,
+        2670.1,
+        342.5,
+        2639.9
+      ],
+      "经营现金流": [
+        1681.2,
+        1750.5,
+        1244.3,
+        2200.3
+      ],
+      "现金资本开支（设备）": [
+        284.6,
+        354.1,
+        282.4,
+        470.2
+      ],
+      "简化自由现金流": [
+        1396.6,
+        1396.4,
+        961.9,
+        1730.1
+      ]
+    },
+    "formula": "FY26+H1FY27-H1FY26"
+  },
+  "valuation": {
+    "method": "EV/economic FCFF, floor-conservative excludes interim distributable cash",
+    "formula": "(revenue*economic_FCFF_margin*EV_multiple/(1+WACC)^2.3-debt-operating_leases+cash)/forecast_economic_shares",
+    "scenarios": {
+      "保守": {
+        "FY2029_revenue_USD_bn": 18,
+        "economic_FCFF_margin_after_SBC_and_reinvestment": 0.16,
+        "FCFF_USD_bn": 2.88,
+        "forecast_economic_shares_bn": 0.93,
+        "EV_FCFF_multiple": [
+          25,
+          30
+        ],
+        "WACC": 0.14,
+        "years": 2.3,
+        "PV_price_range": [
+          55.820272854482695,
+          67.27535968344374
+        ],
+        "up_down": [
+          -0.7972236528099291,
+          -0.7556111606965862
+        ]
+      },
+      "基础": {
+        "FY2029_revenue_USD_bn": 26,
+        "economic_FCFF_margin_after_SBC_and_reinvestment": 0.24,
+        "FCFF_USD_bn": 6.24,
+        "forecast_economic_shares_bn": 0.95,
+        "EV_FCFF_multiple": [
+          30,
+          35
+        ],
+        "WACC": 0.12,
+        "years": 2.3,
+        "PV_price_range": [
+          150.41358288762933,
+          175.71993442153246
+        ],
+        "up_down": [
+          -0.45359785350323545,
+          -0.3616683579572345
+        ]
+      },
+      "乐观": {
+        "FY2029_revenue_USD_bn": 34,
+        "economic_FCFF_margin_after_SBC_and_reinvestment": 0.3,
+        "FCFF_USD_bn": 10.2,
+        "forecast_economic_shares_bn": 0.98,
+        "EV_FCFF_multiple": [
+          35,
+          40
+        ],
+        "WACC": 0.11,
+        "years": 2.3,
+        "PV_price_range": [
+          285.1683402868265,
+          326.1039486659941
+        ],
+        "up_down": [
+          0.03592102690651888,
+          0.18462637556667438
+        ]
+      }
+    },
+    "cash_USD_bn": 3.9328,
+    "debt_carrying_USD_bn": 4.9629,
+    "lease_USD_bn": 0.3232,
+    "current_net_claims_USD_bn": 1.3533000000000004,
+    "preferred_USD_bn": 2,
+    "preferred_treatment": "participating pari passu; converted in shares; do not deduct preferred principal",
+    "earnout_liability_USD_bn": 0.7495,
+    "earnout_treatment": "forecast share budget includes stock consideration; do not also deduct same liability; max contractual shares not fully audited, scenario limitation",
+    "SBC_H1_USD_m": 533.8,
+    "SBC_treatment": "recurring compensation cash equivalent deducted in FCFF margin; future shares cover current awards and acquisition consideration, not perpetual duplicated employee-grant cost",
+    "H1_stress_cash_formula": "1244.3-282.4-5.0-56.6-533.8",
+    "H1_stress_cash_USD_m": 366.5,
+    "forward_PE_vendor": 48.76,
+    "forward_PE_basis": "unknown",
+    "forward_PE_daily_year_extrema": "unavailable",
+    "price_change_from_prior": 0.26548062336229483,
+    "market_cap_economic_USD_bn": 247.394136
+  },
+  "sources": [
+    {
+      "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000025/mrvl-20260801.htm",
+      "title": "q2-10q",
+      "disclosure_date": "2026-08-28",
+      "read_status": "financial statements and Notes4/7/9/10/12, risks read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/q2-10q.txt"
+    },
+    {
+      "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000011/mrvl-20260131.htm",
+      "title": "fy26-10k",
+      "disclosure_date": "2026-03-05",
+      "read_status": "statements and divestiture adjustments read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/fy26-10k.txt"
+    },
+    {
+      "url": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+      "title": "q2-release",
+      "disclosure_date": "2026-08-27",
+      "read_status": "release and guidance read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/q2-release.txt"
+    },
+    {
+      "url": "https://d1io3yog0oux5.cloudfront.net/_ae5866d878a09f08b5b89a421aa4d890/marvell/files/654831/marvell-investor-day-2026-presentaion-deck.pdf",
+      "title": "investor-day",
+      "disclosure_date": "2026-10-06",
+      "read_status": "decisive roadmap and financial-model slides read; Q&A audio not read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/investor-day.txt"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/mrvl/history/",
+      "title": "quote-history",
+      "disclosure_date": "2026-10-09",
+      "read_status": "regular close read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/quote-history.txt"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/mrvl/statistics/",
+      "title": "statistics",
+      "disclosure_date": "2026-10-09",
+      "read_status": "vendor snapshot read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/statistics.txt"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "Q2 2.7393bn revenue, DC2.1715bn and +46%",
+      "location": "10Q p3/Note3; release",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/q2-10q.txt"
+    },
+    {
+      "fact": "FY28 revenue20bn; FY29 custom12bn+; FY31 70-90bn/FCF36%+ targets",
+      "location": "investor day pp27-28/142-143",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/investor-day.txt"
+    },
+    {
+      "fact": "preferred participates pari passu; no redemption; max21.8m shares",
+      "location": "10Q Note10/12",
+      "short_quote": "participate pro rata with holders of common stock",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/q2-10q.txt"
+    },
+    {
+      "fact": "FY26 gain sale1830.4m, H1 SBC533.8m",
+      "location": "10K cashflow/10Q cashflow",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/fy26-10k.txt"
+    },
+    {
+      "fact": "275.28 October9 close",
+      "location": "history",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/quote-history.txt"
+    }
+  ],
+  "gaps": [
+    "Investor day Q&A/audio not independently reviewed; slides read only",
+    "Past-year daily forwardPE and current vendor forecast period unavailable",
+    "Exact maximum acquisition earnout dilution not completely reconciled; model share budget assumption, not contract-certified FD count",
+    "Post-quarter cash/debt/actual share changes unknown",
+    "Quote vendor not exchange crossverified"
+  ],
+  "changes_from_previous": [
+    "Q2 actual replaces Q1 and Q2 pending guide",
+    "October6 long-term targets major new fact, not assumed revenue",
+    "Price217.53 to275.28 +26.55% calculated",
+    "Current total economic equity includes preferred asconverted, unlike vendor common-only marketcap",
+    "Normalized cashflow discounted valuation replaces arbitrary undiscounted prior revenue scenario"
+  ],
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "Investor day Q&A/audio not independently reviewed; slides read only",
+      "Past-year daily forwardPE and current vendor forecast period unavailable",
+      "Exact maximum acquisition earnout dilution not completely reconciled; model share budget assumption, not contract-certified FD count",
+      "Post-quarter cash/debt/actual share changes unknown",
+      "Quote vendor not exchange crossverified"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  }
+}

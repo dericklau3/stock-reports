@@ -1,0 +1,262 @@
+{
+  "ticker": "TEM",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md",
+  "previous_tracker": "/home/ubuntu/stock-reports/research/COMPANIES/TEM/tracker.md",
+  "quote": {
+    "price": 70.93,
+    "date": "2026-10-09",
+    "session": "regular close 16:00 EDT",
+    "source": "https://stockanalysis.com/stocks/tem/history/",
+    "status": "single dated vendor full body; independent quote not obtained"
+  },
+  "identity": {
+    "issuer": "Tempus AI Inc.",
+    "exchange": "Nasdaq",
+    "class": "Class A public; Class B included economic rights",
+    "actual_A": 175390967,
+    "actual_B": 5043789,
+    "actual_date": "2026-07-24",
+    "weighted_basic_H1_m": 179.404,
+    "preferred_outstanding": 0,
+    "latest_date_gap": true
+  },
+  "financial_periods": {
+    "FY2024": {
+      "revenue_m": 693.398,
+      "gross_m": 381.113,
+      "operating_m": -691.082,
+      "net_m": -705.809,
+      "common_net_m": -746.33,
+      "ocf_m": -189.045,
+      "equipment_m": 22.121,
+      "software_m": 0,
+      "sbc_m": 534.138
+    },
+    "FY2025": {
+      "revenue_m": 1271.789,
+      "gross_m": 797.897,
+      "operating_m": -252.872,
+      "net_m": -245.028,
+      "ocf_m": -218.09,
+      "equipment_m": 21.049,
+      "software_m": 6.216,
+      "sbc_m": 124.747
+    },
+    "H1_2026": {
+      "revenue_m": 730.602,
+      "gross_m": 468.539,
+      "operating_m": -160.624,
+      "net_m": -120.277,
+      "ocf_m": -80.802,
+      "equipment_m": 14.327,
+      "software_m": 6.832,
+      "sbc_m": 106.827
+    },
+    "H1_2025": {
+      "revenue_m": 570.372,
+      "gross_m": 350.242,
+      "operating_m": -130.463,
+      "net_m": -110.88,
+      "ocf_m": -61.46,
+      "equipment_m": 9.588,
+      "software_m": 3.295,
+      "sbc_m": 45.429
+    }
+  },
+  "valuation": {
+    "consolidated_status": "cannot reliably value pending merger; final S4/payment/target proforma absent",
+    "current_market_cap_m": 12798.23724308,
+    "bridge_net_senior_claim_m": 684.5510000000002,
+    "bridge_inputs_m": {
+      "convert_face": 1210,
+      "Google_note_carrying": 187.929,
+      "accrued_interest": 19.155,
+      "leases": 83.458,
+      "cash": 599.614,
+      "restricted_excluded": 4.724,
+      "marketable_equity": 216.377
+    },
+    "equity_asset_warning": "Personalis equity consumed on merger; do not double count. This bridge is stand-alone",
+    "hypothetical_sensitivity_not_fair_value": [
+      {
+        "name": "保守",
+        "revenue_m": [
+          1850,
+          2000
+        ],
+        "unlevered_FCF_margin_after_economic_SBC": [
+          0.05,
+          0.08
+        ],
+        "FCF_multiple": [
+          16,
+          18
+        ],
+        "future_SBC_only_shares_m": 200,
+        "present_standalone_USD": [
+          2.1072377535300735,
+          7.338311979842305
+        ]
+      },
+      {
+        "name": "基准",
+        "revenue_m": [
+          2250,
+          2450
+        ],
+        "unlevered_FCF_margin_after_economic_SBC": [
+          0.12,
+          0.16
+        ],
+        "FCF_multiple": [
+          20,
+          24
+        ],
+        "future_SBC_only_shares_m": 205,
+        "present_standalone_USD": [
+          16.345605450931046,
+          30.95615980567629
+        ]
+      },
+      {
+        "name": "乐观",
+        "revenue_m": [
+          2700,
+          3000
+        ],
+        "unlevered_FCF_margin_after_economic_SBC": [
+          0.2,
+          0.24
+        ],
+        "FCF_multiple": [
+          26,
+          30
+        ],
+        "future_SBC_only_shares_m": 215,
+        "present_standalone_USD": [
+          45.61622932719186,
+          71.89325334773702
+        ]
+      }
+    ],
+    "formula": "[2028 revenue * unlevered cash margin * terminal FCF multiple / 1.14^2.223 - current senior net claims]/future stand-alone shares",
+    "dilution": "SBC future shares200/205/215m only; no Personalis final shares; all converts retained as debt, no conversion shares double counted",
+    "SBC": "margins should be interpreted before future award offset buybacks; net share dilution is economic treatment; not simultaneously double debit identical cost",
+    "discount": {
+      "rate": 0.14,
+      "years": 2.223134839151266,
+      "target": "2028-12-31"
+    },
+    "convertible_details": {
+      "2032_principal_m": 460,
+      "conversion_rate_per1000": 14.4388,
+      "price": 84.19,
+      "2030_principal_m": 750,
+      "rate_per1000": 11.8778,
+      "capped_call_cash_m": 31.234
+    },
+    "guidance": {
+      "FY2026_revenue_m": [
+        1595,
+        1605
+      ],
+      "adjusted_EBITDA_m": 65,
+      "excludes_Personalis": true
+    },
+    "forward_PE": "not meaningful; one-year daily history unavailable"
+  },
+  "sources": [
+    {
+      "url": "https://files.quartr.com/reports/5820287a1e555cdc3f3ed015975ecbfa-2026-07-30-20-03-32.pdf?ref=U0E=",
+      "title": "Q2 earnings release",
+      "disclosure_date": "2026-07-30",
+      "read_status": "full text captured; decisive tables/notes read; mirrors not independent confirmation",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/Q2-earnings.txt"
+    },
+    {
+      "url": "https://files.quartr.com/reports/66ba123361daf1987cae4651cd285803-2026-07-30-20-04-43.pdf?ref=U0E=",
+      "title": "Q2 Form10-Q",
+      "disclosure_date": "2026-07-30",
+      "read_status": "full text captured; decisive tables/notes read; mirrors not independent confirmation",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/Q2-10Q.txt"
+    },
+    {
+      "url": "https://files.quartr.com/reports/3b71b0a1c3a191015e7219bd212b40e2-2026-07-20-12-35-42.pdf?ref=U0E=",
+      "title": "Personalis acquisition announcement",
+      "disclosure_date": "2026-07-20",
+      "read_status": "full text captured; decisive tables/notes read; mirrors not independent confirmation",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/merger-original.txt"
+    },
+    {
+      "url": "https://files.quartr.com/reports/483bc-2026-02-24-09-04-08.pdf?ref=U3RvY2tBbmFseXNpcw==",
+      "title": "FY2025 Form10-K",
+      "disclosure_date": "2026-02-24",
+      "read_status": "full text captured; decisive tables/notes read; mirrors not independent confirmation",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/FY2025.txt"
+    },
+    {
+      "url": "https://www.cms.gov/files/document/advanced-diagnostic-laboratory-tests-under-medicare-clfs.pdf",
+      "title": "CMS ADLT list",
+      "disclosure_date": "last page update unknown; retrieved2026-10-11",
+      "read_status": "full text captured; decisive tables/notes read; mirrors not independent confirmation",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/CMS-list.txt"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "Q2 net income includes98.5m equity unrealized gain",
+      "location": "release page1 / nonGAAP bridge",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/Q2-earnings.txt"
+    },
+    {
+      "fact": "H1 operating cash -80.802, capex14.327+software6.832",
+      "location": "cash flow statements pages8-9",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/Q2-10Q.txt"
+    },
+    {
+      "fact": "460m actual2032 notes; 750m2030 plus Google note",
+      "location": "debt note12",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/Q2-10Q.txt"
+    },
+    {
+      "fact": "floating exchange cap0.3356, cash optional<=50%, pending closing",
+      "location": "transaction terms",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/merger-original.txt"
+    },
+    {
+      "fact": "0473U4500 is historical initial period not current all-test price",
+      "location": "Tempus row",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TEM/CMS-list.txt"
+    }
+  ],
+  "gaps": [
+    "final Personalis S4/proxy proforma not obtained",
+    "all post-Q2 filings not excluded: IR403, SEC direct inaccessible",
+    "latest actual share count/independent quote missing",
+    "current all-test Medicare price and private net collections not established",
+    "full Q&A not read"
+  ],
+  "changes_from_previous": [
+    "Q2 revenue382.486m +22%; Data/App+28% below previous40.5%, GP70.2% vs72.7%",
+    "GAAP net+5.642m includes98.5m equity gain, operating-75.913m",
+    "actual financing460m vs old pricing400m; senior facility repaid",
+    "Personalis agreement not verified complete; valuation now refuses invented consolidated fair value",
+    "future un-discounted EV/sales ranges retired; precise cash/capex/SBC bridge"
+  ],
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "final Personalis S4/proxy proforma not obtained",
+      "all post-Q2 filings not excluded: IR403, SEC direct inaccessible",
+      "latest actual share count/independent quote missing",
+      "current all-test Medicare price and private net collections not established",
+      "full Q&A not read"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  }
+}

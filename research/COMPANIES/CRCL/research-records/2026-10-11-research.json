@@ -1,0 +1,244 @@
+{
+  "ticker": "CRCL",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md",
+  "quote": {
+    "price": 84.51,
+    "date": "2026-10-09",
+    "session": "regular close",
+    "source": "https://api.nasdaq.com/api/quote/CRCL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "parent_verified_exchange_history"
+  },
+  "identity": {
+    "issuer": "Circle Internet Group, Inc.",
+    "CIK": "0001876042",
+    "exchange": "NYSE",
+    "classes": "A and B common economic equity",
+    "currency": "USD"
+  },
+  "financial_periods": {
+    "FY2024": "prior July10 verified research inherited; primary not reread",
+    "FY2025": "prior July10 verified research inherited; primary not reread",
+    "Q2/H12026": "prior Oct6 verified research actually read and copied; primary currently blocked",
+    "latest10Q": "2026-08-05; CapEdge index checked no newer10Q or8K than prior"
+  },
+  "valuation": {
+    "formula": "RLDC=averageUSDC*reserveyield*retention+recurringOther*contribution; EBIT=RLDC-fullEconomicCost; value=(NOPAT*multiple or RLDC*multiple + excessCash)/futureFDshares/1.12**years",
+    "actual_shares": "not current verified",
+    "weighted_diluted_Q2": 268637000,
+    "old_working_diluted": 270000000,
+    "SBC": "recurring cost included; future share headroom includes existing awards/acquisition; possible cohort overlap unresolved so not exact dilution forecast",
+    "debt": 0,
+    "operating_lease_claim_million": 15.951,
+    "ordinary_cash_million": 1730.126,
+    "own_stablecoin_backing_million": 889.311,
+    "external_holder_reserves_million": 73161.172,
+    "stablecoin_holder_liability_million": 72927.544,
+    "excess_cash_assumption_million": 1200,
+    "discount_rate": 0.12,
+    "discount_years": 2.223134839151266,
+    "scenarios": {
+      "bear": {
+        "all_units": "billionsUSD and billions shares",
+        "target": "2028-12-31",
+        "average_USDC": 80,
+        "reserve_yield": 0.0225,
+        "retention": 0.35,
+        "recurring_other_revenue_excludes_token_presale": 0.15,
+        "other_contribution_margin": 0.8,
+        "full_economic_opex_includes_recurringSBC_and_capital_consumption": 0.8,
+        "future_fd_shares": 300000000.0,
+        "excess_cash": 1200000000.0,
+        "tax": 0.2,
+        "multiple_range": [
+          4,
+          6
+        ],
+        "method": "EV/RLDC",
+        "RLDC_billion": 0.7499999999999999,
+        "economic_operating_profit_billion": -0.050000000000000155,
+        "terminal_per_share": [
+          13.999999999999998,
+          19.0
+        ],
+        "present_value_per_share": [
+          10.88202538741259,
+          14.768463025774231
+        ]
+      },
+      "base": {
+        "all_units": "billionsUSD and billions shares",
+        "target": "2028-12-31",
+        "average_USDC": 140,
+        "reserve_yield": 0.03,
+        "retention": 0.4,
+        "recurring_other_revenue_excludes_token_presale": 0.35,
+        "other_contribution_margin": 0.85,
+        "full_economic_opex_includes_recurringSBC_and_capital_consumption": 0.9,
+        "future_fd_shares": 300000000.0,
+        "excess_cash": 1200000000.0,
+        "tax": 0.2,
+        "multiple_range": [
+          25,
+          30
+        ],
+        "method": "NOPAT",
+        "RLDC_billion": 1.9775,
+        "economic_operating_profit_billion": 1.0775000000000001,
+        "terminal_per_share": [
+          75.83333333333334,
+          90.20000000000002
+        ],
+        "present_value_per_share": [
+          58.94430418181821,
+          70.111334996044
+        ]
+      },
+      "bull": {
+        "all_units": "billionsUSD and billions shares",
+        "target": "2028-12-31",
+        "average_USDC": 220,
+        "reserve_yield": 0.035,
+        "retention": 0.44,
+        "recurring_other_revenue_excludes_token_presale": 0.6,
+        "other_contribution_margin": 0.85,
+        "full_economic_opex_includes_recurringSBC_and_capital_consumption": 1.25,
+        "future_fd_shares": 320000000.0,
+        "excess_cash": 1200000000.0,
+        "tax": 0.2,
+        "multiple_range": [
+          30,
+          35
+        ],
+        "method": "NOPAT",
+        "RLDC_billion": 3.8980000000000006,
+        "economic_operating_profit_billion": 2.6480000000000006,
+        "terminal_per_share": [
+          202.35000000000008,
+          235.45000000000007
+        ],
+        "present_value_per_share": [
+          157.28413122449564,
+          183.0123483904497
+        ]
+      }
+    },
+    "forward_pe": "current and daily historical extremal series not verified"
+  },
+  "calculations": {
+    "years": 2.223134839151266,
+    "discount_factor": 1.2865252102971583,
+    "circulation_change_vs_Sept24": -0.029771398192450782,
+    "vs_Q2average": -0.04605091213214152,
+    "seven_day_net_billion": -0.8100000000000005,
+    "thirty_day_net_billion": -1.3399999999999963,
+    "cash_company_liquidity_million": 2619.437,
+    "H1_cash_capex_million": 46.153000000000006,
+    "H1_cash_proxy_million": 492.352,
+    "H1_ex_token_proxy_million": 270.352,
+    "H1_SBC_economic_million": 128.64600000000002,
+    "100bp_retained_revenue_effect_million": 292.0
+  },
+  "sources": [
+    {
+      "url": "https://www.circle.com/en/usdc",
+      "title": "USDC official circulation",
+      "disclosure_date": "2026-10-08",
+      "read_status": "full page read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/usdc.txt"
+    },
+    {
+      "url": "https://www.circle.com/en/transparency",
+      "title": "Reserve composition and issuance/redemption",
+      "disclosure_date": "2026-10-08",
+      "read_status": "full page and exact JavaScript flow operands read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/transparency.txt"
+    },
+    {
+      "url": "https://capedge.com/company/1876042/filings",
+      "title": "CRCL filing index",
+      "disclosure_date": "access2026-10-11",
+      "read_status": "index read",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/filings.txt"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+      "title": "Q2 10-Q",
+      "disclosure_date": "2026-08-05",
+      "read_status": "inherited from prior verified record; NOT re-read current original",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/previous-verified-research.md"
+    },
+    {
+      "url": "https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20August%2026.pdf",
+      "title": "August examination report",
+      "disclosure_date": null,
+      "read_status": "403 not read",
+      "download_file": null
+    },
+    {
+      "url": "https://api.nasdaq.com/api/quote/CRCL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "read_status": "parent read exact historical row",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/parent-nasdaq-quote.json"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "October8 73.0b circulation/73.2b reserves",
+      "locator": "Balances header as ofOct08",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/transparency.txt"
+    },
+    {
+      "fact": "7day9.70-10.51=-.81b;30day41.28-42.62=-1.34b",
+      "locator": "usdcChange7/usdcChange30 JS operands",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/transparency-flow-snippets.json"
+    },
+    {
+      "fact": "Company2.619437b liquidity;customer73.161172b reserves not company cash",
+      "locator": "prior research section4.5, inherited original balance sheet distinction",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/previous-verified-research.md"
+    },
+    {
+      "fact": "538.505mCFO includes222m token presale",
+      "locator": "prior section4.4 and7.3",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/previous-verified-research.md"
+    },
+    {
+      "fact": "latest10QAug5;latest8KSep25",
+      "locator": "CapEdge financial/event table",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/filings.txt"
+    }
+  ],
+  "gaps": [
+    "报价日完整经济权益实际股数未核验；已解决10月9日常规收盘缺口",
+    "primary Q2 full text copy not recovered, finance inputs inherited not new certification",
+    "August attestation403",
+    "Binance fee, Tazapay economics/closing, token rights, Q&A, current/historicalforwardPE"
+  ],
+  "changes_from_previous": {
+    "facts": "official latest snapshot Sept24 75.24b ->Oct8 73.0b, flow positive ->negative",
+    "price": "not verified latest close; do not reuse83.30",
+    "model": "same operating assumptions; exact day-count discount updated, no earnings upgrade"
+  },
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 1,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "报价日完整经济权益实际股数未核验；已解决10月9日常规收盘缺口",
+      "primary Q2 full text copy not recovered, finance inputs inherited not new certification",
+      "August attestation403",
+      "Binance fee, Tazapay economics/closing, token rights, Q&A, current/historicalforwardPE"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification",
+    "carried_forward_source": "https://dericklau3.github.io/stock-reports/reports/CRCL/2026-10-06-deep-research-update/"
+  },
+  "resolved_during_parent_review": [
+    {
+      "initial_gap": "Oct9 regular close/current economic actualshares",
+      "resolution": "Nasdaq历史原页明确返回2026-10-09常规收盘，优先于不同供应商快照，不取平均"
+    }
+  ]
+}

@@ -1,5 +1,39 @@
 # Lemonade（LMND）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**中性等待。Lemonade 的客户与保费增长真实，但在正常赔付、融资成本与员工股权激励之后持续盈利，尚未得到证明。
+
+## Current Main Thesis
+
+**核心逻辑：**理赔自动化降低处理费用，宠物与车险扩大规模；价值最终取决于风险调整后的每股回报，而非软件标签。
+
+## Key Risks
+
+**主要风险：**准备金释放和新增借款使调整指标显得更好，宠物赔付通胀、更多自留风险及稀释可能吞掉增长收益。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11研究更新（追加，不替换旧历史）
+
+观点：中性等待；旧研究 [2026-10-07](deep-research/2026-10-07-deep-research-update.md)，新拟稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+
+事实：10月8日FSD Lite支持HW3三州，合格里程折扣30%，HW4为50%；仍需监督，成熟赔付经济性未公布。价格46.30→46.46美元，涨0.35%；经营模型不因此上调。最新财务继续采用Q2/H1，公司官方PDF已保存，SEC直连403，不能排除全部新申报。
+
+现值保守15.57–21.80、基准43.59–56.67、乐观82.68–103.35美元；终值2028年末、14%折现。实际6月末77.327百万股，历史H1加权76.648百万，未来90/94百万为假设。资金不能全视为保险股东超额现金；H1普通FCF-12.1，调整FCF36.2含净借款48.3。
+
+升级：剔除准备金发展仍改善、Pet调价有效、Car规模赔付受控、普通FCF/GAAP目标兑现及低稀释。下调：不利准备金、资本/偿还压力上升、Q4/2027盈利延期。
+
+证据、精确公式、币种和限制：`research-records/2026-10-11-research.json`；全文Q2-2026.txt、Q2-10Q.txt、FY2025.txt、FSD-lite-20261008.txt；数学/结构验证：`/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/LMND/validation.json`。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Lemonade（LMND）Tracker
+
 - **Ticker**：LMND
 - **Company**：Lemonade, Inc.／NYSE
 - **Sector**：保险／高波动保险科技成长；不是低波动核心替代。
@@ -168,3 +202,4 @@ Q2毛赔付分解为 **59% attritional＋3% CAT＋5% LAE－7% PPD＝60%**；去�
 [9] https://www.lemonade.com/investor/news/lemonade-brings-autonomous-car-insurance-to-tennessee — Lemonade Autonomous Car launches Tennessee, 2026-08-03
 [11] https://www.sec.gov/Archives/edgar/data/1691421/000169142126000050/lmnd-20260727.htm — Lemonade CFO transition 8-K, filed 2026-07-29
 [12] https://data.sec.gov/submissions/CIK0001691421.json — SEC Lemonade submissions, retrieved 2026-10-07
+

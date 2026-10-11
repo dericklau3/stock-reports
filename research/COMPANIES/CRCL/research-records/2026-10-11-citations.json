@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.circle.com/en/usdc",
+      "title": "USDC official circulation",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "y\nSign in\nJoin Us\n/\nUSDC\nUSDC\nThe world’s largest regulated1 stablecoin. Powering a more open economy.\n\nUSDC gives businesses a",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://www.circle.com/en/transparency",
+      "title": "Reserve composition and issuance/redemption",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "arency & stability\n\nUSDC is always redeemable 1:1 for US dollars, and EURC is always redeemable 1:1 for euros. Always.\n\nReserves composition",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://capedge.com/company/1876042/filings",
+      "title": "CRCL filing index",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "4\n\tChandhok Nikhil\t\tOct 9, 2026\t\n\n\n144\n\tNotice of proposed sale of securities\t\tOct 8, 2026\t\n\n\n4\n\tAllaire Jeremy\t\tOct 7, 2026",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url": "https://api.nasdaq.com/api/quote/CRCL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "\"date\": \"10/09/2026\",\n          \"close\": \"$84.51\",\n          \"volume\": \"13,017,430\",\n          \"open\": \"$82.14\",\n          \"high\": \"$87.60\",\n          \"low\": \"$80.4001\"\n        },\n        {\n          \"date\": \"10/08/2026\",\n          \"close\": \"$80.84\",\n          \"volume\": \"9,934,607\",\n          \"open\": \"$79.92\",",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url": "https://dericklau3.github.io/stock-reports/reports/CRCL/2026-10-06-deep-research-update",
+      "title": "2026-10-06已核验研究；本次继承财务和期后公告，不是重读SEC",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "战略可行性，但现有利润仍主要来自“平均 USDC × 储备收益率 × 扣除渠道分成后的留存”，不能提前当作高利润率软件平台。\n\nKey risk：渠道议价权、利率/流通量双重敏感性、代币预售抬高收入与现金流表象、SBC/股票支付收购稀释，以及网络价值不充分归属于 CRCL 股东。\n\n\n1. Executive View：战略进展上修，买入纪律不随股价上调\n\n我的判断：公司值得继续研究，但 $83 附近不是依靠保守基准情景就能支撑的便宜价格。\n\n三项核心判断：\n\n\n战略兑现是真进步。 Circle 于 9 月",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

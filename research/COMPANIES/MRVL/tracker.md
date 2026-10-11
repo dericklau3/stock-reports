@@ -1,5 +1,38 @@
 # Marvell Technology（MRVL）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：**中性等待。数据中心增长与10月投资者日长期目标增强了业务机会，但股价较7月明显上升，实际每股现金回报尚未达到长期目标描述的水平。
+
+## Current Main Thesis
+
+- **核心逻辑：**Marvell卖的是让AI设备之间高效搬运数据、以及为大客户定制计算的芯片；设计导入一旦进入量产可持续贡献收入，但利润由产品组合、客户议价和研发投入共同决定。
+
+## Key Risks
+
+- **主要风险：**把FY2031远期财务目标当近期确定利润，或忽略优先股、收购对价及股权激励，会同时高估增长质量和每股价值。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11 深研更新（追加，不覆盖）
+
+- 观点：中性等待；与7月建设性相比价格上涨、现金兑现门槛更高。历史 [2026-07-14](deep-research/2026-07-14-deep-research.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 核心增量：Q2收入2.7393bn、DC2.1715bn；10月6日FY28收入20bn、FY29 custom12bn+、FY31收入70–90bn为目标非事实。不得把10月6日列为未来催化。
+- 证券修正：实际普通股876.9m + Series A转股权益21.8m =898.7m经济股数；优先股无赎回、按转换与普通股同享清算，不能另扣2bn。Q2加权稀释921.2m不同。
+- 现金质量：H1简化FCF961.9m，扣技术与SBC经济压力仅366.5m；FY26净利含出售收益1830.4m。
+- 价格217.53→275.28；模型按FY29经济FCFF、成本/再投资/SBC、既有与收购稀释预算折现重算。
+- 改判：数据中心继续量产增长且扣激励后每股现金流加速、稀释稳定则增强；毛利低于Q3指引57.5%、重大项目延迟、earnout或预付加大则减弱。阈值是研究判断，不是公司承诺。
+- 缺口：投资者日Q&A音频、earnout完全合同上限及历史日频ForwardPE；不得声称已全量核验。
+- 证据与估值：research-records/2026-10-11-research.json；原件 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/investor-day.pdf，财报 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/q2-10q.txt；脚本 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/build.py；验证 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/MRVL/validation.json。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Marvell Technology（MRVL）Tracker
+
 Last updated: 2026-07-14
 
 ## Current Research View
@@ -84,3 +117,4 @@ Marvell 已经成为 AI 数据中心“定制计算 + 高速光互连 + 交换�
 - `deep-research/2026-06-10-deep-research.md`
 - `deep-research/2026-07-08-deep-research-v2.md`
 - `deep-research/2026-07-14-deep-research.md`
+

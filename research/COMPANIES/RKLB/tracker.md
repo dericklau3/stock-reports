@@ -1,5 +1,39 @@
 # Rocket Lab（RKLB）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：**从旧报告的建设性但观察，调整为中性等待估值与每股现金验证；不是认为已验证业务突然恶化，而是旧高收入倍数模型不提供可靠保护。
+
+## Current Main Thesis
+
+- **核心逻辑：**小型发射和卫星制造已有真实客户，Neutron和卫星通信收购可扩大业务边界；需要技术、交付和融资全部转化为股东现金。
+
+## Key Risks
+
+- **主要风险：**公司仍亏损且依赖股权融资，Neutron尚未形成商业经济性，Iridium交易增加杠杆、稀释与整合复杂度。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+
+## 2026-10-11 新完整研究更新块（保留历史）
+
+- 新报告：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)，承接[2026-09-14](deep-research/2026-09-14-deep-research-update.md)。观点中性等待：已有业务基础，但现价需要接近非常乐观路径；旧40–60倍收入、未明确折现不能作为公平价值。最强反方是发射/通信平台获得高于工业企业回报，尚需每股现金证明。
+- Iridium股东9月24日已经批准，旧等待投票催化失效；仍需监管和交割条件，双方预计2027年中完成。3.6B桥接承诺非已到账现金，27美元现金加换股、67.50–112.50换股区间，最终债务/利息/新股与协同必须重新调和。
+- H1收入434.414M、GAAP经营亏损113.483M、OCF -134.407M、cash capex53.112M、FCF -187.519M；TTM收入769.146M、FCF -371.139M。现金增长以ATM融资为主；H1毛融资1529.639M。
+- 普通股598.180438M+参与型优先40.951250M=639.131688M经济权益（6/30），库藏已交换common不能另加；8/5cover普通股598.350482M仅校验，不是10/9分母。Q2加权629.682M、Q3指引641M各单列。现价68.21美元，参考全经济市值43.595B，reference EV41.237B，融资租赁current未分解有小额下估。
+- Neutron公司Q2目标Q4到发射台，10-Q提示年底首飞窗口收窄；没有取得最新系统测试/首飞原件，不改写为已成功。Q3收入250–265M、GAAP毛利29–31%，正式财报日未核实。
+- 新估值是2030-12-31独立经营压力测试，不含未完成Iridium，16%/4.222年折现：保守2.06–3.53、基准11.12–20.94、牛54.78–85.51美元；收入1.5–1.8/3–4/8–10B，GAAP EBIT margin8–10/16–20/25–28%，700/740/800M股含净SBC与未来融资，净现金300/1000/2000M。不称精确整合后目标价；旧“熊市-7%”没有下行保护意义。
+- 提升判断：技术验证后可靠重复任务、订单利润和回款兑现、最终融资可控且每股FCF改善；下调看Neutron关键测试延迟、固定价项目损失、股本快于经营、Iridium杠杆与整合成本超计划。
+- 原件及复算在 `/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/RKLB/`：report.md、research-record.json、calculate.py、validation.json、q2-release/q2-10q/fy2025-10k/iridium-merger/iridium-vote各PDF和TXT、quote.txt。SEC最新全类型、quote-date精确股数、Iridiumproforma与许可状态仍有缺口，不声称均已验证。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Rocket Lab（RKLB）Tracker
+
 Last updated: 2026-09-14
 
 ## Current Research View
@@ -178,3 +212,4 @@ Downgrade toward **Neutral / Negative** if:
 - `deep-research/2026-08-20-deep-research-update.md`
 - `deep-research/2026-09-01-deep-research-update.md`
 - `deep-research/2026-09-14-deep-research-update.md`
+

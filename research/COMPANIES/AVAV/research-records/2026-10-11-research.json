@@ -1,0 +1,265 @@
+{
+  "ticker": "AVAV",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/AVAV/deep-research/2026-10-09-deep-research.md",
+  "quote": {
+    "price": 137.11,
+    "date": "2026-10-09",
+    "session": "regular close 16:00 America/New_York EDT",
+    "source": "https://stockanalysis.com/stocks/avav/history/",
+    "status": "已实取；单数据商",
+    "previous_price": 137.6,
+    "change_pct": -0.003561046511627808
+  },
+  "identity": {
+    "issuer": "AeroVironment Inc.",
+    "ticker": "AVAV",
+    "exchange": "NASDAQ",
+    "class_of_stock": "common",
+    "cik": "1368622",
+    "currency": "USD",
+    "evidence": "Q1 10-Q封面及普通股附注"
+  },
+  "financial_periods": {
+    "FY2025": {
+      "revenue": 820.627,
+      "gross": 318.636,
+      "op": 40.795,
+      "net": 43.619,
+      "ocf": -1.318,
+      "capex": 19.547,
+      "software": 3.269,
+      "fcf": -24.134
+    },
+    "FY2026": {
+      "revenue": 1976.845,
+      "gross": 500.642,
+      "op": -310.995,
+      "net": -265.122,
+      "ocf": -78.404,
+      "capex": 62.544,
+      "software": 23.674,
+      "fcf": -164.62199999999999
+    },
+    "Q1FY2027": {
+      "revenue": 480.49,
+      "gross": 124.599,
+      "op": -10.871,
+      "net": -5.066,
+      "ocf": 13.496,
+      "capex": 44.033,
+      "software": 5.417,
+      "fcf": -35.954
+    },
+    "Q1FY2026": {
+      "revenue": 454.676,
+      "gross": 95.118,
+      "op": -69.272,
+      "net": -67.37,
+      "ocf": -123.726,
+      "capex": 22.728,
+      "software": 9.34,
+      "fcf": -155.794
+    },
+    "TTM": {
+      "revenue": 2002.659,
+      "gross": 530.123,
+      "op": -252.594,
+      "net": -202.81799999999998,
+      "ocf": 58.818,
+      "capex": 83.84899999999999,
+      "software": 19.751,
+      "fcf": -44.782
+    }
+  },
+  "valuation": {
+    "formula": "((EBITDA_m * EV_EBITDA_multiple - target_net_debt_m) / forecast_shares_m) / (1.12 ** years)",
+    "actual_shares_m": 50.822963,
+    "actual_shares_date": "2026-08-01",
+    "weighted_shares_m": 49.822595,
+    "market_cap_m": 6968.336456930001,
+    "enterprise_value_m": 7135.60945693,
+    "available_cash_m": 278.39,
+    "short_investments_m": 301.837,
+    "debt_principal_m": 747.5,
+    "preferred_claims_m": 0,
+    "lease_m": 120.766,
+    "leases_treatment": "经营租金包含经营成本；主模型不加租赁债务",
+    "convertible": "本金现金结算；初始转换价322.40；到期2030-07-15，情景价格低于转换价，保留债务",
+    "SBC": "FY2027约40M加回；未来股数52–53M承接旧稀释假设，不另重复扣同一SBC，较保守倍数体现调整利润现金质量",
+    "discount_years": 1.5523613963039014,
+    "discount_rate": 0.12,
+    "target_date": "2028-04-30",
+    "dividends": 0,
+    "scenarios": {
+      "bear": {
+        "ebitda_m": [
+          280,
+          320
+        ],
+        "multiple": [
+          16,
+          18
+        ],
+        "net_debt_m": 350,
+        "shares_m": 53,
+        "future_price": [
+          77.9245283018868,
+          102.0754716981132
+        ],
+        "present_value": [
+          65.35367644400618,
+          85.60856890122844
+        ],
+        "relative": [
+          -0.523348578192647,
+          -0.3756212610223293
+        ]
+      },
+      "base": {
+        "ebitda_m": [
+          370,
+          420
+        ],
+        "multiple": [
+          20,
+          23
+        ],
+        "net_debt_m": 250,
+        "shares_m": 52,
+        "future_price": [
+          137.5,
+          180.96153846153845
+        ],
+        "present_value": [
+          115.31838186094312,
+          151.76866759601046
+        ],
+        "relative": [
+          -0.15893529384477345,
+          0.10691173215673877
+        ]
+      },
+      "bull": {
+        "ebitda_m": [
+          470,
+          530
+        ],
+        "multiple": [
+          26,
+          28
+        ],
+        "net_debt_m": 100,
+        "shares_m": 53,
+        "future_price": [
+          228.67924528301887,
+          278.1132075471698
+        ],
+        "present_value": [
+          191.78851295432324,
+          233.24774595270003
+        ],
+        "relative": [
+          0.3987930344564454,
+          0.7011723867894393
+        ]
+      }
+    },
+    "base_assumptions": "FY2028收入2400–2550M、EBITDA370–420M；资本支出回落、SCDE扭亏；研究假设非指引",
+    "historical_forward_PE": "日频历史未取得；旧报告季度样本不视为全年极值"
+  },
+  "sources": [
+    {
+      "title": "q1-10q",
+      "url": "https://files.quartr.com/reports/a8dd16759367a5be1ee8c58f72987552-2026-09-10-10-02-18.pdf?ref=U0E=",
+      "disclosure_date": "2026-09-10",
+      "read_status": "全文提取；决定性表格与附注复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-10q.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-10q.txt"
+    },
+    {
+      "title": "q1-release",
+      "url": "https://files.quartr.com/reports/fa08b9cba2bc71fd76252c5631e551a7-2026-09-09-20-07-09.pdf?ref=U0E=",
+      "disclosure_date": "2026-09-09",
+      "read_status": "全文提取；决定性表格与附注复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-release.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-release.txt"
+    },
+    {
+      "title": "fy2026-release",
+      "url": "https://files.quartr.com/reports/6389d767e1d6f69927c029bf36d71abf-2026-06-29-20-09-36.pdf?ref=U0E=",
+      "disclosure_date": "2026-06-29",
+      "read_status": "全文提取；决定性表格与附注复读",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/fy2026-release.pdf",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/fy2026-release.txt"
+    },
+    {
+      "title": "StockAnalysis历史行情",
+      "url": "https://stockanalysis.com/stocks/avav/history/",
+      "disclosure_date": "2026-10-09",
+      "read_status": "已读2026-10-09常规与盘后分栏",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/quote.txt"
+    },
+    {
+      "title": "StockAnalysis发行人财报目录",
+      "url": "https://stockanalysis.com/stocks/avav/filings/",
+      "disclosure_date": null,
+      "read_status": "已读最新目录；不是完整SEC全类型申报检查",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/filings.txt"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "收入480.490M，GAAP亏损5.066M，集团调整EBITDA53.4M",
+      "locator": "q1-release第1–2、5页",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-release.txt"
+    },
+    {
+      "fact": "ESAero41.8M，Switchblade因延迟下降56.9M",
+      "locator": "q1-10q MD&A Revenue",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-10q.txt"
+    },
+    {
+      "fact": "现金278.390M、短投301.837M、股数50,822,963",
+      "locator": "q1-10q第3页",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/q1-10q.txt"
+    },
+    {
+      "fact": "FY2026经营亏损包含240.708M商誉减值；OCF-78.404M",
+      "locator": "fy2026-release第5、7页",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/fy2026-release.txt"
+    },
+    {
+      "fact": "2026-10-09 regular close137.11，不使用盘后137.08",
+      "locator": "quote.txt At close与History首行",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AVAV/quote.txt"
+    }
+  ],
+  "gaps": [
+    "SEC submissions与IR直接下载403；用公司材料Quartr副本取得全文；不能断言没有任何新8-K",
+    "未找到上次原件存档，复用旧研究口径，补取3份决定性原件；非重跑全部研究",
+    "精确报价日实际股数及最新独立报价交叉核验未取得",
+    "日频历史Forward P/E未核实；并非用当前EPS回填",
+    "LOCUST单套经济性、逐年拨款及下次正式财报日期未取得；经营承诺承接旧记录"
+  ],
+  "changes_from_previous": [
+    "股价137.60→137.11；未发现决定性新财报变化，不能断言全部新申报为空",
+    "旧FY2028未来价值明确折现到研究日；熊65.35–85.61、基准115.32–151.77、牛191.79–233.25",
+    "恢复完整GAAP经营亏损，FCF保留资本化软件投入，按精简中文模板完整重写"
+  ],
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "SEC submissions与IR直接下载403；用公司材料Quartr副本取得全文；不能断言没有任何新8-K",
+      "未找到上次原件存档，复用旧研究口径，补取3份决定性原件；非重跑全部研究",
+      "精确报价日实际股数及最新独立报价交叉核验未取得",
+      "日频历史Forward P/E未核实；并非用当前EPS回填",
+      "LOCUST单套经济性、逐年拨款及下次正式财报日期未取得；经营承诺承接旧记录"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "ticker": "AMZN",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/AMZN/deep-research/2026-05-20-deep-research.md",
+  "quote": {
+    "price": 262.43,
+    "date": "2026-10-09",
+    "session": "regular close",
+    "currency": "USD",
+    "source": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "parent_verified_exchange_history",
+    "alternative_full_text": "quote-exa.txt 262.48; differs $0.05; not silently merged"
+  },
+  "identity": {
+    "issuer": "Amazon.com Inc.",
+    "CIK": "0001018724",
+    "exchange": "NASDAQ",
+    "security": "common, not ADR",
+    "actual_shares_m": 10783,
+    "actual_date": "2026-06-30",
+    "weighted_diluted_Q2_m": 10903,
+    "common_plus_awards_m": 11027,
+    "preferred_stock_outstanding": 0
+  },
+  "financial_periods": {
+    "FY2024": {
+      "revenue": 637959,
+      "cost_of_sales": 326288,
+      "operating_income": 68593,
+      "net_income": 59248,
+      "OCF": 115877,
+      "gross_cash_capex": 82999,
+      "PPE_sales_incentives": 5341,
+      "gross_profit": 311671,
+      "FCF_gross": 32878,
+      "FCF_company": 38219
+    },
+    "FY2025": {
+      "revenue": 716924,
+      "cost_of_sales": 356414,
+      "operating_income": 79975,
+      "net_income": 77670,
+      "OCF": 139514,
+      "gross_cash_capex": 131819,
+      "PPE_sales_incentives": 3499,
+      "gross_profit": 360510,
+      "FCF_gross": 7695,
+      "FCF_company": 11194
+    },
+    "H1_2026": {
+      "revenue": 382125,
+      "cost_of_sales": 183241,
+      "operating_income": 51313,
+      "net_income": 92902,
+      "OCF": 71419,
+      "gross_cash_capex": 98411,
+      "PPE_sales_incentives": 2101,
+      "gross_profit": 198884,
+      "FCF_gross": -26992,
+      "FCF_company": -24891
+    },
+    "H1_2025": {
+      "revenue": 323369,
+      "cost_of_sales": 157785,
+      "operating_income": 37576,
+      "net_income": 35291,
+      "OCF": 49530,
+      "gross_cash_capex": 57202,
+      "PPE_sales_incentives": 1579,
+      "gross_profit": 165584,
+      "FCF_gross": -7672,
+      "FCF_company": -6093
+    },
+    "TTM_2026-06-30": {
+      "revenue": 775680,
+      "cost_of_sales": 381870,
+      "operating_income": 93712,
+      "net_income": 135281,
+      "OCF": 161403,
+      "gross_cash_capex": 173028,
+      "PPE_sales_incentives": 4021,
+      "gross_profit": 393810,
+      "FCF_gross": -11625,
+      "FCF_company": -7604
+    }
+  },
+  "valuation": {
+    "method": "normalized equity earnings with explicit EBIT, net interest, tax and diluted shares; capex-sensitive multiples",
+    "formula": "PV = ((revenue*operating_margin - net_interest)*(1-tax) / diluted_shares * PE) / (1.10**years)",
+    "target": "2028-12-31",
+    "discount_years": 2.223134839151266,
+    "discount_rate": 0.1,
+    "scenarios": [
+      {
+        "scenario": "bear",
+        "endpoints": [
+          {
+            "revenue": 850000,
+            "operating_margin_including_SBC_and_depreciation": 0.1,
+            "EBIT": 85000.0,
+            "net_interest_cost": 6000,
+            "tax_rate": 0.25,
+            "normalized_net_income": 59250.0,
+            "forecast_diluted_shares_m": 11400,
+            "normalized_EPS": 5.197368421052632,
+            "PE": 20,
+            "future_price": 103.94736842105263,
+            "PV": 84.09922207364556,
+            "vs_quote": -0.6795365542291447,
+            "FCF_conversion_assumption": 0.45,
+            "FCF_after_cash_capex_and_lease_principal": 26662.5
+          },
+          {
+            "revenue": 900000,
+            "operating_margin_including_SBC_and_depreciation": 0.115,
+            "EBIT": 103500.0,
+            "net_interest_cost": 5500,
+            "tax_rate": 0.24,
+            "normalized_net_income": 74480.0,
+            "forecast_diluted_shares_m": 11300,
+            "normalized_EPS": 6.591150442477876,
+            "PE": 23,
+            "future_price": 151.59646017699114,
+            "PV": 122.64999647091825,
+            "vs_quote": -0.5326372881495323,
+            "FCF_conversion_assumption": 0.55,
+            "FCF_after_cash_capex_and_lease_principal": 40964.0
+          }
+        ]
+      },
+      {
+        "scenario": "base",
+        "endpoints": [
+          {
+            "revenue": 1000000,
+            "operating_margin_including_SBC_and_depreciation": 0.135,
+            "EBIT": 135000.0,
+            "net_interest_cost": 5000,
+            "tax_rate": 0.24,
+            "normalized_net_income": 98800.0,
+            "forecast_diluted_shares_m": 11200,
+            "normalized_EPS": 8.821428571428571,
+            "PE": 26,
+            "future_price": 229.35714285714286,
+            "PV": 185.56272837218958,
+            "vs_quote": -0.29290580965518587,
+            "FCF_conversion_assumption": 0.7,
+            "FCF_after_cash_capex_and_lease_principal": 69160.0
+          },
+          {
+            "revenue": 1080000,
+            "operating_margin_including_SBC_and_depreciation": 0.15,
+            "EBIT": 162000.0,
+            "net_interest_cost": 4500,
+            "tax_rate": 0.23,
+            "normalized_net_income": 121275.0,
+            "forecast_diluted_shares_m": 11100,
+            "normalized_EPS": 10.925675675675675,
+            "PE": 29,
+            "future_price": 316.8445945945946,
+            "PV": 256.34495926544565,
+            "vs_quote": -0.02318729083776383,
+            "FCF_conversion_assumption": 0.8,
+            "FCF_after_cash_capex_and_lease_principal": 97020.0
+          }
+        ]
+      },
+      {
+        "scenario": "bull",
+        "endpoints": [
+          {
+            "revenue": 1150000,
+            "operating_margin_including_SBC_and_depreciation": 0.17,
+            "EBIT": 195500.0,
+            "net_interest_cost": 4000,
+            "tax_rate": 0.23,
+            "normalized_net_income": 147455.0,
+            "forecast_diluted_shares_m": 11050,
+            "normalized_EPS": 13.344343891402715,
+            "PE": 30,
+            "future_price": 400.33031674208144,
+            "PV": 323.8895675947333,
+            "vs_quote": 0.23419413784526655,
+            "FCF_conversion_assumption": 0.9,
+            "FCF_after_cash_capex_and_lease_principal": 132709.5
+          },
+          {
+            "revenue": 1250000,
+            "operating_margin_including_SBC_and_depreciation": 0.18,
+            "EBIT": 225000.0,
+            "net_interest_cost": 3500,
+            "tax_rate": 0.22,
+            "normalized_net_income": 172770.0,
+            "forecast_diluted_shares_m": 11000,
+            "normalized_EPS": 15.706363636363637,
+            "PE": 33,
+            "future_price": 518.3100000000001,
+            "PV": 419.3417154768777,
+            "vs_quote": 0.5979183609986576,
+            "FCF_conversion_assumption": 1.0,
+            "FCF_after_cash_capex_and_lease_principal": 172770.0
+          }
+        ]
+      }
+    ],
+    "cash_and_marketable_securities_m": 122988,
+    "restricted_cash_proxy_m": 2714,
+    "noncurrent_debt_m": 128894,
+    "noncurrent_lease_liabilities_m": 94338,
+    "annual_2025_capital_notes": {
+      "lease_PV_operating_m": 89252,
+      "lease_PV_finance_m": 12286,
+      "lease_current_m": 14199,
+      "lease_not_commenced_undiscounted_m": 96373,
+      "unconditional_purchase_obligations_m": 84772,
+      "debt_carrying_including_current_m": 68396,
+      "other_short_term_borrowings_m": 455,
+      "note": "historical 2025 only; not substituted as current 2026"
+    },
+    "current_debt_and_lease_totals": "missing current 10-Q notes, no exact EV or net-debt statement",
+    "no_double_claims": "equity net earnings include interest/rent/SBC; do not add cash or subtract debt a second time; no separately appraised Anthropic value",
+    "SBC_H1_m": 10070,
+    "SBC_TTM_m": 19314,
+    "share_handling": "actual vs historical diluted vs forecast 11000-11400 separated; gross awards not added to weighted diluted again",
+    "FCF_rule": "OCF - gross cash PPE; company FCF also adds sales and incentives; principal finance leases additional outflow not inside simple FCF",
+    "finance_lease_principal_TTM_m": 1599,
+    "financing_obligations_principal_TTM_m": 308,
+    "market_cap_proxy_m": 2829782.69,
+    "historical_PE_raw": 20.917813218412046,
+    "current_forward_PE": "unavailable synchronized core EPS forecast; raw Anthropic-inflated PE not valuation anchor",
+    "forward_PE_1y_high_low": "unavailable historical forecast series"
+  },
+  "sources": [
+    {
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/q2-financials.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "q2-financials",
+      "disclosure_date": "2026-07-30"
+    },
+    {
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/annual-2025.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "annual-2025",
+      "disclosure_date": "2026-02-05"
+    },
+    {
+      "url": "https://exa.ai/library/markets/stock/AMZN?date=2026-10-09",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/quote-exa.txt",
+      "status": "downloaded_full_text",
+      "read_status": "read_decisive_sections",
+      "title": "quote-exa",
+      "disclosure_date": null
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/q2/AMZN-Q2-2026-10-Q.pdf",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-raised-2026-capex-guide-114017457.html",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 429: Too Many Requests",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "read_status": "parent read exact historical row",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/parent-nasdaq-quote.json"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "AWS 42232m revenue, 16621m operating profit, 37% growth",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/q2-financials.txt",
+      "locator": "PAGE 1, 9, 12"
+    },
+    {
+      "fact": "TTM cash PPE173028, OCF161403, company FCF -7604; raw FCF -11625",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/q2-financials.txt",
+      "locator": "PAGE6,11"
+    },
+    {
+      "fact": "Q2 net income62647 contains pre-tax other income53400 primarily Anthropic; H1 92902 cannot annualize",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/q2-financials.txt",
+      "locator": "PAGE1,7"
+    },
+    {
+      "fact": "Debt noncurrent128894 vs65648 at prior FY-end; restricted cash differs from balance cash",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/q2-financials.txt",
+      "locator": "PAGE6,10"
+    },
+    {
+      "fact": "Leo nearly400 satellites enough to begin initial service this year, not proof service profitable; Q3 sales guidance197-202bn adjusted for PrimeDay shift",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AMZN/q2-financials.txt",
+      "locator": "PAGE4"
+    }
+  ],
+  "gaps": [
+    "最新10-Q完整注释和Q&A受阻，无法给最新完整租赁/债务到期和精确EV",
+    "2026capex上修2200亿美元只取得二级检索摘要，未读取官方问答；正文标明待原件确认而非无变化",
+    "SEC最新申报索引不完整，未穷尽期后8-K及2026年10月卫星服务状态",
+    "当前及历史Forward PE不可比数据未取得"
+  ],
+  "changes_from_previous": {
+    "facts": [
+      "AWS增长28%→37%，广告24%→26%",
+      "TTM公司FCF+1232m→-7604m，融资负债明显增加",
+      "FY2025净利润原件77670m，修正旧稿约76500m；Q1以最新比较列23852m/30255m代旧23849/30241",
+      "Kuiper现名Amazon Leo；初始服务可行性已有卫星进度，盈利未验证"
+    ],
+    "price": {
+      "old": 259.34,
+      "new": 262.43,
+      "change": 0.011914860800493754
+    },
+    "model": [
+      "剔除Anthropic投资收益，显式EBIT/利息/税/SBC/股数",
+      "由旧2027未折现P/E价格改2028情景10%折现、现金转化检查"
+    ]
+  },
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "最新10-Q完整注释和Q&A受阻，无法给最新完整租赁/债务到期和精确EV",
+      "2026capex上修2200亿美元只取得二级检索摘要，未读取官方问答；正文标明待原件确认而非无变化",
+      "SEC最新申报索引不完整，未穷尽期后8-K及2026年10月卫星服务状态",
+      "当前及历史Forward PE不可比数据未取得"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  },
+  "resolved_during_parent_review": [
+    {
+      "initial_gap": "报价262.43仅搜索快照，Exa清理原件262.48存在0.05美元冲突；交易所收盘未核验",
+      "resolution": "Nasdaq历史原页明确返回2026-10-09常规收盘，优先于不同供应商快照，不取平均"
+    }
+  ]
+}

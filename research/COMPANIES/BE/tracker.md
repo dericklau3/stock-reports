@@ -1,5 +1,40 @@
 # BE Research Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：**中性、等待每股现金回报进一步验证。Q2强化了经营增长证据，但股价仍要求非常乐观的中期盈利路径，关键客户披露存在未调和冲突。
+
+## Current Main Thesis
+
+- **核心逻辑：**现场发电帮助数据中心缩短等待供电的时间，设备销售已放量并形成GAAP经营利润；价值最终取决于维护成本、项目融资和交付回款。
+
+## Key Risks
+
+- **主要风险：**高估值、客户与融资渠道集中、客户股权激励，以及项目许可和燃料基础设施限制可能同时压低每股回报。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+
+## 2026-10-11 新完整研究更新块（保留历史）
+
+- 新报告：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)；承接[2026-07-16](deep-research/2026-07-16-deep-research.md)。观点中性等待：增长证据增强，股票仍要求极乐观兑现；最强反方是销售增长未必转成稳态每股现金。
+- Q2收入1065.365M、GAAP经营利润182.237M；全年收入3900–4200M、non-GAAP经营利润800–900M、EPS2.55–2.85。旧Q2财报催化已发生，不继续当未来日程。
+- H1 OCF300.042M，现金capex77.823M，FCF222.219M；客户预收增加301.232M及SBC100.432M说明现金质量不能仅靠总额。
+- 股价239.38→280.50美元（2026-10-09 regular close）；实际股数用7月22日294.527346M，Q2加权稀释323.331M单列。参考总市值82.615B，不声称quote-date精确股数已调和。
+- Oracle权证已在5月1日净行权1.905433M股并获.248798M诱导股；不再重复加入3.531073M潜在股。客户对价资产306.5M将随交付减收入，不是可用现金。
+- 原件实质冲突：Note1集中度Q2 44%/21%、H1单客户73%，Note11 Q2related仅2.818M；H1单客户在Q2max44%与Q1全部收入下上限67.155%，73%不能成立。251.6+72.3与总324.4M差0.5M；季度与半年权证冲减也未调和。必须保留限制，不输出“所有原始数一致”。
+- 新估值为2028-12-31 GAAP EBIT/企业价值情景，14%和2.223年折现，熊27.96–40.11、基准88.99–132.10、牛202.76–288.72美元。基准收入6.5–7.5B、GAAP利润率20–22%仍偏进取；租金在成本，融资义务/少数权益独立处理。牛情景移除2.5B可转债同时加入12.8225M股，未来340M股含额外SBC；熊/基准保留本金不加全转换股。
+- 下一验证：Q3正式日期未核实；Jupiter许可与管线、客户注释调和、对价摊销、维护保修、可转债结算。上调需客户披露一致、稳定回款、不依赖预收的FCF和每股改善；下调看指引下调、付款/许可延迟、成本压力、股数超模型。
+- 全原件、来源日期、事实与假设、冲突及复算：`research-records/2026-10-11-research.json`、`calculate.py`、`validation.json`；原件同目录q2-release.pdf/.txt、q2-10q.pdf/.txt、fy2025-10k.pdf/.txt、oracle-jupiter.txt、brookfield-framework.txt、quote.txt。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# BE Research Tracker
+
 - **Ticker**: BE
 - **Company**: Bloom Energy Corporation
 - **Exchange**: NYSE
@@ -84,3 +119,4 @@ Bloom Energy is a highly leveraged beneficiary of AI data-center power scarcity.
 - Any SEC or auditor/accounting issue related to revenue recognition.
 - New short-seller report or company rebuttal on supply chain.
 - Major change in share count, convertibles, warrants or capital raise.
+

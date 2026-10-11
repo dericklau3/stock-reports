@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf",
+      "title": "annual-2025",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "he next inflection. Historically, we’ve successfully done so in areas like Retail,\nLogistics, A WS, Ads, Kindle, Alexa, and Pharmacy . There",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf",
+      "title": "q2-financials",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "billion annualized revenue run rate\nSEATTLE—(BUSINESS WIRE) July 30, 2026—Amazon.com, Inc. (NASDAQ: AMZN) today announced financial results for \nits second quarter ended",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://api.nasdaq.com/api/quote/AMZN/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "\"date\": \"10/09/2026\",\n          \"close\": \"$262.43\",\n          \"volume\": \"34,770,000\",\n          \"open\": \"$256.50\",\n          \"high\": \"$262.80\",\n          \"low\": \"$256.00\"\n        },\n        {\n          \"date\": \"10/08/2026\",\n          \"close\": \"$254.06\",\n          \"volume\": \"38,649,940\",\n          \"open\": \"$259.74\",",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

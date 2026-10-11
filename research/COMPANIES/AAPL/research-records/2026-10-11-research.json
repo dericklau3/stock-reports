@@ -1,0 +1,354 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2026-10-11",
+  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/AAPL/deep-research/2026-05-20-deep-research.md",
+  "quote": {
+    "price": 336.64,
+    "currency": "USD",
+    "date": "2026-10-09",
+    "session": "regular close",
+    "source": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "parent_verified_exchange_history",
+    "alternative": {
+      "source": "quote-exa.txt",
+      "price": 336.63
+    },
+    "conflict": "0.01 USD; retain majority 336.64, approximate quote, do not imply primary verified"
+  },
+  "identity": {
+    "issuer": "Apple Inc.",
+    "CIK": "0000320193",
+    "exchange": "NASDAQ",
+    "class": "common stock; no ADR",
+    "actual_shares_m": 14594.18,
+    "actual_shares_date": "2026-07-17",
+    "quarter_weighted_diluted_shares_m": 14714.676,
+    "unvested_RSU_m": 143.962,
+    "preferred_or_convertible": "no material instrument identified in retrieved 10-Q; not assumption of comprehensive absence"
+  },
+  "financial_periods": {
+    "FY2024": {
+      "revenue": 391035,
+      "gross_profit": 180683,
+      "operating_income": 123216,
+      "net_income": 93736,
+      "OCF": 118254,
+      "cash_capex": 9447,
+      "FCF": 108807
+    },
+    "FY2025": {
+      "revenue": 416161,
+      "gross_profit": 195201,
+      "operating_income": 133050,
+      "net_income": 112010,
+      "OCF": 111482,
+      "cash_capex": 12715,
+      "FCF": 98767
+    },
+    "9M_FY2026": {
+      "revenue": 364357,
+      "gross_profit": 178782,
+      "operating_income": 122432,
+      "net_income": 101464,
+      "OCF": 116996,
+      "cash_capex": 6799,
+      "FCF": 110197
+    },
+    "9M_FY2025": {
+      "revenue": 313695,
+      "gross_profit": 146860,
+      "operating_income": 100623,
+      "net_income": 84544,
+      "OCF": 81754,
+      "cash_capex": 9473,
+      "FCF": 72281
+    },
+    "TTM_2026-06-27": {
+      "revenue": 466823,
+      "gross_profit": 227123,
+      "operating_income": 154859,
+      "net_income": 128930,
+      "OCF": 146724,
+      "cash_capex": 10041,
+      "FCF": 136683
+    }
+  },
+  "valuation": {
+    "method": "GAAP normalized net income / forecast diluted shares * PE, equity terminal scenarios",
+    "unit": "USD millions except per share",
+    "target_date": "2027-09-25",
+    "discount_rate": 0.1,
+    "discount_years": 0.9555099247091033,
+    "formula": "PV = revenue * GAAP_net_margin / forecast_diluted_shares_m * PE / (1.10 ** years); cash/debt not added/subtracted again in equity earnings method",
+    "actual_shares_m": 14594.18,
+    "cash_and_marketable_securities_m": 146517,
+    "borrowings_m": 84344,
+    "net_cash_m": 62173,
+    "SBC_9m_m": 10523,
+    "SBC_handling": "GAAP profit includes SBC; predicted net shares reflect buybacks net of grants, no second SBC deduction; downside assumes diluted share increase",
+    "lease_handling": "rent expenses embedded in GAAP income; 10-Q does not separately refresh lease total, no EV claim; future obligation total needs annual lease note",
+    "restricted_cash": "CF closing cash matches balance cash; securities not all deployable operating excess; do not add entire balance to PE model",
+    "scenarios": [
+      {
+        "scenario": "bear",
+        "endpoints": [
+          {
+            "revenue": 470000,
+            "GAAP_net_margin": 0.235,
+            "net_income": 110450.0,
+            "forecast_diluted_shares_m": 14700,
+            "EPS": 7.51360544217687,
+            "PE": 22,
+            "future_price": 165.29931972789115,
+            "present_value": 150.91066914856435,
+            "vs_quote": -0.5517149799531715
+          },
+          {
+            "revenue": 495000,
+            "GAAP_net_margin": 0.25,
+            "net_income": 123750.0,
+            "forecast_diluted_shares_m": 14500,
+            "EPS": 8.53448275862069,
+            "PE": 25,
+            "future_price": 213.36206896551727,
+            "present_value": 194.78974657313992,
+            "vs_quote": -0.4213707623183819
+          }
+        ]
+      },
+      {
+        "scenario": "base",
+        "endpoints": [
+          {
+            "revenue": 515000,
+            "GAAP_net_margin": 0.265,
+            "net_income": 136475.0,
+            "forecast_diluted_shares_m": 14400,
+            "EPS": 9.477430555555555,
+            "PE": 27,
+            "future_price": 255.890625,
+            "present_value": 233.61636037682084,
+            "vs_quote": -0.30603505116201035
+          },
+          {
+            "revenue": 545000,
+            "GAAP_net_margin": 0.28,
+            "net_income": 152600.0,
+            "forecast_diluted_shares_m": 14200,
+            "EPS": 10.746478873239436,
+            "PE": 30,
+            "future_price": 322.3943661971831,
+            "present_value": 294.3312145061112,
+            "vs_quote": -0.1256796147038045
+          }
+        ]
+      },
+      {
+        "scenario": "bull",
+        "endpoints": [
+          {
+            "revenue": 565000,
+            "GAAP_net_margin": 0.285,
+            "net_income": 161025.0,
+            "forecast_diluted_shares_m": 14100,
+            "EPS": 11.420212765957446,
+            "PE": 31,
+            "future_price": 354.02659574468083,
+            "present_value": 323.2099838533296,
+            "vs_quote": -0.03989429701363589
+          },
+          {
+            "revenue": 600000,
+            "GAAP_net_margin": 0.3,
+            "net_income": 180000.0,
+            "forecast_diluted_shares_m": 13900,
+            "EPS": 12.949640287769784,
+            "PE": 34,
+            "future_price": 440.28776978417267,
+            "present_value": 401.9624646092682,
+            "vs_quote": 0.1940424923041475
+          }
+        ]
+      }
+    ],
+    "market_cap_proxy_m": 4912984.7552,
+    "TTM_PE_proxy": 38.10583072364849,
+    "forward_PE_current": "no synchronized consensus snapshot; research base EPS not consensus",
+    "forward_PE_1y_high_low": "unavailable; do not divide historical price by current EPS",
+    "reverse_base_PE": 38.90686416541668
+  },
+  "sources": [
+    {
+      "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/q3-release.txt",
+      "status": "downloaded_full_text",
+      "characters": 5499,
+      "read_status": "read_decisive_sections",
+      "title": "q3-release",
+      "disclosure_date": "2026-07-30"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/q3-financials.txt",
+      "status": "downloaded_full_text",
+      "characters": 6256,
+      "read_status": "read_decisive_sections",
+      "title": "q3-financials",
+      "disclosure_date": "2026-07-30"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/fy2025-financials.txt",
+      "status": "downloaded_full_text",
+      "characters": 8917,
+      "read_status": "read_decisive_sections",
+      "title": "fy2025-financials",
+      "disclosure_date": "2025-10-30"
+    },
+    {
+      "url": "https://stockanalysis.com/stocks/aapl/history/",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://s2.q4cdn.com/470004039/files/doc_earnings/2026/q3/filing/10Q-Q3-2026-as-filed.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/q3-10q.txt",
+      "status": "downloaded_full_text",
+      "characters": 92427,
+      "read_status": "read_decisive_sections",
+      "title": "q3-10q",
+      "disclosure_date": "2026-07-31"
+    },
+    {
+      "url": "https://chartexchange.com/symbol/nasdaq-aapl/historical/",
+      "file": null,
+      "status": "failed",
+      "error": "<urlopen error timed out>",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/siri-progress.txt",
+      "status": "downloaded_full_text",
+      "characters": 30289,
+      "read_status": "read_decisive_sections",
+      "title": "siri-progress",
+      "disclosure_date": "2026-09-14"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/ceo-transition.txt",
+      "status": "downloaded_full_text",
+      "characters": 21179,
+      "read_status": "read_decisive_sections",
+      "title": "ceo-transition",
+      "disclosure_date": "2026-04-20"
+    },
+    {
+      "url": "https://exa.ai/library/markets/stock/AAPL?date=2026-10-09",
+      "file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/quote-exa.txt",
+      "status": "downloaded_full_text",
+      "characters": 1557,
+      "read_status": "read_decisive_sections",
+      "title": "quote-exa",
+      "disclosure_date": null
+    },
+    {
+      "url": "https://finance.yahoo.com/quote/AAPL/history/",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 429: Too Many Requests",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://investor.apple.com/investor-relations/stock-price/default.aspx",
+      "file": null,
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "read_status": "not_read",
+      "title": null,
+      "disclosure_date": null
+    },
+    {
+      "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "read_status": "parent read exact historical row",
+      "download_file": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/parent-nasdaq-quote.json"
+    }
+  ],
+  "critical_evidence": [
+    {
+      "fact": "Q3收入109417、净利29789；退税影响EPS 0.11，毛利率约2百分点",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/q3-release.txt",
+      "locator": "opening; q3-financials PAGE 1"
+    },
+    {
+      "fact": "Siri AI英文beta开始推送，并非全面正式商业收入",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/siri-progress.txt",
+      "locator": "Making Apple Products More Personal"
+    },
+    {
+      "fact": "John Ternus 2026-09-01接任，旧报告继续以Cook为CEO不再适用",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/ceo-transition.txt",
+      "locator": "opening"
+    },
+    {
+      "fact": "现金证券146517、借款84344、实际股数14594.180m、RSU 143.962m",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/q3-10q.txt",
+      "locator": "cover; Notes 3/4/6/8"
+    },
+    {
+      "fact": "组件供给和成本压力；Epic上诉新进度，诉讼未全部解决",
+      "full_text": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/AAPL/q3-10q.txt",
+      "locator": "Part II Items 1 and 1A"
+    }
+  ],
+  "gaps": [
+    "SEC submissions被403，无法全面证明没有期后8-K；已核验季度PDF原件",
+    "最新租赁完整注释与电话会问答未取得，不提供精确EV或指引超预期判断",
+    "FY2026 Q4未披露，不能用全年2026实际值；Forward PE历史日频和当前共识未核实"
+  ],
+  "changes_from_previous": {
+    "facts": [
+      "新增Q3：收入16.4%增长持续；EPS29%含关税退税",
+      "Siri从未落地担忧转为英文beta已推送，但付费/换机效果未知",
+      "CEO交接已发生，属于旧报告遗漏而非10月突发新闻"
+    ],
+    "price": {
+      "old": 298.97,
+      "new": 336.64,
+      "change": 0.12599926414021456
+    },
+    "model": [
+      "撤销旧未折现FY2027价作为当前价值",
+      "基于收入、GAAP正常化利润率和未来稀释股数复算，明确SBC成本和资本回报假设"
+    ]
+  },
+  "parent_review": {
+    "model_endpoints_recomputed": 6,
+    "financial_table_fcf_columns_checked": 4,
+    "decisive_primary_sections_read": true,
+    "primary_section_review_scope": "决定性会计、资本和经营原件定位；CRCL季度数继承已核验旧报告，最新透明度原页与报价重新核验",
+    "limitations": [
+      "SEC submissions被403，无法全面证明没有期后8-K；已核验季度PDF原件",
+      "最新租赁完整注释与电话会问答未取得，不提供精确EV或指引超预期判断",
+      "FY2026 Q4未披露，不能用全年2026实际值；Forward PE历史日频和当前共识未核实"
+    ],
+    "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
+    "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification"
+  },
+  "resolved_during_parent_review": [
+    {
+      "initial_gap": "交易所直接2026-10-09收盘未取得；336.64仅多市场搜索快照，Exa原件336.63存在1美分差异",
+      "resolution": "Nasdaq历史原页明确返回2026-10-09常规收盘，优先于不同供应商快照，不取平均"
+    }
+  ]
+}

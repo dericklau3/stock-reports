@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "title": "q2-10q",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "dated Statements of Cash Flows for the six months ended July 26, 2026 and \nJuly 27, 2025\n8\n \nf) Notes to Condensed",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "title": "q2-release-news",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Quarter Fiscal 2027 Revenue of $96.2 billion, up 106% from a year ago Data Center revenue of $89.0 billion, up 117% from",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf",
+      "title": "q2-transcript",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "quarter with record revenue, operating income, and EPS. \nTotal revenue of $96 billion, more than doubled year-over-year as growth accelerated for the",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "title": "fy26-release-news",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "26 Record quarterly revenue of $68.1 billion, up 20% from Q3 and up 73% from a year ago Record quarterly Data Center",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://stockanalysis.com/stocks/nvda/history",
+      "title": "quote-history",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "(-0.52%) At close: Oct 9, 2026, 4:00 PM EDT 229.32 +0.04 (0.02%) After-hours: Oct 9, 2026, 7:59 PM EDT NVIDIA Stock Price",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://stockanalysis.com/stocks/nvda/statistics",
+      "title": "statistics",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "(-0.52%) At close: Oct 9, 2026, 4:00 PM EDT 229.32 +0.04 (0.02%) After-hours: Oct 9, 2026, 7:59 PM EDT NVIDIA Statistics Total",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

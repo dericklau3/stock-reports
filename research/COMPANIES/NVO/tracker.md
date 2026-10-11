@@ -1,5 +1,39 @@
 # NVO / Novo Nordisk A/S Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**建设性但需验证。成熟慢病治疗平台仍有盈利基础，不过38美元附近并未明显低于整个基准现值区间，盈利底尚未确认。
+
+## Current Main Thesis
+
+**核心逻辑：**口服产品让更多患者开始治疗，但净价、渠道、持续治疗和制造资本投入共同决定利润；不能只凭总处方增长判断复苏。
+
+## Key Risks
+
+**主要风险：**美国支付和竞争重置压低单位收益，新产品接替迟于旧利润侵蚀，2027价格及返利结算又拖累现金。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+## 2026-10-11研究更新（追加）
+
+观点：建设性但需验证；[旧报告](deep-research/2026-10-05-deep-research-update.md)保留，[新报告](deep-research/2026-10-11-deep-research-update.md)。
+
+价格37.32→38.64美元；没有本轮取得的新重大经营事实。证券比例从年报114页再次核验：ADR=B股1:1，公司总经济权益包括A/B，使用9/25扣库藏44.1558亿股，最新10月库藏未核实。FX从6.50假设替换为10/9参考6.6706 DKK/USD。
+
+重要方法修正：2026现金分类把收息迁至投资、付息迁至融资；FY25统一新分类OCF=119.102-1.398+3.419=121.123B，FCF=60.983B，解释CMD约61B与原年报OCF-capex58.962B差异。FY24同口径FCF72.532B，H1 55.297B；新FCF不扣全部许可/收购/融资支出。
+
+2028终值按实际2.223年、10%折现；保守18.46–26.70、基准32.99–43.26、乐观54.63–70.14美元。改变来自FX及期限，不伪称新财报恶化。升级要净价、正常化利润及口服持续经济性改善；下调要量增利减、指引再降或新药/整改延误，严禁用标价下降直接推同幅净收入下降。
+
+11/4Q3日期见Q2公司日历。底稿与原件：`research-records/2026-10-11-research.json`、Q2-full.txt、FY2025.txt、CMD-financials.txt；验证：`/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVO/validation.json`。Forward PE当日一致EPS和一年日频仍缺。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# NVO / Novo Nordisk A/S Tracker
+
 Last updated：2026-10-05
 Ticker：NVO
 Exchange：NYSE（丹麦B股1:1 ADR）
@@ -118,3 +152,4 @@ FX假设6.50 DKK/USD、流通股4.41558B；正常化净利润、P/E主估值；�
 ## Sources / Limits
 
 原始来源、假设、债券表及缺口详见最新报告。完整Q&A、forward P/E一年一致每日序列及EASD完整最新演讲未充分核验；不把未读到内容补成事实。历史报告保留，非追溯重写。
+

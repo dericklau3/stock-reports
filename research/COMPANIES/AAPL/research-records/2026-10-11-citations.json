@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://s2.q4cdn.com/470004039/files/doc_earnings/2026/q3/filing/10Q-Q3-2026-as-filed.pdf",
+      "title": "q3-10q",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "97  21,638  15,381 \nNet income $ 29,789 $ 23,434 $ 101,464 $ 84,544 \nEarnings per share:\nBasic $ 2.03 $ 1.57 $",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results",
+      "title": "q3-release",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "s for total company revenue and EPS\niPhone, Mac and Services revenue set new June quarter records\nCUPERTINO, CALIFORNIA\nApple today announced",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available",
+      "title": "siri-progress",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Major updates for Apple’s software platforms are now available - Apple\nopens in new window\nUPDATE\nSeptember 14, 2026\nMajor updates for",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+      "title": "fy2025-financials",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "20,719    29,749  \nNet income $ 27,466   $ 14,736   $ 112,010   $ 93,736  \n        \nEarnings per share:        \nBasic $ 1.85   $ 0.97   $ 7.49",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+      "title": "q3-financials",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "21,638    15,381  \nNet income $ 29,789   $ 23,434   $ 101,464   $ 84,544  \n        \nEarnings per share:        \nBasic $ 2.03   $ 1.57   $ 6.91",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo",
+      "title": "ceo-transition",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "ncrease, and yearly revenue has nearly quadrupled, from $108 billion in fiscal year 2011 to more than $416 billion in fiscal year",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://api.nasdaq.com/api/quote/AAPL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq 2026-10-09常规收盘",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "\"date\": \"10/09/2026\",\n          \"close\": \"$336.64\",\n          \"volume\": \"37,881,200\",\n          \"open\": \"$331.695\",\n          \"high\": \"$338.61\",\n          \"low\": \"$330.70\"\n        },\n        {\n          \"date\": \"10/08/2026\",\n          \"close\": \"$340.42\",\n          \"volume\": \"35,332,450\",\n          \"open\": \"$336.815\",",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

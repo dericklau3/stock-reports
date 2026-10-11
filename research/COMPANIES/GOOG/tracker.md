@@ -1,5 +1,52 @@
 # Alphabet（GOOG）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+- **投资观点：中性等待。** 搜索尚未失守、云收入和利润兑现增强，但资本投入、融资与证券收益改变了现金质量；当前价格没有厚安全边际。
+
+## Current Main Thesis
+
+- **核心逻辑：** 广告商和企业客户持续为触达与算力付费，AI可能扩大使用；最终价值取决于扣除分发、推理、折旧和融资成本后的每股现金。
+
+## Key Risks
+
+- **主要风险：** 市场将投资资产涨价、云订单和AI使用人数一并当作持续利润，忽略再投资承诺、优先股索偿及普通股稀释。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+
+## 2026-10-11关键变化
+{
+  "facts": [
+    "Cloud63%→82%增长，Search19%→17%仍正增长",
+    "从回购叙事转向普通股/强制可转优先股/ATM融资，并且H1无回购",
+    "TTM利润被进一步投资收益放大，Q2总利润不等普通股利润",
+    "旧FY2025收入402843m本次官方402836m；不得静默沿用旧数字",
+    "新增大额承诺和租赁、并购与股本桥"
+  ],
+  "price": {
+    "old": 384.9,
+    "new": 347.86,
+    "change": -0.09623278773707444
+  },
+  "model": [
+    "取消原始EPS与未折现未来P/E锚，采用含SBC与折旧EBIT并扣优先索偿",
+    "不对同一mandatorypreferred既扣清算又加转股；2028未转，2029敏感性另列"
+  ]
+}
+
+
+### 父代理复核补充：报价缺口已解决
+
+Nasdaq历史原页核验2026-10-09常规收盘 347.86 美元；本次采用该交易所记录。初稿中的报价未核验限制已解决，其余股数、合同和来源缺口继续保留。详见可复算记录中的 `resolved_during_parent_review`。
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Alphabet（GOOG）Tracker
+
 Last updated: 2026-05-20
 
 ## Current Research View
@@ -74,3 +121,4 @@ GOOG 的 2026Q1 证明 AI 正在增强 Search、Cloud 和订阅业务，而不�
 ## Research Files
 
 - `deep-research/2026-05-20-deep-research.md`
+
