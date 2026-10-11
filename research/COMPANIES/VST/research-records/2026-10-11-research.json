@@ -1,0 +1,711 @@
+{
+  "identity": {
+    "issuer": "Vistra Corp.",
+    "ticker": "VST",
+    "exchange": "NYSE",
+    "security": "common",
+    "currency": "USD",
+    "CIK": "0001692819"
+  },
+  "quote": {
+    "price": 161.48,
+    "date": "2026-10-09",
+    "session": "regular-close",
+    "currency": "USD",
+    "url": "https://api.nasdaq.com/api/quote/VST/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "verified",
+    "timezone": "America/New_York",
+    "time_basis": "交易所常规交易收盘；纽约时区"
+  },
+  "financial_periods": [
+    {
+      "period": "FY2024",
+      "end": "2024-12-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "FY2025",
+      "end": "2025-12-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "H1 2025",
+      "end": "2025-06-30",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "H1 2026",
+      "end": "2026-06-30",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "TTM",
+      "end": "2026-06-30",
+      "basis": "GAAP",
+      "unit": "USD million"
+    }
+  ],
+  "valuation": {
+    "method": "conditional EV/ongoingEBITDA with net-claims and dilution; notDCF",
+    "status": "conditional_scenarios_not_realtime_EV",
+    "target_year": 2027,
+    "target_date": "2027-12-31",
+    "discount_years": 1.2210814510609171,
+    "discount_rate": 0.12,
+    "interim_dividend_assumed": 1.2,
+    "current_forward_PE": "未取得可靠当前共识",
+    "historical_forward_PE": "未取得当时有效预测完整序列",
+    "scenarios": {
+      "Bear": [
+        {
+          "EBITDA_billion": 6.5,
+          "EV_multiple": 7,
+          "net_claims_billion": 26,
+          "shares_million": 350,
+          "future_price": 55.714285714285715,
+          "present_value": 49.558947574476036
+        },
+        {
+          "EBITDA_billion": 7,
+          "EV_multiple": 8,
+          "net_claims_billion": 25,
+          "shares_million": 345,
+          "future_price": 89.85507246376811,
+          "present_value": 79.28753749586848
+        }
+      ],
+      "Base": [
+        {
+          "EBITDA_billion": 8.1,
+          "EV_multiple": 9.5,
+          "net_claims_billion": 25,
+          "shares_million": 345,
+          "future_price": 150.57971014492753,
+          "present_value": 132.16440483331178
+        },
+        {
+          "EBITDA_billion": 8.5,
+          "EV_multiple": 10.5,
+          "net_claims_billion": 23,
+          "shares_million": 338,
+          "future_price": 196.0059171597633,
+          "present_value": 171.71993968192822
+        }
+      ],
+      "Bull": [
+        {
+          "EBITDA_billion": 9,
+          "EV_multiple": 11,
+          "net_claims_billion": 23,
+          "shares_million": 335,
+          "future_price": 226.86567164179104,
+          "present_value": 198.59152271845457
+        },
+        {
+          "EBITDA_billion": 9.5,
+          "EV_multiple": 12,
+          "net_claims_billion": 21,
+          "shares_million": 330,
+          "future_price": 281.8181818181818,
+          "present_value": 246.44222552072185
+        }
+      ]
+    },
+    "capital_policy": "ordinary claim residual after future total claims; todaybridge excludes restrictedcash and NDT; noaddingDOEloan or equityNCIbuyoutdoublecount; lease splitpending; future netclaims reserves are assumptions notexact reconciliation",
+    "claims_components_million": {
+      "book_debt": 20508,
+      "cash": 435,
+      "preferred_liquidation": 2476.066,
+      "remaining_NCI_proxy": 12
+    },
+    "calculations": [
+      {
+        "name": "Bear0future",
+        "expression": "(6.5*7-26)*1000/350",
+        "result": 55.714285714285715
+      },
+      {
+        "name": "Bear0PV",
+        "expression": "(((6.5*7-26)*1000/350)+1.2)/(1.12**1.2210814510609171)",
+        "result": 49.558947574476036
+      },
+      {
+        "name": "Bear1future",
+        "expression": "(7*8-25)*1000/345",
+        "result": 89.85507246376811
+      },
+      {
+        "name": "Bear1PV",
+        "expression": "(((7*8-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 79.28753749586848
+      },
+      {
+        "name": "Base0future",
+        "expression": "(8.1*9.5-25)*1000/345",
+        "result": 150.57971014492753
+      },
+      {
+        "name": "Base0PV",
+        "expression": "(((8.1*9.5-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 132.16440483331178
+      },
+      {
+        "name": "Base1future",
+        "expression": "(8.5*10.5-23)*1000/338",
+        "result": 196.0059171597633
+      },
+      {
+        "name": "Base1PV",
+        "expression": "(((8.5*10.5-23)*1000/338)+1.2)/(1.12**1.2210814510609171)",
+        "result": 171.71993968192822
+      },
+      {
+        "name": "Bull0future",
+        "expression": "(9*11-23)*1000/335",
+        "result": 226.86567164179104
+      },
+      {
+        "name": "Bull0PV",
+        "expression": "(((9*11-23)*1000/335)+1.2)/(1.12**1.2210814510609171)",
+        "result": 198.59152271845457
+      },
+      {
+        "name": "Bull1future",
+        "expression": "(9.5*12-21)*1000/330",
+        "result": 281.8181818181818
+      },
+      {
+        "name": "Bull1PV",
+        "expression": "(((9.5*12-21)*1000/330)+1.2)/(1.12**1.2210814510609171)",
+        "result": 246.44222552072185
+      },
+      {
+        "name": "days",
+        "expression": "(446)/365.25",
+        "result": 1.2210814510609171
+      },
+      {
+        "name": "marketcapB",
+        "expression": "161.48*335.635195/1000",
+        "result": 54.1983712886
+      },
+      {
+        "name": "netdebtM",
+        "expression": "1876+17719+300+613-435",
+        "result": 20073
+      },
+      {
+        "name": "netclaimsM",
+        "expression": "20508-435+2476.066+12",
+        "result": 22561.066
+      },
+      {
+        "name": "conditionalEVB",
+        "expression": "161.48*335.635195/1000+(20508-435+2476.066+12)/1000",
+        "result": 76.7594372886
+      },
+      {
+        "name": "EV2026mid",
+        "expression": "(161.48*335.635195/1000+22.561066)/7.2",
+        "result": 10.661032956749999
+      },
+      {
+        "name": "H1FCF",
+        "expression": "2222-1572",
+        "result": 650
+      },
+      {
+        "name": "TTMrevenue",
+        "expression": "17738+9657-8183",
+        "result": 19212
+      },
+      {
+        "name": "TTMop",
+        "expression": "1906+2052-395",
+        "result": 3563
+      },
+      {
+        "name": "TTMCFO",
+        "expression": "4070+2222-1171",
+        "result": 5121
+      },
+      {
+        "name": "TTMcapex",
+        "expression": "2752+1572-1458",
+        "result": 2866
+      },
+      {
+        "name": "TTMNI",
+        "expression": "944+1334-59",
+        "result": 2219
+      },
+      {
+        "name": "TTMcommonNI",
+        "expression": "752+1238-(-37)",
+        "result": 2027
+      },
+      {
+        "name": "TTMFCF",
+        "expression": "5121-2866",
+        "result": 2255
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "4563-2078",
+        "result": 2485
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "4070-2752",
+        "result": 1318
+      },
+      {
+        "name": "juniorcouponM",
+        "expression": "850*.07+650*.0725",
+        "result": 106.625
+      },
+      {
+        "name": "growth-adjusted-midpoint",
+        "expression": "(3925+4725)/2-1700",
+        "result": 2625.0
+      }
+    ],
+    "sensitivity": "净索偿每增加1B在340M股分母降低未来值约2.94美元；基本情景为研究假设非2027指引。",
+    "interpretation": "可复算的研究条件情景，不是已证实预测或精确NAV/DCF；最新股本或其他缺口见gaps。"
+  },
+  "critical_evidence": [
+    "正式Q2财务与H1现金表实际读数",
+    "年度官方财务附表和FY24对照已读",
+    "DOE独立原件明确conditional而非已放款",
+    "9/24发行完成与9/30循环延期已读8-K正文",
+    "10/09收盘161.48原JSON一致"
+  ],
+  "gaps": [
+    "10月实时actual股份、现金使用/债务与优先股赎回未完整闭合；条件EV不是实时EV",
+    "完整租赁负债分拆及9/14最终424B2未补齐，模型是有边界条件情景而非完整即时索偿",
+    "PPA价格/净利润及2027正式指引未披露，当前/一年历史Forward P/E未取得",
+    "IR新闻索引未出现新实质进展不证明绝对没有其他重大事件；并购交割未核实",
+    "Q2电话会第三方转录并非完整官方音频独立核验；同源公告转载不当独立证据"
+  ],
+  "changes_from_previous": [
+    "2026-10-10基线→10/11：报价仍为10/09的161.48，最新IR索引没有新证实经营事件，不制造新进展。",
+    "最新完整财务仍Q2，Q3已官方安排11/06；历史表从原件重读而非把昨日中文原文当SEC证据。",
+    "沿用完整债务+优先+NCI条件桥，旧8月遗漏优先索偿的估值继续失效。",
+    "同一2027末熊/基础/牛成套输入重新按10/11时点折现，只有一天期限差，不能称盈利预测上调。"
+  ],
+  "sources": [
+    {
+      "title": "Q2 2026正式10-Q公司PDF",
+      "url": "https://investor.vistracorp.com/image/VST_10-Q_2026-08-10.pdf",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/capital-q2-10q-full.txt",
+      "locator": "正文pp1–5财务表、附注7/12/17/18、合同与经营展望；PDF物理页7–11",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/capital-q2-10q-full.txt",
+      "sha256": "cf5d3fecc8c8fcdbca46879e85dbefcc37f69073d24321b460ac20f91f645153"
+    },
+    {
+      "title": "FY2025全年官方业绩及财务附表",
+      "url": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/fy25-release.txt",
+      "locator": "Consolidated Statements of Operations/Cash Flows;GAAP/Non-GAAP分别读取",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/fy25-release.txt",
+      "sha256": "ca2498afaf5ddfa67be26e53e1ec3c9f6e51927c57fe294669ed6e97fe598c61"
+    },
+    {
+      "title": "Q2官方业绩",
+      "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/q2-release.txt",
+      "locator": "财务/分部/指引段",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/q2-release.txt",
+      "sha256": "c437e079f9914156582dfbe797207d48d1988d8fc9f07d65aa752f7eeef14ac7"
+    },
+    {
+      "title": "9/24发行完成8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000114036126037577/ef20082680_8k.htm",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/capital-sep24-8k.txt",
+      "locator": "Item1.01本金与票息；正文及契约附件缓存",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/capital-sep24-8k.txt",
+      "sha256": "49ce6fdd1014fc9e6e512591ef4bb5a2c5034738bf22553299aa4822ccae65e0"
+    },
+    {
+      "title": "10/5信贷延期8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000114036126038468/ef20083016_8k.htm",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/capital-oct5-8k.txt",
+      "locator": "Item1.01，9/30生效延期至2027-09-29",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/capital-oct5-8k.txt",
+      "sha256": "95861effe6ba0016ded889572231b0dc10fec4f8418e7258eedd20d77c6b5096"
+    },
+    {
+      "title": "DOE条件贷款独立监管原件",
+      "url": "https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/doe-uprates.txt",
+      "locator": "2026-10-05条件贷款、433MW与放款前条件",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/raw/doe-uprates.txt",
+      "sha256": "defa40f7108accc79362e2787ea4d41399b669023d271197fb66d2664e32495e"
+    },
+    {
+      "title": "Q3业绩官方时钟",
+      "url": "https://investor.vistracorp.com/2026-09-29-Vistra-to-Report-Third-Quarter-Results-on-Nov-6,-2026",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/q3-date.txt",
+      "locator": "时间公告11/6 10amET",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/q3-date.txt",
+      "sha256": "c0348a97d357e87be1fb90443e59579d0ec49a11bbdff2b402caaa210c6a6e42"
+    },
+    {
+      "title": "Nasdaq常规收盘",
+      "url": "https://api.nasdaq.com/api/quote/VST/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/quote.json",
+      "locator": "10/09/2026 row",
+      "read_status": "本次JSON读取，与昨日缓存161.48一致",
+      "sha256": "0fdbb6c9aaef2eba93058ef99bdb0cf49813a4eb2b414ad7633926a8a8023225"
+    },
+    {
+      "title": "最新IR新闻索引",
+      "url": "https://investor.vistracorp.com/news",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/latest-news.html",
+      "locator": "最新索引9/29公告；只确认索引范围",
+      "read_status": "本次原页已读取；不据索引声称绝对无任何未披露重大事项",
+      "sha256": "93f516849beff866693aa4b64661c179511b691ac4daf20a02b982255fa5567e"
+    },
+    {
+      "title": "FY2024业绩交叉核验",
+      "url": "https://investor.vistracorp.com/2025-02-27-Vistra-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/fy24-release.txt",
+      "locator": "年度财务附表，与FY25重列年同比对",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/fy24-release.txt",
+      "sha256": "60b20454bf5dc2b253440027bfcefabd33299fe57cf8f47126bf311752f1e13e"
+    },
+    {
+      "title": "Meta客户确认",
+      "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/amp/",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/meta-customer.txt",
+      "locator": "20年现有容量及增容；客户是合同存在的独立确认",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/raw/meta-customer.txt",
+      "sha256": "092cd35c0c98d6e6e287b3c84e94d4c0af4fadd6848626dfd09849b4252de7a1"
+    },
+    {
+      "title": "Q2投资者演示",
+      "url": "https://investor.vistracorp.com/image/Q2_2026_Results_Presentation_vFinal.pdf",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/q2-slides.txt",
+      "locator": "指引/FCFbG与capital allocation",
+      "read_status": "已实际读取缓存原正文，非旧中文研究转述",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/vst-2026-10-10/q2-slides.txt",
+      "sha256": "589375b64d49d67c906045dee6a44851466e09f14b1321fe361133e1124c08ad"
+    }
+  ],
+  "research_date": "2026-10-11",
+  "baseline": "tracker及2026-10-10完整更新；条件EV76.759B、现价161.48与基础132–172现值。",
+  "capital_structure": {
+    "cash_M_20260630": 435,
+    "restricted_M": 46,
+    "book_debt_including_projects_AR_forward_M": 20508,
+    "forward_repurchase_M": 613,
+    "preferred_M": 2476.066,
+    "NCI_book_proxy_M": 12,
+    "actual_shares_M_20260803": 335.635195,
+    "Q2weighted_diluted_M": 339.230976,
+    "postJune_financing_principal_M": 1500,
+    "postJune_notes_cash": "净费/使用未全面刷新；不得只加1500债",
+    "Sep_notes_coupon_percent": [
+      7,
+      7.25
+    ],
+    "preferred_A_reset": "2026-10-15",
+    "preferred_B_reset": "2026-12-15",
+    "preferred_redemption": "计划而非已确认",
+    "SBC_H1_M": 67,
+    "SBC_FY25_M": 113,
+    "Cogentrix_equity_M": 5,
+    "Cogentrix_cash_B": 2.3,
+    "Cogentrix_debt_assumed_B": 1.5,
+    "finance_lease_ROU_net_M": 152,
+    "lease_liability": "Q2完整分拆未独立核实；非零假设，条件EV非完整实时EV",
+    "convertible": "无在本次关键原件定位的可转融资，不据此宣称零",
+    "Helix_commitment_B": [
+      0.5,
+      0.5
+    ],
+    "netclaims_2027_scenarios_B": [
+      21,
+      26
+    ],
+    "NDT": "受限用途不减普通EV"
+  },
+  "evidence_policy": "公司公告与转载不算独立验证；缓存原件已实际选表读取；旧中文报告仅作历史基线，不作本期财报原件。",
+  "parent_review": {
+    "math_checks": [
+      {
+        "name": "Bear0future",
+        "expression": "(6.5*7-26)*1000/350",
+        "result": 55.714285714285715,
+        "passed": true
+      },
+      {
+        "name": "Bear0PV",
+        "expression": "(((6.5*7-26)*1000/350)+1.2)/(1.12**1.2210814510609171)",
+        "result": 49.558947574476036,
+        "passed": true
+      },
+      {
+        "name": "Bear1future",
+        "expression": "(7*8-25)*1000/345",
+        "result": 89.85507246376811,
+        "passed": true
+      },
+      {
+        "name": "Bear1PV",
+        "expression": "(((7*8-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 79.28753749586848,
+        "passed": true
+      },
+      {
+        "name": "Base0future",
+        "expression": "(8.1*9.5-25)*1000/345",
+        "result": 150.57971014492753,
+        "passed": true
+      },
+      {
+        "name": "Base0PV",
+        "expression": "(((8.1*9.5-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 132.16440483331178,
+        "passed": true
+      },
+      {
+        "name": "Base1future",
+        "expression": "(8.5*10.5-23)*1000/338",
+        "result": 196.0059171597633,
+        "passed": true
+      },
+      {
+        "name": "Base1PV",
+        "expression": "(((8.5*10.5-23)*1000/338)+1.2)/(1.12**1.2210814510609171)",
+        "result": 171.71993968192822,
+        "passed": true
+      },
+      {
+        "name": "Bull0future",
+        "expression": "(9*11-23)*1000/335",
+        "result": 226.86567164179104,
+        "passed": true
+      },
+      {
+        "name": "Bull0PV",
+        "expression": "(((9*11-23)*1000/335)+1.2)/(1.12**1.2210814510609171)",
+        "result": 198.59152271845457,
+        "passed": true
+      },
+      {
+        "name": "Bull1future",
+        "expression": "(9.5*12-21)*1000/330",
+        "result": 281.8181818181818,
+        "passed": true
+      },
+      {
+        "name": "Bull1PV",
+        "expression": "(((9.5*12-21)*1000/330)+1.2)/(1.12**1.2210814510609171)",
+        "result": 246.44222552072185,
+        "passed": true
+      },
+      {
+        "name": "days",
+        "expression": "(446)/365.25",
+        "result": 1.2210814510609171,
+        "passed": true
+      },
+      {
+        "name": "marketcapB",
+        "expression": "161.48*335.635195/1000",
+        "result": 54.1983712886,
+        "passed": true
+      },
+      {
+        "name": "netdebtM",
+        "expression": "1876+17719+300+613-435",
+        "result": 20073,
+        "passed": true
+      },
+      {
+        "name": "netclaimsM",
+        "expression": "20508-435+2476.066+12",
+        "result": 22561.066,
+        "passed": true
+      },
+      {
+        "name": "conditionalEVB",
+        "expression": "161.48*335.635195/1000+(20508-435+2476.066+12)/1000",
+        "result": 76.7594372886,
+        "passed": true
+      },
+      {
+        "name": "EV2026mid",
+        "expression": "(161.48*335.635195/1000+22.561066)/7.2",
+        "result": 10.661032956749999,
+        "passed": true
+      },
+      {
+        "name": "H1FCF",
+        "expression": "2222-1572",
+        "result": 650,
+        "passed": true
+      },
+      {
+        "name": "TTMrevenue",
+        "expression": "17738+9657-8183",
+        "result": 19212,
+        "passed": true
+      },
+      {
+        "name": "TTMop",
+        "expression": "1906+2052-395",
+        "result": 3563,
+        "passed": true
+      },
+      {
+        "name": "TTMCFO",
+        "expression": "4070+2222-1171",
+        "result": 5121,
+        "passed": true
+      },
+      {
+        "name": "TTMcapex",
+        "expression": "2752+1572-1458",
+        "result": 2866,
+        "passed": true
+      },
+      {
+        "name": "TTMNI",
+        "expression": "944+1334-59",
+        "result": 2219,
+        "passed": true
+      },
+      {
+        "name": "TTMcommonNI",
+        "expression": "752+1238-(-37)",
+        "result": 2027,
+        "passed": true
+      },
+      {
+        "name": "TTMFCF",
+        "expression": "5121-2866",
+        "result": 2255,
+        "passed": true
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "4563-2078",
+        "result": 2485,
+        "passed": true
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "4070-2752",
+        "result": 1318,
+        "passed": true
+      },
+      {
+        "name": "juniorcouponM",
+        "expression": "850*.07+650*.0725",
+        "result": 106.625,
+        "passed": true
+      },
+      {
+        "name": "growth-adjusted-midpoint",
+        "expression": "(3925+4725)/2-1700",
+        "result": 2625.0,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 5,
+    "quote_date_row_rechecked": true,
+    "decisive_primary_sections_read": true,
+    "citation_gate": "strict and evidence passed; provenance validation is not an exhaustive audit",
+    "remaining_gaps": [
+      "10月实时actual股份、现金使用/债务与优先股赎回未完整闭合；条件EV不是实时EV",
+      "完整租赁负债分拆及9/14最终424B2未补齐，模型是有边界条件情景而非完整即时索偿",
+      "PPA价格/净利润及2027正式指引未披露，当前/一年历史Forward P/E未取得",
+      "IR新闻索引未出现新实质进展不证明绝对没有其他重大事件；并购交割未核实",
+      "Q2电话会第三方转录并非完整官方音频独立核验；同源公告转载不当独立证据"
+    ],
+    "financial_table": {
+      "unit": "见原报告单位说明",
+      "columns": [
+        "FY2024",
+        "FY2025",
+        "H1 2025",
+        "H1 2026",
+        "TTM至2026Q2"
+      ],
+      "rows": [
+        [
+          "收入",
+          17224,
+          17738,
+          8183,
+          9657,
+          19212
+        ],
+        [
+          "经营利润",
+          4081,
+          1906,
+          395,
+          2052,
+          3563
+        ],
+        [
+          "合并净利润",
+          2812,
+          944,
+          59,
+          1334,
+          2219
+        ],
+        [
+          "普通股归属净利润",
+          2467,
+          752,
+          -37,
+          1238,
+          2027
+        ],
+        [
+          "经营现金流",
+          4563,
+          4070,
+          1171,
+          2222,
+          5121
+        ],
+        [
+          "全部现金资本开支含核燃料/LTSA预付",
+          2078,
+          2752,
+          1458,
+          1572,
+          2866
+        ],
+        [
+          "简易自由现金流（自算）",
+          2485,
+          1318,
+          -287,
+          650,
+          2255
+        ]
+      ]
+    },
+    "worker_validation_tests": 96
+  }
+}

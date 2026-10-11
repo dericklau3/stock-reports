@@ -1,0 +1,571 @@
+{
+  "parent": {
+    "ticker": "SPCX",
+    "quote_source_verified": true,
+    "math_checks": [
+      {
+        "name": "Q2 revenue growth",
+        "expression": "7814/4071-1",
+        "result": 0.9194301154507492,
+        "passed": true
+      },
+      {
+        "name": "Q2 gross profit",
+        "expression": "7814-3495",
+        "result": 4319,
+        "passed": true
+      },
+      {
+        "name": "H1 gross profit",
+        "expression": "12508-5883",
+        "result": 6625,
+        "passed": true
+      },
+      {
+        "name": "H125 gross profit",
+        "expression": "8138-4244",
+        "result": 3894,
+        "passed": true
+      },
+      {
+        "name": "H125 gross FCF",
+        "expression": "351-6965",
+        "result": -6614,
+        "passed": true
+      },
+      {
+        "name": "H126 gross FCF",
+        "expression": "3466-28476",
+        "result": -25010,
+        "passed": true
+      },
+      {
+        "name": "H126 rebate-adjusted cash gap",
+        "expression": "3466-28476+1195",
+        "result": -23815,
+        "passed": true
+      },
+      {
+        "name": "common H126 loss numerator",
+        "expression": "-4817-671",
+        "result": -5488,
+        "passed": true
+      },
+      {
+        "name": "AplusB million",
+        "expression": "(7696293669+5485486276)/1000000",
+        "result": 13181.779945,
+        "passed": true
+      },
+      {
+        "name": "legal snapshot cap million",
+        "expression": "162.57*(7696293669+5485486276)/1000000",
+        "result": 2142961.96565865,
+        "passed": true
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "162.57*(7696293669+5485486276)/1000000/30",
+        "result": 71432.065521955,
+        "passed": true
+      },
+      {
+        "name": "notes annual coupon million",
+        "expression": "25000*.05855",
+        "result": 1463.75,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 2,
+    "citations_evidence": "passed",
+    "declared_gaps": [
+      "Cursor8-K访问403，Capedge替代返回空文；精确成交股份、承担奖励与当前经济股数未原件闭合",
+      "Q2原PDF缓存未保存精确取回URL，已验证PDF发行人/期间并读表，但已提供可公开核对的有限证据摘录和原缓存哈希，原远端来源仍是追溯局限",
+      "本期原年度完整表未复核，未把旧中文转述数字当FY财务原件",
+      "OpenAI仅官方搜索索引原文片段，不是正文取回；实际合同及双方回应未闭合",
+      "当前非流动经营租赁、10月现金/债务与未来盈利/历史Forward P/E无法完整闭合",
+      "Q2财报及公告缓存原件完整并已读，但旧下载精确远端URL未在当前文件留存；不能用新拼接SEC路径伪补来源。"
+    ]
+  },
+  "worker": {
+    "status": "passed_with_declared_gaps",
+    "tests": [
+      {
+        "test": "identity",
+        "passed": true,
+        "detail": {
+          "issuer": "Space Exploration Technologies Corp.",
+          "ticker": "SPCX",
+          "exchange": "Nasdaq / Nasdaq Texas as 10-Q cover",
+          "security": "Class A quoted; A+B economic common; not legacy ETF",
+          "currency": "USD",
+          "CIK": "1181412; inherited SEC source identifier"
+        }
+      },
+      {
+        "test": "quote-date-session",
+        "passed": true,
+        "detail": {
+          "price": 162.57,
+          "date": "2026-10-09",
+          "session": "regular-close",
+          "currency": "USD",
+          "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+          "status": "verified",
+          "timezone": "America/New_York",
+          "time_basis": "交易所常规交易收盘；纽约时区"
+        }
+      },
+      {
+        "test": "source-file:q2-10q.pdf",
+        "passed": true,
+        "detail": "原PDF缓存与提取文本实际选表阅读；取回URL未存，不是摘要"
+      },
+      {
+        "test": "source-file:q2-release.txt",
+        "passed": true,
+        "detail": "公司原公告提取全文已读，精确取回URL缺失；与10-Q同源非独立确认"
+      },
+      {
+        "test": "source-file:openai-primary-search.json",
+        "passed": true,
+        "detail": "仅官方索引原文片段，不是完整网页正文；只支持单方通知事实，不支撑财务数"
+      },
+      {
+        "test": "source-file:quote.json",
+        "passed": true,
+        "detail": "JSON实际读取"
+      },
+      {
+        "test": "Q2 revenue growth",
+        "passed": true,
+        "detail": {
+          "expression": "7814/4071-1",
+          "computed": 0.9194301154507492,
+          "expected": 0.9194301154507492
+        }
+      },
+      {
+        "test": "Q2 gross profit",
+        "passed": true,
+        "detail": {
+          "expression": "7814-3495",
+          "computed": 4319,
+          "expected": 4319
+        }
+      },
+      {
+        "test": "H1 gross profit",
+        "passed": true,
+        "detail": {
+          "expression": "12508-5883",
+          "computed": 6625,
+          "expected": 6625
+        }
+      },
+      {
+        "test": "H125 gross profit",
+        "passed": true,
+        "detail": {
+          "expression": "8138-4244",
+          "computed": 3894,
+          "expected": 3894
+        }
+      },
+      {
+        "test": "H125 gross FCF",
+        "passed": true,
+        "detail": {
+          "expression": "351-6965",
+          "computed": -6614,
+          "expected": -6614
+        }
+      },
+      {
+        "test": "H126 gross FCF",
+        "passed": true,
+        "detail": {
+          "expression": "3466-28476",
+          "computed": -25010,
+          "expected": -25010
+        }
+      },
+      {
+        "test": "H126 rebate-adjusted cash gap",
+        "passed": true,
+        "detail": {
+          "expression": "3466-28476+1195",
+          "computed": -23815,
+          "expected": -23815
+        }
+      },
+      {
+        "test": "common H126 loss numerator",
+        "passed": true,
+        "detail": {
+          "expression": "-4817-671",
+          "computed": -5488,
+          "expected": -5488
+        }
+      },
+      {
+        "test": "AplusB million",
+        "passed": true,
+        "detail": {
+          "expression": "(7696293669+5485486276)/1000000",
+          "computed": 13181.779945,
+          "expected": 13181.779945
+        }
+      },
+      {
+        "test": "legal snapshot cap million",
+        "passed": true,
+        "detail": {
+          "expression": "162.57*(7696293669+5485486276)/1000000",
+          "computed": 2142961.96565865,
+          "expected": 2142961.96565865
+        }
+      },
+      {
+        "test": "30PE implied NI million",
+        "passed": true,
+        "detail": {
+          "expression": "162.57*(7696293669+5485486276)/1000000/30",
+          "computed": 71432.065521955,
+          "expected": 71432.065521955
+        }
+      },
+      {
+        "test": "notes annual coupon million",
+        "passed": true,
+        "detail": {
+          "expression": "25000*.05855",
+          "computed": 1463.75,
+          "expected": 1463.75
+        }
+      },
+      {
+        "test": "artifact:report.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:tracker-update.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:research-record.json",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "eight-sections",
+        "passed": true,
+        "detail": "8 sections"
+      },
+      {
+        "test": "no-disallowed-metadata",
+        "passed": true,
+        "detail": "format"
+      },
+      {
+        "test": "no-contact-emails",
+        "passed": true,
+        "detail": "sanitized"
+      },
+      {
+        "test": "quote-source-is-registered",
+        "passed": true,
+        "detail": [
+          {
+            "title": "Nasdaq historical close",
+            "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+            "locator": "rows date10/09/2026",
+            "read_status": "JSON实际读取",
+            "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/quote.json",
+            "sha256": "cc20288a688411961c33837cfb0a03accd44f8c474c91b3fd3fe811656f08fd1"
+          }
+        ]
+      },
+      {
+        "test": "quote-selected-explicit-date-not-first-row",
+        "passed": true,
+        "detail": [
+          {
+            "date": "10/09/2026",
+            "close": "$162.57",
+            "volume": "93,042,640",
+            "open": "$165.34",
+            "high": "$166.38",
+            "low": "$160.61"
+          }
+        ]
+      },
+      {
+        "test": "quote-timezone",
+        "passed": true,
+        "detail": "交易所常规交易收盘；纽约时区"
+      },
+      {
+        "test": "identity-raw:Space Exploration Technologies",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:7696293669",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:5485486276",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "period-raw:June 30",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-raw:2026",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-not-after-cutoff:Q2 2025",
+        "passed": true,
+        "detail": {
+          "period": "Q2 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q2 2025",
+        "passed": true,
+        "detail": {
+          "period": "Q2 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:Q2 2026",
+        "passed": true,
+        "detail": {
+          "period": "Q2 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q2 2026",
+        "passed": true,
+        "detail": {
+          "period": "Q2 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:H1 2025",
+        "passed": true,
+        "detail": {
+          "period": "H1 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-accounting-basis:H1 2025",
+        "passed": true,
+        "detail": {
+          "period": "H1 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:H1 2026",
+        "passed": true,
+        "detail": {
+          "period": "H1 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "period-accounting-basis:H1 2026",
+        "passed": true,
+        "detail": {
+          "period": "H1 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP consolidated, common numerator separated"
+        }
+      },
+      {
+        "test": "reported-raw-number:收入",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "12508",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营损益",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "2086",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:GAAP合并净损益",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "4817",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:普通股EPS分子损益",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "5488",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营现金流",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "3466",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:现金资本开支（未扣返利）",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "28476",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "financial-table-width",
+        "passed": true,
+        "detail": [
+          "Q2 2025",
+          "Q2 2026",
+          "H1 2025",
+          "H1 2026"
+        ]
+      },
+      {
+        "test": "table-CFO-minus-capex:H1 2025",
+        "passed": true,
+        "detail": {
+          "CFO": 351,
+          "cashcapex": 6965,
+          "difference": -6614,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:H1 2026",
+        "passed": true,
+        "detail": {
+          "CFO": 3466,
+          "cashcapex": 28476,
+          "difference": -25010,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "one-table-per-section",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "test": "financial-glossary-attached",
+        "passed": true,
+        "detail": "small directly after financial table"
+      },
+      {
+        "test": "opening-three-points",
+        "passed": true,
+        "detail": "No second executive summary"
+      },
+      {
+        "test": "five-step-business-and-hypothesis",
+        "passed": true,
+        "detail": "Business/paid path"
+      },
+      {
+        "test": "four-investor-lenses",
+        "passed": true,
+        "detail": "Analytical frameworks only"
+      },
+      {
+        "test": "critical-evidence-five-max",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "test": "declared-gaps",
+        "passed": true,
+        "detail": "unable_to_reliably_value"
+      },
+      {
+        "test": "source-artifacts-all-under-allowed-root",
+        "passed": true,
+        "detail": [
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/originals/q2-10q.pdf",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/originals/q2-release.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/openai-primary-search.json",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/quote.json"
+        ]
+      },
+      {
+        "test": "bounded-new-source-budget",
+        "passed": true,
+        "detail": {
+          "urllib_attempts": 4,
+          "search_attempts": 2,
+          "total": 6,
+          "failed_attempts_included": true,
+          "session_search_is_local_not_network": true
+        }
+      },
+      {
+        "test": "no-contact-mails-in-source-text",
+        "passed": true,
+        "detail": "PDF text plus original HTML/data checked; request headers were not saved."
+      }
+    ],
+    "limitations": [
+      "Cursor8-K访问403，Capedge替代返回空文；精确成交股份、承担奖励与当前经济股数未原件闭合",
+      "Q2原PDF缓存未保存精确取回URL，已验证PDF发行人/期间并读表，但远端来源定位仍需父代理补齐",
+      "本期原年度完整表未复核，未把旧中文转述数字当FY财务原件",
+      "OpenAI仅官方搜索索引原文片段，不是正文取回；实际合同及双方回应未闭合",
+      "当前非流动经营租赁、10月现金/债务与未来盈利/历史Forward P/E无法完整闭合",
+      "Q2财报及公告缓存原件完整并已读，但旧下载精确远端URL未在当前文件留存；不能用新拼接SEC路径伪补来源。"
+    ],
+    "semantic_note": "通过的是已声明输入的算式、日期、文件与格式；不等于所有财务披露已闭合或定量估值可用。",
+    "audit_scope": "数学、真实原始报价行、证券原文标识、期间/会计口径、多期表自算一致性、部分原表数值、原件哈希、格式与新网络预算均实际运行；数值token定位不是独立审计，全文完整性缺口仍保留。"
+  },
+  "scope_note": "父代理数学与报价/引用复核独立执行；worker测试反映父代理调整前的原件与拟稿快照，均不代表披露缺口已经消失。"
+}

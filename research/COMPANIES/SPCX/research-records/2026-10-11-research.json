@@ -1,0 +1,363 @@
+{
+  "identity": {
+    "issuer": "Space Exploration Technologies Corp.",
+    "ticker": "SPCX",
+    "exchange": "Nasdaq / Nasdaq Texas as 10-Q cover",
+    "security": "Class A quoted; A+B economic common; not legacy ETF",
+    "currency": "USD",
+    "CIK": "1181412; inherited SEC source identifier"
+  },
+  "quote": {
+    "price": 162.57,
+    "date": "2026-10-09",
+    "session": "regular-close",
+    "currency": "USD",
+    "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "verified",
+    "timezone": "America/New_York",
+    "time_basis": "交易所常规交易收盘；纽约时区"
+  },
+  "financial_periods": [
+    {
+      "period": "Q2 2025",
+      "end": "2025-06-30",
+      "basis": "GAAP consolidated, common numerator separated"
+    },
+    {
+      "period": "Q2 2026",
+      "end": "2026-06-30",
+      "basis": "GAAP consolidated, common numerator separated"
+    },
+    {
+      "period": "H1 2025",
+      "end": "2025-06-30",
+      "basis": "GAAP consolidated, common numerator separated"
+    },
+    {
+      "period": "H1 2026",
+      "end": "2026-06-30",
+      "basis": "GAAP consolidated, common numerator separated"
+    }
+  ],
+  "valuation": {
+    "method": "reverse earnings and scenario conditions; reliable SOTP unavailable",
+    "status": "unable_to_reliably_value",
+    "target_year": null,
+    "discount_years": null,
+    "calculations": [
+      {
+        "name": "Q2 revenue growth",
+        "expression": "7814/4071-1",
+        "result": 0.9194301154507492
+      },
+      {
+        "name": "Q2 gross profit",
+        "expression": "7814-3495",
+        "result": 4319
+      },
+      {
+        "name": "H1 gross profit",
+        "expression": "12508-5883",
+        "result": 6625
+      },
+      {
+        "name": "H125 gross profit",
+        "expression": "8138-4244",
+        "result": 3894
+      },
+      {
+        "name": "H125 gross FCF",
+        "expression": "351-6965",
+        "result": -6614
+      },
+      {
+        "name": "H126 gross FCF",
+        "expression": "3466-28476",
+        "result": -25010
+      },
+      {
+        "name": "H126 rebate-adjusted cash gap",
+        "expression": "3466-28476+1195",
+        "result": -23815
+      },
+      {
+        "name": "common H126 loss numerator",
+        "expression": "-4817-671",
+        "result": -5488
+      },
+      {
+        "name": "AplusB million",
+        "expression": "(7696293669+5485486276)/1000000",
+        "result": 13181.779945
+      },
+      {
+        "name": "legal snapshot cap million",
+        "expression": "162.57*(7696293669+5485486276)/1000000",
+        "result": 2142961.96565865
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "162.57*(7696293669+5485486276)/1000000/30",
+        "result": 71432.065521955
+      },
+      {
+        "name": "notes annual coupon million",
+        "expression": "25000*.05855",
+        "result": 1463.75
+      }
+    ],
+    "current_forward_PE": "当前亏损不适合简单PE；预测快照未取得",
+    "historical_forward_PE": "未取得历史预测序列；不沿用旧298x",
+    "scenario_conditions": {
+      "bear": "AI investment fails, communication weakens",
+      "base": "communications growth + AI contracts sustainable but capex remains high",
+      "bull": "repeatable AI/Starship/software profits and lower capex intensity"
+    },
+    "capital_policy": "期末preferred converted already embedded A/B, not deducted again; full debt principal39512 inclusive finance leases and other financing; no extra IPO cash addition on top ofJune30 cash; Cursor indexed third-party shares excluded until original read"
+  },
+  "critical_evidence": [
+    "Q2原10Q封面确认证券身份与A+B股数",
+    "H1 CFO3466 vs PP&E28476、设备返利1195",
+    "Q2 Connectivity经营利润1656 vs AI亏损1257",
+    "Note9桥贷已偿还/失败售后回租融资及Note13股权潜在索偿",
+    "OpenAI官方索引文本拟11月12停止供模，非全文原件"
+  ],
+  "gaps": [
+    "Cursor8-K访问403，Capedge替代返回空文；精确成交股份、承担奖励与当前经济股数未原件闭合",
+    "Q2原PDF缓存未保存精确取回URL，已验证PDF发行人/期间并读表，但已提供可公开核对的有限证据摘录和原缓存哈希，原远端来源仍是追溯局限",
+    "本期原年度完整表未复核，未把旧中文转述数字当FY财务原件",
+    "OpenAI仅官方搜索索引原文片段，不是正文取回；实际合同及双方回应未闭合",
+    "当前非流动经营租赁、10月现金/债务与未来盈利/历史Forward P/E无法完整闭合",
+    "Q2财报及公告缓存原件完整并已读，但旧下载精确远端URL未在当前文件留存；不能用新拼接SEC路径伪补来源。"
+  ],
+  "changes_from_previous": [
+    "旧2026-07-09只有招股书/Q1 → 本次正式Q2报告：收入7814百万、AI收入2561百万、合并经营亏损143百万。",
+    "旧桥贷计划偿还 → Note9明确已全额偿还，债券票息仍约1464百万/年；不是多加250亿净现金。",
+    "旧现金1008亿六月19日快照 → 六月30日现金+证券100009百万；H1严重负FCF改变资本风险。",
+    "Cursor旧预计Q3完成 → 供应方官方8月声明称收购后拟取消模型合同；不以第三方成交股数摘要充当SEC原文。",
+    "旧股价148.30 → 新收盘162.57；原基础价格区间暂停，观点维持中性但更重资本与股本闭合。"
+  ],
+  "sources": [
+    {
+      "title": "SpaceX Q2 2026 Form10-Q PDF缓存（公开证据摘录；原下载URL缺失）",
+      "url": "https://raw.githubusercontent.com/dericklau3/stock-reports/main/research/COMPANIES/SPCX/research-records/2026-10-11-q2-10q-evidence.json",
+      "locator": "印刷pp4/5/9/10, Notes9/12/13/14/18，封面July28股份",
+      "read_status": "原PDF缓存与提取文本实际选表阅读；取回URL未存，不是摘要；父代理提供公开原文短摘录、原缓存哈希及财务事实，未假称找到原下载地址",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/originals/q2-10q.pdf",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/SPCX/q2-10q.pdf",
+      "sha256": "2fe452319b54affc636c4b38ce9f43e2ecf39f0ee8e47fc3dd7bfdd75589d7a0",
+      "original_retrieval_url": null,
+      "publication_evidence_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/publish/2026-10-11-q2-10q-evidence.json"
+    },
+    {
+      "title": "SpaceX Q2 2026 company release缓存文本（公开证据摘录；原下载URL缺失）",
+      "url": "https://raw.githubusercontent.com/dericklau3/stock-reports/main/research/COMPANIES/SPCX/research-records/2026-10-11-q2-release-evidence.json",
+      "locator": "pp3–6分部表及pp9–10资产负债/现金流",
+      "read_status": "公司原公告提取全文已读，精确取回URL缺失；与10-Q同源非独立确认；父代理提供公开原文短摘录、原缓存哈希及财务事实，未假称找到原下载地址",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/originals/q2-release.txt",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/SPCX/q2-release.txt",
+      "sha256": "d32fdf5f3a8f2e9cdcd09250b78c2bae65b3e55f4ba4d445e657ee2138cc4fff",
+      "original_retrieval_url": null,
+      "publication_evidence_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/publish/2026-10-11-q2-release-evidence.json"
+    },
+    {
+      "title": "OpenAI供应方声明官方索引片段",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+      "locator": "搜索索引首段 August28 and proposed November12",
+      "read_status": "仅官方索引原文片段，不是完整网页正文；只支持单方通知事实，不支撑财务数",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/openai-primary-search.json",
+      "sha256": "191b69846c50ca86011ac48f014baf6093ab3079dcf5c4c26ba13319878accd0"
+    },
+    {
+      "title": "Nasdaq historical close",
+      "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "locator": "rows date10/09/2026",
+      "read_status": "JSON实际读取",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SPCX/quote.json",
+      "sha256": "cc20288a688411961c33837cfb0a03accd44f8c474c91b3fd3fe811656f08fd1"
+    }
+  ],
+  "research_date": "2026-10-11",
+  "baseline": "tracker2026-07-09、deep-research/2026-07-09-deep-research-v2.md；旧价148.30，首财报待验证，Cursor预计Q3完成，基础110–230美元。",
+  "capital_structure": {
+    "date": "2026-06-30, cover July28",
+    "A_cover": 7696293669,
+    "B_cover": 5485486276,
+    "C_issued": 0,
+    "preferred_outstanding": 0,
+    "weighted_H1_basic_diluted_million": 4879,
+    "cash_million": 93522,
+    "securities_million": 6487,
+    "restricted_cash_implied_million": 830,
+    "debt_principal_million": 38433,
+    "finance_leases_million": 1079,
+    "debt_and_lease_carrying_million": 39364,
+    "other_financing_million": 13406,
+    "operating_lease_current_million": 344,
+    "operating_lease_noncurrent": "not separately closed",
+    "SBC_H1_PandL_million": 1470,
+    "SBC_capitalized_million": 110,
+    "ordinary_awards_excluded_antidilutive_million": 564,
+    "conditional_performance_awards_million": 1331,
+    "Cursor_closing_share_numbers": "search lead only, not original; excluded precise denominator",
+    "current_actual_economic_shares": "not closed after acquisition"
+  },
+  "evidence_policy": "公司公告与转载不算独立验证；缓存原件已实际选表读取；旧中文报告仅作历史基线，不作本期财报原件。",
+  "parent_review_source_limit": "OpenAI仅索引线索，正文403；正式报告删除未读全文的拟议终止具体日期，不将其作为确定事实。",
+  "parent_review": {
+    "math_checks": [
+      {
+        "name": "Q2 revenue growth",
+        "expression": "7814/4071-1",
+        "result": 0.9194301154507492,
+        "passed": true
+      },
+      {
+        "name": "Q2 gross profit",
+        "expression": "7814-3495",
+        "result": 4319,
+        "passed": true
+      },
+      {
+        "name": "H1 gross profit",
+        "expression": "12508-5883",
+        "result": 6625,
+        "passed": true
+      },
+      {
+        "name": "H125 gross profit",
+        "expression": "8138-4244",
+        "result": 3894,
+        "passed": true
+      },
+      {
+        "name": "H125 gross FCF",
+        "expression": "351-6965",
+        "result": -6614,
+        "passed": true
+      },
+      {
+        "name": "H126 gross FCF",
+        "expression": "3466-28476",
+        "result": -25010,
+        "passed": true
+      },
+      {
+        "name": "H126 rebate-adjusted cash gap",
+        "expression": "3466-28476+1195",
+        "result": -23815,
+        "passed": true
+      },
+      {
+        "name": "common H126 loss numerator",
+        "expression": "-4817-671",
+        "result": -5488,
+        "passed": true
+      },
+      {
+        "name": "AplusB million",
+        "expression": "(7696293669+5485486276)/1000000",
+        "result": 13181.779945,
+        "passed": true
+      },
+      {
+        "name": "legal snapshot cap million",
+        "expression": "162.57*(7696293669+5485486276)/1000000",
+        "result": 2142961.96565865,
+        "passed": true
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "162.57*(7696293669+5485486276)/1000000/30",
+        "result": 71432.065521955,
+        "passed": true
+      },
+      {
+        "name": "notes annual coupon million",
+        "expression": "25000*.05855",
+        "result": 1463.75,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 2,
+    "quote_date_row_rechecked": true,
+    "decisive_primary_sections_read": true,
+    "citation_gate": "strict and evidence passed; provenance validation is not an exhaustive audit",
+    "remaining_gaps": [
+      "Cursor8-K访问403，Capedge替代返回空文；精确成交股份、承担奖励与当前经济股数未原件闭合",
+      "Q2原PDF缓存未保存精确取回URL，已验证PDF发行人/期间并读表，但已提供可公开核对的有限证据摘录和原缓存哈希，原远端来源仍是追溯局限",
+      "本期原年度完整表未复核，未把旧中文转述数字当FY财务原件",
+      "OpenAI仅官方搜索索引原文片段，不是正文取回；实际合同及双方回应未闭合",
+      "当前非流动经营租赁、10月现金/债务与未来盈利/历史Forward P/E无法完整闭合",
+      "Q2财报及公告缓存原件完整并已读，但旧下载精确远端URL未在当前文件留存；不能用新拼接SEC路径伪补来源。"
+    ],
+    "financial_table": {
+      "unit": "见原报告单位说明",
+      "columns": [
+        "Q2 2025",
+        "Q2 2026",
+        "H1 2025",
+        "H1 2026"
+      ],
+      "rows": [
+        [
+          "收入",
+          4071,
+          7814,
+          8138,
+          12508
+        ],
+        [
+          "毛利（收入减直接成本，自算）",
+          1789,
+          4319,
+          3894,
+          6625
+        ],
+        [
+          "经营损益",
+          -970,
+          -143,
+          -943,
+          -2086
+        ],
+        [
+          "GAAP合并净损益",
+          -1008,
+          -541,
+          -1536,
+          -4817
+        ],
+        [
+          "普通股EPS分子损益",
+          -1008,
+          -541,
+          -1536,
+          -5488
+        ],
+        [
+          "经营现金流",
+          "单季未列示",
+          "单季未列示",
+          351,
+          3466
+        ],
+        [
+          "现金资本开支（未扣返利）",
+          2825,
+          18369,
+          6965,
+          28476
+        ],
+        [
+          "自由现金流（自算，未扣返利）",
+          "未计算",
+          "未计算",
+          -6614,
+          -25010
+        ]
+      ]
+    },
+    "worker_validation_tests": 59
+  }
+}

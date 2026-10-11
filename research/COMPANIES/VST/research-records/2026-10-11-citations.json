@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://investor.vistracorp.com/image/VST_10-Q_2026-08-10.pdf",
+      "title": "Q2 2026正式10-Q公司PDF",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "JUNE 30, 2026 — OR — ☐ TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+      "title": "FY2025全年官方业绩及财务附表",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Financials Financials SEC Filings OTC Filings Stock Information Historical Stock Price Dividends News Events & Presentations Resources Investor FAQ's Sustainable",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+      "title": "Q2官方业绩",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Financials Financials SEC Filings OTC Filings Stock Information Historical Stock Price Dividends News Events & Presentations Resources Investor FAQ's Sustainable",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000114036126037577/ef20082680_8k.htm",
+      "title": "9/24发行完成8-K",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ Item 1.01. Entry into a Material Definitive",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://www.sec.gov/Archives/edgar/data/1692819/000114036126038468/ef20083016_8k.htm",
+      "title": "10/5信贷延期8-K",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ Item 1.01. Entry into a Material Definitive",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower",
+      "title": "DOE条件贷款独立监管原件",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial conditions before the Department enters into definitive financing documents and funds the loan. View Next Press Release A Legacy",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://investor.vistracorp.com/2026-09-29-Vistra-to-Report-Third-Quarter-Results-on-Nov-6,-2026",
+      "title": "Q3业绩官方时钟",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Financials Financials SEC Filings OTC Filings Stock Information Historical Stock Price Dividends News Events & Presentations Resources Investor FAQ's Sustainable",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": "https://api.nasdaq.com/api/quote/VST/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq常规收盘",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"VST\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url": "https://investor.vistracorp.com/news",
+      "title": "最新IR新闻索引",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Financials Financials SEC Filings OTC Filings Stock Information Historical Stock Price Dividends News Events & Presentations Resources Investor FAQ's Sustainable",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url": "https://investor.vistracorp.com/2025-02-27-Vistra-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+      "title": "FY2024业绩交叉核验",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Financials Financials SEC Filings OTC Filings Stock Information Historical Stock Price Dividends News Events & Presentations Resources Investor FAQ's Sustainable",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "url": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/amp",
+      "title": "Meta客户确认",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial support for operating nuclear power plants, extending the operational lifespan, and increasing energy production at the Perry and Davis-Besse",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://investor.vistracorp.com/image/Q2_2026_Results_Presentation_vFinal.pdf",
+      "title": "Q2投资者演示",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "may occur in the future, including such matters as activities related to our financial o r operational projections including financial",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

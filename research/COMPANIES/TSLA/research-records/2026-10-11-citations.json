@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://files.quartr.com/reports/88aae9aecf8328f0272a694c029dd4f8-2026-07-23-10-03-56.pdf?ref=U0E=",
+      "title": "Tesla Q2 2026 Form10-Q 原件镜像",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "June 30, 2026 OR o TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://files.quartr.com/reports/3fed9-2026-01-29-11-34-04.pdf?ref=U3RvY2tBbmFseXNpcw==",
+      "title": "Tesla FY2025 Form10-K 原件镜像",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o Indicate by check mark whether the Registrant",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-third-quarter-2026-production-130600521.html",
+      "title": "Q3 2026 Production, Deliveries & Deployments 公司原公告Yahoo转载",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial results for the third quarter of 2026 after market close on Wednesday, October 21, 2026. At that time, Tesla",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://files.quartr.com/conference-calls/31912339a9c7d4acc7a371cc8cfa6e43-2026-07-22-20-08-25.pdf?ref=U0E=",
+      "title": "Tesla Second Quarter 2026 Update 缓存",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Financial Summary 04 Operational Summary 05 Manufacturing & Hardware 06 Supporting Infrastructure 07 AI & Software 08 Services 09 Outlook",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq historical close",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"TSLA\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

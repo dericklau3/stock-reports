@@ -1,0 +1,560 @@
+{
+  "parent": {
+    "ticker": "TSLA",
+    "quote_source_verified": true,
+    "math_checks": [
+      {
+        "name": "FY24 FCF",
+        "expression": "14923-11342",
+        "result": 3581,
+        "passed": true
+      },
+      {
+        "name": "FY25 FCF",
+        "expression": "14747-8527",
+        "result": 6220,
+        "passed": true
+      },
+      {
+        "name": "H125 FCF",
+        "expression": "4696-3886",
+        "result": 810,
+        "passed": true
+      },
+      {
+        "name": "H126 FCF",
+        "expression": "8634-8282",
+        "result": 352,
+        "passed": true
+      },
+      {
+        "name": "H1 revenue growth",
+        "expression": "50623/41831-1",
+        "result": 0.2101790538117665,
+        "passed": true
+      },
+      {
+        "name": "Q3 delivery sequential growth",
+        "expression": "486532/480126-1",
+        "result": 0.01334233097145332,
+        "passed": true
+      },
+      {
+        "name": "Q3 production delivery gap",
+        "expression": "486532-464391",
+        "result": 22141,
+        "passed": true
+      },
+      {
+        "name": "legal-share proxy market cap million",
+        "expression": "382.7*3949.547394",
+        "result": 1511491.7876838,
+        "passed": true
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "382.7*3949.547394/30",
+        "result": 50383.059589460005,
+        "passed": true
+      },
+      {
+        "name": "60PE implied NI million",
+        "expression": "382.7*3949.547394/60",
+        "result": 25191.529794730002,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 4,
+    "citations_evidence": "passed",
+    "declared_gaps": [
+      "Q3正式利润和现金流尚未披露，不能从交付量推算EPS",
+      "Robotaxi/Optimus外部付费单位经济与资本需求未闭合，拒绝精确期权/DCF目标价",
+      "10月股本、奖励归属及完整当前租赁负债桥未闭合，市值只用法律股数代理",
+      "当前与历史Forward P/E以及财报前共识未取得",
+      "Q3 BusinessWire本次访问超时；使用保存的公司公告Yahoo转载原文，非独立确认"
+    ]
+  },
+  "worker": {
+    "status": "passed_with_declared_gaps",
+    "tests": [
+      {
+        "test": "identity",
+        "passed": true,
+        "detail": {
+          "issuer": "Tesla, Inc.",
+          "ticker": "TSLA",
+          "exchange": "Nasdaq Global Select",
+          "security": "common stock; includes performance restricted issued shares in legal total",
+          "currency": "USD",
+          "CIK": "0001318605"
+        }
+      },
+      {
+        "test": "quote-date-session",
+        "passed": true,
+        "detail": {
+          "price": 382.7,
+          "date": "2026-10-09",
+          "session": "regular-close",
+          "currency": "USD",
+          "url": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+          "status": "verified",
+          "timezone": "America/New_York",
+          "time_basis": "交易所常规交易收盘；纽约时区"
+        }
+      },
+      {
+        "test": "source-file:Q2-original-pdf.pdf",
+        "passed": true,
+        "detail": "原PDF已下载、magic和43页与期间已验证；实际选表和附注读取"
+      },
+      {
+        "test": "source-file:FY2025-original-pdf.pdf",
+        "passed": true,
+        "detail": "原PDF已取回；缓存对应报表与本次PDF标题期间核对；财务表实际读取"
+      },
+      {
+        "test": "source-file:Q3-original-syndicated.txt",
+        "passed": true,
+        "detail": "缓存原公告全文实际读取；BusinessWire新取源超时"
+      },
+      {
+        "test": "source-file:Q2-update.txt",
+        "passed": true,
+        "detail": "实际读取缓存；虽路径含conference-calls，内容是update不是电话会逐字稿"
+      },
+      {
+        "test": "source-file:quote.json",
+        "passed": true,
+        "detail": "JSON实际读取"
+      },
+      {
+        "test": "FY24 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "14923-11342",
+          "computed": 3581,
+          "expected": 3581
+        }
+      },
+      {
+        "test": "FY25 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "14747-8527",
+          "computed": 6220,
+          "expected": 6220
+        }
+      },
+      {
+        "test": "H125 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "4696-3886",
+          "computed": 810,
+          "expected": 810
+        }
+      },
+      {
+        "test": "H126 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "8634-8282",
+          "computed": 352,
+          "expected": 352
+        }
+      },
+      {
+        "test": "H1 revenue growth",
+        "passed": true,
+        "detail": {
+          "expression": "50623/41831-1",
+          "computed": 0.2101790538117665,
+          "expected": 0.2101790538117665
+        }
+      },
+      {
+        "test": "Q3 delivery sequential growth",
+        "passed": true,
+        "detail": {
+          "expression": "486532/480126-1",
+          "computed": 0.01334233097145332,
+          "expected": 0.01334233097145332
+        }
+      },
+      {
+        "test": "Q3 production delivery gap",
+        "passed": true,
+        "detail": {
+          "expression": "486532-464391",
+          "computed": 22141,
+          "expected": 22141
+        }
+      },
+      {
+        "test": "legal-share proxy market cap million",
+        "passed": true,
+        "detail": {
+          "expression": "382.7*3949.547394",
+          "computed": 1511491.7876838,
+          "expected": 1511491.7876838
+        }
+      },
+      {
+        "test": "30PE implied NI million",
+        "passed": true,
+        "detail": {
+          "expression": "382.7*3949.547394/30",
+          "computed": 50383.059589460005,
+          "expected": 50383.059589460005
+        }
+      },
+      {
+        "test": "60PE implied NI million",
+        "passed": true,
+        "detail": {
+          "expression": "382.7*3949.547394/60",
+          "computed": 25191.529794730002,
+          "expected": 25191.529794730002
+        }
+      },
+      {
+        "test": "artifact:report.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:tracker-update.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:research-record.json",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "eight-sections",
+        "passed": true,
+        "detail": "8 sections"
+      },
+      {
+        "test": "no-disallowed-metadata",
+        "passed": true,
+        "detail": "format"
+      },
+      {
+        "test": "no-contact-emails",
+        "passed": true,
+        "detail": "sanitized"
+      },
+      {
+        "test": "quote-source-is-registered",
+        "passed": true,
+        "detail": [
+          {
+            "title": "Nasdaq historical close",
+            "url": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+            "locator": "rows date10/09/2026",
+            "read_status": "JSON实际读取",
+            "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/quote.json",
+            "sha256": "2cd55af0d0785bf8344efd484f1dc4a85e2b7d0c451316369ff20cf4a285694d"
+          }
+        ]
+      },
+      {
+        "test": "quote-selected-explicit-date-not-first-row",
+        "passed": true,
+        "detail": [
+          {
+            "date": "10/09/2026",
+            "close": "$382.70",
+            "volume": "38,952,430",
+            "open": "$382.38",
+            "high": "$388.56",
+            "low": "$379.71"
+          }
+        ]
+      },
+      {
+        "test": "quote-timezone",
+        "passed": true,
+        "detail": "交易所常规交易收盘；纽约时区"
+      },
+      {
+        "test": "identity-raw:Tesla",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:3949547394",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "period-raw:June 30",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-raw:2026",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-not-after-cutoff:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-12-31",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-12-31",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-12-31",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-12-31",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:H1 2025",
+        "passed": true,
+        "detail": {
+          "period": "H1 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-accounting-basis:H1 2025",
+        "passed": true,
+        "detail": {
+          "period": "H1 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:H1 2026",
+        "passed": true,
+        "detail": {
+          "period": "H1 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "period-accounting-basis:H1 2026",
+        "passed": true,
+        "detail": {
+          "period": "H1 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP; attributed ordinary net-income"
+        }
+      },
+      {
+        "test": "reported-raw-number:收入",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "50623",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:毛利",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "9471",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营利润",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "1339",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:归属普通股净利润",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "1591",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营现金流",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "8634",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:现金资本开支（不含融资租赁）",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "8282",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "financial-table-width",
+        "passed": true,
+        "detail": [
+          "FY2024",
+          "FY2025",
+          "H1 2025",
+          "H1 2026"
+        ]
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2024",
+        "passed": true,
+        "detail": {
+          "CFO": 14923,
+          "cashcapex": 11342,
+          "difference": 3581,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": 14747,
+          "cashcapex": 8527,
+          "difference": 6220,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:H1 2025",
+        "passed": true,
+        "detail": {
+          "CFO": 4696,
+          "cashcapex": 3886,
+          "difference": 810,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:H1 2026",
+        "passed": true,
+        "detail": {
+          "CFO": 8634,
+          "cashcapex": 8282,
+          "difference": 352,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "one-table-per-section",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "test": "financial-glossary-attached",
+        "passed": true,
+        "detail": "small directly after financial table"
+      },
+      {
+        "test": "opening-three-points",
+        "passed": true,
+        "detail": "No second executive summary"
+      },
+      {
+        "test": "five-step-business-and-hypothesis",
+        "passed": true,
+        "detail": "Business/paid path"
+      },
+      {
+        "test": "four-investor-lenses",
+        "passed": true,
+        "detail": "Analytical frameworks only"
+      },
+      {
+        "test": "critical-evidence-five-max",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "test": "declared-gaps",
+        "passed": true,
+        "detail": "unable_to_reliably_value"
+      },
+      {
+        "test": "source-artifacts-all-under-allowed-root",
+        "passed": true,
+        "detail": [
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/Q2-original-pdf.pdf",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/FY2025-original-pdf.pdf",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/originals/Q3-original-syndicated.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/originals/Q2-update.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/quote.json"
+        ]
+      },
+      {
+        "test": "bounded-new-source-budget",
+        "passed": true,
+        "detail": {
+          "urllib_attempts": 4,
+          "search_attempts": 0,
+          "total": 4,
+          "failed_attempts_included": true,
+          "session_search_is_local_not_network": true
+        }
+      },
+      {
+        "test": "no-contact-mails-in-source-text",
+        "passed": true,
+        "detail": "PDF text plus original HTML/data checked; request headers were not saved."
+      }
+    ],
+    "limitations": [
+      "Q3正式利润和现金流尚未披露，不能从交付量推算EPS",
+      "Robotaxi/Optimus外部付费单位经济与资本需求未闭合，拒绝精确期权/DCF目标价",
+      "10月股本、奖励归属及完整当前租赁负债桥未闭合，市值只用法律股数代理",
+      "当前与历史Forward P/E以及财报前共识未取得",
+      "Q3 BusinessWire本次访问超时；使用保存的公司公告Yahoo转载原文，非独立确认"
+    ],
+    "semantic_note": "通过的是已声明输入的算式、日期、文件与格式；不等于所有财务披露已闭合或定量估值可用。",
+    "audit_scope": "数学、真实原始报价行、证券原文标识、期间/会计口径、多期表自算一致性、部分原表数值、原件哈希、格式与新网络预算均实际运行；数值token定位不是独立审计，全文完整性缺口仍保留。"
+  },
+  "scope_note": "父代理数学与报价/引用复核独立执行；worker测试反映父代理调整前的原件与拟稿快照，均不代表披露缺口已经消失。"
+}

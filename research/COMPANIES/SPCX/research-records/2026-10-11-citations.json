@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://raw.githubusercontent.com/dericklau3/stock-reports/main/research/COMPANIES/SPCX/research-records/2026-10-11-q2-10q-evidence.json",
+      "title": "SpaceX Q2 2026 Form10-Q PDF缓存（公开证据摘录；原下载URL缺失）",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "June 30, 2026 OR ☐ TRANSITION REPORT PURSUANT TO SECTION",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://raw.githubusercontent.com/dericklau3/stock-reports/main/research/COMPANIES/SPCX/research-records/2026-10-11-q2-release-evidence.json",
+      "title": "SpaceX Q2 2026 company release缓存文本（公开证据摘录；原下载URL缺失）",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "revenue growth of 92% year-over-year across Space, Connectivity and AI",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq historical close",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"SPCX\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

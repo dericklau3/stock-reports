@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.globenewswire.com/news-release/2026/07/29/3335576/0/en/robinhood-reports-second-quarter-2026-results.html",
+      "title": "Q2 2026公司公告（Nasdaq缓存原公告正文，官方新闻页指向同一GlobeNewswire稿）",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Revenues up 32% year-over-year to a record $1.31 billion Diluted EPS up 48% year-over-year to $0.62 Net Deposits were a",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://nasdaq.com/press-release/robinhood-reports-fourth-quarter-and-full-year-2025-results-2026-02-10",
+      "title": "FY2025公司公告Nasdaq缓存",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Revenues of $4.5 billion in 2025, including a record $1 .28 billion in Q4 Record Diluted EPS of $2.05 in",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://nasdaq.com/press-release/robinhood-markets-inc-reports-august-2026-operating-data-2026-09-10",
+      "title": "August 2026经营月报Nasdaq缓存",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Net Deposits were $4.0 billion in August, or a 14% annualized growth rate relative to July 2026 Total Platform Assets.",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://www.globenewswire.com/news-release/2026/06/25/3317985/0/en/Robinhood-Closes-Offering-of-2-2-Billion-of-0-00-Convertible-Senior-Notes-Due-2029.html",
+      "title": "0% convertible notes due2029 closing announcement缓存",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "net dilution from the transaction until its share price exceeds approximately $237.85 or an approximately 154% increase from today’s closing",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://api.nasdaq.com/api/quote/HOOD/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq historical close",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"HOOD\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

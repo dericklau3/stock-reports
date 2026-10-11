@@ -1,0 +1,843 @@
+{
+  "parent": {
+    "ticker": "BMNR",
+    "quote_source_verified": true,
+    "math_checks": [
+      {
+        "name": "FY24gross",
+        "expression": "3310-3473",
+        "result": -163,
+        "passed": true
+      },
+      {
+        "name": "FY25gross",
+        "expression": "6095-5785",
+        "result": 310,
+        "passed": true
+      },
+      {
+        "name": "Q326gross",
+        "expression": "46535-5726",
+        "result": 40809,
+        "passed": true
+      },
+      {
+        "name": "9M26gross",
+        "expression": "59870-8177",
+        "result": 51693,
+        "passed": true
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "-30-76",
+        "result": -106,
+        "passed": true
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "-4149-1065",
+        "result": -5214,
+        "passed": true
+      },
+      {
+        "name": "9M25FCF",
+        "expression": "1366-18",
+        "result": 1348,
+        "passed": true
+      },
+      {
+        "name": "9M26FCF",
+        "expression": "-287592-406",
+        "result": -287998,
+        "passed": true
+      },
+      {
+        "name": "Q326op",
+        "expression": "46535-5726-37270-15404",
+        "result": -11865,
+        "passed": true
+      },
+      {
+        "name": "9M26op",
+        "expression": "59870-8177-335662-9038538",
+        "result": -9322507,
+        "passed": true
+      },
+      {
+        "name": "leaseLiability",
+        "expression": "104+1216",
+        "result": 1320,
+        "passed": true
+      },
+      {
+        "name": "FY25ETHpershare",
+        "expression": "1874927/232412324",
+        "result": 0.008067244317044048,
+        "passed": true
+      },
+      {
+        "name": "May31ETHpershare",
+        "expression": "5416945/579652432",
+        "result": 0.009345160480582612,
+        "passed": true
+      },
+      {
+        "name": "same-date ETH/share growth",
+        "expression": "(5416945/579652432)/(1874927/232412324)-1",
+        "result": 0.15840801558949313,
+        "passed": true
+      },
+      {
+        "name": "treasuryETHgrowth vsJuly snapshot",
+        "expression": "6016414/5742237-1",
+        "result": 0.04774741969027052,
+        "passed": true
+      },
+      {
+        "name": "stakedfraction",
+        "expression": "5067309/6016414",
+        "result": 0.8422473918849335,
+        "passed": true
+      },
+      {
+        "name": "grossannualrewardETH",
+        "expression": "5067309*.0263",
+        "result": 133270.2267,
+        "passed": true
+      },
+      {
+        "name": "grossannualrewardUSDatAnnouncement",
+        "expression": "5067309*.0263*2726",
+        "result": 363294637.9842,
+        "passed": true
+      },
+      {
+        "name": "June preferred baseline dividendUSD",
+        "expression": "3500000*100*.095",
+        "result": 33250000.0,
+        "passed": true
+      },
+      {
+        "name": "Mayawards_potential",
+        "expression": "2872929+10435430+1097346+4500000+359124",
+        "result": 19264829,
+        "passed": true
+      },
+      {
+        "name": "conservativeJulyplusMay_awards_notcurrentFD",
+        "expression": "603226394+2872929+10435430+1097346+4500000+359124",
+        "result": 622491223,
+        "passed": true
+      },
+      {
+        "name": "conditionalJulyshares_marketcap_M",
+        "expression": "24.03*603226394/1000000",
+        "result": 14495.530247820001,
+        "passed": true
+      },
+      {
+        "name": "Q3noncashSBCsum_thousand",
+        "expression": "36689+1162+506",
+        "result": 38357,
+        "passed": true
+      },
+      {
+        "name": "Q3GAAPnoncashreweight",
+        "expression": "264121-133275-9381-6793+9917-480",
+        "result": 124109,
+        "passed": true
+      },
+      {
+        "name": "simple9MCFOcashbridge",
+        "expression": "-287592-12102446+12218362",
+        "result": -171676,
+        "passed": true
+      },
+      {
+        "name": "Q3historicalCommonBookUSDpershare",
+        "expression": "11599577000/579652432",
+        "result": 20.01126254224014,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 4,
+    "citations_evidence": "passed",
+    "declared_gaps": [
+      "最新完整财务已补齐Q3；FY2026年度8/31已结束，但官方IR及申报缓存未读到已发布新10-K，不作年度猜测",
+      "10月实际/FD股本、ATM发行/回购净额、优先在外量与递延清算/股息未完全对齐；当前NAV/mNAV无法可靠估值",
+      "同期ETH/BTC与非核心投资可变现值/现金可用性未闭合；10/4公告价不是10/11现货价",
+      "独立MAVAN外部AUM/付费客户/费率/盈利分拆和内控正式有效性未证实",
+      "FY25初版股数后来修订，采用Q3重列232412324普通股而非初版234712324；正式财务镜像与主站仍同源非独立审计"
+    ]
+  },
+  "worker": {
+    "status": "passed_with_declared_gaps",
+    "tests": [
+      {
+        "test": "identity",
+        "passed": true,
+        "detail": {
+          "issuer": "Bitmine Immersion Technologies, Inc.",
+          "ticker": "BMNR",
+          "exchange": "NYSE",
+          "security": "common;BMNP is distinct preferred",
+          "CIK": "0001829311",
+          "currency": "USD",
+          "fiscal_year_end": "08-31"
+        }
+      },
+      {
+        "test": "quote-date-session",
+        "passed": true,
+        "detail": {
+          "price": 24.03,
+          "date": "2026-10-09",
+          "session": "regular-close",
+          "currency": "USD",
+          "url": "https://api.nasdaq.com/api/quote/BMNR/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+          "status": "verified",
+          "source_policy": "继承父代理Nasdaq原JSON，拒绝15:55的24.05旧非收盘快照",
+          "timezone": "America/New_York",
+          "time_basis": "交易所常规交易收盘；纽约时区"
+        }
+      },
+      {
+        "test": "source-file:Q3-cdn.html",
+        "passed": true,
+        "detail": "SEC403，合法CDN原HTML全文取回；实际读取决定性表和附注，非CapEdge/搜索摘要"
+      },
+      {
+        "test": "source-file:FY2025-cdn.html",
+        "passed": true,
+        "detail": "全文原HTML已取得且实际年度读表，缓存earningsPDF图片pp8–9作同源对照"
+      },
+      {
+        "test": "source-file:holdings.txt",
+        "passed": true,
+        "detail": "继承原正文已实际读，未把后续搜索摘要当独立验证"
+      },
+      {
+        "test": "source-file:parent-nasdaq-quote.json",
+        "passed": true,
+        "detail": "继承父代理原页已读取，15:55报价24.05被拒绝"
+      },
+      {
+        "test": "source-file:Oct7-8K-cdn.html",
+        "passed": true,
+        "detail": "实际读8-K正文；未声称读取附件全部演示视频或用目标场景作审计事实"
+      },
+      {
+        "test": "source-file:latest-IR.html",
+        "passed": true,
+        "detail": "本次原正文及内嵌filing索引已读；索引不足以证明绝对无未披露事项"
+      },
+      {
+        "test": "FY24gross",
+        "passed": true,
+        "detail": {
+          "expression": "3310-3473",
+          "computed": -163,
+          "expected": -163
+        }
+      },
+      {
+        "test": "FY25gross",
+        "passed": true,
+        "detail": {
+          "expression": "6095-5785",
+          "computed": 310,
+          "expected": 310
+        }
+      },
+      {
+        "test": "Q326gross",
+        "passed": true,
+        "detail": {
+          "expression": "46535-5726",
+          "computed": 40809,
+          "expected": 40809
+        }
+      },
+      {
+        "test": "9M26gross",
+        "passed": true,
+        "detail": {
+          "expression": "59870-8177",
+          "computed": 51693,
+          "expected": 51693
+        }
+      },
+      {
+        "test": "FY24FCF",
+        "passed": true,
+        "detail": {
+          "expression": "-30-76",
+          "computed": -106,
+          "expected": -106
+        }
+      },
+      {
+        "test": "FY25FCF",
+        "passed": true,
+        "detail": {
+          "expression": "-4149-1065",
+          "computed": -5214,
+          "expected": -5214
+        }
+      },
+      {
+        "test": "9M25FCF",
+        "passed": true,
+        "detail": {
+          "expression": "1366-18",
+          "computed": 1348,
+          "expected": 1348
+        }
+      },
+      {
+        "test": "9M26FCF",
+        "passed": true,
+        "detail": {
+          "expression": "-287592-406",
+          "computed": -287998,
+          "expected": -287998
+        }
+      },
+      {
+        "test": "Q326op",
+        "passed": true,
+        "detail": {
+          "expression": "46535-5726-37270-15404",
+          "computed": -11865,
+          "expected": -11865
+        }
+      },
+      {
+        "test": "9M26op",
+        "passed": true,
+        "detail": {
+          "expression": "59870-8177-335662-9038538",
+          "computed": -9322507,
+          "expected": -9322507
+        }
+      },
+      {
+        "test": "leaseLiability",
+        "passed": true,
+        "detail": {
+          "expression": "104+1216",
+          "computed": 1320,
+          "expected": 1320
+        }
+      },
+      {
+        "test": "FY25ETHpershare",
+        "passed": true,
+        "detail": {
+          "expression": "1874927/232412324",
+          "computed": 0.008067244317044048,
+          "expected": 0.008067244317044048
+        }
+      },
+      {
+        "test": "May31ETHpershare",
+        "passed": true,
+        "detail": {
+          "expression": "5416945/579652432",
+          "computed": 0.009345160480582612,
+          "expected": 0.009345160480582612
+        }
+      },
+      {
+        "test": "same-date ETH/share growth",
+        "passed": true,
+        "detail": {
+          "expression": "(5416945/579652432)/(1874927/232412324)-1",
+          "computed": 0.15840801558949313,
+          "expected": 0.15840801558949313
+        }
+      },
+      {
+        "test": "treasuryETHgrowth vsJuly snapshot",
+        "passed": true,
+        "detail": {
+          "expression": "6016414/5742237-1",
+          "computed": 0.04774741969027052,
+          "expected": 0.04774741969027052
+        }
+      },
+      {
+        "test": "stakedfraction",
+        "passed": true,
+        "detail": {
+          "expression": "5067309/6016414",
+          "computed": 0.8422473918849335,
+          "expected": 0.8422473918849335
+        }
+      },
+      {
+        "test": "grossannualrewardETH",
+        "passed": true,
+        "detail": {
+          "expression": "5067309*.0263",
+          "computed": 133270.2267,
+          "expected": 133270.2267
+        }
+      },
+      {
+        "test": "grossannualrewardUSDatAnnouncement",
+        "passed": true,
+        "detail": {
+          "expression": "5067309*.0263*2726",
+          "computed": 363294637.9842,
+          "expected": 363294637.9842
+        }
+      },
+      {
+        "test": "June preferred baseline dividendUSD",
+        "passed": true,
+        "detail": {
+          "expression": "3500000*100*.095",
+          "computed": 33250000.0,
+          "expected": 33250000.0
+        }
+      },
+      {
+        "test": "Mayawards_potential",
+        "passed": true,
+        "detail": {
+          "expression": "2872929+10435430+1097346+4500000+359124",
+          "computed": 19264829,
+          "expected": 19264829
+        }
+      },
+      {
+        "test": "conservativeJulyplusMay_awards_notcurrentFD",
+        "passed": true,
+        "detail": {
+          "expression": "603226394+2872929+10435430+1097346+4500000+359124",
+          "computed": 622491223,
+          "expected": 622491223
+        }
+      },
+      {
+        "test": "conditionalJulyshares_marketcap_M",
+        "passed": true,
+        "detail": {
+          "expression": "24.03*603226394/1000000",
+          "computed": 14495.530247820001,
+          "expected": 14495.530247820001
+        }
+      },
+      {
+        "test": "Q3noncashSBCsum_thousand",
+        "passed": true,
+        "detail": {
+          "expression": "36689+1162+506",
+          "computed": 38357,
+          "expected": 38357
+        }
+      },
+      {
+        "test": "Q3GAAPnoncashreweight",
+        "passed": true,
+        "detail": {
+          "expression": "264121-133275-9381-6793+9917-480",
+          "computed": 124109,
+          "expected": 124109
+        }
+      },
+      {
+        "test": "simple9MCFOcashbridge",
+        "passed": true,
+        "detail": {
+          "expression": "-287592-12102446+12218362",
+          "computed": -171676,
+          "expected": -171676
+        }
+      },
+      {
+        "test": "Q3historicalCommonBookUSDpershare",
+        "passed": true,
+        "detail": {
+          "expression": "11599577000/579652432",
+          "computed": 20.01126254224014,
+          "expected": 20.01126254224014
+        }
+      },
+      {
+        "test": "artifact:report.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:tracker-update.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:research-record.json",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "eight-sections",
+        "passed": true,
+        "detail": "8 sections"
+      },
+      {
+        "test": "no-disallowed-metadata",
+        "passed": true,
+        "detail": "format"
+      },
+      {
+        "test": "no-contact-emails",
+        "passed": true,
+        "detail": "sanitized"
+      },
+      {
+        "test": "quote-source-is-registered",
+        "passed": true,
+        "detail": [
+          {
+            "title": "Nasdaq交易所正式常规收盘JSON",
+            "url": "https://api.nasdaq.com/api/quote/BMNR/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+            "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/originals/parent-nasdaq-quote.json",
+            "locator": "10/09/2026 row close24.03",
+            "read_status": "继承父代理原页已读取，15:55报价24.05被拒绝",
+            "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/BMNR/parent-nasdaq-quote.json",
+            "sha256": "83c4df5e66434769dc783ca847ee1b419c6e9a967b3255fc19f6e3c8a695862e"
+          }
+        ]
+      },
+      {
+        "test": "quote-selected-explicit-date-not-first-row",
+        "passed": true,
+        "detail": [
+          {
+            "date": "10/09/2026",
+            "close": "$24.03",
+            "volume": "23,267,370",
+            "open": "$24.40",
+            "high": "$24.59",
+            "low": "$23.81"
+          }
+        ]
+      },
+      {
+        "test": "quote-timezone",
+        "passed": true,
+        "detail": "交易所常规交易收盘；纽约时区"
+      },
+      {
+        "test": "identity-raw:Bitmine",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:603226394",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:579652432",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "period-raw:May 31",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-raw:2026",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-not-after-cutoff:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-08-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-08-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-08-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-08-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:Q3FY2026",
+        "passed": true,
+        "detail": {
+          "period": "Q3FY2026",
+          "end": "2026-05-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q3FY2026",
+        "passed": true,
+        "detail": {
+          "period": "Q3FY2026",
+          "end": "2026-05-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:9MFY2025",
+        "passed": true,
+        "detail": {
+          "period": "9MFY2025",
+          "end": "2025-05-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:9MFY2025",
+        "passed": true,
+        "detail": {
+          "period": "9MFY2025",
+          "end": "2025-05-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:9MFY2026",
+        "passed": true,
+        "detail": {
+          "period": "9MFY2026",
+          "end": "2026-05-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:9MFY2026",
+        "passed": true,
+        "detail": {
+          "period": "9MFY2026",
+          "end": "2026-05-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "reported-raw-number:GAAP收入",
+        "passed": true,
+        "detail": {
+          "table_period": "9M FY2026",
+          "source_unit_multiplier": 1000,
+          "raw_number": "59870",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:GAAP经营损益",
+        "passed": true,
+        "detail": {
+          "table_period": "9M FY2026",
+          "source_unit_multiplier": 1000,
+          "raw_number": "9322507",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:GAAP合并净损益",
+        "passed": true,
+        "detail": {
+          "table_period": "9M FY2026",
+          "source_unit_multiplier": 1000,
+          "raw_number": "9106103",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营现金流",
+        "passed": true,
+        "detail": {
+          "table_period": "9M FY2026",
+          "source_unit_multiplier": 1000,
+          "raw_number": "287592",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:现金设备资本开支",
+        "passed": true,
+        "detail": {
+          "table_period": "9M FY2026",
+          "source_unit_multiplier": 1000,
+          "raw_number": "406",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "financial-table-width",
+        "passed": true,
+        "detail": [
+          "FY2024",
+          "FY2025",
+          "Q3 FY2026",
+          "9M FY2025",
+          "9M FY2026"
+        ]
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2024",
+        "passed": true,
+        "detail": {
+          "CFO": -0.03,
+          "cashcapex": 0.076,
+          "difference": -0.106,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": -4.149,
+          "cashcapex": 1.065,
+          "difference": -5.214,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:9M FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": 1.366,
+          "cashcapex": 0.018,
+          "difference": 1.348,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:9M FY2026",
+        "passed": true,
+        "detail": {
+          "CFO": -287.592,
+          "cashcapex": 0.406,
+          "difference": -287.998,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "lease-liability-bridge",
+        "passed": true,
+        "detail": 1.32
+      },
+      {
+        "test": "no-current-NAV-claim",
+        "passed": true,
+        "detail": "Do not claim current NAV/FD capital bridge is closed."
+      },
+      {
+        "test": "one-table-per-section",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "test": "financial-glossary-attached",
+        "passed": true,
+        "detail": "small directly after financial table"
+      },
+      {
+        "test": "opening-three-points",
+        "passed": true,
+        "detail": "No second executive summary"
+      },
+      {
+        "test": "five-step-business-and-hypothesis",
+        "passed": true,
+        "detail": "Business/paid path"
+      },
+      {
+        "test": "four-investor-lenses",
+        "passed": true,
+        "detail": "Analytical frameworks only"
+      },
+      {
+        "test": "critical-evidence-five-max",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "test": "declared-gaps",
+        "passed": true,
+        "detail": "unable_to_reliably_value_current"
+      },
+      {
+        "test": "source-artifacts-all-under-allowed-root",
+        "passed": true,
+        "detail": [
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/Q3-cdn.html",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/FY2025-cdn.html",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/originals/holdings.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/originals/parent-nasdaq-quote.json",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/Oct7-8K-cdn.html",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/latest-IR.html"
+        ]
+      },
+      {
+        "test": "bounded-new-source-budget",
+        "passed": true,
+        "detail": {
+          "urllib_attempts": 5,
+          "search_attempts": 1,
+          "total": 6,
+          "failed_attempts_included": true,
+          "session_search_is_local_not_network": true
+        }
+      },
+      {
+        "test": "no-contact-mails-in-source-text",
+        "passed": true,
+        "detail": "PDF text plus original HTML/data checked; request headers were not saved."
+      }
+    ],
+    "limitations": [
+      "最新完整财务已补齐Q3；FY2026年度8/31已结束，但官方IR及申报缓存未读到已发布新10-K，不作年度猜测",
+      "10月实际/FD股本、ATM发行/回购净额、优先在外量与递延清算/股息未完全对齐；当前NAV/mNAV无法可靠估值",
+      "同期ETH/BTC与非核心投资可变现值/现金可用性未闭合；10/4公告价不是10/11现货价",
+      "独立MAVAN外部AUM/付费客户/费率/盈利分拆和内控正式有效性未证实",
+      "FY25初版股数后来修订，采用Q3重列232412324普通股而非初版234712324；正式财务镜像与主站仍同源非独立审计"
+    ],
+    "semantic_note": "通过的是已声明输入的算式、日期、文件与格式；不等于所有财务披露已闭合或定量估值可用。",
+    "audit_scope": "数学、真实原始报价行、证券原文标识、期间/会计口径、多期表自算一致性、部分原表数值、原件哈希、格式与新网络预算均实际运行；数值token定位不是独立审计，全文完整性缺口仍保留。"
+  },
+  "scope_note": "父代理数学与报价/引用复核独立执行；worker测试反映父代理调整前的原件与拟稿快照，均不代表披露缺口已经消失。"
+}

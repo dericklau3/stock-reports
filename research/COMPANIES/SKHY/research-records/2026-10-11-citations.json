@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm",
+      "title": "最终IPO424B4说明书",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "may determine to purchase more, fewer, or no ADSs in this offering, or the underwriters may determine to sell more,",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://news.skhynix.com/en/q2-2026-business-results",
+      "title": "SKhynix Q2 2026官方初步业绩公告",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "2Q26 Financial Results – SK hynix Newsroom SK hynix Newsroom | SK hynix Announces 2Q26 Financial Results Skip to the",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://api.nasdaq.com/api/quote/SKHY/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq historical ADS close",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"SKHY\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

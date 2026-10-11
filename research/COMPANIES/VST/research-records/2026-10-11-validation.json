@@ -1,0 +1,1006 @@
+{
+  "parent": {
+    "ticker": "VST",
+    "quote_source_verified": true,
+    "math_checks": [
+      {
+        "name": "Bear0future",
+        "expression": "(6.5*7-26)*1000/350",
+        "result": 55.714285714285715,
+        "passed": true
+      },
+      {
+        "name": "Bear0PV",
+        "expression": "(((6.5*7-26)*1000/350)+1.2)/(1.12**1.2210814510609171)",
+        "result": 49.558947574476036,
+        "passed": true
+      },
+      {
+        "name": "Bear1future",
+        "expression": "(7*8-25)*1000/345",
+        "result": 89.85507246376811,
+        "passed": true
+      },
+      {
+        "name": "Bear1PV",
+        "expression": "(((7*8-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 79.28753749586848,
+        "passed": true
+      },
+      {
+        "name": "Base0future",
+        "expression": "(8.1*9.5-25)*1000/345",
+        "result": 150.57971014492753,
+        "passed": true
+      },
+      {
+        "name": "Base0PV",
+        "expression": "(((8.1*9.5-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 132.16440483331178,
+        "passed": true
+      },
+      {
+        "name": "Base1future",
+        "expression": "(8.5*10.5-23)*1000/338",
+        "result": 196.0059171597633,
+        "passed": true
+      },
+      {
+        "name": "Base1PV",
+        "expression": "(((8.5*10.5-23)*1000/338)+1.2)/(1.12**1.2210814510609171)",
+        "result": 171.71993968192822,
+        "passed": true
+      },
+      {
+        "name": "Bull0future",
+        "expression": "(9*11-23)*1000/335",
+        "result": 226.86567164179104,
+        "passed": true
+      },
+      {
+        "name": "Bull0PV",
+        "expression": "(((9*11-23)*1000/335)+1.2)/(1.12**1.2210814510609171)",
+        "result": 198.59152271845457,
+        "passed": true
+      },
+      {
+        "name": "Bull1future",
+        "expression": "(9.5*12-21)*1000/330",
+        "result": 281.8181818181818,
+        "passed": true
+      },
+      {
+        "name": "Bull1PV",
+        "expression": "(((9.5*12-21)*1000/330)+1.2)/(1.12**1.2210814510609171)",
+        "result": 246.44222552072185,
+        "passed": true
+      },
+      {
+        "name": "days",
+        "expression": "(446)/365.25",
+        "result": 1.2210814510609171,
+        "passed": true
+      },
+      {
+        "name": "marketcapB",
+        "expression": "161.48*335.635195/1000",
+        "result": 54.1983712886,
+        "passed": true
+      },
+      {
+        "name": "netdebtM",
+        "expression": "1876+17719+300+613-435",
+        "result": 20073,
+        "passed": true
+      },
+      {
+        "name": "netclaimsM",
+        "expression": "20508-435+2476.066+12",
+        "result": 22561.066,
+        "passed": true
+      },
+      {
+        "name": "conditionalEVB",
+        "expression": "161.48*335.635195/1000+(20508-435+2476.066+12)/1000",
+        "result": 76.7594372886,
+        "passed": true
+      },
+      {
+        "name": "EV2026mid",
+        "expression": "(161.48*335.635195/1000+22.561066)/7.2",
+        "result": 10.661032956749999,
+        "passed": true
+      },
+      {
+        "name": "H1FCF",
+        "expression": "2222-1572",
+        "result": 650,
+        "passed": true
+      },
+      {
+        "name": "TTMrevenue",
+        "expression": "17738+9657-8183",
+        "result": 19212,
+        "passed": true
+      },
+      {
+        "name": "TTMop",
+        "expression": "1906+2052-395",
+        "result": 3563,
+        "passed": true
+      },
+      {
+        "name": "TTMCFO",
+        "expression": "4070+2222-1171",
+        "result": 5121,
+        "passed": true
+      },
+      {
+        "name": "TTMcapex",
+        "expression": "2752+1572-1458",
+        "result": 2866,
+        "passed": true
+      },
+      {
+        "name": "TTMNI",
+        "expression": "944+1334-59",
+        "result": 2219,
+        "passed": true
+      },
+      {
+        "name": "TTMcommonNI",
+        "expression": "752+1238-(-37)",
+        "result": 2027,
+        "passed": true
+      },
+      {
+        "name": "TTMFCF",
+        "expression": "5121-2866",
+        "result": 2255,
+        "passed": true
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "4563-2078",
+        "result": 2485,
+        "passed": true
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "4070-2752",
+        "result": 1318,
+        "passed": true
+      },
+      {
+        "name": "juniorcouponM",
+        "expression": "850*.07+650*.0725",
+        "result": 106.625,
+        "passed": true
+      },
+      {
+        "name": "growth-adjusted-midpoint",
+        "expression": "(3925+4725)/2-1700",
+        "result": 2625.0,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 5,
+    "citations_evidence": "passed",
+    "declared_gaps": [
+      "10月实时actual股份、现金使用/债务与优先股赎回未完整闭合；条件EV不是实时EV",
+      "完整租赁负债分拆及9/14最终424B2未补齐，模型是有边界条件情景而非完整即时索偿",
+      "PPA价格/净利润及2027正式指引未披露，当前/一年历史Forward P/E未取得",
+      "IR新闻索引未出现新实质进展不证明绝对没有其他重大事件；并购交割未核实",
+      "Q2电话会第三方转录并非完整官方音频独立核验；同源公告转载不当独立证据"
+    ]
+  },
+  "worker": {
+    "status": "passed_with_declared_gaps",
+    "tests": [
+      {
+        "test": "identity",
+        "passed": true,
+        "detail": {
+          "issuer": "Vistra Corp.",
+          "ticker": "VST",
+          "exchange": "NYSE",
+          "security": "common",
+          "currency": "USD",
+          "CIK": "0001692819"
+        }
+      },
+      {
+        "test": "quote-date-session",
+        "passed": true,
+        "detail": {
+          "price": 161.48,
+          "date": "2026-10-09",
+          "session": "regular-close",
+          "currency": "USD",
+          "url": "https://api.nasdaq.com/api/quote/VST/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+          "status": "verified",
+          "timezone": "America/New_York",
+          "time_basis": "交易所常规交易收盘；纽约时区"
+        }
+      },
+      {
+        "test": "source-file:capital-q2-10q-full.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:fy25-release.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:q2-release.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:capital-sep24-8k.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:capital-oct5-8k.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:doe-uprates.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:q3-date.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:quote.json",
+        "passed": true,
+        "detail": "本次JSON读取，与昨日缓存161.48一致"
+      },
+      {
+        "test": "source-file:latest-news.html",
+        "passed": true,
+        "detail": "本次原页已读取；不据索引声称绝对无任何未披露重大事项"
+      },
+      {
+        "test": "source-file:fy24-release.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:meta-customer.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "source-file:q2-slides.txt",
+        "passed": true,
+        "detail": "已实际读取缓存原正文，非旧中文研究转述"
+      },
+      {
+        "test": "Bear0future",
+        "passed": true,
+        "detail": {
+          "expression": "(6.5*7-26)*1000/350",
+          "computed": 55.714285714285715,
+          "expected": 55.714285714285715
+        }
+      },
+      {
+        "test": "Bear0PV",
+        "passed": true,
+        "detail": {
+          "expression": "(((6.5*7-26)*1000/350)+1.2)/(1.12**1.2210814510609171)",
+          "computed": 49.558947574476036,
+          "expected": 49.558947574476036
+        }
+      },
+      {
+        "test": "Bear1future",
+        "passed": true,
+        "detail": {
+          "expression": "(7*8-25)*1000/345",
+          "computed": 89.85507246376811,
+          "expected": 89.85507246376811
+        }
+      },
+      {
+        "test": "Bear1PV",
+        "passed": true,
+        "detail": {
+          "expression": "(((7*8-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+          "computed": 79.28753749586848,
+          "expected": 79.28753749586848
+        }
+      },
+      {
+        "test": "Base0future",
+        "passed": true,
+        "detail": {
+          "expression": "(8.1*9.5-25)*1000/345",
+          "computed": 150.57971014492753,
+          "expected": 150.57971014492753
+        }
+      },
+      {
+        "test": "Base0PV",
+        "passed": true,
+        "detail": {
+          "expression": "(((8.1*9.5-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+          "computed": 132.16440483331178,
+          "expected": 132.16440483331178
+        }
+      },
+      {
+        "test": "Base1future",
+        "passed": true,
+        "detail": {
+          "expression": "(8.5*10.5-23)*1000/338",
+          "computed": 196.0059171597633,
+          "expected": 196.0059171597633
+        }
+      },
+      {
+        "test": "Base1PV",
+        "passed": true,
+        "detail": {
+          "expression": "(((8.5*10.5-23)*1000/338)+1.2)/(1.12**1.2210814510609171)",
+          "computed": 171.71993968192822,
+          "expected": 171.71993968192822
+        }
+      },
+      {
+        "test": "Bull0future",
+        "passed": true,
+        "detail": {
+          "expression": "(9*11-23)*1000/335",
+          "computed": 226.86567164179104,
+          "expected": 226.86567164179104
+        }
+      },
+      {
+        "test": "Bull0PV",
+        "passed": true,
+        "detail": {
+          "expression": "(((9*11-23)*1000/335)+1.2)/(1.12**1.2210814510609171)",
+          "computed": 198.59152271845457,
+          "expected": 198.59152271845457
+        }
+      },
+      {
+        "test": "Bull1future",
+        "passed": true,
+        "detail": {
+          "expression": "(9.5*12-21)*1000/330",
+          "computed": 281.8181818181818,
+          "expected": 281.8181818181818
+        }
+      },
+      {
+        "test": "Bull1PV",
+        "passed": true,
+        "detail": {
+          "expression": "(((9.5*12-21)*1000/330)+1.2)/(1.12**1.2210814510609171)",
+          "computed": 246.44222552072185,
+          "expected": 246.44222552072185
+        }
+      },
+      {
+        "test": "days",
+        "passed": true,
+        "detail": {
+          "expression": "(446)/365.25",
+          "computed": 1.2210814510609171,
+          "expected": 1.2210814510609171
+        }
+      },
+      {
+        "test": "marketcapB",
+        "passed": true,
+        "detail": {
+          "expression": "161.48*335.635195/1000",
+          "computed": 54.1983712886,
+          "expected": 54.1983712886
+        }
+      },
+      {
+        "test": "netdebtM",
+        "passed": true,
+        "detail": {
+          "expression": "1876+17719+300+613-435",
+          "computed": 20073,
+          "expected": 20073
+        }
+      },
+      {
+        "test": "netclaimsM",
+        "passed": true,
+        "detail": {
+          "expression": "20508-435+2476.066+12",
+          "computed": 22561.066,
+          "expected": 22561.066
+        }
+      },
+      {
+        "test": "conditionalEVB",
+        "passed": true,
+        "detail": {
+          "expression": "161.48*335.635195/1000+(20508-435+2476.066+12)/1000",
+          "computed": 76.7594372886,
+          "expected": 76.7594372886
+        }
+      },
+      {
+        "test": "EV2026mid",
+        "passed": true,
+        "detail": {
+          "expression": "(161.48*335.635195/1000+22.561066)/7.2",
+          "computed": 10.661032956749999,
+          "expected": 10.661032956749999
+        }
+      },
+      {
+        "test": "H1FCF",
+        "passed": true,
+        "detail": {
+          "expression": "2222-1572",
+          "computed": 650,
+          "expected": 650
+        }
+      },
+      {
+        "test": "TTMrevenue",
+        "passed": true,
+        "detail": {
+          "expression": "17738+9657-8183",
+          "computed": 19212,
+          "expected": 19212
+        }
+      },
+      {
+        "test": "TTMop",
+        "passed": true,
+        "detail": {
+          "expression": "1906+2052-395",
+          "computed": 3563,
+          "expected": 3563
+        }
+      },
+      {
+        "test": "TTMCFO",
+        "passed": true,
+        "detail": {
+          "expression": "4070+2222-1171",
+          "computed": 5121,
+          "expected": 5121
+        }
+      },
+      {
+        "test": "TTMcapex",
+        "passed": true,
+        "detail": {
+          "expression": "2752+1572-1458",
+          "computed": 2866,
+          "expected": 2866
+        }
+      },
+      {
+        "test": "TTMNI",
+        "passed": true,
+        "detail": {
+          "expression": "944+1334-59",
+          "computed": 2219,
+          "expected": 2219
+        }
+      },
+      {
+        "test": "TTMcommonNI",
+        "passed": true,
+        "detail": {
+          "expression": "752+1238-(-37)",
+          "computed": 2027,
+          "expected": 2027
+        }
+      },
+      {
+        "test": "TTMFCF",
+        "passed": true,
+        "detail": {
+          "expression": "5121-2866",
+          "computed": 2255,
+          "expected": 2255
+        }
+      },
+      {
+        "test": "FY24FCF",
+        "passed": true,
+        "detail": {
+          "expression": "4563-2078",
+          "computed": 2485,
+          "expected": 2485
+        }
+      },
+      {
+        "test": "FY25FCF",
+        "passed": true,
+        "detail": {
+          "expression": "4070-2752",
+          "computed": 1318,
+          "expected": 1318
+        }
+      },
+      {
+        "test": "juniorcouponM",
+        "passed": true,
+        "detail": {
+          "expression": "850*.07+650*.0725",
+          "computed": 106.625,
+          "expected": 106.625
+        }
+      },
+      {
+        "test": "growth-adjusted-midpoint",
+        "passed": true,
+        "detail": {
+          "expression": "(3925+4725)/2-1700",
+          "computed": 2625.0,
+          "expected": 2625.0
+        }
+      },
+      {
+        "test": "artifact:report.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:tracker-update.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:research-record.json",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "eight-sections",
+        "passed": true,
+        "detail": "8 sections"
+      },
+      {
+        "test": "no-disallowed-metadata",
+        "passed": true,
+        "detail": "format"
+      },
+      {
+        "test": "no-contact-emails",
+        "passed": true,
+        "detail": "sanitized"
+      },
+      {
+        "test": "quote-source-is-registered",
+        "passed": true,
+        "detail": [
+          {
+            "title": "Nasdaq常规收盘",
+            "url": "https://api.nasdaq.com/api/quote/VST/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+            "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/quote.json",
+            "locator": "10/09/2026 row",
+            "read_status": "本次JSON读取，与昨日缓存161.48一致",
+            "sha256": "0fdbb6c9aaef2eba93058ef99bdb0cf49813a4eb2b414ad7633926a8a8023225"
+          }
+        ]
+      },
+      {
+        "test": "quote-selected-explicit-date-not-first-row",
+        "passed": true,
+        "detail": [
+          {
+            "date": "10/09/2026",
+            "close": "$161.48",
+            "volume": "7,062,991",
+            "open": "$157.25",
+            "high": "$161.95",
+            "low": "$155.73"
+          }
+        ]
+      },
+      {
+        "test": "quote-timezone",
+        "passed": true,
+        "detail": "交易所常规交易收盘；纽约时区"
+      },
+      {
+        "test": "identity-raw:Vistra",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:335635195",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "period-raw:June 30",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-raw:2026",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-not-after-cutoff:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-12-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-12-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-12-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-12-31",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:H1 2025",
+        "passed": true,
+        "detail": {
+          "period": "H1 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:H1 2025",
+        "passed": true,
+        "detail": {
+          "period": "H1 2025",
+          "end": "2025-06-30",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:H1 2026",
+        "passed": true,
+        "detail": {
+          "period": "H1 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:H1 2026",
+        "passed": true,
+        "detail": {
+          "period": "H1 2026",
+          "end": "2026-06-30",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:TTM",
+        "passed": true,
+        "detail": {
+          "period": "TTM",
+          "end": "2026-06-30",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "period-accounting-basis:TTM",
+        "passed": true,
+        "detail": {
+          "period": "TTM",
+          "end": "2026-06-30",
+          "basis": "GAAP",
+          "unit": "USD million"
+        }
+      },
+      {
+        "test": "reported-raw-number:收入",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "9657",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营利润",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "2052",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:合并净利润",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "1334",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:普通股归属净利润",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "1238",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营现金流",
+        "passed": true,
+        "detail": {
+          "table_period": "H1 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "2222",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "financial-table-width",
+        "passed": true,
+        "detail": [
+          "FY2024",
+          "FY2025",
+          "H1 2025",
+          "H1 2026",
+          "TTM至2026Q2"
+        ]
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2024",
+        "passed": true,
+        "detail": {
+          "CFO": 4563,
+          "cashcapex": 2078,
+          "difference": 2485,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": 4070,
+          "cashcapex": 2752,
+          "difference": 1318,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:H1 2025",
+        "passed": true,
+        "detail": {
+          "CFO": 1171,
+          "cashcapex": 1458,
+          "difference": -287,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:H1 2026",
+        "passed": true,
+        "detail": {
+          "CFO": 2222,
+          "cashcapex": 1572,
+          "difference": 650,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:TTM至2026Q2",
+        "passed": true,
+        "detail": {
+          "CFO": 5121,
+          "cashcapex": 2866,
+          "difference": 2255,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-TTM:收入",
+        "passed": true,
+        "detail": {
+          "FY25": 17738,
+          "H126": 9657,
+          "H125": 8183,
+          "TTM": 19212
+        }
+      },
+      {
+        "test": "table-TTM:经营利润",
+        "passed": true,
+        "detail": {
+          "FY25": 1906,
+          "H126": 2052,
+          "H125": 395,
+          "TTM": 3563
+        }
+      },
+      {
+        "test": "table-TTM:合并净利润",
+        "passed": true,
+        "detail": {
+          "FY25": 944,
+          "H126": 1334,
+          "H125": 59,
+          "TTM": 2219
+        }
+      },
+      {
+        "test": "table-TTM:普通股归属净利润",
+        "passed": true,
+        "detail": {
+          "FY25": 752,
+          "H126": 1238,
+          "H125": -37,
+          "TTM": 2027
+        }
+      },
+      {
+        "test": "table-TTM:经营现金流",
+        "passed": true,
+        "detail": {
+          "FY25": 4070,
+          "H126": 2222,
+          "H125": 1171,
+          "TTM": 5121
+        }
+      },
+      {
+        "test": "table-TTM:全部现金资本开支含核燃料/LTSA预付",
+        "passed": true,
+        "detail": {
+          "FY25": 2752,
+          "H126": 1572,
+          "H125": 1458,
+          "TTM": 2866
+        }
+      },
+      {
+        "test": "table-TTM:简易自由现金流（自算）",
+        "passed": true,
+        "detail": {
+          "FY25": 1318,
+          "H126": 650,
+          "H125": -287,
+          "TTM": 2255
+        }
+      },
+      {
+        "test": "discount-period-exact-date",
+        "passed": true,
+        "detail": 1.2210814510609171
+      },
+      {
+        "test": "one-table-per-section",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "test": "financial-glossary-attached",
+        "passed": true,
+        "detail": "small directly after financial table"
+      },
+      {
+        "test": "opening-three-points",
+        "passed": true,
+        "detail": "No second executive summary"
+      },
+      {
+        "test": "five-step-business-and-hypothesis",
+        "passed": true,
+        "detail": "Business/paid path"
+      },
+      {
+        "test": "four-investor-lenses",
+        "passed": true,
+        "detail": "Analytical frameworks only"
+      },
+      {
+        "test": "critical-evidence-five-max",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "test": "declared-gaps",
+        "passed": true,
+        "detail": "conditional_scenarios_not_realtime_EV"
+      },
+      {
+        "test": "source-artifacts-all-under-allowed-root",
+        "passed": true,
+        "detail": [
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/capital-q2-10q-full.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/fy25-release.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/q2-release.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/capital-sep24-8k.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/capital-oct5-8k.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/doe-uprates.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/q3-date.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/quote.json",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/latest-news.html",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/fy24-release.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/meta-customer.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/VST/originals/q2-slides.txt"
+        ]
+      },
+      {
+        "test": "bounded-new-source-budget",
+        "passed": true,
+        "detail": {
+          "urllib_attempts": 2,
+          "search_attempts": 0,
+          "total": 2,
+          "failed_attempts_included": true,
+          "session_search_is_local_not_network": true
+        }
+      },
+      {
+        "test": "no-contact-mails-in-source-text",
+        "passed": true,
+        "detail": "PDF text plus original HTML/data checked; request headers were not saved."
+      }
+    ],
+    "limitations": [
+      "10月实时actual股份、现金使用/债务与优先股赎回未完整闭合；条件EV不是实时EV",
+      "完整租赁负债分拆及9/14最终424B2未补齐，模型是有边界条件情景而非完整即时索偿",
+      "PPA价格/净利润及2027正式指引未披露，当前/一年历史Forward P/E未取得",
+      "IR新闻索引未出现新实质进展不证明绝对没有其他重大事件；并购交割未核实",
+      "Q2电话会第三方转录并非完整官方音频独立核验；同源公告转载不当独立证据"
+    ],
+    "semantic_note": "通过的是已声明输入的算式、日期、文件与格式；不等于所有财务披露已闭合或定量估值可用。",
+    "audit_scope": "数学、真实原始报价行、证券原文标识、期间/会计口径、多期表自算一致性、部分原表数值、原件哈希、格式与新网络预算均实际运行；数值token定位不是独立审计，全文完整性缺口仍保留。"
+  },
+  "scope_note": "父代理数学与报价/引用复核独立执行；worker测试反映父代理调整前的原件与拟稿快照，均不代表披露缺口已经消失。"
+}

@@ -1,0 +1,339 @@
+{
+  "identity": {
+    "issuer": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "exchange": "Nasdaq",
+    "security": "common stock",
+    "currency": "USD",
+    "CIK": "0000789019"
+  },
+  "quote": {
+    "price": 535.07,
+    "currency": "USD",
+    "date": "2026-10-09",
+    "session": "regular-close",
+    "url": "https://api.nasdaq.com/api/quote/MSFT/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "verified",
+    "timezone": "America/New_York",
+    "time_basis": "交易所常规交易收盘；纽约时区"
+  },
+  "financial_periods": [
+    {
+      "period": "FY2025",
+      "end": "2025-06-30",
+      "basis": "GAAP; earnings-release unaudited",
+      "source": "[1]"
+    },
+    {
+      "period": "FY2026",
+      "end": "2026-06-30",
+      "basis": "GAAP; earnings-release unaudited",
+      "source": "[1]"
+    },
+    {
+      "period": "Q4 FY2025",
+      "end": "2025-06-30",
+      "basis": "GAAP; earnings-release unaudited",
+      "source": "[1]"
+    },
+    {
+      "period": "Q4 FY2026",
+      "end": "2026-06-30",
+      "basis": "GAAP; earnings-release unaudited",
+      "source": "[1]"
+    }
+  ],
+  "valuation": {
+    "method": "conditional forward earnings scenarios; no audited-10K closure",
+    "target": "FY2027 / approximately one year after research date",
+    "discount_rate": 0.1,
+    "discount_years": 1,
+    "assumptions": {
+      "bear": {
+        "EPS": 18,
+        "PE": 24
+      },
+      "base": {
+        "EPS": 20,
+        "PE": 28
+      },
+      "bull": {
+        "EPS": 22,
+        "PE": 32
+      }
+    },
+    "calculations": [
+      {
+        "name": "FY2026 FCF",
+        "expression": "182935-115948",
+        "result": 66987
+      },
+      {
+        "name": "FY2025 FCF",
+        "expression": "136162-64551",
+        "result": 71611
+      },
+      {
+        "name": "Q4FY26 FCF",
+        "expression": "55441-35802",
+        "result": 19639
+      },
+      {
+        "name": "Q4FY25 FCF",
+        "expression": "42647-17079",
+        "result": 25568
+      },
+      {
+        "name": "revenue growth",
+        "expression": "331839/281724-1",
+        "result": 0.17788686799846665
+      },
+      {
+        "name": "operating growth",
+        "expression": "155237/128528-1",
+        "result": 0.20780685920577624
+      },
+      {
+        "name": "share-proxy market-cap million",
+        "expression": "535.07*7427",
+        "result": 3973964.8900000006
+      },
+      {
+        "name": "historical GAAP PE",
+        "expression": "535.07/17.95",
+        "result": 29.808913649025072
+      },
+      {
+        "name": "OpenAI-adjusted historical PE",
+        "expression": "535.07/17.28",
+        "result": 30.964699074074076
+      },
+      {
+        "name": "bear present-value",
+        "expression": "18*24/1.1",
+        "result": 392.7272727272727
+      },
+      {
+        "name": "base present-value",
+        "expression": "20*28/1.1",
+        "result": 509.09090909090907
+      },
+      {
+        "name": "bull present-value",
+        "expression": "22*32/1.1",
+        "result": 640.0
+      }
+    ],
+    "current_forward_PE": "未取得有效同口径预测快照；历史实际EPS倍数不是forward PE",
+    "historical_forward_PE": "未取得历史当时EPS日频序列，不以今日EPS倒填历史价格",
+    "precision_limit": "使用期末股本代理；EPS倍数包含经济股权激励成本，但不能校正缺失租赁资本负担；不额外加投资NAV避免重复。",
+    "status": "conditional_scenarios_not_reliable_complete_current_value",
+    "interpretation": "可复算的研究条件情景，不是已证实预测或精确NAV/DCF；最新股本或其他缺口见gaps。",
+    "valuation_target_date": "2027-10-11",
+    "forecast_earnings_period": "FY2027 ending2027-06-30",
+    "day_count_basis": "one calendar year approximated as1.0 / ACT365 from2026-10-11 to2027-10-11"
+  },
+  "critical_evidence": [
+    "FY2026收入331839、经营利润155237百万美元；利润表",
+    "FY2026 CFO182935与现金资本开支115948；现金流表",
+    "Q4 Azure增长43%、Copilot付费超过3000万；公司声明",
+    "OpenAI投资收益4963百万；GAAP调整桥",
+    "10/09收盘535.07；明确日期行"
+  ],
+  "gaps": [
+    "完整FY2026 10-K与租赁/承诺/权益附注未取得，不能作闭合DCF或精确EV",
+    "10月最新实际股数未核验，仅使用6月期末代理市值",
+    "当前与历史Forward P/E预测快照缺失；共识超预期未核验",
+    "下载公告为Fast-EDGAR原公告镜像，与搜索确认的Microsoft公告同源，非独立交叉验证",
+    "一项SEC及镜像URL未由已取回索引验证且访问失败，不作为已阅读证据"
+  ],
+  "changes_from_previous": [
+    "2026-07-08基线388.84美元、FY2026 Q3 → 2026-10-09收盘535.07及FY2026全年公告；报价变化不自动归因某事件。",
+    "旧FY2026E收入329500百万/EPS16.82 → 实际331839百万/17.95；投资收益贡献必须剥离，不能全当经营超额。",
+    "旧FY2026E FCF64600百万 → 实际66987百万；仍低于FY2025的71611，AI资本开支主线未解除。",
+    "旧2030折现中枢441美元不直接挪用：改为明确的一年条件EPS情景；从积极/谨慎转中性等待，主要因价格与现金回报要求提高。"
+  ],
+  "sources": [
+    {
+      "title": "Microsoft FY2026 Q4 earnings release EX-99.1（原公告镜像）",
+      "url": "https://content-archive.fast-edgar.com/20260729/AC22N22FZM2RHTZ2222A2ZYMMTPROZ22X282/msft-ex99_1.htm",
+      "locator": "INCOME STATEMENTS / BALANCE SHEETS / CASH FLOWS / Business Highlights",
+      "read_status": "完整正文取回，已读决定性财务表及调整桥；非完整10-K",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/MSFT/FY2026-release-mirror.html",
+      "sha256": "86b65537f84841c5c86229ea141b4760d8dd238fb5661f3d64b794bc0b546b0e"
+    },
+    {
+      "title": "Nasdaq MSFT historical",
+      "url": "https://api.nasdaq.com/api/quote/MSFT/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "locator": "tradesTable.rows date=10/09/2026",
+      "read_status": "JSON实际读取",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/MSFT/quote.json",
+      "sha256": "4cccbc7d2ee206d4e2e80eb70fd8a9d7b0d8a270fef9c3cb9ac75c26bc4f9a8c"
+    }
+  ],
+  "research_date": "2026-10-11",
+  "baseline": "tracker 2026-07-08；deep-research/2026-07-08-deep-research.md；旧价388.84、FY2026E EPS16.82、FCF64600百万，旧2030基础折现441美元。",
+  "capital_structure": {
+    "actual_shares_million": 7427,
+    "actual_shares_date": "2026-06-30",
+    "weighted_diluted_FY2026_million": 7453,
+    "cash_short_term_investments_million": 76843,
+    "funded_debt_million": 40294,
+    "operating_lease_long_term_million": 16532,
+    "operating_lease_current": "公告未单列",
+    "finance_leases": "完整附注未取得",
+    "preferred_convertibles": "未据完整10-K验证；不可假定全部为零",
+    "SBC_million": 12405,
+    "buybacks_cash_million": 22271,
+    "future_dilution": "情景EPS已按研究假设；10月实际股本未取得"
+  },
+  "evidence_policy": "公司公告与转载不算独立验证；缓存原件已实际选表读取；旧中文报告仅作历史基线，不作本期财报原件。",
+  "parent_review": {
+    "math_checks": [
+      {
+        "name": "FY2026 FCF",
+        "expression": "182935-115948",
+        "result": 66987,
+        "passed": true
+      },
+      {
+        "name": "FY2025 FCF",
+        "expression": "136162-64551",
+        "result": 71611,
+        "passed": true
+      },
+      {
+        "name": "Q4FY26 FCF",
+        "expression": "55441-35802",
+        "result": 19639,
+        "passed": true
+      },
+      {
+        "name": "Q4FY25 FCF",
+        "expression": "42647-17079",
+        "result": 25568,
+        "passed": true
+      },
+      {
+        "name": "revenue growth",
+        "expression": "331839/281724-1",
+        "result": 0.17788686799846665,
+        "passed": true
+      },
+      {
+        "name": "operating growth",
+        "expression": "155237/128528-1",
+        "result": 0.20780685920577624,
+        "passed": true
+      },
+      {
+        "name": "share-proxy market-cap million",
+        "expression": "535.07*7427",
+        "result": 3973964.8900000006,
+        "passed": true
+      },
+      {
+        "name": "historical GAAP PE",
+        "expression": "535.07/17.95",
+        "result": 29.808913649025072,
+        "passed": true
+      },
+      {
+        "name": "OpenAI-adjusted historical PE",
+        "expression": "535.07/17.28",
+        "result": 30.964699074074076,
+        "passed": true
+      },
+      {
+        "name": "bear present-value",
+        "expression": "18*24/1.1",
+        "result": 392.7272727272727,
+        "passed": true
+      },
+      {
+        "name": "base present-value",
+        "expression": "20*28/1.1",
+        "result": 509.09090909090907,
+        "passed": true
+      },
+      {
+        "name": "bull present-value",
+        "expression": "22*32/1.1",
+        "result": 640.0,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 4,
+    "quote_date_row_rechecked": true,
+    "decisive_primary_sections_read": true,
+    "citation_gate": "strict and evidence passed; provenance validation is not an exhaustive audit",
+    "remaining_gaps": [
+      "完整FY2026 10-K与租赁/承诺/权益附注未取得，不能作闭合DCF或精确EV",
+      "10月最新实际股数未核验，仅使用6月期末代理市值",
+      "当前与历史Forward P/E预测快照缺失；共识超预期未核验",
+      "下载公告为Fast-EDGAR原公告镜像，与搜索确认的Microsoft公告同源，非独立交叉验证",
+      "一项SEC及镜像URL未由已取回索引验证且访问失败，不作为已阅读证据"
+    ],
+    "financial_table": {
+      "unit": "见原报告单位说明",
+      "columns": [
+        "FY2025",
+        "FY2026",
+        "Q4 FY2025",
+        "Q4 FY2026"
+      ],
+      "rows": [
+        [
+          "收入",
+          281724,
+          331839,
+          76441,
+          90007
+        ],
+        [
+          "毛利",
+          193893,
+          225465,
+          52427,
+          60482
+        ],
+        [
+          "经营利润",
+          128528,
+          155237,
+          34323,
+          40603
+        ],
+        [
+          "净利润",
+          101832,
+          133749,
+          27233,
+          35766
+        ],
+        [
+          "经营现金流",
+          136162,
+          182935,
+          42647,
+          55441
+        ],
+        [
+          "现金资本开支",
+          64551,
+          115948,
+          17079,
+          35802
+        ],
+        [
+          "自由现金流（自算）",
+          71611,
+          66987,
+          25568,
+          19639
+        ]
+      ]
+    },
+    "worker_validation_tests": 58
+  }
+}

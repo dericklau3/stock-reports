@@ -1,0 +1,538 @@
+{
+  "parent": {
+    "ticker": "SKHY",
+    "quote_source_verified": true,
+    "math_checks": [
+      {
+        "name": "FY24 operating income",
+        "expression": "31828-3924-4436",
+        "result": 23468,
+        "passed": true
+      },
+      {
+        "name": "FY25 operating income",
+        "expression": "58691-5019-6466",
+        "result": 47206,
+        "passed": true
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "29796-15946",
+        "result": 13850,
+        "passed": true
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "53373-27519",
+        "result": 25854,
+        "passed": true
+      },
+      {
+        "name": "Q126FCF",
+        "expression": "26330-7657",
+        "result": 18673,
+        "passed": true
+      },
+      {
+        "name": "Q226 revenue growth",
+        "expression": "79318.7/22232-1",
+        "result": 2.5677716804605972,
+        "passed": true
+      },
+      {
+        "name": "Q226 operating margin",
+        "expression": "60542.6/79318.7",
+        "result": 0.7632828072068756,
+        "passed": true
+      },
+      {
+        "name": "new ordinary issue",
+        "expression": "177900000*.1",
+        "result": 17790000.0,
+        "passed": true
+      },
+      {
+        "name": "ADS equivalent denominator",
+        "expression": "728865500/.1",
+        "result": 7288655000.0,
+        "passed": true
+      },
+      {
+        "name": "proxy marketcap millionUSD",
+        "expression": "169.03*(728865500/.1)/1000000",
+        "result": 1232001.35465,
+        "passed": true
+      },
+      {
+        "name": "30PE NI millionUSD",
+        "expression": "169.03*(728865500/.1)/1000000/30",
+        "result": 41066.71182166667,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 3,
+    "citations_evidence": "passed",
+    "declared_gaps": [
+      "正式半年度6-K正文访问403，StockTitan替代DNS失败；搜索摘要不作财务原件输入",
+      "Q2净利润金融收益/税项桥、毛利/现金流/资本开支未取得，无法可靠正常化估值",
+      "Q2现金定义、受限项及IPO结算后的最新净索偿不闭合；不叠加预计募集资金",
+      "10月当前股本、完整员工奖励/可交换债/优先索偿与当前/历史Forward P/E未核验",
+      "直接ADS报价已闭合；需要KRW盈利转USD模型时仍缺当期汇率，不能用3月方便换算率冒充"
+    ]
+  },
+  "worker": {
+    "status": "passed_with_declared_gaps",
+    "tests": [
+      {
+        "test": "identity",
+        "passed": true,
+        "detail": {
+          "issuer": "SK hynix Inc.",
+          "ticker": "SKHY",
+          "exchange": "Nasdaq Global Select; ordinary KRX000660",
+          "security": "ADS",
+          "ADS_ordinary_ratio": 0.1,
+          "ADS_equivalents_per_ordinary": 10,
+          "currency": "USD quote; IFRS KRW financials",
+          "CIK": "0002120882"
+        }
+      },
+      {
+        "test": "quote-date-session",
+        "passed": true,
+        "detail": {
+          "price": 169.03,
+          "date": "2026-10-09",
+          "session": "regular-close",
+          "currency": "USD",
+          "url": "https://api.nasdaq.com/api/quote/SKHY/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+          "status": "verified",
+          "timezone": "America/New_York",
+          "time_basis": "交易所常规交易收盘；纽约时区"
+        }
+      },
+      {
+        "test": "source-file:final-prospectus.txt",
+        "passed": true,
+        "detail": "缓存完整原件提取实际读表/条款，348页PDF只读原件定位另存"
+      },
+      {
+        "test": "source-file:Q2-original.html",
+        "passed": true,
+        "detail": "本次原正文取回并读表；非正式半年度完整6-K"
+      },
+      {
+        "test": "source-file:quote.json",
+        "passed": true,
+        "detail": "JSON实际读取"
+      },
+      {
+        "test": "FY24 operating income",
+        "passed": true,
+        "detail": {
+          "expression": "31828-3924-4436",
+          "computed": 23468,
+          "expected": 23468
+        }
+      },
+      {
+        "test": "FY25 operating income",
+        "passed": true,
+        "detail": {
+          "expression": "58691-5019-6466",
+          "computed": 47206,
+          "expected": 47206
+        }
+      },
+      {
+        "test": "FY24FCF",
+        "passed": true,
+        "detail": {
+          "expression": "29796-15946",
+          "computed": 13850,
+          "expected": 13850
+        }
+      },
+      {
+        "test": "FY25FCF",
+        "passed": true,
+        "detail": {
+          "expression": "53373-27519",
+          "computed": 25854,
+          "expected": 25854
+        }
+      },
+      {
+        "test": "Q126FCF",
+        "passed": true,
+        "detail": {
+          "expression": "26330-7657",
+          "computed": 18673,
+          "expected": 18673
+        }
+      },
+      {
+        "test": "Q226 revenue growth",
+        "passed": true,
+        "detail": {
+          "expression": "79318.7/22232-1",
+          "computed": 2.5677716804605972,
+          "expected": 2.5677716804605972
+        }
+      },
+      {
+        "test": "Q226 operating margin",
+        "passed": true,
+        "detail": {
+          "expression": "60542.6/79318.7",
+          "computed": 0.7632828072068756,
+          "expected": 0.7632828072068756
+        }
+      },
+      {
+        "test": "new ordinary issue",
+        "passed": true,
+        "detail": {
+          "expression": "177900000*.1",
+          "computed": 17790000.0,
+          "expected": 17790000.0
+        }
+      },
+      {
+        "test": "ADS equivalent denominator",
+        "passed": true,
+        "detail": {
+          "expression": "728865500/.1",
+          "computed": 7288655000.0,
+          "expected": 7288655000.0
+        }
+      },
+      {
+        "test": "proxy marketcap millionUSD",
+        "passed": true,
+        "detail": {
+          "expression": "169.03*(728865500/.1)/1000000",
+          "computed": 1232001.35465,
+          "expected": 1232001.35465
+        }
+      },
+      {
+        "test": "30PE NI millionUSD",
+        "passed": true,
+        "detail": {
+          "expression": "169.03*(728865500/.1)/1000000/30",
+          "computed": 41066.71182166667,
+          "expected": 41066.71182166667
+        }
+      },
+      {
+        "test": "artifact:report.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:tracker-update.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:research-record.json",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "eight-sections",
+        "passed": true,
+        "detail": "8 sections"
+      },
+      {
+        "test": "no-disallowed-metadata",
+        "passed": true,
+        "detail": "format"
+      },
+      {
+        "test": "no-contact-emails",
+        "passed": true,
+        "detail": "sanitized"
+      },
+      {
+        "test": "quote-source-is-registered",
+        "passed": true,
+        "detail": [
+          {
+            "title": "Nasdaq historical ADS close",
+            "url": "https://api.nasdaq.com/api/quote/SKHY/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+            "locator": "row10/09/2026",
+            "read_status": "JSON实际读取",
+            "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SKHY/quote.json",
+            "sha256": "b6c89987105449fb7c3d9193b19ca27d457a571bed54efac334000eac68b3cbc"
+          }
+        ]
+      },
+      {
+        "test": "quote-selected-explicit-date-not-first-row",
+        "passed": true,
+        "detail": [
+          {
+            "date": "10/09/2026",
+            "close": "$169.03",
+            "volume": "12,087,360",
+            "open": "$172.785",
+            "high": "$173.30",
+            "low": "$168.7743"
+          }
+        ]
+      },
+      {
+        "test": "quote-timezone",
+        "passed": true,
+        "detail": "交易所常规交易收盘；纽约时区"
+      },
+      {
+        "test": "identity-raw:SK hynix",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:one-tenth",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:728865500",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "period-raw:2Q26",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-raw:2026",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-not-after-cutoff:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-12-31",
+          "basis": "IFRS prospectus",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2024",
+        "passed": true,
+        "detail": {
+          "period": "FY2024",
+          "end": "2024-12-31",
+          "basis": "IFRS prospectus",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-12-31",
+          "basis": "IFRS prospectus",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-12-31",
+          "basis": "IFRS prospectus",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:Q1 2026",
+        "passed": true,
+        "detail": {
+          "period": "Q1 2026",
+          "end": "2026-03-31",
+          "basis": "IFRS prospectus",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q1 2026",
+        "passed": true,
+        "detail": {
+          "period": "Q1 2026",
+          "end": "2026-03-31",
+          "basis": "IFRS prospectus",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:Q2 2026",
+        "passed": true,
+        "detail": {
+          "period": "Q2 2026",
+          "end": "2026-06-30",
+          "basis": "K-IFRS preliminary press release",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q2 2026",
+        "passed": true,
+        "detail": {
+          "period": "Q2 2026",
+          "end": "2026-06-30",
+          "basis": "K-IFRS preliminary press release",
+          "unit": "KRW billion"
+        }
+      },
+      {
+        "test": "reported-raw-number:收入",
+        "passed": true,
+        "detail": {
+          "table_period": "Q2 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "79318.7",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营利润",
+        "passed": true,
+        "detail": {
+          "table_period": "Q2 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "60542.6",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:合并净利润",
+        "passed": true,
+        "detail": {
+          "table_period": "Q2 2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "93922.6",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "financial-table-width",
+        "passed": true,
+        "detail": [
+          "FY2024",
+          "FY2025",
+          "Q1 2026",
+          "Q2 2026"
+        ]
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2024",
+        "passed": true,
+        "detail": {
+          "CFO": 29796,
+          "cashcapex": 15946,
+          "difference": 13850,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": 53373,
+          "cashcapex": 27519,
+          "difference": 25854,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:Q1 2026",
+        "passed": true,
+        "detail": {
+          "CFO": 26330,
+          "cashcapex": 7657,
+          "difference": 18673,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "one-table-per-section",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "test": "financial-glossary-attached",
+        "passed": true,
+        "detail": "small directly after financial table"
+      },
+      {
+        "test": "opening-three-points",
+        "passed": true,
+        "detail": "No second executive summary"
+      },
+      {
+        "test": "five-step-business-and-hypothesis",
+        "passed": true,
+        "detail": "Business/paid path"
+      },
+      {
+        "test": "four-investor-lenses",
+        "passed": true,
+        "detail": "Analytical frameworks only"
+      },
+      {
+        "test": "critical-evidence-five-max",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "test": "declared-gaps",
+        "passed": true,
+        "detail": "unable_to_reliably_value"
+      },
+      {
+        "test": "source-artifacts-all-under-allowed-root",
+        "passed": true,
+        "detail": [
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SKHY/originals/final-prospectus.txt",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SKHY/Q2-original.html",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/SKHY/quote.json"
+        ]
+      },
+      {
+        "test": "bounded-new-source-budget",
+        "passed": true,
+        "detail": {
+          "urllib_attempts": 4,
+          "search_attempts": 2,
+          "total": 6,
+          "failed_attempts_included": true,
+          "session_search_is_local_not_network": true
+        }
+      },
+      {
+        "test": "no-contact-mails-in-source-text",
+        "passed": true,
+        "detail": "PDF text plus original HTML/data checked; request headers were not saved."
+      }
+    ],
+    "limitations": [
+      "正式半年度6-K正文访问403，StockTitan替代DNS失败；搜索摘要不作财务原件输入",
+      "Q2净利润金融收益/税项桥、毛利/现金流/资本开支未取得，无法可靠正常化估值",
+      "Q2现金定义、受限项及IPO结算后的最新净索偿不闭合；不叠加预计募集资金",
+      "10月当前股本、完整员工奖励/可交换债/优先索偿与当前/历史Forward P/E未核验",
+      "直接ADS报价已闭合；需要KRW盈利转USD模型时仍缺当期汇率，不能用3月方便换算率冒充"
+    ],
+    "semantic_note": "通过的是已声明输入的算式、日期、文件与格式；不等于所有财务披露已闭合或定量估值可用。",
+    "audit_scope": "数学、真实原始报价行、证券原文标识、期间/会计口径、多期表自算一致性、部分原表数值、原件哈希、格式与新网络预算均实际运行；数值token定位不是独立审计，全文完整性缺口仍保留。"
+  },
+  "scope_note": "父代理数学与报价/引用复核独立执行；worker测试反映父代理调整前的原件与拟稿快照，均不代表披露缺口已经消失。"
+}

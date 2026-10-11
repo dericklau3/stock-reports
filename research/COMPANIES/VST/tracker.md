@@ -1,5 +1,323 @@
 # Vistra（VST）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**建设性但需观察：现有资产赚钱且长约能见度提高，但现价处于基础情景上半区，安全边际不足以忽视杠杆和新增资本。
+
+## Current Main Thesis
+
+**核心逻辑：**竞争性电厂与零售平台把电价、容量与客户负荷转为收入；Meta/AWS长约及Cogentrix可改善未来现金，但不是AI需求总量直接归普通股。
+
+## Key Risks
+
+**主要风险：**价格曲线转弱、项目延期和增长支出同时发生时，经营收益改善可能抵不过债务、优先股及稀释；资金承诺先于新增现金回报。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+
+## 2026-10-11 新增深研更新块（保留旧文）
+
+- 旧基线：tracker及2026-10-10完整更新；条件EV76.759B、现价161.48与基础132–172现值。
+- 当前观点：建设性但需观察：现有资产赚钱且长约能见度提高，但现价处于基础情景上半区，安全边际不足以忽视杠杆和新增资本。
+- 报价桥：{"price": 161.48, "date": "2026-10-09", "session": "regular-close", "currency": "USD", "url": "https://api.nasdaq.com/api/quote/VST/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09", "status": "verified", "timezone": "America/New_York", "time_basis": "交易所常规交易收盘；纽约时区"}
+
+### 旧假设 → 新事实 → 当前判断
+- 2026-10-10基线→10/11：报价仍为10/09的161.48，最新IR索引没有新证实经营事件，不制造新进展。
+- 最新完整财务仍Q2，Q3已官方安排11/06；历史表从原件重读而非把昨日中文原文当SEC证据。
+- 沿用完整债务+优先+NCI条件桥，旧8月遗漏优先索偿的估值继续失效。
+- 同一2027末熊/基础/牛成套输入重新按10/11时点折现，只有一天期限差，不能称盈利预测上调。
+
+### 可复算估值与资本结构
+
+```json
+{
+  "valuation": {
+    "method": "conditional EV/ongoingEBITDA with net-claims and dilution; notDCF",
+    "status": "conditional_scenarios_not_realtime_EV",
+    "target_year": 2027,
+    "target_date": "2027-12-31",
+    "discount_years": 1.2210814510609171,
+    "discount_rate": 0.12,
+    "interim_dividend_assumed": 1.2,
+    "current_forward_PE": "未取得可靠当前共识",
+    "historical_forward_PE": "未取得当时有效预测完整序列",
+    "scenarios": {
+      "Bear": [
+        {
+          "EBITDA_billion": 6.5,
+          "EV_multiple": 7,
+          "net_claims_billion": 26,
+          "shares_million": 350,
+          "future_price": 55.714285714285715,
+          "present_value": 49.558947574476036
+        },
+        {
+          "EBITDA_billion": 7,
+          "EV_multiple": 8,
+          "net_claims_billion": 25,
+          "shares_million": 345,
+          "future_price": 89.85507246376811,
+          "present_value": 79.28753749586848
+        }
+      ],
+      "Base": [
+        {
+          "EBITDA_billion": 8.1,
+          "EV_multiple": 9.5,
+          "net_claims_billion": 25,
+          "shares_million": 345,
+          "future_price": 150.57971014492753,
+          "present_value": 132.16440483331178
+        },
+        {
+          "EBITDA_billion": 8.5,
+          "EV_multiple": 10.5,
+          "net_claims_billion": 23,
+          "shares_million": 338,
+          "future_price": 196.0059171597633,
+          "present_value": 171.71993968192822
+        }
+      ],
+      "Bull": [
+        {
+          "EBITDA_billion": 9,
+          "EV_multiple": 11,
+          "net_claims_billion": 23,
+          "shares_million": 335,
+          "future_price": 226.86567164179104,
+          "present_value": 198.59152271845457
+        },
+        {
+          "EBITDA_billion": 9.5,
+          "EV_multiple": 12,
+          "net_claims_billion": 21,
+          "shares_million": 330,
+          "future_price": 281.8181818181818,
+          "present_value": 246.44222552072185
+        }
+      ]
+    },
+    "capital_policy": "ordinary claim residual after future total claims; todaybridge excludes restrictedcash and NDT; noaddingDOEloan or equityNCIbuyoutdoublecount; lease splitpending; future netclaims reserves are assumptions notexact reconciliation",
+    "claims_components_million": {
+      "book_debt": 20508,
+      "cash": 435,
+      "preferred_liquidation": 2476.066,
+      "remaining_NCI_proxy": 12
+    },
+    "calculations": [
+      {
+        "name": "Bear0future",
+        "expression": "(6.5*7-26)*1000/350",
+        "result": 55.714285714285715
+      },
+      {
+        "name": "Bear0PV",
+        "expression": "(((6.5*7-26)*1000/350)+1.2)/(1.12**1.2210814510609171)",
+        "result": 49.558947574476036
+      },
+      {
+        "name": "Bear1future",
+        "expression": "(7*8-25)*1000/345",
+        "result": 89.85507246376811
+      },
+      {
+        "name": "Bear1PV",
+        "expression": "(((7*8-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 79.28753749586848
+      },
+      {
+        "name": "Base0future",
+        "expression": "(8.1*9.5-25)*1000/345",
+        "result": 150.57971014492753
+      },
+      {
+        "name": "Base0PV",
+        "expression": "(((8.1*9.5-25)*1000/345)+1.2)/(1.12**1.2210814510609171)",
+        "result": 132.16440483331178
+      },
+      {
+        "name": "Base1future",
+        "expression": "(8.5*10.5-23)*1000/338",
+        "result": 196.0059171597633
+      },
+      {
+        "name": "Base1PV",
+        "expression": "(((8.5*10.5-23)*1000/338)+1.2)/(1.12**1.2210814510609171)",
+        "result": 171.71993968192822
+      },
+      {
+        "name": "Bull0future",
+        "expression": "(9*11-23)*1000/335",
+        "result": 226.86567164179104
+      },
+      {
+        "name": "Bull0PV",
+        "expression": "(((9*11-23)*1000/335)+1.2)/(1.12**1.2210814510609171)",
+        "result": 198.59152271845457
+      },
+      {
+        "name": "Bull1future",
+        "expression": "(9.5*12-21)*1000/330",
+        "result": 281.8181818181818
+      },
+      {
+        "name": "Bull1PV",
+        "expression": "(((9.5*12-21)*1000/330)+1.2)/(1.12**1.2210814510609171)",
+        "result": 246.44222552072185
+      },
+      {
+        "name": "days",
+        "expression": "(446)/365.25",
+        "result": 1.2210814510609171
+      },
+      {
+        "name": "marketcapB",
+        "expression": "161.48*335.635195/1000",
+        "result": 54.1983712886
+      },
+      {
+        "name": "netdebtM",
+        "expression": "1876+17719+300+613-435",
+        "result": 20073
+      },
+      {
+        "name": "netclaimsM",
+        "expression": "20508-435+2476.066+12",
+        "result": 22561.066
+      },
+      {
+        "name": "conditionalEVB",
+        "expression": "161.48*335.635195/1000+(20508-435+2476.066+12)/1000",
+        "result": 76.7594372886
+      },
+      {
+        "name": "EV2026mid",
+        "expression": "(161.48*335.635195/1000+22.561066)/7.2",
+        "result": 10.661032956749999
+      },
+      {
+        "name": "H1FCF",
+        "expression": "2222-1572",
+        "result": 650
+      },
+      {
+        "name": "TTMrevenue",
+        "expression": "17738+9657-8183",
+        "result": 19212
+      },
+      {
+        "name": "TTMop",
+        "expression": "1906+2052-395",
+        "result": 3563
+      },
+      {
+        "name": "TTMCFO",
+        "expression": "4070+2222-1171",
+        "result": 5121
+      },
+      {
+        "name": "TTMcapex",
+        "expression": "2752+1572-1458",
+        "result": 2866
+      },
+      {
+        "name": "TTMNI",
+        "expression": "944+1334-59",
+        "result": 2219
+      },
+      {
+        "name": "TTMcommonNI",
+        "expression": "752+1238-(-37)",
+        "result": 2027
+      },
+      {
+        "name": "TTMFCF",
+        "expression": "5121-2866",
+        "result": 2255
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "4563-2078",
+        "result": 2485
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "4070-2752",
+        "result": 1318
+      },
+      {
+        "name": "juniorcouponM",
+        "expression": "850*.07+650*.0725",
+        "result": 106.625
+      },
+      {
+        "name": "growth-adjusted-midpoint",
+        "expression": "(3925+4725)/2-1700",
+        "result": 2625.0
+      }
+    ],
+    "sensitivity": "净索偿每增加1B在340M股分母降低未来值约2.94美元；基本情景为研究假设非2027指引。",
+    "interpretation": "可复算的研究条件情景，不是已证实预测或精确NAV/DCF；最新股本或其他缺口见gaps。"
+  },
+  "capital_structure": {
+    "cash_M_20260630": 435,
+    "restricted_M": 46,
+    "book_debt_including_projects_AR_forward_M": 20508,
+    "forward_repurchase_M": 613,
+    "preferred_M": 2476.066,
+    "NCI_book_proxy_M": 12,
+    "actual_shares_M_20260803": 335.635195,
+    "Q2weighted_diluted_M": 339.230976,
+    "postJune_financing_principal_M": 1500,
+    "postJune_notes_cash": "净费/使用未全面刷新；不得只加1500债",
+    "Sep_notes_coupon_percent": [
+      7,
+      7.25
+    ],
+    "preferred_A_reset": "2026-10-15",
+    "preferred_B_reset": "2026-12-15",
+    "preferred_redemption": "计划而非已确认",
+    "SBC_H1_M": 67,
+    "SBC_FY25_M": 113,
+    "Cogentrix_equity_M": 5,
+    "Cogentrix_cash_B": 2.3,
+    "Cogentrix_debt_assumed_B": 1.5,
+    "finance_lease_ROU_net_M": 152,
+    "lease_liability": "Q2完整分拆未独立核实；非零假设，条件EV非完整实时EV",
+    "convertible": "无在本次关键原件定位的可转融资，不据此宣称零",
+    "Helix_commitment_B": [
+      0.5,
+      0.5
+    ],
+    "netclaims_2027_scenarios_B": [
+      21,
+      26
+    ],
+    "NDT": "受限用途不减普通EV"
+  }
+}
+```
+
+### 改判条件与最强反证
+加强：2027正式指引达到基础锚且交割/供电与每股现金增厚、去杠杆同时成立；弱化：指引下调，资本/Helix调用增多、重大停机或净索偿增加。最强反证：资产稀缺、Meta客户确认与DOE融资路径可能让长约溢价更持续；但42亿条件贷款不是普通股净资产增加。
+
+### 决定性局限
+- 10月实时actual股份、现金使用/债务与优先股赎回未完整闭合；条件EV不是实时EV
+- 完整租赁负债分拆及9/14最终424B2未补齐，模型是有边界条件情景而非完整即时索偿
+- PPA价格/净利润及2027正式指引未披露，当前/一年历史Forward P/E未取得
+- IR新闻索引未出现新实质进展不证明绝对没有其他重大事件；并购交割未核实
+- Q2电话会第三方转录并非完整官方音频独立核验；同源公告转载不当独立证据
+
+新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Vistra（VST）Tracker
+
 - **Ticker / Exchange**：VST / NYSE普通股；美元。
 - **Last updated**: 2026-10-10
 - **Current research view**：Constructive but watchful（建设性但需观察）；现价没有厚安全边际，不因AI供电题材追高。

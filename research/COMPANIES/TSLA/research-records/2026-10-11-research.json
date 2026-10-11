@@ -1,0 +1,336 @@
+{
+  "identity": {
+    "issuer": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "exchange": "Nasdaq Global Select",
+    "security": "common stock; includes performance restricted issued shares in legal total",
+    "currency": "USD",
+    "CIK": "0001318605"
+  },
+  "quote": {
+    "price": 382.7,
+    "date": "2026-10-09",
+    "session": "regular-close",
+    "currency": "USD",
+    "url": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "verified",
+    "timezone": "America/New_York",
+    "time_basis": "交易所常规交易收盘；纽约时区"
+  },
+  "financial_periods": [
+    {
+      "period": "FY2024",
+      "end": "2024-12-31",
+      "basis": "GAAP; attributed ordinary net-income"
+    },
+    {
+      "period": "FY2025",
+      "end": "2025-12-31",
+      "basis": "GAAP; attributed ordinary net-income"
+    },
+    {
+      "period": "H1 2025",
+      "end": "2025-06-30",
+      "basis": "GAAP; attributed ordinary net-income"
+    },
+    {
+      "period": "H1 2026",
+      "end": "2026-06-30",
+      "basis": "GAAP; attributed ordinary net-income"
+    }
+  ],
+  "valuation": {
+    "method": "reverse normalized earnings; no reliable full optionality valuation",
+    "status": "unable_to_reliably_value",
+    "current_forward_PE": "未取得同口径预测快照",
+    "historical_forward_PE": "未取得历史当时预测日频序列",
+    "discount_years": null,
+    "target_year": null,
+    "calculations": [
+      {
+        "name": "FY24 FCF",
+        "expression": "14923-11342",
+        "result": 3581
+      },
+      {
+        "name": "FY25 FCF",
+        "expression": "14747-8527",
+        "result": 6220
+      },
+      {
+        "name": "H125 FCF",
+        "expression": "4696-3886",
+        "result": 810
+      },
+      {
+        "name": "H126 FCF",
+        "expression": "8634-8282",
+        "result": 352
+      },
+      {
+        "name": "H1 revenue growth",
+        "expression": "50623/41831-1",
+        "result": 0.2101790538117665
+      },
+      {
+        "name": "Q3 delivery sequential growth",
+        "expression": "486532/480126-1",
+        "result": 0.01334233097145332
+      },
+      {
+        "name": "Q3 production delivery gap",
+        "expression": "486532-464391",
+        "result": 22141
+      },
+      {
+        "name": "legal-share proxy market cap million",
+        "expression": "382.7*3949.547394",
+        "result": 1511491.7876838
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "382.7*3949.547394/30",
+        "result": 50383.059589460005
+      },
+      {
+        "name": "60PE implied NI million",
+        "expression": "382.7*3949.547394/60",
+        "result": 25191.529794730002
+      }
+    ],
+    "scenario_conditions": {
+      "bear": "auto margin/FCF deteriorate; AI option no cash",
+      "base": "auto margin repair and energy cash profit, but robotaxi units missing",
+      "bull": "repeatable paid autonomous trips and robot units produce net profit; not numerically inferred"
+    },
+    "capital_policy": "restricted award shares already in legal count not readded; future SBC and unissued awards need separate current audit; no option value added to core cash flows; EV not supplied while lease/NCI timing incomplete",
+    "interpretation": "可复算的研究条件情景，不是已证实预测或精确NAV/DCF；最新股本或其他缺口见gaps。"
+  },
+  "critical_evidence": [
+    "Q2 10-Q取得；pp4/5/9资产负债、利润、现金流",
+    "Q2 Note9 CEO股本/奖励，法律股数与EPS分母不同",
+    "Q2 Note8 debt及Note10 tax；主业利润不可混投资浮盈",
+    "Q3原公告486532交付/13.7GWh及10月21日财报日",
+    "Nasdaq10/09 close382.70"
+  ],
+  "gaps": [
+    "Q3正式利润和现金流尚未披露，不能从交付量推算EPS",
+    "Robotaxi/Optimus外部付费单位经济与资本需求未闭合，拒绝精确期权/DCF目标价",
+    "10月股本、奖励归属及完整当前租赁负债桥未闭合，市值只用法律股数代理",
+    "当前与历史Forward P/E以及财报前共识未取得",
+    "Q3 BusinessWire本次访问超时；使用保存的公司公告Yahoo转载原文，非独立确认"
+  ],
+  "changes_from_previous": [
+    "旧2026-07-23 tracker“Q2 10-Q尚未取得” → 本次读取43页原10-Q，财务与CEO奖励核验明显完善。",
+    "旧Q2交付480126 → Q3 486532，储能13.5→13.7GWh；未来事件改为已确认10月21日财报。",
+    "旧6月深研股价405.05/7月跟踪378.93 → 10月9日382.70；股本代理换为7月16日实际法律在外3949.547百万，不能说只因价格变化市值下降。",
+    "中性等待维持，但暂停旧未闭合Robotaxi/Optimus目标区间，改反向盈利要求及明确验证条件。"
+  ],
+  "sources": [
+    {
+      "title": "Tesla Q2 2026 Form10-Q 原件镜像",
+      "url": "https://files.quartr.com/reports/88aae9aecf8328f0272a694c029dd4f8-2026-07-23-10-03-56.pdf?ref=U0E=",
+      "locator": "PDF pp4/5/9，Notes8–10，cover July16 legal shares",
+      "read_status": "原PDF已下载、magic和43页与期间已验证；实际选表和附注读取",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/Q2-original-pdf.pdf",
+      "sha256": "b52ec3b39091b94497e371781664659f78ae5f1a139b2c5ae61faf193d56760f"
+    },
+    {
+      "title": "Tesla FY2025 Form10-K 原件镜像",
+      "url": "https://files.quartr.com/reports/3fed9-2026-01-29-11-34-04.pdf?ref=U3RvY2tBbmFseXNpcw==",
+      "locator": "报表印刷页50/53，FY2024/2025对比",
+      "read_status": "原PDF已取回；缓存对应报表与本次PDF标题期间核对；财务表实际读取",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/FY2025-original-pdf.pdf",
+      "sha256": "7861148033ed90874b02870e45767261d8809be50e9418644e4a2441fa008914"
+    },
+    {
+      "title": "Q3 2026 Production, Deliveries & Deployments 公司原公告Yahoo转载",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-third-quarter-2026-production-130600521.html",
+      "locator": "Total464391/486532,13.7GWh,Q3earnings Oct21; origin BusinessWire20261002169209",
+      "read_status": "缓存原公告全文实际读取；BusinessWire新取源超时",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/originals/Q3-original-syndicated.txt",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TSLA/Q3-original-syndicated.txt",
+      "sha256": "ab3347ece746055b14077a6b048181eae1b67fd576b3bc24541ab0b1ab711de7"
+    },
+    {
+      "title": "Tesla Second Quarter 2026 Update 缓存",
+      "url": "https://files.quartr.com/conference-calls/31912339a9c7d4acc7a371cc8cfa6e43-2026-07-22-20-08-25.pdf?ref=U0E=",
+      "locator": "financial summary/FSD/Robotaxi/production roadmap",
+      "read_status": "实际读取缓存；虽路径含conference-calls，内容是update不是电话会逐字稿",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/originals/Q2-update.txt",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/TSLA/Q2-update.txt",
+      "sha256": "ee200c5b61ac894422c0ccc30765834f4d4a679fc4e74ee9f2cbc4e35f48135d"
+    },
+    {
+      "title": "Nasdaq historical close",
+      "url": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "locator": "rows date10/09/2026",
+      "read_status": "JSON实际读取",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/TSLA/quote.json",
+      "sha256": "2cd55af0d0785bf8344efd484f1dc4a85e2b7d0c451316369ff20cf4a285694d"
+    }
+  ],
+  "research_date": "2026-10-11",
+  "baseline": "deep-research/2026-06-23-deep-research.md；tracker于2026-07-23更新、earnings-tracking/2026-Q2-earnings-tracking.md。",
+  "capital_structure": {
+    "date": "2026-06-30 except legal shares July16",
+    "legal_shares": 3949547394,
+    "H1_weighted_basic_million": 3235,
+    "H1_weighted_diluted_million": 3538,
+    "cash_investments_million": 43524,
+    "cash_equivalent_million": 15219,
+    "restricted_cash_implied_million": 1206,
+    "debt_principal_million": 9080,
+    "finance_lease_carrying_million": 281,
+    "debt_finance_lease_carrying_million": 9342,
+    "nonrecourse_debt_principal_million": 9078,
+    "recourse_debt_principal_million": 2,
+    "redeemable_NCI_million": 54,
+    "NCI_million": 607,
+    "preferred_issued": 0,
+    "operating_leases": "ROU 6386; latest full liability bridge not extracted; cannot set zero",
+    "SBC_H1_PandL_million": 2181,
+    "CEO_2025_performance_restricted_shares_million": 423.7,
+    "CEO_2025_interim_cancelled_million": 96,
+    "2018_award_exercised_million": 304,
+    "net_settlement_exercise_price_million_shares": 17.5,
+    "current_october_shares": "not verified"
+  },
+  "evidence_policy": "公司公告与转载不算独立验证；缓存原件已实际选表读取；旧中文报告仅作历史基线，不作本期财报原件。",
+  "parent_review": {
+    "math_checks": [
+      {
+        "name": "FY24 FCF",
+        "expression": "14923-11342",
+        "result": 3581,
+        "passed": true
+      },
+      {
+        "name": "FY25 FCF",
+        "expression": "14747-8527",
+        "result": 6220,
+        "passed": true
+      },
+      {
+        "name": "H125 FCF",
+        "expression": "4696-3886",
+        "result": 810,
+        "passed": true
+      },
+      {
+        "name": "H126 FCF",
+        "expression": "8634-8282",
+        "result": 352,
+        "passed": true
+      },
+      {
+        "name": "H1 revenue growth",
+        "expression": "50623/41831-1",
+        "result": 0.2101790538117665,
+        "passed": true
+      },
+      {
+        "name": "Q3 delivery sequential growth",
+        "expression": "486532/480126-1",
+        "result": 0.01334233097145332,
+        "passed": true
+      },
+      {
+        "name": "Q3 production delivery gap",
+        "expression": "486532-464391",
+        "result": 22141,
+        "passed": true
+      },
+      {
+        "name": "legal-share proxy market cap million",
+        "expression": "382.7*3949.547394",
+        "result": 1511491.7876838,
+        "passed": true
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "382.7*3949.547394/30",
+        "result": 50383.059589460005,
+        "passed": true
+      },
+      {
+        "name": "60PE implied NI million",
+        "expression": "382.7*3949.547394/60",
+        "result": 25191.529794730002,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 4,
+    "quote_date_row_rechecked": true,
+    "decisive_primary_sections_read": true,
+    "citation_gate": "strict and evidence passed; provenance validation is not an exhaustive audit",
+    "remaining_gaps": [
+      "Q3正式利润和现金流尚未披露，不能从交付量推算EPS",
+      "Robotaxi/Optimus外部付费单位经济与资本需求未闭合，拒绝精确期权/DCF目标价",
+      "10月股本、奖励归属及完整当前租赁负债桥未闭合，市值只用法律股数代理",
+      "当前与历史Forward P/E以及财报前共识未取得",
+      "Q3 BusinessWire本次访问超时；使用保存的公司公告Yahoo转载原文，非独立确认"
+    ],
+    "financial_table": {
+      "unit": "见原报告单位说明",
+      "columns": [
+        "FY2024",
+        "FY2025",
+        "H1 2025",
+        "H1 2026"
+      ],
+      "rows": [
+        [
+          "收入",
+          97690,
+          94827,
+          41831,
+          50623
+        ],
+        [
+          "毛利",
+          17450,
+          17094,
+          7031,
+          9471
+        ],
+        [
+          "经营利润",
+          7076,
+          4355,
+          1322,
+          1339
+        ],
+        [
+          "归属普通股净利润",
+          7091,
+          3794,
+          1581,
+          1591
+        ],
+        [
+          "经营现金流",
+          14923,
+          14747,
+          4696,
+          8634
+        ],
+        [
+          "现金资本开支（不含融资租赁）",
+          11342,
+          8527,
+          3886,
+          8282
+        ],
+        [
+          "自由现金流（自算）",
+          3581,
+          6220,
+          810,
+          352
+        ]
+      ]
+    },
+    "worker_validation_tests": 59
+  }
+}

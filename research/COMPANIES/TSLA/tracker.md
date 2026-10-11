@@ -1,5 +1,150 @@
 # Tesla（TSLA）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**中性等待：Q3交付和储能部署有实际改善，但车量不能回答利润和现金问题；不沿用未闭合AI期权的旧目标价。
+
+## Current Main Thesis
+
+**核心逻辑：**汽车与储能形成制造、服务和现金基础；驾驶软件及无人运营可能提升附加价值，必须分别证明监管、安全、客户付费与单位经济。
+
+## Key Risks
+
+**主要风险：**高市值已前置AI商业化，而汽车经营利润率薄、资本开支高、CEO奖励和限制性股份使每股价值与GAAP EPS分母显著不同。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+
+## 2026-10-11 新增深研更新块（保留旧文）
+
+- 旧基线：deep-research/2026-06-23-deep-research.md；tracker于2026-07-23更新、earnings-tracking/2026-Q2-earnings-tracking.md。
+- 当前观点：中性等待：Q3交付和储能部署有实际改善，但车量不能回答利润和现金问题；不沿用未闭合AI期权的旧目标价。
+- 报价桥：{"price": 382.7, "date": "2026-10-09", "session": "regular-close", "currency": "USD", "url": "https://api.nasdaq.com/api/quote/TSLA/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09", "status": "verified", "timezone": "America/New_York", "time_basis": "交易所常规交易收盘；纽约时区"}
+
+### 旧假设 → 新事实 → 当前判断
+- 旧2026-07-23 tracker“Q2 10-Q尚未取得” → 本次读取43页原10-Q，财务与CEO奖励核验明显完善。
+- 旧Q2交付480126 → Q3 486532，储能13.5→13.7GWh；未来事件改为已确认10月21日财报。
+- 旧6月深研股价405.05/7月跟踪378.93 → 10月9日382.70；股本代理换为7月16日实际法律在外3949.547百万，不能说只因价格变化市值下降。
+- 中性等待维持，但暂停旧未闭合Robotaxi/Optimus目标区间，改反向盈利要求及明确验证条件。
+
+### 可复算估值与资本结构
+
+```json
+{
+  "valuation": {
+    "method": "reverse normalized earnings; no reliable full optionality valuation",
+    "status": "unable_to_reliably_value",
+    "current_forward_PE": "未取得同口径预测快照",
+    "historical_forward_PE": "未取得历史当时预测日频序列",
+    "discount_years": null,
+    "target_year": null,
+    "calculations": [
+      {
+        "name": "FY24 FCF",
+        "expression": "14923-11342",
+        "result": 3581
+      },
+      {
+        "name": "FY25 FCF",
+        "expression": "14747-8527",
+        "result": 6220
+      },
+      {
+        "name": "H125 FCF",
+        "expression": "4696-3886",
+        "result": 810
+      },
+      {
+        "name": "H126 FCF",
+        "expression": "8634-8282",
+        "result": 352
+      },
+      {
+        "name": "H1 revenue growth",
+        "expression": "50623/41831-1",
+        "result": 0.2101790538117665
+      },
+      {
+        "name": "Q3 delivery sequential growth",
+        "expression": "486532/480126-1",
+        "result": 0.01334233097145332
+      },
+      {
+        "name": "Q3 production delivery gap",
+        "expression": "486532-464391",
+        "result": 22141
+      },
+      {
+        "name": "legal-share proxy market cap million",
+        "expression": "382.7*3949.547394",
+        "result": 1511491.7876838
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "382.7*3949.547394/30",
+        "result": 50383.059589460005
+      },
+      {
+        "name": "60PE implied NI million",
+        "expression": "382.7*3949.547394/60",
+        "result": 25191.529794730002
+      }
+    ],
+    "scenario_conditions": {
+      "bear": "auto margin/FCF deteriorate; AI option no cash",
+      "base": "auto margin repair and energy cash profit, but robotaxi units missing",
+      "bull": "repeatable paid autonomous trips and robot units produce net profit; not numerically inferred"
+    },
+    "capital_policy": "restricted award shares already in legal count not readded; future SBC and unissued awards need separate current audit; no option value added to core cash flows; EV not supplied while lease/NCI timing incomplete",
+    "interpretation": "可复算的研究条件情景，不是已证实预测或精确NAV/DCF；最新股本或其他缺口见gaps。"
+  },
+  "capital_structure": {
+    "date": "2026-06-30 except legal shares July16",
+    "legal_shares": 3949547394,
+    "H1_weighted_basic_million": 3235,
+    "H1_weighted_diluted_million": 3538,
+    "cash_investments_million": 43524,
+    "cash_equivalent_million": 15219,
+    "restricted_cash_implied_million": 1206,
+    "debt_principal_million": 9080,
+    "finance_lease_carrying_million": 281,
+    "debt_finance_lease_carrying_million": 9342,
+    "nonrecourse_debt_principal_million": 9078,
+    "recourse_debt_principal_million": 2,
+    "redeemable_NCI_million": 54,
+    "NCI_million": 607,
+    "preferred_issued": 0,
+    "operating_leases": "ROU 6386; latest full liability bridge not extracted; cannot set zero",
+    "SBC_H1_PandL_million": 2181,
+    "CEO_2025_performance_restricted_shares_million": 423.7,
+    "CEO_2025_interim_cancelled_million": 96,
+    "2018_award_exercised_million": 304,
+    "net_settlement_exercise_price_million_shares": 17.5,
+    "current_october_shares": "not verified"
+  }
+}
+```
+
+### 改判条件与最强反证
+加强：连续2–3季汽车不含积分毛利回升到旧目标18%–20%、FCF转正，并有无人运营真实收入/成本数据；不是保证阈值。削弱：交付靠降价、资本开支持续压过CFO，或正式安全/监管限制。最强反证：软件及无人平台规模化可能使现有制造盈利倍数失效；缺经济数据不能把其概率当100%。
+
+### 决定性局限
+- Q3正式利润和现金流尚未披露，不能从交付量推算EPS
+- Robotaxi/Optimus外部付费单位经济与资本需求未闭合，拒绝精确期权/DCF目标价
+- 10月股本、奖励归属及完整当前租赁负债桥未闭合，市值只用法律股数代理
+- 当前与历史Forward P/E以及财报前共识未取得
+- Q3 BusinessWire本次访问超时；使用保存的公司公告Yahoo转载原文，非独立确认
+
+新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Tesla（TSLA）Tracker
+
 Last updated: 2026-07-23
 
 ## Current Research View

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001829311/000162828026048157/bmnr-20260531.htm",
+      "title": "FY2026Q3正式10-Q全文公开镜像",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "bmnr:NetLossPositionOptionsRSAsStrategicAndRepresentativeWarrantsMember 2025-09-01 2026-05-31 0001829311 bmnr:OutOfMoneyC3WarrantsCVIWarrantsAndOptionsMember 2026-03-01 2026-05-31 0001829311 bmnr:OutOfMoneyC3WarrantsCVIWarrantsAndOptionsMember 2025-09-01 2026-05-31 0001829311 bmnr:ConsultingAgreementMember 2024-09-01 2025-08-31 0001829311 bmnr:ConsultingAgreementMember bmnr:DigitalAssetsOneMember 2024-09-01 2025-08-31",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001829311/000149315225024679/form10-k.htm",
+      "title": "FY2025正式10-K完整公开镜像",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "us-gaap:SalesRevenueNetMember BMNR:OneCustomerMember 2024-09-01 2025-08-31 0001829311 us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember BMNR:OneCustomerMember 2023-09-01 2024-08-31 0001829311 BMNR:MinersAndMiningEquipmentMember srt:MinimumMember 2025-08-31 0001829311 BMNR:MinersAndMiningEquipmentMember srt:MaximumMember 2025-08-31 0001829311 BMNR:BitcoinMember",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://www.prnewswire.com/apac/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-6-02-million-tokens-and-total-crypto-and-total-cash--marketable-securities-holdings-of-17-4-billion-302898094.html",
+      "title": "10/05财库公司公告完整正文",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "Cash & Marketable Securities Holdings of $17.4 Billion APAC - English NEWS PROVIDED BY Bitmine Immersion Technologies, Inc. 05 Oct,",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://api.nasdaq.com/api/quote/BMNR/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq交易所正式常规收盘JSON",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"BMNR\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001829311/000149315226046088/form8-k.htm",
+      "title": "10/7正式8-K会议演示披露",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ Item 7.01 Regulation FD Disclosure. On October",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

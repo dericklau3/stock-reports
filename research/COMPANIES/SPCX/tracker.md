@@ -1,5 +1,162 @@
 # Space Exploration Technologies（SPCX / SpaceX）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**中性等待，资本回报证据仍不足：Starlink利润和AI收入明显扩张，但现金资本投入远超经营现金；不把世界级工程能力等同股票便宜。
+
+## Current Main Thesis
+
+**核心逻辑：**发射能力支撑全球卫星通信，Connectivity已提供经营利润；AI计算与软件可以扩大收入，但也扩大现金需求和治理复杂度。
+
+## Key Risks
+
+**主要风险：**AI资本开支、客户集中与并购稀释压过通信利润；Cursor闭合8-K未取得，不能拿第三方摘要里的股份数字冒充原件。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+
+## 2026-10-11 新增深研更新块（保留旧文）
+
+- 旧基线：tracker2026-07-09、deep-research/2026-07-09-deep-research-v2.md；旧价148.30，首财报待验证，Cursor预计Q3完成，基础110–230美元。
+- 当前观点：中性等待，资本回报证据仍不足：Starlink利润和AI收入明显扩张，但现金资本投入远超经营现金；不把世界级工程能力等同股票便宜。
+- 报价桥：{"price": 162.57, "date": "2026-10-09", "session": "regular-close", "currency": "USD", "url": "https://api.nasdaq.com/api/quote/SPCX/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09", "status": "verified", "timezone": "America/New_York", "time_basis": "交易所常规交易收盘；纽约时区"}
+
+### 旧假设 → 新事实 → 当前判断
+- 旧2026-07-09只有招股书/Q1 → 本次正式Q2报告：收入7814百万、AI收入2561百万、合并经营亏损143百万。
+- 旧桥贷计划偿还 → Note9明确已全额偿还，债券票息仍约1464百万/年；不是多加250亿净现金。
+- 旧现金1008亿六月19日快照 → 六月30日现金+证券100009百万；H1严重负FCF改变资本风险。
+- Cursor旧预计Q3完成 → 供应方官方8月声明称收购后拟取消模型合同；不以第三方成交股数摘要充当SEC原文。
+- 旧股价148.30 → 新收盘162.57；原基础价格区间暂停，观点维持中性但更重资本与股本闭合。
+
+### 可复算估值与资本结构
+
+```json
+{
+  "valuation": {
+    "method": "reverse earnings and scenario conditions; reliable SOTP unavailable",
+    "status": "unable_to_reliably_value",
+    "target_year": null,
+    "discount_years": null,
+    "calculations": [
+      {
+        "name": "Q2 revenue growth",
+        "expression": "7814/4071-1",
+        "result": 0.9194301154507492
+      },
+      {
+        "name": "Q2 gross profit",
+        "expression": "7814-3495",
+        "result": 4319
+      },
+      {
+        "name": "H1 gross profit",
+        "expression": "12508-5883",
+        "result": 6625
+      },
+      {
+        "name": "H125 gross profit",
+        "expression": "8138-4244",
+        "result": 3894
+      },
+      {
+        "name": "H125 gross FCF",
+        "expression": "351-6965",
+        "result": -6614
+      },
+      {
+        "name": "H126 gross FCF",
+        "expression": "3466-28476",
+        "result": -25010
+      },
+      {
+        "name": "H126 rebate-adjusted cash gap",
+        "expression": "3466-28476+1195",
+        "result": -23815
+      },
+      {
+        "name": "common H126 loss numerator",
+        "expression": "-4817-671",
+        "result": -5488
+      },
+      {
+        "name": "AplusB million",
+        "expression": "(7696293669+5485486276)/1000000",
+        "result": 13181.779945
+      },
+      {
+        "name": "legal snapshot cap million",
+        "expression": "162.57*(7696293669+5485486276)/1000000",
+        "result": 2142961.96565865
+      },
+      {
+        "name": "30PE implied NI million",
+        "expression": "162.57*(7696293669+5485486276)/1000000/30",
+        "result": 71432.065521955
+      },
+      {
+        "name": "notes annual coupon million",
+        "expression": "25000*.05855",
+        "result": 1463.75
+      }
+    ],
+    "current_forward_PE": "当前亏损不适合简单PE；预测快照未取得",
+    "historical_forward_PE": "未取得历史预测序列；不沿用旧298x",
+    "scenario_conditions": {
+      "bear": "AI investment fails, communication weakens",
+      "base": "communications growth + AI contracts sustainable but capex remains high",
+      "bull": "repeatable AI/Starship/software profits and lower capex intensity"
+    },
+    "capital_policy": "期末preferred converted already embedded A/B, not deducted again; full debt principal39512 inclusive finance leases and other financing; no extra IPO cash addition on top ofJune30 cash; Cursor indexed third-party shares excluded until original read"
+  },
+  "capital_structure": {
+    "date": "2026-06-30, cover July28",
+    "A_cover": 7696293669,
+    "B_cover": 5485486276,
+    "C_issued": 0,
+    "preferred_outstanding": 0,
+    "weighted_H1_basic_diluted_million": 4879,
+    "cash_million": 93522,
+    "securities_million": 6487,
+    "restricted_cash_implied_million": 830,
+    "debt_principal_million": 38433,
+    "finance_leases_million": 1079,
+    "debt_and_lease_carrying_million": 39364,
+    "other_financing_million": 13406,
+    "operating_lease_current_million": 344,
+    "operating_lease_noncurrent": "not separately closed",
+    "SBC_H1_PandL_million": 1470,
+    "SBC_capitalized_million": 110,
+    "ordinary_awards_excluded_antidilutive_million": 564,
+    "conditional_performance_awards_million": 1331,
+    "Cursor_closing_share_numbers": "search lead only, not original; excluded precise denominator",
+    "current_actual_economic_shares": "not closed after acquisition"
+  }
+}
+```
+
+### 改判条件与最强反证
+加强：Connectivity收入/利润维持、AI新增收入可持续且资本开支/CFO差额实质缩小，Cursor成交和稀释原件闭合。削弱：计算客户退租或高资本投入不带来盈利，供应中断影响付费使用。最强反证：Starlink规模与新云合同可能把集团带入盈利拐点；但Q2调整后EBITDA转正单独不足证明。
+
+### 决定性局限
+- Cursor8-K访问403，Capedge替代返回空文；精确成交股份、承担奖励与当前经济股数未原件闭合
+- Q2原PDF缓存未保存精确取回URL，已验证PDF发行人/期间并读表，但远端来源定位仍需父代理补齐
+- 本期原年度完整表未复核，未把旧中文转述数字当FY财务原件
+- OpenAI仅官方搜索索引原文片段，不是正文取回；实际合同及双方回应未闭合
+- 当前非流动经营租赁、10月现金/债务与未来盈利/历史Forward P/E无法完整闭合
+- Q2财报及公告缓存原件完整并已读，但旧下载精确远端URL未在当前文件留存；不能用新拼接SEC路径伪补来源。
+
+新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+
+父代理补充：提供Q2原缓存的公开短摘录、财务事实及内容哈希；原下载URL仍缺失。移除未读供应商完整公告所涉及的具体终止日期，不把索引线索作为确定合同事件。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Space Exploration Technologies（SPCX / SpaceX）Tracker
+
 Last updated: 2026-07-09
 
 ## Current Research View

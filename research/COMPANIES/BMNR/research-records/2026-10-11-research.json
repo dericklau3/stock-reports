@@ -1,0 +1,599 @@
+{
+  "identity": {
+    "issuer": "Bitmine Immersion Technologies, Inc.",
+    "ticker": "BMNR",
+    "exchange": "NYSE",
+    "security": "common;BMNP is distinct preferred",
+    "CIK": "0001829311",
+    "currency": "USD",
+    "fiscal_year_end": "08-31"
+  },
+  "quote": {
+    "price": 24.03,
+    "date": "2026-10-09",
+    "session": "regular-close",
+    "currency": "USD",
+    "url": "https://api.nasdaq.com/api/quote/BMNR/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+    "status": "verified",
+    "source_policy": "继承父代理Nasdaq原JSON，拒绝15:55的24.05旧非收盘快照",
+    "timezone": "America/New_York",
+    "time_basis": "交易所常规交易收盘；纽约时区"
+  },
+  "financial_periods": [
+    {
+      "period": "FY2024",
+      "end": "2024-08-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "FY2025",
+      "end": "2025-08-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "Q3FY2026",
+      "end": "2026-05-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "9MFY2025",
+      "end": "2025-05-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    },
+    {
+      "period": "9MFY2026",
+      "end": "2026-05-31",
+      "basis": "GAAP",
+      "unit": "USD million"
+    }
+  ],
+  "valuation": {
+    "method": "common NAV and ETH per economically FD share",
+    "status": "unable_to_reliably_value_current",
+    "target_year": null,
+    "discount_years": null,
+    "current_forward_PE": "不适用财库重估利润，无当前有效预测",
+    "historical_forward_PE": "未取得完整当时预测序列，不用今日估算回填历史",
+    "formula": "(ETH*spotETH+BTC*spotBTC+unrestrictedcash+realizableinvestments-totaldebtandotherliabilities-preferredseniorclaims-NCI)/economicallyFDshares*assumedmNAV",
+    "current_inputs_missing": [
+      "October actual/FDshares;not current marketcap implied shares",
+      "aligned cryptoquotes/security valuations",
+      "current preferredcounts/cumulative unpaid dividends",
+      "ATM netissuance/buyback and current restrictedcash/liabilitychanges"
+    ],
+    "historical_capital_reconciliation": {
+      "Julyactualshares": 603226394,
+      "Mayawards_total": 19264829,
+      "Julyactual_plusMayawards_conservative_notcurrent_FD": 622491223,
+      "warning": "可能含归属/行权重叠；全加价外CVI未加行权现金是保守代理，不是当前NAV分母；ATM余量非有限上界。"
+    },
+    "same_date_ETHper_share_history": {
+      "FY2025_0831": 0.008067244317044048,
+      "20260531": 0.009345160480582612,
+      "source": "Q3 Note4 and balance shares;both exact date periods"
+    },
+    "scenario_conditions": {
+      "bear": "ETH lower/ATM belowNAV/higherclaims",
+      "base": "fullalignedNAVbridge required",
+      "bull": "ETHhigher and per-share accretivefinance/externalnetfees"
+    },
+    "calculations": [
+      {
+        "name": "FY24gross",
+        "expression": "3310-3473",
+        "result": -163
+      },
+      {
+        "name": "FY25gross",
+        "expression": "6095-5785",
+        "result": 310
+      },
+      {
+        "name": "Q326gross",
+        "expression": "46535-5726",
+        "result": 40809
+      },
+      {
+        "name": "9M26gross",
+        "expression": "59870-8177",
+        "result": 51693
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "-30-76",
+        "result": -106
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "-4149-1065",
+        "result": -5214
+      },
+      {
+        "name": "9M25FCF",
+        "expression": "1366-18",
+        "result": 1348
+      },
+      {
+        "name": "9M26FCF",
+        "expression": "-287592-406",
+        "result": -287998
+      },
+      {
+        "name": "Q326op",
+        "expression": "46535-5726-37270-15404",
+        "result": -11865
+      },
+      {
+        "name": "9M26op",
+        "expression": "59870-8177-335662-9038538",
+        "result": -9322507
+      },
+      {
+        "name": "leaseLiability",
+        "expression": "104+1216",
+        "result": 1320
+      },
+      {
+        "name": "FY25ETHpershare",
+        "expression": "1874927/232412324",
+        "result": 0.008067244317044048
+      },
+      {
+        "name": "May31ETHpershare",
+        "expression": "5416945/579652432",
+        "result": 0.009345160480582612
+      },
+      {
+        "name": "same-date ETH/share growth",
+        "expression": "(5416945/579652432)/(1874927/232412324)-1",
+        "result": 0.15840801558949313
+      },
+      {
+        "name": "treasuryETHgrowth vsJuly snapshot",
+        "expression": "6016414/5742237-1",
+        "result": 0.04774741969027052
+      },
+      {
+        "name": "stakedfraction",
+        "expression": "5067309/6016414",
+        "result": 0.8422473918849335
+      },
+      {
+        "name": "grossannualrewardETH",
+        "expression": "5067309*.0263",
+        "result": 133270.2267
+      },
+      {
+        "name": "grossannualrewardUSDatAnnouncement",
+        "expression": "5067309*.0263*2726",
+        "result": 363294637.9842
+      },
+      {
+        "name": "June preferred baseline dividendUSD",
+        "expression": "3500000*100*.095",
+        "result": 33250000.0
+      },
+      {
+        "name": "Mayawards_potential",
+        "expression": "2872929+10435430+1097346+4500000+359124",
+        "result": 19264829
+      },
+      {
+        "name": "conservativeJulyplusMay_awards_notcurrentFD",
+        "expression": "603226394+2872929+10435430+1097346+4500000+359124",
+        "result": 622491223
+      },
+      {
+        "name": "conditionalJulyshares_marketcap_M",
+        "expression": "24.03*603226394/1000000",
+        "result": 14495.530247820001
+      },
+      {
+        "name": "Q3noncashSBCsum_thousand",
+        "expression": "36689+1162+506",
+        "result": 38357
+      },
+      {
+        "name": "Q3GAAPnoncashreweight",
+        "expression": "264121-133275-9381-6793+9917-480",
+        "result": 124109
+      },
+      {
+        "name": "simple9MCFOcashbridge",
+        "expression": "-287592-12102446+12218362",
+        "result": -171676
+      },
+      {
+        "name": "Q3historicalCommonBookUSDpershare",
+        "expression": "11599577000/579652432",
+        "result": 20.01126254224014
+      }
+    ],
+    "capital_policy": "May total liabilities already contain leases/warrant liability, do not double-deduct; preferred afterMay separate; cannot combine FD dilution of liabilitywarrant with liabilityvalue without adjustment; token purchases not equipmentcapex; rewards notFCF; historical treasuryshares exclude; IPO proceedsnotdoubleadded"
+  },
+  "critical_evidence": [
+    "完整2026Q3 10-Q公开镜像173k正文：财务pp1–7、数字资产/奖励/租赁/期后/内控已实际读",
+    "FY2025正式10-K全文财务F3/F7与缓存PDF财务图一致；不是旧中文转述",
+    "10/4财库公告完整正文6016414 ETH和5067309 staked实际读",
+    "Nasdaq10/09正式收盘24.03旧缺口已闭合，tracker/records同时替换",
+    "5/31内控仍无效，EthTower固定费/终止赔偿及优先发行期后已核验"
+  ],
+  "gaps": [
+    "最新完整财务已补齐Q3；FY2026年度8/31已结束，但官方IR及申报缓存未读到已发布新10-K，不作年度猜测",
+    "10月实际/FD股本、ATM发行/回购净额、优先在外量与递延清算/股息未完全对齐；当前NAV/mNAV无法可靠估值",
+    "同期ETH/BTC与非核心投资可变现值/现金可用性未闭合；10/4公告价不是10/11现货价",
+    "独立MAVAN外部AUM/付费客户/费率/盈利分拆和内控正式有效性未证实",
+    "FY25初版股数后来修订，采用Q3重列232412324普通股而非初版234712324；正式财务镜像与主站仍同源非独立审计"
+  ],
+  "changes_from_previous": [
+    "7月基线财务到2/28→本次实际取回7/14提交5/31 Q3全文；收入46.535M/净亏83.595M，9M OCF−287.592M，不再写“季度全文受阻未读”。",
+    "旧569.577M普通股与588.6M FD→正式7/9actual603.226394M及5/31奖励/期权/权证19.264829M；622.491223M保守跨日代理非10月FD。",
+    "旧ETH5742237→10/4声明6016414、staked5067309；仅总量增长4.77%已核验，10月每股增长未确认。",
+    "旧回购只有授权→公司10/5明确2026购21M股；这是声明进步，不自动抵消未知同期增发。",
+    "旧股价14.69/0.81xNAV→10/09正式24.03已闭合；废止精确当前0.81x及19%折价，NAV待最新资本桥。",
+    "Q3正式披露5/31内控仍无效、十年固定服务费40–50M及违约终止85%，风险未随KPMG更换自然消失。"
+  ],
+  "sources": [
+    {
+      "title": "FY2026Q3正式10-Q全文公开镜像",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001829311/000162828026048157/bmnr-20260531.htm",
+      "original_url": "https://www.sec.gov/Archives/edgar/data/1829311/000162828026048157/bmnr-20260531.htm",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/Q3-cdn.html",
+      "locator": "财务pp1–7；Notes4/7/8/9/12/14/15，MD&A与Item4p41",
+      "read_status": "SEC403，合法CDN原HTML全文取回；实际读取决定性表和附注，非CapEdge/搜索摘要",
+      "sha256": "0ef4390b699afccf26e4aec4400edffcbb0c1d6001cd56f0fba4e9906526b5e9"
+    },
+    {
+      "title": "FY2025正式10-K完整公开镜像",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001829311/000149315225024679/form10-k.htm",
+      "original_url": "https://www.sec.gov/Archives/edgar/data/0001829311/000149315225024679/form10-k.htm",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/FY2025-cdn.html",
+      "locator": "MD&A年度对比、ConsolidatedIncomeF3和CashFlowsF7",
+      "read_status": "全文原HTML已取得且实际年度读表，缓存earningsPDF图片pp8–9作同源对照",
+      "sha256": "a7b1814578c8fb516c9931191fae8ba233b30c9d51cddc09508c5dcde704c78c"
+    },
+    {
+      "title": "10/05财库公司公告完整正文",
+      "url": "https://www.prnewswire.com/apac/news-releases/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-6-02-million-tokens-and-total-crypto-and-total-cash--marketable-securities-holdings-of-17-4-billion-302898094.html",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/originals/holdings.txt",
+      "locator": "As of October4 6:30pmET、staked、buyback声明",
+      "read_status": "继承原正文已实际读，未把后续搜索摘要当独立验证",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/BMNR/holdings.txt",
+      "sha256": "da555c55ee7531589c1564ef344fb45caa42b2b50b5467be0f62c287a7fada05"
+    },
+    {
+      "title": "Nasdaq交易所正式常规收盘JSON",
+      "url": "https://api.nasdaq.com/api/quote/BMNR/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/originals/parent-nasdaq-quote.json",
+      "locator": "10/09/2026 row close24.03",
+      "read_status": "继承父代理原页已读取，15:55报价24.05被拒绝",
+      "inherited_from": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/BMNR/parent-nasdaq-quote.json",
+      "sha256": "83c4df5e66434769dc783ca847ee1b419c6e9a967b3255fc19f6e3c8a695862e"
+    },
+    {
+      "title": "10/7正式8-K会议演示披露",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001829311/000149315226046088/form8-k.htm",
+      "original_url": "https://www.sec.gov/Archives/edgar/data/0001829311/000149315226046088/form8-k.htm",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/Oct7-8K-cdn.html",
+      "locator": "Item7.01演示/视频/新闻披露、Item9.01附件索引",
+      "read_status": "实际读8-K正文；未声称读取附件全部演示视频或用目标场景作审计事实",
+      "sha256": "6610e3d3169ac6c001daf6c01626a4d60ed0d9f144488ce17e080bd86f00a873"
+    },
+    {
+      "title": "本次官方IR新闻及filing索引",
+      "url": "https://www.bitminetech.io/investor-relations",
+      "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/BMNR/latest-IR.html",
+      "locator": "10/5新闻、最新filing10/7及10-Q7/14",
+      "read_status": "本次原正文及内嵌filing索引已读；索引不足以证明绝对无未披露事项",
+      "sha256": "90e6ef8a608c98d0eb35fb79b0a8e7efda15957e245514c97d64605a388595bd"
+    }
+  ],
+  "research_date": "2026-10-11",
+  "baseline": "tracker/2026-07-10深研：谨慎观望、旧14.69、静态0.81x NAV、5.742METH和Q2基线；旧缓存在report三稿不冒充原件。",
+  "capital_structure": {
+    "balance_date": "2026-05-31",
+    "cash_M": 340.289,
+    "collateral_derivative_cash_M": 100.125,
+    "crypto_M": 10871.934,
+    "ETH": 5416945,
+    "BTC": 203,
+    "total_liabilities_M": 30.128,
+    "lease_total_M": 1.32,
+    "lease_current_M": 0.104,
+    "lease_noncurrent_M": 1.216,
+    "finance_lease": "明确无finance leases见Note7",
+    "warrant_liability_M": 2.087,
+    "other_noncurrent_M": 14.687,
+    "traditional_debt": "5/31公司明确无债；非10月无索偿承诺",
+    "NCI_M": 0.548,
+    "actualshares_20260531": 579652432,
+    "actualshares_20260709": 603226394,
+    "weighted_basicdiluted_Q3": 551788656,
+    "warrants_equity_May": 2872929,
+    "CVI_May": 10435430,
+    "CVI_strike": 87.5,
+    "CVI_expiry": "2027-03-22",
+    "timeRSU_May": 1097346,
+    "performanceRSU_May": 4500000,
+    "options_May": 359124,
+    "options_weighted_strike": 21.1,
+    "SBC9M_M": 38.357,
+    "common_authorized": 50000000000,
+    "preferred_authorized": 20000000,
+    "ATM_ceiling_USD_B": 24.5,
+    "ATM9Mshares": 340748312,
+    "ATM9Mnet_M": 11869.401,
+    "October_remainingATM": "未核验，旧6.713B不是当前容量",
+    "JunePreferredissued": 3500000,
+    "JunePreferredprice": 80,
+    "JunePreferrednet_M": 273.8,
+    "historical_liquidation_per_preferred": 100,
+    "historical_preferredClaim_M": 350,
+    "preferred_current_quantity_and_unpaid": "未全核验，不宣称当前恰好350M",
+    "preferred_annualrate": 0.095,
+    "oldconvertible_preferred": "正式Q3明确FY25已转换且5/31不在外；与6月新BMNP不同",
+    "MAVANownership": 0.98,
+    "MAVAN_NCI": 0.02,
+    "EthTowerfixedfee_M_peryear": [
+      40,
+      50
+    ],
+    "termination_fee": "remainingfees85%contractbaseline",
+    "latest_assets_statement_date": "2026-10-04",
+    "latest_ETH_statement": 6016414,
+    "latest_staked_statement": 5067309,
+    "latest_BTC_statement": 214,
+    "latest_cash_securities_statement_M": 643,
+    "latest_Beast_statement_M": 180,
+    "latest_ORBS_statement_M": 117,
+    "latest_crypto_price_basis_ETH": 2726,
+    "weeklyannualized_yield": 0.0263,
+    "buyback_statement_2026shares": 21000000,
+    "current_completeFDshares": null
+  },
+  "evidence_policy": "公司公告与转载不算独立验证；缓存原件已实际选表读取；旧中文报告仅作历史基线，不作本期财报原件。",
+  "parent_review": {
+    "math_checks": [
+      {
+        "name": "FY24gross",
+        "expression": "3310-3473",
+        "result": -163,
+        "passed": true
+      },
+      {
+        "name": "FY25gross",
+        "expression": "6095-5785",
+        "result": 310,
+        "passed": true
+      },
+      {
+        "name": "Q326gross",
+        "expression": "46535-5726",
+        "result": 40809,
+        "passed": true
+      },
+      {
+        "name": "9M26gross",
+        "expression": "59870-8177",
+        "result": 51693,
+        "passed": true
+      },
+      {
+        "name": "FY24FCF",
+        "expression": "-30-76",
+        "result": -106,
+        "passed": true
+      },
+      {
+        "name": "FY25FCF",
+        "expression": "-4149-1065",
+        "result": -5214,
+        "passed": true
+      },
+      {
+        "name": "9M25FCF",
+        "expression": "1366-18",
+        "result": 1348,
+        "passed": true
+      },
+      {
+        "name": "9M26FCF",
+        "expression": "-287592-406",
+        "result": -287998,
+        "passed": true
+      },
+      {
+        "name": "Q326op",
+        "expression": "46535-5726-37270-15404",
+        "result": -11865,
+        "passed": true
+      },
+      {
+        "name": "9M26op",
+        "expression": "59870-8177-335662-9038538",
+        "result": -9322507,
+        "passed": true
+      },
+      {
+        "name": "leaseLiability",
+        "expression": "104+1216",
+        "result": 1320,
+        "passed": true
+      },
+      {
+        "name": "FY25ETHpershare",
+        "expression": "1874927/232412324",
+        "result": 0.008067244317044048,
+        "passed": true
+      },
+      {
+        "name": "May31ETHpershare",
+        "expression": "5416945/579652432",
+        "result": 0.009345160480582612,
+        "passed": true
+      },
+      {
+        "name": "same-date ETH/share growth",
+        "expression": "(5416945/579652432)/(1874927/232412324)-1",
+        "result": 0.15840801558949313,
+        "passed": true
+      },
+      {
+        "name": "treasuryETHgrowth vsJuly snapshot",
+        "expression": "6016414/5742237-1",
+        "result": 0.04774741969027052,
+        "passed": true
+      },
+      {
+        "name": "stakedfraction",
+        "expression": "5067309/6016414",
+        "result": 0.8422473918849335,
+        "passed": true
+      },
+      {
+        "name": "grossannualrewardETH",
+        "expression": "5067309*.0263",
+        "result": 133270.2267,
+        "passed": true
+      },
+      {
+        "name": "grossannualrewardUSDatAnnouncement",
+        "expression": "5067309*.0263*2726",
+        "result": 363294637.9842,
+        "passed": true
+      },
+      {
+        "name": "June preferred baseline dividendUSD",
+        "expression": "3500000*100*.095",
+        "result": 33250000.0,
+        "passed": true
+      },
+      {
+        "name": "Mayawards_potential",
+        "expression": "2872929+10435430+1097346+4500000+359124",
+        "result": 19264829,
+        "passed": true
+      },
+      {
+        "name": "conservativeJulyplusMay_awards_notcurrentFD",
+        "expression": "603226394+2872929+10435430+1097346+4500000+359124",
+        "result": 622491223,
+        "passed": true
+      },
+      {
+        "name": "conditionalJulyshares_marketcap_M",
+        "expression": "24.03*603226394/1000000",
+        "result": 14495.530247820001,
+        "passed": true
+      },
+      {
+        "name": "Q3noncashSBCsum_thousand",
+        "expression": "36689+1162+506",
+        "result": 38357,
+        "passed": true
+      },
+      {
+        "name": "Q3GAAPnoncashreweight",
+        "expression": "264121-133275-9381-6793+9917-480",
+        "result": 124109,
+        "passed": true
+      },
+      {
+        "name": "simple9MCFOcashbridge",
+        "expression": "-287592-12102446+12218362",
+        "result": -171676,
+        "passed": true
+      },
+      {
+        "name": "Q3historicalCommonBookUSDpershare",
+        "expression": "11599577000/579652432",
+        "result": 20.01126254224014,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 4,
+    "quote_date_row_rechecked": true,
+    "decisive_primary_sections_read": true,
+    "citation_gate": "strict and evidence passed; provenance validation is not an exhaustive audit",
+    "remaining_gaps": [
+      "最新完整财务已补齐Q3；FY2026年度8/31已结束，但官方IR及申报缓存未读到已发布新10-K，不作年度猜测",
+      "10月实际/FD股本、ATM发行/回购净额、优先在外量与递延清算/股息未完全对齐；当前NAV/mNAV无法可靠估值",
+      "同期ETH/BTC与非核心投资可变现值/现金可用性未闭合；10/4公告价不是10/11现货价",
+      "独立MAVAN外部AUM/付费客户/费率/盈利分拆和内控正式有效性未证实",
+      "FY25初版股数后来修订，采用Q3重列232412324普通股而非初版234712324；正式财务镜像与主站仍同源非独立审计"
+    ],
+    "financial_table": {
+      "unit": "见原报告单位说明",
+      "columns": [
+        "FY2024",
+        "FY2025",
+        "Q3 FY2026",
+        "9M FY2025",
+        "9M FY2026"
+      ],
+      "rows": [
+        [
+          "GAAP收入",
+          3.31,
+          6.095,
+          46.535,
+          4.77,
+          59.87
+        ],
+        [
+          "毛利（自算）",
+          -0.163,
+          0.31,
+          40.809,
+          0.377,
+          51.693
+        ],
+        [
+          "GAAP经营损益",
+          -2.448,
+          444.211,
+          -11.865,
+          -2.265,
+          -9322.507
+        ],
+        [
+          "GAAP合并净损益",
+          -3.293,
+          348.577,
+          -83.595,
+          -2.754,
+          -9106.103
+        ],
+        [
+          "经营现金流",
+          -0.03,
+          -4.149,
+          "单季未直接披露",
+          1.366,
+          -287.592
+        ],
+        [
+          "现金设备资本开支",
+          0.076,
+          1.065,
+          "单季未直接披露",
+          0.018,
+          0.406
+        ],
+        [
+          "简易自由现金流（自算）",
+          -0.106,
+          -5.214,
+          "不填假数",
+          1.348,
+          -287.998
+        ]
+      ]
+    },
+    "worker_validation_tests": 80
+  }
+}

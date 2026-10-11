@@ -1,5 +1,160 @@
 # Microsoft（MSFT）Tracker
 
+Last updated: 2026-10-11
+
+## Current Research View
+
+**投资观点：**中性等待：生意质量保持强，但股价较7月明显上升，资本开支与非经营投资收益使“增长等于股东现金回报”不能成立。
+
+## Current Main Thesis
+
+**核心逻辑：**办公订阅提供持续利润，Azure云服务扩张，付费Copilot席位给AI商业化提供证据；估值应依赖可持续盈利和资本回报，而不是把投资公允价值收益永久化。
+
+## Key Risks
+
+**主要风险：**AI基础设施资本投入可能长期吞噬现金；最新完整10-K附注未取得，租赁负债、投资权益和承诺不能假设为零。
+
+## Latest Research
+
+[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+
+## 2026-10-11 新增深研更新块（保留旧文）
+
+- 旧基线：tracker 2026-07-08；deep-research/2026-07-08-deep-research.md；旧价388.84、FY2026E EPS16.82、FCF64600百万，旧2030基础折现441美元。
+- 当前观点：中性等待：生意质量保持强，但股价较7月明显上升，资本开支与非经营投资收益使“增长等于股东现金回报”不能成立。
+- 报价桥：{"price": 535.07, "currency": "USD", "date": "2026-10-09", "session": "regular-close", "url": "https://api.nasdaq.com/api/quote/MSFT/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09", "status": "verified", "timezone": "America/New_York", "time_basis": "交易所常规交易收盘；纽约时区"}
+
+### 旧假设 → 新事实 → 当前判断
+- 2026-07-08基线388.84美元、FY2026 Q3 → 2026-10-09收盘535.07及FY2026全年公告；报价变化不自动归因某事件。
+- 旧FY2026E收入329500百万/EPS16.82 → 实际331839百万/17.95；投资收益贡献必须剥离，不能全当经营超额。
+- 旧FY2026E FCF64600百万 → 实际66987百万；仍低于FY2025的71611，AI资本开支主线未解除。
+- 旧2030折现中枢441美元不直接挪用：改为明确的一年条件EPS情景；从积极/谨慎转中性等待，主要因价格与现金回报要求提高。
+
+### 可复算估值与资本结构
+
+```json
+{
+  "valuation": {
+    "method": "conditional forward earnings scenarios; no audited-10K closure",
+    "target": "FY2027 / approximately one year after research date",
+    "discount_rate": 0.1,
+    "discount_years": 1,
+    "assumptions": {
+      "bear": {
+        "EPS": 18,
+        "PE": 24
+      },
+      "base": {
+        "EPS": 20,
+        "PE": 28
+      },
+      "bull": {
+        "EPS": 22,
+        "PE": 32
+      }
+    },
+    "calculations": [
+      {
+        "name": "FY2026 FCF",
+        "expression": "182935-115948",
+        "result": 66987
+      },
+      {
+        "name": "FY2025 FCF",
+        "expression": "136162-64551",
+        "result": 71611
+      },
+      {
+        "name": "Q4FY26 FCF",
+        "expression": "55441-35802",
+        "result": 19639
+      },
+      {
+        "name": "Q4FY25 FCF",
+        "expression": "42647-17079",
+        "result": 25568
+      },
+      {
+        "name": "revenue growth",
+        "expression": "331839/281724-1",
+        "result": 0.17788686799846665
+      },
+      {
+        "name": "operating growth",
+        "expression": "155237/128528-1",
+        "result": 0.20780685920577624
+      },
+      {
+        "name": "share-proxy market-cap million",
+        "expression": "535.07*7427",
+        "result": 3973964.8900000006
+      },
+      {
+        "name": "historical GAAP PE",
+        "expression": "535.07/17.95",
+        "result": 29.808913649025072
+      },
+      {
+        "name": "OpenAI-adjusted historical PE",
+        "expression": "535.07/17.28",
+        "result": 30.964699074074076
+      },
+      {
+        "name": "bear present-value",
+        "expression": "18*24/1.1",
+        "result": 392.7272727272727
+      },
+      {
+        "name": "base present-value",
+        "expression": "20*28/1.1",
+        "result": 509.09090909090907
+      },
+      {
+        "name": "bull present-value",
+        "expression": "22*32/1.1",
+        "result": 640.0
+      }
+    ],
+    "current_forward_PE": "未取得有效同口径预测快照；历史实际EPS倍数不是forward PE",
+    "historical_forward_PE": "未取得历史当时EPS日频序列，不以今日EPS倒填历史价格",
+    "precision_limit": "使用期末股本代理；EPS倍数包含经济股权激励成本，但不能校正缺失租赁资本负担；不额外加投资NAV避免重复。",
+    "status": "conditional_scenarios_not_reliable_complete_current_value",
+    "interpretation": "可复算的研究条件情景，不是已证实预测或精确NAV/DCF；最新股本或其他缺口见gaps。"
+  },
+  "capital_structure": {
+    "actual_shares_million": 7427,
+    "actual_shares_date": "2026-06-30",
+    "weighted_diluted_FY2026_million": 7453,
+    "cash_short_term_investments_million": 76843,
+    "funded_debt_million": 40294,
+    "operating_lease_long_term_million": 16532,
+    "operating_lease_current": "公告未单列",
+    "finance_leases": "完整附注未取得",
+    "preferred_convertibles": "未据完整10-K验证；不可假定全部为零",
+    "SBC_million": 12405,
+    "buybacks_cash_million": 22271,
+    "future_dilution": "情景EPS已按研究假设；10月实际股本未取得"
+  }
+}
+```
+
+### 改判条件与最强反证
+加强判断：云增长与Copilot付费维持，且FCF增长重新快于股本/资本承诺增长；弱化判断：连续披露资本开支快于CFO且现金回报无改善。最强反证：Azure43%及3000万付费席位可能推高盈利超出基础EPS20；相反公司投资收益和租赁负担可能让EPS倍数虚高。
+
+### 决定性局限
+- 完整FY2026 10-K与租赁/承诺/权益附注未取得，不能作闭合DCF或精确EV
+- 10月最新实际股数未核验，仅使用6月期末代理市值
+- 当前与历史Forward P/E预测快照缺失；共识超预期未核验
+- 下载公告为Fast-EDGAR原公告镜像，与搜索确认的Microsoft公告同源，非独立交叉验证
+- 一项SEC及镜像URL未由已取回索引验证且访问失败，不作为已阅读证据
+
+新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+
+
+## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
+
+# Microsoft（MSFT）Tracker
+
 Last updated: 2026-07-08
 
 ## Current Research View

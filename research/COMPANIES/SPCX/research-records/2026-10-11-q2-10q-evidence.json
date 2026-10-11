@@ -1,0 +1,96 @@
+{
+  "kind": "原缓存公司文件的有限原文摘录与非版权财务事实；不是完整原件或独立交叉验证",
+  "document": "SpaceX Q2 2026 Form10-Q PDF缓存",
+  "original_retrieval_url": null,
+  "cached_original_sha256": "2fe452319b54affc636c4b38ce9f43e2ecf39f0ee8e47fc3dd7bfdd75589d7a0",
+  "locator": "印刷pp4/5/9/10, Notes9/12/13/14/18，封面July28股份",
+  "verbatim_excerpt": "June 30, 2026 OR ☐ TRANSITION REPORT PURSUANT TO SECTION",
+  "financial_columns": [
+    "Q2 2025",
+    "Q2 2026",
+    "H1 2025",
+    "H1 2026"
+  ],
+  "financial_rows": [
+    [
+      "收入",
+      4071,
+      7814,
+      8138,
+      12508
+    ],
+    [
+      "毛利（收入减直接成本，自算）",
+      1789,
+      4319,
+      3894,
+      6625
+    ],
+    [
+      "经营损益",
+      -970,
+      -143,
+      -943,
+      -2086
+    ],
+    [
+      "GAAP合并净损益",
+      -1008,
+      -541,
+      -1536,
+      -4817
+    ],
+    [
+      "普通股EPS分子损益",
+      -1008,
+      -541,
+      -1536,
+      -5488
+    ],
+    [
+      "经营现金流",
+      "单季未列示",
+      "单季未列示",
+      351,
+      3466
+    ],
+    [
+      "现金资本开支（未扣返利）",
+      2825,
+      18369,
+      6965,
+      28476
+    ],
+    [
+      "自由现金流（自算，未扣返利）",
+      "未计算",
+      "未计算",
+      -6614,
+      -25010
+    ]
+  ],
+  "capital_facts_from_10q": {
+    "date": "2026-06-30, cover July28",
+    "A_cover": 7696293669,
+    "B_cover": 5485486276,
+    "C_issued": 0,
+    "preferred_outstanding": 0,
+    "weighted_H1_basic_diluted_million": 4879,
+    "cash_million": 93522,
+    "securities_million": 6487,
+    "restricted_cash_implied_million": 830,
+    "debt_principal_million": 38433,
+    "finance_leases_million": 1079,
+    "debt_and_lease_carrying_million": 39364,
+    "other_financing_million": 13406,
+    "operating_lease_current_million": 344,
+    "operating_lease_noncurrent": "not separately closed",
+    "SBC_H1_PandL_million": 1470,
+    "SBC_capitalized_million": 110,
+    "ordinary_awards_excluded_antidilutive_million": 564,
+    "conditional_performance_awards_million": 1331,
+    "Cursor_closing_share_numbers": "search lead only, not original; excluded precise denominator",
+    "current_actual_economic_shares": "not closed after acquisition"
+  },
+  "reader_limit": "原下载URL未留存且补取受阻；完整原PDF保留在研究工作区，本公开摘录不能替代审计或证明全部股本已闭合。"
+}

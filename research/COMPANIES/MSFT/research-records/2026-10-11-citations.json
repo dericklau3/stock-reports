@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://content-archive.fast-edgar.com/20260729/AC22N22FZM2RHTZ2222A2ZYMMTPROZ22X282/msft-ex99_1.htm",
+      "title": "Microsoft FY2026 Q4 earnings release EX-99.1（原公告镜像）",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "June 30, 2026, as compared to the corresponding period of last fiscal year: • Revenue was $90.0 billion and increased",
+          "added": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://api.nasdaq.com/api/quote/MSFT/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+      "title": "Nasdaq MSFT historical",
+      "accessed": "2026-10-11",
+      "quotes": [
+        {
+          "text": "{ \"data\": { \"symbol\": \"MSFT\", \"totalRecords\": 2, \"tradesTable\": { \"asOf\": null, \"headers\": { \"date\": \"Date\", \"close\": \"Close/Last\", \"volume\": \"Volume\", \"open\":",
+          "added": "2026-10-11"
+        }
+      ]
+    }
+  ]
+}

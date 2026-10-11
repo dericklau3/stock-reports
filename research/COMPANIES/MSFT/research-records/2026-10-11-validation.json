@@ -1,0 +1,580 @@
+{
+  "parent": {
+    "ticker": "MSFT",
+    "quote_source_verified": true,
+    "math_checks": [
+      {
+        "name": "FY2026 FCF",
+        "expression": "182935-115948",
+        "result": 66987,
+        "passed": true
+      },
+      {
+        "name": "FY2025 FCF",
+        "expression": "136162-64551",
+        "result": 71611,
+        "passed": true
+      },
+      {
+        "name": "Q4FY26 FCF",
+        "expression": "55441-35802",
+        "result": 19639,
+        "passed": true
+      },
+      {
+        "name": "Q4FY25 FCF",
+        "expression": "42647-17079",
+        "result": 25568,
+        "passed": true
+      },
+      {
+        "name": "revenue growth",
+        "expression": "331839/281724-1",
+        "result": 0.17788686799846665,
+        "passed": true
+      },
+      {
+        "name": "operating growth",
+        "expression": "155237/128528-1",
+        "result": 0.20780685920577624,
+        "passed": true
+      },
+      {
+        "name": "share-proxy market-cap million",
+        "expression": "535.07*7427",
+        "result": 3973964.8900000006,
+        "passed": true
+      },
+      {
+        "name": "historical GAAP PE",
+        "expression": "535.07/17.95",
+        "result": 29.808913649025072,
+        "passed": true
+      },
+      {
+        "name": "OpenAI-adjusted historical PE",
+        "expression": "535.07/17.28",
+        "result": 30.964699074074076,
+        "passed": true
+      },
+      {
+        "name": "bear present-value",
+        "expression": "18*24/1.1",
+        "result": 392.7272727272727,
+        "passed": true
+      },
+      {
+        "name": "base present-value",
+        "expression": "20*28/1.1",
+        "result": 509.09090909090907,
+        "passed": true
+      },
+      {
+        "name": "bull present-value",
+        "expression": "22*32/1.1",
+        "result": 640.0,
+        "passed": true
+      }
+    ],
+    "FCF_columns_checked": 4,
+    "citations_evidence": "passed",
+    "declared_gaps": [
+      "完整FY2026 10-K与租赁/承诺/权益附注未取得，不能作闭合DCF或精确EV",
+      "10月最新实际股数未核验，仅使用6月期末代理市值",
+      "当前与历史Forward P/E预测快照缺失；共识超预期未核验",
+      "下载公告为Fast-EDGAR原公告镜像，与搜索确认的Microsoft公告同源，非独立交叉验证",
+      "一项SEC及镜像URL未由已取回索引验证且访问失败，不作为已阅读证据"
+    ]
+  },
+  "worker": {
+    "status": "passed_with_declared_gaps",
+    "tests": [
+      {
+        "test": "identity",
+        "passed": true,
+        "detail": {
+          "issuer": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "exchange": "Nasdaq",
+          "security": "common stock",
+          "currency": "USD",
+          "CIK": "0000789019"
+        }
+      },
+      {
+        "test": "quote-date-session",
+        "passed": true,
+        "detail": {
+          "price": 535.07,
+          "currency": "USD",
+          "date": "2026-10-09",
+          "session": "regular-close",
+          "url": "https://api.nasdaq.com/api/quote/MSFT/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+          "status": "verified",
+          "timezone": "America/New_York",
+          "time_basis": "交易所常规交易收盘；纽约时区"
+        }
+      },
+      {
+        "test": "source-file:FY2026-release-mirror.html",
+        "passed": true,
+        "detail": "完整正文取回，已读决定性财务表及调整桥；非完整10-K"
+      },
+      {
+        "test": "source-file:quote.json",
+        "passed": true,
+        "detail": "JSON实际读取"
+      },
+      {
+        "test": "FY2026 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "182935-115948",
+          "computed": 66987,
+          "expected": 66987
+        }
+      },
+      {
+        "test": "FY2025 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "136162-64551",
+          "computed": 71611,
+          "expected": 71611
+        }
+      },
+      {
+        "test": "Q4FY26 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "55441-35802",
+          "computed": 19639,
+          "expected": 19639
+        }
+      },
+      {
+        "test": "Q4FY25 FCF",
+        "passed": true,
+        "detail": {
+          "expression": "42647-17079",
+          "computed": 25568,
+          "expected": 25568
+        }
+      },
+      {
+        "test": "revenue growth",
+        "passed": true,
+        "detail": {
+          "expression": "331839/281724-1",
+          "computed": 0.17788686799846665,
+          "expected": 0.17788686799846665
+        }
+      },
+      {
+        "test": "operating growth",
+        "passed": true,
+        "detail": {
+          "expression": "155237/128528-1",
+          "computed": 0.20780685920577624,
+          "expected": 0.20780685920577624
+        }
+      },
+      {
+        "test": "share-proxy market-cap million",
+        "passed": true,
+        "detail": {
+          "expression": "535.07*7427",
+          "computed": 3973964.8900000006,
+          "expected": 3973964.8900000006
+        }
+      },
+      {
+        "test": "historical GAAP PE",
+        "passed": true,
+        "detail": {
+          "expression": "535.07/17.95",
+          "computed": 29.808913649025072,
+          "expected": 29.808913649025072
+        }
+      },
+      {
+        "test": "OpenAI-adjusted historical PE",
+        "passed": true,
+        "detail": {
+          "expression": "535.07/17.28",
+          "computed": 30.964699074074076,
+          "expected": 30.964699074074076
+        }
+      },
+      {
+        "test": "bear present-value",
+        "passed": true,
+        "detail": {
+          "expression": "18*24/1.1",
+          "computed": 392.7272727272727,
+          "expected": 392.7272727272727
+        }
+      },
+      {
+        "test": "base present-value",
+        "passed": true,
+        "detail": {
+          "expression": "20*28/1.1",
+          "computed": 509.09090909090907,
+          "expected": 509.09090909090907
+        }
+      },
+      {
+        "test": "bull present-value",
+        "passed": true,
+        "detail": {
+          "expression": "22*32/1.1",
+          "computed": 640.0,
+          "expected": 640.0
+        }
+      },
+      {
+        "test": "artifact:report.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:tracker-update.md",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "artifact:research-record.json",
+        "passed": true,
+        "detail": "nonempty"
+      },
+      {
+        "test": "eight-sections",
+        "passed": true,
+        "detail": "8 sections"
+      },
+      {
+        "test": "no-disallowed-metadata",
+        "passed": true,
+        "detail": "format"
+      },
+      {
+        "test": "no-contact-emails",
+        "passed": true,
+        "detail": "sanitized"
+      },
+      {
+        "test": "quote-source-is-registered",
+        "passed": true,
+        "detail": [
+          {
+            "title": "Nasdaq MSFT historical",
+            "url": "https://api.nasdaq.com/api/quote/MSFT/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09",
+            "locator": "tradesTable.rows date=10/09/2026",
+            "read_status": "JSON实际读取",
+            "local_path": "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/MSFT/quote.json",
+            "sha256": "4cccbc7d2ee206d4e2e80eb70fd8a9d7b0d8a270fef9c3cb9ac75c26bc4f9a8c"
+          }
+        ]
+      },
+      {
+        "test": "quote-selected-explicit-date-not-first-row",
+        "passed": true,
+        "detail": [
+          {
+            "date": "10/09/2026",
+            "close": "$535.07",
+            "volume": "18,500,610",
+            "open": "$528.235",
+            "high": "$537.22",
+            "low": "$526.2401"
+          }
+        ]
+      },
+      {
+        "test": "quote-timezone",
+        "passed": true,
+        "detail": "交易所常规交易收盘；纽约时区"
+      },
+      {
+        "test": "identity-raw:Microsoft",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "identity-raw:Corporation",
+        "passed": true,
+        "detail": "Raw registered source contains exact issuer/security identifier; not identity dict alone."
+      },
+      {
+        "test": "period-raw:June 30",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-raw:2026",
+        "passed": true,
+        "detail": "Source period anchor"
+      },
+      {
+        "test": "period-not-after-cutoff:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2025",
+        "passed": true,
+        "detail": {
+          "period": "FY2025",
+          "end": "2025-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:FY2026",
+        "passed": true,
+        "detail": {
+          "period": "FY2026",
+          "end": "2026-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-accounting-basis:FY2026",
+        "passed": true,
+        "detail": {
+          "period": "FY2026",
+          "end": "2026-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:Q4 FY2025",
+        "passed": true,
+        "detail": {
+          "period": "Q4 FY2025",
+          "end": "2025-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q4 FY2025",
+        "passed": true,
+        "detail": {
+          "period": "Q4 FY2025",
+          "end": "2025-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-not-after-cutoff:Q4 FY2026",
+        "passed": true,
+        "detail": {
+          "period": "Q4 FY2026",
+          "end": "2026-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "period-accounting-basis:Q4 FY2026",
+        "passed": true,
+        "detail": {
+          "period": "Q4 FY2026",
+          "end": "2026-06-30",
+          "basis": "GAAP; earnings-release unaudited",
+          "source": "[1]"
+        }
+      },
+      {
+        "test": "reported-raw-number:收入",
+        "passed": true,
+        "detail": {
+          "table_period": "Q4 FY2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "90007",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:毛利",
+        "passed": true,
+        "detail": {
+          "table_period": "Q4 FY2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "60482",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营利润",
+        "passed": true,
+        "detail": {
+          "table_period": "Q4 FY2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "40603",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:净利润",
+        "passed": true,
+        "detail": {
+          "table_period": "Q4 FY2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "35766",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:经营现金流",
+        "passed": true,
+        "detail": {
+          "table_period": "Q4 FY2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "55441",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "reported-raw-number:现金资本开支",
+        "passed": true,
+        "detail": {
+          "table_period": "Q4 FY2026",
+          "source_unit_multiplier": 1,
+          "raw_number": "35802",
+          "scope": "Source token presence is a limited raw-number crosscheck, not an independent audit; signs and row semantics were read manually."
+        }
+      },
+      {
+        "test": "financial-table-width",
+        "passed": true,
+        "detail": [
+          "FY2025",
+          "FY2026",
+          "Q4 FY2025",
+          "Q4 FY2026"
+        ]
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": 136162,
+          "cashcapex": 64551,
+          "difference": 71611,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:FY2026",
+        "passed": true,
+        "detail": {
+          "CFO": 182935,
+          "cashcapex": 115948,
+          "difference": 66987,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:Q4 FY2025",
+        "passed": true,
+        "detail": {
+          "CFO": 42647,
+          "cashcapex": 17079,
+          "difference": 25568,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "table-CFO-minus-capex:Q4 FY2026",
+        "passed": true,
+        "detail": {
+          "CFO": 55441,
+          "cashcapex": 35802,
+          "difference": 19639,
+          "interpretation": "HOOD is not distributable FCF; BMNR excludes treasury purchases from equipment capex."
+        }
+      },
+      {
+        "test": "one-table-per-section",
+        "passed": true,
+        "detail": 8
+      },
+      {
+        "test": "financial-glossary-attached",
+        "passed": true,
+        "detail": "small directly after financial table"
+      },
+      {
+        "test": "opening-three-points",
+        "passed": true,
+        "detail": "No second executive summary"
+      },
+      {
+        "test": "five-step-business-and-hypothesis",
+        "passed": true,
+        "detail": "Business/paid path"
+      },
+      {
+        "test": "four-investor-lenses",
+        "passed": true,
+        "detail": "Analytical frameworks only"
+      },
+      {
+        "test": "critical-evidence-five-max",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "test": "declared-gaps",
+        "passed": true,
+        "detail": "conditional_scenarios_not_reliable_complete_current_value"
+      },
+      {
+        "test": "source-artifacts-all-under-allowed-root",
+        "passed": true,
+        "detail": [
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/MSFT/FY2026-release-mirror.html",
+          "/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/resume-7/MSFT/quote.json"
+        ]
+      },
+      {
+        "test": "bounded-new-source-budget",
+        "passed": true,
+        "detail": {
+          "urllib_attempts": 5,
+          "search_attempts": 1,
+          "total": 6,
+          "failed_attempts_included": true,
+          "session_search_is_local_not_network": true
+        }
+      },
+      {
+        "test": "no-contact-mails-in-source-text",
+        "passed": true,
+        "detail": "PDF text plus original HTML/data checked; request headers were not saved."
+      }
+    ],
+    "limitations": [
+      "完整FY2026 10-K与租赁/承诺/权益附注未取得，不能作闭合DCF或精确EV",
+      "10月最新实际股数未核验，仅使用6月期末代理市值",
+      "当前与历史Forward P/E预测快照缺失；共识超预期未核验",
+      "下载公告为Fast-EDGAR原公告镜像，与搜索确认的Microsoft公告同源，非独立交叉验证",
+      "一项SEC及镜像URL未由已取回索引验证且访问失败，不作为已阅读证据"
+    ],
+    "semantic_note": "通过的是已声明输入的算式、日期、文件与格式；不等于所有财务披露已闭合或定量估值可用。",
+    "audit_scope": "数学、真实原始报价行、证券原文标识、期间/会计口径、多期表自算一致性、部分原表数值、原件哈希、格式与新网络预算均实际运行；数值token定位不是独立审计，全文完整性缺口仍保留。"
+  },
+  "scope_note": "父代理数学与报价/引用复核独立执行；worker测试反映父代理调整前的原件与拟稿快照，均不代表披露缺口已经消失。"
+}
