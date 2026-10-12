@@ -1,7 +1,7 @@
 {
   "ticker": "GOOG",
   "as_of": "2026-10-11",
-  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/GOOG/deep-research/2026-05-20-deep-research.md",
+  "previous_report": "https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/GOOG/deep-research/2026-05-20-deep-research.md",
   "quote": {
     "price": 347.86,
     "currency": "USD",

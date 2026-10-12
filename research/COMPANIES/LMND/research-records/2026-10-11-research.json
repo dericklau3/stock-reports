@@ -1,7 +1,7 @@
 {
   "ticker": "LMND",
   "as_of": "2026-10-11",
-  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/LMND/deep-research/2026-10-07-deep-research-update.md",
+  "previous_report": "https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/LMND/deep-research/2026-10-07-deep-research-update.md",
   "quote": {
     "price": 46.46,
     "date": "2026-10-09",

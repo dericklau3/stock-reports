@@ -1,6 +1,6 @@
 # Tesla, Inc.（TSLA）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-06-23-deep-research.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TSLA/deep-research/2026-06-23-deep-research.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**中性等待：Q3交付和储能部署有实际改善，但车量不能回答利润和现金问题；不沿用未闭合AI期权的旧目标价。
 

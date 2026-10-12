@@ -20,7 +20,7 @@ Last updated: 2026-10-11
 ## 2026-10-11 深研更新（待父代理合并，不删除历史）
 
 - 观点：谨慎看好；最强反证为信用支持与真实需求混在一起。
-- 历史：[2026-05-20](deep-research/2026-05-20-deep-research.md)；新稿：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 历史：[2026-05-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVDA/deep-research/2026-05-20-deep-research.md)；新稿：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
 - 财务：Q2收入96.221bn；H1经营利润117.270bn、净利118.010bn、CFO74.421bn，证券收益23.707bn。资本开支统一现金口径，年度FY26为6.042bn，非旧粗略6.062bn。
 - 项目：Rubin已全面量产但须看现金；AI云容量36bn、供应279bn、担保最大108.5bn是新的核心风险，不能全部当即时债务，不能当无资本风险。
 - 价格220.61→229.28；不是凭股价改评级。模型为FY28利润情景折现，完整输入见 research-records/2026-10-11-research.json；原件 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.pdf、/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-transcript.pdf。

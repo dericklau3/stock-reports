@@ -1,7 +1,7 @@
 {
   "ticker": "CRCL",
   "as_of": "2026-10-11",
-  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md",
+  "previous_report": "https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md",
   "quote": {
     "price": 84.51,
     "date": "2026-10-09",
@@ -233,7 +233,7 @@
     ],
     "quote_api_fix": "Nasdaq历史区间须起止日不同；以10月8日至9日查询9日收盘",
     "evidence_gate": "strict + evidence passed; verbatim provenance only, not exhaustive factual verification",
-    "carried_forward_source": "https://dericklau3.github.io/stock-reports/reports/CRCL/2026-10-06-deep-research-update/"
+    "carried_forward_source": "https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md"
   },
   "resolved_during_parent_review": [
     {

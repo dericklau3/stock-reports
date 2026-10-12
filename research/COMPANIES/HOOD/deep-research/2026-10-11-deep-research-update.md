@@ -1,6 +1,6 @@
 # Robinhood Markets, Inc.（HOOD）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-05-12-deep-research.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/HOOD/deep-research/2026-05-12-deep-research.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**中性等待：客户资产与产品渗透改善，但股价已超出旧基础情景，交易周期、一次性收益和可转债需要重新定价。
 

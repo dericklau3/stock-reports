@@ -6,7 +6,7 @@
 
 **主要风险：**准备金释放和新增借款使调整指标显得更好，宠物赔付通胀、更多自留风险及稀释可能吞掉增长收益。
 
-研究日期：2026-10-11；承接 [2026-10-07研究](2026-10-07-deep-research-update.md)，不是首次覆盖。
+研究日期：2026-10-11；承接 [2026-10-07研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/LMND/deep-research/2026-10-07-deep-research-update.md)，不是首次覆盖。
 
 ## 公司到底做什么生意？
 

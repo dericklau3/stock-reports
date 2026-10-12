@@ -4,7 +4,7 @@
 - **核心逻辑：**小型发射和卫星制造已有真实客户，Neutron和卫星通信收购可扩大业务边界；需要技术、交付和融资全部转化为股东现金。
 - **主要风险：**公司仍亏损且依赖股权融资，Neutron尚未形成商业经济性，Iridium交易增加杠杆、稀释与整合复杂度。
 
-基准：2026-10-11；承接[9月14日报告](2026-09-14-deep-research-update.md)，最新完整交易日为10月9日。
+基准：2026-10-11；承接[9月14日报告](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/RKLB/deep-research/2026-09-14-deep-research-update.md)，最新完整交易日为10月9日。
 
 ## 公司到底是做什么生意的？
 

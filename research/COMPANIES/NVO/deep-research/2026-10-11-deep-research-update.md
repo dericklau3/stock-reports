@@ -6,7 +6,7 @@
 
 **主要风险：**美国支付和竞争重置压低单位收益，新产品接替迟于旧利润侵蚀，2027价格及返利结算又拖累现金。
 
-研究日期：2026-10-11；承接[2026-10-05研究](2026-10-05-deep-research-update.md)。
+研究日期：2026-10-11；承接[2026-10-05研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVO/deep-research/2026-10-05-deep-research-update.md)。
 
 ## 公司到底做什么生意？
 

@@ -21,7 +21,7 @@ Last updated: 2026-10-11
 ## 2026-10-11 完整研究新增块（保留此前历史）
 
 - 观点：结构性看好、估值与兑现仍需观察；最强反方为集团调整EBITDA同比下降和FCF为负。
-- 新报告：[2026-10-11完整更新](deep-research/2026-10-11-deep-research-update.md)；历史：[2026-10-09](deep-research/2026-10-09-deep-research.md)，此前7月8日、9月11日继续保留。
+- 新报告：[2026-10-11完整更新](deep-research/2026-10-11-deep-research-update.md)；历史：[2026-10-09](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AVAV/deep-research/2026-10-09-deep-research.md)，此前7月8日、9月11日继续保留。
 - 真正变化：常规收盘137.60→137.11美元；没有新的决定性季度财报证据，不将价格变动解释为经营预警。SEC最新全类型申报检查受403阻断，不能写成“没有新申报”。
 - 方法修正：2028-04-30目标价按12%和1.552年折现。熊65.35–85.61、基础115.32–151.77、牛191.79–233.25美元；以前78–102/138–181/229–278为未折现未来情景，保留但不再当今日内在价值。
 - 股本：8月1日50.822963百万实际普通股、49.822595百万季度加权；未来52–53百万。747.5M可转债本金保留，转换本金现金结算；租金留在成本，不再重复加租债。
@@ -153,7 +153,7 @@ Last updated: 2026-10-09（北京时间）
 - [共识数据](https://stockanalysis.com/stocks/avav/forecast/)
 - [未来市盈率季度历史](https://www.gurufocus.com/term/forward-pe-ratio/AVAV)
 - [下一次财报日期未确认的说明](https://www.marketbeat.com/stocks/NASDAQ/AVAV/earnings/)
-- [完整最新研究](deep-research/2026-10-09-deep-research.md)
+- [完整最新研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AVAV/deep-research/2026-10-09-deep-research.md)
 - 历史：deep-research/2026-07-08-deep-research.md；deep-research/2026-09-11-deep-research.md。
 
 部分 IR/SEC 下载受限，未完整读取年度 10-K；日频历史 forward P/E 和产品单机利润未取得。当前结论不依赖旧报告未复核的精确客户集中度或旧同行倍数。

@@ -1,7 +1,7 @@
 {
   "ticker": "TEM",
   "as_of": "2026-10-11",
-  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md",
+  "previous_report": "https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md",
   "previous_tracker": "/home/ubuntu/stock-reports/research/COMPANIES/TEM/tracker.md",
   "quote": {
     "price": 70.93,

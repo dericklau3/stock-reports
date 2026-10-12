@@ -19,7 +19,7 @@ Last updated: 2026-10-11
 [2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11研究更新（追加，不替换旧历史）
 
-观点：中性等待；旧研究 [2026-10-07](deep-research/2026-10-07-deep-research-update.md)，新拟稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+观点：中性等待；旧研究 [2026-10-07](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/LMND/deep-research/2026-10-07-deep-research-update.md)，新拟稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
 
 事实：10月8日FSD Lite支持HW3三州，合格里程折扣30%，HW4为50%；仍需监督，成熟赔付经济性未公布。价格46.30→46.46美元，涨0.35%；经营模型不因此上调。最新财务继续采用Q2/H1，公司官方PDF已保存，SEC直连403，不能排除全部新申报。
 

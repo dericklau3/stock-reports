@@ -1,6 +1,6 @@
 # Bitmine Immersion Technologies, Inc.（BMNR）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-07-10-deep-research.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/BMNR/deep-research/2026-07-10-deep-research.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**谨慎观望：最新完整季度原件已补齐，真实质押收入和历史每股ETH改善值得承认，但10月完全摊薄股数与全部索偿尚未闭合，不能沿用7月NAV折价结论。
 

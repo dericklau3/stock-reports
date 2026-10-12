@@ -1,7 +1,7 @@
 {
   "ticker": "NVO",
   "as_of": "2026-10-11",
-  "previous_report": "/home/ubuntu/stock-reports/research/COMPANIES/NVO/deep-research/2026-10-05-deep-research-update.md",
+  "previous_report": "https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVO/deep-research/2026-10-05-deep-research-update.md",
   "quote": {
     "price": 38.64,
     "date": "2026-10-09",

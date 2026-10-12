@@ -1,6 +1,6 @@
 # Microsoft Corporation（MSFT）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-07-08-deep-research.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/MSFT/deep-research/2026-07-08-deep-research.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**中性等待：生意质量保持强，但股价较7月明显上升，资本开支与非经营投资收益使“增长等于股东现金回报”不能成立。
 

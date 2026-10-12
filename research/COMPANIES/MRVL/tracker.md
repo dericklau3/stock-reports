@@ -19,7 +19,7 @@ Last updated: 2026-10-11
 [2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11 深研更新（追加，不覆盖）
 
-- 观点：中性等待；与7月建设性相比价格上涨、现金兑现门槛更高。历史 [2026-07-14](deep-research/2026-07-14-deep-research.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 观点：中性等待；与7月建设性相比价格上涨、现金兑现门槛更高。历史 [2026-07-14](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/MRVL/deep-research/2026-07-14-deep-research.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
 - 核心增量：Q2收入2.7393bn、DC2.1715bn；10月6日FY28收入20bn、FY29 custom12bn+、FY31收入70–90bn为目标非事实。不得把10月6日列为未来催化。
 - 证券修正：实际普通股876.9m + Series A转股权益21.8m =898.7m经济股数；优先股无赎回、按转换与普通股同享清算，不能另扣2bn。Q2加权稀释921.2m不同。
 - 现金质量：H1简化FCF961.9m，扣技术与SBC经济压力仅366.5m；FY26净利含出售收益1830.4m。

@@ -1,6 +1,6 @@
 # SK hynix Inc.（SKHY）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-07-09-deep-research.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/SKHY/deep-research/2026-07-09-deep-research.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**建设性但需观察：HBM及高端存储的商业进展较7月更扎实，但不能用异常高单季净利润证明现价便宜；最新半年度附注受阻使精确估值暂缓。
 

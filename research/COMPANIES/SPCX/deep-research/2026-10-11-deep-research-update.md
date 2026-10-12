@@ -1,6 +1,6 @@
 # Space Exploration Technologies Corp. / SpaceX（SPCX）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-07-09-deep-research-v2.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/SPCX/deep-research/2026-07-09-deep-research-v2.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**中性等待，资本回报证据仍不足：Starlink利润和AI收入明显扩张，但现金资本投入远超经营现金；不把世界级工程能力等同股票便宜。
 

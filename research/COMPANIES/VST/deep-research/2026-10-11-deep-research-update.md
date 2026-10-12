@@ -1,6 +1,6 @@
 # Vistra Corp.（VST）中文深度研究
 
-研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](2026-10-10-deep-research-update.md)及tracker，旧文保留；不构成交易指令。
+研究截止：2026-10-11；非交易日，最新完整交易日为2026-10-09。承接[此前完整研究](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/VST/deep-research/2026-10-10-deep-research-update.md)及tracker，旧文保留；不构成交易指令。
 
 **投资观点：**建设性但需观察：现有资产赚钱且长约能见度提高，但现价处于基础情景上半区，安全边际不足以忽视杠杆和新增资本。
 

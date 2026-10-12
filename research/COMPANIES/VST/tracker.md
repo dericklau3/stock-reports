@@ -323,9 +323,9 @@ Last updated: 2026-10-11
 - **Current research view**：Constructive but watchful（建设性但需观察）；现价没有厚安全边际，不因AI供电题材追高。
 - **Confidence**：中等；已披露财务/合同阶段较清楚，2027最终贡献与未来净索取权仍需验证。
 - **Time horizon**：12–24个月。
-- **Latest memo**：[2026-10-10深度更新](deep-research/2026-10-10-deep-research-update.md)。
-- **Prior memo**：[2026-08-19](deep-research/2026-08-19-deep-research-update.md)；[2026-06-10](deep-research/2026-06-10-deep-research.md)。
-- **Latest earnings memo**：[2026Q2](earnings-tracking/2026-Q2-earnings-tracking.md)。
+- **Latest memo**：[2026-10-10深度更新](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/VST/deep-research/2026-10-10-deep-research-update.md)。
+- **Prior memo**：[2026-08-19](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/VST/deep-research/2026-08-19-deep-research-update.md)；[2026-06-10](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/VST/deep-research/2026-06-10-deep-research.md)。
+- **Latest earnings memo**：[2026Q2](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/VST/earnings-tracking/2026-Q2-earnings-tracking.md)。
 
 ## Current Research View
 

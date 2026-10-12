@@ -19,7 +19,7 @@ Last updated: 2026-10-11
 [2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11 深研更新（追加历史）
 
-- 观点：中性等待；业务恢复承接8月，但报价104.70高于92.80，没有新季报验证现金改善。历史 [2026-08-20](deep-research/2026-08-20-deep-research-update.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 观点：中性等待；业务恢复承接8月，但报价104.70高于92.80，没有新季报验证现金改善。历史 [2026-08-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/INTC/deep-research/2026-08-20-deep-research-update.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
 - 重要修正：此前遗漏8月公开发行；Aug12 8K显示210,526,315股@$95、额外31,578,947全行使，合计242,105,262股、gross23bn。最终现金到账未获得，不能当已证实现金。
 - 股数：July17 actual5.044bn；机械发行后5.286bn+剩余escrow143m≈5.429bn，vendor5.25bn冲突不取平均。Escrow衍生负债不再与同一股份重复扣；DOC241m warrants条件触发。
 - 现金口径：投资+融资栏H1 PP&E7.615bn，非仅6.192bn；adjustedFCF -10.435bn，自算与FY24/FY25官方调节公式一致。买回Ireland权益一次性支出非永久烧钱率。

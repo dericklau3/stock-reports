@@ -6,7 +6,7 @@
 
 **主要风险：**市场过早把投资资产涨价形成的净利润当作主营盈利，并忽略并购换股、可转债与SBC造成的股东索偿变化。
 
-研究日期：2026-10-11；承接[5月深研](2026-05-12-deep-research.md)及7月20日Personalis事件tracker，非初次覆盖。
+研究日期：2026-10-11；承接[5月深研](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md)及7月20日Personalis事件tracker，非初次覆盖。
 
 ## 公司到底做什么生意？
 

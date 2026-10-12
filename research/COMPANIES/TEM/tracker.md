@@ -19,7 +19,7 @@ Last updated: 2026-10-11
 [2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11追加研究
 
-观点：中性等待，经营建设性但价格和结构约束更严格。保留[2026-05-12](deep-research/2026-05-12-deep-research.md)、7月20日事件历史；[新拟稿](deep-research/2026-10-11-deep-research-update.md)。
+观点：中性等待，经营建设性但价格和结构约束更严格。保留[2026-05-12](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md)、7月20日事件历史；[新拟稿](deep-research/2026-10-11-deep-research-update.md)。
 
 Q2收入382.486M、数据收入93.153M增28%、调整EBITDA8.044M；净利润5.642M含证券未实现收益98.5M，GAAP经营仍-75.913M。H1普通现金流-80.802M，扣设备和软件FCF-101.961M。SBC106.827M另雇主税5.051M。新票据实际460M而非旧400M，旧设施已还；仍有750M2030票据/Google票据。
 
@@ -42,7 +42,7 @@ Last updated: 2026-07-20
 
 Tempus 是一个差异化的精准医疗平台，拥有规模化诊断业务、真实世界多模态数据资产，以及越来越重要的 Data and Applications 业务。2026 Q1 继续显示高增长和毛利率改善，FY2026 revenue 指引维持/上调至约 15.9-16.0 亿美元，支持增长逻辑。2026-07-20，公司宣布将收购 Personalis（PSNL），显著补强 MRD/肿瘤复发监测能力，战略上符合“Diagnostics → longitudinal data → AI/data platform”的主线；但交易价格约 $1.5B EV、Personalis 当前亏损明显，且若 100% 股票支付可能带来约 16%-17% 股本稀释，因此短期财务质量和执行风险上升。
 
-最新事件 memo：[2026-07-20 Personalis acquisition tracking](earnings-tracking/2026-07-20-personalis-acquisition-tracking.md)
+最新事件 memo：[2026-07-20 Personalis acquisition tracking](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TEM/earnings-tracking/2026-07-20-personalis-acquisition-tracking.md)
 
 ## Current Main Thesis
 

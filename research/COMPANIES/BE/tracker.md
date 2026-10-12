@@ -20,7 +20,7 @@ Last updated: 2026-10-11
 
 ## 2026-10-11 新完整研究更新块（保留历史）
 
-- 新报告：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)；承接[2026-07-16](deep-research/2026-07-16-deep-research.md)。观点中性等待：增长证据增强，股票仍要求极乐观兑现；最强反方是销售增长未必转成稳态每股现金。
+- 新报告：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)；承接[2026-07-16](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/BE/deep-research/2026-07-16-deep-research.md)。观点中性等待：增长证据增强，股票仍要求极乐观兑现；最强反方是销售增长未必转成稳态每股现金。
 - Q2收入1065.365M、GAAP经营利润182.237M；全年收入3900–4200M、non-GAAP经营利润800–900M、EPS2.55–2.85。旧Q2财报催化已发生，不继续当未来日程。
 - H1 OCF300.042M，现金capex77.823M，FCF222.219M；客户预收增加301.232M及SBC100.432M说明现金质量不能仅靠总额。
 - 股价239.38→280.50美元（2026-10-09 regular close）；实际股数用7月22日294.527346M，Q2加权稀释323.331M单列。参考总市值82.615B，不声称quote-date精确股数已调和。
@@ -41,7 +41,7 @@ Last updated: 2026-10-11
 - **CIK**: 0001664703
 - **Sector / industry**: Industrials / Electrical Equipment & Parts; distributed energy generation; AI data-center power infrastructure
 - **Last updated**: 2026-07-16
-- **Latest memo**: [2026-07-16 deep research](deep-research/2026-07-16-deep-research.md)
+- **Latest memo**: [2026-07-16 deep research](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/BE/deep-research/2026-07-16-deep-research.md)
 
 ## Current research stance
 

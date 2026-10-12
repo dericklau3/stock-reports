@@ -105,4 +105,4 @@ Circle把储备配置在高流动性现金和短期现金等价物中赚取利�
 [3] https://www.circle.com/en/transparency — Reserve composition and issuance/redemption
 [7] https://capedge.com/company/1876042/filings — CRCL filing index
 [9] https://api.nasdaq.com/api/quote/CRCL/historical?assetclass=stocks&limit=5&fromdate=2026-10-08&todate=2026-10-09 — Nasdaq 2026-10-09常规收盘
-[10] https://dericklau3.github.io/stock-reports/reports/CRCL/2026-10-06-deep-research-update — 2026-10-06已核验研究；本次继承财务和期后公告，不是重读SEC
+[10] https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md — 2026-10-06已核验研究；本次继承财务和期后公告，不是重读SEC

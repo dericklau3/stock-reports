@@ -20,7 +20,7 @@ Last updated: 2026-10-11
 ## 2026-10-11追加更新（不覆盖历史）
 
 - 当前观点：中性等待，旧建设性但需观察转谨慎；AWS和广告更强，但资金责任增大，正常化利润与现金回收不等于含投资收益EPS。
-- 历史：[2026-05-20](deep-research/2026-05-20-deep-research.md)；新增：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 历史：[2026-05-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AMZN/deep-research/2026-05-20-deep-research.md)；新增：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
 - 事实桥：AWS增速28%→37%、margin37.7%→39.4%；广告24%→26%；TTM公司FCF +1232m→-7604m，总现金开支口径FCF -11625m。长期债务非流动65648m→128894m（2025-12-31至2026-06-30），非流动租赁94338m不可当全部租赁。
 - 修正历史：2025净利原件77670m，旧报告约76500m不准确；当前公告比较列Q1经营利润23852m、净利30255m，与旧23849/30241略异，采用最新公告列且不伪称已查清重述原因。
 - 资本指引：年报股东信约200bn原件已读；220bn上修只二级检索摘要、问答原件未读。须原件确认后才能作为最新官方指引。Kuiper现名Amazon Leo，7月近400星入轨不代表截至10月已商用盈利。

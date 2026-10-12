@@ -19,7 +19,7 @@ Last updated: 2026-10-11
 [2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11研究更新（追加）
 
-观点：建设性但需验证；[旧报告](deep-research/2026-10-05-deep-research-update.md)保留，[新报告](deep-research/2026-10-11-deep-research-update.md)。
+观点：建设性但需验证；[旧报告](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVO/deep-research/2026-10-05-deep-research-update.md)保留，[新报告](deep-research/2026-10-11-deep-research-update.md)。
 
 价格37.32→38.64美元；没有本轮取得的新重大经营事实。证券比例从年报114页再次核验：ADR=B股1:1，公司总经济权益包括A/B，使用9/25扣库藏44.1558亿股，最新10月库藏未核实。FX从6.50假设替换为10/9参考6.6706 DKK/USD。
 
@@ -49,9 +49,9 @@ CIK：0000353278
 
 ## Latest Report / Historical Snapshots
 
-- [2026-10-05 Deep Research Update](deep-research/2026-10-05-deep-research-update.md)
-- [2026-09-14 Deep Research Update](deep-research/2026-09-14-deep-research-update.md)
-- [2026-07-08 Deep Research](deep-research/2026-07-08-deep-research.md)
+- [2026-10-05 Deep Research Update](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVO/deep-research/2026-10-05-deep-research-update.md)
+- [2026-09-14 Deep Research Update](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVO/deep-research/2026-09-14-deep-research-update.md)
+- [2026-07-08 Deep Research](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVO/deep-research/2026-07-08-deep-research.md)
 
 旧报告保留为当时观点。本轮是明确请求的深度更新，不是初始覆盖。
 

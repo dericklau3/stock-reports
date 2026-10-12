@@ -26,7 +26,7 @@ Last updated: 2026-10-11
 - 改判：平均余额连续两季下降或剔除预售留存<35%–38%转弱；外部平台持续净利润、留存约40%及每股增厚被验证才上调。新快照不证明储备信用受损。
 - 申报变化：CapEdge完整索引读到最新10-Q8月5日、8-K9月25日，近期开示主要Form4；不声称全网无新信息。
 - 仍缺：8月鉴证PDF正文403、Q2完整原件副本、Binance费率/Tazapay完整财务与交割、token价值分配、Q&A与日频forward P/E。
-- 历史链接：[10月6日](deep-research/2026-10-06-deep-research-update.md)、[7月10日](deep-research/2026-07-10-deep-research.md)、[Q2追踪](earnings-tracking/2026-Q2-earnings-tracking.md)。新：[10月11日](deep-research/2026-10-11-deep-research-update.md)。
+- 历史链接：[10月6日](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md)、[7月10日](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-07-10-deep-research.md)、[Q2追踪](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/earnings-tracking/2026-Q2-earnings-tracking.md)。新：[10月11日](deep-research/2026-10-11-deep-research-update.md)。
 - 证据与估值绝对路径：`/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/transparency.txt`、`usdc.txt`、`transparency-flow-snippets.json`、`filings.txt`、`previous-verified-research.md`、`research-record.json`、`calculate.py`、`validation.json`。尚有价格与原件缺口，需父代理出版前补核。
 
 父代理报价补核：Nasdaq 2026-10-09常规收盘84.51美元；此前未取得收盘为研究阶段限制，本次已解决。
@@ -42,8 +42,8 @@ Nasdaq历史原页核验2026-10-09常规收盘 84.51 美元；本次采用该交
 # CRCL Research Tracker
 
 > Last updated: 2026-10-06
-> Latest full update: [2026-10-06 deep research update](deep-research/2026-10-06-deep-research-update.md)
-> Latest completed earnings: [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
+> Latest full update: [2026-10-06 deep research update](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md)
+> Latest completed earnings: [2026 Q2 earnings tracking](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/earnings-tracking/2026-Q2-earnings-tracking.md)
 
 ## Current view
 
@@ -165,8 +165,8 @@ Arc 已宣布公共主网上线，信托银行已经开业，CPN 和机构接入
 
 ## Linked memos
 
-- [2026-10-06 deep research update](deep-research/2026-10-06-deep-research-update.md)
-- [2026 Q2 earnings tracking](earnings-tracking/2026-Q2-earnings-tracking.md)
-- [2026-07-10 deep research](deep-research/2026-07-10-deep-research.md)
-- [2026-07-01 valuation update v2](deep-research/2026-07-01-deep-research-v2.md)
-- [2026-07-01 initial deep research](deep-research/2026-07-01-deep-research.md)
+- [2026-10-06 deep research update](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md)
+- [2026 Q2 earnings tracking](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/earnings-tracking/2026-Q2-earnings-tracking.md)
+- [2026-07-10 deep research](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-07-10-deep-research.md)
+- [2026-07-01 valuation update v2](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-07-01-deep-research-v2.md)
+- [2026-07-01 initial deep research](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-07-01-deep-research.md)
