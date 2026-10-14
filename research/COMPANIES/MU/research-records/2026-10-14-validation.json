@@ -1,0 +1,324 @@
+{
+  "independent_math_checks": 53,
+  "checks": [
+    {
+      "name": "FY2024 grossprofit",
+      "calculated": 5613,
+      "expected": 5613,
+      "passed": true
+    },
+    {
+      "name": "FY2024 FCF",
+      "calculated": 121,
+      "expected": 121,
+      "passed": true
+    },
+    {
+      "name": "FY2025 grossprofit",
+      "calculated": 14873,
+      "expected": 14873,
+      "passed": true
+    },
+    {
+      "name": "FY2025 FCF",
+      "calculated": 1668,
+      "expected": 1668,
+      "passed": true
+    },
+    {
+      "name": "FY2026 grossprofit",
+      "calculated": 107504,
+      "expected": 107504,
+      "passed": true
+    },
+    {
+      "name": "FY2026 FCF",
+      "calculated": 58963,
+      "expected": 58963,
+      "passed": true
+    },
+    {
+      "name": "Q4FY2026 grossprofit",
+      "calculated": 47047,
+      "expected": 47047,
+      "passed": true
+    },
+    {
+      "name": "Q4FY2026 FCF",
+      "calculated": 32863,
+      "expected": 32863,
+      "passed": true
+    },
+    {
+      "name": "debt already includes finance leases",
+      "calculated": 5179,
+      "expected": 5179,
+      "passed": true
+    },
+    {
+      "name": "cash and securities",
+      "calculated": 73453,
+      "expected": 73453,
+      "passed": true
+    },
+    {
+      "name": "economic surpluscash",
+      "calculated": 30559,
+      "expected": 30559,
+      "passed": true
+    },
+    {
+      "name": "marketcap",
+      "calculated": 1078461.29144628,
+      "expected": 1078461.29144628,
+      "passed": true
+    },
+    {
+      "name": "FY26PE",
+      "calculated": 12.82375891295574,
+      "expected": 12.82375891295574,
+      "passed": true
+    },
+    {
+      "name": "bear EBIT0",
+      "calculated": 94500.0,
+      "expected": 94500.0,
+      "passed": true
+    },
+    {
+      "name": "bear FCFF0",
+      "calculated": 23490.0,
+      "expected": 23490.0,
+      "passed": true
+    },
+    {
+      "name": "bear EBIT1",
+      "calculated": 43750.0,
+      "expected": 43750.0,
+      "passed": true
+    },
+    {
+      "name": "bear FCFF1",
+      "calculated": 2875.0,
+      "expected": 2875.0,
+      "passed": true
+    },
+    {
+      "name": "bear EBIT2",
+      "calculated": 30000.0,
+      "expected": 30000.0,
+      "passed": true
+    },
+    {
+      "name": "bear FCFF2",
+      "calculated": 2600.0,
+      "expected": 2600.0,
+      "passed": true
+    },
+    {
+      "name": "bear PV endpoint0",
+      "calculated": 216.2726151602415,
+      "expected": 216.2726151602415,
+      "passed": true
+    },
+    {
+      "name": "bear price change0",
+      "calculated": -0.7731065001099031,
+      "expected": -0.7731065001099031,
+      "passed": true
+    },
+    {
+      "name": "bear PV endpoint1",
+      "calculated": 253.60358968608836,
+      "expected": 253.60358968608836,
+      "passed": true
+    },
+    {
+      "name": "bear price change1",
+      "calculated": -0.7339422468908734,
+      "expected": -0.7339422468908734,
+      "passed": true
+    },
+    {
+      "name": "base EBIT0",
+      "calculated": 198000.0,
+      "expected": 198000.0,
+      "passed": true
+    },
+    {
+      "name": "base FCFF0",
+      "calculated": 105320.0,
+      "expected": 105320.0,
+      "passed": true
+    },
+    {
+      "name": "base EBIT1",
+      "calculated": 156750.0,
+      "expected": 156750.0,
+      "passed": true
+    },
+    {
+      "name": "base FCFF1",
+      "calculated": 79670.0,
+      "expected": 79670.0,
+      "passed": true
+    },
+    {
+      "name": "base EBIT2",
+      "calculated": 104000.0,
+      "expected": 104000.0,
+      "passed": true
+    },
+    {
+      "name": "base FCFF2",
+      "calculated": 54360.0,
+      "expected": 54360.0,
+      "passed": true
+    },
+    {
+      "name": "base PV endpoint0",
+      "calculated": 844.8671235173919,
+      "expected": 844.8671235173919,
+      "passed": true
+    },
+    {
+      "name": "base price change0",
+      "calculated": -0.1136424810191129,
+      "expected": -0.1136424810191129,
+      "passed": true
+    },
+    {
+      "name": "base PV endpoint1",
+      "calculated": 974.2811685403277,
+      "expected": 974.2811685403277,
+      "passed": true
+    },
+    {
+      "name": "base price change1",
+      "calculated": 0.02212693014018985,
+      "expected": 0.02212693014018985,
+      "passed": true
+    },
+    {
+      "name": "bull EBIT0",
+      "calculated": 228000.0,
+      "expected": 228000.0,
+      "passed": true
+    },
+    {
+      "name": "bull FCFF0",
+      "calculated": 125800.0,
+      "expected": 125800.0,
+      "passed": true
+    },
+    {
+      "name": "bull EBIT1",
+      "calculated": 244999.99999999997,
+      "expected": 244999.99999999997,
+      "passed": true
+    },
+    {
+      "name": "bull FCFF1",
+      "calculated": 139249.99999999997,
+      "expected": 139249.99999999997,
+      "passed": true
+    },
+    {
+      "name": "bull EBIT2",
+      "calculated": 228000.0,
+      "expected": 228000.0,
+      "passed": true
+    },
+    {
+      "name": "bull FCFF2",
+      "calculated": 126800.0,
+      "expected": 126800.0,
+      "passed": true
+    },
+    {
+      "name": "bull PV endpoint0",
+      "calculated": 2002.633738622393,
+      "expected": 2002.633738622393,
+      "passed": true
+    },
+    {
+      "name": "bull price change0",
+      "calculated": 1.1009806424977104,
+      "expected": 1.1009806424977104,
+      "passed": true
+    },
+    {
+      "name": "bull PV endpoint1",
+      "calculated": 2428.2068482170466,
+      "expected": 2428.2068482170466,
+      "passed": true
+    },
+    {
+      "name": "bull price change1",
+      "calculated": 1.5474531291946478,
+      "expected": 1.5474531291946478,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 884.3334655592321,
+      "expected": 884.3334655592321,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 952.4839076831665,
+      "expected": 952.4839076831665,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 1020.6343498071013,
+      "expected": 1020.6343498071013,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 844.8671235173919,
+      "expected": 844.8671235173919,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 909.5741460288598,
+      "expected": 909.5741460288598,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 974.2811685403277,
+      "expected": 974.2811685403277,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 807.9647282113368,
+      "expected": 807.9647282113368,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 869.4587236718519,
+      "expected": 869.4587236718519,
+      "passed": true
+    },
+    {
+      "name": "sensitivity",
+      "calculated": 930.9527191323667,
+      "expected": 930.9527191323667,
+      "passed": true
+    },
+    {
+      "name": "reverseprice",
+      "calculated": 953.1900000000002,
+      "expected": 953.19,
+      "passed": true
+    }
+  ],
+  "scope": "Recomputes saved arithmetic only, not independent proof of forecast facts, customer contracts or source completeness."
+}

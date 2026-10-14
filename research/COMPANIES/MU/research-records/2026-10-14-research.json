@@ -1,0 +1,763 @@
+{
+  "identity": {
+    "name": "Micron Technology, Inc.",
+    "ticker": "MU",
+    "exchange": "Nasdaq Global Select Market",
+    "CIK": "0000723125",
+    "security": "US common stock, not ADR",
+    "as_of": "2026-10-14",
+    "actual_common_shares": 1131423212,
+    "shares_date": "2026-10-02",
+    "forecast_economic_diluted_shares_m": 1160,
+    "forecast_denominator_note": "Research assumption covers currently granted19M restricted awards plus performance/max-vesting and timing buffer; future recurring SBC remains economic cost inside EBIT, modeled as cash-equivalent compensation rather than adding another layer of future share issuance; no separate buyback deduction or premium.1.16B is not current actual count."
+  },
+  "quote": {
+    "price": 953.19,
+    "date": "2026-10-13",
+    "session": "regular close",
+    "timezone": "America/New_York",
+    "source": "Nasdaq historical API",
+    "raw_row": {
+      "date": "10/13/2026",
+      "close": "$953.19",
+      "volume": "29,227,180",
+      "open": "$934.07",
+      "high": "$953.60",
+      "low": "$929.03"
+    }
+  },
+  "financial_periods": {
+    "FY2024": {
+      "revenue": 25111,
+      "cogs": 19498,
+      "gross_profit": 5613,
+      "operating_income": 1304,
+      "net_income": 778,
+      "ocf": 8507,
+      "gross_cash_capex": 8386,
+      "sbc_cashflow_addback": 833,
+      "GAAP_diluted_EPS": 0.7,
+      "weeks": 52,
+      "gross_FCF": 121,
+      "gross_margin": 0.22352753773246783,
+      "operating_margin": 0.05192943331607662
+    },
+    "FY2025": {
+      "revenue": 37378,
+      "cogs": 22505,
+      "gross_profit": 14873,
+      "operating_income": 9770,
+      "net_income": 8539,
+      "ocf": 17525,
+      "gross_cash_capex": 15857,
+      "sbc_cashflow_addback": 972,
+      "GAAP_diluted_EPS": 7.59,
+      "weeks": 52,
+      "gross_FCF": 1668,
+      "gross_margin": 0.39790786023864305,
+      "operating_margin": 0.2613837016426775
+    },
+    "FY2026": {
+      "revenue": 133188,
+      "cogs": 25684,
+      "gross_profit": 107504,
+      "operating_income": 99340,
+      "net_income": 84969,
+      "ocf": 89675,
+      "gross_cash_capex": 30712,
+      "sbc_cashflow_addback": 1333,
+      "GAAP_diluted_EPS": 74.33,
+      "weeks": 53,
+      "gross_FCF": 58963,
+      "gross_margin": 0.8071598041865633,
+      "operating_margin": 0.7458629906598192
+    },
+    "Q4FY2026": {
+      "revenue": 54229,
+      "cogs": 7182,
+      "gross_profit": 47047,
+      "operating_income": 43751,
+      "net_income": 37701,
+      "ocf": 43973,
+      "gross_cash_capex": 11110,
+      "GAAP_diluted_EPS": 32.87,
+      "weeks": 14,
+      "gross_FCF": 32863,
+      "gross_margin": 0.8675616367626178,
+      "operating_margin": 0.8067823489276955
+    }
+  },
+  "capital_structure": {
+    "cash_equivalents": 38364,
+    "short_term_investments": 5070,
+    "long_term_marketable_investments": 30019,
+    "restricted_cash_not_added": 27,
+    "debt_includes_finance_leases": 5179,
+    "finance_leases_already_inside_debt": 2387,
+    "notes_carrying": 2792,
+    "noncurrent_customer_contract_liabilities_proxy": 12895,
+    "company_cash_deposits_approx": 12700,
+    "noncurrent_income_taxes_payable": 9820,
+    "operating_cash_buffer_assumption": 15000,
+    "operating_lease_handling": "10K Note2 explicitly states operating leases are not material; EBIT retains rentalexpense and no separate lease-capitalization uplift or debt deduction is used.",
+    "purchase_commitments_over1year": 10800,
+    "PPE_purchase_obligations_due_approximately_within1year": 4180,
+    "letters_of_credit_NOT_cash": 7000,
+    "cash_and_marketable_investments": 73453,
+    "standard_net_cash": 68274,
+    "valuation_surplus_cash": 30559,
+    "scope": "9/3 balance sheet; additional refundable customer contract claim and existing noncurrent tax claim deducted once; future taxes concern new earnings.15B operating buffer excludes separately deducted tax liabilities.12.895B full noncurrent customer contract liabilities is conservative proxy, not asserted exact refundable SCA deposit."
+  },
+  "valuation": {
+    "method": "three yearly FCFF + FY2029 enterprise exit multiple, all PV to2026-10-14; no interest income in FCFF",
+    "unit": "USD million except per-share",
+    "WACC": 0.12,
+    "targets": [
+      "2027-09-02",
+      "2028-08-31",
+      "2029-08-30"
+    ],
+    "ACT365_25_years": [
+      0.8843258042436687,
+      1.8809034907597535,
+      2.8774811772758384
+    ],
+    "market_cap_m": 1078461.29144628,
+    "standard_EV_m": 1010187.29144628,
+    "current_FY2026_GAAP_PE": 12.82375891295574,
+    "forward_PE": null,
+    "forward_PE_limit": "StockAnalysis HTTP403 and browser challenge; contemporaneous FY1/NTM consensus not read;38.15x4 is only Q1 guidance annualization, not forward earnings consensus. Historical daily forwardPE high/low unavailable; never substitute52week price extrema.",
+    "scenarios": {
+      "bear": {
+        "revenue": [
+          210000,
+          175000,
+          150000
+        ],
+        "EBIT_margin_after_SBC": [
+          0.45,
+          0.25,
+          0.2
+        ],
+        "tax": 0.18,
+        "depreciation": [
+          14000,
+          18000,
+          20000
+        ],
+        "gross_cash_capex": [
+          60000,
+          55000,
+          45000
+        ],
+        "delta_NWC": [
+          8000,
+          -4000,
+          -3000
+        ],
+        "terminal_EV_EBIT": [
+          9,
+          11
+        ],
+        "EBIT": [
+          94500.0,
+          43750.0,
+          30000.0
+        ],
+        "FCFF": [
+          23490.0,
+          2875.0,
+          2600.0
+        ],
+        "PV_FCFF": [
+          21249.966478627488,
+          2323.07642949949,
+          1876.5036528325684
+        ],
+        "PV_interim_FCFF": 25449.546560959545,
+        "terminal_EV": [
+          270000.0,
+          330000.0
+        ],
+        "PV_terminal_EV": [
+          194867.68702492057,
+          238171.61747490292
+        ],
+        "present_equity_per_share": [
+          216.2726151602415,
+          253.60358968608836
+        ],
+        "price_change_vs_close": [
+          -0.7731065001099031,
+          -0.7339422468908734
+        ],
+        "terminal_value_share_of_EV": [
+          0.8844868095575499,
+          0.9034616713948753
+        ]
+      },
+      "base": {
+        "revenue": [
+          275000,
+          285000,
+          260000
+        ],
+        "EBIT_margin_after_SBC": [
+          0.72,
+          0.55,
+          0.4
+        ],
+        "tax": 0.16,
+        "depreciation": [
+          14000,
+          18000,
+          22000
+        ],
+        "gross_cash_capex": [
+          65000,
+          65000,
+          55000
+        ],
+        "delta_NWC": [
+          10000,
+          5000,
+          0
+        ],
+        "terminal_EV_EBIT": [
+          10,
+          12
+        ],
+        "EBIT": [
+          198000.0,
+          156750.0,
+          104000.0
+        ],
+        "FCFF": [
+          105320.0,
+          79670.0,
+          54360.0
+        ],
+        "PV_FCFF": [
+          95276.56319834171,
+          64375.47796112153,
+          39233.360987684006
+        ],
+        "PV_interim_FCFF": 198885.40214714725,
+        "terminal_EV": [
+          1040000.0,
+          1248000.0
+        ],
+        "PV_terminal_EV": [
+          750601.4611330273,
+          900721.7533596328
+        ],
+        "present_equity_per_share": [
+          844.8671235173919,
+          974.2811685403277
+        ],
+        "price_change_vs_close": [
+          -0.1136424810191129,
+          0.02212693014018985
+        ],
+        "terminal_value_share_of_EV": [
+          0.7905338032165484,
+          0.819130494785216
+        ]
+      },
+      "bull": {
+        "revenue": [
+          300000,
+          350000,
+          380000
+        ],
+        "EBIT_margin_after_SBC": [
+          0.76,
+          0.7,
+          0.6
+        ],
+        "tax": 0.15,
+        "depreciation": [
+          14000,
+          21000,
+          26000
+        ],
+        "gross_cash_capex": [
+          70000,
+          80000,
+          85000
+        ],
+        "delta_NWC": [
+          12000,
+          10000,
+          8000
+        ],
+        "terminal_EV_EBIT": [
+          12,
+          15
+        ],
+        "EBIT": [
+          228000.0,
+          244999.99999999997,
+          228000.0
+        ],
+        "FCFF": [
+          125800.0,
+          139249.99999999997,
+          126800.0
+        ],
+        "PV_FCFF": [
+          113803.56675229194,
+          112517.70184619268,
+          91515.63968429602
+        ],
+        "PV_interim_FCFF": 317836.90828278067,
+        "terminal_EV": [
+          2736000.0,
+          3420000.0
+        ],
+        "PV_terminal_EV": [
+          1974659.228519195,
+          2468324.0356489937
+        ],
+        "present_equity_per_share": [
+          2002.633738622393,
+          2428.2068482170466
+        ],
+        "price_change_vs_close": [
+          1.1009806424977104,
+          1.5474531291946478
+        ],
+        "terminal_value_share_of_EV": [
+          0.861357712590887,
+          0.8859229905669931
+        ]
+      }
+    },
+    "base_sensitivity": [
+      {
+        "WACC": 0.1,
+        "EV_EBIT": 10,
+        "PV_per_share": 884.3334655592321
+      },
+      {
+        "WACC": 0.1,
+        "EV_EBIT": 11,
+        "PV_per_share": 952.4839076831665
+      },
+      {
+        "WACC": 0.1,
+        "EV_EBIT": 12,
+        "PV_per_share": 1020.6343498071013
+      },
+      {
+        "WACC": 0.12,
+        "EV_EBIT": 10,
+        "PV_per_share": 844.8671235173919
+      },
+      {
+        "WACC": 0.12,
+        "EV_EBIT": 11,
+        "PV_per_share": 909.5741460288598
+      },
+      {
+        "WACC": 0.12,
+        "EV_EBIT": 12,
+        "PV_per_share": 974.2811685403277
+      },
+      {
+        "WACC": 0.14,
+        "EV_EBIT": 10,
+        "PV_per_share": 807.9647282113368
+      },
+      {
+        "WACC": 0.14,
+        "EV_EBIT": 11,
+        "PV_per_share": 869.4587236718519
+      },
+      {
+        "WACC": 0.14,
+        "EV_EBIT": 12,
+        "PV_per_share": 930.9527191323667
+      }
+    ],
+    "reverse_valuation": {
+      "base_interim_FCFF_and_capital_bridge_fixed": true,
+      "exit_multiple": 11,
+      "required_FY2029_EBIT_m": 110372.8488486065,
+      "required_EBIT_margin_at_base_revenue": 0.424510957110025
+    },
+    "assumptions": "FY2027 gross capex deliberately above50B net-capex inference; no government cash grants forecast. Terminal exit multiples require investment efficiency/maintenance capex to normalize after the construction-heavy forecast, not indefinite retention of peak margins; rental expense stays inside EBIT. Forecast D&A excludesSBC addback. Subsequent net financing, acquisitions and restricted-cash releases are not assumed. Bear violatesnear-term growth outlook deliberately as stress, not companyforecast."
+  },
+  "source_files": [
+    {
+      "name": "release",
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "status": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "10k",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000723125/5dafce68-38e8-4cad-a8f3-ab56d04d73fd.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/mu-2026-10-14/10k.txt",
+      "sha256": "cddb19a191c7f28e1fdeae87e7be26c6eb2dbb82e283ee9dd2bfcd1da6ce1634",
+      "pages": 381,
+      "status": "downloaded",
+      "chars": 1185666
+    },
+    {
+      "name": "remarks",
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/mu-2026-10-14/remarks.txt",
+      "sha256": "7ce84f6e51805cce71221d38e2546ad8b39684a80a7b7300537e4c7508b03d70",
+      "pages": 10,
+      "status": "downloaded",
+      "chars": 25742
+    },
+    {
+      "name": "deck",
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+      "file": "/home/ubuntu/.hermes/cache/scratch/mu-2026-10-14/deck.txt",
+      "sha256": "7af32ff7ed50f4d7a80b26848b545a3b0faecb4577899003f1dd88b257311778",
+      "pages": 51,
+      "status": "downloaded",
+      "chars": 34339
+    },
+    {
+      "name": "quote",
+      "url": "https://api.nasdaq.com/api/quote/MU/historical?assetclass=stocks&limit=5&fromdate=2026-10-12&todate=2026-10-13",
+      "file": "/home/ubuntu/.hermes/cache/scratch/mu-2026-10-14/quote.json",
+      "sha256": "e50296fb9715562bca768fbcdd76f77a5644a57e9c9234e1d6b62fd59fe9e764",
+      "pages": null,
+      "status": "downloaded",
+      "chars": 832
+    },
+    {
+      "name": "submissions",
+      "url": "https://data.sec.gov/submissions/CIK0000723125.json",
+      "file": "/home/ubuntu/.hermes/cache/scratch/mu-2026-10-14/submissions.json",
+      "sha256": "ae212fd64a7e28e4c7a29025bb0839f6cd58941d21522fb4d702be46cfa2f93c",
+      "pages": null,
+      "status": "downloaded",
+      "chars": 309214
+    }
+  ],
+  "critical_evidence": [
+    {
+      "locator": "10K pp67,70; deck quarterly GAAP reconciliation",
+      "finding": "GAAP annual andquarterly profit/cash cross-read; FCF gross vs net incentives kept separate"
+    },
+    {
+      "locator": "10K Notes9,16,18; remarkspp8-9",
+      "finding": "Customer deposits in financing, not OCF; debt already contains finance leases; refundable claims and tax cash timing matter"
+    },
+    {
+      "locator": "10K Note16; remarksp3,p6",
+      "finding": "9/3 RPO134B versus later150B;26SCAs and35% projectedrevenues are management disclosure, not allsaleslocked"
+    },
+    {
+      "locator": "remarksp7",
+      "finding": "DRAM/NAND sellingprices dominant driver; higherHBMmix offsetsCMBU margin in this quarter"
+    },
+    {
+      "locator": "10K Note12 andremarkspp9-10",
+      "finding": "October8 repurchase authorization startsDecember9; futuregrosscapitalspend not sameasnetcapex guidance"
+    }
+  ],
+  "gaps": [
+    "Call prepared remarks andslides read, official fullQ&A/audio not transcribed.",
+    "HBM standalonequarterlyrevenue/margin, customer names, floorpricesandfullSCA remedies not disclosed in usedmaterials.",
+    "LiveFY1/NTM consensus and12monthhistoricalforwardPE series not obtained; this doesnot invalidate auditableFY2026 PE.",
+    "Specificfutureearningsannouncement date not officiallyverified; foundSCA/Cash documents do not independentlyproveallfuturecustomerperformance.",
+    "13Octoberquote uses2Octoberstockcount and3Septembercapital snapshot; no guaranteeallnonfilingdevelopmentsor subsequently issuedshares captured.",
+    "NYSEpeer valuations not mechanicallyborrowed; NVHBM primaryNVIDIA announcement supportsplatformdevelopmentbutnotexclusiveMicronorder/pricing."
+  ],
+  "checks": [
+    {
+      "name": "FY2024 gross_profit",
+      "actual": 5613,
+      "expected": 5613,
+      "passed": true
+    },
+    {
+      "name": "FY2024 FCF",
+      "actual": 8507,
+      "expected": 8507,
+      "passed": true
+    },
+    {
+      "name": "FY2025 gross_profit",
+      "actual": 14873,
+      "expected": 14873,
+      "passed": true
+    },
+    {
+      "name": "FY2025 FCF",
+      "actual": 17525,
+      "expected": 17525,
+      "passed": true
+    },
+    {
+      "name": "FY2026 gross_profit",
+      "actual": 107504,
+      "expected": 107504,
+      "passed": true
+    },
+    {
+      "name": "FY2026 FCF",
+      "actual": 89675,
+      "expected": 89675,
+      "passed": true
+    },
+    {
+      "name": "Q4FY2026 gross_profit",
+      "actual": 47047,
+      "expected": 47047,
+      "passed": true
+    },
+    {
+      "name": "Q4FY2026 FCF",
+      "actual": 43973,
+      "expected": 43973,
+      "passed": true
+    },
+    {
+      "name": "FY2026 OCF reconciliation",
+      "actual": 89675,
+      "expected": 89675,
+      "passed": true
+    },
+    {
+      "name": "FY2026 adjusted net_capex",
+      "actual": 27367,
+      "expected": 27367,
+      "passed": true
+    },
+    {
+      "name": "FY2026 adjusted_FCF",
+      "actual": 62308,
+      "expected": 62308,
+      "passed": true
+    },
+    {
+      "name": "Q4 adjusted_FCF",
+      "actual": 33199,
+      "expected": 33199,
+      "passed": true
+    },
+    {
+      "name": "FY2026 duration",
+      "actual": 371,
+      "expected": 371,
+      "passed": true
+    },
+    {
+      "name": "Q4 duration",
+      "actual": 98,
+      "expected": 98,
+      "passed": true
+    },
+    {
+      "name": "Debt contains finance lease",
+      "actual": 5179,
+      "expected": 5179,
+      "passed": true
+    },
+    {
+      "name": "bear endpoint0",
+      "actual": 220317.23358588014,
+      "expected": 220317.2335858801,
+      "passed": true
+    },
+    {
+      "name": "bear endpoint1",
+      "actual": 263621.1640358625,
+      "expected": 263621.1640358625,
+      "passed": true
+    },
+    {
+      "name": "bear FCFF0",
+      "actual": 23490.0,
+      "expected": 23490.0,
+      "passed": true
+    },
+    {
+      "name": "bear FCFF1",
+      "actual": 2875.0,
+      "expected": 2875.0,
+      "passed": true
+    },
+    {
+      "name": "bear FCFF2",
+      "actual": 2600.0,
+      "expected": 2600.0,
+      "passed": true
+    },
+    {
+      "name": "base endpoint0",
+      "actual": 949486.8632801746,
+      "expected": 949486.8632801746,
+      "passed": true
+    },
+    {
+      "name": "base endpoint1",
+      "actual": 1099607.1555067801,
+      "expected": 1099607.1555067801,
+      "passed": true
+    },
+    {
+      "name": "base FCFF0",
+      "actual": 105320.0,
+      "expected": 105320.0,
+      "passed": true
+    },
+    {
+      "name": "base FCFF1",
+      "actual": 79670.0,
+      "expected": 79670.0,
+      "passed": true
+    },
+    {
+      "name": "base FCFF2",
+      "actual": 54360.0,
+      "expected": 54360.0,
+      "passed": true
+    },
+    {
+      "name": "bull endpoint0",
+      "actual": 2292496.136801976,
+      "expected": 2292496.136801976,
+      "passed": true
+    },
+    {
+      "name": "bull endpoint1",
+      "actual": 2786160.9439317742,
+      "expected": 2786160.9439317742,
+      "passed": true
+    },
+    {
+      "name": "bull FCFF0",
+      "actual": 125800.0,
+      "expected": 125800.0,
+      "passed": true
+    },
+    {
+      "name": "bull FCFF1",
+      "actual": 139249.99999999997,
+      "expected": 139249.99999999997,
+      "passed": true
+    },
+    {
+      "name": "bull FCFF2",
+      "actual": 126800.0,
+      "expected": 126800.0,
+      "passed": true
+    }
+  ],
+  "first_coverage": true,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000723125/5dafce68-38e8-4cad-a8f3-ab56d04d73fd.pdf",
+      "title": "Micron FY2026 Form10-K；截至2026-09-03",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Proceeds from customer contract liability deposits 12,747",
+          "added": "2026-10-14"
+        },
+        {
+          "text": "Our operating leases are also not material.",
+          "added": "2026-10-14"
+        }
+      ],
+      "locator": "10K cover, pp67-70, Notes9/10/12/14/15/16/18/21",
+      "read_status": "full selected decision-critical sections read; not all381pages reviewed"
+    },
+    {
+      "id": 2,
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "title": "Micron Q4FY2026公司准备发言；2026-09-30",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "All SCAs have take-or-pay contracted volumes",
+          "added": "2026-10-14"
+        }
+      ],
+      "locator": "Preparedremarks pp3-10",
+      "read_status": "read retrievedtext"
+    },
+    {
+      "id": 3,
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+      "title": "Micron Q4FY2026业绩演示及Q1FY2027指引",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Revenue $54,229 100% $41,456 100% $11,315 100%",
+          "added": "2026-10-14"
+        }
+      ],
+      "locator": "Deck GAAPquartertables andnonGAAPguidance",
+      "read_status": "read retrievedtext"
+    },
+    {
+      "id": 4,
+      "url": "https://api.nasdaq.com/api/quote/MU/historical?assetclass=stocks&limit=5&fromdate=2026-10-12&todate=2026-10-13",
+      "title": "Nasdaq MU 2026-10-13常规收盘历史记录",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "\"date\": \"10/13/2026\", \"close\": \"$953.19\"",
+          "added": "2026-10-14"
+        }
+      ],
+      "locator": "rows date10/13/2026",
+      "read_status": "read retrievedtext"
+    },
+    {
+      "id": 5,
+      "url": "https://data.sec.gov/submissions/CIK0000723125.json",
+      "title": "SEC Micron发行人身份与申报目录",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "\"name\": \"MICRON TECHNOLOGY INC\"",
+          "added": "2026-10-14"
+        }
+      ],
+      "locator": "issuer identity andfilings.recent",
+      "read_status": "read retrievedtext"
+    },
+    {
+      "id": 6,
+      "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "title": "nvidia",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Extend NVIDIA NVLink Fusion™ with custom NVIDIA high‑bandwidth memory (NVHBM)",
+          "added": "2026-10-14"
+        }
+      ],
+      "locator": "NVIDIA Aug26NVHBM announcement; noMicron-specificcontractproof",
+      "read_status": "read retrievedtext"
+    }
+  ],
+  "guidance": {
+    "source": "deck andpreparedremarks",
+    "period": "Q1FY2027",
+    "revenue_m": 61500,
+    "revenue_range_m": 1500,
+    "nonGAAP_gross_margin": 0.8625,
+    "nonGAAP_opex_m": 2060,
+    "nonGAAP_diluted_EPS": 38.15,
+    "EPS_range": 1,
+    "forecast_diluted_shares_m": 1150,
+    "FY2027_tax_rate_guidance": 0.155,
+    "H1FY2027_net_capex_m": 25000,
+    "H2FY2027_net_capex": "greaterthanH1, not exactannualguidance",
+    "all_are_management_expectations_not_realized": true
+  },
+  "publication_policy": "FirstMU coverage; one latest report percompany; no othercompanyreport altered."
+}

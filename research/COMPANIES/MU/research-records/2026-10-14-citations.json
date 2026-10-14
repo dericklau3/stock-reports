@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000723125/5dafce68-38e8-4cad-a8f3-ab56d04d73fd.pdf",
+      "title": "Micron FY2026 Form10-K；截至2026-09-03",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Proceeds from customer contract liability deposits 12,747",
+          "added": "2026-10-14"
+        },
+        {
+          "text": "Our operating leases are also not material.",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+      "title": "Micron Q4FY2026公司准备发言；2026-09-30",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "All SCAs have take-or-pay contracted volumes",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+      "title": "Micron Q4FY2026业绩演示及Q1FY2027指引",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Revenue $54,229 100% $41,456 100% $11,315 100%",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://api.nasdaq.com/api/quote/MU/historical?assetclass=stocks&limit=5&fromdate=2026-10-12&todate=2026-10-13",
+      "title": "Nasdaq MU 2026-10-13常规收盘历史记录",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "\"date\": \"10/13/2026\", \"close\": \"$953.19\"",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://data.sec.gov/submissions/CIK0000723125.json",
+      "title": "SEC Micron发行人身份与申报目录",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "\"name\": \"MICRON TECHNOLOGY INC\"",
+          "added": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "title": "nvidia",
+      "accessed": "2026-10-14",
+      "quotes": [
+        {
+          "text": "Extend NVIDIA NVLink Fusion™ with custom NVIDIA high‑bandwidth memory (NVHBM)",
+          "added": "2026-10-14"
+        }
+      ]
+    }
+  ]
+}
