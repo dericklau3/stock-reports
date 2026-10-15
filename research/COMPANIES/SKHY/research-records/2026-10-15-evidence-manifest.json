@@ -1,0 +1,26 @@
+[
+  {
+    "file": "originals/2026-10-15-h1-6k.txt",
+    "bytes": 540833,
+    "sha256": "fc7073e099a98471fed3550e7cc364ebc484d328055ae97d7bed9c8b04c16c22",
+    "normalization": "Full extracted source text; contact emails redacted and trailing whitespace removed"
+  },
+  {
+    "file": "originals/2026-10-15-nasdaq-close.json",
+    "bytes": 494,
+    "sha256": "19364052336cb1147dee09a6a9ce80ede19a1cabc477ac287fb3574824b03a44",
+    "normalization": "Source JSON response; no request headers saved"
+  },
+  {
+    "file": "originals/2026-10-15-fx.json",
+    "bytes": 71,
+    "sha256": "85a2fcbdba72d8b1ff6fc22137ee9585c4abd786f99a1649a6306571ad920295",
+    "normalization": "Source JSON response; no request headers saved"
+  },
+  {
+    "file": "originals/2026-10-15-earnings-date-6k.txt",
+    "bytes": 1778,
+    "sha256": "fa0ba5633861cf71cef0747560a597890d63ee65258d9ac40b4d34301d35f725",
+    "normalization": "Full extracted source text; contact emails redacted and trailing whitespace removed"
+  }
+]

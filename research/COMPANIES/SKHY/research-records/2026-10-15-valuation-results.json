@@ -1,0 +1,153 @@
+{
+  "valuation_date": "2026-10-15",
+  "target_date": "2028-12-31",
+  "quote": {
+    "close_USD_per_ADS": 147.55,
+    "date": "2026-10-14",
+    "timezone": "America/New_York",
+    "session": "regular close; not intraday or after-hours"
+  },
+  "years": 2.212183436002738,
+  "discount_factor": 1.2849294838500296,
+  "ADS_equivalent_future_denominator": 7500000000.0,
+  "dilution_buffer_vs_IPO": 0.02899643349836145,
+  "proxy_marketcap_USD": 1075441045250.0001,
+  "scenarios": {
+    "bear": [
+      {
+        "endpoint": "low",
+        "EBIT_KRW_trillion": 60.0,
+        "normal_parent_profit_KRW_trillion": 43.408547999999996,
+        "normal_EPS_USD_per_ADS": 4.329630233619342,
+        "scenario_PE_assumption": 12,
+        "target_date_undiscounted_USD_per_ADS": 51.95556280343211,
+        "valuation_date_USD_per_ADS": 40.43456349663473,
+        "value_gap_vs_quote": -0.7259602609513065,
+        "quote_divided_by_target_normal_EPS": 34.079122705279154
+      },
+      {
+        "endpoint": "high",
+        "EBIT_KRW_trillion": 81.0,
+        "normal_parent_profit_KRW_trillion": 58.513428,
+        "normal_EPS_USD_per_ADS": 5.836212419302957,
+        "scenario_PE_assumption": 14,
+        "target_date_undiscounted_USD_per_ADS": 81.7069738702414,
+        "valuation_date_USD_per_ADS": 63.588683190164716,
+        "value_gap_vs_quote": -0.5690363728216556,
+        "quote_divided_by_target_normal_EPS": 25.281807686092158
+      },
+      {
+        "endpoint": "midpoint",
+        "EBIT_KRW_trillion": 70.125,
+        "normal_parent_profit_KRW_trillion": 50.691258,
+        "normal_EPS_USD_per_ADS": 5.0560180731453706,
+        "scenario_PE_assumption": 13.0,
+        "target_date_undiscounted_USD_per_ADS": 65.72823495088981,
+        "valuation_date_USD_per_ADS": 51.15318449534564,
+        "value_gap_vs_quote": -0.6533162690928794,
+        "quote_divided_by_target_normal_EPS": 29.183044416652674
+      }
+    ],
+    "base": [
+      {
+        "endpoint": "low",
+        "EBIT_KRW_trillion": 120.0,
+        "normal_parent_profit_KRW_trillion": 87.76764449999999,
+        "normal_EPS_USD_per_ADS": 8.754069524757066,
+        "scenario_PE_assumption": 16,
+        "target_date_undiscounted_USD_per_ADS": 140.06511239611305,
+        "valuation_date_USD_per_ADS": 109.00606932641662,
+        "value_gap_vs_quote": -0.261226232962273,
+        "quote_divided_by_target_normal_EPS": 16.8550180670509
+      },
+      {
+        "endpoint": "high",
+        "EBIT_KRW_trillion": 162.0,
+        "normal_parent_profit_KRW_trillion": 118.39698449999999,
+        "normal_EPS_USD_per_ADS": 11.809083401282175,
+        "scenario_PE_assumption": 20,
+        "target_date_undiscounted_USD_per_ADS": 236.1816680256435,
+        "valuation_date_USD_per_ADS": 183.80905021960677,
+        "value_gap_vs_quote": 0.24574076733044237,
+        "quote_divided_by_target_normal_EPS": 12.494619183058672
+      },
+      {
+        "endpoint": "midpoint",
+        "EBIT_KRW_trillion": 140.25000000000003,
+        "normal_parent_profit_KRW_trillion": 102.53536200000002,
+        "normal_EPS_USD_per_ADS": 10.22702264379596,
+        "scenario_PE_assumption": 18.0,
+        "target_date_undiscounted_USD_per_ADS": 184.0864075883273,
+        "valuation_date_USD_per_ADS": 143.2657666448355,
+        "value_gap_vs_quote": -0.029035807219007115,
+        "quote_divided_by_target_normal_EPS": 14.427463900210348
+      }
+    ],
+    "bull": [
+      {
+        "endpoint": "low",
+        "EBIT_KRW_trillion": 200.0,
+        "normal_parent_profit_KRW_trillion": 146.1092445,
+        "normal_EPS_USD_per_ADS": 14.573143575281083,
+        "scenario_PE_assumption": 20,
+        "target_date_undiscounted_USD_per_ADS": 291.46287150562165,
+        "valuation_date_USD_per_ADS": 226.8318029658036,
+        "value_gap_vs_quote": 0.5373216060034129,
+        "quote_divided_by_target_normal_EPS": 10.124788741550164
+      },
+      {
+        "endpoint": "high",
+        "EBIT_KRW_trillion": 242.00000000000003,
+        "normal_parent_profit_KRW_trillion": 176.7385845,
+        "normal_EPS_USD_per_ADS": 17.628157451806192,
+        "scenario_PE_assumption": 22,
+        "target_date_undiscounted_USD_per_ADS": 387.81946393973624,
+        "valuation_date_USD_per_ADS": 301.8215931801286,
+        "value_gap_vs_quote": 1.0455546809903664,
+        "quote_divided_by_target_normal_EPS": 8.37013172836631
+      },
+      {
+        "endpoint": "midpoint",
+        "EBIT_KRW_trillion": 220.5,
+        "normal_parent_profit_KRW_trillion": 161.05927949999997,
+        "normal_EPS_USD_per_ADS": 16.06428130072786,
+        "scenario_PE_assumption": 21.0,
+        "target_date_undiscounted_USD_per_ADS": 337.34990731528507,
+        "valuation_date_USD_per_ADS": 262.5435181894066,
+        "value_gap_vs_quote": 0.7793528850518914,
+        "quote_divided_by_target_normal_EPS": 9.184973621777567
+      }
+    ]
+  },
+  "sensitivities": {
+    "KRW_strengthens_10pct": 159.1841851609283,
+    "KRW_weakens_10pct": 130.24160604075954,
+    "ordinary_shares_728865500": 147.41996291994425,
+    "ordinary_shares_800000000": 134.3116562295333,
+    "discount_rate_0.1": 149.09171489534398,
+    "discount_rate_0.15": 135.1285030220433,
+    "each_PE_turn_changes_today_USD_per_ADS": 7.9592092580464175,
+    "extra_1pct_revenue_investment_need_annual_KRW_trillion": 3.3000000000000003
+  },
+  "reverse_normal_profit_KRW_trillion_at_base_PE": 105.60158939159511,
+  "H1_checks_KRW_trillion": {
+    "broad_liquid_balance_not_all_cash": 87.957923,
+    "debt_excluding_leases": 18.586634,
+    "leases": 2.526505,
+    "broad_liquid_balance_minus_debt": 69.371289,
+    "cash_capex_PPE_plus_intangibles": 18.994016,
+    "CFO_less_cash_capex_not_normalized": 72.748485,
+    "CFO_less_cash_capex_less_investment_dividends_not_normalized": 58.764837
+  },
+  "limits": [
+    "Conditional earnings-power valuation, not a guaranteed price or broker consensus. The multiple, revenue, margins, taxes, 12% discount rate and future dilution are explicit researcher assumptions.",
+    "No annualization of Q2 reported net income: H1 finance income includes major fair-value gains and investment dividends; they are excluded from normalized profit.",
+    "Normalized net interest of +0.35 trillion KRW approximates annualized H1 interest income less expense (0.343960 trillion); no additional net cash, IPO proceeds or investment NAV is added to this equity earnings-power model. It does not separately value nonoperating investment assets; realizable after-tax investment NAV may change a fuller sum-of-parts valuation.",
+    "Shares750million are a researcher dilution allowance, not verified October diluted shares; current market capitalization uses the IPO postoffering ordinary-share proxy. SBC is included in assumed operating costs, not added back. Exchangeable bonds reported fully converted at June30 are not also treated as outstanding debt/dilution.",
+    "Cash-related88trillionKRW includes financial instruments and investment assets, not just26.836trillion cash; CFO includes13.983648trillion investment dividend receipts and cash taxes below accounting tax expense. Simple FCF is not normalized owner earnings.",
+    "Historical/current market NTM Forward P/E has not been independently verified; own 2028 normal-profit multiples must not be labeled market Forward P/E.",
+    "No guarantee future capex, maintenance investment or working-capital requirements match earnings. P/E assumes meaningful cross-cycle cash conversion; if capex persistently exceeds depreciation and cash conversion fails, multiples or earnings must be reduced.",
+    "FX held at the reference-date rate is a convention, not a forecast. Future dividends/ADS fees/taxes are not included in the displayed price/value gaps. The existing report receives a targeted valuation/financial correction, not a claim of full new company research."
+  ],
+  "verification": "Source identities, financial arithmetic, capital bridge, ADS denominator and scenario ordering assertions passed."
+}

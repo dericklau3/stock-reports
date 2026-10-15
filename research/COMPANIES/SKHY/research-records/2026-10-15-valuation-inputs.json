@@ -1,0 +1,175 @@
+{
+  "valuation_date": "2026-10-15",
+  "verified_facts": {
+    "quote": {
+      "close_USD_per_ADS": 147.55,
+      "date": "2026-10-14",
+      "timezone": "America/New_York",
+      "session": "regular close; not intraday or after-hours"
+    },
+    "fx": {
+      "KRW_per_USD": 1336.79,
+      "date": "2026-10-14",
+      "definition": "ECB reference FX via Frankfurter; not an executable dealing quote"
+    },
+    "ordinary_shares_per_ADS": 0.1,
+    "June_30_ordinary_outstanding": 711075500,
+    "IPO_new_ordinary_shares": 17790000,
+    "IPO_postoffering_ordinary_shares_proxy": 728865500,
+    "H1_2026_KRW_million": {
+      "cash_and_equivalents": 26835986,
+      "short_term_financial_instruments": 22397559,
+      "short_term_investment_assets": 38724378,
+      "current_borrowings": 5858873,
+      "noncurrent_borrowings": 12727761,
+      "current_lease_liabilities": 526461,
+      "noncurrent_lease_liabilities": 2000044,
+      "CFO": 91742501,
+      "PPE_cash_purchase": 18328836,
+      "intangible_cash_purchase": 665180,
+      "dividends_received_cash": 13983648,
+      "EBIT": 98152891,
+      "finance_income": 82915164,
+      "finance_expenses": 6664386,
+      "net_finance_income": 76250778,
+      "equity_accounted_profit": -46900,
+      "other_income": 28861,
+      "other_expense": 60417,
+      "pretax_profit": 174325213,
+      "income_tax_expense": 40056711,
+      "consolidated_profit": 134268502,
+      "parent_profit": 134150412,
+      "financial_valuation_gain": 63178974,
+      "dividend_income": 13979567,
+      "interest_income": 493257,
+      "interest_expense": 321277,
+      "current_tax_liabilities": 31958025,
+      "long_term_investment_assets": 85309524,
+      "exchangeable_bond_USD_balance": 0
+    },
+    "Q2_2026_KRW_million": {
+      "revenue": 79318746,
+      "gross_profit": 65991356,
+      "EBIT": 60542608,
+      "parent_profit": 93820236,
+      "financial_valuation_gain": 53237425,
+      "dividend_income": 10027945,
+      "finance_income": 65858814,
+      "finance_expenses": 3640903
+    }
+  },
+  "assumptions": {
+    "target_date": "2028-12-31",
+    "discount_rate": 0.12,
+    "future_diluted_ordinary_shares": 750000000,
+    "normal_net_interest_KRW_trillion": 0.35,
+    "parent_profit_fraction": 0.999,
+    "scenarios": {
+      "bear": {
+        "tax_rate": 0.28,
+        "low": {
+          "revenue_KRW_trillion": 240,
+          "operating_margin": 0.25,
+          "PE": 12
+        },
+        "high": {
+          "revenue_KRW_trillion": 270,
+          "operating_margin": 0.3,
+          "PE": 14
+        },
+        "midpoint": {
+          "revenue_KRW_trillion": 255.0,
+          "operating_margin": 0.275,
+          "PE": 13.0
+        },
+        "rationale": "价格回落及同业扩产使营收低于Q2年化水平，经营利润率回落至25–30%；周期性和较低增长给予12–14倍正常化税后利润。不是已发生事实。"
+      },
+      "base": {
+        "tax_rate": 0.27,
+        "low": {
+          "revenue_KRW_trillion": 300,
+          "operating_margin": 0.4,
+          "PE": 16
+        },
+        "high": {
+          "revenue_KRW_trillion": 360,
+          "operating_margin": 0.45,
+          "PE": 20
+        },
+        "midpoint": {
+          "revenue_KRW_trillion": 330.0,
+          "operating_margin": 0.42500000000000004,
+          "PE": 18.0
+        },
+        "rationale": "收入围绕Q2年化317.275万亿韩元上下，HBM结构性需求保留、但经营利润率由Q2约76.3%回落至40–45%。对已大幅下修的跨周期利润给予16–20倍，反映HBM领先和客户粘性溢价，不等于行业一致预期。"
+      },
+      "bull": {
+        "tax_rate": 0.27,
+        "low": {
+          "revenue_KRW_trillion": 400,
+          "operating_margin": 0.5,
+          "PE": 20
+        },
+        "high": {
+          "revenue_KRW_trillion": 440,
+          "operating_margin": 0.55,
+          "PE": 22
+        },
+        "midpoint": {
+          "revenue_KRW_trillion": 420.0,
+          "operating_margin": 0.525,
+          "PE": 21.0
+        },
+        "rationale": "HBM4/4E与服务器存储继续扩量，收入超过当前年化水平26–39%；较高但仍低于Q2的50–55%经营利润率可持续，20–22倍溢价须由长期合同、客户认证和现金回报支持。"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "SEC正式2026半年报，合并中期财务报表pp.3–8、附注14/24及期后事项",
+      "original_url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526354777/d147827d6k.htm",
+      "read_url": "https://cdn.yahoofinance.com/prod/sec-filings/0002120882/000119312526354777/d147827d6k.htm",
+      "read_status": "full primary filing via Yahoo-hosted SEC document mirror; issuer and period verified",
+      "retrieved_on": "2026-10-15",
+      "archive": "originals/2026-10-15-h1-6k.txt"
+    },
+    {
+      "id": "S2",
+      "title": "Nasdaq SKHY historical close",
+      "url": "https://api.nasdaq.com/api/quote/SKHY/historical?assetclass=stocks&limit=5&fromdate=2026-10-13&todate=2026-10-14",
+      "archive": "originals/2026-10-15-nasdaq-close.json"
+    },
+    {
+      "id": "S3",
+      "title": "Frankfurter ECB reference FX",
+      "url": "https://api.frankfurter.dev/v1/2026-10-14?base=USD&symbols=KRW",
+      "archive": "originals/2026-10-15-fx.json"
+    },
+    {
+      "id": "S4",
+      "title": "SEC 2026-10-14 6-K：Q3 results call scheduled 2026-10-28 09:00 Seoul",
+      "original_url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526420934/d413172d6k.htm",
+      "read_url": "https://cdn.yahoofinance.com/prod/sec-filings/0002120882/000119312526420934/d413172d6k.htm",
+      "archive": "originals/2026-10-15-earnings-date-6k.txt"
+    },
+    {
+      "id": "S5",
+      "title": "IPO 424B4 capital/ADS baseline, reused from previously verified research",
+      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm",
+      "read_status": "prior research verified; current SEC HTTP403, Yahoo mirror HTTP404; do not describe as freshly retrieved",
+      "prior_record": "2026-10-11-research.json",
+      "corroboration": "June30 H1 issued712702365 less treasury1626865 = outstanding711075500; H1 Subsequent Event independently confirms17790000 new ordinary and177900000 ADRs, 10ADRs per ordinary, USD1490 per ordinary and gross USD26507100000; postoffering ordinary728865500. Expected net proceeds remain prior424B4 baseline, not a new cash readback."
+    }
+  ],
+  "limits": [
+    "Conditional earnings-power valuation, not a guaranteed price or broker consensus. The multiple, revenue, margins, taxes, 12% discount rate and future dilution are explicit researcher assumptions.",
+    "No annualization of Q2 reported net income: H1 finance income includes major fair-value gains and investment dividends; they are excluded from normalized profit.",
+    "Normalized net interest of +0.35 trillion KRW approximates annualized H1 interest income less expense (0.343960 trillion); no additional net cash, IPO proceeds or investment NAV is added to this equity earnings-power model. It does not separately value nonoperating investment assets; realizable after-tax investment NAV may change a fuller sum-of-parts valuation.",
+    "Shares750million are a researcher dilution allowance, not verified October diluted shares; current market capitalization uses the IPO postoffering ordinary-share proxy. SBC is included in assumed operating costs, not added back. Exchangeable bonds reported fully converted at June30 are not also treated as outstanding debt/dilution.",
+    "Cash-related88trillionKRW includes financial instruments and investment assets, not just26.836trillion cash; CFO includes13.983648trillion investment dividend receipts and cash taxes below accounting tax expense. Simple FCF is not normalized owner earnings.",
+    "Historical/current market NTM Forward P/E has not been independently verified; own 2028 normal-profit multiples must not be labeled market Forward P/E.",
+    "No guarantee future capex, maintenance investment or working-capital requirements match earnings. P/E assumes meaningful cross-cycle cash conversion; if capex persistently exceeds depreciation and cash conversion fails, multiples or earnings must be reduced.",
+    "FX held at the reference-date rate is a convention, not a forecast. Future dividends/ADS fees/taxes are not included in the displayed price/value gaps. The existing report receives a targeted valuation/financial correction, not a claim of full new company research."
+  ]
+}
