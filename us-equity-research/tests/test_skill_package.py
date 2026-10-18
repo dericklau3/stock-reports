@@ -96,7 +96,7 @@ class SkillPackageTests(unittest.TestCase):
 
     def test_historical_financial_table_glossary_summary(self):
         content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        financial = content.split("### 3. 财务状况：收入、利润和现金", 1)[1].split("### 4. 管理层与资本分配", 1)[0]
+        financial = content.split("### 4. 财务状况：收入、利润和现金", 1)[1].split("### 5. 管理层与资本分配", 1)[0]
         self.assertIn("| 指标 | FY2024 | FY2025 | H1 2026 | TTM至2026Q2 |", financial)
         for key in ("GAAP收入", "GAAP毛利", "GAAP经营损益", "经营现金流", "自由现金流"):
             self.assertIn(key, financial)
@@ -106,7 +106,7 @@ class SkillPackageTests(unittest.TestCase):
 
     def test_compact_valuation(self):
         content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 5. 估值分析：当前股价贵不贵？", 1)[1].split("### 6. 未来值得关注的事件", 1)[0]
+        section = content.split("### 6. 估值分析：当前股价贵不贵？", 1)[1].split("### 7. 未来值得关注的事件", 1)[0]
         self.assertIn("| 关键指标 | 估算结果 |", section)
         for key in ("保守情景估值", "基础情景估值", "乐观情景估值"):
             self.assertIn(key, section)
@@ -115,7 +115,7 @@ class SkillPackageTests(unittest.TestCase):
 
     def test_future_events(self):
         content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 6. 未来值得关注的事件", 1)[1].split("### 7. 主要投资风险", 1)[0]
+        section = content.split("### 7. 未来值得关注的事件", 1)[1].split("### 8. 主要投资风险", 1)[0]
         self.assertIn("| 重要事件 | 为什么值得关注 |", section)
         self.assertIn("3–5", section)
         self.assertIn("官方核实", section)
@@ -123,7 +123,7 @@ class SkillPackageTests(unittest.TestCase):
 
     def test_investment_risks(self):
         content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 7. 主要投资风险", 1)[1].split("### 8. 四种投资视角", 1)[0]
+        section = content.split("### 8. 主要投资风险", 1)[1].split("### 9. 四种投资视角", 1)[0]
         self.assertIn("| 主要风险 | 可能产生什么影响 | 需要警惕的信号 |", section)
         self.assertIn("4–5", section)
         self.assertIn("总结：", section)
@@ -131,7 +131,7 @@ class SkillPackageTests(unittest.TestCase):
 
     def test_four_lenses_and_no_final_repeat(self):
         content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 8. 四种投资视角", 1)[1].split("## 财报与重大事件跟踪模板", 1)[0]
+        section = content.split("### 9. 四种投资视角", 1)[1].split("## 财报与重大事件跟踪模板", 1)[0]
         self.assertIn("| 投资视角 | 最关注什么 | 对公司的判断 |", section)
         for name in ("巴菲特式", "芒格式", "段永平式", "李录式"):
             self.assertIn("| " + name + " |", section)
