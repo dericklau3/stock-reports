@@ -1,4 +1,4 @@
 interface:
-  display_name: "美股个股研究"
-  short_description: "分析美股公司业务、真实经营进度、重大事件、历史财务、估值、风险与财报变化"
-  default_prompt: "使用 $us-equity-research 研究指定的美国上市公司，用中文说明公司业务、已公布重大事件及公告日期与原始来源、真实项目进展、财务与估值、主要风险，以及相对上次研究的变化。报告保持简洁、数据准确。"
+  display_name: "us-equity-research"
+  short_description: "完整深研美股公司，分析业务竞争力、重大事件日期、经营进展、财务、估值与风险"
+  default_prompt: "使用 $us-equity-research 对指定的美国上市公司开展完整中文深度研究，说明公司业务、已公布重大事件及公告日期与原始来源、真实项目进展、财务与估值、主要风险，以及相对上次研究的变化。每次研究均生成完整深研报告；报告保持简洁、数据准确。"

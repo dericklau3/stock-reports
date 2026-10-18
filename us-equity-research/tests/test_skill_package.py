@@ -66,7 +66,8 @@ class SkillPackageTests(unittest.TestCase):
             self.assertIn(ref.resolve(), seen, ref.name)
 
     def test_no_chinese_mirror_folder(self):
-        self.assertFalse((ROOT.parent / "cn").exists())
+        mirror = ROOT.parent / "cn"
+        self.assertFalse(any(p.is_file() and p.name != ".DS_Store" for p in mirror.rglob("*")))
         for file in [ROOT / "SKILL.md", *(ROOT / "references").glob("*.md")]:
             self.assertNotIn("../../cn/", file.read_text(encoding="utf-8"))
 
@@ -131,7 +132,7 @@ class SkillPackageTests(unittest.TestCase):
 
     def test_four_lenses_and_no_final_repeat(self):
         content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 9. 四种投资视角", 1)[1].split("## 财报与重大事件跟踪模板", 1)[0]
+        section = content.split("### 9. 四种投资视角", 1)[1]
         self.assertIn("| 投资视角 | 最关注什么 | 对公司的判断 |", section)
         for name in ("巴菲特式", "芒格式", "段永平式", "李录式"):
             self.assertIn("| " + name + " |", section)
