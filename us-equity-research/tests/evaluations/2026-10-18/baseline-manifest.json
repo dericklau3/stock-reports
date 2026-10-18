@@ -1,0 +1,24 @@
+{
+  "execution_date": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "executor": "independent subagent baseline_behavior",
+  "model": "inherited session model; exact model ID not exposed",
+  "case_ids": [
+    2,
+    12,
+    19
+  ],
+  "samples_per_case": 1,
+  "base_commit": "0b1ecaf21e90744240b8514cf047ace09db91ea0",
+  "sha256": {
+    "SKILL.md": "64bf7a3fd5123ad529b993d2a5258532d78b2a37d679c92bdf7940afdc5df5c7",
+    "inputs.md": "857cf5632ff9809bd363d1f22a9e35c8c54fab6f5ed3963ef179ef9bd0b3b89c",
+    "references/announced-material-events.md": "6792b887bffe1133001b8e61b3bc893248de119899a90244659400ea6ef88525",
+    "references/company-types.md": "685b34e22dbb7701a6404d01e7b034a78c68ad2a46b7930ec0901037fb4ddd88",
+    "references/data-verification.md": "f09168865e56c0ff7831e2373435277f97cf29f8d0beb2b70d6cb0357042c5e0",
+    "references/investor-lenses.md": "402a1d18fb19132efabb165fba92e868eb6eb575c13f9113e46b3bb6240863ea",
+    "references/operating-agenda-execution-progress.md": "99c074289c1d30b9135e86cf59e71a0d1dce4c49fa91cfeddce26d784eff4716",
+    "references/report-templates.md": "9d2858a8a11f7dd649f882e84481c54c581404dccbe8f1e092dca5377852dd0a",
+    "references/valuation.md": "a4783c633e8ad2d8ca89ba677083d9f3e6beb352f6f4f9a7973df4c1ca5aa2e0"
+  }
+}

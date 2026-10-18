@@ -1,9 +1,14 @@
 """美股研究 Skill 的结构与格式回归测试。
 
-运行：python -B -m unittest discover -s us-equity-research/tests -v
+运行：uv run --with pyyaml python -B -m unittest discover -s us-equity-research/tests -v
 本文件只验证规则、路径和模板结构，不代替实际金融研究质量检查。
 """
 import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import json
 import unittest
 from pathlib import Path
 
@@ -65,80 +70,61 @@ class SkillPackageTests(unittest.TestCase):
         for ref in (ROOT / "references").glob("*.md"):
             self.assertIn(ref.resolve(), seen, ref.name)
 
-    def test_no_chinese_mirror_folder(self):
-        mirror = ROOT.parent / "cn"
-        self.assertFalse(any(p.is_file() and p.name != ".DS_Store" for p in mirror.rglob("*")))
-        for file in [ROOT / "SKILL.md", *(ROOT / "references").glob("*.md")]:
-            self.assertNotIn("../../cn/", file.read_text(encoding="utf-8"))
+    def test_package_isolated_from_sibling_skills(self):
+        # A sibling Chinese package must not invalidate this portable skill.
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / ROOT.name
+            shutil.copytree(ROOT, target)
+            sibling = Path(tmp) / "cn" / "another-skill"
+            sibling.mkdir(parents=True)
+            (sibling / "SKILL.md").write_text("unrelated skill", encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, "-B", str(target / "tests/test_skill_package.py"),
+                 "SkillPackageTests.test_reference_links",
+                 "SkillPackageTests.test_all_references_reachable"],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
 
-    def test_only_three_opening_items(self):
-        content = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+    def test_report_structure(self):
+        # Protect the agreed nine-section layout, not wording or example years.
         template = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        for key in ("投资观点", "核心逻辑", "主要风险"):
-            self.assertIn(key, template)
-        self.assertIn("禁止", template)
-        self.assertNotRegex(template, r"(?m)^#{1,5}\s+(?:Executive View|Executive Summary)")
-        self.assertIn("开头仅保留三项", template)
-        self.assertIn("不单独显示 Research view", content)
+        sections = re.findall(r"^### (\d+)\. (.+)$", template, re.M)
+        self.assertEqual([int(n) for n, _ in sections], list(range(1, 10)))
+        bodies = re.split(r"^### \d+\. .+$", template, flags=re.M)[1:]
+        for number, width in {2: 3, 3: 3, 6: 2, 7: 2, 8: 3, 9: 3}.items():
+            rows = [line for line in bodies[number - 1].splitlines() if line.startswith("|")]
+            self.assertGreaterEqual(len(rows), 3)
+            self.assertTrue(all(len(row.strip("|").split("|")) == width for row in rows))
+        financial_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
+        widths = {len(row.strip("|").split("|")) for row in financial_rows}
+        self.assertEqual(len(widths), 1)
+        self.assertGreaterEqual(widths.pop(), 4)
 
-    def test_business_model(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        for label in ("公司具体卖什么", "解决什么问题", "谁会购买", "具体怎么收费", "哪些成本", "举例假设"):
-            self.assertIn(label, content)
-
-    def test_project_progress(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        progress = (ROOT / "references/operating-agenda-execution-progress.md").read_text(encoding="utf-8")
-        header = "| 重点项目 | 为什么做？希望达到什么结果？ | 当前进展与下一步 |"
-        self.assertIn(header, content)
-        self.assertIn(header, progress)
-        self.assertIn("3–5", content)
-        self.assertIn("不再生成五列", progress)
-
-    def test_historical_financial_table_glossary_summary(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        financial = content.split("### 4. 财务状况：收入、利润和现金", 1)[1].split("### 5. 管理层与资本分配", 1)[0]
-        self.assertIn("| 指标 | FY2024 | FY2025 | H1 2026 | TTM至2026Q2 |", financial)
-        for key in ("GAAP收入", "GAAP毛利", "GAAP经营损益", "经营现金流", "自由现金流"):
-            self.assertIn(key, financial)
-        self.assertIn('<small class="financial-glossary">', financial)
-        self.assertIn("总结：", financial)
-        self.assertIn("不能直接比较两者来计算同比", financial)
-
-    def test_compact_valuation(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 6. 估值分析：当前股价贵不贵？", 1)[1].split("### 7. 未来值得关注的事件", 1)[0]
-        self.assertIn("| 关键指标 | 估算结果 |", section)
-        for key in ("保守情景估值", "基础情景估值", "乐观情景估值"):
-            self.assertIn(key, section)
-        self.assertIn("折现到今天的价值", section)
-        self.assertIn("总结：", section)
-
-    def test_future_events(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 7. 未来值得关注的事件", 1)[1].split("### 8. 主要投资风险", 1)[0]
-        self.assertIn("| 重要事件 | 为什么值得关注 |", section)
-        self.assertIn("3–5", section)
-        self.assertIn("官方核实", section)
-        self.assertIn("总结：", section)
-
-    def test_investment_risks(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 8. 主要投资风险", 1)[1].split("### 9. 四种投资视角", 1)[0]
-        self.assertIn("| 主要风险 | 可能产生什么影响 | 需要警惕的信号 |", section)
-        self.assertIn("4–5", section)
-        self.assertIn("总结：", section)
-        self.assertIn("不能", section)
-
-    def test_four_lenses_and_no_final_repeat(self):
-        content = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
-        section = content.split("### 9. 四种投资视角", 1)[1]
-        self.assertIn("| 投资视角 | 最关注什么 | 对公司的判断 |", section)
-        for name in ("巴菲特式", "芒格式", "段永平式", "李录式"):
-            self.assertIn("| " + name + " |", section)
-        self.assertIn("完整深度报告的最后一段", section)
-        self.assertNotRegex(content, r"(?m)^\s*(?:\d+\.\s*)?(?:Final Research Framework|最终研究结论)\s*$")
-        self.assertIn("研究资料", (ROOT / "references/investor-lenses.md").read_text(encoding="utf-8"))
+    def test_prepare_blind_behavior_packet(self):
+        script = ROOT / "tests/prepare_behavior_eval.py"
+        self.assertTrue(script.is_file(), "Missing repeatable blind evaluation packet builder")
+        with tempfile.TemporaryDirectory() as tmp:
+            dest = Path(tmp) / "packet"
+            result = subprocess.run([sys.executable, "-B", str(script), str(dest)],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            manifest = json.loads((dest / "manifest.json").read_text())
+            inputs = (dest / "inputs.md").read_text()
+            source = (ROOT / "tests/behavioral-cases.md").read_text().split("## 验收标准")[0]
+            self.assertEqual(inputs, source)
+            self.assertEqual(manifest["case_ids"], list(range(1, 20)))
+            self.assertFalse((dest / "skill/tests").exists())
+            self.assertEqual((dest / "skill/SKILL.md").read_bytes(), (ROOT / "SKILL.md").read_bytes())
+            import hashlib
+            for name, digest in manifest["sha256"].items():
+                self.assertEqual(hashlib.sha256((dest / name).read_bytes()).hexdigest(), digest)
+            marker = dest / "responses.md"
+            marker.write_text("preserve existing evaluation")
+            retry = subprocess.run([sys.executable, "-B", str(script), str(dest)],
+                                   capture_output=True, text=True)
+            self.assertNotEqual(retry.returncode, 0)
+            self.assertEqual(marker.read_text(), "preserve existing evaluation")
 
 
 if __name__ == "__main__":
