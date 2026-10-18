@@ -1,0 +1,101 @@
+[
+  {
+    "id": "q2-news",
+    "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-q2-news.txt",
+    "sha256_text": "2bd2a35e80bf0ac20a886830aed929ceb3419077d8221c69cb85fc0359dbb3e9",
+    "status": "read_full_text",
+    "length": 152951
+  },
+  {
+    "id": "fy25-news",
+    "url": "https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-fy25-news.txt",
+    "sha256_text": "fb1262856c603eb4767ee0643528689e57f0b7fd08cb99b979c145cdd4cbe036",
+    "status": "read_full_text",
+    "length": 154554
+  },
+  {
+    "id": "buyback-news",
+    "url": "https://news.skhynix.com/en/share-buyback-and-retirement/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-buyback-news.txt",
+    "sha256_text": "d2ca8c140f43716a214f528f77582badfaff39172fccd8edfbc7466d0ca1a31b",
+    "status": "read_full_text",
+    "length": 143079
+  },
+  {
+    "id": "solidigm-news",
+    "url": "https://news.skhynix.com/en/fact-11/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-solidigm-news.txt",
+    "sha256_text": "45dd7e65a3dba20bade2f23e5f4fdfdfae35cdee737057f529d2004aafe02c9b",
+    "status": "read_full_text",
+    "length": 144312
+  },
+  {
+    "id": "indiana-news",
+    "url": "https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-indiana-news.txt",
+    "sha256_text": "15b82f51a8fccb67b05e85ea7b8287566881c05c426f570826950d7829ae3058",
+    "status": "read_full_text",
+    "length": 159996
+  },
+  {
+    "id": "ocp-news",
+    "url": "https://news.skhynix.com/en/ocp-global-summit-2026/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-ocp-news.txt",
+    "sha256_text": "84ac403415b73fc5faaf154e0ffd5c0f36e3c3efc91f4ea7578ce241425ee017",
+    "status": "read_full_text",
+    "length": 197304
+  },
+  {
+    "id": "oip-news",
+    "url": "https://news.skhynix.com/en/tsmc-oip-conference-2026/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-oip-news.txt",
+    "sha256_text": "7e4f334a49c81adf9e2439864879997b0f33266caa24a064ae8c2cfc59c7704e",
+    "status": "read_full_text",
+    "length": 181642
+  },
+  {
+    "id": "investment-news",
+    "url": "https://news.skhynix.com/en/fact-07/",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-investment-news.txt",
+    "sha256_text": "dcc075f183db7b61b08c79aed602f505232dcd9098b608fe21bf76309172f6d0",
+    "status": "read_full_text",
+    "length": 144099
+  },
+  {
+    "id": "quote-stockanalysis",
+    "url": "https://stockanalysis.com/stocks/skhy/",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "forecast-stockanalysis",
+    "url": "https://stockanalysis.com/stocks/skhy/forecast/",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "ipo",
+    "url": "https://cdn.yahoofinance.com/prod/sec-filings/0002120882/000119312526299963/d32785d424b4.htm",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "samsung-hbm4",
+    "url": "https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing",
+    "retrieved_on": "2026-10-18",
+    "archive": "originals/2026-10-18-samsung-hbm4.txt",
+    "sha256_text": "3d1520319a1129e6b6911500513ea0399435c5b14544afaa429cc5498e602c70",
+    "status": "read_full_text",
+    "length": 140506
+  }
+]

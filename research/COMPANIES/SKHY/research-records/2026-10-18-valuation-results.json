@@ -1,0 +1,214 @@
+{
+  "valuation_date": "2026-10-18",
+  "target_date": "2028-12-31",
+  "quote": {
+    "close_USD_per_ADS": 136.49,
+    "date": "2026-10-16",
+    "timezone": "America/New_York",
+    "session": "regular close 16:00 EDT",
+    "source": "https://stockanalysis.com/stocks/skhy/",
+    "verification": "full page read via web; Yahoo historical search result corroborates; Nasdaq direct API unavailable"
+  },
+  "years": 2.2039698836413417,
+  "discount_factor": 1.283733988025615,
+  "ADS_equivalent_future_denominator": 7500000000.0,
+  "dilution_buffer_vs_IPO": 0.02899643349836145,
+  "proxy_marketcap_USD": 994828520950.0,
+  "scenarios": {
+    "bear": [
+      {
+        "endpoint": "low",
+        "EBIT_KRW_trillion": 60.0,
+        "normal_parent_profit_KRW_trillion": 43.1568,
+        "normal_EPS_USD_per_ADS": 4.319675700022522,
+        "scenario_PE_assumption": 12,
+        "target_date_undiscounted_USD_per_ADS": 51.83610840027026,
+        "valuation_date_USD_per_ADS": 40.37916646578337,
+        "value_gap_vs_quote": -0.7041602574123864,
+        "quote_divided_by_target_normal_EPS": 31.597279397453004
+      },
+      {
+        "endpoint": "high",
+        "EBIT_KRW_trillion": 81.0,
+        "normal_parent_profit_KRW_trillion": 58.26168,
+        "normal_EPS_USD_per_ADS": 5.831562195030404,
+        "scenario_PE_assumption": 14,
+        "target_date_undiscounted_USD_per_ADS": 81.64187073042567,
+        "valuation_date_USD_per_ADS": 63.59718718360882,
+        "value_gap_vs_quote": -0.5340524054245086,
+        "quote_divided_by_target_normal_EPS": 23.405392146261484
+      },
+      {
+        "endpoint": "midpoint",
+        "EBIT_KRW_trillion": 70.125,
+        "normal_parent_profit_KRW_trillion": 50.43950999999999,
+        "normal_EPS_USD_per_ADS": 5.048620974401322,
+        "scenario_PE_assumption": 13.0,
+        "target_date_undiscounted_USD_per_ADS": 65.63207266721719,
+        "valuation_date_USD_per_ADS": 51.12591337412467,
+        "value_gap_vs_quote": -0.6254237425882874,
+        "quote_divided_by_target_normal_EPS": 27.03510536680471
+      }
+    ],
+    "base": [
+      {
+        "endpoint": "low",
+        "EBIT_KRW_trillion": 120.0,
+        "normal_parent_profit_KRW_trillion": 87.5124,
+        "normal_EPS_USD_per_ADS": 8.759342391712334,
+        "scenario_PE_assumption": 16,
+        "target_date_undiscounted_USD_per_ADS": 140.14947826739734,
+        "valuation_date_USD_per_ADS": 109.17330192600687,
+        "value_gap_vs_quote": -0.2001369922631192,
+        "quote_divided_by_target_normal_EPS": 15.582219976826142
+      },
+      {
+        "endpoint": "high",
+        "EBIT_KRW_trillion": 162.0,
+        "normal_parent_profit_KRW_trillion": 118.14173999999998,
+        "normal_EPS_USD_per_ADS": 11.82511222881165,
+        "scenario_PE_assumption": 20,
+        "target_date_undiscounted_USD_per_ADS": 236.50224457623298,
+        "valuation_date_USD_per_ADS": 184.22994700013658,
+        "value_gap_vs_quote": 0.3497688255559863,
+        "quote_divided_by_target_normal_EPS": 11.542385168019367
+      },
+      {
+        "endpoint": "midpoint",
+        "EBIT_KRW_trillion": 140.25000000000003,
+        "normal_parent_profit_KRW_trillion": 102.28011750000002,
+        "normal_EPS_USD_per_ADS": 10.237481420313792,
+        "scenario_PE_assumption": 18.0,
+        "target_date_undiscounted_USD_per_ADS": 184.27466556564826,
+        "valuation_date_USD_per_ADS": 143.54583370427312,
+        "value_gap_vs_quote": 0.051694876579039484,
+        "quote_divided_by_target_normal_EPS": 13.3323807288352
+      }
+    ],
+    "bull": [
+      {
+        "endpoint": "low",
+        "EBIT_KRW_trillion": 200.0,
+        "normal_parent_profit_KRW_trillion": 145.854,
+        "normal_EPS_USD_per_ADS": 14.598903986187224,
+        "scenario_PE_assumption": 20,
+        "target_date_undiscounted_USD_per_ADS": 291.9780797237445,
+        "valuation_date_USD_per_ADS": 227.44437901251433,
+        "value_gap_vs_quote": 0.6663812661185018,
+        "quote_divided_by_target_normal_EPS": 9.349331986095684
+      },
+      {
+        "endpoint": "high",
+        "EBIT_KRW_trillion": 242.00000000000003,
+        "normal_parent_profit_KRW_trillion": 176.48334000000003,
+        "normal_EPS_USD_per_ADS": 17.66467382328655,
+        "scenario_PE_assumption": 22,
+        "target_date_undiscounted_USD_per_ADS": 388.6228241123041,
+        "valuation_date_USD_per_ADS": 302.7284684656567,
+        "value_gap_vs_quote": 1.2179534652037267,
+        "quote_divided_by_target_normal_EPS": 7.726720649665852
+      },
+      {
+        "endpoint": "midpoint",
+        "EBIT_KRW_trillion": 220.5,
+        "normal_parent_profit_KRW_trillion": 160.804035,
+        "normal_EPS_USD_per_ADS": 16.095291644771414,
+        "scenario_PE_assumption": 21.0,
+        "target_date_undiscounted_USD_per_ADS": 338.0011245401997,
+        "valuation_date_USD_per_ADS": 263.2952992543619,
+        "value_gap_vs_quote": 0.9290446131904306,
+        "quote_divided_by_target_normal_EPS": 8.480119715279534
+      }
+    ]
+  },
+  "sensitivities": {
+    "KRW_strengthens_10pct": 159.4953707825257,
+    "KRW_weakens_10pct": 130.4962124584301,
+    "ordinary_shares_728865500": 147.70815092524592,
+    "ordinary_shares_800000000": 134.57421909775604,
+    "discount_rate_0.1": 149.36106450468645,
+    "discount_rate_0.15": 135.42206114553954,
+    "each_PE_turn_changes_today_USD_per_ADS": 7.974768539126284,
+    "extra_1pct_revenue_investment_need_annual_KRW_trillion": 3.3000000000000003
+  },
+  "reverse_normal_profit_KRW_trillion_at_base_PE": 97.25265357638472,
+  "H1_checks_KRW_trillion": {
+    "broad_liquid_balance_not_all_cash": 87.957923,
+    "debt_excluding_leases": 18.586634,
+    "leases": 2.526505,
+    "broad_liquid_balance_minus_debt": 69.371289,
+    "cash_capex_PPE_plus_intangibles": 18.994016,
+    "CFO_less_cash_capex_not_normalized": 72.748485,
+    "CFO_less_cash_capex_less_investment_dividends_not_normalized": 58.764837
+  },
+  "limits": [
+    "Conditional earnings-power valuation, not a guaranteed price or broker consensus. The multiple, revenue, margins, taxes, 12% discount rate and future dilution are explicit researcher assumptions.",
+    "No annualization of Q2 reported net income: H1 finance income includes major fair-value gains and investment dividends; they are excluded from normalized profit.",
+    "Shares750million are a researcher dilution allowance, not verified October diluted shares; current market capitalization uses the IPO postoffering ordinary-share proxy. SBC is included in assumed operating costs, not added back. Exchangeable bonds reported fully converted at June30 are not also treated as outstanding debt/dilution.",
+    "Cash-related88trillionKRW includes financial instruments and investment assets, not just26.836trillion cash; CFO includes13.983648trillion investment dividend receipts and cash taxes below accounting tax expense. Simple FCF is not normalized owner earnings.",
+    "Historical/current market NTM Forward P/E has not been independently verified; own 2028 normal-profit multiples must not be labeled market Forward P/E.",
+    "No guarantee future capex, maintenance investment or working-capital requirements match earnings. P/E assumes meaningful cross-cycle cash conversion; if capex persistently exceeds depreciation and cash conversion fails, multiples or earnings must be reduced.",
+    "FX held at the reference-date rate is a convention, not a forecast. Future dividends/ADS fees/taxes are not included in the displayed price/value gaps. The existing report receives a targeted valuation/financial correction, not a claim of full new company research.",
+    "Normal net interest set to zero rather than +0.35T KRW in Oct15 model. No investment gains/dividends, cash, IPO proceeds or investment NAV added. A full after-tax SOTP may differ.",
+    "40.00434T KRW authorized buyback is not treated as completed. Future share denominator remains750M; buyback effect is a separate share-and-cash sensitivity, not free per-share uplift. Current marketcap is IPO-share proxy only.",
+    "2026-08-19 issued ordinary730492365 less treasury1625769 gives728866596 before repurchase, only1096 more than IPO proxy728865500; latest October actual outstanding unavailable.",
+    "Consolidated PPE commitments61.484533T KRW; current borrowings5.858873T; current tax liabilities31.958025T and optional40.00434T buyback require a dated funding bridge. Commitments are not all due at once; do not assert funding shortfall by adding them blindly."
+  ],
+  "verification": "Source identities, financial arithmetic, capital bridge, ADS denominator and scenario ordering assertions passed.",
+  "additional_sensitivities": {
+    "base_mid_PE12": 95.69722246951541,
+    "base_mid_PE14": 111.64675954776799,
+    "full_plan_share_count_only_no_cash_credit": 725930000,
+    "full_plan_base_mid_share_only_not_full_equity_value": 148.30544994449167,
+    "price_change_since_Oct14": -0.07495764147746531,
+    "H1_revenue_YoY": 2.308036551694231,
+    "H1_EBIT_YoY": 4.893880902676968,
+    "base_mid_value_gap": 0.051694876579039484
+  },
+  "comparative_financials_KRW_million": {
+    "FY2024": {
+      "revenue": 66192960,
+      "gross_profit": 31828146,
+      "EBIT": 23467319,
+      "consolidated_profit": 19796902,
+      "CFO": 29795885,
+      "PPE_cash_purchase": 15945534,
+      "intangible_cash_purchase": 717106,
+      "cash_capex": 16662640,
+      "simple_FCF": 13133245
+    },
+    "FY2025": {
+      "revenue": 97146675,
+      "gross_profit": 58690790,
+      "EBIT": 47206319,
+      "consolidated_profit": 42947902,
+      "CFO": 53373126,
+      "PPE_cash_purchase": 27518924,
+      "intangible_cash_purchase": 1060419,
+      "cash_capex": 28579343,
+      "simple_FCF": 24793783
+    },
+    "H1_2025": {
+      "revenue": 39871093,
+      "gross_profit": 22085315,
+      "EBIT": 16653355,
+      "consolidated_profit": 15104411,
+      "CFO": 18189841,
+      "PPE_cash_purchase": 10615739,
+      "intangible_cash_purchase": 460437,
+      "cash_capex": 11076176,
+      "simple_FCF": 7113665
+    },
+    "TTM_2026Q2": {
+      "revenue": 189170615,
+      "gross_profit": 144276245,
+      "EBIT": 128705855,
+      "consolidated_profit": 162111993,
+      "CFO": 126925786,
+      "PPE_cash_purchase": 35232021,
+      "intangible_cash_purchase": 1265162,
+      "cash_capex": 36497183,
+      "simple_FCF": 90428603
+    }
+  }
+}

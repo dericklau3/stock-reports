@@ -1,0 +1,141 @@
+{
+  "retrieved_on": "2026-10-18",
+  "files": [
+    {
+      "path": "originals/2026-10-18-6k-2026-08-19-6.txt",
+      "bytes": 3708,
+      "sha256": "3c1a513afa81a2d4420b6ff1d3113ca244e713b9ae14479fb2ff6bd2cc6c95a6"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-08-19-7.txt",
+      "bytes": 4241,
+      "sha256": "6f4753e257275c16fd4bf1560a38a9ae88dcb1274b089817acaf712732795a8b"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-08-19-8.txt",
+      "bytes": 7429,
+      "sha256": "2476191ce3ed0f385f05bfa9bc5e749c3a27322fcb9b4138f6448d070a83614a"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-08-21-4.txt",
+      "bytes": 1603,
+      "sha256": "6c0c9d2dac8d5029604717a8782de8610b48035a8a55043f09c2ab4d8a0edb39"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-08-21-5.txt",
+      "bytes": 2383,
+      "sha256": "7624dc3766d98eaa81f4e337a78286c487a40e21c35a666e86b0e2723296d45c"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-09-04-3.txt",
+      "bytes": 1778,
+      "sha256": "33efd7ae22645cfc2e021a56594c2b3a31d6d361b77faa18f8598a7f74ce4613"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-09-09-2.txt",
+      "bytes": 1813,
+      "sha256": "b0bf98598af0bd639266bb9492fcdd66a8c10b09986662aebeda2a824df0e69c"
+    },
+    {
+      "path": "originals/2026-10-18-6k-2026-09-18-1.txt",
+      "bytes": 1778,
+      "sha256": "219a1777946ff81430625a8b6e399783dab963d6aa1b10fadfc7f4a9a5945a67"
+    },
+    {
+      "path": "originals/2026-10-18-buyback-news.txt",
+      "bytes": 7128,
+      "sha256": "d2ca8c140f43716a214f528f77582badfaff39172fccd8edfbc7466d0ca1a31b"
+    },
+    {
+      "path": "originals/2026-10-18-call.raw",
+      "bytes": 10387,
+      "sha256": "278b33c0d9b3313d01df04805d9a54125562f517d5c2c96ee078a2b2cb2c004c"
+    },
+    {
+      "path": "originals/2026-10-18-call.txt",
+      "bytes": 1671,
+      "sha256": "9d99eafe7c9b23eea5aca3434c59724767fd1f2a27b1f3d101a188dfee01310e"
+    },
+    {
+      "path": "originals/2026-10-18-f1.txt",
+      "bytes": 1003271,
+      "sha256": "05e0b5c15264749cfbb12120208f07a41d5bd22de26fdfee4f22a653f82d6512"
+    },
+    {
+      "path": "originals/2026-10-18-fx.raw",
+      "bytes": 70,
+      "sha256": "1297b3cbbd19b1dc51200f3b41e0bff2d2b22a1e8f96276efd1d2b8aa55b851d"
+    },
+    {
+      "path": "originals/2026-10-18-fy24.txt",
+      "bytes": 29391,
+      "sha256": "4fab4eb6f6025817f3f8ec988970035c707c1300222ca432f93430685128d118"
+    },
+    {
+      "path": "originals/2026-10-18-fy25-news.txt",
+      "bytes": 9573,
+      "sha256": "fb1262856c603eb4767ee0643528689e57f0b7fd08cb99b979c145cdd4cbe036"
+    },
+    {
+      "path": "originals/2026-10-18-h1.raw",
+      "bytes": 4238752,
+      "sha256": "c54a0ec83c9cef5c1bb4552219ec3a0edfae2402a5ea09098849dca29f7f0a3d"
+    },
+    {
+      "path": "originals/2026-10-18-h1.txt",
+      "bytes": 474166,
+      "sha256": "ba4842b1d6aad87f8b653c1ec0bd0360ead2cc7320950b93aec3dfd24e9e73c2"
+    },
+    {
+      "path": "originals/2026-10-18-indiana-news.txt",
+      "bytes": 13130,
+      "sha256": "15b82f51a8fccb67b05e85ea7b8287566881c05c426f570826950d7829ae3058"
+    },
+    {
+      "path": "originals/2026-10-18-investment-news.txt",
+      "bytes": 6700,
+      "sha256": "dcc075f183db7b61b08c79aed602f505232dcd9098b608fe21bf76309172f6d0"
+    },
+    {
+      "path": "originals/2026-10-18-ocp-news.txt",
+      "bytes": 19967,
+      "sha256": "84ac403415b73fc5faaf154e0ffd5c0f36e3c3efc91f4ea7578ce241425ee017"
+    },
+    {
+      "path": "originals/2026-10-18-oip-news.txt",
+      "bytes": 14348,
+      "sha256": "7e4f334a49c81adf9e2439864879997b0f33266caa24a064ae8c2cfc59c7704e"
+    },
+    {
+      "path": "originals/2026-10-18-q2-news.txt",
+      "bytes": 11318,
+      "sha256": "2bd2a35e80bf0ac20a886830aed929ceb3419077d8221c69cb85fc0359dbb3e9"
+    },
+    {
+      "path": "originals/2026-10-18-samsung-hbm4.txt",
+      "bytes": 6316,
+      "sha256": "3d1520319a1129e6b6911500513ea0399435c5b14544afaa429cc5498e602c70"
+    },
+    {
+      "path": "originals/2026-10-18-solidigm-news.txt",
+      "bytes": 6507,
+      "sha256": "45dd7e65a3dba20bade2f23e5f4fdfdfae35cdee737057f529d2004aafe02c9b"
+    },
+    {
+      "path": "originals/2026-10-18-submissions.raw",
+      "bytes": 6959,
+      "sha256": "79420608a542a901cbef2ad2322a9ded60495e1d1b525ae32e5f2f052c1b77b1"
+    },
+    {
+      "path": "originals/2026-10-18-trendforce-dram.txt",
+      "bytes": 55224,
+      "sha256": "026018379ebb20f6f5b5d2db052c03c9ea9592b180bbc851fde62dc0c6f2823b"
+    },
+    {
+      "path": "originals/2026-10-18-trendforce-nand.txt",
+      "bytes": 54341,
+      "sha256": "93e67c9bb425006f1273d9ffc2225d60f6c73acb73931a8318c8b9802d6ddf22"
+    }
+  ],
+  "note": "Text archives from primary documents; raw H1 and SEC index retained. Public source URLs in valuation inputs, notes and live-source-index; quote web reading separately archived as observation."
+}

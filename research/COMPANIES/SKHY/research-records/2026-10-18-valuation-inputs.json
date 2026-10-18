@@ -1,0 +1,234 @@
+{
+  "valuation_date": "2026-10-18",
+  "verified_facts": {
+    "quote": {
+      "close_USD_per_ADS": 136.49,
+      "date": "2026-10-16",
+      "timezone": "America/New_York",
+      "session": "regular close 16:00 EDT",
+      "source": "https://stockanalysis.com/stocks/skhy/",
+      "verification": "full page read via web; Yahoo historical search result corroborates; Nasdaq direct API unavailable"
+    },
+    "fx": {
+      "KRW_per_USD": 1332.1,
+      "date": "2026-10-16",
+      "definition": "ECB reference via Frankfurter; live JSON archived, not executable quote"
+    },
+    "ordinary_shares_per_ADS": 0.1,
+    "June_30_ordinary_outstanding": 711075500,
+    "IPO_new_ordinary_shares": 17790000,
+    "IPO_postoffering_ordinary_shares_proxy": 728865500,
+    "H1_2026_KRW_million": {
+      "cash_and_equivalents": 26835986,
+      "short_term_financial_instruments": 22397559,
+      "short_term_investment_assets": 38724378,
+      "current_borrowings": 5858873,
+      "noncurrent_borrowings": 12727761,
+      "current_lease_liabilities": 526461,
+      "noncurrent_lease_liabilities": 2000044,
+      "CFO": 91742501,
+      "PPE_cash_purchase": 18328836,
+      "intangible_cash_purchase": 665180,
+      "dividends_received_cash": 13983648,
+      "EBIT": 98152891,
+      "finance_income": 82915164,
+      "finance_expenses": 6664386,
+      "net_finance_income": 76250778,
+      "equity_accounted_profit": -46900,
+      "other_income": 28861,
+      "other_expense": 60417,
+      "pretax_profit": 174325213,
+      "income_tax_expense": 40056711,
+      "consolidated_profit": 134268502,
+      "parent_profit": 134150412,
+      "financial_valuation_gain": 63178974,
+      "dividend_income": 13979567,
+      "interest_income": 493257,
+      "interest_expense": 321277,
+      "current_tax_liabilities": 31958025,
+      "long_term_investment_assets": 85309524,
+      "exchangeable_bond_USD_balance": 0,
+      "revenue": 131895033,
+      "gross_profit": 107670770,
+      "capital_commitments_PPE": 61484533,
+      "share_based_compensation_note31": 148663,
+      "cash_tax_paid": 7704636,
+      "customer_A_revenue": 17608702,
+      "customer_B_revenue": 17187421,
+      "cash_capex": 18994016,
+      "simple_FCF": 72748485
+    },
+    "Q2_2026_KRW_million": {
+      "revenue": 79318746,
+      "gross_profit": 65991356,
+      "EBIT": 60542608,
+      "parent_profit": 93820236,
+      "financial_valuation_gain": 53237425,
+      "dividend_income": 10027945,
+      "finance_income": 65858814,
+      "finance_expenses": 3640903
+    },
+    "comparative_financials_KRW_million": {
+      "FY2024": {
+        "revenue": 66192960,
+        "gross_profit": 31828146,
+        "EBIT": 23467319,
+        "consolidated_profit": 19796902,
+        "CFO": 29795885,
+        "PPE_cash_purchase": 15945534,
+        "intangible_cash_purchase": 717106,
+        "cash_capex": 16662640,
+        "simple_FCF": 13133245
+      },
+      "FY2025": {
+        "revenue": 97146675,
+        "gross_profit": 58690790,
+        "EBIT": 47206319,
+        "consolidated_profit": 42947902,
+        "CFO": 53373126,
+        "PPE_cash_purchase": 27518924,
+        "intangible_cash_purchase": 1060419,
+        "cash_capex": 28579343,
+        "simple_FCF": 24793783
+      },
+      "H1_2025": {
+        "revenue": 39871093,
+        "gross_profit": 22085315,
+        "EBIT": 16653355,
+        "consolidated_profit": 15104411,
+        "CFO": 18189841,
+        "PPE_cash_purchase": 10615739,
+        "intangible_cash_purchase": 460437,
+        "cash_capex": 11076176,
+        "simple_FCF": 7113665
+      },
+      "TTM_2026Q2": {
+        "revenue": 189170615,
+        "gross_profit": 144276245,
+        "EBIT": 128705855,
+        "consolidated_profit": 162111993,
+        "CFO": 126925786,
+        "PPE_cash_purchase": 35232021,
+        "intangible_cash_purchase": 1265162,
+        "cash_capex": 36497183,
+        "simple_FCF": 90428603
+      }
+    }
+  },
+  "assumptions": {
+    "target_date": "2028-12-31",
+    "discount_rate": 0.12,
+    "future_diluted_ordinary_shares": 750000000,
+    "normal_net_interest_KRW_trillion": 0,
+    "parent_profit_fraction": 0.999,
+    "scenarios": {
+      "bear": {
+        "tax_rate": 0.28,
+        "low": {
+          "revenue_KRW_trillion": 240,
+          "operating_margin": 0.25,
+          "PE": 12
+        },
+        "high": {
+          "revenue_KRW_trillion": 270,
+          "operating_margin": 0.3,
+          "PE": 14
+        },
+        "midpoint": {
+          "revenue_KRW_trillion": 255.0,
+          "operating_margin": 0.275,
+          "PE": 13.0
+        },
+        "rationale": "价格回落及同业扩产使营收低于Q2年化水平，经营利润率回落至25–30%；周期性和较低增长给予12–14倍正常化税后利润。不是已发生事实。"
+      },
+      "base": {
+        "tax_rate": 0.27,
+        "low": {
+          "revenue_KRW_trillion": 300,
+          "operating_margin": 0.4,
+          "PE": 16
+        },
+        "high": {
+          "revenue_KRW_trillion": 360,
+          "operating_margin": 0.45,
+          "PE": 20
+        },
+        "midpoint": {
+          "revenue_KRW_trillion": 330.0,
+          "operating_margin": 0.42500000000000004,
+          "PE": 18.0
+        },
+        "rationale": "收入围绕Q2年化317.275万亿韩元上下，HBM结构性需求保留、但经营利润率由Q2约76.3%回落至40–45%。对已大幅下修的跨周期利润给予16–20倍，反映HBM领先和客户粘性溢价，不等于行业一致预期。"
+      },
+      "bull": {
+        "tax_rate": 0.27,
+        "low": {
+          "revenue_KRW_trillion": 400,
+          "operating_margin": 0.5,
+          "PE": 20
+        },
+        "high": {
+          "revenue_KRW_trillion": 440,
+          "operating_margin": 0.55,
+          "PE": 22
+        },
+        "midpoint": {
+          "revenue_KRW_trillion": 420.0,
+          "operating_margin": 0.525,
+          "PE": 21.0
+        },
+        "rationale": "HBM4/4E与服务器存储继续扩量，收入超过当前年化水平26–39%；较高但仍低于Q2的50–55%经营利润率可持续，20–22倍溢价须由长期合同、客户认证和现金回报支持。"
+      }
+    },
+    "normal_net_interest_rationale": "从上次+0.35改为0：40万亿回购、资本承诺及IPO后资金尚未完整桥接，不保证仍能赚取原年化净利息。收入/利润率/倍数重新评估后暂保留，均为条件假设，非共识。"
+  },
+  "sources": [
+    {
+      "id": "H1",
+      "original_url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526354777/d147827d6k.htm",
+      "read_url": "https://cdn.yahoofinance.com/prod/sec-filings/0002120882/000119312526354777/d147827d6k.htm",
+      "archive": "originals/2026-10-18-h1.raw",
+      "status": "full filing re-fetched 2026-10-18; consolidated pp4-8 notes4/6/14/24/29/31/32"
+    },
+    {
+      "id": "quote",
+      "url": "https://stockanalysis.com/stocks/skhy/",
+      "status": "full web page verified; shell403; price only accepted, share/marketcap/PE fields rejected due unit reconciliation gap"
+    },
+    {
+      "id": "fx",
+      "url": "https://api.frankfurter.dev/v1/2026-10-16?base=USD&symbols=KRW",
+      "archive": "originals/2026-10-18-fx.raw"
+    },
+    {
+      "id": "SEC-index",
+      "url": "https://data.sec.gov/submissions/CIK0002120882.json",
+      "archive": "originals/2026-10-18-submissions.raw"
+    },
+    {
+      "id": "buyback",
+      "url": "https://news.skhynix.com/en/share-buyback-and-retirement/",
+      "status": "full official page plus all three Aug19 SEC6Ks read"
+    },
+    {
+      "id": "F1A",
+      "url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526295501/d32785df1a.htm",
+      "read_url": "https://cdn.yahoofinance.com/prod/sec-filings/0002120882/000119312526295501/d32785df1a.htm",
+      "archive": "originals/2026-10-18-f1.txt",
+      "status": "July6 F1A live full text; audited FY2023-25 cashflow F10 and income F5; latest final424B4 inaccessible; final IPO share/ratio corroborated by H1 subsequent events"
+    }
+  ],
+  "limits": [
+    "Conditional earnings-power valuation, not a guaranteed price or broker consensus. The multiple, revenue, margins, taxes, 12% discount rate and future dilution are explicit researcher assumptions.",
+    "No annualization of Q2 reported net income: H1 finance income includes major fair-value gains and investment dividends; they are excluded from normalized profit.",
+    "Shares750million are a researcher dilution allowance, not verified October diluted shares; current market capitalization uses the IPO postoffering ordinary-share proxy. SBC is included in assumed operating costs, not added back. Exchangeable bonds reported fully converted at June30 are not also treated as outstanding debt/dilution.",
+    "Cash-related88trillionKRW includes financial instruments and investment assets, not just26.836trillion cash; CFO includes13.983648trillion investment dividend receipts and cash taxes below accounting tax expense. Simple FCF is not normalized owner earnings.",
+    "Historical/current market NTM Forward P/E has not been independently verified; own 2028 normal-profit multiples must not be labeled market Forward P/E.",
+    "No guarantee future capex, maintenance investment or working-capital requirements match earnings. P/E assumes meaningful cross-cycle cash conversion; if capex persistently exceeds depreciation and cash conversion fails, multiples or earnings must be reduced.",
+    "FX held at the reference-date rate is a convention, not a forecast. Future dividends/ADS fees/taxes are not included in the displayed price/value gaps. The existing report receives a targeted valuation/financial correction, not a claim of full new company research.",
+    "Normal net interest set to zero rather than +0.35T KRW in Oct15 model. No investment gains/dividends, cash, IPO proceeds or investment NAV added. A full after-tax SOTP may differ.",
+    "40.00434T KRW authorized buyback is not treated as completed. Future share denominator remains750M; buyback effect is a separate share-and-cash sensitivity, not free per-share uplift. Current marketcap is IPO-share proxy only.",
+    "2026-08-19 issued ordinary730492365 less treasury1625769 gives728866596 before repurchase, only1096 more than IPO proxy728865500; latest October actual outstanding unavailable.",
+    "Consolidated PPE commitments61.484533T KRW; current borrowings5.858873T; current tax liabilities31.958025T and optional40.00434T buyback require a dated funding bridge. Commitments are not all due at once; do not assert funding shortfall by adding them blindly."
+  ]
+}

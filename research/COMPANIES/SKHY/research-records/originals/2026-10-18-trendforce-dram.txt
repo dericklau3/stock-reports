@@ -1,0 +1,1278 @@
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K46V3NB8');
+DRAM Industry Revenue Rises 59.5% QoQ in 2Q26 as Supply Expansion Continues to Lag Demand Growth, Says TrendForce
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.trendforce.com",
+    "sameAs": [
+        "https://www.facebook.com/TrendForce.Global/",
+        "https://twitter.com/trendforce",
+        "https://www.linkedin.com/company/trendforce-corporation/"
+    ],
+    "logo": "https://www.trendforce.com/images/apple-touch-icon-152x152.png",
+    "name": "TrendForce",
+    "description": "TrendForce is a professional market research institute specializing in global high-tech industries. We provide in-depth analysis reports and consulting services on semiconductors, display technologies, consumer electronics, green energy, and emerging tech such as automotive electronics, AI, and 5G.",
+    "email": "service@trendforce.com"
+}
+window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+                googletag.defineSlot('/23101350658/TF_EN_PC_PressDTL_ContentBottom01_750x90', [750,90], 'div-gpt-ad-1747878554205-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "DRAM Industry Revenue Rises 59.5% QoQ in 2Q26 as Supply Expansion Continues to Lag Demand Growth, Says TrendForce",
+    "image": [
+        "https://img.trendforce.com/EDM/2026/09/20260907_144342_3.jpg"
+    ],
+    "datePublished": "2026-09-07T15:02:56+08:00",
+    "author": {
+        "@type": "Organization",
+        "name": "TrendForce",
+        "url": "https://www.trendforce.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "TrendForce",
+        "url": "https://www.trendforce.com"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.trendforce.com/presscenter/news/20260907-13219.html"
+    }
+}
+Research Report
+Back
+Research Report
+AI & Smart Terminals
+AI Server / Data Center
+Consumer Electronics
+Robot
+Semiconductors
+Memory & Storage
+IC Design
+Wafer Fabrication / Foundry
+Semiconductor Device
+IC Testing & Packaging
+Optoelectronics & Displays
+Display Applications
+Display Panel
+LED Lighting
+LED Display
+Specialty LED
+Emerging Technologies & Applications
+Automotive / EV
+Green Energy & Storage
+Selected Topics
+Semiconductors
+Telecommunications
+Computer System
+Consumer Electronics
+Automotive / EV
+Green Energy & Storage
+Display Panel & LED
+Economics
+Selected Topics
+Membership
+Back
+Semiconductor
+N
+Display
+Optoelectronics
+Green Energy
+ICT Applications Research
+Selected Topics
+Price Trends
+Back
+DRAM
+DRAM Spot Price
+DRAM Contract Price
+Module Spot Price
+GDDR Spot Price
+LPDDR Spot Price
+Mobile DRAM Contract Price
+NAND Flash
+NAND Flash Spot Price
+NAND Flash Contract Price
+Wafer Spot Price
+Memory Card Spot Price
+PC-Client OEM SSD Contract Price
+SSD Street Price
+NAND Flash Wafer Contract Price
+eMMC Spot Price
+eMMC/UFS Contract Price
+TFT-LCD
+Large Size Panel Price
+LCD Smartphone Panel Price
+Street Price
+Large Size Panel Shipment
+PV
+Polysilicon
+Wafer
+Cell
+Module
+PV Glass
+Li-Ion Battery
+Battery Cell & Pack
+Precursor & Cathode Material
+Anode Material
+Separator
+Electrolyte
+Li & Co & Ni
+Other
+Insights
+Back
+Industry Insights
+News
+Press Center
+Roadshow
+Discover
+Back
+DataTrack
+AI Agent
+Data Center Tracker
+Sign In
+Get Support
+Popular Keywords
+#DRAM
+#Foundry
+#AI Server
+#HBM
+#FOPLP
+#CoWoS
+#NAND Flash
+#Automotive
+#MLCC
+#Server
+#Micro LED
+#IC Design
+Shopping List
+0 items
+Your cart is empty
+Total
+USD 0
+View Cart
+Sign In
+// 遊客訪問必要取得的cookie，會在未登入購買時傳給cart那端
+    (function () {
+        function getCookie(name) {
+            const value = '; ' + document.cookie;
+            const parts = value.split('; ' + name + '=');
+            if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+            return null;
+        }
+
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + encodeURIComponent(value) + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+
+        try {
+            if (!getCookie('guest_id')) {
+                const ts = Date.now();
+                const rnd = Math.floor(1000 + Math.random() * 9000);
+                const guestId = '' + ts + rnd;
+                setCookie('guest_id', guestId, 30);
+            }
+        } catch (e) {
+            console.error('guest_id cookie setup failed', e);
+        }
+    })();
+document.addEventListener('DOMContentLoaded', function () {
+        const socialIcon = document.querySelector('.social-icon.active');
+        const accountContent = document.querySelector('.header_account-content');
+        if (!socialIcon || !accountContent) return;
+
+        socialIcon.addEventListener('mouseover', function () {
+            accountContent.style.display = 'flex';
+        });
+
+        accountContent.addEventListener('mouseleave', function () {
+            accountContent.style.display = 'none';
+        });
+    });
+// 搜尋列（輸入框 → X 清除 → 放大鏡按鈕送出），沿用 header_v3_prototype.html 的互動邏輯
+    document.addEventListener('DOMContentLoaded', function () {
+        const executeSearch = (query, src) => {
+            if (!query) return;
+            window.location.href = `/search?query=${encodeURIComponent(query)}&src=${encodeURIComponent(src)}`;
+        };
+
+        document.querySelectorAll('.header_search-container').forEach(function (container) {
+            const input = container.querySelector('.header_search-input');
+            const clearBtn = container.querySelector('.header_search-clear');
+            const submitBtn = container.querySelector('.header_search-submit');
+            if (!input || !clearBtn || !submitBtn) return;
+
+            function syncHasValue() {
+                container.classList.toggle('has-value', input.value.trim().length > 0);
+            }
+            syncHasValue();
+            input.addEventListener('input', syncHasValue);
+
+            clearBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                input.value = '';
+                syncHasValue();
+                input.focus();
+            });
+
+            submitBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                executeSearch(input.value.trim(), input.getAttribute('data-search-bar') || 'navbar');
+            });
+            input.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    executeSearch(input.value.trim(), input.getAttribute('data-search-bar') || 'navbar');
+                }
+            });
+        });
+
+        // 手機/平板：Menu 內搜尋匡預設收合，由 Menu Header 放大鏡展開/收合；
+        // 外部搜尋圖示開 Menu 時直接以展開狀態呈現
+        const searchToggle = document.querySelector('.tf-hd2-search-toggle');
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const menuSearch = document.querySelector('.tf-hd2-menu-search');
+        const menuSearchToggle = document.querySelector('.tf-hd2-menu-search-toggle');
+        const menuInput = menuSearch ? menuSearch.querySelector('.header_search-input') : null;
+
+        function openMenuSearch(instant) {
+            if (!menuSearch) return;
+            if (instant) menuSearch.classList.add('tf-hd2-no-anim');
+            menuSearch.classList.add('is-open');
+            if (menuSearchToggle) {
+                menuSearchToggle.classList.add('is-active');
+                menuSearchToggle.setAttribute('aria-expanded', 'true');
+            }
+            if (instant) {
+                requestAnimationFrame(function () { menuSearch.classList.remove('tf-hd2-no-anim'); });
+            }
+        }
+
+        function closeMenuSearch() {
+            if (!menuSearch) return;
+            menuSearch.classList.remove('is-open');
+            if (menuSearchToggle) {
+                menuSearchToggle.classList.remove('is-active');
+                menuSearchToggle.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        if (menuSearchToggle && menuSearch) {
+            menuSearchToggle.addEventListener('click', function () {
+                if (menuSearch.classList.contains('is-open')) {
+                    closeMenuSearch();
+                } else {
+                    openMenuSearch(false);
+                    if (menuInput) menuInput.focus();
+                }
+            });
+        }
+
+        if (searchToggle && navbarToggle) {
+            searchToggle.addEventListener('click', function () {
+                navbarToggle.click();
+                openMenuSearch(true);
+                setTimeout(function () { if (menuInput) menuInput.focus(); }, 350);
+            });
+        }
+
+        if (navbarToggle) {
+            let mobileMenuOpen = false;
+            navbarToggle.addEventListener('click', function () {
+                mobileMenuOpen = !mobileMenuOpen;
+                if (!mobileMenuOpen) closeMenuSearch();
+            });
+        }
+    });
+// 一級導覽：桌機 hover 展開／手機平板點擊右滑；沿用 header_v3_prototype.html 的互動邏輯
+    document.addEventListener('DOMContentLoaded', function () {
+        const isMobile = function () { return window.matchMedia('(max-width: 991px)').matches; };
+        const items = document.querySelectorAll('.tf-hd2-has-children');
+
+        function closeAll(except) {
+            items.forEach(function (li) {
+                if (li !== except) {
+                    li.classList.remove('tf-hd2-open');
+                    const a = li.querySelector(':scope > a');
+                    if (a) a.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        items.forEach(function (li) {
+            const toggle = li.querySelector(':scope > a.dropdown-toggle');
+            let closeTimer = null;
+
+            li.addEventListener('mouseenter', function () {
+                if (isMobile()) return;
+                clearTimeout(closeTimer);
+                closeAll(li);
+                li.classList.add('tf-hd2-open');
+                if (toggle) toggle.setAttribute('aria-expanded', 'true');
+            });
+            li.addEventListener('mouseleave', function () {
+                if (isMobile()) return;
+                clearTimeout(closeTimer);
+                closeTimer = setTimeout(function () {
+                    li.classList.remove('tf-hd2-open');
+                    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+                }, 250);
+            });
+
+            if (toggle) {
+                toggle.addEventListener('click', function (e) {
+                    if (!isMobile()) return;
+                    e.preventDefault();
+                    closeAll(li);
+                    li.classList.add('tf-hd2-open');
+                    toggle.setAttribute('aria-expanded', 'true');
+                });
+            }
+
+            const backBtn = li.querySelector('.tf-hd2-panel-back');
+            if (backBtn) {
+                backBtn.addEventListener('click', function () {
+                    li.classList.remove('tf-hd2-open');
+                    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+
+        document.querySelectorAll('.tf-hd2-mega-grid').forEach(function (grid) {
+            const cats = grid.querySelectorAll(':scope > .tf-hd2-mega-cat');
+            cats.forEach(function (cat) {
+                const head = cat.querySelector('.tf-hd2-mega-cat-head');
+                if (!head) return;
+                head.addEventListener('click', function () {
+                    if (!isMobile()) return;
+                    const wasOpen = cat.classList.contains('tf-hd2-acc-open');
+                    cats.forEach(function (c) { c.classList.remove('tf-hd2-acc-open'); });
+                    if (!wasOpen) cat.classList.add('tf-hd2-acc-open');
+                });
+            });
+        });
+    });
+/**
+     * Cart Dropdown Interaction Logic（沿用既有 v2 購物車邏輯，class 名稱未變）
+     */
+    window.getCartCookieName = function () {
+        const locale = 'en';
+        const languageMap = { 'zh-tw': 'tw', 'zh-cn': 'en', 'en': 'en' };
+        const langSuffix = languageMap[locale] || 'en';
+        return 'cart_' + langSuffix;
+    };
+
+    window.getCookie = function (name) {
+        const value = '; ' + document.cookie;
+        const parts = value.split('; ' + name + '=');
+        if (parts.length === 2) {
+            return decodeURIComponent(parts.pop().split(';').shift());
+        }
+        return null;
+    };
+
+    window.isInCart = function (packageId) {
+                    const cartCookieName = window.getCartCookieName();
+            const guestCart = window.getCookie(cartCookieName);
+            if (guestCart) {
+                try {
+                    const cartData = JSON.parse(guestCart);
+                    return cartData.some(function (item) { return item.package_id == packageId; });
+                } catch (e) {
+                    console.error('檢查購物車失敗:', e);
+                    return false;
+                }
+            }
+            return false;
+            };
+
+    function getCookie(name) {
+        const value = '; ' + document.cookie;
+        const parts = value.split('; ' + name + '=');
+        if (parts.length === 2) {
+            return decodeURIComponent(parts.pop().split(';').shift());
+        }
+        return null;
+    }
+
+    function setCookie(name, value, minutes) {
+        if (minutes === 0) {
+            document.cookie = name + '=' + encodeURIComponent(value) + ';path=/';
+        } else {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + minutes * 60 * 1000);
+            document.cookie = name + '=' + encodeURIComponent(value) + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+    }
+
+    function mergeCartData(existingItems, newItems) {
+        const cartMap = new Map();
+        existingItems.forEach(function (item) {
+            if (item.package_id) cartMap.set(String(item.package_id), item);
+        });
+        newItems.forEach(function (item) {
+            if (item.package_id && !cartMap.has(String(item.package_id))) {
+                cartMap.set(String(item.package_id), item);
+            }
+        });
+        return Array.from(cartMap.values());
+    }
+
+    function updateCartDisplay(cartData) {
+        const itemsContainer = document.querySelector('.cart-dropdown-items');
+        const countBadge = document.querySelector('.cart-count-badge');
+        const totalAmount = document.querySelector('.cart-total-amount');
+        // 桌機/手機選單各有一顆 .cart-button，querySelector 只會抓到第一顆，另一顆紅燈狀態永遠不會更新
+        const cartButtons = document.querySelectorAll('.cart-button');
+
+        if (!cartData || cartData.length === 0) {
+            cartButtons.forEach(function (btn) { btn.classList.remove('has-items'); });
+            if (itemsContainer) itemsContainer.innerHTML = '<div class="text-center" style="padding: 40px 0; color: #999; font-size: 14px;">Your cart is empty</div>';
+                            if (countBadge) countBadge.textContent = '0 items';
+                if (totalAmount) totalAmount.textContent = 'USD 0';
+                        return;
+        }
+        cartButtons.forEach(function (btn) { btn.classList.add('has-items'); });
+                    if (countBadge) countBadge.textContent = cartData.length + (cartData.length === 1 ? ' item' : ' items');
+        
+        let total = 0;
+        let html = '';
+        cartData.forEach(function (item) {
+            const price = parseFloat(item.product_price || item.price) || 0;
+            total += price;
+
+            html += '<div class="cart-item" data-package-id="' + item.package_id + '">';
+            html += '<div class="cart-item-info">';
+            html += '<div class="cart-item-name">' + (item.brand_product_name || item.package_name || item.name || '') + '</div>';
+                            html += '<div class="cart-item-price">' + item.currency + ' ' + price.toLocaleString('en-US') + '</div>';
+                        html += '</div>';
+            html += '<i class="fa fa-times cart-item-remove"></i>';
+            html += '</div>';
+        });
+
+        if (itemsContainer) itemsContainer.innerHTML = html;
+                    if (totalAmount) totalAmount.textContent = 'USD ' + total.toLocaleString('en-US');
+            }
+
+    window.loadCartData = function () {
+                    const cartCookieName = getCartCookieName();
+            const guestCart = getCookie(cartCookieName);
+
+            if (guestCart) {
+                try {
+                    const cartData = JSON.parse(guestCart);
+                    updateCartDisplay(cartData);
+                } catch (e) {
+                    console.error('解析 Cookie 購物車失敗（可能是舊的加密格式）:', e);
+                    document.cookie = cartCookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                    updateCartDisplay([]);
+                }
+            } else {
+                updateCartDisplay([]);
+            }
+            };
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const cartDropdown = document.querySelector('.cart-dropdown');
+        if (!cartDropdown) return;
+
+        setTimeout(function () {
+            document.querySelectorAll('[data-cart-package]').forEach(function (button) {
+                const packageId = button.getAttribute('data-cart-package');
+                if (packageId && typeof window.isInCart === 'function' && window.isInCart(packageId)) {
+                    const cartAction = (button.getAttribute('data-cart') || '').toLowerCase();
+                    button.classList.add('added');
+                    if (cartAction === 'add_to_cart' || cartAction === 'add_cart') {
+                        const img = button.querySelector('img');
+                        const span = button.querySelector('span');
+                        if (img) {
+                            img.src = '/images/addedcart.svg';
+                            if (span) span.textContent = 'Added to Cart';
+                        } else if (span) {
+                            span.textContent = 'Added to Cart';
+                        } else if (button.tagName && (button.tagName.toLowerCase() === 'button' || button.tagName.toLowerCase() === 'a')) {
+                            button.innerHTML = '<span>Added to Cart</span>';
+                        } else {
+                            button.textContent = 'Added to Cart';
+                        }
+                        try { button.disabled = true; } catch (e) { }
+                    }
+                }
+            });
+        }, 100);
+
+                    loadCartData();
+        
+                fetch('/api/cart/checkGuestCartSync', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                            }
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            if (data.error === 0 && data.need_sync && data.cart_data) {
+                const cartData = data.cart_data;
+                const currentCookieName = getCartCookieName();
+                const currentLang = 'en';
+                const targetCurrency = currentLang === 'tw' ? 1 : 2;
+
+                const langItems = [];
+                cartData.forEach(function(item) {
+                    if (item.currency == targetCurrency) {
+                        langItems.push({
+                            package_id: item.brand_product_id,
+                            brand_product_name: item.brand_product_name || item.title || '',
+                            product_price: item.brand_product_price || item.price || 0,
+                            currency: item.currency == 1 ? 'TWD' : (currentLang === 'en' ? 'USD' : 'RMB'),
+                            checked: item.checked == 1,
+                            brand: item.brand || 1,
+                            product_url: item.product_url || '',
+                            report_number: item.report_number || ''
+                        });
+                    }
+                });
+
+                setCookie(currentCookieName, JSON.stringify(langItems), 525600);
+                updateCartDisplay(langItems);
+            }
+        })
+        .catch(function(error) {});
+
+        cartDropdown.addEventListener('click', function(e) {
+            if (e.target.classList.contains('cart-item-remove')) {
+                const item = e.target.closest('.cart-item');
+                if (item) {
+                    const packageId = item.dataset.packageId;
+
+                    const confirmMessage = 'Remove this item from the cart?';
+                    if (!confirm(confirmMessage)) {
+                        return;
+                    }
+
+                    item.style.transition = 'all 0.3s ease';
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateX(20px)';
+
+                    setTimeout(function() {
+                                                    removeCookieItem(packageId);
+                                            }, 300);
+                }
+            }
+        });
+
+    function removeCookieItem(packageId) {
+        fetch('/api/cart/removePackage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+            },
+            body: JSON.stringify({ package_id: packageId })
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            if (data.error === 0) {
+                const cartCookieName = getCartCookieName();
+                const guestCart = getCookie(cartCookieName);
+                if (guestCart) {
+                    try {
+                        let cartData = JSON.parse(guestCart);
+                        cartData = cartData.filter(function(item) { return item.package_id != packageId; });
+                        setCookie(cartCookieName, JSON.stringify(cartData), 525600);
+                        updateCartDisplay(cartData);
+                        restoreCartButton(packageId);
+                    } catch (e) {
+                        console.error('更新 Cookie 失敗:', e);
+                    }
+                }
+            }
+        })
+        .catch(function(error) {
+            console.error('移除失敗:', error);
+        });
+    }
+
+    function removeFromCart(packageId) {
+        fetch('/api/cart/removePackage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+            },
+            body: JSON.stringify({ package_id: packageId })
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            if (data.error === 0) {
+                const userId = '';
+                if (userId) {
+                    document.cookie = 'user_cart_' + userId + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                }
+                loadCartData();
+                restoreCartButton(packageId);
+            }
+        })
+        .catch(function(error) {
+            console.error('移除失敗:', error);
+        });
+    }
+
+    function restoreCartButton(packageId) {
+        if (!packageId) return;
+
+        document.querySelectorAll('[data-cart-package="' + packageId + '"]').forEach(function(button) {
+            const cartAction = (button.getAttribute('data-cart') || '').toLowerCase();
+            button.classList.remove('added');
+
+            if (cartAction !== 'add_to_cart' && cartAction !== 'add_cart') return;
+
+            button.disabled = false;
+            const img = button.querySelector('img');
+            const span = button.querySelector('span');
+            const addToCartText = 'Add to Cart';
+
+            if (img) {
+                img.src = button.classList.contains('cart-icon-btn') ? '/images/addcart-g.svg' : '/images/addcart.svg';
+                img.alt = 'addcart';
+                if (span) span.textContent = addToCartText;
+            } else if (span) {
+                span.textContent = addToCartText;
+            } else if (button.tagName.toLowerCase() === 'button' || button.tagName.toLowerCase() === 'a') {
+                if (button.id === 'btnAddToCart') {
+                    button.innerHTML = '<i class="fa fa-shopping-cart" aria-hidden="true"></i><span>' + addToCartText + '</span>';
+                } else if (button.classList.contains('add-cart-btn')) {
+                    button.innerHTML = '<img src="/images/addcart.svg" alt="addcart"><span>' + addToCartText + '</span>';
+                } else {
+                    button.innerHTML = '<span>' + addToCartText + '</span>';
+                }
+            } else {
+                button.textContent = addToCartText;
+            }
+        });
+    }
+
+    function mergeGuestCartOnLogin() {
+        const cartCookieName = getCartCookieName();
+        const guestCart = getCookie(cartCookieName);
+        if (!guestCart) {
+            return;
+        }
+
+        try {
+            const cartData = JSON.parse(guestCart);
+            if (cartData.length === 0) {
+                document.cookie = cartCookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                return;
+            }
+
+            let mergePromises = cartData.map(function(item) {
+                return fetch('/api/cart/addPackage', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': 'mFWQOnfSazxm3e9q1XqiTbmyYa31ixPjOBuWJTl3'
+                    },
+                    body: JSON.stringify({
+                        package_id: item.package_id,
+                        report_number: item.report_number,
+                        checked: 'true'
+                    })
+                })
+                .then(function(response) { return response.json(); })
+                .then(function(json) {
+                    if (json.error === 0) {
+                        return { success: true, item: item };
+                    } else if (json.error === 2) {
+                        return { success: true, item: item, duplicate: true };
+                    } else {
+                        return { success: false, item: item };
+                    }
+                })
+                .catch(function(error) {
+                    console.error('合併商品錯誤:', item.package_name, error);
+                    return { success: false, item: item };
+                });
+            });
+
+            Promise.all(mergePromises).then(function(results) {
+                document.cookie = cartCookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+
+                const userId = '';
+                if (userId) {
+                    document.cookie = 'user_cart_' + userId + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                }
+
+                loadCartData();
+            });
+
+        } catch (e) {
+            console.error('合併訪客購物車失敗:', e);
+            document.cookie = cartCookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        }
+    }
+    });
+
+    (function () {
+        var _lastCartRefresh = 0;
+        var CART_REFRESH_INTERVAL = 10000;
+
+        function syncGuestCartFromExternal() {
+            var csrfMeta = document.querySelector('meta[name="csrf-token"]');
+            fetch('/api/cart/checkGuestCartSync', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfMeta ? csrfMeta.getAttribute('content') : ''
+                }
+            })
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                if (data.error === 0 && data.cart_data) {
+                    var currentCookieName = getCartCookieName();
+                    var currentLang = 'en';
+                    var targetCurrency = currentLang === 'tw' ? 1 : 2;
+                    var langItems = [];
+                    data.cart_data.forEach(function(item) {
+                        if (item.currency == targetCurrency) {
+                            langItems.push({
+                                package_id: item.brand_product_id,
+                                brand_product_name: item.brand_product_name || item.title || '',
+                                product_price: item.brand_product_price || item.price || 0,
+                                currency: item.currency == 1 ? 'TWD' : (currentLang === 'en' ? 'USD' : 'RMB'),
+                                checked: item.checked == 1,
+                                brand: item.brand || 1,
+                                product_url: item.product_url || '',
+                                report_number: item.report_number || ''
+                            });
+                        }
+                    });
+                    setCookie(currentCookieName, JSON.stringify(langItems), 525600);
+                    updateCartDisplay(langItems);
+                } else {
+                    window.loadCartData();
+                }
+            })
+            .catch(function() {
+                window.loadCartData();
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var wrapper = document.querySelector('.cart-button-wrapper');
+            if (!wrapper) return;
+
+            wrapper.addEventListener('mouseenter', function() {
+                var now = Date.now();
+                if (now - _lastCartRefresh < CART_REFRESH_INTERVAL) return;
+                _lastCartRefresh = now;
+
+                                    syncGuestCartFromExternal();
+                            });
+        });
+    })();
+
+    window.clearUserCartCookie = function() {
+        try {
+            document.cookie = 'cart_tw=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            document.cookie = 'cart_en=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            document.cookie = 'guest_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        } catch (e) {
+            try { document.cookie = 'cart_tw=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; } catch (e) {}
+            try { document.cookie = 'cart_en=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; } catch (e) {}
+            try { document.cookie = 'guest_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; } catch (e) {}
+        }
+    };
+// 自動為指向 /api/cart/toList 的連結與 window.open/location.assign 附加 guest_id
+    (function () {
+        function safeGetCookie(name) {
+            try {
+                if (typeof window.getCookie === 'function') return window.getCookie(name);
+                var v = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+                return v ? decodeURIComponent(v.pop()) : null;
+            } catch (e) { return null; }
+        }
+
+        function appendGuestIdToUrl(url) {
+            try {
+                if (!url || url.indexOf('/api/cart/toList') === -1) return url;
+                var guest = safeGetCookie('guest_id');
+                if (!guest) return url;
+                if (url.indexOf('guest_id=') !== -1) return url;
+                var sep = url.indexOf('?') === -1 ? '?' : '&';
+                return url + sep + 'guest_id=' + encodeURIComponent(guest);
+            } catch (e) { return url; }
+        }
+
+        document.addEventListener('click', function(e){
+            var a = e.target.closest && e.target.closest('a[href]');
+            if (!a) return;
+            var href = a.getAttribute('href');
+            if (!href) return;
+            if (href.indexOf('/api/cart/toList') === -1) return;
+
+            var newHref = appendGuestIdToUrl(href);
+            if (newHref === href) return;
+
+            e.preventDefault();
+            if (e.ctrlKey || e.metaKey || a.target === '_blank' || e.button === 1) {
+                window.open(newHref, '_blank');
+                return;
+            }
+
+            window.location.href = newHref;
+        }, true);
+
+        (function () {
+            var origOpen = window.open;
+            window.open = function(url, name, specs){
+                try { if (typeof url === 'string') url = appendGuestIdToUrl(url); } catch (e) {}
+                return origOpen.call(window, url, name, specs);
+            };
+        })();
+
+        try {
+            var origAssign = window.location.assign;
+            window.location.assign = function(url){
+                try { if (typeof url === 'string') url = appendGuestIdToUrl(url); } catch (e) {}
+                return origAssign.call(window.location, url);
+            };
+        } catch (e) {}
+    })();
+Press Center
+Home
+Press Center
+DRAM Industry Revenue Rises 59.5% QoQ in 2Q26 as Supply Expansion Continues to Lag Demand Growth, Says TrendForce
+7 September 2026
+Semiconductors
+TrendForce
+TrendForce’s latest findings on the memory industry reveal that sharp rises in traditional DRAM contract prices have led to a 59.5% QoQ increase in total DRAM industry revenue, reaching nearly US$154.73 billion in 2Q26.
+Growing demand for AI servers, fueled by expanding LLM training and AI inference, has driven higher shipments of HBM3e, LPDDR5X, and high-capacity RDIMMS. The surge in agentic AI applications is further boosting RDIMM demand across various capacities.
+On the supply side, suppliers’ inventories remain at historic lows, with additional supply mainly allocated for server use. Consequently, DRAM bit shipments grew only modestly in the second quarter.
+Looking ahead, modest growth in bit shipments is expected to be one of the key factors affecting third-quarter revenue. Conventional DRAM contract price growth, however, is projected to moderate to 13–18% QoQ. This reflects a shift in some demand from high-capacity RDIMMs toward lower-capacity products, as well as the limited ability of PC and smartphone customers to absorb further price increases. Consumer DRAM is expected to post the strongest price growth, as suppliers have significantly curtailed supply.
+TrendForce notes that Samsung posted the strongest QoQ bit shipment growth among the three major suppliers in 2Q26, supported by its early move into HBM4 mass production and shipments. Combined with a substantial increase in ASP, this lifted Samsung’s quarterly revenue to $60.98 billion, up 63.4% QoQ. The company ranked first with a market share of 39.4%.
+SK hynix ranked second. Since HBM accounted for the highest proportion of its total bit shipments among the top three suppliers, growth in ASP was relatively limited. Its 2Q26 revenue increased 37.9% QoQ to $38.59 billion, while market share edged down to 24.9%.
+Micron continued to prioritize higher-priced server DRAM in its product mix amid capacity constraints. Revenue rose 65.5% QoQ to $36.0 billion in 2Q26, lifting its market share slightly to 23.3%. TrendForce notes that from 2026 to 2027, the three major suppliers will primarily increase bit supply by accelerating migrations to advanced processes.
+Meanwhile, wafer starts are expected to see only modest increases through production process optimization, cleanroom acquisitions, and the reallocation of cleanroom space from other product lines.
+By comparison, suppliers such as Nanya, Winbond, and PSMC remain focused on mature-process products, with their 2Q26 growth continuing to benefit from demand that the three major suppliers can no longer fully serve as they migrate to more advanced processes. Significant increases in DDR4 and DDR3 contract prices drove Nanya’s revenue up 68.3% QoQ to $2.612 billion. Winbond’s revenue increased 75.8% QoQ to $998 million.
+PSMC’s reported DRAM revenue, primarily derived from consumer DRAM products, surged 167.8% QoQ to $115 million in 2Q26. Including foundry revenue, its total revenue increased 54% QoQ. Looking ahead, the company is expected to begin its next phase of supply expansion after obtaining a process technology license from Micron.
+For more information on TrendForce’s semiconductor reports and market data, please visit the
+Report Page
+, leave a
+Message
+, or
+Email
+(SR_MI@trendforce.com) the Sales Department.
+For more on the latest technology industry news and trends, please visit
+News
+.
+Previous Article
+Early Purchases Lift 2026 Smartphone Production Above Expectations; Full-Year Forecast Raised to 1.07 Billion Units, Says TrendForce
+Next Article
+Improved CPU Supply Narrows 2026 Global Notebook Shipment Decline to 9.4%, but Brands Still Face Heavy Cost Pressure, Says TrendForce
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1747878554205-0'); });
+Subject
+Press Releases
+Subscribe to Newsletters
+Attribution Guide
+RSS Subscription
+In-Depth Analyses
+Infographics
+Videos
+Related Articles
+CSP CapEx Projected to Exceed US$1.5 Trillion in 2027, with AI Server Revenue Growing Over 90% YoY on Higher Shipments and Prices, Says TrendForce
+2026.10.14
+Integrated Optical-Electrical Testing Platforms Become Key to CPO Mass Production, Reshaping the Test Equipment Supply Chain, Says TrendForce
+2026.10.13
+Six Leading Suppliers Bet on VCSEL NPO; VCSEL Demand Projected to Reach 650 Million Units by 2031, Says TrendForce
+2026.10.08
+Related Reports
+WW SSD Street Price - Oct. 16, 2026
+2026.10.16
+DRAM Monthly Datasheet Oct. 2026
+2026.10.16
+NAND Flash Monthly Datasheet Oct. 2026
+2026.10.15
+//手機板圖片放大鏡功能
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('DOMContentLoaded fired');
+
+                // 自動將文章內的外部連結設為開啟新分頁
+                try {
+                    const links = document.querySelectorAll('article a');
+                    links.forEach(link => {
+                        // 檢查是否有 hostname 且與當前網站不同
+                        if (link.hostname && link.hostname !== window.location.hostname) {
+                            link.target = '_blank';
+                            // 安全性最佳實踐：加上 noopener noreferrer
+                            link.rel = 'noopener noreferrer';
+                        }
+                    });
+                } catch (e) {
+                    console.error('Error handling external links:', e);
+                }
+
+                
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    console.log('Mobile view detected');
+                    
+                    // 遍歷<article>內的<p>，尋找圖片
+                    const articleParagraphs = document.querySelectorAll("article p");
+                    console.log('Found paragraphs:', articleParagraphs.length);
+                    
+                    articleParagraphs.forEach(p => {
+                        const img = p.querySelector("img");
+                        if (!img) return; 
+
+                        console.log('Found image in paragraph:', img.src);
+                        
+                        // 給放大鏡圖示CSS定位用 class
+                        p.classList.add("has-img-zoom");
+                        console.log('Added has-img-zoom class to paragraph');
+
+                        // 防止重複綁定事件
+                        if (p.dataset.zoomBound) return;
+                        p.dataset.zoomBound = "true";
+
+                        // 監聽圖片區塊的點擊事件
+                        p.addEventListener("click", function (e) {
+                            const rect = p.getBoundingClientRect();
+                            const iconSize = 40; // 放大鏡圖示的觸控範圍
+                            
+                            // 計算滑鼠/手指點擊位置相對於圖片元素的座標
+                            const x = e.clientX - rect.left;
+                            const y = e.clientY - rect.top;
+                            
+                            // 判定是否點擊在右上角的放大鏡圖示範圍內
+                            const clickedInIcon = (x >= rect.width - iconSize) && (y <= iconSize + 10);
+                            
+                            console.log('Click detected:', {x, y, clickedInIcon});
+                            
+                            if (!clickedInIcon) return;
+
+                            e.preventDefault();
+                            e.stopPropagation();
+                            openLightbox(img.src, img.alt || ""); // 開啟燈箱
+                        });
+                    });
+
+                    // 開啟燈箱
+                    function openLightbox(src, alt) {
+                        let lightbox = document.getElementById("img-lightbox");
+                        const hostname = window.location.hostname;
+                        const isTwSite = hostname.includes(".com.tw"); //中文站
+                        let txtZoomIn, txtZoomOut;
+
+                        if (isTwSite) {
+                            // 台灣站 (.com.tw) -> 使用中文
+                            txtZoomIn = "點圖放大";
+                            txtZoomOut = "點圖縮小";
+                        } else {
+                            // 全球站 (.com) 或其他 -> 使用英文 (強調點擊圖片)
+                            txtZoomIn = "Tap Image to Zoom";
+                            txtZoomOut = "Tap Image to Reset";
+                        }
+
+                        // --- 2. 如果燈箱 DOM 不存在，則動態建立 (只執行一次) ---
+                        if (!lightbox) {
+                            lightbox = document.createElement("div");
+                            lightbox.id = "img-lightbox";
+
+                            // 建立頂部提示文字框
+                            const hint = document.createElement("div");
+                            hint.className = "hint-text";
+                            hint.innerText = txtZoomIn; // 預設顯示放大提示
+                            lightbox.appendChild(hint);
+
+                            // 建立圖片容器 (負責 CSS Grid 置中與捲動功能)
+                            const container = document.createElement("div");
+                            container.className = "img-container"; 
+                            
+                            const enlargedImg = document.createElement("img");
+                            container.appendChild(enlargedImg);
+                            lightbox.appendChild(container);
+
+                            // 建立右上角關閉按鈕 (X)
+                            const closeBtn = document.createElement("div");
+                            closeBtn.className = "close-btn";
+                            closeBtn.innerHTML = "&times;";
+                            
+                            // 定義關閉行為函式
+                            const closeAction = () => {
+                                lightbox.style.display = "none";
+                                document.body.style.overflow = ""; // 恢復背景網頁捲動
+                                
+                                // 重置所有狀態：移除放大 class、捲動軸歸零、清空圖片來源
+                                container.classList.remove("zoomed");
+                                container.scrollTop = 0;
+                                container.scrollLeft = 0;
+                                enlargedImg.src = ""; 
+                                
+                                // 文字重置回初始狀態
+                                hint.innerText = txtZoomIn;
+                            };
+
+                            closeBtn.addEventListener("click", closeAction);
+                            lightbox.appendChild(closeBtn);
+                            document.body.appendChild(lightbox);
+                            
+                            // --- 3. 圖片點擊互動：切換放大/縮小 ---
+                            // 使用單一事件監聽器處理 lightbox 內的所有點擊
+                            lightbox.addEventListener("click", (e) => {
+                                // 判斷點擊的是否為圖片
+                                if (e.target === enlargedImg) {
+                                    e.stopPropagation(); 
+                                    
+                                    // 圖片點擊邏輯：切換放大/縮小
+                                    if (container.classList.contains("zoomed")) {
+                                        // 當前是放大 -> 執行縮小
+                                        container.classList.remove("zoomed");
+                                        hint.innerText = txtZoomIn;
+                                        
+                                        // 強制重置樣式，確保圖片縮回適合螢幕的大小且不佔用額外空間
+                                        enlargedImg.style.width = "auto";
+                                        enlargedImg.style.height = "auto";
+                                        enlargedImg.style.maxWidth = "100%";
+                                        enlargedImg.style.maxHeight = "100%";
+                                    } else {
+                                        // 當前是縮小 -> 執行放大
+                                        container.classList.add("zoomed");
+                                        hint.innerText = txtZoomOut;
+                                        
+                                        // 清除 inline 樣式，讓 CSS 類別 (.zoomed img) 控制放大效果
+                                        enlargedImg.style.width = "";
+                                        enlargedImg.style.height = "";
+                                        enlargedImg.style.maxWidth = "";
+                                        enlargedImg.style.maxHeight = "";
+                                    }
+                                } else {
+                                    // 點擊圖片以外的任何區域（Lightbox 背景、Container 空白處） -> 執行關閉
+                                    closeAction();
+                                }
+                            });
+                        }
+
+                        // --- 4. 每次開啟燈箱時的初始化設定 ---
+                        const hint = lightbox.querySelector(".hint-text");
+                        if(hint) hint.innerText = txtZoomIn;
+
+                        const enlargedImg = lightbox.querySelector("img");
+                        const container = lightbox.querySelector(".img-container");
+                        
+                        // 設定圖片來源與替代文字
+                        enlargedImg.src = src;
+                        enlargedImg.alt = alt || "";
+
+                        // 確保初始狀態樣式正確：僅佔用內容大小
+                        enlargedImg.style.width = "auto";
+                        enlargedImg.style.height = "auto";
+                        enlargedImg.style.maxWidth = "100%";
+                        enlargedImg.style.maxHeight = "100%";
+
+                        // 強制重置為「未放大」狀態
+                        container.classList.remove("zoomed");
+                        container.scrollTop = 0;
+                        container.scrollLeft = 0;
+
+                        // 顯示燈箱並鎖定背景滾動
+                        lightbox.style.display = "block";
+                        document.body.style.overflow = "hidden";
+                    }
+                } else {
+                    console.log('Desktop view - script not running');
+                }
+            });
+About Us
+Research Report
+Tags
+Industry Insights
+Terms of Use
+Privacy Policy
+Membership Terms & Conditions
+Contact Us
+Subscribe to Industry Insights
+Subscribe
+English
+繁體中文
+简体中文
+© 2026 TrendForce Corp. All rights reserved
+Get in touch with us
+Your Email
+Message
+Send
+Cancel
+Get in touch with us
+Your Email
+Message
+Send
+Cancel
+$(document).ready(function () {
+    $('#btn-contact-inquery').on("click", function () {
+      const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+      const transError = {
+        email: 'The E-mail Address must be a valid email address.',
+        message: 'Message cannot be empty!',
+      };
+
+      const form = document.getElementById('contact-us-popup-form');
+      let fromMail = form.from.value;
+      let emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fromMail);
+      if (!emailValid) {
+        alert(transError.email);
+        return false;
+      }
+      if (form.message.value.trim() === '' || /^\s*$/.test(form.message.value)) {
+        alert(transError.message);
+        return false;
+      }
+
+      $(this).attr('disabled', true);
+
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LeXsBYmAAAAACtiRX4fJHLQYceYn-RyZWrUcURv', { action: 'contactSales' }).then(function (token) {
+          fetch('/api/contact/inquiry', {
+            method: 'POST',
+            headers: {
+              'X-Requested-With': 'XMLHttpRequest',
+              'Content-Type': 'application/json',
+              'X-CSRF-TOKEN': csrfToken,
+            },
+            body: JSON.stringify({
+              from: document.getElementById('contactFromEmail').value,
+              message: document.getElementById('contactMessage').value,
+              recaptcha: token,
+              url: window.location.href
+            }),
+          })
+            .then(res => res.json())
+            .then(data => {
+              console.log('json', data);
+              $('#btn-contact-inquery').attr('disabled', false);
+              if (data.error == 0) {
+                $.magnificPopup.close();
+              }
+              alert(data.message);
+            })
+            .catch((error) => {
+              console.log('error', error);
+              alert('Error: sent failed');
+              $('#btn-contact-inquery').attr('disabled', false);
+            });
+        });
+      });
+    });
+
+    $('#btn-contact-close').on("click", function () {
+      $.magnificPopup.close();
+    });
+
+    // 會員方案專用的 simple-inquiry 邏輯
+    $('#btn-contact-membership-inquery').on("click", function () {
+      const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+      const transError = {
+        email: 'The E-mail Address must be a valid email address.',
+        message: 'Message cannot be empty!',
+      };
+
+      const form = document.getElementById('contact-us-membership-form');
+      let emailVal = form.email.value;
+      let emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal);
+      if (!emailValid) {
+        alert(transError.email);
+        return false;
+      }
+      if (form.message.value.trim() === '' || /^\s*$/.test(form.message.value)) {
+        alert(transError.message);
+        return false;
+      }
+
+      $(this).attr('disabled', true);
+
+      fetch('/api/contact/simple-inquiry', {
+        method: 'POST',
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest',
+          'Content-Type': 'application/json',
+          'X-CSRF-TOKEN': csrfToken,
+        },
+        body: JSON.stringify({
+          email: document.getElementById('contactFromEmailMembership').value,
+          message: document.getElementById('contactMessageMembership').value,
+          package_id: document.getElementById('contactPackageIdMembership').value || null
+        }),
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log('json', data);
+          $('#btn-contact-membership-inquery').attr('disabled', false);
+          if (data.error == 0) {
+            $.magnificPopup.close();
+          }
+          alert(data.message);
+        })
+        .catch((error) => {
+          console.log('error', error);
+          alert('Error: sent failed');
+          $('#btn-contact-membership-inquery').attr('disabled', false);
+        });
+    });
+
+    $('#btn-contact-membership-close').on("click", function () {
+      $.magnificPopup.close();
+      $('#contactPackageIdMembership').val('');
+    });
+
+    // 會員方案頁面：從按鈕取得 package_id 並填入隱藏欄位
+    $(document).on('mousedown touchstart click', '[href="#contact-sales-membership"], .membership-contactus-btn', function (e) {
+      var $el = $(this);
+      var pkg = $el.data('package-id') || $el.attr('data-package-id') || $el.data('cart-package') || $el.attr('data-cart-package');
+      if (!pkg) {
+        var $a = $el.closest('a[href="#contact-sales-membership"]');
+        pkg = $a.data('package-id') || $a.attr('data-package-id') || $a.data('cart-package') || $a.attr('data-cart-package');
+      }
+      $('#contactPackageIdMembership').val(pkg ? pkg : '');
+    });
+
+    // Footer 電子報訂閱：用原生 form submit + hidden iframe 避免 CORS 問題
+    $('#footer-subscribe-form').on('submit', function () {
+      var $form = $(this);
+      var $btn = $form.find('.subscribe-btn');
+      var $msg = $('#footer-subscribe-msg');
+
+      $btn.prop('disabled', true).text('Submitting...');
+      $msg.hide();
+
+      $('#subscribe-frame').off('load').one('load', function () {
+        $msg.text('Thanks for subscribing! Please check your inbox to confirm.')
+          .css('color', '#81B743').show();
+        $form.find('input[name="email"]').val('');
+        $btn.prop('disabled', false).text('Subscribe');
+      });
+    });
+
+    // Footer 語系切換下拉（跟 Header 那組是各自獨立的 DOM，Header 的
+    // document.querySelector('.language-button.active') 只會抓到第一個，
+    // 這裡另外綁一份、限定在 .site-footer 範圍內）
+    var $footerLanguageIcon = $('.site-footer .language-button');
+    var $footerLanguageContent = $('.site-footer .header_language-content');
+
+    $footerLanguageIcon.on('click', function () {
+      $footerLanguageContent.css('display', 'flex');
+    });
+
+    $footerLanguageContent.on('mouseleave', function () {
+      $footerLanguageContent.css('display', 'none');
+    });
+
+  });

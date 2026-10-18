@@ -1,0 +1,19 @@
+{
+  "source": "https://stockanalysis.com/stocks/skhy/",
+  "retrieved_on": "2026-10-18",
+  "method": "web open full page; shell403, not a downloaded source HTML",
+  "accepted_fields": {
+    "price": 136.49,
+    "currency": "USD",
+    "date": "2026-10-16",
+    "time": "16:00",
+    "timezone": "America/New_York",
+    "session": "regular_close"
+  },
+  "rejected_or_unreconciled_fields": {
+    "marketcap_displayed_USD_billion": 695.4,
+    "shares_out_displayed_million": 711.08,
+    "forward_PE_displayed": 4.4
+  },
+  "why": "share/marketcap/ADS and forecast period consistency not established; only market price/time used"
+}

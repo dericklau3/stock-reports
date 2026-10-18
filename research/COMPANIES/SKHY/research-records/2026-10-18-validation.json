@@ -1,0 +1,10 @@
+{
+  "report_sections": 9,
+  "financial_periods": 5,
+  "valuation_endpoints": 9,
+  "local_links": "passed",
+  "ADS_denominator": "passed",
+  "financial_cash_bridge": "passed",
+  "result": "passed",
+  "scope_limit": "arithmetic and document structure; no claim of independent company audit"
+}
