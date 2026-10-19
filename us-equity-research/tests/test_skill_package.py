@@ -37,6 +37,9 @@ class SkillPackageTests(unittest.TestCase):
         self.assertLessEqual(len(metadata["description"]), 1024)
         self.assertIn("# 美股个股研究", content)
 
+    def test_single_discoverable_skill(self):
+        self.assertEqual(sorted(ROOT.rglob("SKILL.md")), [ROOT / "SKILL.md"])
+
     def test_agent_config(self):
         config = yaml.safe_load((ROOT / "agents/openai.yaml").read_text(encoding="utf-8"))
         interface = config["interface"]
@@ -113,7 +116,7 @@ class SkillPackageTests(unittest.TestCase):
             inputs = (dest / "inputs.md").read_text()
             source = (ROOT / "tests/behavioral-cases.md").read_text().split("## 验收标准")[0]
             self.assertEqual(inputs, source)
-            self.assertEqual(manifest["case_ids"], list(range(1, 20)))
+            self.assertEqual(manifest["case_ids"], list(range(1, 22)))
             self.assertFalse((dest / "skill/tests").exists())
             self.assertEqual((dest / "skill/SKILL.md").read_bytes(), (ROOT / "SKILL.md").read_bytes())
             import hashlib

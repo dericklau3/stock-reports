@@ -1,0 +1,36 @@
+{
+  "case_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "sha256": {
+    "inputs.md": "71c7ea34a4e4aab9907627a2fb65ce591690801547c270a6b24af3dff0215653",
+    "skill/references/announced-material-events.md": "a35fa6e1e0139102b6c3e813f34666b53cb0c93227186eec39039848322eb366",
+    "skill/references/company-types.md": "685b34e22dbb7701a6404d01e7b034a78c68ad2a46b7930ec0901037fb4ddd88",
+    "skill/references/data-verification.md": "f09168865e56c0ff7831e2373435277f97cf29f8d0beb2b70d6cb0357042c5e0",
+    "skill/references/investor-lenses.md": "0291e6a938265e76a5a4fb5d5b8cb6c93b8842a3d0a42a6c7fef3722dc9d70cf",
+    "skill/references/operating-agenda-execution-progress.md": "50b05ac359776ab41da6f7b29b0c3b989bbe1f326e027556fbed1b1547e06488",
+    "skill/references/report-templates.md": "aa38c9046cac59da7babf5a3564e1af4948ef8cadfa23d26b736495a47f83093",
+    "skill/references/valuation.md": "b5a7ec41a79bd25987cb48b428c2793018f915579d0e846476e6e6213e7268eb",
+    "skill/SKILL.snapshot.md": "3c8cfde6715e37f47681df26d1f8630dd1347ad8a2ee92a1b61ad9cbabcf9f49"
+  }
+}
