@@ -79,3 +79,14 @@
 ## 核验局限
 
 已完成财务/ADS公式复算与结构检查，不等于独立审计全部商业合同。未完整核实：最新October实际股数、完整受限现金、全部债务逐年到期、IPO结算后资金桥、实际买回注销、HBM产品利润/份额、LTA最低采购与撤销、Solidigm融资、最新同口径市场共识和历史ForwardPE。Reuters原文转载页面429，只有搜索正文片段，因此仅记录“存在未确认报道”不采匿名源内容作已批准事实；CXMT相关报道没有核实原始量产/认证数据，不给精确份额或认定已替代HBM。
+
+
+## 2026-10-19 定向补正：NVIDIA 合作事件遗漏
+
+用户指出黄仁勋赴韩会面及合作未进入重大事件表。核对确认原版虽提NVIDIA/OIP，却遗漏直接客户方重大合作公告；此前近12个月事件覆盖不完整，不能以行数精简解释。
+
+- 2025-10-30 NVIDIA《NVIDIA and SK Group Build AI Factory to Drive Korea’s Manufacturing and Digital Transformation》；SK 2025-10-31韩国公告确认APEC期间崔泰源与黄仁勋会面。超过50000 GPU集团AI工厂，首期2027年底目标；初始工业AI云超过2000 RTX PRO GPU服务海力士制造/设计/数字孪生和内部AI。不是50000颗HBM订单，集团GPU购买与海力士内存出售方向相反。
+- 2026-02-13海力士《SK Group Chairman Chey Tae-won and NVIDIA CEO Jensen Huang Meet To Discuss ‘AI One-Team Meeting’》说实际会面在02-05美国加州Santa Clara，而非黄仁勋再次赴韩；讨论合作不等于单独新订单。
+- 2026-07-24 NVIDIA《SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory》原文明确签letters of intent，超过$500B综合倡议，SK Telecom最高2GW、首厂2027目标、Vera Rubin+海力士HBM4，另包括海力士与NVIDIA长期供应/共同开发。NVIDIA发布的联合公告是客户方确认，不是独立第三方已履约证明；Reuters报道亦源于公告，不能作为第二份合同验证。
+- >$500B为集团综合倡议规模，不是海力士订单/收入或NVIDIA对海力士投资。未公开海力士最低采购金额、价格、排他、违约与交付曲线；不伪造其利润，不直接上调情景价格。增强长期客户关系证据，保留周期/竞争/现金约束。
+- 本次原位修正10-18报告重大事件、竞争证据、项目进度与估值说明；研究截止与原价格/财务快照保持10-18，不冒充10-19完整重新研究。原始文档和哈希见2026-10-19-nvidia-correction-sources.json。

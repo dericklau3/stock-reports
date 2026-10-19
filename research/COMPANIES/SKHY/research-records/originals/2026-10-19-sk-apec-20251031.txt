@@ -1,0 +1,83 @@
+SK Accelerates AI Transformation in Manufacturing with AI Factory Powered By NVIDIA | SK
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W337DR8');
+Skip to content
+SK
+Close
+Back
+Companies
+Industries
+Social Value
+News & Perspectives
+About
+Overview
+Contact
+Eng
+Korean
+English
+Chinese
+Search sk.com
+Search
+Close
+Search
+Menu
+Eng
+Korean
+English
+Chinese
+News
+SK Accelerates AI Transformation in Manufacturing with AI Factory Powered By NVIDIA
+October 31, 2025
+Related Companies
+Related  Industries
+AI & Semiconductors
+Related Locations
+South Korea
+SK Group Chairman Chey Tae-won and Jensen Huang, founder and CEO of NVIDIA, meet during the APEC CEO Summit 2025 where a new partnership between SK and NVIDIA was announced to create an AI cloud for manufacturing in South Korea.
+Asia’s first enterprise-led manufacturing AI cloud opens to Korean startups to foster the manufacturing AI ecosystem
+Manufacturing innovation driven by more than 50,000 NVIDIA GPUs and digital twins
+SK Telecom and NVIDIA co-develop and pilot 6G AI-RAN technology
+Gyeongju, South Korea, October 31, 2025
+– SK Group announced today its partnership with NVIDIA to build a Manufacturing AI Cloud powered by NVIDIA’s AI infrastructure and Omniverse platform, aiming to accelerate AI innovation across South Korea’s manufacturing ecosystem.
+The announcement was made in Gyeongju, South Korea, where Chey Tae-won, Chairman of SK Group, and Jensen Huang, founder and CEO of NVIDIA, met during the APEC CEO Summit 2025 to discuss collaboration plans for the “Physical AI* Startup Alliance,” as well as semiconductor collaboration and future direction of Korea’s manufacturing AI ecosystem.
+The Manufacturing AI Cloud will be established and operated exclusively by SK as the first enterprise-led initiative in Asia leveraging NVIDIA technologies for manufacturing AI innovation. It will be made available to SK Group’s manufacturing affiliates such as SK hynix, as well as government agencies, public institutions, and Korean startups, helping them enhance productivity and efficiency through AI.
+NVIDIA Omniverse is a virtual simulation-based digital twin** platform that enables manufacturers to create precise 3D virtual replicas of their production lines and simulate the entire manufacturing process online.
+By mirroring real-world operations in a digital environment, Omniverse helps companies optimize yield, improve equipment maintenance efficiency, and reduce operational costs—capabilities that are driving increasing interest from manufacturers worldwide.
+As global manufacturing competitiveness hinges on early defect detection, timely maintenance, and data-driven productivity improvements, adoption of Omniverse by Korean startups and manufacturing firms is expected to further strengthen Korea’s manufacturing AI capabilities.
+As the foundation for the Manufacturing AI Cloud, SK hynix will deploy approximately 2,000 units of NVIDIA’s latest GPU, the RTX PRO™ 6000 Blackwell Server Edition. The platform will be initially applied at the SK hynix Icheon Campus and later expanded to the Yongin Semiconductor Cluster, and will operated by SK Telecom.
+As the only operator of a manufacturing AI cloud in Korea, SK aims to provide users with direct access to Omniverse without relying on overseas data centers. This approach delivers optimal performance and data security specifically tailored to Korean manufacturing.
+In addition to providing GPUs, NVIDIA will work closely with SK not only to provide Omniverse but also to jointly develop AI models specialized for Korean manufacturing. The two companies will collaborate on software optimization, AI model training and inference, automated cloud operations, and simulation tuning.
+The NVIDIA RTX PRO™ 6000 Blackwell Server Edition GPUs used for the Manufacturing AI Cloud are capable of processing large volumes of data at high speed, fueling global demand for servers required to implement industrial AI across generative AI, data analytics, and simulation workloads.
+This collaboration is expected to revitalize Korea’s manufacturing industry, which has faced constraints in adopting AI due to limited resources and high costs. Together with venture capital firms such as IMM Investment, Korea Investment Partners, and SBVA, SK and NVIDIA plan to support AI startups that will further drive innovation in Korea’s manufacturing AI ecosystem.
+Meanwhile, SK Group is partnering with NVIDIA to build an “AI Factory” in Korea, an AI infrastructure cluster featuring over 50,000 GPUs. The AI Factory includes the Manufacturing AI Cloud and the AI data center project in Ulsan, forming an AI industrial cluster based on NVIDIA GPUs. SK Group is advancing a hyperscale AI data center project in Ulsan targeting 100 megawatts by 2027, with plans to establish the site as a major Asia-Pacific AI hub.
+The AI Factory is expected to strengthen Korea’s manufacturing AI competitiveness. Through its collaboration with NVIDIA, SK Group aims to become an industrial AI service provider equipped with digital twin technology, robotics, large language model (LLM) training and inference, and advanced 3D simulation capabilities.
+SK hynix is a key memory partner to NVIDIA, maintaining its position as a leading supplier of high-performance HBM memory—including HBM3 and HBM3E—based on industry-leading technology. Recently, SK hynix completed supply agreements for the highest-speed, highest-performance HBM4 with major customers, and will begin shipments in Q4, ramping up sales next year.
+“SK Group’s collaboration with NVIDIA is making AI the driving force for innovation across Korea’s industrial landscape. Through this partnership, we expect to unlock new possibilities in scale, speed, and precision for all sectors.” Chey Tae-won, Chairman of SK Group remarked. “Leveraging the NVIDIA AI Factory, SK Group will establish a next-generation infrastructure to power advances in memory, robotics, digital twins, and intelligent AI agents.”
+“In the era of AI, a new kind of manufacturing plant has emerged: the AI factory,” said Jensen Huang, founder and CEO of NVIDIA. “SK Group is a vital memory technology partner, helping NVIDIA create the world’s most advanced GPU computing platforms that power global AI progress. We are delighted to partner with SK to build its AI foundation on NVIDIA accelerated computing and software, creating AI factories that will transform SK and energize Korea’s AI ecosystem.”
+Additionally, SK Telecom signed a memorandum of understanding (MOU) with NVIDIA on the same day to jointly research and develop AI network technologies. SK Telecom will collaborate with NVIDIA, other domestic telecom operators, Samsung Electronics, Yonsei University, and the Electronics and Telecommunications Research Institute (ETRI) to develop AI-RAN, a core technology for sixth-generation (6G) mobile communications.
+AI-RAN enables the rapid, low-latency transmission of AI data generated by various devices across wireless networks. SK Telecom and its partners will collaborate with NVIDIA to validate, standardize, and commercialize AI-RAN, with the aim of establishing Korea as a global hub for AI-RAN technology verification. The Ministry of Science and ICT plans to support AI-RAN research, development, and network construction beginning next year.
+Notes:
+*Physical AI: AI applied to physical devices such as automobiles and robots to understand, reason about, and interact with the real world, considered an essential element for implementing manufacturing AI.
+**Digital twin: a technology that replicates the design and workflows of a real-world manufacturing process in a digital space, allowing production yield, errors, and other variables to be validated in advance before actual manufacturing takes place.
+About SK
+SK Group, South Korea’s second-largest conglomerate, is a global technology leader delivering innovations to build the backbone for a new era of industry. Based in Seoul, SK has 198 companies and over 100,000 employees worldwide with a focus on developing and producing advanced solutions in semiconductors, artificial intelligence, energy and life sciences. SK businesses have a shared commitment to create economic value while having a positive impact on society. For more on SK, visit
+sk.com
+SK Group Chairman Chey Tae-won and Jensen Huang, founder and CEO of NVIDIA, discuss their AI collaborations at the APEC CEO Summit in South Korea.
+SK Group Chairman Chey Tae-won and Jensen Huang, founder and CEO of NVIDIA, exchange commemorative gifts of technology at the APEC CEO Summit.
+SK Group Chairman Chey Tae-won and Jensen Huang, founder and CEO of NVIDIA, exchange commemorative gifts of technology at the APEC CEO Summit.
+More News
+News
+SK On Adds Large-Scale Battery Cell Agreement as U.S. ESS Business Accelerates
+September 24, 2026
+News
+SK hynix Indiana Groundbreaking: Bringing Next-Generation AI Memory to the U.S.
+September 17, 2026
+Technology
+SK On Expands U.S. ESS Push at ACP CLEANPOWER 2026
+June 4, 2026
+Copyright (C) By SK Inc. All Rights Reserved.
+Privacy
+Terms

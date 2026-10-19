@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+    "file": "originals/2026-10-19-nvidia-sk-20260724.txt",
+    "sha256": "95318d89b6cc8f6bc5251cf4954c619de5f70dafde06696bc4b4aa70042b9c9b",
+    "status": "full text"
+  },
+  {
+    "url": "https://nvidianews.nvidia.com/news/sk-group-ai-factory",
+    "file": "originals/2026-10-19-nvidia-sk-20251030.txt",
+    "sha256": "383ec014d3a56773d7509e2bcc18fde98aa18234b6c90e3bef84ea4fcf0db1ad",
+    "status": "full text"
+  },
+  {
+    "url": "https://eng.sk.com/news/sk-accelerates-ai-transformation-in-manufacturing-with-ai-factory-powered-by-nvidia",
+    "file": "originals/2026-10-19-sk-apec-20251031.txt",
+    "sha256": "ea603dbd4a39b02816481760318edbefc75ee1e9b611b6f187d4e5733f815e1f",
+    "status": "full text"
+  },
+  {
+    "url": "https://news.skhynix.com/en/global-big-tech-ai-partnership-nvidia/",
+    "file": "originals/2026-10-19-hynix-meeting-20260213.txt",
+    "sha256": "4d01a09b80a6f25fff82e0dd0d7d0e5afb5abcff6120e462f7cd8d3956ec3cbd",
+    "status": "full text"
+  }
+]

@@ -16,7 +16,7 @@
 
 **举例假设：**一家 AI 加速器系统采购方需要更快的内存，选择与加速器匹配并通过认证的 HBM，海力士生产并交货，采购方支付芯片货款；采购方用它缓解数据瓶颈，海力士在良率、交货和售价足够好时赚取制造利润。没有用假设客户、价格或性能提升冒充真实合同。
 
-海力士的优势是高端内存制造、堆叠封装、客户共同开发和交付经验的结合，换供应商需要重新验证；但公开材料没有给出可独立核验的切换成本或长期锁价幅度。真实替代者已经在交付：三星 2026-02-12 宣布 HBM4 商业出货，故不能把海力士看作无替代供应商；TrendForce 的 Q2 统计中，海力士整体 DRAM 收入份额为 **24.9%**，低于三星 39.4%，略高于美光 23.3%，其整体份额下降也不能直接等同 HBM 份额下降。[三星出货公告](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)、[TrendForce 2026-09-07 原始调查](https://www.trendforce.com/presscenter/news/20260907-13219.html)
+海力士的优势是高端内存制造、堆叠封装、客户共同开发和交付经验的结合，换供应商需要重新验证；但公开材料没有给出可独立核验的切换成本或长期锁价幅度。真实替代者已经在交付：三星 2026-02-12 宣布 HBM4 商业出货，故不能把海力士看作无替代供应商；TrendForce 的 Q2 统计中，海力士整体 DRAM 收入份额为 **24.9%**，低于三星 39.4%，略高于美光 23.3%，其整体份额下降也不能直接等同 HBM 份额下降。NVIDIA 07-24 的客户方公告进一步确认长期内存合作及共同开发，增强客户关系证据；但公告没有披露排他或锁价条款，因此仍不能证明永久定价权。[NVIDIA 客户方公告](https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory)[三星出货公告](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)、[TrendForce 2026-09-07 原始调查](https://www.trendforce.com/presscenter/news/20260907-13219.html)
 
 HBM/服务器 DRAM 是当前增长与利润的重要支撑，NAND/Solidigm 的高容量 eSSD 也已商业销售，TrendForce 将集团列为 Q2 NAND 第二；但公司只有一个可报告半导体分部，不能精确宣称 HBM 或 Solidigm 分别贡献多少净利润。美国 AI 战略投资实体的独立经营回报尚未核实，主要是资本配置任务；CXL 共享内存系统和 HBF 高带宽闪存仍以验证及开发证据为主，不能给它们套用成熟主业利润。[NAND 调查](https://www.trendforce.com/presscenter/news/20260818-13186.html)、[OCP 技术披露](https://news.skhynix.com/en/ocp-global-summit-2026/)
 
@@ -29,14 +29,16 @@ HBM/服务器 DRAM 是当前增长与利润的重要支撑，NAND/Solidigm 的�
 | 2026-08-28 · [印第安纳工厂开工与新时间表](https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana/)；开工仪式为美国当地 08-27 | 投资超过 40 亿美元，洁净室目标 2028-10，HBM 量产目标 2029H2 | 已从规划进入建设，但不能把旧记录中的 2028H2 运营目标当成届时量产；2028 估值不单加美国工厂利润。 |
 | 2026-08-19 · [约 40 万亿韩元回购与注销](https://news.skhynix.com/en/share-buyback-and-retirement/) | 计划于 08-20 至 11-19 回购，金额约 40.004 万亿；预计约 2,407 万股，数量随价格变动；2025–2027 累计 FCF 回报目标改为超过 50% | 是重要资本分配承诺，支持每股价值，但尚未取回实际累计买回、最终注销数量及付款后现金；不能视为已经全部完成。 |
 | 2026-07-29 · [Q2 业绩及 HBM4 批量出货](https://news.skhynix.com/en/q2-2026-business-results/)；出货发生于 Q2 | 收入 79.319 万亿、经营利润 60.543 万亿；称已与约 10 家客户达成长期协议 | 交付和经营获利已有证据；协议完整条款、产品独立利润及客户付款细节未披露，不等于未来利润被锁定。 |
+| 2026-07-24 · [NVIDIA–SK 扩大 AI 工厂与长期内存合作](https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory) | 双方签署意向书，宣布超过 5,000 亿美元的集团综合合作倡议，涵盖 SK Telecom 最高 2GW AI 工厂和海力士长期 AI 内存供给/共同开发；首座工厂计划 2027 年上线 | 这是 NVIDIA 客户方对海力士合作的直接确认，比单方展会展示更重要；但 5,000 亿美元不是海力士确定订单、收入或利润，公告未披露其最低采购量、单价、不可撤销性与利润率。 |
+| 2025-10-30（NVIDIA）／2025-10-31（SK 韩国公告）· [APEC 期间 SK–NVIDIA 合作](https://nvidianews.nvidia.com/news/sk-group-ai-factory)；[SK 会面及合作披露](https://eng.sk.com/news/sk-accelerates-ai-transformation-in-manufacturing-with-ai-factory-powered-by-nvidia) | 黄仁勋与 SK 集团会长崔泰源在韩国 APEC 期间会面；集团宣布建设超过 5 万颗 NVIDIA GPU 的 AI 工厂，首期目标 2027 年底，制造 AI 云首批约 2,000 颗 RTX PRO GPU用于海力士设计、晶圆厂数字孪生和内部 AI | 海力士同时是 NVIDIA 的内存合作方和 AI 工具使用者，可能改善研发/制造效率；集团购入 GPU 是投入而非海力士出售内存收入，不能混记付款方向。 |
 
-另有仍影响资金分配的 2026-01-28 [美国 AI Company 公告](https://news.skhynix.com/en/sk-hynix-to-establish-ai-solutions-arm-in-us/)：计划通过 Solidigm 架构调整开展 AI 战略投资，承诺 100 亿美元按项目调用；07-06 F-1/A 称实体已于 3 月设立、部署期至 2030 年，这不是已花完 100 亿或新增经营利润。过去 12 个月的年度业绩、上市、扩产及澄清公告也已回看，完整索引留在底稿。最实质的变化是从“技术和产能故事”走向交付、现金及回购的兑现检验，同时出现更晚的美国量产时间表；公司 09-16 还明确表示与 Intel 的美国生产方案未定，不能把谈判写成正式项目。[美国生产澄清](https://news.skhynix.com/en/fact-10/)
+另有仍影响资金分配的 2026-01-28 [美国 AI Company 公告](https://news.skhynix.com/en/sk-hynix-to-establish-ai-solutions-arm-in-us/)：计划通过 Solidigm 架构调整开展 AI 战略投资，承诺 100 亿美元按项目调用；07-06 F-1/A 称实体已于 3 月设立、部署期至 2030 年，这不是已花完 100 亿或新增经营利润。**2026-10-19 定向补正：**上一版漏列上述 APEC 合作及 07-24 扩大合作，这是重大事件核查遗漏，现已补入；资料本身均早于原研究截止日。过去 12 个月的年度业绩、上市、扩产及澄清公告也已回看，完整索引留在底稿。最实质的变化是从“技术和产能故事”走向交付、现金及回购的兑现检验，同时出现更晚的美国量产时间表；公司 09-16 还明确表示与 Intel 的美国生产方案未定，不能把谈判写成正式项目。[美国生产澄清](https://news.skhynix.com/en/fact-10/)
 
 ## 3. 公司正在做什么、做到哪一步？
 
 | 重点项目 | 为什么做？希望达到什么结果？ | 当前进展与下一步 |
 |---|---|---|
-| HBM4 扩量与 HBM4E 认证 | 匹配新一代加速器，保持高价值内存供应位置 | Q2 已披露 HBM4 批量出货，HBM4E 为样品阶段；09-28 展示搭载海力士 HBM4/SOCAMM2 的 Vera Rubin，支持整合关系，不能单独证明新订单金额；下一关是量产收入、良率和客户持续采购。[OIP 披露](https://news.skhynix.com/en/tsmc-oip-conference-2026/) |
+| NVIDIA 长期合作与 HBM4/4E 交付 | 匹配新一代加速器，保持高价值内存供应位置 | 07-24 NVIDIA 已确认长期供应和共同开发方向，但未公开完整采购条款；Q2 已披露 HBM4 批量出货，HBM4E 为样品阶段；09-28 展示搭载海力士 HBM4/SOCAMM2 的 Vera Rubin，支持整合关系，不能单独证明新订单金额；下一关是量产收入、良率和客户持续采购。[OIP 披露](https://news.skhynix.com/en/tsmc-oip-conference-2026/) |
 | 服务器 DRAM 与 eSSD 升级 | 同时满足计算工作区与大容量存储需求，扩大产品组合 | 321 层 NAND 已成为最大生产占比，年末约占韩国国内产能 50% 为公司目标；下一关是实际产品组合、售价与现金毛利，而非只看层数。[Q2 公告](https://news.skhynix.com/en/q2-2026-business-results/) |
 | M15X、龙仁与 P&T7 扩张 | 增加前端制造和后端封装能力，避免某一环节限制交货 | M15X Q1 已投片；龙仁首期洁净室仍为 2027 年初目标，P&T7 为 2027 年底完成目标；须核对设备安装、有效产出及客户需求，不能把厂房完工当满产。[F-1/A 设施章节](https://www.sec.gov/Archives/edgar/data/2120882/000119312526295501/d32785df1a.htm)、[投资公告](https://news.skhynix.com/en/fact-07/) |
 | 印第安纳先进封装 | 在美完成韩国晶圆的封装测试，贴近客户及政策要求 | 已开工，最新量产目标 2029H2；相比 07-06 F-1/A 的 2028H2 运营口径，兑现时间须更新，不能将延期或定义变化隐藏；下一关是按期洁净室和设备验证。[开工原文](https://news.skhynix.com/en/groundbreaking-ceremony-in-indiana/) |
@@ -80,7 +82,7 @@ H1 附注 31 披露股权支付相关薪酬费用 0.149 万亿，模型不将其
 | 基础情景估值 | **约 109–184 美元/ADS，中枢约 144 美元**：收入 300–360 万亿、经营利润率 40–45%、税率 27%、16–20 倍 P/E，要求 HBM 优势与现金回报跨周期保持。 |
 | 乐观情景估值 | **约 227–303 美元/ADS**：收入 400–440 万亿、经营利润率 50–55%、税率 27%、20–22 倍 P/E，要求量产、长期需求、份额和现金回报共同成立。 |
 
-以上均为 **2028 年末盈利能力按 12% 年折现率折回 2026-10-18 的条件价值**，不是未来目标价或共识；采用 7.50 亿未来摊薄普通股、每 ADS 0.1 普通股、10-16 参考汇率 1 美元＝1,332.10 韩元，净利息保守取零，排除异常金融收益/投资股息。基础收入围绕 Q2 年化 317.275 万亿设定，并非已经验证的可持续收入；利润率虽低于 Q2，却高于 FY2024，因此基础情景本身仍包含结构改善假设。股权盈利法不额外加现金、IPO 募资或投资 NAV，不计未来股息/存托费/税；回购未直接减预测股数，独立投资资产税后 NAV 未另行估价，完整公式、现金检查和敏感性见[估值底稿](../research-records/2026-10-18-valuation-inputs.json)、[复算结果](../research-records/2026-10-18-valuation-results.json)及[参考汇率](https://api.frankfurter.dev/v1/2026-10-16?base=USD&symbols=KRW)。
+以上均为 **2028 年末盈利能力按 12% 年折现率折回 2026-10-18 的条件价值**，不是未来目标价或共识；采用 7.50 亿未来摊薄普通股、每 ADS 0.1 普通股、10-16 参考汇率 1 美元＝1,332.10 韩元，净利息保守取零，排除异常金融收益/投资股息。07-24 合作增强长期客户关系的证据，但公开条款不足以单独增加确定收入，亦不把 SK Telecom 的 2GW 或集团 5,000 亿美元倡议计入海力士估值。基础收入围绕 Q2 年化 317.275 万亿设定，并非已经验证的可持续收入；利润率虽低于 Q2，却高于 FY2024，因此基础情景本身仍包含结构改善假设。股权盈利法不额外加现金、IPO 募资或投资 NAV，不计未来股息/存托费/税；回购未直接减预测股数，独立投资资产税后 NAV 未另行估价，完整公式、现金检查和敏感性见[估值底稿](../research-records/2026-10-18-valuation-inputs.json)、[复算结果](../research-records/2026-10-18-valuation-results.json)及[参考汇率](https://api.frankfurter.dev/v1/2026-10-16?base=USD&symbols=KRW)。
 
 **总结：**现价只比基础中枢低约 **5.2%**，难以覆盖周期和估值倍数误差；按同一基础 18 倍假设，现价要求 2028 年正常化归母年净利约 **97.3 万亿韩元**。最强看多反证是当前经营利润和 HBM 批量交付已明显强于基础利润率；但如果市场只给基础中间盈利 12–14 倍，其今日价值就降至约 **96–112 美元**，无需先假设业务崩溃。估值能否上移，应由持续经营现金转化、真实股数与竞争地位证明，不能靠报告净利的低倍数或“已跌很多”。
 
