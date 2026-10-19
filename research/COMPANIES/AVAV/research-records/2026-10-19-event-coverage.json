@@ -1,0 +1,239 @@
+{
+  "window": [
+    "2025-10-19",
+    "2026-10-19"
+  ],
+  "company_archive": {
+    "window": [
+      "2025-10-19",
+      "2026-10-19"
+    ],
+    "company_wp_posts_by_month": {
+      "2025-10": 4,
+      "2025-11": 1,
+      "2025-12": 10,
+      "2026-01": 6,
+      "2026-02": 5,
+      "2026-03": 12,
+      "2026-04": 11,
+      "2026-05": 10,
+      "2026-06": 9,
+      "2026-07": 12,
+      "2026-08": 10,
+      "2026-09": 5,
+      "2026-10": 7
+    },
+    "api_pages": [
+      {
+        "page": 1,
+        "status": 200,
+        "count": 100
+      },
+      {
+        "page": 2,
+        "status": 200,
+        "count": 2
+      },
+      {
+        "page": 3,
+        "status": 400,
+        "count": 0
+      },
+      {
+        "page": 4,
+        "status": 400,
+        "count": 0
+      }
+    ],
+    "archive_press_pages_actual": "1-10完整归档；本窗口新闻止于page5，page6已早于窗口；page11/12无记录。部分新闻未带Press Release分类，故另以所有posts日期API两页102条补齐。",
+    "overall_status": "PARTIAL：公司公开WP归档发现充分；IR与SEC8-K完整索引及部分对方原文有缺口，不能宣称全年无遗漏。"
+  },
+  "parent_SEC_index": {
+    "retrieved": true,
+    "url": "https://data.sec.gov/submissions/CIK0001368622.json",
+    "latest_form": "144 on2026-10-15",
+    "latest_8K": "2026-09-30;report2026-09-24",
+    "window_relevant_filings": [
+      {
+        "form": "8-K",
+        "filingDate": "2026-09-30",
+        "reportDate": "2026-09-24",
+        "accessionNumber": "0001104659-26-112083",
+        "primaryDocument": "tm2626631d1_8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "filingDate": "2026-09-10",
+        "reportDate": "2026-08-01",
+        "accessionNumber": "0001104659-26-106423",
+        "primaryDocument": "avav-20260801x10q.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-09-09",
+        "reportDate": "2026-09-09",
+        "accessionNumber": "0001104659-26-106304",
+        "primaryDocument": "avav-20260909x8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-08-07",
+        "reportDate": "2026-08-03",
+        "accessionNumber": "0001104659-26-092413",
+        "primaryDocument": "tm2622497d1_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-07-29",
+        "reportDate": "2026-07-23",
+        "accessionNumber": "0001104659-26-087871",
+        "primaryDocument": "tm2621437d1_8k.htm"
+      },
+      {
+        "form": "S-8",
+        "filingDate": "2026-07-02",
+        "reportDate": "",
+        "accessionNumber": "0001104659-26-080433",
+        "primaryDocument": "tm2619676d1_s8.htm"
+      },
+      {
+        "form": "10-K",
+        "filingDate": "2026-06-29",
+        "reportDate": "2026-04-30",
+        "accessionNumber": "0001104659-26-078906",
+        "primaryDocument": "avav-20260430x10k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-06-29",
+        "reportDate": "2026-06-29",
+        "accessionNumber": "0001104659-26-078824",
+        "primaryDocument": "avav-20260629x8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-06-25",
+        "reportDate": "2026-06-24",
+        "accessionNumber": "0001104659-26-077575",
+        "primaryDocument": "tm2618946d1_8k.htm"
+      },
+      {
+        "form": "10-Q/A",
+        "filingDate": "2026-06-22",
+        "reportDate": "2026-01-31",
+        "accessionNumber": "0001104659-26-076141",
+        "primaryDocument": "avav-20260131x10qa.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-06-22",
+        "reportDate": "2026-06-16",
+        "accessionNumber": "0001104659-26-076140",
+        "primaryDocument": "avav-20260616x8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-04-13",
+        "reportDate": "2026-04-13",
+        "accessionNumber": "0001104659-26-042388",
+        "primaryDocument": "tm2611632d1_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-04-09",
+        "reportDate": "2026-04-07",
+        "accessionNumber": "0001104659-26-041267",
+        "primaryDocument": "tm2611447d1_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-03-18",
+        "reportDate": "2026-03-12",
+        "accessionNumber": "0001104659-26-031049",
+        "primaryDocument": "tm268917d3_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-03-16",
+        "reportDate": "2026-03-16",
+        "accessionNumber": "0001104659-26-028457",
+        "primaryDocument": "tm268917d1_8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "filingDate": "2026-03-11",
+        "reportDate": "2026-01-31",
+        "accessionNumber": "0001104659-26-025979",
+        "primaryDocument": "avav-20260131x10q.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-03-10",
+        "reportDate": "2026-03-10",
+        "accessionNumber": "0001104659-26-025841",
+        "primaryDocument": "avav-20260310x8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-03-05",
+        "reportDate": "2026-02-27",
+        "accessionNumber": "0001104659-26-024083",
+        "primaryDocument": "tm268059d1_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-02-23",
+        "reportDate": "2026-02-18",
+        "accessionNumber": "0001104659-26-018593",
+        "primaryDocument": "tm266989d1_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2026-01-20",
+        "reportDate": "2026-01-16",
+        "accessionNumber": "0001104659-26-004855",
+        "primaryDocument": "tm263604d1_8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2025-12-23",
+        "reportDate": "2025-12-18",
+        "accessionNumber": "0001104659-25-124091",
+        "primaryDocument": "tm2534158d1_8k.htm"
+      },
+      {
+        "form": "10-Q",
+        "filingDate": "2025-12-10",
+        "reportDate": "2025-11-01",
+        "accessionNumber": "0001104659-25-119775",
+        "primaryDocument": "avav-20251101x10q.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2025-12-09",
+        "reportDate": "2025-12-09",
+        "accessionNumber": "0001104659-25-119660",
+        "primaryDocument": "avav-20251209x8k.htm"
+      },
+      {
+        "form": "8-K",
+        "filingDate": "2025-11-25",
+        "reportDate": "2025-11-20",
+        "accessionNumber": "0001104659-25-115756",
+        "primaryDocument": "tm2532104d1_8k.htm"
+      }
+    ],
+    "scope": "Full recent submissions dates extend to2013; metadata window scanned, not all filing bodies read."
+  },
+  "counterparty_status": "NIOA and NASA primary read; FAA brand linkage remains issuer assertion; Ubiqconn body incomplete; other partner/agency originals not fully recovered.",
+  "remaining_gaps": [
+    "Some8K bodies and Utah lease details",
+    "Full official Q1 call transcript/Q&A",
+    "Current exact quote-date common-share rollforward",
+    "Counterparty/agency verification for some issuer announcements",
+    "Market current NTM and full daily historical ForwardPE series"
+  ],
+  "publication_status": "Complete nine-section research with explicitly partial external-source coverage; NOT claimed exhaustive full-year fact check",
+  "event_rows": 53,
+  "candidate_records": 102
+}

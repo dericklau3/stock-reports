@@ -1,0 +1,2346 @@
+[
+  {
+    "title": "AV and Thunder Tiger Sign MOU to Explore Uncrewed Systems Integration and Co-Production in Taiwan",
+    "wp_date": "2026-10-14T12:30:18",
+    "modified": "2026-10-15T13:21:30",
+    "url": "https://www.avinc.com/2026/10/14/av-and-thunder-tiger-sign-mou-to-explore-uncrewed-systems-integration-and-co-production-in-taiwan/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-10-14",
+    "original_dateline_candidates": [
+      "OCTOBER 14, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "国际化：台湾无人系统集成与潜在共生产；MOU无已披露最低采购承诺",
+    "next_verification": "技术可行性、Switchblade多弹发射架与无人艇/车集成、示范及最终商业协议",
+    "report_placement": "section2",
+    "original_text_sha256": "bcbedc93ce3e8ea12a48b0db20d2ade2bd71d4c85e7c95829459e29ede8e80d1",
+    "parent_decision": "included",
+    "citation_id": 9
+  },
+  {
+    "title": "AV and Alpha Unmanned Systems Announce MOU to Explore JUMP 20 Support in Spain",
+    "wp_date": "2026-10-14T12:00:30",
+    "modified": "2026-10-14T10:39:50",
+    "url": "https://www.avinc.com/2026/10/14/av-and-alpha-unmanned-systems-announce-mou-to-explore-jump-20-support-in-spain/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-10-14",
+    "original_dateline_candidates": [
+      "OCTOBER 14, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "国际化：西班牙JUMP20本地保障/训练，可能拓展欧洲拉美；MOU不是采购订单",
+    "next_verification": "本地支持落地、子系统集成和后续客户订单",
+    "report_placement": "section2",
+    "original_text_sha256": "0cf3bf8f69830e0a3c05a178b0024ec37e35bb16ecf18a961e25de4113513a9c",
+    "parent_decision": "included",
+    "citation_id": 10
+  },
+  {
+    "title": "AV and Elsight Partner to Strengthen Mayhem 10 Connectivity in Contested Environments",
+    "wp_date": "2026-10-14T11:00:57",
+    "modified": "2026-10-14T11:04:05",
+    "url": "https://www.avinc.com/2026/10/14/av-and-elsight-partner-to-strengthen-mayhem-10-connectivity-in-contested-environments/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-10-14",
+    "original_dateline_candidates": [
+      "OCTOBER 14, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "Mayhem10通信韧性技术合作，集成已在进行；金额/最低订单未披露",
+    "next_verification": "集成验证、军方采用及合同经济性",
+    "report_placement": "section2",
+    "original_text_sha256": "46cda737012a643a2a9a9007a297a42762ab97a970e6bd5a75e10a0c3d4d7544",
+    "parent_decision": "included",
+    "citation_id": 11
+  },
+  {
+    "title": "For Australia, Sovereign Doesn’t Have to Mean Alone",
+    "wp_date": "2026-10-14T09:00:07",
+    "modified": "2026-10-13T17:37:00",
+    "url": "https://www.avinc.com/2026/10/14/for-australia-sovereign-doesnt-have-to-mean-alone/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-10-14",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "17fd2086d33df1de9505ed6d9d3785e87244080df1a5ae9b22d37cc23c656335",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV and NIOA Sign Agreement to Advance One-Way Attack Localization and Co-Production in Australia",
+    "wp_date": "2026-10-13T11:30:43",
+    "modified": "2026-10-13T14:44:30",
+    "url": "https://www.avinc.com/2026/10/13/av-and-nioa-sign-agreement-to-advance-one-way-attack-localization-and-co-production-in-australia/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-10-13",
+    "original_dateline_candidates": [
+      "OCTOBER 08, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "澳新本地化与共生产渠道；非约束MOU，分销/技术转让需另签最终协议及审批；NIOA 10/7先公告、AV网页10/13但稿内10/8",
+    "next_verification": "美国/澳洲批准，最终制造/分销协议、实际订单",
+    "report_placement": "section2",
+    "original_text_sha256": "cf5b0e676f6daed790110390897da1443b4541f6cb77fb1631e07c332a4c6769",
+    "parent_decision": "included",
+    "citation_id": 12
+  },
+  {
+    "title": "The OODA Loop for the Autonomous Age: From the F-16 to the Autonomous Fight",
+    "wp_date": "2026-10-12T08:00:25",
+    "modified": "2026-10-15T16:07:45",
+    "url": "https://www.avinc.com/2026/10/12/the-ooda-loop-for-the-autonomous-age-from-the-f-16-to-the-autonomous-fight/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-10-12",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "8c6cc507a56e309a745e59044007639fcbc89ef9146af7ec661e98a76015afcc",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV’s VideoRay Selected as Subcontractor for Navy Mine Countermeasure Prototype Effort",
+    "wp_date": "2026-10-08T09:00:30",
+    "modified": "2026-10-09T09:25:15",
+    "url": "https://www.avinc.com/2026/10/08/avs-videoray-selected-as-subcontractor-navy-mine-countermeasure-prototype-effort/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-10-08",
+    "original_dateline_candidates": [
+      "OCTOBER 08, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "AEVEX主导团队原型OTA分包，BlackSea已属AEVEX Maritime Systems；不是本公司拿到全部主合同；公司份额未披露",
+    "next_verification": "原型交付与海军后续采购",
+    "report_placement": "section2",
+    "original_text_sha256": "e21027a8a14acd58ca5309b18c2e34dfb338b8e137c95cde743c4a473e381aa7",
+    "parent_decision": "included",
+    "citation_id": 13
+  },
+  {
+    "title": "AeroVironment Announces Fiscal 2027 First Quarter Results",
+    "wp_date": "2026-09-09T16:10:18",
+    "modified": "2026-09-09T12:44:32",
+    "url": "https://www.avinc.com/2026/09/09/aerovironment-announces-fiscal-2027-first-quarter-results/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-09-09",
+    "original_dateline_candidates": [
+      "September 9, 2026",
+      "August 1, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "financial_section",
+    "reason": "避免重大事件表重复定期数字，仍审阅风险披露",
+    "meaning": "定期财报/长期目标已存原文；财务章节呈现，重大减值/重述另列",
+    "next_verification": "核对最新原件",
+    "report_placement": "财务章节",
+    "original_text_sha256": "2c22f8a18a08d506c1d5c389aaadd87aa2eb657294c904972cbd5a66b8e2b44d",
+    "parent_decision": "financial_section"
+  },
+  {
+    "title": "When a Drone Threat Becomes an EOD Problem",
+    "wp_date": "2026-09-09T08:00:36",
+    "modified": "2026-09-08T13:17:32",
+    "url": "https://www.avinc.com/2026/09/09/when-a-drone-threat-becomes-an-eod-problem/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-09-09",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "26b54bc23d5e15bd1d539a8a14989dc4436eca458cb5a5278776ea30d7a136d9",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Secures First International Order for LOCUST® Directed Energy Counter‑Drone Systems",
+    "wp_date": "2026-09-08T09:00:04",
+    "modified": "2026-09-10T07:01:49",
+    "url": "https://www.avinc.com/2026/09/08/av-secures-first-international-order-for-locust-directed-energy-counter-drone-systems/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-09-08",
+    "original_dateline_candidates": [
+      "SEPTEMBER 8, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "LOCUST首笔国际直接商业销售超过$50M，客户未公开；不可猜测客户或重复计入美国E-HEL",
+    "next_verification": "交付、回款和项目利润率",
+    "report_placement": "section2",
+    "original_text_sha256": "5809e5e492d5ecf70934ccbc1ea270a6fe79ed36c17746e50d5a1f459d066616",
+    "parent_decision": "included",
+    "citation_id": 14
+  },
+  {
+    "title": "The Laser’s Radar Moment: Changing the Economics of Air Defense",
+    "wp_date": "2026-09-03T08:00:15",
+    "modified": "2026-09-03T08:42:21",
+    "url": "https://www.avinc.com/2026/09/03/the-lasers-radar-moment-changing-the-economics-of-air-defense/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-09-03",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "ca0b65346810d1b1422d3086204a6beef151113d7fc273acc458ad9fd9f7d462",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV’s LOCUST® Selected for Nearly $500 million Army Counter-UAS Contract for Enduring-High Energy Laser (E-HEL) Program",
+    "wp_date": "2026-09-02T15:15:49",
+    "modified": "2026-09-04T10:57:23",
+    "url": "https://www.avinc.com/2026/09/02/avs-locust-selected-for-nearly-500-million-army-counter-uas-contract-for-enduring-high-energy-laser-e-hel-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-09-02",
+    "original_dateline_candidates": [
+      "September 2, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "E-HEL $464.8M OTA，未来数年交付数十套LOCUST X3及支持/训练；非当年收入，不代表全额已拨款",
+    "next_verification": "分年拨款、交付与SCDE利润",
+    "report_placement": "section2",
+    "original_text_sha256": "35cd7354c0ed3a8cfe3795c096127df902842939aea7eac596d444213921a723",
+    "parent_decision": "included",
+    "citation_id": 15
+  },
+  {
+    "title": "AV Awarded Contract for Three Autonomous Helicopters in Support of NASA’s SkyFall Mission to Mars",
+    "wp_date": "2026-08-27T12:00:06",
+    "modified": "2026-08-27T13:42:19",
+    "url": "https://www.avinc.com/2026/08/27/av-awarded-contract-for-three-autonomous-helicopters-in-support-of-nasas-skyfall-mission-to-mars/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-27",
+    "original_dateline_candidates": [
+      "August 27, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "JPL合作设计制造三架火星直升机合同；金额未披露，计划2028年末发射；NASA任务页独立确认伙伴及三架任务",
+    "next_verification": "设计/制造里程碑、预算和发射；不凭科研新闻上调盈利",
+    "report_placement": "section2",
+    "original_text_sha256": "07e15cf32bb69fa6f928a8cfbaac245e881b27e24b48542756ce716f6f97fd2b",
+    "parent_decision": "included",
+    "citation_id": 16
+  },
+  {
+    "title": "AV to Present at the 2026 Jefferies Global Industrials Conference",
+    "wp_date": "2026-08-27T04:30:53",
+    "modified": "2026-08-26T15:19:59",
+    "url": "https://www.avinc.com/2026/08/27/av-to-present-at-the-2026-jefferies-global-industrials-conference/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-27",
+    "original_dateline_candidates": [
+      "August 27, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "6557ff9c218c01cfba3b25030d679f3abb3fcc09a6ce5c415dfa7c7ddbf46b75",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Receives $51 Million U.S. Army Order for Switchblade® 600 Loitering Munitions",
+    "wp_date": "2026-08-26T09:10:31",
+    "modified": "2026-08-26T11:28:13",
+    "url": "https://www.avinc.com/2026/08/26/av-receives-51-million-u-s-army-order-for-switchblade-600-loitering-munitions/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-26",
+    "original_dateline_candidates": [
+      "August 26, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "Switchblade600 $51M陆军订单，需区别IDIQ额度和当期收入",
+    "next_verification": "交付回款",
+    "report_placement": "section2",
+    "original_text_sha256": "876cbe36a1c0945d2471bfc72f010b63d2d20872e745ec86c38e4a3b38744121",
+    "parent_decision": "included",
+    "citation_id": 17
+  },
+  {
+    "title": "AeroVironment, Inc. to Announce First Quarter of Fiscal Year 2027 Earnings and Host Conference Call",
+    "wp_date": "2026-08-26T04:35:26",
+    "modified": "2026-08-26T11:49:40",
+    "url": "https://www.avinc.com/2026/08/26/aerovironment-inc-to-announce-first-quarter-of-fiscal-year-2027-earnings-and-host-conference-call/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-26",
+    "original_dateline_candidates": [
+      "August 26, 2026",
+      "August 1, 2026",
+      "September 9, 2026",
+      "September 9, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "bdd87e0eebf1e5c4cd45ec62b6cd01630eae48509cff017acc5085be81181aa2",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV to Invest $100 Million in New Unified Campus in Southern California",
+    "wp_date": "2026-08-24T13:00:13",
+    "modified": "2026-08-24T13:31:43",
+    "url": "https://www.avinc.com/2026/08/24/av-to-invest-100-million-in-new-unified-campus-in-southern-california/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-24",
+    "original_dateline_candidates": [
+      "August 24, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "Moorpark自有园区计划$100M，整合五处租赁设施；财年Q2已购主要物业，FY2028开始施工、2029全面运行；已含既有指引资本开支，不能额外重复相加",
+    "next_verification": "投资时序与整合效益；FY2028资本开支正常化假设需重新审慎评估",
+    "report_placement": "section2",
+    "original_text_sha256": "523186e5def539edcf209fbcfb984d0dea9595cd4503ab7576dcb7d986a1c89e",
+    "parent_decision": "included",
+    "citation_id": 18
+  },
+  {
+    "title": "Stop Defending One Door. Start Defending the Whole Building.",
+    "wp_date": "2026-08-24T08:00:56",
+    "modified": "2026-08-24T11:48:00",
+    "url": "https://www.avinc.com/2026/08/24/stop-defending-one-door-start-defending-the-whole-building/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-08-24",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "79a85cb65a035c9252bce0feb9d58239a7010f48c4a646ef041798e3a071c328",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment to Establish Industrial Presence in Greece Through AV Eagle",
+    "wp_date": "2026-08-20T06:45:14",
+    "modified": "2026-08-20T20:34:04",
+    "url": "https://www.avinc.com/2026/08/20/aerovironment-to-establish-industrial-presence-in-greece-through-av-eagle/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-20",
+    "original_dateline_candidates": [
+      "AUGUST 21, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "AV Eagle与Eyeonix合资，已签最终股东协议并获希腊外资批准；AV多数持股并表，初期投资已在指引；FY2027运营、2028生产目标；网页8/20与稿内8/21冲突",
+    "next_verification": "股权/投资具体金额未披露；批准原件、投产与实际需求",
+    "report_placement": "section2",
+    "original_text_sha256": "f12da6f9d8fffe61e91bac66576f4df692c4abf7ffb64ee7152981d988ea26f4",
+    "parent_decision": "included",
+    "citation_id": 19
+  },
+  {
+    "title": "From Lab to Life: How Digital Avatar Technology Is Redefining Biomedical Research",
+    "wp_date": "2026-08-10T08:00:04",
+    "modified": "2026-08-06T15:33:30",
+    "url": "https://www.avinc.com/2026/08/10/from-lab-to-life-how-digital-avatar-technology-is-redefining-biomedical-research/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-08-10",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "5b521eba215f4f5b382a8979226d5a34480d50f22ecabb85ded80b46c0e7f0bc",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Appoints Aerospace and Defense Executive Michael D. Ruppert to Board of Directors",
+    "wp_date": "2026-08-07T09:10:24",
+    "modified": "2026-08-06T18:42:37",
+    "url": "https://www.avinc.com/2026/08/07/av-appoints-aerospace-and-defense-executive-michael-d-ruppert-to-board-of-directors/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-08-07",
+    "original_dateline_candidates": [
+      "August 5, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "f6dcc871cbf73aa9e8bfff97f797f9ad6abfdfeb6db5e181e1339a4b993eb33f",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "TWIX 2026: Proving the Power of Halo_Shield™",
+    "wp_date": "2026-08-05T08:00:50",
+    "modified": "2026-08-04T10:13:30",
+    "url": "https://www.avinc.com/2026/08/05/twix-2026-proving-the-power-of-halo_shield/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-08-05",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "已公布重大事件/执行进度",
+    "original_text_sha256": "87b398e695cc343abefaa8cc5286b4a75d79ae4701c44b7c6d778584f28d8a1a",
+    "parent_decision": "merge_existing_project",
+    "parent_reason": "项目评论与已有产品/集成节点重复，不是独立新事件；保留覆盖记录。"
+  },
+  {
+    "title": "AeroVironment Announces Planned Retirement of Stephen F. Page from Board of Directors",
+    "wp_date": "2026-07-29T09:14:41",
+    "modified": "2026-07-29T09:14:41",
+    "url": "https://www.avinc.com/2026/07/29/aerovironment-announces-planned-retirement-of-stephen-f-page-from-board-of-directors/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-29",
+    "original_dateline_candidates": [
+      "July 29, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "669df5057a43daff7f3c6b26e80695b6855608c077c92a1ce294a059835a6526",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV and Applied Intuition Establish Strategic Collaboration to Advance Uncrewed Teaming",
+    "wp_date": "2026-07-29T09:10:20",
+    "modified": "2026-07-28T12:05:35",
+    "url": "https://www.avinc.com/2026/07/29/av-and-applied-intuition-establish-strategic-collaboration-to-advance-uncrewed-teaming/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-29",
+    "original_dateline_candidates": [
+      "July 29,  2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "Acuity ISR/Strike软件集成Mayhem10，单操作者监督无人蜂群/协同；战略teaming协议无金额承诺",
+    "next_verification": "集成、测试及正式军方采购",
+    "report_placement": "section2",
+    "original_text_sha256": "56b390fb26ebf0cbe8f5e1ea9e5fb654b510cf0b73e9793d1a1b656080240740",
+    "parent_decision": "included",
+    "citation_id": 20
+  },
+  {
+    "title": "Operation Jailbreak and What Comes Next for Defense Integration",
+    "wp_date": "2026-07-27T08:00:10",
+    "modified": "2026-07-24T14:43:45",
+    "url": "https://www.avinc.com/2026/07/27/operation-jailbreak-and-what-comes-next-for-defense-integration/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-07-27",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "5562e8c07eadd87460504edbad4f1264e29617f033ad341b31f1462c36ce69ec",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "2nd Marine Regiment Tests First-Ever Group 3 UAS Capabilities at the Conventional Level",
+    "wp_date": "2026-07-22T09:31:32",
+    "modified": "2026-07-28T12:05:58",
+    "url": "https://www.avinc.com/2026/07/22/2nd-marine-regiment-tests-first-ever-group-3-uas-capabilities-at-the-conventional-level/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-07-22",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "e3f823e1ed38a4576eba61a130ecae9ca249fbb9c86a632ae4c5ed6a444beeff",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "Demystifying Directed Energy Starts at the Trigger",
+    "wp_date": "2026-07-21T08:00:20",
+    "modified": "2026-07-28T12:06:28",
+    "url": "https://www.avinc.com/2026/07/21/demystifying-directed-energy-starts-at-the-trigger/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-07-21",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "f038162bd431115e0612591e4cd107ea970f428addde887a3306bb99760a0357",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Awarded $117.3 Million U.S. Army Production Contract for P550™",
+    "wp_date": "2026-07-20T09:09:41",
+    "modified": "2026-07-28T12:06:44",
+    "url": "https://www.avinc.com/2026/07/20/av-awarded-117-3-million-u-s-army-production-contract-for-p550/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-20",
+    "original_dateline_candidates": [
+      "July 20, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "P550 LRR初始全速生产采购82套，$117.3M；公司7/20公告不是合同实际签署日；采购方首次公示日期仍需核查",
+    "next_verification": "交付与批量生产利润；不可和12月$13.2M原型重复",
+    "report_placement": "section2",
+    "original_text_sha256": "0d675e48d7922a76c8efcd6b2c90927250ccd71f0e845c1cd2a487a276f71fa8",
+    "parent_decision": "included",
+    "citation_id": 21
+  },
+  {
+    "title": "The New Arsenal: Biology, Manufacturing, and National Security",
+    "wp_date": "2026-07-15T08:00:59",
+    "modified": "2026-07-23T14:23:16",
+    "url": "https://www.avinc.com/2026/07/15/the-new-arsenal-biology-manufacturing-and-national-security/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-07-15",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "872d9b25cbcef9b0c0993502e19bbd85e118272b3a4a9452e7c21b6df96c1783",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Receives MQ‑31A Designation from Italian Ministry of Defence (MoD)",
+    "wp_date": "2026-07-13T09:10:28",
+    "modified": "2026-07-28T12:06:54",
+    "url": "https://www.avinc.com/2026/07/13/av-receives-mq-31a-designation-from-italian-ministry-of-defence-mod/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-13",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "191502de033561f34859a034b2aad22db2a567eb71ad314c2607fef7218622c9",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment, Inc. Highlights Growth Strategy and Unveils Fiscal Year 2030 Financial Targets at 2026 Investor Day",
+    "wp_date": "2026-07-08T16:30:25",
+    "modified": "2026-07-28T12:07:08",
+    "url": "https://www.avinc.com/2026/07/08/aerovironment-inc-highlights-growth-strategy-and-unveils-fiscal-year-2030-financial-targets-at-2026-investor-day/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-08",
+    "original_dateline_candidates": [
+      "July 8, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "financial_section",
+    "reason": "避免重大事件表重复定期数字，仍审阅风险披露",
+    "meaning": "定期财报/长期目标已存原文；财务章节呈现，重大减值/重述另列",
+    "next_verification": "核对最新原件",
+    "report_placement": "财务章节",
+    "original_text_sha256": "396ac00eab2f29e6906c5c22d80ed50e7cca4e2b163fc41323739f5fa2450c7b",
+    "parent_decision": "financial_section"
+  },
+  {
+    "title": "AV Awarded $30 Million Contract to Provide Puma™ Systems Stack for Germany’s LARUS Program",
+    "wp_date": "2026-07-07T09:10:50",
+    "modified": "2026-07-28T12:07:23",
+    "url": "https://www.avinc.com/2026/07/07/av-awarded-30-million-contract-to-provide-puma-systems-stack-for-germanys-larus-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-07",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "德国LARUS Puma系统栈$30M，拓展欧洲采购",
+    "next_verification": "交付、保障和本地客户采用",
+    "report_placement": "section2",
+    "original_text_sha256": "639bacf0109687bf54489a49bbbb962b98d4b736084f81155a13a09067d1b4c9",
+    "parent_decision": "included",
+    "citation_id": 22
+  },
+  {
+    "title": "AV’s Titan™ Selected by JIATF-401 for $80.5 m Award",
+    "wp_date": "2026-07-06T08:32:15",
+    "modified": "2026-07-28T12:07:32",
+    "url": "https://www.avinc.com/2026/07/06/avs-titan-selected-by-jiatf-401-for-80-5-m-award/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-06",
+    "original_dateline_candidates": [
+      "July 7, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "Titan MS $80.5M为Domestic Shield $500M IDIQ下执行订单；不是另加到$500M之外；页面7/6与稿内7/7冲突",
+    "next_verification": "交付、拨款和支持成本",
+    "report_placement": "section2",
+    "original_text_sha256": "7671453454032218a94bc430cd741807acf8668bb900dbb2dfd73de2e7933871",
+    "parent_decision": "included",
+    "citation_id": 23
+  },
+  {
+    "title": "AV Awarded $500 million IDIQ for Support of JIATF-401 Domestic Shield Program",
+    "wp_date": "2026-07-06T08:30:51",
+    "modified": "2026-07-28T12:07:41",
+    "url": "https://www.avinc.com/2026/07/06/av-awarded-500-million-idiq-for-support-of-jiatf-401-domestic-shield-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-07-06",
+    "original_dateline_candidates": [
+      "July 6, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "三年$500M sole-source IDIQ，政府7/1公告、公司7/6；额度不是保证订单",
+    "next_verification": "后续task/delivery orders；政府原文403未取得",
+    "report_placement": "section2",
+    "original_text_sha256": "8714e1e36430c9a1954f845a6d7c28ef063b33d558ce48cd3752a336522ac5da",
+    "parent_decision": "included",
+    "citation_id": 24
+  },
+  {
+    "title": "AeroVironment Announces Fiscal 2026 Fourth Quarter and Fiscal Year Results",
+    "wp_date": "2026-06-30T09:41:26",
+    "modified": "2026-07-28T12:07:50",
+    "url": "https://investor.avinc.com/news-releases/news-release-details/aerovironment-announces-fiscal-2026-fourth-quarter-and-fiscal",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-30",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "financial_section",
+    "reason": "避免重大事件表重复定期数字，仍审阅风险披露",
+    "meaning": "定期财报/长期目标已存原文；财务章节呈现，重大减值/重述另列",
+    "next_verification": "核对最新原件",
+    "report_placement": "财务章节",
+    "original_text_sha256": "f0912b519b938f0754654d08ceb70faf64c08b0a7f312f782ae1ad16b3bfe6e1",
+    "parent_decision": "financial_section"
+  },
+  {
+    "title": "AV Appoints William J. Lynn III to Board of Directors",
+    "wp_date": "2026-06-25T09:10:32",
+    "modified": "2026-06-25T09:10:32",
+    "url": "https://www.avinc.com/2026/06/25/av-appoints-william-j-lynn-iii-to-board-of-directors/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-25",
+    "original_dateline_candidates": [
+      "June 25, 2026",
+      "June 24, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "f1a352ee9f628f4bf8643a16e8d83494ea0b99d8bd58b9eb8699ca1db7d94740",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment, Inc. to Host Investor Day in New York City, New York on July 8",
+    "wp_date": "2026-06-18T15:08:22",
+    "modified": "2026-07-28T12:07:59",
+    "url": "https://www.avinc.com/2026/06/18/aerovironment-inc-to-host-investor-day-in-new-york-city-new-york-on-july-8/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-18",
+    "original_dateline_candidates": [
+      "July 8, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "ae37bd069b9a43ec5730720ac0179a7dd5d4269a0ac4b46c4b87a988424ccd63",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "NATO’s Next C-UAS Challenge: Orchestrating the Alliance’s Defense Network",
+    "wp_date": "2026-06-15T09:10:43",
+    "modified": "2026-06-15T12:24:11",
+    "url": "https://www.avinc.com/2026/06/15/natos-next-c-uas-challenge-orchestrating-the-alliances-defense-network/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-06-15",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "d7eae5e471a75f5927f1d308483929de90d05df80230df33825e7c82ad18f173",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Introduces TOM 50 RE, a Backpackable UGV for Rapid Reconnaissance and Explosive Ordnance Disposal",
+    "wp_date": "2026-06-14T09:10:37",
+    "modified": "2026-07-28T12:08:12",
+    "url": "https://www.avinc.com/2026/06/14/av-introduces-tom-50-re-a-backpackable-ugv-for-rapid-reconnaissance-and-explosive-ordnance-disposal/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-14",
+    "original_dateline_candidates": [
+      "June 15, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "191ef40fc591f4b98e5e561a4f231789b05b0d866d789528c6accd7d2002cca7",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Signs MOU with Taiwan’s Ubiqconn to Develop Common Controller Ecosystem for Taiwan’s Indigenous UAS Program",
+    "wp_date": "2026-06-11T09:11:57",
+    "modified": "2026-07-28T12:08:23",
+    "url": "https://www.avinc.com/2026/06/11/av-signs-mou-with-taiwans-ubiqconn-to-develop-common-controller-ecosystem-for-taiwans-indigenous-uas-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-11",
+    "original_dateline_candidates": [
+      "June 11, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "台湾本土UAS通用控制生态MOU：Kinesis/KxM软件与耐用控制硬件、演示/训练；台湾总体采购规模不是AV订单",
+    "next_verification": "后续本土OEM集成和实际采购；对方页标题日期取得但正文未完整渲染",
+    "report_placement": "section2",
+    "original_text_sha256": "954cff9f23c9005bf1d6bfe4c13cf8d8840a1235f81dcc9b48a809c836f612ae",
+    "parent_decision": "included",
+    "citation_id": 25
+  },
+  {
+    "title": "AV Announces LINX™ Connected Transportation Platform to Modernize Real-Time Traveler Communications",
+    "wp_date": "2026-06-08T09:10:49",
+    "modified": "2026-07-28T12:08:40",
+    "url": "https://www.avinc.com/2026/06/08/av-announces-linx-connected-transportation-platform-to-modernize-real-time-traveler-communications/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-08",
+    "original_dateline_candidates": [
+      "June 9, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "ad9b7bb73de05f59f83b6709345e80df606054b9d5d238295f16878792b510a9",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "MILESTONES AT WHITE SANDS, Driscoll’s Test, The FAA and DoW’s Landmark Safety Agreement",
+    "wp_date": "2026-06-03T07:00:21",
+    "modified": "2026-07-28T12:08:31",
+    "url": "https://www.avinc.com/2026/06/03/milestones-at-white-sands-driscolls-test-the-faa-and-dows-landmark-safety-agreement/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-06-03",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "1a80090c05b73fb1a6cf6bf950cc2c4a01ab4f9d6e35b9375bbd1f6811aba6e0",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV to Expand Advanced Production Capabilities in Dayton Area",
+    "wp_date": "2026-06-02T09:10:16",
+    "modified": "2026-07-28T12:08:49",
+    "url": "https://www.avinc.com/2026/06/02/av-to-expand-advanced-production-capabilities-in-dayton-area/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-06-02",
+    "original_dateline_candidates": [
+      "June 2, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "公司计划投资$15M，增加约44,000平方英尺/200岗位，先pilot可扩中量产；不得将文稿中$7M审批含混表述当全额补贴",
+    "next_verification": "州激励原件、试产及需求",
+    "report_placement": "section2",
+    "original_text_sha256": "51180a303f1104d2b1ec43a8778154079ca59524e5073ce9449bec0ce1424d02",
+    "parent_decision": "included",
+    "citation_id": 26
+  },
+  {
+    "title": "AV Awarded $20 Million Contract to Advance Ceramic Materials Research for the U.S. Air Force and Space Force",
+    "wp_date": "2026-05-28T10:58:06",
+    "modified": "2026-07-28T12:09:02",
+    "url": "https://www.avinc.com/2026/05/28/av-awarded-20-million-contract-to-advance-ceramic-materials-research-for-the-u-s-air-force-and-space-force/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-05-28",
+    "original_dateline_candidates": [
+      "May 28, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "ac1b8bac17118ca72a571d217357588ca478d49c7753d1ce131fa487dc3df51f",
+    "parent_decision": "included",
+    "citation_id": 27
+  },
+  {
+    "title": "AV Expands Huntsville Facility to Accelerate Production of Next-Generation Freedom Eagle-1 Interceptor",
+    "wp_date": "2026-05-26T09:10:04",
+    "modified": "2026-07-28T12:09:10",
+    "url": "https://www.avinc.com/2026/05/26/av-expands-huntsville-facility-to-accelerate-production-of-next-generation-freedom-eagle-1-interceptor/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-05-26",
+    "original_dateline_candidates": [
+      "May 26, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "额外政府投资$20.2M、扩24,000平方英尺支撑FE-1低速初产到全速生产；不是全部公司自有资本开支",
+    "next_verification": "FE-1量产与交付；政府资金到账",
+    "report_placement": "section2",
+    "original_text_sha256": "72e21857550843b99eb6f743d4e86fb1fefc724165c1d6bd92baa12e9a97ef25",
+    "parent_decision": "included",
+    "citation_id": 28
+  },
+  {
+    "title": "AV Expands AV_Halo™ Platform with INSTINCT and DETECT to Enable Faster, Resilient Decision-Making at the Edge",
+    "wp_date": "2026-05-19T09:10:42",
+    "modified": "2026-07-28T12:09:16",
+    "url": "https://www.avinc.com/2026/05/19/av-expands-av_halo-platform-with-instinct-and-detect-to-enable-faster-resilient-decision-making-at-the-edge/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-05-19",
+    "original_dateline_candidates": [
+      "May 19, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "b61f1e08a423f64bb3f209da1bae1b7d5b5f050d18f081c455cb2a64f17e97eb",
+    "parent_decision": "included",
+    "citation_id": 29
+  },
+  {
+    "title": "Why We Created MAYHEM 10—and What the Battlefield Now Demands",
+    "wp_date": "2026-05-18T13:08:08",
+    "modified": "2026-07-28T12:09:23",
+    "url": "https://www.avinc.com/2026/05/18/3429/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-05-18",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "已公布重大事件/执行进度",
+    "original_text_sha256": "004c27e8ec08767d862baaf083134bbead851f8a0d31d2fdf4579fbdc8cdedef",
+    "parent_decision": "merge_existing_project",
+    "parent_reason": "项目评论与已有产品/集成节点重复，不是独立新事件；保留覆盖记录。"
+  },
+  {
+    "title": "AV Awarded $43M DoW Contract to Integrate PANTHER Phased Array Antenna on SkyRange Platforms for Hypersonic Telemetry",
+    "wp_date": "2026-05-12T09:10:19",
+    "modified": "2026-07-28T12:09:31",
+    "url": "https://www.avinc.com/2026/05/12/av-awarded-43m-dow-contract-to-integrate-panther-phased-array-antenna-on-skyrange-platforms-for-hypersonic-telemetry/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-05-12",
+    "original_dateline_candidates": [
+      "May 11 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "TRMC三年$43M PANTHER天线集成SkyRange；网页5/12与稿内5/11不同",
+    "next_verification": "技术交付/测试与项目利润",
+    "report_placement": "section2",
+    "original_text_sha256": "e486ebbe3770530e7999d62d5246ac57c5f84821b096d92e82956b633bd2cde5",
+    "parent_decision": "included",
+    "citation_id": 30
+  },
+  {
+    "title": "The Strait of Hormuz is Showing us Why Mine Countermeasures Must Evolve for a Contested Maritime Fight",
+    "wp_date": "2026-05-11T10:36:06",
+    "modified": "2026-10-08T17:33:41",
+    "url": "https://www.avinc.com/2026/05/11/the-strait-of-hormuz-is-showing-us-why-mine-countermeasures-must-evolve-for-a-contested-maritime-fight/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-05-11",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "a7df9bb6e4cc0158fabd98fac125bd2d9c5cf18faf353c6aff305182545a3194",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV’s LOCUST Demonstrates Landmark Capability at White Sands with JIATF-401 and FAA",
+    "wp_date": "2026-05-06T09:12:14",
+    "modified": "2026-05-06T08:03:18",
+    "url": "https://www.avinc.com/2026/05/06/avs-locust-demonstrates-landmark-capability-at-white-sands-with-jiatf-401-and-faa/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-05-06",
+    "original_dateline_candidates": [
+      "May 6, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "监管/部署突破与FAA关联；FAA4/10原文证明高能激光安全评估，但未点名AV，不能称FAA原文为具体品牌全面许可",
+    "next_verification": "部署条件及国内任务订单",
+    "report_placement": "section2",
+    "original_text_sha256": "70f8bb716afac23ac5bdaeb51311b58f73e7301a5b7f9944a53d73dbf9d4ba77",
+    "parent_decision": "included",
+    "citation_id": 31
+  },
+  {
+    "title": "We’re Fighting 2026 Drone Swarms with Cold War Architecture. It’s Time to Upgrade.",
+    "wp_date": "2026-05-05T08:00:30",
+    "modified": "2026-05-05T13:27:22",
+    "url": "https://www.avinc.com/2026/05/05/were-fighting-2026-drone-swarms-with-cold-war-architecture-its-time-to-upgrade/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-05-05",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "ad6074b14186730631d0303a4fc279e34b20ff364d20fa5e17af4e4359aaf5e3",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Recognized as Top Veteran Employer",
+    "wp_date": "2026-05-04T16:26:51",
+    "modified": "2026-05-06T16:28:14",
+    "url": "https://www.avinc.com/2026/05/04/av-recognized-as-top-veteran-employer/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-05-04",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "40860e119251af9486cf06bd3db71309cdb2ab2aad8e97ffdd297c61216e211b",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "U.S. Army Selects AV’s Switchblade® 400 for LASSO Program",
+    "wp_date": "2026-05-04T09:12:07",
+    "modified": "2026-05-01T13:55:18",
+    "url": "https://www.avinc.com/2026/05/04/u-s-army-selects-avs-switchblade-400-for-lasso-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-05-04",
+    "original_dateline_candidates": [
+      "May 4, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "陆军Switchblade400原型协议；战略项目准入但金额未披露，不是全速生产订单",
+    "next_verification": "原型测试、后续生产选择",
+    "report_placement": "section2",
+    "original_text_sha256": "4a4cf60d6c08d486e98b053e4f067114aab214198f8f71aacd800e77e36a19ee",
+    "parent_decision": "included",
+    "citation_id": 32
+  },
+  {
+    "title": "100-Percent: LOCUST’s First Day at Sea",
+    "wp_date": "2026-04-28T09:42:51",
+    "modified": "2026-04-28T10:00:13",
+    "url": "https://www.avinc.com/2026/04/28/100-percent-locusts-first-day-at-sea/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-04-28",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "0a10021d256e7df4609e6f3cc34c73c3bc1232a476858ef25009b9d5a0d99919",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Announces Halo_Shield™, Comprehensive Tile-Based C-UAS Solution",
+    "wp_date": "2026-04-28T09:13:13",
+    "modified": "2026-05-01T14:24:44",
+    "url": "https://www.avinc.com/2026/04/28/av-announces-halo_shield-comprehensive-tile-based-c-uas-solution/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-28",
+    "original_dateline_candidates": [
+      "April 28, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "058d24753e83bb7a2bf3b4908f35488e9a8d20ecb42eb3e39a70cbf7e8c6a97f",
+    "parent_decision": "included",
+    "citation_id": 33
+  },
+  {
+    "title": "From Setback to Standard: How Learning Fast Delivered VAPOR® CLE to the Army’s MRR Program",
+    "wp_date": "2026-04-21T15:39:02",
+    "modified": "2026-04-22T13:24:09",
+    "url": "https://www.avinc.com/2026/04/21/from-setback-to-standard-how-learning-fast-delivered-vapor-cle-to-the-armys-mrr-program/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-04-21",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "e88fe6a9637bdce197c4addc80dd29eb15095802b7e884fdd7851ddfb766361c",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Successfully Demonstrates LOCUST Laser Weapon System Aboard USS George H.W. Bush",
+    "wp_date": "2026-04-21T15:08:09",
+    "modified": "2026-04-22T13:13:48",
+    "url": "https://www.avinc.com/2026/04/21/av-successfully-demonstrates-locust-laser-weapon-system-aboard-uss-george-h-w-bush/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-21",
+    "original_dateline_candidates": [
+      "April 21, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "5107def8828cc2350e2355c483543d4de9db394aff05328a4aef1049b99bdda1",
+    "parent_decision": "included",
+    "citation_id": 34
+  },
+  {
+    "title": "Army Selects AV’s VAPOR® CLE for Medium Range Reconnaissance Program",
+    "wp_date": "2026-04-20T13:17:06",
+    "modified": "2026-04-22T13:18:52",
+    "url": "https://www.avinc.com/2026/04/20/army-selects-avs-vapor-cle-for-medium-range-reconnaissance-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-20",
+    "original_dateline_candidates": [
+      "April 20, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "VAPOR CLE获$14.6M生产合同，陆军公司级Tranche2/MRR",
+    "next_verification": "交付及后续采购",
+    "report_placement": "section2",
+    "original_text_sha256": "732dcbca053dd037be235d29b3107381b8942b3fe6d48da2dd328809ea11c587",
+    "parent_decision": "included",
+    "citation_id": 35
+  },
+  {
+    "title": "AV’s Precision Hardware Points Artemis II Laser Link to Earth",
+    "wp_date": "2026-04-15T20:48:40",
+    "modified": "2026-04-19T20:52:08",
+    "url": "https://www.avinc.com/2026/04/15/avs-precision-hardware-points-artemis-ii-laser-link-to-earth/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-15",
+    "original_dateline_candidates": [
+      "April 15, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "73d4cdefb004dc22ab69029d66fda25f34cc584e40d987d51ccc74240d5acdbf",
+    "parent_decision": "included",
+    "citation_id": 36
+  },
+  {
+    "title": "AV Introduces MAYHEM 10: Multi-Role Launched Effects System at AAAA 2026",
+    "wp_date": "2026-04-15T20:42:11",
+    "modified": "2026-04-19T20:45:43",
+    "url": "https://www.avinc.com/2026/04/15/av-introduces-mayhem-10-multi-role-launched-effects-system-at-aaaa-2026/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-15",
+    "original_dateline_candidates": [
+      "April 15, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "e5657c7b82bcf4dc4681df0783ba6137806da04e08b8b106c4d8ef5ac27fe58a",
+    "parent_decision": "included",
+    "citation_id": 37
+  },
+  {
+    "title": "AV Appoints Sean Woodward as Chief Financial Officer",
+    "wp_date": "2026-04-13T20:52:12",
+    "modified": "2026-04-21T10:58:01",
+    "url": "https://www.avinc.com/2026/04/13/av-appoints-sean-woodward-as-chief-financial-officer/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-13",
+    "original_dateline_candidates": [
+      "April 13, 2026",
+      "May 1, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "财务负责人交接影响整合与内控整改；需区分退休计划与新CFO任命",
+    "next_verification": "控制缺陷修复的正式测试确认",
+    "report_placement": "section2",
+    "original_text_sha256": "cd1abce977aae7185d6862c42244fbd4cf942836e79ade562e29deebce4a25b9",
+    "parent_decision": "included",
+    "citation_id": 38
+  },
+  {
+    "title": "AV Appoints Dr. Robert Smith as Chief Operating Officer",
+    "wp_date": "2026-04-09T16:26:39",
+    "modified": "2026-04-19T19:07:28",
+    "url": "https://www.avinc.com/2026/04/09/av-appoints-dr-robert-smith-as-chief-operating-officer/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-04-09",
+    "original_dateline_candidates": [
+      "April 9, 2026",
+      "April 13, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "新COO Robert Smith负责运营/规模化兑现，属整合执行治理事项",
+    "next_verification": "生产和现金绩效",
+    "report_placement": "section2",
+    "original_text_sha256": "cbb90825af25e5a75c4f917498c67745fa63647e8f97daefb56d4f847990766b",
+    "parent_decision": "included",
+    "citation_id": 39
+  },
+  {
+    "title": "How Does Weather Affect Laser Weapons? A More Important Question Than It Seems",
+    "wp_date": "2026-04-08T16:29:48",
+    "modified": "2026-04-14T20:32:36",
+    "url": "https://www.avinc.com/2026/04/08/how-does-weather-affect-laser-weapons-a-more-important-question-than-it-seems/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-04-08",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "42c917f8a90524efd7ec120a05e1458cddab36fe14a9379e9cfee5cb60239572",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV’s UES Awarded $25M AFRL Contract to Mature Human Performance Technologies for Warfighter Readiness",
+    "wp_date": "2026-04-07T07:12:14",
+    "modified": "2026-04-15T15:29:03",
+    "url": "https://www.avinc.com/2026/04/07/avs-ues-awarded-25m-afrl-contract-to-mature-human-performance-technologies-for-warfighter-readiness/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-04-07",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "21e3097e4e32d2270f4777d98cec1a6d47a818de6e1d717d80e8918f6304f409",
+    "parent_decision": "included",
+    "citation_id": 40
+  },
+  {
+    "title": "AV Selected to Deliver Intelligence, Surveillance and Reconnaissance Services to U.S. Navy with JUMP 20-X, Advanced Payload Integrations",
+    "wp_date": "2026-03-31T07:22:08",
+    "modified": "2026-04-15T09:15:04",
+    "url": "https://www.avinc.com/2026/03/31/av-selected-to-deliver-intelligence-surveillance-and-reconnaissance-services-to-u-s-navy-with-jump-20-x-advanced-payload-integrations/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-03-31",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "9dfd434cbec71d96f68c9b5637e216f6c407eb833d3cde92ce2ee192c4419500",
+    "parent_decision": "included",
+    "citation_id": 41
+  },
+  {
+    "title": "AV Unveils LOCUST® X3: Third-Generation Modular Directed Energy Weapon System",
+    "wp_date": "2026-03-24T07:27:32",
+    "modified": "2026-04-15T09:28:45",
+    "url": "https://www.avinc.com/2026/03/24/av-unveils-locust-x3-third-generation-modular-directed-energy-weapon-system/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-03-24",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "30619492ababebe1edf0346c29d54aa7d0570327a2ed337dad165e97b7f59b70",
+    "parent_decision": "included",
+    "citation_id": 42
+  },
+  {
+    "title": "Can a Laser Weapon Operate Safely in Civilian Airspace?",
+    "wp_date": "2026-03-23T08:54:52",
+    "modified": "2026-04-19T19:06:21",
+    "url": "https://www.avinc.com/2026/03/23/can-a-laser-weapon-operate-safely-in-civilian-airspace/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-03-23",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "f5da5099e05dba1ed6e09fe98d0b5f32956d88b20a51c081942e5f2a82ba84f7",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Acquires Empirical Systems Aerospace, Inc.",
+    "wp_date": "2026-03-16T12:47:03",
+    "modified": "2026-04-20T12:49:40",
+    "url": "https://www.avinc.com/2026/03/16/av-acquires-empirical-systems-aerospace-inc/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-03-16",
+    "original_dateline_candidates": [
+      "March 16, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "ESAero收购约$200M，约$160M股票其余现金并受交割调整/holdbacks；已收购而非仅意向，首年增厚调整EBITDA为目标",
+    "next_verification": "整合、有机/并购收入分离和新增稀释",
+    "report_placement": "section2",
+    "original_text_sha256": "fea119996418494582442963366de2bbe4394bfb14624249cd8ee2bcc62fe30a",
+    "parent_decision": "included",
+    "citation_id": 43
+  },
+  {
+    "title": "Iran’s cheap drones are a drain on the U.S. weapons stockpile. Could lasers help fend them off?",
+    "wp_date": "2026-03-15T16:56:50",
+    "modified": "2026-04-19T19:05:00",
+    "url": "https://www.avinc.com/2026/03/15/irans-cheap-drones-are-a-drain-on-the-u-s-weapons-stockpile-could-lasers-help-fend-them-off/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-03-15",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "47a3696871782b68af11bca10e96c2370bf0f0f9ebc9c6802a6774b78cae18b2",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "Why lasers, at $3 per shot, may be the next frontier for stopping drone attacks",
+    "wp_date": "2026-03-15T16:50:05",
+    "modified": "2026-04-19T19:04:18",
+    "url": "https://www.avinc.com/2026/03/15/why-lasers-at-3-per-shot-may-be-the-next-frontier-for-stopping-drone-attacks/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-03-15",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "74f550b58aead612d1ead2e6473a3017bc18107185dddb8d5fb9b62ba227f7c0",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Featured on CBS News’ 60 Minutes",
+    "wp_date": "2026-03-15T09:37:49",
+    "modified": "2026-04-19T19:03:29",
+    "url": "https://www.avinc.com/2026/03/15/av-featured-on-cbs-news-60-minutes/",
+    "categories": [
+      35,
+      34
+    ],
+    "announcement_date": "2026-03-15",
+    "original_dateline_candidates": [
+      "March 15, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "c6e65c260e8ec0895350f9988b6f485f2e7c7155a4e83cf5563c73e0b97953c9",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment Announces Fiscal 2026 Third Quarter Results",
+    "wp_date": "2026-03-10T10:30:38",
+    "modified": "2026-04-19T19:01:55",
+    "url": "https://www.avinc.com/2026/03/10/aerovironment-announces-fiscal-2026-third-quarter-results/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-03-10",
+    "original_dateline_candidates": [
+      "March 10, 2026",
+      "January 31, 2026",
+      "May 1, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "financial_section",
+    "reason": "避免重大事件表重复定期数字，仍审阅风险披露",
+    "meaning": "定期财报/长期目标已存原文；财务章节呈现，重大减值/重述另列",
+    "next_verification": "核对最新原件",
+    "report_placement": "财务章节",
+    "original_text_sha256": "cb7b4739d3b3eb2787b9599378ccf6bdad73a9e758d47d7d3cfb80cec016f622",
+    "parent_decision": "financial_section"
+  },
+  {
+    "title": "AV Awarded $97 Million U.S. Army Contract to Advance Next-Generation Sensor Testing",
+    "wp_date": "2026-03-05T10:43:49",
+    "modified": "2026-04-10T10:45:54",
+    "url": "https://www.avinc.com/2026/03/05/av-awarded-97-million-u-s-army-contract-to-advance-next-generation-sensor-testing/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-03-05",
+    "original_dateline_candidates": [
+      "March 5, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "三年$97.4M GENESIS导弹防御传感器HWIL原型测试环境，AMTC/DEVCOM AvMC",
+    "next_verification": "原型交付及固定预算经济性",
+    "report_placement": "section2",
+    "original_text_sha256": "771c79a1093dc746a545883d1867b2f09f1c5ed951f3da75ff63b2d4f3a47038",
+    "parent_decision": "included",
+    "citation_id": 44
+  },
+  {
+    "title": "The Math Problem Breaking Air Defense, And Why Lasers Change It",
+    "wp_date": "2026-03-04T09:43:45",
+    "modified": "2026-04-19T19:01:12",
+    "url": "https://www.avinc.com/2026/03/04/the-math-problem-breaking-air-defense-and-why-lasers-change-it/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-03-04",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "9b907422f39c5fb3cdbf75ee7895f4617586d0cc1deae447d3aa491d3a26d883",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Issues Statement Regarding Active Negotiations for Contract Amendment to Support U.S. Space Force’s SCAR Program",
+    "wp_date": "2026-03-03T10:52:33",
+    "modified": "2026-04-15T12:15:40",
+    "url": "https://www.avinc.com/2026/03/03/av-issues-statement-regarding-active-negotiations-for-contract-amendment-to-support-u-s-space-forces-scar-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-03-03",
+    "original_dateline_candidates": [
+      "March 3, 2026",
+      "March 10, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "SCAR 3/3公司称临时暂停与谈判，不能沿用至今；最新10-K明确2026年3月客户便利终止；需与减值、重述和诉讼合并重大负面链条",
+    "next_verification": "再竞争不等于已恢复原合同，跟踪采购方新方案",
+    "report_placement": "section2",
+    "original_text_sha256": "1b0c492eedb87c54fa2a23a5a23654c60a1802fd3a067eb8505ef009e19200bc",
+    "parent_decision": "included",
+    "citation_id": 45
+  },
+  {
+    "title": "AV Partners with City of Albuquerque and State of New Mexico in Defense Manufacturing Expansion",
+    "wp_date": "2026-03-03T10:46:57",
+    "modified": "2026-04-13T14:04:54",
+    "url": "https://www.avinc.com/2026/03/03/av-partners-with-city-of-albuquerque-and-state-of-new-mexico-in-defense-manufacturing-expansion/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-03-03",
+    "original_dateline_candidates": [
+      "March 3, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "计划>$30M扩产；州$5M市$1M绩效激励，按招聘里程碑报销；包括SCAR相关空间产线与定向能，不能只讲LOCUST成功",
+    "next_verification": "投产利用率、SCAR风险后产能用途、实际回款",
+    "report_placement": "section2",
+    "original_text_sha256": "5b187f2d0ca4b97927b8ed5729ffee104b5cdaccebe9de9a14facf42c951ea27",
+    "parent_decision": "included",
+    "citation_id": 46
+  },
+  {
+    "title": "AV, Inc. to Announce Third Quarter of Fiscal Year 2026 Earnings and Host Conference Call",
+    "wp_date": "2026-02-27T10:58:24",
+    "modified": "2026-04-14T06:19:17",
+    "url": "https://www.avinc.com/2026/02/27/av-inc-to-announce-third-quarter-of-fiscal-year-2026-earnings-and-host-conference-call/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-02-27",
+    "original_dateline_candidates": [
+      "February 27, 2026",
+      "January 31, 2026",
+      "March 10, 2026",
+      "March 10, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "f84ba8cb6d2f12179c96b27e9fd1d46caff2ff6970d44da6f550984cf03a7beb",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "The Human Is Infrastructure: Readiness in the Age of Autonomy",
+    "wp_date": "2026-02-26T11:19:46",
+    "modified": "2026-04-27T16:05:36",
+    "url": "https://www.avinc.com/2026/02/26/the-human-is-infrastructure-readiness-in-the-age-of-autonomy/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-02-26",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "697637c62240b46a74ec2c0283b96d2fe9dc290292ce236d0f0330a3cd92b68f",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Receives $186 Million U.S. Army Delivery Order for Next-Generation Switchblade Systems",
+    "wp_date": "2026-02-26T11:03:17",
+    "modified": "2026-04-15T12:16:43",
+    "url": "https://www.avinc.com/2026/02/26/av-receives-186-million-u-s-army-delivery-order-for-next-generation-switchblade-systems/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-02-26",
+    "original_dateline_candidates": [
+      "February 26, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "Switchblade $186M交付订单，为既有五年$990M IDIQ下，不能同额度加总",
+    "next_verification": "交付与延迟恢复",
+    "report_placement": "section2",
+    "original_text_sha256": "b8d7c4651e4aa4024204047001701486f1667930c2175c9e7d127038d4ef68d2",
+    "parent_decision": "included",
+    "citation_id": 47
+  },
+  {
+    "title": "AV Announces Retirement of Chief Financial Officer Kevin McDonnell",
+    "wp_date": "2026-02-23T11:24:20",
+    "modified": "2026-04-19T18:59:17",
+    "url": "https://www.avinc.com/2026/02/23/av-announces-retirement-of-chief-financial-officer-kevin-mcdonnell/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-02-23",
+    "original_dateline_candidates": [
+      "February 23, 2026",
+      "July 31, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "财务负责人交接影响整合与内控整改；需区分退休计划与新CFO任命",
+    "next_verification": "控制缺陷修复的正式测试确认",
+    "report_placement": "section2",
+    "original_text_sha256": "90c73ff904111e47031f05cafa64f74922ec7e8f7cf595650c5815376f97e6f1",
+    "parent_decision": "included",
+    "citation_id": 48
+  },
+  {
+    "title": "AV, Inc. to Present at Citizens Technology Conference",
+    "wp_date": "2026-02-18T11:32:12",
+    "modified": "2026-04-19T18:58:58",
+    "url": "https://www.avinc.com/2026/02/18/av-inc-to-present-at-citizens-technology-conference/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-02-18",
+    "original_dateline_candidates": [
+      "February 18, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "cec4183f8f55c7b2790772e5c2321b74d4214f899b050efb5b1f4c4c89b2c5c9",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV’s UES Awarded $75 Million Task Order Extending Contract to Advance Biotechnology and Smart Materials for the U.S. Air Force",
+    "wp_date": "2026-01-28T12:08:15",
+    "modified": "2026-06-18T16:10:14",
+    "url": "https://www.avinc.com/2026/01/28/avs-ues-awarded-75-million-task-order-extending-contract-to-advance-biotechnology-and-smart-materials-for-the-u-s-air-force/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-01-28",
+    "original_dateline_candidates": [
+      "January 28, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "UES AFRL FRESH TO-03 $75M、60个月研发任务，非单一武器量产",
+    "next_verification": "任务拨款和交付",
+    "report_placement": "section2",
+    "original_text_sha256": "0949789a930c5d8df7d54e3854050713936c206e86cb9bee62fefe8ae3e20ab4",
+    "parent_decision": "included",
+    "citation_id": 49
+  },
+  {
+    "title": "Breaking the Silos: How Integrated Airspace Will Secure and Sustain America’s Future",
+    "wp_date": "2026-01-28T11:40:29",
+    "modified": "2026-04-27T16:05:17",
+    "url": "https://www.avinc.com/2026/01/28/breaking-the-silos-how-integrated-airspace-will-secure-and-sustain-americas-future/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-01-28",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "9c73e5405e5540e6988f3daf67961620176ac5039cb355463510eedd7554ff06",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV, Inc. to Present at TD Cowen’s Annual Aerospace & Defense Conference",
+    "wp_date": "2026-01-27T16:05:16",
+    "modified": "2026-04-19T18:53:44",
+    "url": "https://www.avinc.com/2026/01/27/av-inc-to-present-at-td-cowens-annual-aerospace-defense-conference/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2026-01-27",
+    "original_dateline_candidates": [
+      "January 27, 2026",
+      "February 11, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "e33a3269859a9023b001163403d8c578a2f412fc329310748128eb2c06314c09",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV and CAL Analytics Launch Operational BVLOS Airspace Management Facility in Partnership with the U.S. Air Force and Ohio Department of Transportation",
+    "wp_date": "2026-01-27T12:12:23",
+    "modified": "2026-04-15T12:19:10",
+    "url": "https://www.avinc.com/2026/01/27/av-and-cal-analytics-launch-operational-bvlos-airspace-management-facility-in-partnership-with-the-u-s-air-force-and-ohio-department-of-transportation/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-01-27",
+    "original_dateline_candidates": [
+      "January 27, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "b6724a06fd68c8190ec8368c99908ac60bee51159621ba0b247d8155d38bdb0f",
+    "parent_decision": "included",
+    "citation_id": 50
+  },
+  {
+    "title": "Mission Specialist Wraith Signals AeroVironment’s Next Step in Compact Unmanned Underwater Systems Capability",
+    "wp_date": "2026-01-13T16:07:00",
+    "modified": "2026-04-15T12:20:07",
+    "url": "https://www.avinc.com/2026/01/13/mission-specialist-wraith-signals-aerovironments-next-step-in-compact-unmanned-underwater-systems-capability/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2026-01-13",
+    "original_dateline_candidates": [
+      "January 13, 2026"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "a925b4318b3ee93946098bd7e4569491618b56f8e3be57b1e5ede8b011b8c3c4",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "From Strategy to Stride, Modernization That Matters: Common Control, Rapid Prototyping, and the Accelerated Training",
+    "wp_date": "2026-01-08T16:09:16",
+    "modified": "2026-04-27T16:04:35",
+    "url": "https://www.avinc.com/2026/01/08/from-strategy-to-stride-modernization-that-matters-common-control-rapid-prototyping-and-the-accelerated-training/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2026-01-08",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "98e60c25a979934938ced4ecd6afe8f444a189c751bb9e5dad8eba59634b911b",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Delivers JLTV-Mounted LOCUST Laser Weapon Systems to U.S. Army",
+    "wp_date": "2025-12-18T16:15:38",
+    "modified": "2026-04-19T18:49:43",
+    "url": "https://www.avinc.com/2025/12/18/av-delivers-jltv-mounted-locust-laser-weapon-systems-to-u-s-army/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-12-18",
+    "original_dateline_candidates": [
+      "December 18, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "94057e5937bc2f5df5ebc12151a600bcaaea0aef9eda1daf1a5fbb63c5a24bfc",
+    "parent_decision": "included",
+    "citation_id": 51
+  },
+  {
+    "title": "PteroDynamics and AV Demonstrate Integrated EW Capabilities on Transwing® VTOL UAS at U.S. Navy Silent Swarm 25 Exercise",
+    "wp_date": "2025-12-16T16:19:19",
+    "modified": "2026-04-19T18:49:13",
+    "url": "https://www.avinc.com/2025/12/16/pterodynamics-and-av-demonstrate-integrated-ew-capabilities-on-transwing-vtol-uas-at-u-s-navy-silent-swarm-25-exercise/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-12-16",
+    "original_dateline_candidates": [
+      "December 16, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "348679043a1319eda5fdc7a1d63240b18131880c41a2bf710b258e4386bb65c1",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment Awarded $4.8 million Contract for ROVs to support U.S. Coast Guard Modernization Plan",
+    "wp_date": "2025-12-11T08:14:13",
+    "modified": "2026-10-08T17:28:29",
+    "url": "https://www.avinc.com/2025/12/11/aerovironment-awarded-4-8-million-contract-for-rovs-to-support-u-s-coast-guard-modernization-plan/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2025-12-11",
+    "original_dateline_candidates": [
+      "December 11, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "c778b699a7cc5c46650e8403afd184499b063ea0ab7fb519b5c55575f58477cd",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment and General Dynamics Land Systems Successfully Demonstrate PERCH Loitering Munitions Launcher",
+    "wp_date": "2025-12-10T08:20:21",
+    "modified": "2026-04-15T12:26:51",
+    "url": "https://www.avinc.com/2025/12/10/aerovironment-and-general-dynamics-land-systems-successfully-demonstrate-perch-loitering-munitions-launcher/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2025-12-10",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "a35f3748a6688fdfff81ee30251ccd3ae8a5e252ba314ead58eab6bfbf476677",
+    "parent_decision": "included",
+    "citation_id": 52
+  },
+  {
+    "title": "AeroVironment Announces Fiscal 2026 Second Quarter Results",
+    "wp_date": "2025-12-09T08:29:50",
+    "modified": "2026-04-19T18:48:35",
+    "url": "https://www.avinc.com/2025/12/09/aerovironment-announces-fiscal-2026-second-quarter-results/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-12-09",
+    "original_dateline_candidates": [
+      "December 9, 2025",
+      "November 1, 2025",
+      "May 1, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "financial_section",
+    "reason": "避免重大事件表重复定期数字，仍审阅风险披露",
+    "meaning": "定期财报/长期目标已存原文；财务章节呈现，重大减值/重述另列",
+    "next_verification": "核对最新原件",
+    "report_placement": "财务章节",
+    "original_text_sha256": "540cbd3777a960617d9e26f6d78961442b6c0e69431a1cc3372ebdcd89809c25",
+    "parent_decision": "financial_section"
+  },
+  {
+    "title": "AV Awarded $13.2M Contract to Provide P550 UAS for U.S. Army’s Long Range Reconnaissance (LRR) Program",
+    "wp_date": "2025-12-08T08:52:55",
+    "modified": "2026-04-19T18:48:16",
+    "url": "https://www.avinc.com/2025/12/08/av-awarded-13-2m-contract-to-provide-p550-uas-for-u-s-armys-long-range-reconnaissance-lrr-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-12-08",
+    "original_dateline_candidates": [
+      "December 8, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "P550 LRR $13.2M采购/早期项目节点，后续2026年7月批量合同关联",
+    "next_verification": "与82套生产订单去重并核对具体任务",
+    "report_placement": "section2",
+    "original_text_sha256": "1b6f5f04a28ad4745665333b02b0b4b5ed8bac24253ba649001100e14798954e",
+    "parent_decision": "included",
+    "citation_id": 53
+  },
+  {
+    "title": "AeroVironment Awarded $874M Foreign Military Sales IDIQ to Deliver UAS and C-UAS Systems to Allied & Partner Forces",
+    "wp_date": "2025-12-08T08:44:19",
+    "modified": "2026-04-19T18:48:00",
+    "url": "https://www.avinc.com/2025/12/08/aerovironment-awarded-874m-foreign-military-sales-idiq-to-deliver-uas-and-c-uas-systems-to-allied-partner-forces/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-12-08",
+    "original_dateline_candidates": [
+      "December 8, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "五年$874.26M FMS IDIQ，多型号UAS/C-UAS与训练保障；不是确定外国客户全额订单",
+    "next_verification": "实际FMS任务单与出口审批",
+    "report_placement": "section2",
+    "original_text_sha256": "d642698121d2323ec87c549e3e75986d527f5e5899d768a0044c2b410a71361d",
+    "parent_decision": "included",
+    "citation_id": 54
+  },
+  {
+    "title": "AeroVironment Expands Puma™ Visual Navigation System (VNS) Kit to Puma LE",
+    "wp_date": "2025-12-04T08:30:48",
+    "modified": "2026-04-12T08:33:29",
+    "url": "https://www.avinc.com/2025/12/04/aerovironment-expands-puma-visual-navigation-system-vns-kit-to-puma-le/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2025-12-04",
+    "original_dateline_candidates": [
+      "December 4, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "57e367159a20d34c927a067f21cfff0f41cd2a02ab95cbbddf135bec1c1090dd",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment, Inc. to Present at Needham’s Annual Growth Conference",
+    "wp_date": "2025-12-02T16:14:05",
+    "modified": "2026-04-19T18:47:25",
+    "url": "https://www.avinc.com/2025/12/02/aerovironment-inc-to-present-at-needhams-annual-growth-conference/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2025-12-02",
+    "original_dateline_candidates": [
+      "December 22, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "6c7ea11cd8a1bd26c91326b3138cdac0d9d6f1c40ed548e262d44d66998d531c",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AeroVironment Announces Expansion of AV_Halo™ Unified Software Platform with CORTEX and MENTOR",
+    "wp_date": "2025-12-02T08:35:46",
+    "modified": "2026-04-17T11:40:42",
+    "url": "https://www.avinc.com/2025/12/02/aerovironment-announces-expansion-of-av_halo-unified-software-platform-with-cortex-and-mentor/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2025-12-02",
+    "original_dateline_candidates": [
+      "December 02, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "d46ebd5c68f5a211b3ff539f417d648a8ffd87fbe180d146072e9a656470dad9",
+    "parent_decision": "included",
+    "citation_id": 55
+  },
+  {
+    "title": "AeroVironment, Inc. to Present at Goldman Sachs’ Industrials and Materials Conference",
+    "wp_date": "2025-11-19T08:44:19",
+    "modified": "2026-04-19T18:46:45",
+    "url": "https://www.avinc.com/2025/11/19/aerovironment-inc-to-present-at-goldman-sachs-industrials-and-materials-conference/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-11-19",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "未见新增足以改变经营/资金假设的核心条款",
+    "meaning": "例行会议/日程/董事变动或雇主宣传",
+    "next_verification": "无",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "c2d42025c5b37ceac30891246e9a5d3a55792a7633c9139630f6a39e3e3de068",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Announces Collaboration with OpenJAUS for Autonomous Uncrewed System (Uxs) Interoperability",
+    "wp_date": "2025-10-31T08:55:57",
+    "modified": "2026-04-15T12:31:26",
+    "url": "https://www.avinc.com/2025/10/31/av-announces-collaboration-with-openjaus-for-autonomous-uncrewed-system-uxs-interoperability/",
+    "categories": [
+      35
+    ],
+    "announcement_date": "2025-10-31",
+    "original_dateline_candidates": [
+      "October 31, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include_operating_or_strategic",
+    "reason": "先保留技术路线与关键客户突破，不能因未量化删除",
+    "meaning": "产品/平台技术、整合或客户采用里程碑；金额未披露处不估算订单，父代理依核心业务重大性呈现或合并",
+    "next_verification": "后续订单及部署验证",
+    "report_placement": "section2",
+    "original_text_sha256": "babcc3b444563f0f8ecf38c210e48aec0ba16757aa8a5ca2d284767a8d96d805",
+    "parent_decision": "included",
+    "citation_id": 56
+  },
+  {
+    "title": "Three Questions About the Future of AI in Defense, Thoughts from the AI lead at AV’s Innovation Center",
+    "wp_date": "2025-10-28T08:52:03",
+    "modified": "2026-04-19T18:45:19",
+    "url": "https://www.avinc.com/2025/10/28/three-questions-about-the-future-of-ai-in-defense-thoughts-from-the-ai-lead-at-avs-innovation-center/",
+    "categories": [
+      31
+    ],
+    "announcement_date": "2025-10-28",
+    "original_dateline_candidates": [],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "exclude_standalone",
+    "reason": "无新增重大约束或可确认客户/资金变化；不等同判定绝无影响",
+    "meaning": "评论、第三方报道转载、产品常规升级或概念宣传；保留原文供审计",
+    "next_verification": "出现正式合同则重评",
+    "report_placement": "底稿排除",
+    "original_text_sha256": "85bb6de3e67ec2a717bf24650e67270db19964f3fc708be5e08babd87ad7d7b5",
+    "parent_decision": "exclude_standalone"
+  },
+  {
+    "title": "AV Selected for U.S. Army Next-Generation C-UAS Missile Program, Awarded $95.9M Contract to Deliver FE-1 for U.S. Army’s Long-Range Kinetic Interceptor (LRKI) Program",
+    "wp_date": "2025-10-22T09:02:45",
+    "modified": "2026-04-19T18:44:39",
+    "url": "https://www.avinc.com/2025/10/22/av-selected-for-u-s-army-next-generation-c-uas-missile-program-awarded-95-9m-contract-to-deliver-fe-1-for-u-s-armys-long-range-kinetic-interceptor-lrki-program/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-10-22",
+    "original_dateline_candidates": [
+      "October 22 , 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "FE-1获NGCM选择及LRKI $95.9M合同，AMTC/AvMC；新增反无人机动能路线",
+    "next_verification": "低速初产、后续全速与单套经济性",
+    "report_placement": "section2",
+    "original_text_sha256": "28e783cc6261f62d5c57f7ce47079dfe10a8e80f317e3eab32a8189a78dc9582",
+    "parent_decision": "included",
+    "citation_id": 57
+  },
+  {
+    "title": "AV and Korean Air Sign Memorandum of Understanding to Advance Medium Unmanned Aircraft Systems for the Republic of Korea",
+    "wp_date": "2025-10-21T09:05:23",
+    "modified": "2026-04-19T18:43:28",
+    "url": "https://www.avinc.com/2025/10/21/av-and-korean-air-sign-memorandum-of-understanding-to-advance-medium-unmanned-aircraft-systems-for-the-republic-of-korea/",
+    "categories": [
+      144
+    ],
+    "announcement_date": "2025-10-21",
+    "original_dateline_candidates": [
+      "October 21, 2025"
+    ],
+    "date_caveat": "wp_date为公司网页元数据，首发时间/稿内日期冲突需以原稿/对方较早公告单列",
+    "event_occurrence_date": "通常未单独披露；详原文及注释，勿把网页日当签约日",
+    "verification": "原始公司正文已取得；除明确说明外是单方证据",
+    "decision": "include",
+    "reason": "改变核心产品、客户渠道、产能、资金或治理假设；非仅金额筛选",
+    "meaning": "韩国JUMP20优先合作伙伴MOU：本地适配、联合研发及生产路径，无披露保证订单",
+    "next_verification": "韩国军方实际采购与本地化协议",
+    "report_placement": "section2",
+    "original_text_sha256": "d03cd38a7302e41d6b7714618c3a416d525520a1e4295f6c0100942013fa45d0",
+    "parent_decision": "included",
+    "citation_id": 58
+  }
+]

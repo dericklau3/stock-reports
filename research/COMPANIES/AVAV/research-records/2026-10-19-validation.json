@@ -1,0 +1,19 @@
+{
+  "research_date": "2026-10-19",
+  "sections": 9,
+  "event_rows": 53,
+  "candidate_records": 102,
+  "financial_bridge_checks": 4,
+  "valuation_endpoints": 6,
+  "source_evidence_gate": "61 cited sources with literal evidence; financial/model/source assertions independently checked; citation gate alone not factual completeness",
+  "site_tests_pass": 3,
+  "site_tests_fail": 0,
+  "built_pages": 51,
+  "local_page_verified": "website/dist/reports/AVAV/2026-10-19-deep-research/index.html",
+  "old_AVAV_report_retained": true,
+  "source_coverage": "Explicitly partial counterparty/filing-body/Q&A coverage disclosed; not exhaustive claim",
+  "index_refreshed_companies": [
+    "AVAV",
+    "SKHY"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "as_of": "2026-10-19",
+  "quote": {
+    "close_USD": 121.79,
+    "date": "2026-10-16",
+    "session": "regular close 16:00 America/New_York EDT",
+    "not_realtime": true,
+    "source": "https://api.nasdaq.com/api/quote/AVAV/historical?assetclass=stocks&limit=5&fromdate=2026-10-15&todate=2026-10-16"
+  },
+  "target_date": "2028-04-30",
+  "discount_years": 1.5304585900068446,
+  "discount_factor": 1.1893951016231035,
+  "reference_marketcap_m": 6189.45329658,
+  "reference_EV_m": 6389.56929658,
+  "net_debt_ex_operating_leases_m": 200.11600000000004,
+  "EV_FY27_guidance_adj_EBITDA_mid": 20.28434697326984,
+  "quote_FY27_guidance_adj_EPS_mid": 38.29874213836479,
+  "quote_FY27_guidance_adj_EPS_range": [
+    36.464071856287426,
+    40.32781456953643
+  ],
+  "EV_FY27_guidance_EBITDA_less_SBC_mid_context_only": 23.23479744210909,
+  "reported_Q1_revenue_growth": 0.05677449436521842,
+  "AxS_growth": 0.21254784034991792,
+  "group_ex_ESAero_growth_proxy": -0.03515910230581776,
+  "AxS_ex_ESAero_growth_proxy": 0.06604772118714153,
+  "group_adj_EBITDA_growth": -0.055997595303769576,
+  "scenarios": {
+    "bear": [
+      {
+        "EBITDA_m": 280,
+        "EV_EBITDA": 16,
+        "future_equity_value_m": 4030,
+        "future_USD_per_share": 76.0377358490566,
+        "present_USD_per_share": 63.92975365821837,
+        "gap_vs_quote": -0.4750820785104002,
+        "convertible_above_initial_conversion_price": false
+      },
+      {
+        "EBITDA_m": 320,
+        "EV_EBITDA": 18,
+        "future_equity_value_m": 5310,
+        "future_USD_per_share": 100.18867924528301,
+        "present_USD_per_share": 84.23498558936464,
+        "gap_vs_quote": -0.3083587684591129,
+        "convertible_above_initial_conversion_price": false
+      }
+    ],
+    "base": [
+      {
+        "EBITDA_m": 370,
+        "EV_EBITDA": 20,
+        "future_equity_value_m": 7050,
+        "future_USD_per_share": 135.57692307692307,
+        "present_USD_per_share": 113.98812967356982,
+        "gap_vs_quote": -0.0640600240284932,
+        "convertible_above_initial_conversion_price": false
+      },
+      {
+        "EBITDA_m": 420,
+        "EV_EBITDA": 23,
+        "future_equity_value_m": 9310,
+        "future_USD_per_share": 179.03846153846155,
+        "present_USD_per_share": 150.52900528523904,
+        "gap_vs_quote": 0.2359717980559901,
+        "convertible_above_initial_conversion_price": false
+      }
+    ],
+    "bull": [
+      {
+        "EBITDA_m": 470,
+        "EV_EBITDA": 26,
+        "future_equity_value_m": 12120,
+        "future_USD_per_share": 228.67924528301887,
+        "present_USD_per_share": 192.26516484804134,
+        "gap_vs_quote": 0.5786613420481266,
+        "convertible_above_initial_conversion_price": false
+      },
+      {
+        "EBITDA_m": 530,
+        "EV_EBITDA": 28,
+        "future_equity_value_m": 14740,
+        "future_USD_per_share": 278.1132075471698,
+        "present_USD_per_share": 233.82743645710636,
+        "gap_vs_quote": 0.9199231173093549,
+        "convertible_above_initial_conversion_price": false
+      }
+    ]
+  },
+  "base_midpoint_present_USD": 131.65224764071522,
+  "required_FY28_EBITDA_at_base_multiple_m": 366.6295037296393,
+  "required_margin_at_base_revenue_mid": 0.14813313282005627,
+  "sensitivities": {
+    "EBITDA_minus_20pct": 104.19000108035233,
+    "multiple_18x": 109.29925625437333,
+    "net_debt_plus_200m": 128.4185418343728,
+    "shares_55m": 124.47121595122165,
+    "discount_10pct": 135.33328789364668,
+    "discount_15pct": 126.4325485992316
+  },
+  "price_change_from_prior": -0.1117351032018088,
+  "prior_present_value_ranges_USD": {
+    "bear": [
+      65.35367644400618,
+      85.60856890122844
+    ],
+    "base": [
+      115.31838186094312,
+      151.76866759601046
+    ],
+    "bull": [
+      191.78851295432324,
+      233.24774595270003
+    ]
+  },
+  "assumption_change": "FY2028 revenue/EBITDA/multiples retained; target net debt increases by100m in bear/base to reserve slower cash recovery and continuing campus construction. Quote/date/share proxy and known subsequent cash uses refreshed. No speculative MOU revenue added.",
+  "SBC_treatment": "Company adjusted EBITDA adds SBC back; the main equity model therefore has explicit future net-share allowances (52–53m vs50.820702m current economic shares) and non-premium-to-old base multiple, rather than deducting the same future awards a second time in cash/net debt. This is a bounded dilution assumption, NOT proof all perpetual SBC cost is captured. Re-evaluate if grants or cash withholding exceed allowance. Existing restricted common already in actual common is not added again.",
+  "limits": [
+    "FY2028 values/multiples/net debt/share counts/discount rate are research assumptions, not guidance, consensus or promised returns.",
+    "Current reference market capitalization uses latest disclosed Sep3 shares, not verified Oct16 actual shares; latest-quarter capital balances are Aug1, not marked to October.",
+    "Historical daily forward PE and current independently validated market NTM EPS could not be recovered after provider403/browserchallenge. Guidance-based FY27 adjusted multiples are identified as such.",
+    "FY2028 terminal debt and shares include assumed post-Aug1 cash use/recovery and dilution; future cash balances are not directly added at the current date.",
+    "No interim shareholder dividends assumed. Any retained future operating cash is reflected in target net debt; do not add FCF again.",
+    "The model is a conditional adjusted-EBITDA equity scenario, not complete owner-earnings DCF; capital/software spending, working capital, SBC and profitability constrain warranted multiples.",
+    "Known subsequent cash uses32.843m are deducted in a partial pro-forma capital bridge; other post-Aug1 operating/investing flows are NOT rolled to October. Target net debt is absolute, not an additional subtraction on top of current debt."
+  ]
+}

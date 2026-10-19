@@ -1,0 +1,511 @@
+{
+  "ticker": "AVAV",
+  "as_of": "2026-10-19",
+  "currency": "USD",
+  "units": "million USD except actual share counts and per-share data",
+  "status": "原始公司文件Quartr镜像重新取得、核验全文身份与决定性表格；不是继承旧数；镜像非独立交叉验证",
+  "periods": {
+    "FY2025": {
+      "end": "2025-04-30",
+      "revenue": 820.627,
+      "product_revenue": 692.722,
+      "service_revenue": 127.905,
+      "gross_profit": 318.636,
+      "operating_income": 40.795,
+      "net_income": 43.619,
+      "ocf": -1.318,
+      "ppe_cash_capex": 19.547,
+      "capitalized_software_cash": 3.269,
+      "sbc": 21.461,
+      "adjusted_ebitda": 146.424,
+      "cash": 40.862,
+      "short_investments": 0,
+      "long_investments": 31.627,
+      "debt_principal": 30.0,
+      "debt_book": 30.0,
+      "operating_leases": 34.291,
+      "shares_period_end": 28267517,
+      "weighted_basic": 28018656,
+      "weighted_diluted": 28173488,
+      "gaap_eps": 1.55,
+      "non_gaap_eps": 3.28,
+      "goodwill_impairment": 18.359,
+      "segments": {
+        "AxS": {
+          "revenue": 820.627,
+          "adjusted_ebitda": 146.424,
+          "adjusted_ebitda_margin": 0.17842942043096316
+        },
+        "SCDE": {
+          "revenue": 0,
+          "adjusted_ebitda": 0,
+          "adjusted_ebitda_margin": null
+        }
+      },
+      "fcf_ppe_only": -20.865,
+      "fcf_ppe_and_sale_software": -24.134,
+      "gross_profit_margin": 0.388283592911274,
+      "operating_income_margin": 0.04971198851609806,
+      "net_income_margin": 0.05315325964171298,
+      "adjusted_ebitda_margin": 0.17842942043096316,
+      "sources": {
+        "income": "fy26-10k.pdf PDF142 / printed81; Consolidated Statements of Income (Loss)",
+        "cashflow": "fy26-10k.pdf PDF145 / printed84; Consolidated Statements of Cash Flows",
+        "balance": "fy26-10k.pdf PDF141 / printed80",
+        "segments": "fy26-10k.pdf PDF193-195 / printed122-124; Note21",
+        "non_gaap_eps": "fy26-release.pdf PDF8"
+      }
+    },
+    "FY2026": {
+      "end": "2026-04-30",
+      "revenue": 1976.845,
+      "product_revenue": 1415.349,
+      "service_revenue": 561.496,
+      "gross_profit": 500.642,
+      "operating_income": -310.995,
+      "net_income": -265.122,
+      "ocf": -78.404,
+      "ppe_cash_capex": 62.544,
+      "capitalized_software_cash": 23.674,
+      "sbc": 38.334,
+      "adjusted_ebitda": 286.056,
+      "cash": 377.325,
+      "short_investments": 254.972,
+      "long_investments": 81.128,
+      "debt_principal": 747.5,
+      "debt_book": 728.967,
+      "operating_leases": 105.822,
+      "shares_period_end": 50610514,
+      "weighted_basic": 49087346,
+      "weighted_diluted": 49087346,
+      "gaap_eps": -5.4,
+      "non_gaap_eps": 3.31,
+      "goodwill_impairment": 240.708,
+      "segments": {
+        "AxS": {
+          "revenue": 1358.077,
+          "adjusted_ebitda": 288.652,
+          "adjusted_ebitda_margin": 0.21254464953018126
+        },
+        "SCDE": {
+          "revenue": 618.768,
+          "adjusted_ebitda": -2.596,
+          "adjusted_ebitda_margin": -0.004195433506580818
+        }
+      },
+      "fcf_ppe_only": -140.948,
+      "fcf_ppe_and_sale_software": -164.622,
+      "gross_profit_margin": 0.2532530370362876,
+      "operating_income_margin": -0.15731885909112753,
+      "net_income_margin": -0.13411370137770032,
+      "adjusted_ebitda_margin": 0.14470330248451446,
+      "sources": {
+        "income": "fy26-10k.pdf PDF142 / printed81; Consolidated Statements of Income (Loss)",
+        "cashflow": "fy26-10k.pdf PDF145 / printed84; Consolidated Statements of Cash Flows",
+        "balance": "fy26-10k.pdf PDF141 / printed80",
+        "segments": "fy26-10k.pdf PDF193-195 / printed122-124; Note21",
+        "non_gaap_eps": "fy26-release.pdf PDF8"
+      }
+    },
+    "Q1FY2026": {
+      "end": "2025-08-02",
+      "revenue": 454.676,
+      "product_revenue": 313.533,
+      "service_revenue": 141.143,
+      "gross_profit": 95.118,
+      "operating_income": -69.272,
+      "net_income": -67.37,
+      "ocf": -123.726,
+      "ppe_cash_capex": 22.728,
+      "capitalized_software_cash": 9.34,
+      "sbc": 11.429,
+      "adjusted_ebitda": 56.556,
+      "cash": 685.803,
+      "short_investments": null,
+      "long_investments": null,
+      "debt_principal": null,
+      "debt_book": null,
+      "operating_leases": null,
+      "shares_period_end": 49932300,
+      "weighted_basic": 46882350,
+      "weighted_diluted": 46882350,
+      "gaap_eps": -1.44,
+      "non_gaap_eps": 0.32,
+      "goodwill_impairment": 0,
+      "segments": {
+        "AxS": {
+          "revenue": 285.324,
+          "adjusted_ebitda": 52.76,
+          "adjusted_ebitda_margin": 0.1849125905987579
+        },
+        "SCDE": {
+          "revenue": 169.352,
+          "adjusted_ebitda": 3.796,
+          "adjusted_ebitda_margin": 0.022414851906089092
+        }
+      },
+      "fcf_ppe_only": -146.454,
+      "fcf_ppe_and_sale_software": -155.794,
+      "gross_profit_margin": 0.20919951789845956,
+      "operating_income_margin": -0.15235464374631608,
+      "net_income_margin": -0.1481714451609498,
+      "adjusted_ebitda_margin": 0.12438747591691666,
+      "sources": {
+        "income": "q1-10q.pdf PDF4 / printed4",
+        "cashflow": "q1-10q.pdf PDF7 / printed7",
+        "shares": "q1-10q.pdf PDF6 / printed6",
+        "balance": "q1-10q.pdf PDF3 / printed3 (2026-08-01 only); Q1FY2026 other balances deliberately null",
+        "segments": "q1-10q.pdf PDF36-37 / printed29-30; Note17",
+        "non_gaap_eps": "q1-release.pdf PDF8"
+      }
+    },
+    "Q1FY2027": {
+      "end": "2026-08-01",
+      "revenue": 480.49,
+      "product_revenue": 329.058,
+      "service_revenue": 151.432,
+      "gross_profit": 124.599,
+      "operating_income": -10.871,
+      "net_income": -5.066,
+      "ocf": 13.496,
+      "ppe_cash_capex": 44.033,
+      "capitalized_software_cash": 5.417,
+      "sbc": 4.927,
+      "adjusted_ebitda": 53.389,
+      "cash": 278.39,
+      "short_investments": 301.837,
+      "long_investments": 94.777,
+      "debt_principal": 747.5,
+      "debt_book": 730.057,
+      "operating_leases": 120.766,
+      "shares_period_end": 50822963,
+      "weighted_basic": 49822595,
+      "weighted_diluted": 49822595,
+      "gaap_eps": -0.1,
+      "non_gaap_eps": 0.59,
+      "goodwill_impairment": 0,
+      "segments": {
+        "AxS": {
+          "revenue": 345.969,
+          "adjusted_ebitda": 62.285,
+          "adjusted_ebitda_margin": 0.18003058077457806
+        },
+        "SCDE": {
+          "revenue": 134.521,
+          "adjusted_ebitda": -8.896,
+          "adjusted_ebitda_margin": -0.06613093866385175
+        }
+      },
+      "fcf_ppe_only": -30.537,
+      "fcf_ppe_and_sale_software": -35.954,
+      "gross_profit_margin": 0.25931653104122876,
+      "operating_income_margin": -0.02262482049574393,
+      "net_income_margin": -0.010543403608816,
+      "adjusted_ebitda_margin": 0.11111365481071407,
+      "sources": {
+        "income": "q1-10q.pdf PDF4 / printed4",
+        "cashflow": "q1-10q.pdf PDF7 / printed7",
+        "shares": "q1-10q.pdf PDF6 / printed6",
+        "balance": "q1-10q.pdf PDF3 / printed3 (2026-08-01 only); Q1FY2026 other balances deliberately null",
+        "segments": "q1-10q.pdf PDF36-37 / printed29-30; Note17",
+        "non_gaap_eps": "q1-release.pdf PDF8"
+      }
+    }
+  },
+  "TTM_calculated_not_filing": {
+    "revenue": 2002.659,
+    "gross_profit": 530.123,
+    "operating_income": -252.594,
+    "net_income": -202.818,
+    "ocf": 58.818,
+    "ppe_cash_capex": 83.849,
+    "capitalized_software_cash": 19.751,
+    "sbc": 31.832,
+    "adjusted_ebitda": 282.889,
+    "fcf_ppe_only": -25.031,
+    "fcf_ppe_and_sale_software": -44.782
+  },
+  "exact_net_income_to_segment_adjusted_ebitda_bridges": {
+    "FY2025": {
+      "net_income": 43.619,
+      "remove_equity_method_income": -4.837,
+      "tax_provision": 0.882,
+      "interest_expense_net": 2.188,
+      "depreciation_amortization": 40.998,
+      "goodwill_impairment": 18.359,
+      "acquisition_costs": 19.29,
+      "cloud_implementation_amortization": 2.541,
+      "sbc": 21.461,
+      "remove_equity_security_gain": -0.177,
+      "legal_expense": 2.1
+    },
+    "FY2026": {
+      "net_income": -265.122,
+      "remove_equity_method_income": -17.441,
+      "tax_benefit": -23.059,
+      "interest_expense_net": 5.613,
+      "depreciation_amortization": 265.037,
+      "goodwill_impairment": 240.708,
+      "acquisition_costs": 48.17,
+      "cloud_implementation_amortization": 5.536,
+      "sbc": 38.334,
+      "remove_equity_security_gain": -11.72
+    },
+    "Q1FY2026": {
+      "net_income": -67.37,
+      "remove_equity_method_income": -1.787,
+      "tax_benefit": -15.169,
+      "interest_expense_net": 17.415,
+      "depreciation_amortization": 90.254,
+      "acquisition_costs": 23.729,
+      "cloud_implementation_amortization": 0.756,
+      "sbc": 11.429,
+      "remove_equity_security_gain": -2.701
+    },
+    "Q1FY2027": {
+      "net_income": -5.066,
+      "remove_equity_method_income": -1.867,
+      "tax_benefit": -0.397,
+      "interest_income_net": -4.136,
+      "depreciation_amortization": 56.033,
+      "acquisition_costs": 2.142,
+      "cloud_implementation_amortization": 1.753,
+      "sbc": 4.927
+    }
+  },
+  "bridge_sources": {
+    "FY2025_FY2026": "fy26-10k.pdf PDF193-195 / printed122-124, Note21",
+    "Q1FY2026_Q1FY2027": "q1-10q.pdf PDF36-37 / printed29-30, Note17"
+  },
+  "calculations": {
+    "FY2026_reported_growth": 1.40894462404966,
+    "FY2026_legacy_ex_BlueHalo_ESAero_growth_proxy": 0.2644758215364593,
+    "Q1FY2027_reported_growth": 0.05677449436521842,
+    "Q1FY2027_ex_ESAero_total_growth_proxy": -0.03515910230581776,
+    "Q1FY2027_ex_ESAero_AxS_growth_proxy": 0.06604772118714153,
+    "Q1FY2027_vs_prior_ESAero_proforma_growth": 0.006592743582706673,
+    "net_debt_cash_short_investments": 167.27300000000002,
+    "convertible_reference_underlying_shares_NOT_incremental_dilution": 2318520.75,
+    "period_end_to_cover_share_change": -2261
+  },
+  "capital_structure": {
+    "shares_cover_date": "2026-09-03",
+    "shares_cover": 50820702,
+    "shares_cover_source": "q1-10q.pdf PDF1 cover",
+    "shares_balance_date": "2026-08-01",
+    "shares_balance": 50822963,
+    "quarter_weighted_average": 49822595,
+    "excluded_antidilutive_awards": 330957,
+    "excluded_antidilutive_source": "q1-10q.pdf PDF13 / printed12, Loss Per Share",
+    "note_principal": 747.5,
+    "note_book": 730.057,
+    "note_market_fair_value": 680.973,
+    "unamortized_issuance_costs": 17.443,
+    "note_coupon": 0,
+    "note_maturity": "2030-07-15",
+    "principal_fiscal_year_maturity": 2031,
+    "conversion_rate_per_1000": 3.1017,
+    "conversion_price": 322.4,
+    "settlement": "Entirely cash or cash plus shares; cash at least principal, only excess optionally shares; conversion also subject to pre-April15,2030 conditional triggers",
+    "note_sources": "q1-10q.pdf PDF21,23,25 / printed18-20, Note9",
+    "revolver_limit": 350,
+    "revolver_drawn": 0,
+    "letters_credit": 13.019,
+    "revolver_available": 336.981,
+    "revolver_maturity": "2029-10-04",
+    "revolver_covenants": "in compliance as of Aug1,2026",
+    "preferred_outstanding": 0,
+    "restricted_cash": null,
+    "restricted_cash_note": "No separately disclosed restricted-cash balance found in balance sheet and searched quarterly text; do not represent as independently confirmed zero",
+    "long_investments_decomposition": {
+      "government_securities": 20.879,
+      "corporate_securities": 11.962,
+      "private_at_cost": 8,
+      "limited_partnership_equity_method": 53.936
+    },
+    "investments_source": "q1-10q.pdf PDF15-16 / printed13-14, Note2",
+    "lease_payments": {
+      "FY2027": 19.045,
+      "FY2028": 28.764,
+      "FY2029": 26.041,
+      "FY2030": 22.564,
+      "FY2031": 15.143,
+      "thereafter": 48.542,
+      "undiscounted_total": 160.099,
+      "imputed_interest": 39.333,
+      "present_value": 120.766
+    },
+    "lease_source": "q1-10q.pdf PDF26 / printed21, Note10"
+  },
+  "backlog": {
+    "FY2025": {
+      "funded": 726.6,
+      "unfunded": 774.6
+    },
+    "FY2026": {
+      "funded": 1183.0,
+      "unfunded": 1457.7
+    },
+    "Q1FY2026": {
+      "funded": null,
+      "unfunded": null
+    },
+    "Q1FY2027": {
+      "funded": 1457.8,
+      "unfunded": 1366.5
+    },
+    "sources": "fy26-10k.pdf PDF20 / printed10; q1-10q.pdf PDF44 / printed35",
+    "definition": "Funded=firm appropriated performance obligations; unfunded=awarded incremental funding yet to be received, not ASC606 performance obligations and does not obligate purchases"
+  },
+  "guidance_latest_obtained": {
+    "announced": "2026-09-09",
+    "FY": "FY2027 ending2027-04-30",
+    "revenue": [
+      2125,
+      2225
+    ],
+    "GAAP_net_income": [
+      10,
+      27
+    ],
+    "GAAP_eps": [
+      0.21,
+      0.53
+    ],
+    "adjusted_ebitda": [
+      305,
+      325
+    ],
+    "adjusted_eps": [
+      3.02,
+      3.34
+    ],
+    "SBC_approx": 40,
+    "capex_pct_revenue": [
+      0.12,
+      0.14
+    ],
+    "capex_definition": "includes cloud implementation capital expenditures and software capitalization; not comparable to PPE-only cash capex",
+    "source": "q1-release.pdf PDF2,9; q1-slides.pdf PDF7"
+  },
+  "long_term_management_targets_not_forecast": {
+    "target": "FY2030",
+    "organic_growth": [
+      0.15,
+      0.2
+    ],
+    "adjusted_ebitda_margin": [
+      0.18,
+      0.2
+    ],
+    "adjusted_ebitda": [
+      630,
+      800
+    ],
+    "R_and_D_pct": [
+      0.07,
+      0.09
+    ],
+    "FY2027_organic_capital_investment_approx": 283,
+    "source": "investor-day.pdf PDF38-41; original presentation event July8,2026; mirror upload Aug17"
+  },
+  "control_status": {
+    "as_of": "2026-08-01",
+    "disclosure_controls": "not effective",
+    "weaknesses": [
+      "BlueHalo IT general controls/user access and segregation",
+      "goodwill-by-reporting-unit reconciliation; caused Jan31,2026 quarter restatement filed10-Q/A June22,2026"
+    ],
+    "remediation": "ongoing; sufficient operating time/testing still required, not certified remediated",
+    "source": "q1-10q.pdf PDF48-49 / printed38-39"
+  },
+  "checks": [
+    {
+      "period": "FY2025",
+      "bridge_total": 146.424,
+      "reported": 146.424,
+      "pass": true
+    },
+    {
+      "period": "FY2026",
+      "bridge_total": 286.056,
+      "reported": 286.056,
+      "pass": true
+    },
+    {
+      "period": "Q1FY2026",
+      "bridge_total": 56.556,
+      "reported": 56.556,
+      "pass": true
+    },
+    {
+      "period": "Q1FY2027",
+      "bridge_total": 53.389,
+      "reported": 53.389,
+      "pass": true
+    }
+  ],
+  "conflicts_and_limits": [
+    "FY26 actual exact EBITDA286.056 agrees annual10K and earnings table286.1; guidance comparison table in both releases prints287. Do not replace actual with287.",
+    "GAAP-to-EBITDA exact note bridge cloud amortization differs slightly from rounded press release cloud line; retain exact note bridge rather than mix.",
+    "Only PPE+sale-software FCF computed; cash cloud-implementation capex is not separately isolated here, so not claimed to equal company all-in capex/FCF.",
+    "FY26 official organic growth26% is legacy April30,2025 perimeter excluding BlueHalo and ESAero; reported consolidated growth is not organic.",
+    "Q1 full official organic metric not found; ex-ESAero proxies and ESAero prior proforma comparison explicitly non-equivalent.",
+    "SEC submissions access403; parent separately obtained full latest submissions and supplied applicable accession numbers. This worker has not independently read parent submissions.",
+    "Sep30 latest8K raw download403; indexed SEC search returned Item5.07 three vote proposals (directors,auditors,pay), not an equity pool amendment; full8K still missing here.",
+    "Q1 conference call official transcript download403, alternate GCS403; search identifies Corrected Transcript but full transcript and Q&A not obtained. Slides are not a transcript; FY27 negativeFCF claim from old report not reverified.",
+    "Period-end to Oct19 exact ordinary-share rollforward not independently obtained; use Sept3 cover50.820702m as dated reference, not current certainty.",
+    "Q1FY2026 debt/leases/short investments were not independently retrieved in current packet and intentionally null.",
+    "BlueHalo FY26 contributed revenue in audited10K PDF188=919.144m / op loss365.518m, latest10Q PDF34=919.414m / op loss365.818m. Difference .270/.300m not reconciled; annual legacy-growth proxy explicitly uses audited10K perimeter; official26% is preferable to false precision."
+  ],
+  "litigation": {
+    "source": "q1-10q.pdf PDF49,51 / printed39-40, Item1 Legal Proceedings",
+    "status": "allegations, not adjudicated findings; company intends vigorous defense",
+    "securities_class_actions": [
+      {
+        "filed": "2026-05-26",
+        "case": "Norell v AeroVironment 1:26-cv-01429 E.D.Va.",
+        "class_period": [
+          "2025-06-25",
+          "2026-03-10"
+        ],
+        "subject": "alleged false/misleading SCAR statements"
+      },
+      {
+        "filed": "2026-07-17",
+        "case": "City Pension Fund v AeroVironment 1:26-cv-00875 D.Del.",
+        "class_period": [
+          "2025-06-24",
+          "2026-06-18"
+        ],
+        "subject": "substantially same factual allegations"
+      }
+    ],
+    "derivative_actions": [
+      {
+        "filed": "2026-07-27",
+        "plaintiff": "Keith Rogers"
+      },
+      {
+        "filed": "2026-07-30",
+        "plaintiff": "Brandon Jackson"
+      }
+    ],
+    "securities_damages": "unspecified",
+    "labor_and_PAGA": "June11,2025 settlement in principle; accrued FY2025; court approval/payment pending per latest10Q"
+  },
+  "subsequent_uses_of_capital": [
+    {
+      "date": "2026-08-21",
+      "item": "Southern California campus",
+      "cash_price": 29.25,
+      "source": "q1-10q.pdf PDF37 / printed30, Note18"
+    },
+    {
+      "date": "2026-08",
+      "item": "ESAero holdback4.000 settled",
+      "paid": 3.593,
+      "source": "q1-10q.pdf PDF29 / printed23, Note15"
+    }
+  ]
+}

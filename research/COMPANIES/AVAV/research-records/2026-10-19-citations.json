@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://api.nasdaq.com/api/quote/AVAV/historical?assetclass=stocks&limit=5&fromdate=2026-10-15&todate=2026-10-16",
+      "title": "Nasdaq：10月16日常规收盘",
+      "accessed": "2026-10-19",
+      "quotes": [
+        {
+          "text": "\"date\": \"10/16/2026\",\n          \"close\": \"$121.79\"",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://data.sec.gov/submissions/CIK0001368622.json",
+      "title": "SEC申报索引，CIK1368622",
+      "accessed": "2026-10-19",
+      "quotes": [
+        {
+          "text": "{ \"cik\": \"0001368622\", \"entityType\": \"operating\", \"sic\": \"3721\", \"sicDescription\": \"Aircraft\", \"ownerOrg\": \"04 Manufacturing\", \"insiderTransactionForOwnerExists\": 0, \"insiderTransactionForIssuerExists\": 1, \"name\": \"AeroVironment",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://files.quartr.com/reports/a8dd16759367a5be1ee8c58f72987552-2026-09-10-10-02-18.pdf",
+      "title": "q1-10q",
+      "accessed": "2026-10-19",
+      "quotes": [
+        {
+          "text": "=== PDF PAGE 1 === Table of Contents UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://files.quartr.com/reports/fa08b9cba2bc71fd76252c5631e551a7-2026-09-09-20-07-09.pdf",
+      "title": "q1-release",
+      "accessed": "2026-10-19",
+      "quotes": [
+        {
+          "text": "=== PDF PAGE 1 === 1 Exhibit 99.1 AeroVironment Announces Fiscal 2027 First Quarter Results ARLINGTON, VA, September",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://files.quartr.com/reports/6389d767e1d6f69927c029bf36d71abf-2026-06-29-20-09-36.pdf",
+      "title": "annual-release",
+      "accessed": "2026-10-19",
+      "quotes": [
+        {
+          "text": "=== PDF PAGE 1 === 1 Exhibit 99.1 AeroVironment Announces Fiscal 2026 Fourth Quarter and Fiscal Year Results",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://files.quartr.com/reports/89efcc5149a2dad6b9ad75517317aea9-2026-06-29-21-05-07.pdf",
+      "title": "FY2026 10-K；SCAR终止、减值及重述",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "the customer terminated the agreement for convenience",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://files.quartr.com/conference-calls/beb3fb80620a6d50c0cebf1e96226282-2026-09-09-20-15-19.pdf",
+      "title": "Q1FY2027幻灯片；并非电话会逐字稿",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "===== PDF PAGE 1 ===== FIRST QUARTER FISCAL YEAR 2027 Earnings Conference Call September 9, 2026 ===== PDF",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": "https://files.quartr.com/conference-calls/6465cccc335df5bd5aa8515ebf2c62d6-2026-06-29-20-12-48.pdf",
+      "title": "FY2026幻灯片；官方有机增长定义",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "===== PDF PAGE 1 ===== ===== PDF PAGE 2 ===== This presentation contains \"forward-looking statements\" as that term",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url": "https://www.avinc.com/2026/10/14/av-and-thunder-tiger-sign-mou-to-explore-uncrewed-systems-integration-and-co-production-in-taiwan",
+      "title": "AV and Thunder Tiger Sign MOU to Explore Uncrewed Systems Integration and Co-Production in Taiwan",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Collaboration will explore integration of AV capabilities with Thunder Tiger platforms, potential UAS co-production and future technology development.",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url": "https://www.avinc.com/2026/10/14/av-and-alpha-unmanned-systems-announce-mou-to-explore-jump-20-support-in-spain",
+      "title": "AV and Alpha Unmanned Systems Announce MOU to Explore JUMP 20 Support in Spain",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Co mpanies to explore local sustainment, training and technical support, with potential expansion into Europe and Latin America",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "url": "https://www.avinc.com/2026/10/14/av-and-elsight-partner-to-strengthen-mayhem-10-connectivity-in-contested-environments",
+      "title": "AV and Elsight Partner to Strengthen Mayhem 10 Connectivity in Contested Environments",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Elsight’s Halo technology is designed to integrate satellite, cellular and radio communications to reduce single points of failure",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://www.avinc.com/2026/10/13/av-and-nioa-sign-agreement-to-advance-one-way-attack-localization-and-co-production-in-australia",
+      "title": "AV and NIOA Sign Agreement to Advance One-Way Attack Localization and Co-Production in Australia",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Companies to explore Australian production, integration, sustainment and support for A V’s one-way attack systems . PERTH, Australia,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "url": "https://www.avinc.com/2026/10/08/avs-videoray-selected-as-subcontractor-navy-mine-countermeasure-prototype-effort",
+      "title": "AV’s VideoRay Selected as Subcontractor for Navy Mine Countermeasure Prototype Effort",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Integrate d solution demonstrated autonomous, over-the-horizon mine countermeasure operations during competitive Navy trials ARLINGTON, Va., OCTOBER 08, 2026",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "url": "https://www.avinc.com/2026/09/08/av-secures-first-international-order-for-locust-directed-energy-counter-drone-systems",
+      "title": "AV Secures First International Order for LOCUST® Directed Energy Counter‑Drone Systems",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Operationally proven laser weapon system receives first international purchase order valued at more than $5 0 million ,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "url": "https://www.avinc.com/2026/09/02/avs-locust-selected-for-nearly-500-million-army-counter-uas-contract-for-enduring-high-energy-laser-e-hel-program",
+      "title": "AV’s LOCUST® Selected for Nearly $500 million Army Counter-UAS Contract for Enduring-High Energy Laser (E-HEL) Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., September 2, 2026 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global leader in proven autonomous and",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "url": "https://www.avinc.com/2026/08/27/av-awarded-contract-for-three-autonomous-helicopters-in-support-of-nasas-skyfall-mission-to-mars",
+      "title": "AV Awarded Contract for Three Autonomous Helicopters in Support of NASA’s SkyFall Mission to Mars",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "AV partnering with NASA’s Jet Propulsion Laboratory (JPL) to unlock new research capabilities above and below the Martian",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "url": "https://www.avinc.com/2026/08/26/av-receives-51-million-u-s-army-order-for-switchblade-600-loitering-munitions",
+      "title": "AV Receives $51 Million U.S. Army Order for Switchblade® 600 Loitering Munitions",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Award under Lethal Unmanned Systems IDIQ reflects growing demand for AV’s next-generation, long-range precision loitering munitions and proven",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "url": "https://www.avinc.com/2026/08/24/av-to-invest-100-million-in-new-unified-campus-in-southern-california",
+      "title": "AV to Invest $100 Million in New Unified Campus in Southern California",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Moorpark Campus Will Bring Five Southern California Locations Together And Positions AV For Its Next Era of Growth",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "url": "https://www.avinc.com/2026/08/20/aerovironment-to-establish-industrial-presence-in-greece-through-av-eagle",
+      "title": "AeroVironment to Establish Industrial Presence in Greece Through AV Eagle",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Joint venture with Eyeonix SA will create a foundation for local production capabilities in support of Greek ,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "url": "https://www.avinc.com/2026/07/29/av-and-applied-intuition-establish-strategic-collaboration-to-advance-uncrewed-teaming",
+      "title": "AV and Applied Intuition Establish Strategic Collaboration to Advance Uncrewed Teaming",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Applied Intuition’s Acuity ISR/ Strike software to enable collaborative hunter-killer and swarm behaviors on AV’s ​ ​ Mayhem",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "url": "https://www.avinc.com/2026/07/20/av-awarded-117-3-million-u-s-army-production-contract-for-p550",
+      "title": "AV Awarded $117.3 Million U.S. Army Production Contract for P550™",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Initial Order Enhances LRR and Advances Army Drone Dominance Initiative with AV’s Autonomous Group 2 eVTOL UAS ARLINGTON,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "url": "https://www.avinc.com/2026/07/07/av-awarded-30-million-contract-to-provide-puma-systems-stack-for-germanys-larus-program",
+      "title": "AV Awarded $30 Million Contract to Provide Puma™ Systems Stack for Germany’s LARUS Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "NATO Support and Procurement Agency Contract Expands AV’s European Presence and Positions Germany to Field the Full Puma",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "url": "https://www.avinc.com/2026/07/06/avs-titan-selected-by-jiatf-401-for-80-5-m-award",
+      "title": "AV’s Titan™ Selected by JIATF-401 for $80.5 m Award",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Award Advances U.S. Air Force Global Strike Command’s Layered Base Defense While Cementing Titan as a Global Benchmark",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "url": "https://www.avinc.com/2026/07/06/av-awarded-500-million-idiq-for-support-of-jiatf-401-domestic-shield-program",
+      "title": "AV Awarded $500 million IDIQ for Support of JIATF-401 Domestic Shield Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "AV will provide counter-Unmanned Aircraft Systems in support of Domestic Shield Program ARLINGTON, Va., July 6, 2026 –",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "url": "https://www.avinc.com/2026/06/11/av-signs-mou-with-taiwans-ubiqconn-to-develop-common-controller-ecosystem-for-taiwans-indigenous-uas-program",
+      "title": "AV Signs MOU with Taiwan’s Ubiqconn to Develop Common Controller Ecosystem for Taiwan’s Indigenous UAS Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "TAIPEI, TAIWAN, June 11, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader, today announced",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "url": "https://www.avinc.com/2026/06/02/av-to-expand-advanced-production-capabilities-in-dayton-area",
+      "title": "AV to Expand Advanced Production Capabilities in Dayton Area",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "State and regional incentives support phased manufacturing growth and job creation DAYTON, Ohio — June 2, 2026 —",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "url": "https://www.avinc.com/2026/05/28/av-awarded-20-million-contract-to-advance-ceramic-materials-research-for-the-u-s-air-force-and-space-force",
+      "title": "AV Awarded $20 Million Contract to Advance Ceramic Materials Research for the U.S. Air Force and Space Force",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. – May 28, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global leader in defense technology",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "url": "https://www.avinc.com/2026/05/26/av-expands-huntsville-facility-to-accelerate-production-of-next-generation-freedom-eagle-1-interceptor",
+      "title": "AV Expands Huntsville Facility to Accelerate Production of Next-Generation Freedom Eagle-1 Interceptor",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Facility expansion positions AV to scale production, accelerate fielding, and provide cost-effective defense against mass aerial threats ARLINGTON,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "url": "https://www.avinc.com/2026/05/19/av-expands-av_halo-platform-with-instinct-and-detect-to-enable-faster-resilient-decision-making-at-the-edge",
+      "title": "AV Expands AV_Halo™ Platform with INSTINCT and DETECT to Enable Faster, Resilient Decision-Making at the Edge",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Extending AV_Halo with distributed autonomy and resilient RF sensing to enable faster decisions and mission execution in denied",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "url": "https://www.avinc.com/2026/05/12/av-awarded-43m-dow-contract-to-integrate-panther-phased-array-antenna-on-skyrange-platforms-for-hypersonic-telemetry",
+      "title": "AV Awarded $43M DoW Contract to Integrate PANTHER Phased Array Antenna on SkyRange Platforms for Hypersonic Telemetry",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., May 11 2026 — The Department of War (DoW) Test Resource Management Center (TRMC) has awarded",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "url": "https://www.avinc.com/2026/05/06/avs-locust-demonstrates-landmark-capability-at-white-sands-with-jiatf-401-and-faa",
+      "title": "AV’s LOCUST Demonstrates Landmark Capability at White Sands with JIATF-401 and FAA",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Coordinated test confirms safe, controlled laser engagement of drone targets in complex national airspace AV’s LOCUST ® high-energy",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "url": "https://www.avinc.com/2026/05/04/u-s-army-selects-avs-switchblade-400-for-lasso-program",
+      "title": "U.S. Army Selects AV’s Switchblade® 400 for LASSO Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Award establishes Switchblade 400 as key component of Army’s enduring next-generation loitering munition program ARLINGTON, Va. — May",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "url": "https://www.avinc.com/2026/04/28/av-announces-halo_shield-comprehensive-tile-based-c-uas-solution",
+      "title": "AV Announces Halo_Shield™, Comprehensive Tile-Based C-UAS Solution",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Unique, Modular Layered Defense Architecture System Combines the Best of AV and its OEM Suppliers to Protect Critical",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "url": "https://www.avinc.com/2026/04/21/av-successfully-demonstrates-locust-laser-weapon-system-aboard-uss-george-h-w-bush",
+      "title": "AV Successfully Demonstrates LOCUST Laser Weapon System Aboard USS George H.W. Bush",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., April 21, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV) today announced the successful demonstration of its",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "url": "https://www.avinc.com/2026/04/20/army-selects-avs-vapor-cle-for-medium-range-reconnaissance-program",
+      "title": "Army Selects AV’s VAPOR® CLE for Medium Range Reconnaissance Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., April 20, 2026 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader, today announced",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "url": "https://www.avinc.com/2026/04/15/avs-precision-hardware-points-artemis-ii-laser-link-to-earth",
+      "title": "AV’s Precision Hardware Points Artemis II Laser Link to Earth",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. – April 15, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV) today announced that its precision pointing",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "url": "https://www.avinc.com/2026/04/15/av-introduces-mayhem-10-multi-role-launched-effects-system-at-aaaa-2026",
+      "title": "AV Introduces MAYHEM 10: Multi-Role Launched Effects System at AAAA 2026",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. — April 15, 2026 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV) today announced the debut of MAYHEM",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "url": "https://www.avinc.com/2026/04/13/av-appoints-sean-woodward-as-chief-financial-officer",
+      "title": "AV Appoints Sean Woodward as Chief Financial Officer",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., April 13, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader, today announced",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "url": "https://www.avinc.com/2026/04/09/av-appoints-dr-robert-smith-as-chief-operating-officer",
+      "title": "AV Appoints Dr. Robert Smith as Chief Operating Officer",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "AV Appoints Dr. Robert Smith as Chief Operating Officer Defense Veteran to Strengthen Operational Execution as AV Scales",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "url": "https://www.avinc.com/2026/04/07/avs-ues-awarded-25m-afrl-contract-to-mature-human-performance-technologies-for-warfighter-readiness",
+      "title": "AV’s UES Awarded $25M AFRL Contract to Mature Human Performance Technologies for Warfighter Readiness",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "The United States Air Force has awarded UES, a division of advanced research and development leader AeroVironment, Inc.",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "url": "https://www.avinc.com/2026/03/31/av-selected-to-deliver-intelligence-surveillance-and-reconnaissance-services-to-u-s-navy-with-jump-20-x-advanced-payload-integrations",
+      "title": "AV Selected to Deliver Intelligence, Surveillance and Reconnaissance Services to U.S. Navy with JUMP 20-X, Advanced Payload Integrations",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global leader in autonomous systems and intelligence services, today announced its selection",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "url": "https://www.avinc.com/2026/03/24/av-unveils-locust-x3-third-generation-modular-directed-energy-weapon-system",
+      "title": "AV Unveils LOCUST® X3: Third-Generation Modular Directed Energy Weapon System",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader, today announced the release of LOCUST® X3, the",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "url": "https://www.avinc.com/2026/03/16/av-acquires-empirical-systems-aerospace-inc",
+      "title": "AV Acquires Empirical Systems Aerospace, Inc.",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. and San Luis Obispo, CA . — March 16, 2026 — AeroVironment, Inc. (“AV” or the",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "url": "https://www.avinc.com/2026/03/05/av-awarded-97-million-u-s-army-contract-to-advance-next-generation-sensor-testing",
+      "title": "AV Awarded $97 Million U.S. Army Contract to Advance Next-Generation Sensor Testing",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. – March 5, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a leading provider of advanced research",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "url": "https://www.avinc.com/2026/03/03/av-issues-statement-regarding-active-negotiations-for-contract-amendment-to-support-u-s-space-forces-scar-program",
+      "title": "AV Issues Statement Regarding Active Negotiations for Contract Amendment to Support U.S. Space Force’s SCAR Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "Confident in ability to successfully deliver AV’s systems ahead of competitors ARLINGTON, Va., March 3, 2026 – AeroVironment,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "url": "https://www.avinc.com/2026/03/03/av-partners-with-city-of-albuquerque-and-state-of-new-mexico-in-defense-manufacturing-expansion",
+      "title": "AV Partners with City of Albuquerque and State of New Mexico in Defense Manufacturing Expansion",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ALBUQUERQUE, N.M. — March 3, 2026 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global leader in advanced defense",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "url": "https://www.avinc.com/2026/02/26/av-receives-186-million-u-s-army-delivery-order-for-next-generation-switchblade-systems",
+      "title": "AV Receives $186 Million U.S. Army Delivery Order for Next-Generation Switchblade Systems",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. — February 26, 2026 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global leader in autonomous systems",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "url": "https://www.avinc.com/2026/02/23/av-announces-retirement-of-chief-financial-officer-kevin-mcdonnell",
+      "title": "AV Announces Retirement of Chief Financial Officer Kevin McDonnell",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., February 23, 2026 – AeroVironment, Inc. (“AV” or the “Company”) (NASDAQ: AVAV) , a global defense",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "url": "https://www.avinc.com/2026/01/28/avs-ues-awarded-75-million-task-order-extending-contract-to-advance-biotechnology-and-smart-materials-for-the-u-s-air-force",
+      "title": "AV’s UES Awarded $75 Million Task Order Extending Contract to Advance Biotechnology and Smart Materials for the U.S. Air Force",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. – January 28, 2026 – The United States Air Force has awarded UES, a division of",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "url": "https://www.avinc.com/2026/01/27/av-and-cal-analytics-launch-operational-bvlos-airspace-management-facility-in-partnership-with-the-u-s-air-force-and-ohio-department-of-transportation",
+      "title": "AV and CAL Analytics Launch Operational BVLOS Airspace Management Facility in Partnership with the U.S. Air Force and Ohio Department of Transportation",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "SPRINGFIELD, Ohio – January 27, 2026 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader delivering",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "url": "https://www.avinc.com/2025/12/18/av-delivers-jltv-mounted-locust-laser-weapon-systems-to-u-s-army",
+      "title": "AV Delivers JLTV-Mounted LOCUST Laser Weapon Systems to U.S. Army",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., December 18, 2025 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a leading provider of counter-unmanned aircraft system",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "url": "https://www.avinc.com/2025/12/10/aerovironment-and-general-dynamics-land-systems-successfully-demonstrate-perch-loitering-munitions-launcher",
+      "title": "AeroVironment and General Dynamics Land Systems Successfully Demonstrate PERCH Loitering Munitions Launcher",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "General Dynamics Land Systems today announced a successful demonstration of the Precision Effects & Reconnaissance, Canister-Housed (PERCH) system,",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "url": "https://www.avinc.com/2025/12/08/av-awarded-13-2m-contract-to-provide-p550-uas-for-u-s-armys-long-range-reconnaissance-lrr-program",
+      "title": "AV Awarded $13.2M Contract to Provide P550 UAS for U.S. Army’s Long Range Reconnaissance (LRR) Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., December 8, 2025 – AV, with partner Parry Labs, has been awarded a 3-year Other Transaction",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "url": "https://www.avinc.com/2025/12/08/aerovironment-awarded-874m-foreign-military-sales-idiq-to-deliver-uas-and-c-uas-systems-to-allied-partner-forces",
+      "title": "AeroVironment Awarded $874M Foreign Military Sales IDIQ to Deliver UAS and C-UAS Systems to Allied & Partner Forces",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., December 8, 2025 — AeroVironment (AV) (NASDAQ: AVAV), a global leader in all-domain autonomous systems, has",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "url": "https://www.avinc.com/2025/12/02/aerovironment-announces-expansion-of-av_halo-unified-software-platform-with-cortex-and-mentor",
+      "title": "AeroVironment Announces Expansion of AV_Halo™ Unified Software Platform with CORTEX and MENTOR",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va., December 02, 2025 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader delivering software-enabled",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "url": "https://www.avinc.com/2025/10/31/av-announces-collaboration-with-openjaus-for-autonomous-uncrewed-system-uxs-interoperability",
+      "title": "AV Announces Collaboration with OpenJAUS for Autonomous Uncrewed System (Uxs) Interoperability",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "ARLINGTON, Va. — October 31, 2025 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global defense technology leader delivering",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "url": "https://www.avinc.com/2025/10/22/av-selected-for-u-s-army-next-generation-c-uas-missile-program-awarded-95-9m-contract-to-deliver-fe-1-for-u-s-armys-long-range-kinetic-interceptor-lrki-program",
+      "title": "AV Selected for U.S. Army Next-Generation C-UAS Missile Program, Awarded $95.9M Contract to Deliver FE-1 for U.S. Army’s Long-Range Kinetic Interceptor (LRKI) Program",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "HUNTSVILLE, Al., October 22 , 2025 – AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a leading provider of Counter-Unmanned Aircraft",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "url": "https://www.avinc.com/2025/10/21/av-and-korean-air-sign-memorandum-of-understanding-to-advance-medium-unmanned-aircraft-systems-for-the-republic-of-korea",
+      "title": "AV and Korean Air Sign Memorandum of Understanding to Advance Medium Unmanned Aircraft Systems for the Republic of Korea",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "SEOUL, Republic of Korea, October 21, 2025 — AeroVironment, Inc. (“AV”) (NASDAQ: AVAV), a global leader in all-domain",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "url": "https://www.nioa.com.au/latest-news/nioa-and-aerovironment-partner-up-to-advance-australian-loitering-munitions-capability",
+      "title": "nioa-original.txt",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "SOURCE https://www.nioa.com.au/latest-news/nioa-and-aerovironment-partner-up-to-advance-australian-loitering-munitions-capability HTTP 200 NIOA Group - NIOA and AeroVironment partner up to advance Australian loitering munitions capability",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "url": "https://science.nasa.gov/mission/skyfall",
+      "title": "nasa-skyfall.txt",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "SOURCE https://science.nasa.gov/mission/skyfall/ HTTP 200 SkyFall - NASA Science Explore Search News & Events News & Events Recently Published",
+          "added": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "url": "https://www.faa.gov/newsroom/faa-and-dow-sign-landmark-safety-agreement-protect-southern-border",
+      "title": "faa-safety-original.txt",
+      "accessed": "2026-10-20",
+      "quotes": [
+        {
+          "text": "SOURCE https://www.faa.gov/newsroom/faa-and-dow-sign-landmark-safety-agreement-protect-southern-border HTTP 200 FAA and DOW Sign Landmark Safety Agreement to Protect Southern Border | Federal Aviation",
+          "added": "2026-10-20"
+        }
+      ]
+    }
+  ]
+}
