@@ -1,0 +1,22 @@
+name: Valuation engine tests
+
+on:
+  push:
+    paths:
+      - 'us-equity-research/**'
+      - '.github/workflows/valuation-tests.yml'
+  pull_request:
+    paths:
+      - 'us-equity-research/**'
+      - '.github/workflows/valuation-tests.yml'
+
+jobs:
+  valuation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run numerical, accounting, provenance and CLI regression tests
+        run: python -m unittest discover -s us-equity-research/tests -p 'test_valuation_engine.py' -v

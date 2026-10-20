@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "ticker": "DEMO",
+  "valuation_date": "2026-10-20",
+  "currency": "USD",
+  "price": {
+    "value": 30,
+    "basis": "market",
+    "as_of": "2026-10-19",
+    "source_url": "https://example.com/hypothetical-illustration"
+  },
+  "capital": {
+    "bridge_as_of": "2026-10-20",
+    "reconciliation_note": "DEMO example uses stale hypothetical financial statements, not a real security.",
+    "shares_m": {
+      "value": 100,
+      "basis": "filing",
+      "as_of": "2026-06-30",
+      "source_url": "https://example.com/hypothetical-illustration"
+    },
+    "cash_m": {
+      "value": 300,
+      "basis": "filing",
+      "as_of": "2026-06-30",
+      "source_url": "https://example.com/hypothetical-illustration"
+    },
+    "debt_m": {
+      "value": 200,
+      "basis": "filing",
+      "as_of": "2026-06-30",
+      "source_url": "https://example.com/hypothetical-illustration"
+    },
+    "other_claims_m": {
+      "value": 10,
+      "basis": "filing",
+      "as_of": "2026-06-30",
+      "source_url": "https://example.com/hypothetical-illustration"
+    }
+  },
+  "cases": [
+    {
+      "name": "base_pe",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 2000,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "net_margin": {
+          "value": 0.22,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "forecast_shares_m": {
+          "value": 105,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "exit_pe": {
+          "value": 22,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "cost_of_equity": {
+          "value": 0.11,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        }
+      }
+    },
+    {
+      "name": "base_enterprise",
+      "method": "enterprise_ebit",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 2000,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "ebit_margin": {
+          "value": 0.3,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "exit_ev_ebit": {
+          "value": 16,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "wacc": {
+          "value": 0.09,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        }
+      }
+    },
+    {
+      "name": "base_terminal_equity",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 2000,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "ebit_margin": {
+          "value": 0.3,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "exit_ev_ebit": {
+          "value": 16,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "terminal_net_cash_m": {
+          "value": -150,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "forecast_shares_m": {
+          "value": 105,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        },
+        "cost_of_equity": {
+          "value": 0.11,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "Illustrative DEMO-only assumption; not a verified company forecast or investment recommendation."
+        }
+      }
+    }
+  ]
+}
