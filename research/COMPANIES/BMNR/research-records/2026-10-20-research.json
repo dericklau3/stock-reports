@@ -1,0 +1,285 @@
+{
+  "asof": "2026-10-20 before US market open",
+  "ticker": "BMNR",
+  "issuer": "Bitmine Immersion Technologies Inc",
+  "CIK": "0001829311",
+  "share": "NYSE BMNR common; BMNP separate 9.50pct perpetual preferred",
+  "fiscalYearEnd": "August31",
+  "quote": {
+    "regularClose": 21.57,
+    "priceDate": "2026-10-19 EDT 4pm",
+    "source": "https://stockanalysis.com/stocks/bmnr/history/",
+    "otherQuote": 21.56,
+    "priorOct9": 24.03,
+    "changePct": -10.237203495630464
+  },
+  "financials": {
+    "unit": "USD millions",
+    "columns": [
+      "GAAP Revenue",
+      "cost of sales",
+      "GAAP operating P/L",
+      "GAAP consolidated net P/L",
+      "operating cash",
+      "cash equipment capex"
+    ],
+    "periods": {
+      "FY2024": [
+        3.31,
+        3.473,
+        -2.448,
+        -3.293,
+        -0.03,
+        0.076
+      ],
+      "FY2025": [
+        6.095,
+        5.785,
+        444.211,
+        348.577,
+        -4.149,
+        1.065
+      ],
+      "FY2025_9M": [
+        4.77,
+        4.393,
+        -2.265,
+        -2.754,
+        1.366,
+        0.018
+      ],
+      "FY2026_9M": [
+        59.87,
+        8.177,
+        -9322.507,
+        -9106.103,
+        -287.592,
+        0.406
+      ],
+      "FY2026_Q3": [
+        46.535,
+        5.726,
+        -11.865,
+        -83.595,
+        null,
+        null
+      ],
+      "TTM": [
+        61.195,
+        9.568999999999999,
+        -8876.030999999999,
+        -8754.771999999999,
+        -293.10699999999997,
+        1.4529999999999998
+      ]
+    },
+    "TTMformula": "FY2025 minus FY2025_9M plus FY2026_9M",
+    "TTMgrossM": 51.626000000000005,
+    "TTMsimpleFCFM": -294.55999999999995,
+    "FY2025unrealizedCryptoGainM": 805.008,
+    "FY2026nineMonthUnrealizedCryptoLossM": 9038.538,
+    "FY2026nineMonthCryptoBuyInvestingCashM": 11687.493,
+    "FY2026nineMonthATMshares": 340748312,
+    "FY2026nineMonthATMnetProceedsM": 11869.401,
+    "FY2026nineMonthSBCm": 38.357,
+    "FY2026Q3stakingRevenueM": 45.743,
+    "FY2026nineMonthStakingRevenueM": 56.924,
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315225024679/form10-k.htm",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000162828026048157/bmnr-20260531.htm"
+    ],
+    "FY2026FullYear10K": "not verified as of Oct20"
+  },
+  "treasury": {
+    "holdingsAsOf": "2026-10-18 EDT15:00",
+    "pressFiled": "2026-10-19",
+    "source": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226047517/ex99-1.htm",
+    "ETH": 6041481,
+    "ETHUSDreference": 2365,
+    "ETHvalueB": 14.288102565,
+    "stakedETH": 5067309,
+    "stakingYieldSevenDay": 0.0258,
+    "stakedPct": 0.8387527826372374,
+    "annualRewardGrossArithmeticM": 309.19199325299996,
+    "companyCurrentAnnualRewardEstimateM": 309,
+    "fullStakeEstimateM": 369,
+    "BTC": 215,
+    "cashMarketableM": 582,
+    "BeastM": 180,
+    "EightcoORBMS": 74,
+    "companyPortfolioTotalB_rounded": 15.1,
+    "priorWeek": {
+      "asof": "2026-10-11",
+      "ETH": 6028946,
+      "ETHreferenceUSD": 2544,
+      "portfolioB": 16.2
+    },
+    "addedETH": 12535,
+    "portfolioDeclinePct": -6.79012345679012,
+    "warning": "company asset total not GAAP NAV; price date and stock quote date differ"
+  },
+  "capital": {
+    "asOf": "2026-05-31 (unless noted)",
+    "cashM": 340.289,
+    "derivativeCashCollateralM": 100.125,
+    "cryptoAssetsBookB": 10.871934,
+    "totalLiabilitiesM": 30.128,
+    "liabilitiesIncludeLeaseM": 1.32,
+    "liabilitiesIncludeWarrantM": 2.087,
+    "NCI_M": 0.548,
+    "traditionalDebtM": 0,
+    "actualSharesMay31": 579652432,
+    "actualSharesJuly9": 603226394,
+    "awardOldMayPotential": 19264829,
+    "awardBreakdown": [
+      2872929,
+      10435430,
+      1097346,
+      4500000,
+      359124
+    ],
+    "datedMixedFDProxy": 622491223,
+    "companyCumulativeRepurchasesAnnouncedOct5M": 21,
+    "buybackAuthorizationB": 4,
+    "currentIssuedOctober": "UNVERIFIED",
+    "ATMnetIssuedSinceJuly": "UNVERIFIED",
+    "BMNP": {
+      "issuedJune10": 3500000,
+      "priceIssued": 80,
+      "netFundingM": 273.8,
+      "initialPreferencePerShare": 100,
+      "initialPreferenceTotalM": 350,
+      "dividend": 0.095,
+      "annualHistoricDividendM": 33.25,
+      "currentCountAndAccruals": "UNVERIFIED"
+    }
+  },
+  "agreements": {
+    "MayNote14": "https://www.sec.gov/Archives/edgar/data/1829311/000162828026048157/bmnr-20260531.htm",
+    "agreementA": "Different 2025 ten-year Ethereum Tower treasury CONSULTING / digital assets fee agreement; projected fee $40-50m annually with 85pct early termination payment; September 8-K does not prove this one ended",
+    "agreementB": "March2026 MAVAN Management Services Agreement with Ethereum Tower terminated effective Sep3 2026; no material cancellation fee",
+    "replacement": "American Validator LLC affiliate starts Sep4, 1.5% fee of company staked ETH rewards; MAVAN 2% noncontrolling interest after termination unverified",
+    "Sept8K": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226041713/form8-k.htm"
+  },
+  "valuation": {
+    "approach": "Common equity NAV rather than P/E",
+    "OctoberActualNAV": "not reliably known",
+    "hypotheticalGrossPortfolioB": 15.1,
+    "priorBMNPseniorClaimB": 0.35,
+    "priorLiabilitiesB": 0.030128,
+    "priorNCI_B": 0.000548,
+    "crossDatedShadowOrdinaryNetAssetB": 14.719324,
+    "oldJulyCommonShares": 603226394,
+    "mixedMayAwardsPlusJulyFD": 622491223,
+    "shadowPerJulyShare": 24.40099462889218,
+    "shadowPerMixedFDShare": 23.645833798366663,
+    "shadowCommonMnav": 0.883980359327643,
+    "shadowFDMnav": 0.9122114358043888,
+    "conditionalBreakevenSharesM": 682.3979601298098,
+    "ETH100usdChangePerOldShare": 1.001527960329932,
+    "ETH100usdChangePerOldFD": 0.9705327202661619,
+    "caveat": "STRICTLY cross-date mechanical examples, NOT reliable October NAV/discount/fair value. Current FD shares, preferred accrued liability, collateral and investment liquidity missing; double-counting a warrant as share AND warrant liability prohibited.",
+    "bear": "ETH lower, NAV discount, net dilution",
+    "base": "ETH Oct18 spot and reward, cannot price reliably without actual current shares/claims",
+    "bull": "ETH higher and accretive buybacks/fee income",
+    "perShareThreeWay": "unable to reliably price",
+    "forwardPE": "GAAP crypto marks make ratio unreliable; matched historical one-year forward EPS not available"
+  },
+  "events": [
+    [
+      "2026-10-19",
+      "Oct18 6.041481m ETH, 15.1B assets",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226047517/ex99-1.htm"
+    ],
+    [
+      "2026-10-12",
+      "Oct11 6.028946m ETH, 16.2B assets",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226046744/ex99-1.htm"
+    ],
+    [
+      "2026-10-07",
+      "chairman macro bull thesis opinion",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226046088/ex99-3.htm"
+    ],
+    [
+      "2026-10-05",
+      "Oct4 assets 17.4B and 21m announced cumulative buybacks",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226045699/ex99-1.htm"
+    ],
+    [
+      "2026-09-28",
+      "ETH over 6m",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226044459/ex99-1.htm"
+    ],
+    [
+      "2026-09-08",
+      "MAVAN management MSA terminated, affiliate 1.5pct service fee",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226041713/form8-k.htm"
+    ],
+    [
+      "2026-08-17",
+      "more than 19m buybacks",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226036757/ex99-1.htm"
+    ],
+    [
+      "2026-07-14",
+      "FY2026 May31 Q3 10Q and ineffective controls",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000162828026048157/bmnr-20260531.htm"
+    ],
+    [
+      "2026-06-10",
+      "3.5m preferred BMNP completed",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226027502/ex1-1.htm"
+    ],
+    [
+      "2026-03-24",
+      "Pier Two acquisition completed",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000149315226013609/form8-k.htm"
+    ],
+    [
+      "2025-11",
+      "started native ETH staking month per Q3 10Q",
+      "https://www.sec.gov/Archives/edgar/data/1829311/000162828026048157/bmnr-20260531.htm"
+    ]
+  ],
+  "evidenceCoverage": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "parties": [
+      "BMNR SEC and IR",
+      "Ethereum Tower and American Validator agreements",
+      "Pier Two acquisition",
+      "BMNP preferred financing",
+      "Eightco ORBS",
+      "Beast Industries",
+      "Ethereum staking and custody"
+    ],
+    "checked": "Major SEC 2025 10K, FY26 Q3 10Q, 2026 March/June/Sep 8Ks and Oct holdings 8Ks",
+    "incomplete": [
+      "2025Oct to 2026Feb monthly all 8Ks",
+      "every weekly asset disclosure",
+      "current 2026Oct shares/ATM/repurchases net",
+      "full preferred accrued dividend/current count",
+      "2025 consultant separate contract status after Sept8",
+      "third party MAVAN clients/fees",
+      "ORBS/Beast realizable positions and lockups",
+      "new FY2026 annual 10K",
+      "matching historical daily forward PE"
+    ]
+  },
+  "changes": {
+    "oldOct9": 24.03,
+    "newOct19": 21.57,
+    "oldOct4AssetsB": 17.4,
+    "newOct18AssetsB": 15.1,
+    "oldOct4ETH": 6016414,
+    "newOct18ETH": 6041481,
+    "oldOct4RewardRate": 0.0263,
+    "newOct18RewardRate": 0.0258,
+    "oldOct4ProjectedGrossM": 363,
+    "newProjectedGrossM": 309,
+    "newFact": "Sept8 SEC 8K terminates MAVAN MSA, not independent pre-existing ten-year Ethereum Tower consulting agreement; no Oct FD bridge"
+  }
+}
