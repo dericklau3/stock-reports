@@ -1,0 +1,525 @@
+{
+  "research_date": "2026-10-20",
+  "cutoff": "2026-10-20 Asia/Tokyo; 2026-10-19 New York regular close",
+  "security": {
+    "legal_entity": "QUALCOMM Incorporated",
+    "ticker": "QCOM",
+    "exchange": "NASDAQ",
+    "share": "USD common",
+    "CIK": "0000804328"
+  },
+  "quote": {
+    "price_USD": 173.53,
+    "date": "2026-10-19",
+    "session": "US regular close",
+    "primary_url": "https://www.investing.com/equities/qualcomm-inc-historical-data",
+    "crosscheck": "https://www.marketwatch.com/data-news/on-semiconductor-corp-stock-outperforms-competitors-on-strong-trading-day-cfa6496d-2b4b36ef1493",
+    "other_provider_close": "ChartExchange $173.46 on same date; small provider discrepancy",
+    "old_reference_20261009": 175.5,
+    "change_pct": -1.1225071225071215
+  },
+  "financials": {
+    "basis": "US GAAP, USD millions",
+    "FY2024": {
+      "rev": 38962,
+      "gross": 21902,
+      "op": 10071,
+      "net": 10142,
+      "ocf": 12202,
+      "capex": 1041,
+      "fcf": 11161
+    },
+    "FY2025": {
+      "rev": 44284,
+      "gross": 24546,
+      "op": 12355,
+      "net": 5541,
+      "ocf": 14012,
+      "capex": 1192,
+      "fcf": 12820
+    },
+    "FY2025_first9m": {
+      "rev": 33013,
+      "gross": 18309,
+      "op": 9437,
+      "net": 8658,
+      "ocf": 10016,
+      "capex": 785,
+      "fcf": 9231
+    },
+    "FY2026_first9m": {
+      "rev": 32798,
+      "gross": 17660,
+      "op": 7302,
+      "net": 12377,
+      "ocf": 8405,
+      "capex": 1578,
+      "fcf": 6827,
+      "SBC": 2579,
+      "repurchases": 6806,
+      "dividends": 2868
+    },
+    "TTM_to_20260628": {
+      "rev": 44069,
+      "gross": 23897,
+      "op": 10220,
+      "net": 9260,
+      "ocf": 12401,
+      "capex": 1985,
+      "fcf": 10416
+    },
+    "TTM_formula": "FY2025-9mFY2025+9mFY2026",
+    "TTM_FCF_formula": "OCF−cash Capex",
+    "current_latest_filing": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm",
+    "annual_10K": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
+    "FY2026_Q4_report_status": "not yet released as of cutoff, FY ended 2026-09-27",
+    "tax_caveat": "FY2025 7122m tax expense; FY2026 9m 4136m tax benefit incl Q2 release 5.7B deferred tax asset valuation allowance; cannot normalize net income by simple TTM GAAP"
+  },
+  "quarter_Q3FY2026": {
+    "revenue_m": 9947,
+    "qct_m": 8504,
+    "qtl_m": 1278,
+    "handsets_m": 5086,
+    "handsets_yoy_pct": -20,
+    "automotive_m": 1588,
+    "automotive_yoy_pct": 61,
+    "iot_m": 1830,
+    "iot_yoy_pct": 9,
+    "qtl_pretax_margin_pct": 69,
+    "nonGAAP_eps": 2.21,
+    "GAAP_eps": 1.87,
+    "nonGAAP_excludes_SBC": true
+  },
+  "balance_sheet_20260628": {
+    "cash_m": 4533,
+    "marketable_m": 3771,
+    "available_cash_securities_m": 8304,
+    "short_debt_m": 2489,
+    "long_debt_m": 12781,
+    "notes_total_m": 15270,
+    "net_notes_debt_m": 6966,
+    "short_debt_current_long_portion_due_May2027_m": 1991,
+    "commercial_paper_m": 498,
+    "actual_common_stock_end_period_m": 1057
+  },
+  "economic_shares": {
+    "period_end_20260628_m": 1057,
+    "Modular_new_shares_around_20260728_m": 18,
+    "illustrative_post_Modular_m": 1075,
+    "not_actual_20261020_shares": true,
+    "Amazon_warrant_max_new_shares_m": 25,
+    "Amazon_warrant_initial_vested_m": 3.75,
+    "strike_USD": 161.26,
+    "issue_date": "2026-09-03",
+    "end_date": "2036-09-03",
+    "cashless_allowed": true,
+    "share_rights": "vest by specific commercial arrangements, binding orders and actual purchases up to $60B payment-linked cap; the cap does NOT establish irrevocable $60B backlog",
+    "potential_increment_vs_proxy_pct": 2.3255813953488373,
+    "Alphawave_20251218_already_in_20260628_share_base": true,
+    "modular_share_service_conditions_present": true
+  },
+  "capital": {
+    "reference_market_cap_B": 186.54475,
+    "conditional_notes_only_EV_B": 193.51075,
+    "FCF_yield": 0.05583646819328874,
+    "price_to_FCF": 17.909442204301076,
+    "dividend_after_20260317_quarterly_USD": 0.92,
+    "share_repurchase_auth_new_20260317_B": 20,
+    "authorization_is_not_cash_spent": true,
+    "share_based_comp_2026_9m_m": 2579
+  },
+  "valuation": {
+    "valuation_asof": "2026-10-20",
+    "target_fiscal_end": "2029-09-30",
+    "days_to_exit": 1076,
+    "years_to_exit": 2.945927446954141,
+    "annual_equity_discount_rate": 0.1,
+    "discount_factor": 1.3241581177406159,
+    "basis": "FY2029 researcher NonGAAP EPS - 2026 annualized SBC after illustrative 20% tax shield using 1075M share reference = normalized economic EPS; multiply scenario exit P/E, discount to today. Illustrative expense adjustment NOT company GAAP EPS forecast; FY29 business mix, income tax, amortization and diluted shares may differ.",
+    "SBC_2026_9m_m": 2579,
+    "annualization_scale": 1.3333333333333333,
+    "annualized_SBC_m": 3438.6666666666665,
+    "illustrative_SBC_tax_shield": 0.2,
+    "economic_SBC_after_tax_per_share": 2.5590077519379846,
+    "company_management_FY2029_goals": {
+      "nonhandset_revenue_B": 40,
+      "datacenter_revenue_B_more_than": 15,
+      "automotive_revenue_B": 10,
+      "nonGAAP_EPS_more_than": 18,
+      "GAAP_EPS_more_than": 14.5
+    },
+    "scenarios": {
+      "bear": {
+        "FY2029_nonGAAP_EPS_assumption": 12,
+        "employee_SBC_economic_EPS_deduction": 2.5590077519379846,
+        "normalized_economic_EPS": 9.440992248062015,
+        "exit_PE": [
+          11,
+          13
+        ],
+        "FY2029_undiscounted_price": [
+          103.85091472868217,
+          122.73289922480619
+        ],
+        "current_PV": [
+          78.42788058112039,
+          92.68749523223318
+        ],
+        "pct_vs_reference": [
+          -0.5480442541282753,
+          -0.4658704821515981
+        ],
+        "full_Amazon_warrant_net_25m_shares_if_profit_same_PV": [
+          76.6454287497313,
+          90.58096124968242
+        ]
+      },
+      "base": {
+        "FY2029_nonGAAP_EPS_assumption": 16,
+        "employee_SBC_economic_EPS_deduction": 2.5590077519379846,
+        "normalized_economic_EPS": 13.440992248062015,
+        "exit_PE": [
+          14,
+          16
+        ],
+        "FY2029_undiscounted_price": [
+          188.1738914728682,
+          215.05587596899224
+        ],
+        "current_PV": [
+          142.1083244906926,
+          162.4095137036487
+        ],
+        "pct_vs_reference": [
+          -0.18107344844872586,
+          -0.06408394108425797
+        ],
+        "full_Amazon_warrant_net_25m_shares_if_profit_same_PV": [
+          138.87858984317685,
+          158.71838839220217
+        ]
+      },
+      "bull": {
+        "FY2029_nonGAAP_EPS_assumption": 20,
+        "employee_SBC_economic_EPS_deduction": 2.5590077519379846,
+        "normalized_economic_EPS": 17.440992248062017,
+        "exit_PE": [
+          17,
+          19
+        ],
+        "FY2029_undiscounted_price": [
+          296.49686821705427,
+          331.37885271317833
+        ],
+        "current_PV": [
+          223.91349208579476,
+          250.25625586059417
+        ],
+        "pct_vs_reference": [
+          0.29034456339419545,
+          0.44214980614645394
+        ],
+        "full_Amazon_warrant_net_25m_shares_if_profit_same_PV": [
+          218.82454908384486,
+          244.5686136819443
+        ]
+      }
+    },
+    "base_market_reverse_at_15x": {
+      "required_FY2029_economic_EPS": 15.31874387810194,
+      "required_FY2029_nonGAAP_EPS_at_same_SBC": 17.877751630039924
+    },
+    "current_forward_PE": "not obtained: no timestamp-consistent GAAP/non-GAAP market consensus",
+    "historical_one_year_forward_PE": "not obtained daily contemporaneous forecast series",
+    "company_eps_2029": "ambitious management target, NOT market forecast",
+    "extra_warrant_stress": "25M full incremental gross shares for stress, no cash exercise proceeds, no earnings uplift; must not be combined as most probable with 60B spend simultaneously",
+    "dividends": "ignored future undisclosed dividends in PV for conservative comparability to prior"
+  },
+  "sources": [
+    {
+      "party": "SEC",
+      "date": "2026-09-08",
+      "title": "QCOM warrant issuance 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm",
+      "status": "primary full"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-09-08",
+      "title": "Amazon collaboration",
+      "url": "https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-multi-generational-product-collaboration-with",
+      "status": "issuer primary; commercial headline"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-09-24",
+      "title": "Apple patent license renewal",
+      "url": "https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-renewal-of-global-patent-license-agreement-wi",
+      "status": "issuer primary; no chip supply promise"
+    },
+    {
+      "party": "Huawei+QCOM",
+      "date": "2026-10-05",
+      "updated": "2026-10-06 clarification",
+      "title": "Huawei broad licensing and separate patent purchase",
+      "url": "https://www.qualcomm.com/news/releases/2026/10/huawei-and-qualcomm-announce-broad-patent-license-agreement",
+      "status": "party statements; patent purchase regulatory approval pending"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-10-16",
+      "title": "Transsion 4G and 5G licenses to end of 2031",
+      "url": "https://www.qualcomm.com/news/releases/2026/10/qualcomm-announces-long-term-patent-cross-license-agreement-with",
+      "status": "issuer primary"
+    },
+    {
+      "party": "Reuters",
+      "date": "2026-10-13",
+      "title": "Arm verdict nominal damages and judge reserved issues",
+      "url": "https://www.reuters.com/legal/litigation/qualcomm-says-jury-found-arm-breached-license-agreement-2026-10-13/",
+      "status": "court coverage; judge final ruling still pending"
+    },
+    {
+      "party": "Arm",
+      "date": "2026-10-13",
+      "title": "Arm counterparty verdict statement",
+      "url": "https://newsroom.arm.com/news/arm-qualcomm-legal-dispute",
+      "status": "party viewpoint"
+    },
+    {
+      "party": "QCOM SEC",
+      "date": "2026-07-29",
+      "title": "Q3 FY2026 earnings Q4 outlook",
+      "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000085/qcom062826erex991.htm",
+      "status": "issuer SEC exhibit"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-06-24",
+      "title": "FY2029 targets with EPS GAAP to nonGAAP bridge",
+      "url": "https://investor.qualcomm.com/news-events/press-releases/news-details/2026/Qualcomm-Accelerates-Diversification-with-Comprehensive-Strategy-for-Data-Center-and-Sees-Multiple-Inflection-Points-Over-the-Next-3-to-5-Years/default.aspx",
+      "status": "issuer primary"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-07-29",
+      "title": "Modular complete",
+      "url": "https://www.qualcomm.com/news/releases/2026/07/qualcomm-completes-acquisition-of-modular",
+      "status": "issuer primary; shares SEC Q3 subsequent events"
+    },
+    {
+      "party": "QCOM",
+      "date": "2025-12-18",
+      "title": "Alphawave close",
+      "url": "https://www.qualcomm.com/news/releases/2025/12/qualcomm-completes-acquisition-of-alphawave-semi",
+      "status": "issuer primary"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-07-29",
+      "title": "BMW compute agreement",
+      "url": "https://www.qualcomm.com/news/releases/2026/07/qualcomm-named-bmw-group-s-lead-compute-silicon-provider-for-dig",
+      "status": "issuer primary, customer long program"
+    },
+    {
+      "party": "QCOM",
+      "date": "2026-08-31",
+      "title": "HUMAIN Adobe adoption planning",
+      "url": "https://www.qualcomm.com/news/releases/2026/08/adobe-becomes-first-global-software-company-to-migrate-ai-worklo",
+      "status": "party announcement, undisclosed purchase economics"
+    }
+  ],
+  "announced_events_audit": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "coverage": [
+      {
+        "party": "Qualcomm IR",
+        "role": "issuer, financial and material",
+        "methods": "2025 Nov, 2026 Jan/Mar/June/July/Sep/Oct earnings/strategy dated searches, IR current archive",
+        "status": "partial",
+        "gap": "not all monthly press pages exhaustively reviewed"
+      },
+      {
+        "party": "Qualcomm Newsroom",
+        "role": "issuer, product and partnership",
+        "methods": "visible archive 2026 Jul-Oct and Data Center filter back to Oct2025",
+        "status": "partial",
+        "gap": "general press pages Nov2025-Jun2026 not exhaustively paginated"
+      },
+      {
+        "party": "SEC",
+        "role": "regulator accounting, warrant",
+        "methods": "2025 10-K, 2026 Q3 10-Q, 2026 Sep8 8-K and 2026 Q3 exhibit; Q2 tax 10Q",
+        "status": "partial",
+        "gap": "all SEC interim 8Ks, Forms 4, 424B prospectus after warrant not fully reviewed"
+      },
+      {
+        "party": "Amazon/AWS",
+        "role": "major contract counterpart",
+        "methods": "SEC QCOM 8K warrant, joint Sep8 release incl AWS VP statement",
+        "status": "partial",
+        "gap": "binding PO volumes/prices/contract/cancellation and AWS unilateral filing details not inspected"
+      },
+      {
+        "party": "Apple",
+        "role": "licensed partner and shrinking chip customer",
+        "methods": "QCOM Sep24 announcement and Reuters cross context",
+        "status": "partial",
+        "gap": "Apple counterparty original license and product purchase terms not public"
+      },
+      {
+        "party": "Huawei",
+        "role": "cross-license and seller patents",
+        "methods": "Oct5 Huawei own announcement and Oct6 Qualcomm correction",
+        "status": "partial",
+        "gap": "confidential terms and US regulatory decision not yet known"
+      },
+      {
+        "party": "Arm/court",
+        "role": "IP supplier and litigation counterparty",
+        "methods": "Oct13 Arm statement/QCOM statement/Reuters court coverage",
+        "status": "partial",
+        "gap": "Judge final order and appellate outcomes pending; original full docket not read"
+      },
+      {
+        "party": "Meta",
+        "role": "data center CPU customer",
+        "methods": "June24 QCOM company joint press",
+        "status": "partial",
+        "gap": "purchase minimum and delivered volume not disclosed"
+      },
+      {
+        "party": "BMW",
+        "role": "automotive OEM design partner",
+        "methods": "Jul29 joint QCOM release, Nov25 BMW iX3 launch context",
+        "status": "partial",
+        "gap": "no margin, vehicle volumes and full purchase conditions"
+      },
+      {
+        "party": "HUMAIN/Adobe",
+        "role": "AI workloads counterpart",
+        "methods": "Oct2025 cooperation/Nov center and Aug2026 Adobe workload announcement",
+        "status": "partial",
+        "gap": "no verified shipment invoices and full 200MW buildout proof"
+      }
+    ],
+    "not_fully_completed": true,
+    "candidates": [
+      [
+        "2026-10-16",
+        "Transsion licensing renewal",
+        "include major QTL contract extension"
+      ],
+      [
+        "2026-10-13",
+        "Arm verdict",
+        "include mixed legal finding"
+      ],
+      [
+        "2026-10-12",
+        "WiFi8 gateway",
+        "exclude ordinary product line, not separately material confirmed revenue"
+      ],
+      [
+        "2026-10-05",
+        "Huawei cross-license and patents",
+        "include"
+      ],
+      [
+        "2026-09-24",
+        "Apple cross license",
+        "include"
+      ],
+      [
+        "2026-09-23",
+        "PickNik acquisition planned",
+        "include as ecosystem M&A"
+      ],
+      [
+        "2026-09-21",
+        "Googlebook",
+        "include as PC channel, group with handset launch"
+      ],
+      [
+        "2026-09-08",
+        "Amazon 60B milestone warrant",
+        "include with SEC 8K"
+      ],
+      [
+        "2026-08-31",
+        "Adobe/HUMAIN",
+        "include as deployment progress"
+      ],
+      [
+        "2026-07-29",
+        "BMW supply and earnings",
+        "include"
+      ],
+      [
+        "2026-07-28",
+        "Modular close",
+        "include"
+      ],
+      [
+        "2026-06-24",
+        "Meta DC CPU collaboration and FY2029 strategy",
+        "include"
+      ],
+      [
+        "2026-03-17",
+        "repurchase authority",
+        "include capital allocation"
+      ],
+      [
+        "2025-12-18",
+        "Alphawave closing",
+        "include"
+      ],
+      [
+        "2025-11-19",
+        "HUMAIN engineering center",
+        "include"
+      ],
+      [
+        "2025-10-27",
+        "HUMAIN 200MW AI roadmap",
+        "include"
+      ],
+      [
+        "2026-10-12",
+        "QCOM innovation fellowship",
+        "exclude unrelated regular R&D scholarship small size"
+      ]
+    ]
+  },
+  "prior_changes": [
+    {
+      "before": "2026-10-11 QCOM quote $175.50 on Oct9",
+      "after": "2026-10-20 research price $173.53 on Oct19",
+      "impact": "reference price -1.12%"
+    },
+    {
+      "before": "Arm verdict pending Oct9",
+      "after": "Oct13 jury partly for Qualcomm, nominal $2, judge issues open",
+      "impact": "litigation stage updated; no major gains recognized"
+    },
+    {
+      "before": "prior report not emphasized Amazon warrant",
+      "after": "Sep8 8K maximum 25M, 3.75M initial vest, $60B payment-linked ceiling",
+      "impact": "commercial quality and future dilution stress"
+    },
+    {
+      "before": "prior 2029 base PV $168–192 using nonGAAP EPS16 without explicit SBC economic deduction",
+      "after": "new base PV $142–162 using 2026 SBC run rate after hypothetical 20% tax shield",
+      "impact": "primarily economic accounting method change, not FY2029 management guide cut"
+    },
+    {
+      "before": "Apple and Huawei/QTL contract milestones not in prior key table",
+      "after": "Sep24 Apple renewal and Oct5 Huawei clarification and Oct16 Transsion",
+      "impact": "QTL durability evidenced, economic prices unknown"
+    }
+  ]
+}
