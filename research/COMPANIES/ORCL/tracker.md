@@ -1,12 +1,54 @@
 # Oracle（ORCL）Tracker
 
-Last updated: 2026-10-10
+Last updated: 2026-10-20
 
-## Current Research View
+## Current Research View — 2026-10-20
+
+**建设性但谨慎；129.59美元没有明显的安全边际。** 2026-10-19 纽约常规收盘为129.59美元，对比上一研究2026-10-09使用的141.40美元下降约8.35%。本次2026-10-20折现现值：保守约56—78美元、基础约116—141美元、乐观约168—209美元；新估值是研究假设，非市场共识或保证收益。
+
+## Current Main Thesis — 2026-10-20
+
+Oracle数据库和企业应用具有真实转换成本；OCI Q1 FY2027收入7.388B美元、同比增长约121%，并披露交付850MW容量及30万块以上GPU；总RPO为664B美元。需求/交付证据充足，但TTM收入71.776B、经营现金流46.940B、现金资本开支75.660B、标准FCF -28.720B。Q1经营现金流23.103B含11.363B具有融资成分的客户预付款。核心问题是资本投入、租赁/融资索偿和每股现金回报能否与交付同步。
+
+## 2026-10-20 Key Events and Updated Judgments
+
+- **2026-10-19** S&P信用风险评论（Reuters）：大型云厂商可能有未充分可见的AI关联债务；并非2026-10-19对Oracle的新降级。原文：https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/ 。资本成本和融资透明度风险因此促使本次基础退出市盈率假设从20—24倍降为18—22倍，**这是研究判断，不是评级事实或公司调整指引**。
+- **2026-10-15** Oracle与Yucca Growth Infrastructure提出Project Jupiter能源微电网许可修订，许可排放目标下降约35%；最终许可证未获核实，不当作电源已交付。原文：https://www.oracle.com/news/announcement/project-jupiter-microgrid-cuts-permitted-emissions-by-35-percent-2026-10-15/ 。
+- **2026-10-13** Oracle与El Paso Electric能源服务安排提案，拟至少每年支付10M美元、期限10年，另有最多每年55M美元、最多三年用户费率抵免提案；两者均未视为已签署落实的现金支出。原文：https://www.oracle.com/news/announcement/oracle-proposes-plan-to-offset-customers-utility-costs-2026-10-13/ 。
+- **2026-10-02** Point Beach拟承担约300M美元能源成本，仍受Wisconsin PSC审批条件约束。原文：https://www.oracle.com/news/announcement/oracle-announces-commitment-to-absorb-rising-point-beach-energy-costs-2026-10-02/ 。
+- **2026-09-29** NetApp托管存储合作与Fusion Claw 25个AI企业应用；新增付费和盈利贡献尚未披露，不能将技术上线直接等同收入。完整来源见本次研究报告。
+- 与2026-10-10比较：上一基础现值128—154美元（20—24倍退出经济EPS）→本次116—141美元（18—22倍）；FY2027公司指引仍按至少90B美元收入及8.10美元调整后EPS处理，未虚构新指导。
+- RPO→算力交付→收入→履约后的净现金→偿债/更新资本→每股现金回报；债务、融资租赁、经营租赁、未起租承诺、项目融资要分层；客户预付不可当作永久自由现金。
+- 下一关：2026-10-25至10-28 AI World、10-28 Investor Day；FY2027 Q2财报准确日期未核实；Jupiter最终许可与供电交付；长期资金来源、客户付款保障、普通股稀释及项目净投资回报。
+
+## 2026-10-20 Valuation Details and Constraints
+
+- 报价：2026-10-19 NY regular close **129.59 USD**，来源：https://stockanalysis.com/stocks/orcl/history/ ；不冒充10月20日即时价格。
+- 9月7日可确认普通股数3.023736B（不是10月20日实际股数），市值约391.846B美元。2026-08-31现金及可交易短期证券37.077B、借款125.337B、融资租赁9.185B、经营租赁34.621B、优先股清算优先额约5B；未起租租赁约288B为长期未折现承诺，并非即期债务。
+- 年度非GAAP EPS指引8.10。SBC季度1.127B年化、示意税盾18%，经济成本约1.2225美元/股，基础经济EPS约6.8775；只用于经济敏感性，并非GAAP/市场共识。
+- 2027-05-31退出估值按12%年股权要求回报折现至2026-10-20，223天、因子约1.071642。保守EPS5.5—6×11—14 PE→现值56.46—78.38；基础6.8775×18—22 PE→115.52—141.19；乐观7.5—8×24—28 PE→167.97—209.03美元。
+- 额外未来股本+5%、盈利不变时基础约110—134美元，+10%约105—128美元；不能对已完成200亿ATM再重复稀释。完整历史Forward P/E序列、期后实时股数、全部项目融资合约和客户现金保障条款未核实，必须保留估值不确定性。
+- **覆盖缺口**：本次新补关键Oracle、OpenAI公告，部分SEC、监管和评级来源，但2025-10-20至2026-10-20 Oracle/SEC所有档案逐月全量、Jupiter监管全部卷宗及相关主体全体公告未完成；不能宣称12个月事件全面核查完毕。详见底稿覆盖矩阵。
+
+## Current Research Files
+
+- [2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)
+- [2026-10-20核验及计算底稿](research-records/2026-10-20-research-audit.json)
+- [2026-10-10旧深研，历史版本](deep-research/2026-10-10-deep-research-update.md)
+- [2026-10-10旧财务底稿，仍为本次原始数字依据](research-records/2026-10-10-financial-audit.json)
+- [2026-10-10旧估值底稿](research-records/2026-10-10-valuation.json)
+
+---
+
+## Historical Tracker Snapshot — retained from 2026-10-10
+
+Last updated (historical snapshot): 2026-10-10
+
+## 2026-10-10 Research View (historical)
 
 **建设性但需观察；价格改善，资本回报仍未确认。** 141.40美元位于本次128—154美元基础现值区间中部，不视作厚安全边际。新研究计入员工股份薪酬经济成本和时间折现，不再直接把调整后EPS当作现金收益。
 
-## Current Main Thesis
+## 2026-10-10 Main Thesis (historical)
 
 数据库与企业应用是高转换成本底座，OCI已有真实交付及收入。Q1 FY2027收入19.345B、OCI7.388B，RPO664B；TTM现金capex75.660B、FCF-28.720B，关键是客户付款、交付、融资与每股回报匹配，而不是订单本身。[1][6][7]
 
