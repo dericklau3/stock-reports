@@ -1,12 +1,47 @@
 # Vistra（VST）Tracker
 
-Last updated: 2026-10-11
+Last updated: 2026-10-20
 
-## Current Research View
+## Current Research View — 2026-10-20
+
+**建设性但谨慎。** 2026-10-19常规收盘$149.70，较10/9旧报告参考$161.48跌7.30%；2027年末条件EV/EBITDA退出并折现至10/20：Bear $50–80、Base $133–172、Bull $199–247。价格处在Base范围内，但没有厚安全边际；这不是买卖指令。
+
+## Current Main Thesis
+
+电厂和零售平台已产生现金；2026Q2 ongoing EBITDA $1.767B，全年2026指引$6.8–7.6B。Meta 2176MW现有核电长约、433MW未来增容，AWS 1200MW长期协议，Cogentrix 5.5GW拟收购是利润可见度来源；应坚持“发电→履约→合同毛利→资本回收→普通股每股现金”，而非把全部MW、新收购和条件DOE贷款提前计入利润。
+
+## Key Changes Since 2026-10-11
+
+- **价格 10/09 $161.48→10/19 $149.70**，实际市场下跌约7.30%，没有得到新的公司正式2027业绩指引。
+- **2026-10-15 Series A优先股赎回完成**：不是旧版“可能赎回”或“将赎回”；100万股各$1000，共**$1B**清算优先额，停止A类股息；剩余B/C优先约$1.476B，需与2026-09-24发行的$1.5B次级债及资金现金流配对。不能只降优先索偿1B而不记录现金支付；新债初始年票息$106.625M。
+  - 公司原文：https://investor.vistracorp.com/2026-10-15-Vistra-Announces-Redemption-of-All-Outstanding-Series-A-Preferred-Stock
+  - 债券完成原件：https://www.sec.gov/Archives/edgar/data/1692819/000114036126037577/ef20082680_8k.htm
+- **DOE 2026-10-05最高$4.2B**为核电433MW扩容的条件贷款，不是无偿补贴/已放款。网址：https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower
+- **Cogentrix至本次没有核实已交割**：FERC已经批准与完成交割必须分开；预计late2026，拟付现金2.3B、承债1.5B、发行5M普通股，重算时收入和股数同步；Lotus 2.6GW于2025-10-22**已经交割**，不能重复当待收购。
+- **2026H1 GAAP财务**：收入$9.657B、经营利润$2.052B、OCF$2.222B、含核燃料/LTSA现金capex$1.572B、简易FCF$0.650B；TTM收入$19.212B、OCF$5.121B、capex$2.866B、简易FCF$2.255B。2026 FCFbG指引$3.925–4.725B系**增长前non-GAAP**，不能代替所有现金投资后的FCF。
+- **旧基础价值132–172→当前133–172**主要来自估值起点由10/11滚至10/20（目标2027-12-31、12%回报、437天），不是管理层调高EPS/EBITDA。条件EV/ongoing EBITDA参考倍数约10.11×，前提使用6月底财务和8/3 335.635195M股及10/19价格；未取得十月实时股份和完整期后现金，不冒充实时报表EV。
+- **下一关**：2026-11-06 10:00 ET Q3报告（公司已确定）；年底Cogentrix正式交割；2026-12-15 B类优先可赎/重置、Meta既有核电起供；DOE正式融资和NRC许可、AWS 2027Q4起供、核电新增433MW预计2031—34。
+- **风险红线**：净索偿较模型多$1B，在约340M股下每股现值约降$2.57；2028后套保下降、电厂停机与环保退役、Helix资金调用和收购稀释可令总EBITDA增长而每股现金下降。
+- **覆盖限制**：IR 2025-10至2026-10公开归档可见部分及主要SEC、DOE、Meta材料已核对，但SEC十二个月全量日频申报、所有NRC/FERC/PJM、AWS合同价格、Cogentrix卖方档案未穷尽。新Q3尚未发布；当前/历史可比Forward P/E不可得。详见本次底稿。
+
+## Current Files
+
+- [2026-10-20完整深度研究](deep-research/2026-10-20-deep-research.md)
+- [2026-10-20可复算研究记录](research-records/2026-10-20-research.json)
+- [2026-10-11旧研究](deep-research/2026-10-11-deep-research-update.md)
+- [2026-10-11旧计算记录](research-records/2026-10-11-research.json)
+
+---
+
+## Historical Tracker Snapshot — retained from 2026-10-11
+
+Last updated (historical snapshot): 2026-10-11
+
+## 2026-10-11 Research View (historical)
 
 **投资观点：**建设性但需观察：现有资产赚钱且长约能见度提高，但现价处于基础情景上半区，安全边际不足以忽视杠杆和新增资本。
 
-## Current Main Thesis
+## 2026-10-11 Main Thesis (historical)
 
 **核心逻辑：**竞争性电厂与零售平台把电价、容量与客户负荷转为收入；Meta/AWS长约及Cogentrix可改善未来现金，但不是AI需求总量直接归普通股。
 
