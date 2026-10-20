@@ -1,0 +1,72 @@
+# P2：估值时点冻结、历史复盘与误差归因
+
+P2 在 [P0 数值引擎](valuation-engine.md) 和 [P1 多模型估值](valuation-p1.md) 之上新增**事前估值记录**和**事后证据复盘**。它不是交易回测器，不产生自动买卖指令，也不能以事后的行情证明某个内在价值模型错误或正确。全程离线、无第三方依赖；金融来源必须由研究者核验。
+
+## 1. 冻结每一次原始预测
+
+在仓库根目录，对**已经核验并保存**的 P0 v1 或 P1 v2 估值输入执行：
+
+```bash
+python3 us-equity-research/valuation_p2.py freeze \
+  research/COMPANIES/TICKER/research-records/YYYY-MM-DD-valuation-p1-input.json \
+  --name base-dcf \
+  --output research/COMPANIES/TICKER/research-records/YYYY-MM-DD-base-dcf-snapshot.json
+```
+
+也可对 P0 输入使用对应 `--name`。P2 **直接重新运行原始估值引擎**，不会盲信人为填写的目标价；结果含：原始 JSON 与其 SHA-256、重算结果 SHA-256、参考市价、预测目标日、可供事后核验的经营指标、冻结时间与完整快照哈希。后续在 `review` 中重新校验哈希并使用原模型复算。如果文件发生变化或当前公式复算结果不一致，会停止而不是静默采用被修改的历史数字。
+
+`frozen_at` 是本次实际生成时间；如果当日以前的历史研究是**事后补录**，明确标记 `retrospective_reconstruction`，不能冒充当年真实事前投资判断。哈希只检测意外或未同步修改，**不是可信时间戳或数字签名**；真正证明历史信息发布时间应结合 Git 提交历史、原始发行人披露时间及真实市场快照。Git 历史中已保存的原始文件优先，不能以后见之明重写旧预测。
+
+**严禁**用发布日期在估值日之后的财报、共识或事件填补当时尚未公布的预测输入；旧模型缺原始输入只能记录历史缺口，不从当日价格倒推补齐。
+
+P1 的 `forward_pe` 是市场参照倍数，不是内在价值，P2 不允许把它冻结为“内在目标价”；SOTP 若有多个不同目标日，保留快照但标记为无统一到期日，不能伪造一个统一股价回测目标。
+
+## 2. 按历史有效日期复盘
+
+准备可核验的观测文件（结构见 `examples/valuation-p2-observations.example.json`），包括 `ticker`、`evaluation_date`、`prices` 和 `actuals`：
+
+- `prices` 为逐条价格：`observed_on`、`price`（带来源的 P0 fact 对象，必须 `basis=market` 且 `as_of=observed_on`）；不得晚于本次 `evaluation_date`。
+- `actuals` 为按真实财年期末归类的官方财务结果：`period_end`、`published_on`、`metrics`。数值必须有 `basis=filing`、实际披露日 `as_of=published_on` 及原始来源 URL；不能使用财报期末日冒充真正披露日。不同准则、净利归属、拆股、币种必须先调和。
+- 回测仅使用估值目标日**当日或后 7 个日历日**的首个真实报价，避免把任意远期最新股价当目标日价格；不能使用目标日前价格假装目标日兑现。
+- 目标期未到记 `open`；已到但缺真实数据记 `matured_missing_evidence`；已经具备至少一项实证比较记 `matured_scored`。分部期限混杂记 `unscorable_horizon`。
+- 先以经营事实比较预测收入、归属股东净利润、营业利润、自由现金流及预测股数（按方法适用），再计算预测与实际的 `signed_error`、绝对误差、绝对百分比误差。真实值为零则百分比误差留空；聚合使用样本数、MAE、偏差均值、WAPE，不虚构任何未披露的观测值。
+- 同时可以查看原股价至期末市价的简单价格回报、预测内在价值与期末市价差额。**后者不是模型预测“错误”的直接证明**：期间可能发生政策、利率、市场情绪和风险溢价变化，且这些回报既不含股息，也不是扣费后的真实可交易策略收益。
+
+执行：
+
+```bash
+python3 us-equity-research/valuation_p2.py review \
+  --observations research/COMPANIES/TICKER/research-records/YYYY-MM-DD-valuation-p2-observations.json \
+  research/COMPANIES/TICKER/research-records/*-snapshot.json \
+  --compare \
+  --output research/COMPANIES/TICKER/research-records/YYYY-MM-DD-valuation-p2-review.json
+```
+
+使用 `--compare` 会对**同一公司、同一模型、同一情景、同一目标期**按两个估值时点比较修订。不同标的、目标日或模型不能强行归因。
+
+## 3. 估值变化拆解：Shapley 而非伪因果解释
+
+P0 的原始倍数场景可拆为收入、利润率、退出倍数、折现率、期间年数、股数以及净现金/索偿（取决于 P0 方法）。P1 的 FCFF DCF 用已折现显式期 FCFF、终值现值、净索偿和股份数；SOTP 按分部估值总和、总部费用、非经营资产、净索偿和股数解释。
+
+对可比的两次估值，代码使用**精确 Shapley 分摊**：对每一个因素枚举其余因素旧值/新值的组合，按所有替换次序的对称平均分摊价格变化。贡献总和严格等于 `新模型估值 - 旧模型估值`，避免“先改收入还是先改 P/E”造成的不同归因。显示：
+
+- `factors_usd_per_share`：各假设变化对应的估值修订金额；
+- `reference_price_change_usd`：同期实际股价变化；
+- `market_change_minus_model_revision_usd`：市场变化与本模型修订之间的**剩余差异**，不应机械解释为“市场情绪”“市场错误”或收益因果。
+- 还必须通过实际财报核对原先假设与事后收入/利润/现金/稀释之间的偏差。分部边界更换、会计准则改变或并购导致模型不再可比时，停止机械归因，改由分析者写明结构断点。
+
+## 4. 风险、样本偏差与应用边界
+
+- 2026-10-20 既有研究并未到绝大多数目标预测期，因此**现在不能产生真实历史命中率或收益率**。不能伪造未来真实财报来展示漂亮回测。
+- 事后补录历史研究会带来**后视偏差**；只对可以从原时点版本记录和公开资料证明的预测，才能进一步做严格前瞻检验。
+- 股票退市、拆股、股息、配股、幸存者偏差、交易成本、样本重叠以及行业风格轮动均未在 P2 内完成严格可投资策略回测。输出必须称“估值/财务预测复盘”，不得称“策略年化回报”或“证明打败市场”。
+- P2 没有做数据商自动抓取，所有输入必须由研究者逐一查验发布日期。离线校验原始 URL 格式和日期关系，**不会证明链接内容真实**。
+- 不强制每次研究都输出 P2“命中率”：目标尚未到来时只冻结输入，下次研究核验已成熟的旧预测即可。没有原始、可信、可对齐资料就明确缺口，不能填写假想准确度。
+
+## 5. 验收
+
+```bash
+python3 -m unittest discover -s us-equity-research/tests -p 'test_valuation_p2.py' -v
+```
+
+新研究：保留 P0/P1 原始输入及数值输出，额外冻结适用的基础/保守/乐观独立快照，并在 `tracker.md` 链接模型方法、估值日与预测期。重新研究：先检查过去已成熟预测，输出逐项的实际兑现/未兑现和数据缺失，再与本次新估值比较。**不得**覆盖旧的快照来美化追踪结果。

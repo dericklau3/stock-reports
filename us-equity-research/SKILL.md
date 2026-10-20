@@ -28,9 +28,10 @@ description: 对选定的美国上市公司开展完整中文深度个股研究�
 3. 说明商业模式和竞争环境。读取[公司类型与条件检查](references/company-types.md)，按实际行业、阶段与证券结构选择指标，不把软件或制造企业指标硬套给所有公司。
 4. 读取[已公布重大事件](references/announced-material-events.md)，按「明确时间范围 → 列出关键主体 → 建立候选事件清单 → 核验与筛选 → 正文呈现」核查近 12 个月，补充更早但仍影响投资逻辑的事件。在底稿保存实际时间与来源覆盖、候选事项及取舍理由；不能找到几条新闻就停止，或用正文行数限制检索。公告日期、内容、实际意义及原始来源在正文单独呈现。
 5. 读取[经营事项与执行进度](references/operating-agenda-execution-progress.md)，核对原始承诺、最新证据、已完成节点、延误和下一关，保留稳定事项名称。
-6. 核实多年财务、利润质量、资金和资本分配。读取[估值规则](references/valuation.md)、[P0 数值契约](references/valuation-engine.md)及[P1 多模型估值契约](references/valuation-p1.md)，评估保守/基础/乐观情景、适用的当前与历史 Forward P/E、当前价格隐含要求。**新研究凡给出具体每股价格端点，必须**建立有来源的 JSON 输入并运行 `python3 us-equity-research/valuation_engine.py INPUT.json --output OUTPUT.json`；校验失败则不得硬给价格。区分股权 P/E、当前 EV/WACC 桥接、未来 EV→股权/股权折现，底稿保留输入、输出、来源和公式。**P1 对新研究按适用行业运行逐年 FCFF DCF、同期 Forward P/E 同行基准和多业务 SOTP；有足够可靠数据时运行 `python3 us-equity-research/valuation_p1.py INPUT.json --output OUTPUT.json`，保存完整输入输出、反向估值与敏感性。**无合理输入的方法标记不适用/缺口，不造数凑模型；不机械平均不同模型，不得把市场倍数基准误称内在价值。
-7. 采用[完整深研报告模板](references/report-templates.md)。读取[四位投资人视角](references/investor-lenses.md)，以此前证据形成各有侧重的判断。
-8. 完成下方验收，保存完整报告和底稿，更新 `tracker.md` 的当前状态与历史变化。
+6. 核实多年财务、利润质量、资金和资本分配。读取[估值规则](references/valuation.md)、[P0 数值契约](references/valuation-engine.md)及[P1 多模型估值契约](references/valuation-p1.md)、[P2 历史复盘契约](references/valuation-p2.md)，评估保守/基础/乐观情景、适用的当前与历史 Forward P/E、当前价格隐含要求。**新研究凡给出具体每股价格端点，必须**建立有来源的 JSON 输入并运行 `python3 us-equity-research/valuation_engine.py INPUT.json --output OUTPUT.json`；校验失败则不得硬给价格。区分股权 P/E、当前 EV/WACC 桥接、未来 EV→股权/股权折现，底稿保留输入、输出、来源和公式。**P1 对新研究按适用行业运行逐年 FCFF DCF、同期 Forward P/E 同行基准和多业务 SOTP；有足够可靠数据时运行 `python3 us-equity-research/valuation_p1.py INPUT.json --output OUTPUT.json`，保存完整输入输出、反向估值与敏感性。**无合理输入的方法标记不适用/缺口，不造数凑模型；不机械平均不同模型，不得把市场倍数基准误称内在价值。
+7. **P2 记录与复盘：**若已形成可复算的 P0/P1 条件价格，按[P2 历史复盘契约](references/valuation-p2.md)运行 `python3 us-equity-research/valuation_p2.py freeze INPUT.json --name 模型名 --output SNAPSHOT.json`；冻结完整输入、重算结果及时间戳，严禁事后修改旧预测。重新研究时如历史预测到期且真实财报或价格已披露，使用 `valuation_p2.py review --observations OBSERVATIONS.json SNAPSHOT... --compare --output REVIEW.json` 核对财务预测与模型假设，明确缺失与事后补录，不将目标期股价误当内在价值唯一正确答案。
+8. 采用[完整深研报告模板](references/report-templates.md)。读取[四位投资人视角](references/investor-lenses.md)，以此前证据形成各有侧重的判断。
+9. 完成下方验收，保存完整报告和底稿，更新 `tracker.md` 的当前状态与历史变化。
 
 ## 报告结构与去重
 
@@ -67,6 +68,7 @@ description: 对选定的美国上市公司开展完整中文深度个股研究�
 - 情景方法适用，股数、ADR 换算、现金/债务、稀释、目标期及折现已复算；缺历史倍数不等于当前估值也不可做。
 - 新研究涉及具体条件估值端点时，`research-records/` 已保存 `YYYY-MM-DD-valuation-input.json` 和 `YYYY-MM-DD-valuation-output.json`，全部关键数字附来源/具体假设理由，并已执行 P0 估值引擎；`VALUATION BLOCKED` 不得改用手算绕过。旧报告不追溯改写。
 - P1 在适用时补充 `YYYY-MM-DD-valuation-p1-input.json` 和 `YYYY-MM-DD-valuation-p1-output.json`，核对五至十年现金流、资本投入、终值占比、当前历史 Forward P/E 的原时点预测、分部边界和资金稀释条件；显著模型分歧需解释，不能混合平均或选对自己结论最有利的结果。若 P1 主导输入无法可靠界定，必须在估值结论中说明限制。
+- P2 对每次新增可复算估值生成带 SHA-256 的冻结快照，并由 Git 记录首次创建时间；重新研究时仅评价**已到期、可核实**的原假设，保存独立观测输入、回测输出及模型修订分解。事后补录标记 `retrospective_reconstruction`，绝不冒充真实历史命中率；缺失价格或财报不得造数填补。
 - 事实、目标和假设分开，来源冲突已说明；最强反证和重大未知出现在相关正文，详细计算可复查。
 - 正文符合唯一模板，报告和底稿已保存，tracker 指向本次完整深研。
 

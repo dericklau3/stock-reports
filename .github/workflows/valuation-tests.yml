@@ -24,3 +24,7 @@ jobs:
         run: python -m unittest discover -s us-equity-research/tests -p 'test_valuation_p1.py' -v
       - name: Run P1 example end-to-end
         run: python us-equity-research/valuation_p1.py us-equity-research/examples/valuation-p1-input.example.json --output /tmp/p1-result.json
+      - name: P2 immutable historical snapshots and attribution tests
+        run: python -m unittest discover -s us-equity-research/tests -p 'test_valuation_p2.py' -v
+      - name: P2 DEMO snapshot CLI smoke test
+        run: python us-equity-research/valuation_p2.py freeze us-equity-research/examples/valuation-input.example.json --name base_pe --output /tmp/p2-demo-snapshot.json

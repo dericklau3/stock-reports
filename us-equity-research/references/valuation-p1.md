@@ -43,3 +43,7 @@ python3 -m unittest discover -s us-equity-research/tests -p 'test_valuation_p1.p
 ## 保存约定
 
 每次研究若使用 P1，额外保存 `YYYY-MM-DD-valuation-p1-input.json` 与 `YYYY-MM-DD-valuation-p1-output.json` 于公司 `research-records/`；底稿说明正式结论采用的主方法、参照方法、不一致原因以及未来未建模资金/稀释条件。历史 P0 研究报告不回填新结果。报告第六节仍遵守 `report-templates.md` 的**一张两列表 + 简要方法说明与总结**，不新增宽表；完整参数留底稿。
+
+## P2 衔接
+
+P1 计算生成的完整 v2 输入可用 [P2 冻结与历史复盘工具](valuation-p2.md)逐项冻结，避免后来重新研究时以新预测覆盖旧假设。仅同一估值模型/情景/目标期才做数值归因；Forward P/E 市场基准不能作为独立内在价格冻结。
