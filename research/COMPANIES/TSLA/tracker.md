@@ -1,22 +1,40 @@
 # Tesla（TSLA）Tracker
 
-Last updated: 2026-10-11
+Last updated: 2026-10-20
 
 ## Current Research View
 
-**投资观点：**中性等待：Q3交付和储能部署有实际改善，但车量不能回答利润和现金问题；不沿用未闭合AI期权的旧目标价。
+**投资观点：**中性偏谨慎：Q3交付同比−2.13%、储能同比+9.6%；10月19日Tesla官方汇总的财报前卖方共识预计Q3 FCF−45.06亿美元，尚不是已实现财务。
 
 ## Current Main Thesis
 
-**核心逻辑：**汽车与储能形成制造、服务和现金基础；驾驶软件及无人运营可能提升附加价值，必须分别证明监管、安全、客户付费与单位经济。
+**核心逻辑：**汽车、储能和FSD订阅拥有真实付款路径；Robotaxi、Cybercab和Optimus的独立盈利必须经安全/监管、付费规模、单位经济和资本回报验证。
 
 ## Key Risks
 
-**主要风险：**高市值已前置AI商业化，而汽车经营利润率薄、资本开支高、CEO奖励和限制性股份使每股价值与GAAP EPS分母显著不同。
+**主要风险：**AI计算与制造2026年资本开支正式预期超过250亿美元，汽车利润率薄、监管/安全与CEO限制性绩效股使每股价值高度敏感。
 
 ## Latest Research
 
-[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[研究核验与估值底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)、[旧JSON记录](research-records/2026-10-11-research.json)、[旧验收结果](research-records/2026-10-11-validation.json)。
+
+## 2026-10-20 新增完整深研（历史持续保留）
+
+**本次完整报告**：[2026-10-20深度个股研究](deep-research/2026-10-20-deep-research.md)。**关键来源及计算**：[2026-10-20核验底稿](research-records/2026-10-20-research.md)。
+
+### 旧假设→新事实→研究影响（日期明确）
+- **研究/报价**：旧报告2026-10-11、报价2026-10-09纽约常规收盘$382.70；新研究2026-10-20、最后可用纽约常规交易日2026-10-19收盘**$368.06**，变化**−3.82545%**。来源https://stockanalysis.com/stocks/tsla/history/。这只是价格变化，不是已实现经营恶化的证明。
+- **财报时间**：最新实际完整财务仍是2026Q2（截止2026-06-30、7月22日公布、7月23日10-Q申报）；Q3**2026-10-21盘后**及17:30 EDT电话会，在研究日尚未发生。原件：https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm 、https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments。
+- **Q3实物**：2026-10-02披露车辆交付**486532**、生产464391、储能13.7GWh；2025Q3对比交付497099辆储能12.5GWh，得汽车同比**−2.126%**、储能同比**+9.6%**；环比2026Q2交付480126增长1.334%。上次“交付恢复”必须加上同比仍下滑的事实。来源https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments。
+- **财报前共识（重大新来源）**：Tesla2026-10-19整理分析师Q3平均营收**$28.341bn**、GAAP EPS**$0.23**、non-GAAP EPS**$0.45**、OCF**$3.267bn**、Capex**$7.771bn**、FCF**−$4.506bn**；2026全年平均GAAP普通股NI**$3.221bn**、现金capex**$25.354bn**、FCF**−$9.717bn**。上述**都是分析师的事前预期，不是公司指引或已经发布的Q3财报**。来源https://ir.tesla.com/press-release/earnings-consensus-third-quarter-2026。
+- **安全与监管**：2026-09-04 NHTSA针对Cybercab认证开启Audit Query，说明Austin确有部署，但认证和无人大规模服务仍有风险；新闻称另有学校区域路段违规问询，关键官方文书未全读，不能把报道等同既定处罚。来源https://www.nhtsa.gov/press-releases/investigation-tesla-cybercab-self-certification。
+- **Roadster/关联方**：2026-10-15新Roadster与SpaceX辅助推进演示，2028目标并非交付事实；2026-10-19Tesla–SpaceX合并讨论仅是媒体报道的猜测，不属于已签/批准交易。来源https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/；https://www.reuters.com/business/media-telecom/spacex-tesla-earnings-test-musks-ai-spending-ambitions-merger-talk-grows-2026-10-19/。
+- **诉讼**：2026-10-16美国联邦上诉法院推翻部分FSD广告集体认证，**未裁定宣传真伪实质**。来源https://www.reuters.com/business/media-telecom/us-appeals-court-blocks-class-actions-over-teslas-self-driving-claims-2026-10-16/。
+- **TTM会计**：FY2025+2026H1−2025H1：收入**$103619m**、毛利**$19534m**、经营利润**$4372m**、归属NI**$3804m**、OCF**$18685m**、现金购置长期资产**$12923m**、简化FCF**$5762m**；H12026 FCF=8634−8282=**$352m**，Q2单季−$1092m。Q2 GAAP净利含SpaceX投资市值未实现收益$1005m和税项利益，不能当稳定Robotaxi利润。
+- **资金与权益**：Q2末现金+短期投资**$43524m**，受限现金约$1206m不得加；债务与融资租赁账面**$9342m**，经营租赁短期/长期**$1022m/$5716m**，未用承诺融资$5000m不是自由现金。法律股数2026-07-16**3949547394**，已含相关绩效限制股；2025 CEO奖励约423.7m股不可再次加到上述分母，H1SBC $2181m；实际2026年10月股数尚未调和。
+- **估值复算**：新股价×前次已核法律股数=**$1.453670trn代理市值**，旧同分母市值$1.511492trn；静态TTM P/E**382.14×**，P/简化FCF**252.29×**。同分母下若最终市场估值30×/60×/100×归属正常年利润分别要求**$48.456bn/$24.228bn/$14.537bn**，而2026FY公司整理卖方共识NI为$3.221bn；该反推是对当前估值的压力检验，不是将来特定年度目标/贴现DCF。对未来Robotaxi和Optimus还缺同口径真实运营成本、规模交付/付款、净稀释与资本回报，不能编造保守/基础/乐观每股内在价值。
+- **未来重点验证**：Q3/年度汽车不含积分毛利与真实FCF、储能保修、FSD订阅与完全无人Robotaxi的合同区分、监管正式答复、Cybercab规模营运成本、Optimus外部订单和公开披露的净经济股本。若能实现经营利润与FCF持续改善且AI产品有真实外部净利润可上调；若高capex、稀释及监管限制持续而无盈利回报应下调。
+- **来源覆盖缺口**：2025-10-20至2026-10-20公司全部8-K与关联方/国内外安全监管公告未逐一全量核查；Q3正式财报、最新股数、完整历史日频Forward P/E和未来机器人财务输入缺失。已在独立本轮底稿逐项记录，**不可宣称整个12个月彻底核查**。
 
 ## 2026-10-11 新增深研更新块（保留旧文）
 
