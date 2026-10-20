@@ -1,0 +1,461 @@
+{
+  "as_of": "2026-10-20",
+  "issuer": {
+    "name": "Tempus AI, Inc.",
+    "ticker": "TEM",
+    "exchange": "Nasdaq",
+    "class": "A traded; Class B equal economic holdings included for market cap",
+    "CIK": "0001717115"
+  },
+  "time": {
+    "last_completed_trade": "2026-10-19 regular close NY EDT",
+    "study": "2026-10-20 before US trading day",
+    "latest_report": "2026Q2 period ended 2026-06-30 filed 2026-07-30",
+    "official_future_report": "2026-11-02 before US market open, 8:45 ET conference"
+  },
+  "quote": {
+    "USD": 64.34,
+    "date": "2026-10-19",
+    "source": "https://www.investing.com/equities/tempus-ai-historical-data",
+    "other_price": 64.32,
+    "other_source": "https://chartexchange.com/symbol/nasdaq-tem/historical/",
+    "old_20261009": 70.93,
+    "oldPctChange": -0.09290850133934869
+  },
+  "financialsUSDmillions": {
+    "sourceFY2025": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-fourth-quarter-and-full-year-2025-results",
+    "sourceQ2TenQ": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526326090/tem-20260630.htm",
+    "FY2024": {
+      "revenue": 693.398,
+      "gross": 381.113,
+      "gaapOperating": -691.082,
+      "gaapTotalNet": -705.809,
+      "operatingCash": -189.045,
+      "equipmentAndCapitalizedSoftware": 22.121,
+      "FCF": -211.166
+    },
+    "FY2025": {
+      "revenue": 1271.789,
+      "gross": 797.897,
+      "gaapOperating": -252.872,
+      "gaapTotalNet": -245.028,
+      "operatingCash": -218.09,
+      "equipmentAndCapitalizedSoftware": 27.265,
+      "FCF": -245.355
+    },
+    "H12025": {
+      "revenue": 570.372,
+      "gross": 350.242,
+      "gaapOperating": -130.463,
+      "gaapTotalNet": -110.88,
+      "operatingCash": -61.46,
+      "equipmentAndCapitalizedSoftware": 12.883,
+      "FCF": -74.343
+    },
+    "H12026": {
+      "revenue": 730.602,
+      "gross": 468.539,
+      "gaapOperating": -160.624,
+      "gaapTotalNet": -120.277,
+      "operatingCash": -80.802,
+      "equipmentAndCapitalizedSoftware": 21.159,
+      "FCF": -101.961,
+      "stockCompensation": 106.827,
+      "stockCompRelatedPayrollTax": 5.051
+    },
+    "TTMthroughQ2_2026": {
+      "revenue": 1432.019,
+      "gross": 916.194,
+      "gaapOperating": -283.033,
+      "gaapTotalNet": -254.425,
+      "operatingCash": -237.432,
+      "equipmentAndCapitalizedSoftware": 35.541,
+      "FCF": -272.973
+    },
+    "formula": "TTM=FY2025−H12025+H12026; FCF=GAAP operating cash−cash equipment and capitalized software expenditures; no double counting quarter/YTD",
+    "Q2_2026": {
+      "revenue": 382.486,
+      "diagnosticsRevenue": 289.333,
+      "dataAppsRevenue": 93.153,
+      "gaapNet": 5.642,
+      "gaapOperating": -75.913,
+      "unrealizedMarketableInvestmentGain": 98.5,
+      "adjustedEbitda": 8.044,
+      "MRDTests": 9000,
+      "oncologyVolumeGrowthYoY": 0.31
+    },
+    "FY2026managementGuidanceStandalone": {
+      "revenueUSDmillions": [
+        1595,
+        1605
+      ],
+      "adjustedEBITDAUSDmillions": 65,
+      "PersonalisExcluded": true
+    }
+  },
+  "capitalUSDmillions": {
+    "date": "2026-06-30",
+    "cashUnrestricted": 599.614,
+    "restrictedCashExcluded": 4.724,
+    "marketableEquitySecurities": 216.377,
+    "PersonalisInvestmentInMarketableSecurities": true,
+    "seniorConvertibleFace2030": 750,
+    "convertibleFace2032": 460,
+    "GoogleNoteBookValue": 187.929,
+    "accruedInterest": 19.155,
+    "operatingLeasesTotal": 83.458,
+    "referenceNetSeniorClaims": 684.5510000000002,
+    "convertible2032ConversionRateSharesPer1000USD": 14.4388,
+    "convertible2030ConversionRateSharesPer1000USD": 11.8778,
+    "convertibleNotePolicy": "Model as debt and do not simultaneously count same conversion share. Capped calls/equity award effects unresolved.",
+    "cashIsNotEquityValue": "June 30 $820.7m cash+marketable equity total, but $216.4m is volatile equity/PSNL investment and cannot be double counted after merger; restricted $4.724m excluded.",
+    "financing": "$460m actual 0% 2032 convertible notes, older $400m was initial issue announcement; $307.7m old secured facility repaid, capped call $31.2m funded."
+  },
+  "merger": {
+    "announcement": "2026-07-20",
+    "latestDocument": "2026-10-02 S-4/A preliminary",
+    "S4URL": "https://investors.tempus.com/static-files/92ccddd7-9534-44b6-a1ba-a439fd60aace",
+    "PSNLoutstandingM": 106.87599,
+    "PSNLsharesDate": "2026-08-15",
+    "existingTEMownedOrSharedM": 13.039067,
+    "estimatedAcquiredM": 93.836923,
+    "stockA_USD": 16.25,
+    "stockReferencePriceUSD": 64.34,
+    "exchangeRule": "if 15-trading-day TEM VWAP before close > 48.42: 16.25 / VWAP; if <=48.42 fixed cap 0.3356; Personalis may terminate if VWAP <46.00 at contract specified time; not actual current trade",
+    "exchangeIllustrativeAtSingleDayNotVWAP": 0.25256450108797013,
+    "shareMaxExchange": 0.3356,
+    "provisionalStockOnlyNewSharesM_NoAwards": 23.699875641125267,
+    "provisionalGrossDilutionVs180M": 0.13134872774248255,
+    "possibleHalfCashCostM": 762.424999375,
+    "possibleHalfStockNewSharesM_NoAwards": 11.849937820562634,
+    "cashElectionCeiling": 0.5,
+    "minimumStockForTaxTreatment": "cash reduction may be required to preserve intended reorganization treatment; not always 50% actual",
+    "TempusActualSharesM": 180.434756,
+    "TempusSharesDate": "2026-07-24",
+    "TemAShares": 175.390967,
+    "TemBShares": 5.043789,
+    "PSNL_Q2_2026": {
+      "revenueM": 22.4,
+      "netLossM": -31.683,
+      "operatingLossM": -33.591,
+      "relatedPartyRevenueM": 8.4,
+      "netCashM": 211,
+      "cashAndShortTermM": 212.7,
+      "clinicalTests": 10384
+    },
+    "PSNLCashSource": "https://investors.personalis.com/news-releases/news-release-details/personalis-reports-second-quarter-results-and-recent-highlights",
+    "PSNL_S4shareEvidence": "PDF page 111; Sec S-4/A 2026-10-02 p111",
+    "postMergerReferenceMarketCap_B": 13.13402219979,
+    "conditionalCombinedEV_B": 13.82395019979,
+    "proFormaDoubleCountPolicy": "Subtract PSNL net cash where not restricted; add back prior TEM marketable equity PSNL stake removed on consolidation (do not count both); eliminate $8.4m Q2 Tempus/PSNL intercompany related revenue; future revenue forecasts include elimination, not raw sum.",
+    "fullyDilutedAwardsMissing": true,
+    "finalRegistrationSharesBlank": true,
+    "finalCashElectionMissing": true,
+    "closingNotConfirmed": true
+  },
+  "valuation": {
+    "method": "Researcher conditional FY2028-12-31 EV/revenue after removing intercompany sales and modeled future claims; 14% equity discount to 2026-10-20; not complete DCF",
+    "priceUSD": 64.34,
+    "referenceShareCountM": 180.434756,
+    "currentCommonMarketCap_B": 11.609172201040002,
+    "standaloneReferenceSeniorNetClaims_B": 0.684551,
+    "currentStandaloneConditionalEV_B": 12.293723201040002,
+    "companyFY2026StandaloneSalesB": 1.6,
+    "currentEvOver2026Guidance": 7.6835770006500015,
+    "endDate": "2028-12-31",
+    "days": 803,
+    "years": 2.198494182067077,
+    "discountRate": 0.14,
+    "discountFactor": 1.3338438312165042,
+    "scenarios": {
+      "bear": [
+        {
+          "revB": 1.95,
+          "evToRevenue": 3.5,
+          "netSeniorClaimsB": 1.5,
+          "economicSharesM": 242,
+          "futureEquityB": 5.325,
+          "unDiscountedFutureShareUSD": 22.00413223140496,
+          "presentShareUSD": 16.496782993955563,
+          "pctVsCurrent": -0.7435998912969294
+        },
+        {
+          "revB": 2.25,
+          "evToRevenue": 4.5,
+          "netSeniorClaimsB": 1.2,
+          "economicSharesM": 225,
+          "futureEquityB": 8.925,
+          "unDiscountedFutureShareUSD": 39.666666666666664,
+          "presentShareUSD": 29.73861387542612,
+          "pctVsCurrent": -0.537789650677244
+        }
+      ],
+      "base": [
+        {
+          "revB": 2.45,
+          "evToRevenue": 5.5,
+          "netSeniorClaimsB": 1,
+          "economicSharesM": 231,
+          "futureEquityB": 12.475000000000001,
+          "unDiscountedFutureShareUSD": 54.004329004329016,
+          "presentShareUSD": 40.487745072131496,
+          "pctVsCurrent": -0.37072202250339614
+        },
+        {
+          "revB": 2.85,
+          "evToRevenue": 7,
+          "netSeniorClaimsB": 0.75,
+          "economicSharesM": 219,
+          "futureEquityB": 19.2,
+          "unDiscountedFutureShareUSD": 87.67123287671232,
+          "presentShareUSD": 65.7282590547003,
+          "pctVsCurrent": 0.021576920340383943
+        }
+      ],
+      "bull": [
+        {
+          "revB": 3,
+          "evToRevenue": 8,
+          "netSeniorClaimsB": 0.7,
+          "economicSharesM": 228,
+          "futureEquityB": 23.3,
+          "unDiscountedFutureShareUSD": 102.19298245614036,
+          "presentShareUSD": 76.61540284137867,
+          "pctVsCurrent": 0.19078959964840947
+        },
+        {
+          "revB": 3.6,
+          "evToRevenue": 9.5,
+          "netSeniorClaimsB": 0.3,
+          "economicSharesM": 217,
+          "futureEquityB": 33.900000000000006,
+          "unDiscountedFutureShareUSD": 156.22119815668205,
+          "presentShareUSD": 117.1210560791092,
+          "pctVsCurrent": 0.8203459135702391
+        }
+      ]
+    },
+    "scenarioPolicy": "All income numbers are research scenario assumptions, not issuer guidance or agreed Personalis terms; FY2028 revenues refer to consolidated TEM+PSNL after eliminating intra-group revenue; future shares include assumed merger equity, SBC and other net dilution; debt counted in future net claims with convertible conversion NOT duplicated; EPS negative so forward P/E uninformative; valuation assumes no future dividends and does not claim historical peer multiples have been proven.",
+    "reverse": {
+      "referencePrice": 64.34,
+      "futureSharesM": 220,
+      "netClaimsB": 0.9,
+      "futureSalesB": 2.7,
+      "necessary2028EV_B": 19.780292662103374,
+      "necessaryEVSales": 7.326034319297546
+    },
+    "historyForwardPE": "not meaningful due to loss-making GAAP earnings, no contemporaneous comparable one-year daily series",
+    "evidenceRisks": "S-4/A blank final merger share issuance / Personalis award settlements; Tempus Oct 20 actual shares absent, 2027-28 economics uncertain, net collections payer contract details absent, standalone company guidance excludes acquisition."
+  },
+  "events": [
+    {
+      "date": "2026-10-19",
+      "event": "AI pathology NSCLC prescreen study",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-presents-data-demonstrating-ai-enabled-pre-screening-can",
+      "stage": "research, no new revenue disclosure",
+      "material": true
+    },
+    {
+      "date": "2026-10-15",
+      "event": "Nov 2 Q3 earnings announced",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-report-third-quarter-2026-financial-results-november-2",
+      "stage": "calendar not past financial result",
+      "material": false
+    },
+    {
+      "date": "2026-10-07",
+      "event": "Moderna Merck multi-year collaboration",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-announces-multi-year-collaboration-moderna-and-merck",
+      "stage": "potential future commercialization, confidential economics",
+      "material": true
+    },
+    {
+      "date": "2026-10-02",
+      "event": "Tempus Personalis S-4/A filed",
+      "source": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526412289/d864810ds4a.htm",
+      "stage": "pre-effective amendment, final share counts blank, not closed",
+      "material": true
+    },
+    {
+      "date": "2026-09-28",
+      "event": "FDA ECG-MR clearance",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-receives-fda-clearance-its-ecg-mr-ai-product-designed",
+      "stage": "approved indicated risk detection, not commercial proof",
+      "material": true
+    },
+    {
+      "date": "2026-09-21",
+      "event": "Recursion license extension",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-and-recursion-extend-existing-data-license-agreement-and",
+      "stage": "replace discretionary up to $84m over 2 years with committed $42m over 3 years, plus RNA model inbound",
+      "material": true
+    },
+    {
+      "date": "2026-09-11",
+      "event": "100k WGS initiative 1 million stretch",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-launches-effort-build-largest-multimodal-whole-genome",
+      "stage": "planned not delivered",
+      "material": true
+    },
+    {
+      "date": "2026-09-09",
+      "event": "ARPA-H heart-failure clinical AI up to $9.5m",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-secures-95-million-arpa-h-advocate-funding-deploy-first",
+      "stage": "award ceiling not paid",
+      "material": true
+    },
+    {
+      "date": "2026-08-24",
+      "event": "FDA ECG-PH clearance",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-receives-fda-clearance-its-ai-product-intended-detect",
+      "stage": "FDA clearance not standalone diagnosis",
+      "material": true
+    },
+    {
+      "date": "2026-08-04",
+      "event": "PSNL Q2 confirmed sales / losses",
+      "source": "https://investors.personalis.com/news-releases/news-release-details/personalis-reports-second-quarter-results-and-recent-highlights",
+      "stage": "standalone results, deal not closed",
+      "material": true
+    },
+    {
+      "date": "2026-07-30",
+      "event": "TEM Q2 earnings",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-reports-second-quarter-2026-results",
+      "stage": "completed Q2 results",
+      "material": true
+    },
+    {
+      "date": "2026-07-20",
+      "event": "Personalis transaction agreement",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-acquire-personalis-more-tightly-integrating-molecular",
+      "stage": "signed not closed",
+      "material": true
+    },
+    {
+      "date": "2026-05-29",
+      "event": "xT tumor-only FDA approval",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-receives-fda-approval-tumor-only-xt-cdx-enabling",
+      "stage": "approved, $200 ASP benefit from 2027 issuer expectation",
+      "material": true
+    },
+    {
+      "date": "2026-01-11",
+      "event": "Data licensing total contract value >$1.1b",
+      "source": "https://investors.tempus.com/news-releases/news-release-details/tempus-achieves-record-total-contract-value-exceeding-11-billion",
+      "stage": "issuer TCV, not invoiced/collected",
+      "material": true
+    }
+  ],
+  "coverage": {
+    "requested": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "scope_note": "Important issuer announcements actually reviewed Oct25, Jan26, May26, Jul26, Aug26, Sep26, Oct26; not every monthly primary partner archive exhaustively reviewed.",
+    "participants": [
+      {
+        "party": "Tempus IR News",
+        "role": "issuer press/strategy",
+        "method": "2025 10-2026 10 IR news archive and material announcements",
+        "coverage": "partial"
+      },
+      {
+        "party": "Tempus/SEC",
+        "role": "financial filings and merger registrant",
+        "method": "2025 10-K, 2026 Q2 10-Q, 2026 Oct2 S-4/A",
+        "coverage": "partial",
+        "gap": "all 8-K/SEC daily forms after latest 10-Q and full archive pages not exhausted"
+      },
+      {
+        "party": "Personalis",
+        "role": "target acquired and MRD provider",
+        "method": "Aug4 Q2 2026 full financial and Oct2 S4/A",
+        "coverage": "partial",
+        "gap": "final proxy/exchange shares and board votes still missing"
+      },
+      {
+        "party": "Recursion",
+        "role": "Data & Apps customer/model licensor",
+        "method": "Sep21 Tempus public amended economics and partner identity",
+        "coverage": "partial",
+        "gap": "original private master license amendments not obtained"
+      },
+      {
+        "party": "Moderna and Merck",
+        "role": "potential melanoma therapy partner",
+        "method": "Oct7 Tempus original multi-year announcement",
+        "coverage": "partial",
+        "gap": "counterparty definitive procurement terms / drug approval not established"
+      },
+      {
+        "party": "CMS and FDA",
+        "role": "diagnostic reimbursement/clearance",
+        "method": "Tempus xT FDA May29 and Q2 reporting, ECG clearances Aug24 Sep28",
+        "coverage": "partial",
+        "gap": "latest official CMS current net fee schedule and each FDA clearance exact authorization not independently fetched"
+      },
+      {
+        "party": "AstraZeneca",
+        "role": "model customer",
+        "method": "Q2 issuer delivery of first oncology foundation model",
+        "coverage": "partial",
+        "gap": "separate buyer purchase confirmation and value not disclosed"
+      },
+      {
+        "party": "US ARPA-H",
+        "role": "funding",
+        "method": "Tempus Sep9 project announcement",
+        "coverage": "partial",
+        "gap": "award full disbursement not independently confirmed"
+      }
+    ],
+    "missing": "Uncompleted 12-month full material event audit must not be called exhaustive; 2026 Q3 still unreported; final merger exchange shares cash election and integration profit absent; exact pricing of pharma license and payer contracts unavailable.",
+    "excluded": [
+      {
+        "event": "Oct1 ESMO accepted abstracts",
+        "reason": "research presentation without quantified new stand-alone economics; Oct19 detailed study included"
+      },
+      {
+        "event": "Sep4 Morgan Stanley conference participation",
+        "reason": "routine investor event; no standalone economic change"
+      },
+      {
+        "event": "April TIME company recognition",
+        "reason": "press/award does not change contractual cash and valuation"
+      }
+    ]
+  },
+  "changes_since_20261011": [
+    {
+      "old": "Oct9 TEM close $70.93",
+      "new": "Oct19 $64.34",
+      "meaning": "-9.29% market price, not necessarily risk improvement"
+    },
+    {
+      "old": "Personalis S-4 unavailable, no combined valuation",
+      "new": "Oct2 preliminary S-4/A found; Aug15 PSNL shares and exchange formula known; blanks still remain",
+      "meaning": "Now feasible to offer explicitly conditional, not definitive consolidated per-share scenario"
+    },
+    {
+      "old": "Merger issue dilution rough 16-17% based on old event",
+      "new": "at single-day 64.34 not binding VWAP, stock-only approximately 23.7m new TEM shares ex awards, 13.1% of old 180.435m",
+      "meaning": "stock vs cash alternatives computed; final not known"
+    },
+    {
+      "old": "Personalis standalone economics insufficient",
+      "new": "PSNL Q2 22.4m revenue, GAAP net loss31.683m, related TEM revenue8.4m, June net cash~211m",
+      "meaning": "loss and intercompany sales should enter consolidated model"
+    },
+    {
+      "old": "next earnings date unverified",
+      "new": "Oct15 issuer sets Nov2 before US open (8:45am ET call)",
+      "meaning": "official forward catalyst"
+    },
+    {
+      "old": "independent conditional EV at $70.93 ~13.48B",
+      "new": "independent conditional EV at $64.34 ~12.294B",
+      "meaning": "same 6/30 bridge and 7/24 shares, date changed; not realtime merger EV"
+    }
+  ]
+}
