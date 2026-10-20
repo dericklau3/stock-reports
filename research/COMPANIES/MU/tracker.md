@@ -1,5 +1,62 @@
 # Micron Technology（MU）Tracker
 
+Last updated: 2026-10-20
+
+## Current Research View
+
+**中性偏谨慎，2026-10-20新评估。** FY2026 HBM4/DDR/NAND供不应求使利润现金极强，SCA的最小购买量/价格带增强可见度，但$904.90仍处2029正常化FCFF基础情景区间内，未见厚安全边际。10月20日台湾桃园工会宣布拟10月22日罢工、10月中国CXMT新设计的竞争报道使短期交付和2029价格弹性风险更加突出；停工并非已实际发生，不能写已有损失。
+
+## Current Main Thesis
+
+真正可验证的优势是HBM4高量产/与NVIDIA Rubin设计相容、数据中心SSD/DDR高性能、最低采购的战略客户协议、当前生产现金流；关键不是一味提高HBM销量估值，而是2028–29新加坡/Idaho/Tongluo/NY及竞品扩产后，高利润扣工厂、客户押金返还、现金税和SBC后能否转成**每股自由现金**。
+
+## Key Risks
+
+- **行业竞争及利润周期**：三星/SK海力士产能和CXMT（DRAM）/YMTC（NAND）进展可能先打压普通DRAM/NAND ASP和FY2029退出倍数；最新CXMT技术声明不等于HBM已大规模替换。
+- **台湾劳动及供货**：10/20 Reuters确认桃园工会宣布10/22行动计划；台中仍谈判、未投票；无实证停工天数、交付损失或定量下调FY2027指导。
+- **资金性质**：9/03 $73.453bn现金+投资、$5.179bn债务已含$2.387bn融资租赁、客户2026现金保金$12.747bn列融资CF、非流动所得税应付$9.820bn；不把保金当利润或把租赁双算。
+- **资本开支及回购**：美国长期扩建规划超$250bn至2035，净capex FY2027H1管理层预计$25bn、下半年更高；10/08回购上限$35.16bn须12/09才进入新阶段，且受CHIPS补贴约束。
+- **前瞻口径**：FY2026含53周、Q4含14周，10/19盘后价不当常规价，9/30 FY2027Q1利润/毛利指引未实现，SCA RPO不等于当前现金。
+
+## Latest Research
+
+[2026-10-20完整九章深度研究](deep-research/2026-10-20-deep-research.md)；[2026-10-20重大事件覆盖/财务/三年FCFF估值底稿](research-records/2026-10-20-research.md)。历史：[2026-10-14完整报告](deep-research/2026-10-14-deep-research.md)、[原模型JSON](research-records/2026-10-14-research.json)、[原数学验收](research-records/2026-10-14-validation.json)。
+
+## 2026-10-20 新研究：上一版假设 → 新事实与公告日期 → 观点/估值影响
+
+| 稳定事项 | 上一版（10/14） | 本轮可验证新证据与日期 | 结论/下一验收 |
+|---|---|---|---|
+| 常规收盘、市场价格纪律 | 2026-10-13 regular close **$953.19**，10/02实际common **1,131,423,212股** | 2026-10-19 **StockAnalysis/Investing $904.90**、ChartExchange **$904.87**（15:59:58 EDT），差三美分 | 采用16:00 EDT $904.90，跌 **5.0661%**；$904.9×1131.423212m≈**$1.023825万亿美元**市值（10/19股数未新核对） |
+| FY2026最新全年报表 | FY2026 year ending9/03，53周，10/09 10-K submitted | 无新FY2027业绩，2026-10-20最新仍FY2026 10-K。年 revenue$133.188bn,GAAPNI$84.969bn,CFO$89.675bn,cash equipment$30.712bn,毛FCF$58.963bn | 对比FY2025 52周不能当同时间长度；FY2027 Q1 **$61.5bn±1.5bn指引、GAAP EPS$37.84±$1**是未来，不是实绩 |
+| 台湾劳资议题 | 旧报告尚未识别10/20新行动计划，之前9/01工会威胁并于10月初授权 | 2026-10-20 [Reuters](https://www.reuters.com/business/world-at-work/micron-union-taiwan-launch-strike-bonus-dispute-escalates-2026-10-20/)：桃园工会表示**10/22将发起罢工**以支持台中奖金调解，台中工会尚未投票 | 这是**拟行动而非截止10/20已罢工**；下次监控确切停工/出勤、工厂产能、客户交付和人工成本。没有依据不扣具体预期收入 |
+| 中国竞争与市场疑虑 | 强调三星、SK海力士，新技术/价格周期 | 10/14左右CXMT公布新高密DRAM设计，[Investopedia](https://www.investopedia.com/market-update-memory-stocks-extend-on-news-of-design-breakthrough-in-china-12171774)、[MarketWatch](https://www.marketwatch.com/story/microns-stock-extends-declines-as-china-competition-heats-up-b8ec25f0)；尚无独立量产良率 | 可能先降低普通DRAM长期ASP及退出倍数，不能推出美光HBM4已经被替代。下次核实真服务器产品/采购合同/良率 |
+| 技术预告 | HBM4量产，定制HBM4E正在开发 | [2026-10-19 Micron](https://investors.micron.com/news/press-release/2026/Micron-to-Host-Technology-Webinar-on-Oct--21/default.aspx)已正式宣布**10/21技术线上会议** | 尚未举行，会议未来产品不能写入已发生进度；验证真实展示与研发目标 |
+| 2026-09-30 SCA | 9/03 10-K **$134bn**RPO，9/30发表**26份SCA $150bn** RPO、至2030预期收入>35% | SEC 10-K明确take-or-pay约束最低购买量，**大部分协议有最低/最高价格带**，10月没有披露全部合同具体价格 | 价带不等于全年HBM锁定现价，客户信用与2029–31保金返还仍制约FCF |
+| 全球扩厂/交付 | NY动工；新加坡HBM封装2027初、Idaho/Tongluo2027中、部分日本与Idaho2 2028后、NY2030 | 2026-07-09 [公司计划超$250bn至2035](https://investors.micron.com/news/press-release/2026/Micron-Accelerates-U-S--Investments-Pours-First-Concrete-at-New-York-Fab/default.aspx)，从2026-01美国$200bn愿景更新。3/15已收购PSMC Tongluo$1.8bn | 多年总投资不等于2026现金capex；下一看新厂量产良率/折旧、政府补助时间 |
+| 资本回报 | 10/08董事会授权12/09起至多35.16bn新上限，FY26实回购$650m | 10/09 SEC 10-K Note12/15明确CHIPS grants五年合规限制及回购上限不是义务 | 不因市值下跌5%将全额回购提前计入股数或FCFF；下次看已回购股数 |
+| 估值三场景 | asof10/14，Bear**216.27–253.60**、Base**844.87–974.28**、Bull**2002.63–2428.21**；2027–29 FCFF/WACC12%、终值EBIT、股1160m，保守现金桥$30559m | 日期改**2026-10-20**，FY27/28/29剩余0.867899/1.864476/2.861054年，全端点回算；商业预测维持旧条件、无新真实FY27实绩 | Bear现值**216.63–254.03**、Base**846.39–976.05**、Bull**2006.32–2432.68**；上移只是剩余折现期缩短，并非管理层上调盈利，股价904.90落基础区间 |
+| 每股估值反推 | 10/14 base按11×2029 EBIT需要约110372.85m EBIT | 10/20价$904.90、现金桥$30559m/股1160m/Base三年FCFF已折现合计199256.004m/2029 WACC因子1.382978486 | 11×退出需要2029 EBIT约**$103078.289m**，在revenue$260bn下margin**39.6455%**；不是无需高利润的廉价股 |
+| 历史Forward P/E | 正常共识数据/过去一年日频Forward PE未完成 | 10/19可算FY2026 GAAP PE约**12.17×**，但53周极高景气；四倍FY2027 Q1指导非NTM一致预期 | 历史日频同口径高/低仍未取得，缺乏可靠来源不能编倍数 |
+
+## Current Operating Agenda and Verification
+
+- **HBM4/定制HBM4E**：3/16 36GB 12H**高量产**、48GB 16H是**样品**；2027定制HBM4E量产仍为目标；与NVIDIA原平台设计合作不代表供应独占。跟踪HBM实际营收结构、单位良率/客户认证与毛利。
+- **Strategic Customer Agreements (SCAs)**：take-or-pay强制最小采购，价格带、客户保金和信用证需逐项核实。9/03 10-K RPO134bn→9/30 26份约150bn，**2029–2031预期退还的FY26保金12.747bn**不得当经营收入。
+- **工艺/SSD**：1γ/G9先进节点、数据中心SSD季度近10bn；512GB RDIMM 9/15仅通过多平台展示，AMD/Intel处于验证。终点是单位成本和量产付费。
+- **制造/劳动**：10/20拟罢工公告需在10/22实际确认结果；NY/Idaho/Tongluo/新加坡/日本项目按资格认证进度记录，厂房完工不是有收入。
+- **资本分配**：保守cash/claims桥`73453−5179(已含financeleases)−12895(非流动customer contract liabilities保守代理)−9820(非流动税)−15000(运营缓冲)=$30559m`；非流动客负不等于一笔精确100%必退保证金；FY26保金在融资流量，不在OCF。10/08 buyback authorization须12/09后看实际。
+- **正反触发**：强=真实高良率HBM4E、普通DRAM价格带与长期协议执行、工厂投产后EPS和毛FCF持续，股份在合法回购后下降。弱=长鑫服务器DRAM量产/ASP急跌、台湾停工真实影响出货、工厂capex延迟与现金税爆发、客户保金返还超模型。
+
+## Evidence and Outstanding Limitations
+
+最新资料由SEC FY2026 10-K、Micron 9/30 Q4 release/Q1展望、3/16 HBM公告、6/22 Anthropic合作、7/09 USA项目、9/15 RDIMM、10/19 Webinar、Reuters 10/20工会/10月CXMT报道组成。**2025年10–11月完整逐月新闻与SEC、2026各月所有8-K、台湾劳动法律全档、SCA条款/客户名单、2027首季业绩官方确切公布日期、10/19当前实时实际股票、完整一年历史Forward PE当时有效序列尚未全部取得**；已在研究底稿逐项披露而不谎称彻底核验。历史投资观点/数字和原来的研究版本在下文保留。
+
+---
+
+## 历史追踪档案（2026-10-14原文保留，过去日期和估值不是当前结论）
+
+# Micron Technology（MU）Tracker
+
 Last updated: 2026-10-14
 
 ## Current Research View
