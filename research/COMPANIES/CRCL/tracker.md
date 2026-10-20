@@ -1,12 +1,75 @@
 # CRCL Research Tracker
 
-Last updated: 2026-10-11
+Last updated: 2026-10-20
 
-## Current Research View
+## Current Research View · 2026-10-20
+
+**中性偏谨慎，$81.37高于严格研究者Base现值$59.1–70.3。** 研究截止2026-10-20纽约开盘前，使用2026-10-19常规收盘$81.37，较旧2026-10-09 $84.51 **-3.72%**。不使用盘后或10月20日盘中报价。Circle商业机会是合规数字美元、企业支付和Arc，但**Q2 95.2%收入来自储备收益**，USDC平均存量、实际储备收益率、Coinbase/Binance净分成及稀释决定普通股价值；截至2026-10-15官方流通量**$72.5B、储备$72.7B**（7日净发行-$0.5B、30日净发行-$1.1B），**不是Circle股东现金**。
+
+### 本次完整研究和底稿
+
+- **[2026-10-20九章节完整深研](deep-research/2026-10-20-deep-research.md)**
+- **[2026-10-20 GAAP/股本/USDC/估值和事件底稿](research-records/2026-10-20-research.json)**
+- [2026-10-11旧深研](deep-research/2026-10-11-deep-research-update.md)
+- [2026-10-11旧记录](research-records/2026-10-11-research.json)
+- [2026-10-06历史完整深研](deep-research/2026-10-06-deep-research-update.md)
+
+### 核心经营、财务和现金
+
+**可核实财务原始文件本次已重新获取**：[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm)，[2026Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm)。截至2026Q2 TTM（百万美元）收入**2,905.439**、RLDC（收入减分销和直接成本）**1,177.126**、GAAP经营利润**215.568**、合并净利润**451.251**、OCF**776.918**、软件资本化和长期资产现金投入**82.508**、简易FCF **694.410**（公式FY2025−H12025+H12026）。Q2收入**701.315M**同比+6.6%、储备收入**667.733M**占95.2%、RLDC **288.845M**、GAAP经营利润**34.359M**。Q2 Coinbase分销支出约**$324.6M**，抵消了大量储备利息收入。
+
+**现金质量不能误判**：2026H1 CFO**538.505M**和自算FCF**492.352M**，含**$222M Arc token预售收款**，剔除此项的现金代理**270.352M**（仍非完全正常化），H1费用化SBC+资本化软件SBC约**128.646M**。2025因IPO相关大量股票薪酬GAAP同比异常，不能机械外推TTM GAAP净利。6/30公司普通现金**$1.730126B**、公司自持稳定币配套隔离现金**$0.889311B**，公司相关流动性$2.619437B；外部USDC持有人隔离现金**$73.161172B**与代币赎回负债**$72.927544B**相互匹配，不是股东剩余资产。2026Q2末无尚存可转债本金，租赁约$15.951M；另有未兑现收购/发行及token义务。
+
+### 正式股本与融资，切忌不同分母混用
+
+- **2026-07-30 SEC封面**：Class A **234,685,190**股、Class B **19,190,691**股，合计经济股份**253,875,881**股；2026-09-17 **Binance完成增发1,237,011 A股**，因此已知时间桥接静态股份代理**255,112,892**股。2026-10-19股价$81.37对应条件基本权益市值**$20.759B**，不冒充实际10月股数。
+- FY2026Q2加权平均**稀释**268.637M股，纯示意加Binance已发行1.237M得**269.874M**，市值约$21.960B。这不是某日实际股数，更不含完整未兑现收购SBC/权证/新增授予；历史加权指标不能取代当前登记。
+- **Tazapay $400M股票收购**在2026-09-04签署，未来交割前20交易日VWAP决定新股，外加$25M员工RSU及监管/员工条件；**预计2027完成，不是已交割**。以2026-10-19$81.37为仅示意分母得约**4.916M新股**，真实新股份未知，不能加入基本股本；完整目标净利润和价格机制会改变稀释压力。
+- **2026-09-22新闻/09-17已交割的Binance协议**：五年推广及按特定钱包USDC余额的每月渠道激励，具体费率未披露；每股$80.84私募价格不是兜底价。[SEC原件](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000276/crcl-20260917.htm)。
+
+### 最新主要公告及经营里程碑
+
+- **2026-10-16** [CEO向Reuters提到向约40新兴市场扩展计划](https://www.reuters.com/technology/stablecoin-issuer-circle-push-into-40-new-markets-ceo-says-2026-10-16/)：不是40国已经获准营业/付费。
+- **2026-10-07** [Tereina（SAP支持）与Circle正式宣布企业ERP内USDC/EURC集成](https://investor.circle.com/news/news-details/2026/Tereina-an-SAP-Backed-Company-and-Circle-Bring-USDC-and-EURC-into-Enterprise-Workflows-Starting-with-the-SAP-Ecosystem-Behind-84-of-Global-Commerce/default.aspx)，未来进行企业验证；“SAP生态涉及84%全球贸易”**不等于Circle获84%贸易支付合同**。这次新增于旧研究。
+- **2026-10-07** [公司正式公告2026-11-04美东08:00 Q3业绩](https://www.circle.com/pressroom/circle-to-announce-q3-2026-financial-results-on-november-4-2026)，旧版“正式日程未核实”已过时；2026-10-20 Q3尚未发布。
+- **2026-09-28** [Volante将USDC集成到银行多轨支付系统](https://investor.circle.com/news/news-details/2026/Volante-Technologies-and-Circle-advance-stablecoin-payment-and-settlement-capabilities-for-financial-institutions/default.aspx)，实际付费使用仍待验证，这次旧版未充分展开。
+- **2026-09-25** [CFO/董事8-K](https://www.sec.gov/Archives/edgar/data/1876042/000187604226000279/crcl-20260925.htm)：Sean Neville即时离任董事；CFO Jeremy Fox-Geen留任至12月末或继任者更早到位，不能说9月已辞职或未经证实猜测舞弊。
+- **2026-09-16** [Arc已公共主网上线](https://investor.circle.com/news/news-details/2026/Circle-Launches-Arc-Mainnet-an-Economic-Operating-System-for-the-Internet/)：100+机构和生态建设者，USDC作为Gas，ERC/EVM兼容；已初始铸造**10B ARC token**，但**不等于上市公司自动拥有10B代币×二级市场市值**，PoS未来计划非完成。
+- **2026-09-08** [Tazapay公告](https://investor.circle.com/news/news-details/2026/Circle-Expands-Global-Payments-Infrastructure-with-Agreement-to-Acquire-Singapore-Based-Cross-Border-Payments-Platform-Tazapay/)：60+合作金融机构、100+支付市场、$25B以上年化TPV，**支付总额≠Circle并表收入**。
+- **2026-08-05** [Q2及指导公告](https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results)：2026年度Other Revenue $310–330M包含预计$180M ARC预售里程碑确认，不含token的原业务约$130–150M；RLDC率41.7–43.7%，调整Opex $570–585M非包括所有SBC成本；多年度USDC复合增长40%只是管理层目标，不能按单年保证。
+- **2026-07-10** [OCC国家信托终局批准](https://investor.circle.com/news/news-details/2026/Circle-Receives-Final-OCC-Approval-to-Establish-National-Trust-Bank/default.aspx)，7/24开业；**2026-07-31** [NYDFS有限目的信托](https://investor.circle.com/news/news-details/2026/Circle-Granted-Trust-Charter-by-the-New-York-Department-of-Financial-Services/default.aspx)。USDC持有不因此成为FDIC承保银行存款。
+- **2026-07-27** [IBM区块链专利组合](https://investor.circle.com/news/news-details/2026/Circle-Acquires-IBM-Blockchain-Patent-Portfolio/default.aspx)增强IP，但没有经核实的新增营收。
+- **2026-09-16美联储已加息25bp**至3.75–4% [原文](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)，但实际储备收益与发行规模、渠道分成共同决定净利。
+
+### Valuation – reproduced by dated research model
+
+**2028-12-31为终值，研究日2026-10-20，相差803天，按12%权益回报折现因子1.2829376。** 采用 `RLDC = 平均USDC×储备收益率×渠道后保留率 + 非储备收入×净贡献率`，扣已假设含经常性SBC经济费用的运营费用、基础/牛市按20%税得净营业利润，熊市因营业略亏使用4–6倍RLDC而非负PE；各档未来权益终值含**模拟2028非客户超额净现金$1.2B**，除未来完全稀释研究假设股数后折现，不将客户储备重复加价。
+
+| 情景 | 2028平均USDC | 储备收益率 | 渠道留存 | 非储备收入 | 完整经济运营成本 | 未来股本 | 每股折现至10-20 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Bear | $80B | 2.25% | 35% | $0.15B | $0.8B | 300M | **$10.91–14.81** |
+| Base | $140B | 3.0% | 40% | $0.35B | $0.9B | 300M | **$59.11–70.31** |
+| Bull | $220B | 3.5% | 44% | $0.6B | $1.25B | 320M | **$157.72–183.52** |
+
+**反向现价条件**：基准利润退出27.5×、股本300M、其他基准假设不变，$81.37现价要求2028全年平均USDC约**$164.29B**，为10/15单日余额72.5B的约2.27倍（**全年平均与快照不完全可比**）。收益率在72.5B流通、40%留存不变下每变动±100bps，渠道后年度收入池纯机械±$290M。旧10/11 Base现值58.94–70.11→新59.11–70.31主要为折现时间推进**不是公司2028指引上修**。准确当前/过去一年原预测期Forward P/E未建立连续日频序列，不造极值。
+
+**模型风险**：投前用同一时点股本与现金；近期静态普通股255.113M股与未来模型300–320M股完全不同，不将2026-06客户储备73.161B视股东超额现金。Tazapay最终20日VWAP、员工奖励授予/到期、ARC代币的公司股东权属和实际净收入是未来估值影响最大的未决输入，不能将同笔SBC既扣成本又重复作为全量新股份赔偿。
+
+### Current Research Limitations
+
+窗口为2025-10-20至2026-10-20，已核查发行人2026主要新闻索引、2025 10-K、2026Q2 10-Q、9月Tazapay/Binance/CFO 8-K、Tereina/Volante公告、Fed政策及Circle透明度。截至本次**2025年末及2026年1–6月全部月度SEC/新闻未逐页全查**，币安与Coinbase合同实际全部费率、Tazapay完整经审计财务/交割、USDC最新月度独立鉴证PDF、Arc独立链上净手续费、过去一年同口径Forward P/E、10月20日实际完全稀释股数均未完整核实。不能声称完成全年全主体无遗漏事件核查，也不能把当前USDC日值当2026Q3财报结果。
+
+---
+
+## Historical Tracker: 2026-10-11 and older (below preserved, NOT current)
+
+Historical last updated: 2026-10-11
+
+## 2026-10-11 Research View (historical)
 
 **投资观点：** 中性等待。相对10月6日研究，平台进展逻辑没有被新财报推翻，但官方流通快照与净发行方向转弱，原有增长假设需要更多验证；父代理已核验10月9日常规收盘84.51美元，仍高于基础情景现值区间。
 
-## Current Main Thesis
+## 2026-10-11 Main Thesis (historical)
 
 **核心逻辑：** Circle靠美元稳定币储备利息及金融基础设施收费赚钱，股东得到的是扣除渠道分成、经营投入和股权薪酬后的剩余，而非储备本金。Arc和支付网络可能增强长期需求，但上线与交易量不能直接证明股东利润。
 
