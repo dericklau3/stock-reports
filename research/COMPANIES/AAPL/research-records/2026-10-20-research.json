@@ -1,0 +1,470 @@
+{
+  "date": "2026-10-20",
+  "cutoff": "2026-10-20 Asia/Tokyo morning / 2026-10-19 NY 16:00 EDT market close",
+  "security": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "exchange": "NASDAQ",
+    "CIK": "0000320193",
+    "shareType": "one class common USD, no ADR"
+  },
+  "quote": {
+    "priceUSD": 342.94,
+    "date": "2026-10-19",
+    "session": "16:00 EDT regular close, excludes after-hours $342.97",
+    "primaryEvidenceURL": "https://stockanalysis.com/stocks/aapl/history/",
+    "oldDate": "2026-10-09",
+    "oldPriceUSD": 336.64,
+    "change_pct": 1.8714353612167445,
+    "quotes_verified": "Oct 19 dated vendor close; Nasdaq Oct 9 older exchange reference already verified. Nasdaq Oct 19 direct historical exchange not separately obtained."
+  },
+  "financialsUSD_M": {
+    "accounting": "US GAAP",
+    "periods": {
+      "FY2024": {
+        "revenue": 391035,
+        "gross": 180683,
+        "operating": 123216,
+        "net": 93736,
+        "OCF": 118254,
+        "capex": 9447,
+        "FCF": 108807
+      },
+      "FY2025": {
+        "revenue": 416161,
+        "gross": 195201,
+        "operating": 133050,
+        "net": 112010,
+        "OCF": 111482,
+        "capex": 12715,
+        "FCF": 98767
+      },
+      "FY2025_9M": {
+        "revenue": 313695,
+        "gross": 146860,
+        "operating": 100623,
+        "net": 84544,
+        "OCF": 81754,
+        "capex": 9473,
+        "FCF": 72281
+      },
+      "FY2026_9M": {
+        "revenue": 364357,
+        "gross": 178782,
+        "operating": 122432,
+        "net": 101464,
+        "OCF": 116996,
+        "capex": 6799,
+        "FCF": 110197,
+        "SBC": 10523,
+        "repurchasesCash": 62094,
+        "dividends": 11778
+      },
+      "TTM_FY2026_Q3": {
+        "revenue": 466823,
+        "gross": 227123,
+        "operating": 154859,
+        "net": 128930,
+        "OCF": 146724,
+        "capex": 10041,
+        "FCF": 136683
+      }
+    },
+    "TTM_formula": "FY2025 - first nine months FY2025 + first nine months FY2026",
+    "FCF_formula": "Cash provided by operations - purchases of property plant equipment",
+    "latestFinancialPeriod": "FY2026 Q3 ended 2026-06-27, released 2026-07-30, 10Q filed 2026-07-31",
+    "Q3_actual": {
+      "rev": 109417,
+      "iPhone": 54252,
+      "services": 30739,
+      "GreaterChina": 18816,
+      "GAAPgrossMarginPct": 50.1,
+      "nonRecurringTariffRefundGrossMarginPctPoints": 2,
+      "gaapDilutedEPS": 2.02,
+      "refundEPSFavorable": 0.11,
+      "illustrativeAdjustedEPS_removeRefund": 1.91
+    },
+    "sourceFinancials": [
+      "https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf",
+      "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+      "https://s2.q4cdn.com/470004039/files/doc_earnings/2026/q3/filing/10Q-Q3-2026-as-filed.pdf"
+    ],
+    "periodWarning": "2026 fiscal year ended late September but FY2026 Q4/annual report not released yet as of 2026-10-20. Q3 quarter EPS 2.02 and YTD cash flows must not be confused."
+  },
+  "capital": {
+    "balanceDate": "2026-06-27",
+    "cashAndMarketableSecuritiesUSDm": 146517,
+    "borrowingsCommercialPaperAndTermDebtUSDm": 84344,
+    "netCashProxyUSDm": 62173,
+    "currentCommonActualDate": "2026-07-17",
+    "currentCommonActualMillions": 14594.18,
+    "referenceCapUSD_B": 5004.928089200001,
+    "referenceTTMGAAP_PE": 38.81895671449624,
+    "referenceFCFyield": 0.027309683089142594,
+    "weightedQ3DilutedSharesM": 14714.676,
+    "RSUsUnvestedMillions": 143.962,
+    "RSUUnrecognizedCompUSDm": 26700,
+    "latestDividendQuarterlyUSD": 0.27,
+    "addedShareBuybackAuthorizationUSD_B": 100,
+    "authorizationDate": "2026-04-30",
+    "FY2026_9MshareRepurchasesPaidUSDm": 62094,
+    "FY2026_9MdividendsPaidUSDm": 11778,
+    "FY2026_9MSBCm": 10523,
+    "financialTreatment": "GAAP net income after SBC and interest/taxes; forecast fully diluted shares reflect buyback net awards. DO NOT separately deduct same SBC or net cash/debt again in P/E equity earnings valuation. Liabilities and liquidity must still be discussed outside equity P/E."
+  },
+  "scenarios": {
+    "method": "Researcher FY2027 GAAP net income earnings-exit P/E (revenueM×normalized net margin)/future diluted sharesM ×exitPE discounted at 10% to Oct20; GAAP includes SBC interest and tax, tariff refund normalized not recurring, does not double add excess net cash",
+    "target": "2027-09-25",
+    "asof": "2026-10-20",
+    "days": 340,
+    "years": 0.9308692676249144,
+    "discountRate": 0.1,
+    "discountFactor": 1.0927760760693193,
+    "scenarios": {
+      "bear": [
+        {
+          "revenueM": 470000,
+          "gaapNetMargin": 0.235,
+          "netIncomeM": 110450,
+          "forecastDilutedSharesM": 14700,
+          "gaapEPS": 7.51360544217687,
+          "exit_PE": 22,
+          "terminalPrice": 165.29931972789115,
+          "PVtoday": 151.26550017682263,
+          "vs_price_pct": -55.89155532255712
+        },
+        {
+          "revenueM": 495000,
+          "gaapNetMargin": 0.25,
+          "netIncomeM": 123750,
+          "forecastDilutedSharesM": 14500,
+          "gaapEPS": 8.53448275862069,
+          "exit_PE": 25,
+          "terminalPrice": 213.36206896551727,
+          "PVtoday": 195.24774895601104,
+          "vs_price_pct": -43.06649881728261
+        }
+      ],
+      "base": [
+        {
+          "revenueM": 515000,
+          "gaapNetMargin": 0.265,
+          "netIncomeM": 136475,
+          "forecastDilutedSharesM": 14400,
+          "gaapEPS": 9.477430555555555,
+          "exit_PE": 27,
+          "terminalPrice": 255.890625,
+          "PVtoday": 234.16565443162924,
+          "vs_price_pct": -31.718185562597178
+        },
+        {
+          "revenueM": 545000,
+          "gaapNetMargin": 0.28,
+          "netIncomeM": 152600,
+          "forecastDilutedSharesM": 14200,
+          "gaapEPS": 10.746478873239436,
+          "exit_PE": 30,
+          "terminalPrice": 322.3943661971831,
+          "PVtoday": 295.02326529404394,
+          "vs_price_pct": -13.972337640973953
+        }
+      ],
+      "bull": [
+        {
+          "revenueM": 565000,
+          "gaapNetMargin": 0.285,
+          "netIncomeM": 161025,
+          "forecastDilutedSharesM": 14100,
+          "gaapEPS": 11.420212765957446,
+          "exit_PE": 31,
+          "terminalPrice": 354.02659574468083,
+          "PVtoday": 323.9699362911597,
+          "vs_price_pct": -5.531598445454112
+        },
+        {
+          "revenueM": 600000,
+          "gaapNetMargin": 0.3,
+          "netIncomeM": 180000,
+          "forecastDilutedSharesM": 13900,
+          "gaapEPS": 12.949640287769784,
+          "exit_PE": 34,
+          "terminalPrice": 440.28776978417267,
+          "PVtoday": 402.9075850268188,
+          "vs_price_pct": 17.486319772210535
+        }
+      ]
+    },
+    "assumedFutureDividends": "ignored, not assuming future undeclared board dividends",
+    "prior_20261011_base": [
+      233.616,
+      294.331
+    ],
+    "new_base": [
+      234.16565443162924,
+      295.02326529404394
+    ],
+    "explanation_change": "9 calendar days lower discount horizon; not company raising FY2027 guidance",
+    "priceReverse": {
+      "price": 342.94,
+      "assumedFY2027EPS": 10,
+      "exitPERequired": 37.475662752721234,
+      "if_exit_PE_29_margin_27_5pct_shares_14_3B_revenueRequired_M": 671977.4010832773
+    },
+    "currentForwardPE": "unavailable audited same period analyst GAAP EPS consensus",
+    "oneYearForwardPEminmax": "unavailable matched historical point in time forecast sequence; no invented extremum",
+    "allScenarioInputs": "analyst own hypotheses not issuer official guidance"
+  },
+  "events": [
+    {
+      "date": "2026-10-19",
+      "name": "Pro and tell Oct28 media event announced",
+      "stage": "Reuters reports invite; rumored OLED touch Mac unconfirmed",
+      "source": "https://www.reuters.com/business/retail-consumer/apple-host-pro-tell-event-oct-28-la-2026-10-19/",
+      "material": true
+    },
+    {
+      "date": "2026-10-15",
+      "name": "iPhone Duo preorders Oct16",
+      "stage": "not delivered until Oct23; preorders and media supply signal not revenue",
+      "source": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
+      "material": true
+    },
+    {
+      "date": "2026-10-15",
+      "name": "China Apple Intelligence approval claimed by Tim Cook",
+      "stage": "secondary Reuters quotes The Paper, beta expected Oct end, not Siri AI",
+      "source": "https://www.reuters.com/business/retail-consumer/tim-cook-says-apple-intelligence-approved-china-paper-reports-2026-10-15/",
+      "material": true
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Apple HomeView and Home Collection",
+      "stage": "HomeView announced and preorders started, first delivery Nov13, EU restricted",
+      "source": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+      "material": true
+    },
+    {
+      "date": "2026-09-14",
+      "name": "Siri AI shipping supported region and beta",
+      "stage": "released not yet proven revenue; EU China constraints",
+      "source": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+      "material": true
+    },
+    {
+      "date": "2026-09-09",
+      "name": "iPhone 18 Pro and Pro Max announced",
+      "stage": "launched Sep18",
+      "source": "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+      "material": true
+    },
+    {
+      "date": "2026-08-25",
+      "name": "Mac mini M6/M5 Pro",
+      "stage": "launched Sep22",
+      "source": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
+      "material": true
+    },
+    {
+      "date": "2026-08-18",
+      "name": "EU App Store terms changed",
+      "stage": "effective Oct1 2026, replaces per install fee with 5% applicable alternative distribution core commission",
+      "source": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/",
+      "material": true
+    },
+    {
+      "date": "2026-08-13",
+      "name": "Houston advanced manufacturing center opening",
+      "stage": "opened",
+      "source": "https://www.apple.com/newsroom/2026/08/apple-opens-advanced-manufacturing-center-in-houston/",
+      "material": true
+    },
+    {
+      "date": "2026-08-13",
+      "name": "US Supreme Court denies temporary Epic stay",
+      "stage": "stay denied, underlying full case not final",
+      "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a194.html",
+      "material": true
+    },
+    {
+      "date": "2026-07-30",
+      "name": "FY2026 Q3 results with tariff refunds",
+      "stage": "reported",
+      "source": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+      "material": true
+    },
+    {
+      "date": "2026-07-08",
+      "name": "Broadcom future US semiconductor spend over $30B",
+      "stage": "purchase cost commitment, not Apple recognized revenue",
+      "source": "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/",
+      "material": true
+    },
+    {
+      "date": "2026-04-30",
+      "name": "FY2026 Q2 and $100B buyback authorization",
+      "stage": "earnings actual, authorization not all executed",
+      "source": "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/",
+      "material": true
+    },
+    {
+      "date": "2026-04-20",
+      "name": "John Ternus CEO succession planned and Johny Srouji CHO",
+      "stage": "effective Sep1 2026",
+      "source": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+      "material": true
+    },
+    {
+      "date": "2026-03-02",
+      "name": "iPhone 17e and C1X self modem",
+      "stage": "new low cost device launched",
+      "source": "https://www.apple.com/newsroom/2026/03/apple-introduces-iphone-17e/",
+      "material": true
+    },
+    {
+      "date": "2026-01-29",
+      "name": "2026 Q1 earnings and >2.5B active device installed base",
+      "stage": "confirmed management figure not paying subscribers",
+      "source": "https://www.apple.com/newsroom/2026/01/apple-reports-first-quarter-results/",
+      "material": true
+    },
+    {
+      "date": "2025-10-30",
+      "name": "FY2025 Q4 results",
+      "stage": "prior fiscal quarter reported",
+      "source": "https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/",
+      "material": true
+    }
+  ],
+  "sourceCoverage": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "candidateSourcesReviewed": [
+      {
+        "entity": "Apple Inc Newsroom",
+        "role": "issuer",
+        "coverage": "archive FY2025 Oct, 2026 Jan, Mar, Apr, Jun, Jul, Aug, Sep, Oct and Services/company archives",
+        "status": "partial, not all months and every archive page opened"
+      },
+      {
+        "entity": "Apple Investor Relations and 10-Q/10-K",
+        "role": "primary disclosure",
+        "coverage": "FY2025 full year, FY2026 Q3 and officially scheduled Nov2 Q4",
+        "status": "latest applicable verified, SEC 12 month every 8K not checked"
+      },
+      {
+        "entity": "Broadcom",
+        "role": "vendor supplier",
+        "coverage": "July 8 joint Apple/Broadcom remarks",
+        "status": "supplier multiyear capex commitment, full separate filing not independently reconciled"
+      },
+      {
+        "entity": "LG, Schneider Electric",
+        "role": "Home Collection partners",
+        "coverage": "Oct13 joint Apple press with partner roles",
+        "status": "products announced but contract margin not public"
+      },
+      {
+        "entity": "European Commission",
+        "role": "DMA regulator",
+        "coverage": "Aug18 Apple details EU terms and Oct1 effective",
+        "status": "regulator final document and complete developer economic uptake not independently obtained"
+      },
+      {
+        "entity": "US federal courts",
+        "role": "Epic litigation",
+        "coverage": "Supreme Court Aug12-13 26A194 original docket",
+        "status": "interim stay denied not final antitrust decision"
+      },
+      {
+        "entity": "China regulators and Alibaba",
+        "role": "region AI launch conditions",
+        "coverage": "Reuters Oct15 transcribes Cook interview referencing approval",
+        "status": "regulatory permit original Chinese filing/partner contract not independently obtained"
+      },
+      {
+        "entity": "Google/Alphabet",
+        "role": "services distribution and AI/partner",
+        "coverage": "Services mix and past risk through issuer SEC",
+        "status": "2026 signed fee economics and search TAC not directly disclosed, no independently verified changes"
+      },
+      {
+        "entity": "Apple users/retail network",
+        "role": "end buyer",
+        "coverage": "Sep18 global storefront rollout and Oct16 Duo preorders from issuer",
+        "status": "unit shipments and sales reconciliation unavailable before FY2026 Q4"
+      }
+    ],
+    "exhaustive": false,
+    "limitations": [
+      "No full twelve-month all company SEC 8Ks, court case docket and EU competition case exhaustive audit",
+      "Actual October 2026 shares/current balance and detailed lease/long term supply take-or-pay not independently verified",
+      "FY2026 Q4 as of Oct20 not yet officially reported even though period ended",
+      "Past-year contemporaneous forward PE EPS consensus unavailable",
+      "iPhone Duo estimated delivery delays conflate supply and demand, no public verified preorders volume",
+      "China AI approval secondary and not yet actual Siri wide launch",
+      "Mac Oct28 touchscreen products remain media expectation not issuer official product releases"
+    ],
+    "excluded": [
+      {
+        "item": "2026-10-12 indie games week",
+        "why": "routine service promotion, no material economics"
+      },
+      {
+        "item": "2026-10-07 King's Trust community initiative",
+        "why": "nonmaterial to AAPL valuation"
+      },
+      {
+        "item": "2026-09-15 award winning TV series",
+        "why": "ordinary content accolade, not material service finance"
+      },
+      {
+        "item": "Rumored OLED touchscreen MacBook Pro on Oct28",
+        "why": "event reported, product specification NOT confirmed; only future section"
+      }
+    ]
+  },
+  "changes": [
+    {
+      "prior": "Oct9 price $336.64 (2026-10-11 report)",
+      "current": "Oct19 $342.94",
+      "effect": "price +1.87%"
+    },
+    {
+      "prior": "Siri English beta 9/14 from report",
+      "current": "continues shipping supported markets; China Oct15 claimed approval, beta planned later Oct not full Siri",
+      "effect": "region availability evidence improves, no monetization shown"
+    },
+    {
+      "prior": "No foldable iPhone product progress",
+      "current": "Sept announced, Oct16 iPhone Duo $1,999 preorder, Oct23 release",
+      "effect": "new hardware premium segment, risk of constrained initial supply"
+    },
+    {
+      "prior": "No HomeView actual public product announcement",
+      "current": "Oct13 announced and preorders, Nov13 availability",
+      "effect": "new connected home platform; cash contribution unknown"
+    },
+    {
+      "prior": "EU DMA changes not in older report as effective Oct1",
+      "current": "Aug18 terms announced and Oct1 effective",
+      "effect": "service commissions must be reviewed with new terms"
+    },
+    {
+      "prior": "FY26 Q4 date unknown",
+      "current": "2026-11-02 5PM ET per Apple IR",
+      "effect": "key upcoming event now verified"
+    },
+    {
+      "prior": "base PV Oct11 $233.62–294.33",
+      "current": "Oct20 234.17–295.02",
+      "effect": "nine day shorter discount time; no new formal FY2027 guidance"
+    },
+    {
+      "prior": "last actual share count July17 14.59418B",
+      "current": "no newer issuer October economic share count verified",
+      "effect": "reference market cap explicitly dated not real-time"
+    }
+  ]
+}
