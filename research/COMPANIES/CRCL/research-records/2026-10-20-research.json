@@ -1,0 +1,602 @@
+{
+  "researchDate": "2026-10-20",
+  "researchTime": "2026-10-20 13:11+08:00; before 2026-10-20 US regular market",
+  "ticker": "CRCL",
+  "issuer": "Circle Internet Group, Inc.",
+  "CIK": "0001876042",
+  "exchange": "NYSE",
+  "unit": "USD; all accounting below USD millions, unless labeled billions",
+  "pricing": {
+    "chosenUSRegularCloseUSD": 81.37,
+    "closeDate": "2026-10-19",
+    "closeTimeZone": "America/New_York 16:00 EDT",
+    "primaryVendor": "https://stockanalysis.com/stocks/crcl/history/",
+    "corroboration": "https://www.investing.com/equities/circle-internet-group-inc-historical-data",
+    "alternateVendors": {
+      "ChartExchange": 81.35,
+      "MarketBeat": 81.31
+    },
+    "vendorConflictExplanation": "close timestamp/adjustment differences not reconciled; use $81.37 as 4PM vendor close",
+    "afterhoursNotUsed": 81.79,
+    "previousReferenceDate": "2026-10-09",
+    "previousReferenceUSD": 84.51,
+    "changePct": -3.715536622884863
+  },
+  "financials": {
+    "accounting": "US GAAP; Circle total revenue including reserve interest; RLDC is not GAAP gross profit; operating/GAAP total net distinct",
+    "FY2024FY2025andHalfAndTTMUSDmillions": {
+      "FY2024": {
+        "revenue": 1676.253,
+        "RLDC": 658.889,
+        "operating": 167.158,
+        "GAAPTotalNet": 155.667,
+        "operatingCash": 344.576,
+        "softwareCash": 39.098,
+        "equipmentCash": 18.128,
+        "capex": 57.226,
+        "FCF": 287.35
+      },
+      "FY2025": {
+        "revenue": 2746.642,
+        "RLDC": 1082.991,
+        "operating": -96.435,
+        "GAAPTotalNet": -69.518,
+        "operatingCash": 542.129,
+        "softwareCash": 56.2,
+        "equipmentCash": 12.432,
+        "capex": 68.632,
+        "FCF": 473.497
+      },
+      "H12025": {
+        "revenue": 1236.651,
+        "RLDC": 482.062,
+        "operating": -232.642,
+        "GAAPTotalNet": -417.309,
+        "operatingCash": 303.716,
+        "softwareCash": 24.858,
+        "equipmentCash": 7.419,
+        "capex": 32.277,
+        "FCF": 271.439
+      },
+      "H12026": {
+        "revenue": 1395.448,
+        "RLDC": 576.197,
+        "operating": 79.361,
+        "GAAPTotalNet": 103.46,
+        "operatingCash": 538.505,
+        "softwareCash": 35.764,
+        "equipmentCash": 10.389,
+        "capex": 46.153000000000006,
+        "FCF": 492.352
+      },
+      "TTM_20260630": {
+        "revenue": 2905.439,
+        "RLDC": 1177.126,
+        "operating": 215.56799999999998,
+        "GAAPTotalNet": 451.25100000000003,
+        "operatingCash": 776.918,
+        "softwareCash": 67.10600000000001,
+        "equipmentCash": 15.402000000000001,
+        "capex": 82.50800000000001,
+        "FCF": 694.41
+      }
+    },
+    "TTMformula": "FY2025-H12025+H12026",
+    "FCFformula": "cash from operations - cash capitalized software - long lived equipment",
+    "sourceLatest": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm",
+    "sourceAnnual": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000062/crcl-20251231.htm",
+    "Q22026": {
+      "reserveRevenue": 667.733,
+      "otherRevenue": 33.582,
+      "totalRevenue": 701.315,
+      "distributionsAndTransactionCosts": 410.414,
+      "otherDirectCosts": 2.056,
+      "combinedDirectCosts": 412.47,
+      "RLDC": 288.845,
+      "operatingIncome": 34.359,
+      "continuingNetIncome": 48.214,
+      "CoinbaseDistributionCostsApproximately": 324.6,
+      "CoinbaseFractionOfAllDirectCosts": 0.7869663248236235,
+      "reservePctOfRevenue": 0.9521156684228911,
+      "USDC_AvgB": 76.524,
+      "USDC_EndB": 73.269,
+      "reserveYieldPct": 3.5,
+      "USDC_onchainQ2TransactionVolumeB": 14800,
+      "adjustedEBITDAM": 143.478
+    },
+    "H12026economicCashCaveat": {
+      "CFO": 538.505,
+      "capexSoftware": 35.764,
+      "capexProperty": 10.389,
+      "FCF": 492.352,
+      "ARCpresaleCashM": 222,
+      "FCFAfterRemovingTokenCashProxyM": 270.352,
+      "stockCompExpensedM": 105.435,
+      "stockCompCapitalizedInSoftwareM": 23.211,
+      "stockCompTotalM": 128.646
+    },
+    "FY2025GAAPNetLossExplanation": "FY2025 SBC $566.177M and IPO triggered vesting; distort GAAP comparability vs 2024 and FY2026 H1",
+    "FCFqualityExplanation": "FY2026 H1 operating cash includes $222m advance for ARC tokens recorded in other current liabilities rather than GAAP revenue; cash proxy removing it is not official normalized owner earnings"
+  },
+  "USDC": {
+    "latestSnapshotDate": "2026-10-15",
+    "snapshotSource": "https://www.circle.com/transparency",
+    "issuedOutstandingB": 72.5,
+    "segregatedReservesB": 72.7,
+    "sevenDayIssuedB": 10.9,
+    "sevenDayRedeemedB": 11.4,
+    "sevenDayNetB": -0.5,
+    "thirtyDayIssuedB": 43.9,
+    "thirtyDayRedeemedB": 45,
+    "thirtyDayNetB": -1.1,
+    "trailing365IssuedB": 350.3,
+    "trailing365RedeemedB": 353.7,
+    "trailing365NetB": -3.4,
+    "previousOct8B": 73,
+    "previousSep24B": 75.24,
+    "quarterEndJune30B": 73.269,
+    "quarterAverageB": 76.524,
+    "latestVersusOct8Pct": -0.6849315068493178,
+    "latestVsQ2AveragePct": -5.25848099942502,
+    "snapshotNotQuarterAvg": true,
+    "customerAssetsAreNOTShareholderExcessCash": true,
+    "attestationPDFAugust2026": "prior attempt 403, latest monthly external PDF not read, current transparency webpage read"
+  },
+  "balanceSheetJune30": {
+    "ordinaryCompanyCashM": 1730.126,
+    "segregatedCashForCorporateHeldStablecoinsM": 889.311,
+    "companyRelatedCashTotalM": 2619.437,
+    "holderSegregatedCashM": 73161.172,
+    "stablecoinHolderDepositLiabilityM": 72927.544,
+    "restrictedCashOtherM": 12.806,
+    "ordinaryConvertibleDebtOutstandingM": 0,
+    "operatingLeaseLiabilityM": 15.951,
+    "ordinaryLiquidityWarning": "corporate-held stablecoin segregated money is not unconditional extra excess cash; $73.161B third-party assets belong to stablecoin holders and offset $72.928B direct redemption liability",
+    "source": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000248/crcl-20260630.htm"
+  },
+  "shares": {
+    "July30Actual": {
+      "ClassA": 234685190,
+      "ClassB": 19190691,
+      "ClassC": 0,
+      "total": 253875881
+    },
+    "BinanceIssuedAonSep17": 1237011,
+    "staticPostBinanceProxy": 255112892,
+    "staticPostBinanceProxyM": 255.112892,
+    "staticMarketCapB": 20.75853602204,
+    "q2WeightedAverageDilutedM": 268.637,
+    "not10MonthActual": true,
+    "weightedQ2PlusBinanceIllustrativeFullyDilutedM": 269.874011,
+    "weightedQ2PlusBinanceMarketCapB": 21.959648275070002,
+    "optionRSUOutstandingJune30M": 21.8,
+    "unvestedMergerGrantedSharesM": 0.8,
+    "mergerFutureSharesM": 0.3,
+    "otherContingentWarrantsRemain": true,
+    "TazapayStockPurchaseConsiderationTargetM": 400,
+    "TazapayIndicativeSharesIfPriceStaysAtOct19_NoAdjustment": 4.915816640039326,
+    "TazapayAdditionalEmployeeRSUsValueM": 25,
+    "TazapayNotClosed": true,
+    "TazapayClosing20TradingDayVWAPUnknown": true,
+    "notes": "Q2 weighted diluted shares include time weighted awards and are NOT date specific actual; Tazapay future share issuance and other existing awards must be modeled once not repeatedly added; class A/B include all economics"
+  },
+  "macro": {
+    "FederalReserveSep16RateHikeBps": 25,
+    "targetRangePct": [
+      3.75,
+      4
+    ],
+    "primarySource": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+    "sensitivityAt72point5BusdcRetained40Pct_AvgYieldPlus100bpNetRevUSDm": 290,
+    "marketRateNotIdenticalToActualReserveYield": true
+  },
+  "managementGuidance": {
+    "source": "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results",
+    "FY2026_otherRevenue_m": [
+      310,
+      330
+    ],
+    "FY2026_otherRevenueIncludesARC_M_approx": 180,
+    "otherWithoutARC_FY2026_m": [
+      130,
+      150
+    ],
+    "FY2026_RLDCmargin": [
+      0.417,
+      0.437
+    ],
+    "FY2026_AdjustedOperatingCostsM": [
+      570,
+      585
+    ],
+    "multiyear_USDC_GrowthCAGR_goal": 0.4,
+    "disclaimer": "goals not realized and includes ARC presale recognized milestone revenue; $242.2m ARC agreements and $222m H1 cash are not evergreen recurring fees"
+  },
+  "valuation": {
+    "targetDate": "2028-12-31",
+    "baseDate": "2026-10-20",
+    "days": 803,
+    "years": 2.198494182067077,
+    "annualDiscountRate": 0.12,
+    "discountFactor": 1.28293760881042,
+    "priceUSD": 81.37,
+    "formula": "RLDC=avgUSDC_B * reserveYield * retention + nonReserveRevenue_B * nonReserveContribution; normalized EBIT=RLDC-economic operating cost including ongoing SBC; NOPAT=EBIT * 0.80; bear terminal EV uses RLDC x [4,6], base/bull NOPAT x P/E; terminal equity = EV + 1.2B assumed noncustomer net cash; per share=equity / future scenario economic shares; PV=terminal share price/(1.12^(803/365.25))",
+    "scenarios": {
+      "bear": {
+        "avg_USDC_B": 80,
+        "reserveYield": 0.0225,
+        "retainedShare": 0.35,
+        "normalizedNonReserveRevenue_B": 0.15,
+        "nonReserveContributionRate": 0.8,
+        "annualEconomicOperatingCosts_B": 0.8,
+        "futureEconomicShareCountM": 300,
+        "exitMultiples": [
+          4,
+          6
+        ],
+        "multipleOn": "RLDC",
+        "reserveIncome_B": 1.7999999999999998,
+        "retainedReserve_B": 0.6299999999999999,
+        "nonReserveContribution_B": 0.12,
+        "RLDC_B": 0.7499999999999999,
+        "normalizedOperatingProfit_B": -0.050000000000000155,
+        "taxAssumption": 0.2,
+        "afterTaxNormalizedNOPAT_B": -0.040000000000000126,
+        "assumedExcessCashAtExit_B": 1.2,
+        "terminalEquityValueB": [
+          4.199999999999999,
+          5.699999999999999
+        ],
+        "undiscounted2028ValuePerShareUSD": [
+          13.999999999999996,
+          18.999999999999996
+        ],
+        "PV20261020PerShareUSD": [
+          10.912455838738124,
+          14.809761495430314
+        ],
+        "returnVsObservedPricePercent": [
+          -86.58909200105921,
+          -81.7994820014375
+        ]
+      },
+      "base": {
+        "avg_USDC_B": 140,
+        "reserveYield": 0.03,
+        "retainedShare": 0.4,
+        "normalizedNonReserveRevenue_B": 0.35,
+        "nonReserveContributionRate": 0.85,
+        "annualEconomicOperatingCosts_B": 0.9,
+        "futureEconomicShareCountM": 300,
+        "exitMultiples": [
+          25,
+          30
+        ],
+        "multipleOn": "NOPAT",
+        "reserveIncome_B": 4.2,
+        "retainedReserve_B": 1.6800000000000002,
+        "nonReserveContribution_B": 0.2975,
+        "RLDC_B": 1.9775,
+        "normalizedOperatingProfit_B": 1.0775000000000001,
+        "taxAssumption": 0.2,
+        "afterTaxNormalizedNOPAT_B": 0.8620000000000001,
+        "assumedExcessCashAtExit_B": 1.2,
+        "terminalEquityValueB": [
+          22.750000000000004,
+          27.060000000000002
+        ],
+        "undiscounted2028ValuePerShareUSD": [
+          75.83333333333334,
+          90.20000000000002
+        ],
+        "PV20261020PerShareUSD": [
+          59.10913579316486,
+          70.3073940467271
+        ],
+        "returnVsObservedPricePercent": [
+          -27.35758167240401,
+          -13.59543560682427
+        ]
+      },
+      "bull": {
+        "avg_USDC_B": 220,
+        "reserveYield": 0.035,
+        "retainedShare": 0.44,
+        "normalizedNonReserveRevenue_B": 0.6,
+        "nonReserveContributionRate": 0.85,
+        "annualEconomicOperatingCosts_B": 1.25,
+        "futureEconomicShareCountM": 320,
+        "exitMultiples": [
+          30,
+          35
+        ],
+        "multipleOn": "NOPAT",
+        "reserveIncome_B": 7.700000000000001,
+        "retainedReserve_B": 3.3880000000000003,
+        "nonReserveContribution_B": 0.51,
+        "RLDC_B": 3.8980000000000006,
+        "normalizedOperatingProfit_B": 2.6480000000000006,
+        "taxAssumption": 0.2,
+        "afterTaxNormalizedNOPAT_B": 2.1184000000000007,
+        "assumedExcessCashAtExit_B": 1.2,
+        "terminalEquityValueB": [
+          64.75200000000002,
+          75.34400000000002
+        ],
+        "undiscounted2028ValuePerShareUSD": [
+          202.35000000000008,
+          235.4500000000001
+        ],
+        "PV20261020PerShareUSD": [
+          157.72395992633292,
+          183.52412337363523
+        ],
+        "returnVsObservedPricePercent": [
+          93.83551668469082,
+          125.54273488218656
+        ]
+      }
+    },
+    "reverseAtCurrent": {
+      "terminal2028EquityPerShareRequired": 104.39263322890389,
+      "FY2028AverageUSDC_B_RequiredAtBaseMarginYieldCostAnd27_5x": 164.2908710934514,
+      "needed2028NOPAT_B": 1.0951923624971334,
+      "needed2028RLDC_B": 2.2689904531214165,
+      "ratioToOct15SingleDaySupply": 2.2660809805993294,
+      "caveat": "not comparing same periods: 2028 annual average vs 2026 Oct 15 spot"
+    },
+    "SBCpolicy": "Economic cost includes recurring awards, future shares assume net new grant/acquisition shares; avoid deducting same outstanding equity award twice. Precise grant rollforward unknown.",
+    "missing": [
+      "Actual Oct20 issued shares and true FD including all warrants/RSUs",
+      "Final Tazapay closing VWAP/new Class A and future target profit",
+      "Binance contract incentive percentage remains secret",
+      "ARC token economic rights to Circle shareholder and recurring cost missing",
+      "2028 average USDC and realized yield/retention strongly uncertain",
+      "validated one-year daily contemporaneous Forward P/E with identical GAAP analyst consensus not available"
+    ],
+    "priceValueIsResearchAssumptionsOnly": true
+  },
+  "coverage": {
+    "windowStart": "2025-10-20",
+    "windowEnd": "2026-10-20",
+    "newsroom": "Circle IR 2026 dates index read Oct/Sep/Aug/Jul/May and Dec2025-2026 partial months; company pressroom current; events enumerated in report",
+    "primaryEntities": [
+      {
+        "entity": "Circle SEC / investor relations",
+        "role": "issuer",
+        "sources": [
+          "2025 10-K",
+          "2026 June10-Q",
+          "Sept4 Tazapay 8K",
+          "Sept17 Binance 8K",
+          "Sept25 CFO and director 8K",
+          "Investor news archive"
+        ],
+        "status": "partial 12-month forms, latest material read"
+      },
+      {
+        "entity": "Coinbase",
+        "role": "dominant distributor",
+        "sources": [
+          "Circle Q2 distribution agreement cost 324.6m",
+          "2025 10-K collaboration agreement"
+        ],
+        "status": "Circle disclosure; current complete Coinbase direct contract and updated rates not independently retrieved"
+      },
+      {
+        "entity": "Binance",
+        "role": "distribution and equity investor",
+        "sources": [
+          "2026 Sept17 8K and Circle Sept22 press"
+        ],
+        "status": "contract filing, fee percentage confidential; counterparty original separately not checked"
+      },
+      {
+        "entity": "Tazapay",
+        "role": "planned acquisition and CPN partner",
+        "sources": [
+          "2026 Sept4 Circle SEC agreement",
+          "Sept8 issuer release",
+          "Tazapay CEO Sept8 blog"
+        ],
+        "status": "definitive signing not closure; target GAAP revenue and net margins undisclosed"
+      },
+      {
+        "entity": "Tereina/SAP",
+        "role": "enterprise ERP integration channel",
+        "sources": [
+          "2026 Oct7 Circle joint release"
+        ],
+        "status": "SAP backed company, not SAP itself as Circle buyer, 84% background marketing statistic"
+      },
+      {
+        "entity": "Volante Technologies",
+        "role": "bank technology intermediary",
+        "sources": [
+          "2026 Sep28 Volante joint statement"
+        ],
+        "status": "intent/integration/ability to evaluate; firm volume and financial terms unknown"
+      },
+      {
+        "entity": "OCC/NYDFS/Fed",
+        "role": "trust and macro regulators",
+        "sources": [
+          "2026 July 10 OCC Circle final approval press",
+          "2026 July31 NYDFS Circle approval press",
+          "Federal Reserve Sept16 rate hike statement"
+        ],
+        "status": "primary Circle and Fed, some trust regulator full charters not directly opened"
+      },
+      {
+        "entity": "BlackRock",
+        "role": "reserve fund manager and Arc founding collaborator",
+        "sources": [
+          "Circle 10-K and 10-Q describing Circle Reserve Fund / Arc release quote"
+        ],
+        "status": "underlying fund financials and up-to-date audit reports not comprehensively reviewed"
+      },
+      {
+        "entity": "Circle Arc validators/users",
+        "role": "independent operations",
+        "sources": [
+          "2026 Sep16 Arc mainnet issuer press"
+        ],
+        "status": "mainnet confirmed issuer; independent onchain user fee revenue audits absent"
+      }
+    ],
+    "candidateEvents": [
+      {
+        "date": "2026-10-16",
+        "event": "40 emerging markets expansion",
+        "kind": "interview plan",
+        "material": true
+      },
+      {
+        "date": "2026-10-07",
+        "event": "Tereina SAP ERP stablecoin integration",
+        "kind": "partnership, proof-of-value future",
+        "material": true
+      },
+      {
+        "date": "2026-10-07",
+        "event": "Nov 4 Q3 earnings confirmed",
+        "kind": "future disclosure",
+        "material": true
+      },
+      {
+        "date": "2026-09-28",
+        "event": "Volante banking integrations",
+        "kind": "partnership, customer revenue not quantified",
+        "material": true
+      },
+      {
+        "date": "2026-09-25",
+        "event": "CFO transition and board resignation",
+        "kind": "governance SEC",
+        "material": true
+      },
+      {
+        "date": "2026-09-22",
+        "event": "Binance five year USDC and 100m equity, Sep17 close",
+        "kind": "completed shares and ongoing incentive",
+        "material": true
+      },
+      {
+        "date": "2026-09-16",
+        "event": "Arc mainnet genesis ARC token 10B",
+        "kind": "product/initial mint no public token sale yet",
+        "material": true
+      },
+      {
+        "date": "2026-09-08",
+        "event": "Tazapay signing, Sep4 acquisition deal",
+        "kind": "definitive not closed",
+        "material": true
+      },
+      {
+        "date": "2026-08-05",
+        "event": "Q2 earnings and guidance including ARC revenue",
+        "kind": "GAAP actual and management prospective",
+        "material": true
+      },
+      {
+        "date": "2026-07-31",
+        "event": "New York trust",
+        "kind": "regulatory charter",
+        "material": true
+      },
+      {
+        "date": "2026-07-27",
+        "event": "IBM blockchain patent assets purchase",
+        "kind": "IP scope",
+        "material": true
+      },
+      {
+        "date": "2026-07-10",
+        "event": "OCC final national trust approval",
+        "kind": "regulatory permission",
+        "material": true
+      },
+      {
+        "date": "2026-05",
+        "event": "Agent Stack tools",
+        "kind": "press date incomplete; roadmap background",
+        "material": false,
+        "exclusionReason": "original precise launch announcement not located; operational progress discussed"
+      },
+      {
+        "date": "2026-08-28",
+        "event": "Chelsea FC brand sponsorship",
+        "kind": "marketing",
+        "material": false,
+        "exclusionReason": "no separately quantified revenue or capital significance"
+      },
+      {
+        "date": "2026-09-25",
+        "event": "Circle Foundation donations",
+        "kind": "charity",
+        "material": false,
+        "exclusionReason": "small/indirect shareholder economic relevance"
+      },
+      {
+        "date": "2026-10",
+        "event": "USDC $72.5B as if shareholder cash",
+        "kind": "incorrect claim",
+        "material": false,
+        "exclusionReason": "redemption reserve offsets deposit liability, not an equity event"
+      }
+    ],
+    "notFullyCovered": [
+      "full 2025 Nov-Dec SEC and press archive announcement audit not completed",
+      "Jan-Jun2026 all monthly press archive pages and all SEC 8-Ks not exhaustively reviewed",
+      "latest independent monthly attestation PDF unread due access restrictions",
+      "Coinbase/Binance detailed economics and Tazapay target audited accounts not public to research",
+      "actual paid Arc/CPN net platform revenue, network token equity entitlement and net users unverified",
+      "complete Fed/OCC/NYDFS board underlying charter attachments not reviewed",
+      "current shares / all award grants / one-year point in time Forward P/E data not closed"
+    ],
+    "fullyAudited12Months": false
+  },
+  "comparisonToOct11": [
+    {
+      "old": "CRCL Oct9 close $84.51",
+      "new": "Oct19 $81.37 (vendor discrepant $81.35)",
+      "economicImpact": "market price -3.72%, not earnings upgrade"
+    },
+    {
+      "old": "USDC 2026-10-08 balance about $73.0B and 7-day issuance minus $0.81B",
+      "new": "Oct15 balance $72.5B, reserves $72.7B; 7-day issuance minus $0.5B and 30-day minus $1.1B",
+      "economicImpact": "ongoing short term supply weakness; snapshot not quarterly average"
+    },
+    {
+      "old": "2026 Q3 date unknown",
+      "new": "October 7 issuer confirms Nov 4 at 8ET",
+      "economicImpact": "next key catalyst date known"
+    },
+    {
+      "old": "Oct 11 lacked Oct7 Tereina and Sep28 Volante material update",
+      "new": "enterprise/financial system integrations added but no volume economics",
+      "economicImpact": "qualitative adoption option no quantitative base uplift"
+    },
+    {
+      "old": "Q2 SEC original could not be fetched in that turn",
+      "new": "October 20 independently reopened original FY25 10K and FY26 Q2 10Q primary and recomputed TTM and FCF",
+      "economicImpact": "higher data confidence and fixed financial continuity"
+    },
+    {
+      "old": "Oct11 FY2028 base discounted $58.94–70.11",
+      "new": "Oct20 model with identical operations discounted $59.11–70.31",
+      "economicImpact": "9-day timing change only, not issuer guidance change"
+    },
+    {
+      "old": "Prior assumed 270m diluted working share count; dated actual unknown",
+      "new": "July 30 253.875881m actual class A+B plus Sept17 executed 1.237011m Binance shares = 255.112892m static proxy, 269.874m Q2 weighted diluted proxy",
+      "economicImpact": "market cap now transparently date bridged, not October fully diluted confirmation"
+    },
+    {
+      "old": "Tazapay stock economics symbolic",
+      "new": "Sep4 SEC 8-K 400m / 20-day ending close VWAP plus 25m incentive RSUs and indemnity holdbacks",
+      "economicImpact": "shares still future and price uncertain, example at stock 81.37 implies ~4.916m"
+    }
+  ]
+}
