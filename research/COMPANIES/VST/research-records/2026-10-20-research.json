@@ -1,0 +1,272 @@
+{
+  "as_of": "2026-10-20",
+  "ticker": "VST",
+  "issuer": "Vistra Corp.",
+  "exchange": "NYSE",
+  "currency": "USD",
+  "quote": {
+    "price": 149.7,
+    "date": "2026-10-19",
+    "session": "regular close America/New_York",
+    "old_reference_price": 161.48,
+    "old_reference_date": "2026-10-09",
+    "change": -0.07295021055,
+    "url": "https://stockanalysis.com/stocks/vst/history/"
+  },
+  "financials": {
+    "latest_period": "H1 ending 2026-06-30",
+    "units": "USD million US GAAP",
+    "FY2024": {
+      "revenue": 17224,
+      "operating_income": 4081,
+      "net_income": 2812,
+      "common_income": 2467,
+      "ocf": 4563,
+      "capex_with_nuclear_fuel_and_LTSA": 2078,
+      "fcf": 2485
+    },
+    "FY2025": {
+      "revenue": 17738,
+      "operating_income": 1906,
+      "net_income": 944,
+      "common_income": 752,
+      "ocf": 4070,
+      "capex_with_nuclear_fuel_and_LTSA": 2752,
+      "fcf": 1318
+    },
+    "H12025": {
+      "revenue": 8183,
+      "operating_income": 395,
+      "net_income": 59,
+      "common_income": -37,
+      "ocf": 1171,
+      "capex_with_nuclear_fuel_and_LTSA": 1458,
+      "fcf": -287
+    },
+    "H12026": {
+      "revenue": 9657,
+      "operating_income": 2052,
+      "net_income": 1334,
+      "common_income": 1238,
+      "ocf": 2222,
+      "capex_with_nuclear_fuel_and_LTSA": 1572,
+      "fcf": 650
+    },
+    "TTM20260630": {
+      "revenue": 19212,
+      "operating_income": 3563,
+      "net_income": 2219,
+      "common_income": 2027,
+      "ocf": 5121,
+      "capex_with_nuclear_fuel_and_LTSA": 2866,
+      "fcf": 2255
+    },
+    "ttm_formula": "FY2025 - H12025 + H12026",
+    "source": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm"
+  },
+  "capital": {
+    "USD_billion": {
+      "cash_at_20260630": 0.435,
+      "restricted_cash": 0.046,
+      "book_debt_AR_forward_obligation": 20.508,
+      "preferred_liquidation_20260630": 2.476066,
+      "preferred_A_redeemed_20261015": 1,
+      "remaining_BC_preferred": 1.476066,
+      "NCI_book_proxy": 0.012,
+      "sep24_notes_gross": 1.5
+    },
+    "actual_common_shares_million": 335.635195,
+    "actual_common_shares_date": "2026-08-03",
+    "notes_initial_coupon_annual_million": 106.625,
+    "redeemed_preferred_A_old_dividend_annual_million": 80,
+    "conditional_net_claims_billion": 22.561066,
+    "net_claims_formula": "20.508-0.435+2.476066+0.012",
+    "bridge_comment": "1.5B gross junior notes plus proceeds and 1B preferred A redemption funded with cash: obligation falls 1B but corresponding cash also falls or borrowing grows; cannot subtract A claim alone. 2026-10-20 cash and post financing asset sales unknown."
+  },
+  "valuation": {
+    "method": "2027-12-31 conditionally modeled EV / ongoing operations Adjusted EBITDA, subtract future net debt+preferred+NCI, future share count, add hypothetical aggregate interim dividend 1.2 per share, discount 12% annual to 2026-10-20",
+    "days": 437,
+    "years": 1.1964407939767283,
+    "discount_rate": 0.12,
+    "discount_factor": 1.1452134767782693,
+    "common_market_cap_B": 50.2445886915,
+    "conditional_EV_B": 72.8056546915,
+    "EV_to_2026_adj_ebitda_midpoint": 10.111896484930554,
+    "company_2026_adj_ebitda_guide_B": [
+      6.8,
+      7.6
+    ],
+    "company_2026_non_gaap_fcf_before_growth_B": [
+      3.925,
+      4.725
+    ],
+    "company_2027_formal_guidance": "not confirmed",
+    "scenarios": {
+      "bear": [
+        {
+          "ebitda_B": 6.5,
+          "EV_multiple": 7,
+          "net_claims_B": 26,
+          "shares_M": 350,
+          "future_price": 55.7142857143,
+          "PV": 49.6975
+        },
+        {
+          "ebitda_B": 7,
+          "EV_multiple": 8,
+          "net_claims_B": 25,
+          "shares_M": 345,
+          "future_price": 89.8550724638,
+          "PV": 79.5093
+        }
+      ],
+      "base": [
+        {
+          "ebitda_B": 8.1,
+          "EV_multiple": 9.5,
+          "net_claims_B": 25,
+          "shares_M": 345,
+          "future_price": 150.5797101449,
+          "PV": 132.534
+        },
+        {
+          "ebitda_B": 8.5,
+          "EV_multiple": 10.5,
+          "net_claims_B": 23,
+          "shares_M": 338,
+          "future_price": 196.0059171598,
+          "PV": 172.2001
+        }
+      ],
+      "bull": [
+        {
+          "ebitda_B": 9,
+          "EV_multiple": 11,
+          "net_claims_B": 23,
+          "shares_M": 335,
+          "future_price": 226.8656716418,
+          "PV": 199.1469
+        },
+        {
+          "ebitda_B": 9.5,
+          "EV_multiple": 12,
+          "net_claims_B": 21,
+          "shares_M": 330,
+          "future_price": 281.8181818182,
+          "PV": 247.1314
+        }
+      ]
+    },
+    "PV_formula": "((EBITDA_B*EV_multiple-net_claims_B)*1000/shares_M+1.2)/(1.12**(437/365.25))",
+    "PE_current_forward": "not available matching period/GAAP",
+    "PE_historical_forward_range": "no comparable historical forecast time series",
+    "sensitivity": "future claims +1B at 340M shares -$2.568 PV per share"
+  },
+  "events": [
+    {
+      "date": "2026-10-15",
+      "name": "Series A preferred stock redemption",
+      "status": "completed",
+      "source": "https://investor.vistracorp.com/2026-10-15-Vistra-Announces-Redemption-of-All-Outstanding-Series-A-Preferred-Stock"
+    },
+    {
+      "date": "2026-10-05",
+      "name": "DOE 4.2B conditional commitment",
+      "status": "conditional not drawn",
+      "source": "https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower"
+    },
+    {
+      "date": "2026-09-10/2026-09-24",
+      "name": "1.5B junior subordinated notes",
+      "status": "priced then issued",
+      "source": "https://www.sec.gov/Archives/edgar/data/1692819/000114036126037577/ef20082680_8k.htm"
+    },
+    {
+      "date": "2026-08-07",
+      "name": "Q2 earnings and FERC Cogentrix approval",
+      "status": "earnings reported, acquisition not closed",
+      "source": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results"
+    },
+    {
+      "date": "2026-06-11",
+      "name": "Helix platform",
+      "status": "announced capital commitment",
+      "source": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure"
+    },
+    {
+      "date": "2026-04-08",
+      "name": "4B senior notes pricing",
+      "status": "priced",
+      "source": "https://investor.vistracorp.com/2026-04-08-Vistra-Prices-Private-Offering-of-4-0-Billion-of-Senior-Notes"
+    },
+    {
+      "date": "2026-03-17",
+      "name": "Fitch investment grade",
+      "status": "confirmed issuer disclosure",
+      "source": "https://investor.vistracorp.com/2026-03-17-Vistra-Achieves-Investment-Grade-Credit-Ratings-from-S-P-and-Fitch"
+    },
+    {
+      "date": "2026-01-09",
+      "name": "Meta 20-year PPA",
+      "status": "buyer confirms",
+      "source": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/"
+    },
+    {
+      "date": "2026-01-05",
+      "name": "Cogentrix 5.5GW proposal",
+      "status": "agreement signed 2025-12-31, close not verified",
+      "source": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix"
+    },
+    {
+      "date": "2025-10-22",
+      "name": "Lotus gas assets 2.6GW",
+      "status": "closed",
+      "source": "https://investor.vistracorp.com/2025-10-22-Vistra-Completes-Acquisition-of-Seven-Natural-Gas-Plants,-Expanding-Diverse-Generation-Fleet"
+    }
+  ],
+  "coverage": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "issuer": "IR release index Oct2025 to Oct2026 reviewed; key earnings and SEC filings checked",
+    "counterparties": "Meta customer press verified; DOE primary verified; Helix partner primary reviewed",
+    "regulatory": "FERC approval from issuer Q2; full NRC/FERC/PJM docket not scanned",
+    "gaps": [
+      "SEC 12-month monthly 8-K archive not exhaustively checked",
+      "2026-10-20 actual share count and post financing/redeemed cash balance missing",
+      "Cogentrix close and seller/regulatory correspondence not fully checked",
+      "AWS/Meta original PPA pricing/margin not disclosed",
+      "2027 formal EBITDA guidance not obtained",
+      "full actual operating and finance lease liability reconciliation missing",
+      "one-year contemporaneous market Forward P/E series unavailable"
+    ],
+    "excluded": [
+      {
+        "event": "2026-09-29 Q3 conference timing",
+        "reason": "scheduled calendar, not independent operating transaction"
+      },
+      {
+        "event": "routine dividends and community donations",
+        "reason": "reported under capital policy / immaterial individually"
+      }
+    ]
+  },
+  "baseline_changes": [
+    {
+      "old": "2026-10-09 $161.48",
+      "new": "2026-10-19 $149.70",
+      "impact": "price -7.30%"
+    },
+    {
+      "old": "Series A may redeem Oct15",
+      "new": "redeemed Oct15 confirmed",
+      "impact": "claim reduced 1B matched by cash/funding change"
+    },
+    {
+      "old": "base PV 132-172",
+      "new": "base PV 133-172",
+      "impact": "mechanical valuation date roll only, no change in guide"
+    }
+  ]
+}
