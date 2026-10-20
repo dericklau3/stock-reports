@@ -1,0 +1,327 @@
+{
+  "as_of": "2026-10-20",
+  "company": "Oracle Corporation",
+  "ticker": "ORCL",
+  "exchange": "NYSE",
+  "cutoff": "2026-10-20 before NY regular session",
+  "pricing": {
+    "date": "2026-10-19",
+    "session": "regular close EDT",
+    "usd": 129.59,
+    "source": "https://stockanalysis.com/stocks/orcl/history/",
+    "crosscheck": "https://www.investing.com/equities/oracle-corp-historical-data",
+    "old_20261009": 141.4,
+    "change_pct": -8.3521923621
+  },
+  "filings": {
+    "latest_quarter": "FY2027 Q1 ended 2026-08-31",
+    "tenQ": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+    "tenK": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+    "source_data": "research/COMPANIES/ORCL/research-records/2026-10-10-financial-audit.json",
+    "new_sec_submissions_exhaustive_check": false
+  },
+  "financial_USD_B": {
+    "fy2025": {
+      "revenue": 57.399,
+      "gaap_operating_profit": 17.678,
+      "common_net_income": 12.443,
+      "ocf": 20.821,
+      "capex": 21.215,
+      "fcf": -0.394
+    },
+    "fy2026": {
+      "revenue": 67.357,
+      "gaap_operating_profit": 20.606,
+      "common_net_income": 16.984,
+      "ocf": 31.977,
+      "capex": 55.663,
+      "fcf": -23.686
+    },
+    "q1fy2027": {
+      "revenue": 19.345,
+      "gaap_operating_profit": 6.728,
+      "common_net_income": 4.679,
+      "ocf": 23.103,
+      "capex": 28.499,
+      "fcf": -5.396,
+      "financing_component_customer_prepay": 11.363
+    },
+    "ttm_20260831": {
+      "revenue": 71.776,
+      "gaap_operating_profit": 23.057,
+      "common_net_income": 18.736,
+      "ocf": 46.94,
+      "capex": 75.66,
+      "fcf": -28.72
+    },
+    "cash_and_shortterm_securities_20260831": 37.077,
+    "notes_borrowings_20260831": 125.337,
+    "finance_leases_20260831": 9.185,
+    "operating_leases_20260831": 34.621,
+    "uncommenced_lease_future_undiscounted_20260831": 288,
+    "purchase_commitments_20260831": 34.15,
+    "preferred_liquidation_claim": 5
+  },
+  "valuation": {
+    "price": 129.59,
+    "shares_billion": 3.023736,
+    "shares_date": "2026-09-07, not current",
+    "market_cap_usd_B": 391.84594824,
+    "notes_only_EV_B": 480.10594824,
+    "EV_including_finance_leases_preferred_NCI_B": 494.71494824,
+    "full_year_non_gaap_eps_guidance": 8.1,
+    "implied_guide_PE": 15.9987654321,
+    "sbc_Q1_B": 1.127,
+    "illustrative_tax_shield": 0.18,
+    "economic_eps_estimate": 6.8774858652,
+    "discount_target": "2027-05-31",
+    "discount_start": "2026-10-20",
+    "days": 223,
+    "equity_required_return": 0.12,
+    "discount_factor": 1.07164170648,
+    "bear": {
+      "eps": [
+        5.5,
+        6
+      ],
+      "exit_pe": [
+        11,
+        14
+      ],
+      "pv_per_share": [
+        56.45543621,
+        78.3844073
+      ]
+    },
+    "base": {
+      "eps": [
+        6.8774858652,
+        6.8774858652
+      ],
+      "exit_pe": [
+        18,
+        22
+      ],
+      "pv_per_share": [
+        115.51878284,
+        141.18962347
+      ]
+    },
+    "bull": {
+      "eps": [
+        7.5,
+        8
+      ],
+      "exit_pe": [
+        24,
+        28
+      ],
+      "pv_per_share": [
+        167.96658707,
+        209.02508613
+      ]
+    },
+    "base_5pct_extra_dilution_PV": [
+      110.01788842,
+      134.46630807
+    ],
+    "base_10pct_extra_dilution_PV": [
+      105.01707531,
+      128.35420316
+    ],
+    "current_price_implied_exit_P_E": 20.1925604,
+    "historical_forward_PE": "not obtained; no full historical forecast series",
+    "market_consensus": "not substituted for company guidance",
+    "method": "one-period terminal economic-earnings multiple exit discounted to today; not full DCF; already equity EPS, do not deduct debt twice; no declared future dividends added"
+  },
+  "updates_since_prior": [
+    {
+      "old": "2026-10-10 price 141.40",
+      "new": "2026-10-19 close 129.59",
+      "impact": "-8.35% price"
+    },
+    {
+      "old": "Base exit P/E 20–24x",
+      "new": "Base exit P/E 18–22x hypothesis",
+      "impact": "lower capital cost tolerance due bond market risk; not official rating/earnings downgrade"
+    },
+    {
+      "old": "Jupiter NMED permit pending as of 10-09",
+      "new": "10-15 microgrid emissions proposal; 10-13 El Paso Electric proposed ESA",
+      "impact": "still pending; potential power commitment; no new recognized contract debt inferred"
+    },
+    {
+      "old": "S&P already rated BBB- July",
+      "new": "2026-10-19 S&P warns of opaque interconnected financing, no new rating action",
+      "impact": "increase required monitoring of credit and financing claims"
+    }
+  ],
+  "coverage": {
+    "intended_range": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "sources_checked": [
+      {
+        "party": "Oracle IR/SEC",
+        "role": "issuer and financials",
+        "checked": "Q2 FY2026, Q3, Q4, Q1 FY2027 announcements; SEC 10-Q/10-K and key 8-K 2026-02",
+        "status": "partial",
+        "gap": "full monthly 8-K/regulatory catalog after 2026-10-10 and archive exhaustive review not completed"
+      },
+      {
+        "party": "Oracle News/RSS",
+        "role": "issuer operating announcements",
+        "checked": "2026-09-29 through 2026-10-19 RSS; additional 2026-08 and 2026-09 targeted press",
+        "status": "partial",
+        "gap": "no systematic every-page scan from 2025-10 to 2026-09"
+      },
+      {
+        "party": "OpenAI",
+        "role": "disclosed major end customer / Stargate",
+        "checked": "2025-10-22 Midwest/Wisconsin; 2025-10-30 Michigan; 2025-07-22 prior agreement",
+        "status": "partial",
+        "gap": "no verification of full definitive customer contract or payment terms"
+      },
+      {
+        "party": "Yucca Growth Infrastructure, Bloom Energy, NMED",
+        "role": "Jupiter energy partner and permit regulator",
+        "checked": "Oracle 2026-10-15 plus prior NMED 2026-10-09 notice",
+        "status": "partial",
+        "gap": "subsequent NMED docket/permit and definitive agreements unavailable"
+      },
+      {
+        "party": "El Paso Electric",
+        "role": "Jupiter proposed utility partner",
+        "checked": "Oracle 2026-10-13 citing EPE CEO",
+        "status": "partial",
+        "gap": "EPE definitive filing and approved tariff not yet confirmed"
+      },
+      {
+        "party": "Wisconsin PSC, Vantage, WEC Energy",
+        "role": "Point Beach utility/data center counterparts",
+        "checked": "Oracle 2026-10-02 and OpenAI 2025-10-22",
+        "status": "partial",
+        "gap": "regulatory approval not rechecked on 2026-10-20"
+      },
+      {
+        "party": "NetApp",
+        "role": "enterprise storage partner",
+        "checked": "joint Oracle 2026-09-29 press",
+        "status": "partial",
+        "gap": "economic terms/customer revenue not disclosed"
+      },
+      {
+        "party": "S&P",
+        "role": "credit rating agency",
+        "checked": "Reuters 2026-10-19 interview; S&P July BBB- via Reuters",
+        "status": "partial",
+        "gap": "rating service's full methodology and each project finance liability not audited"
+      }
+    ],
+    "note": "Do not claim exhaustive twelve month material-events audit."
+  },
+  "candidate_events": [
+    {
+      "date": "2026-10-19",
+      "name": "S&P credit-risk warning",
+      "status": "verified Reuters interview, not a new rating downgrade",
+      "material": true
+    },
+    {
+      "date": "2026-10-15",
+      "name": "Jupiter microgrid revised permit design",
+      "status": "verified company announcement; pending",
+      "material": true
+    },
+    {
+      "date": "2026-10-13",
+      "name": "Jupiter El Paso Electric power/payment proposals",
+      "status": "verified company announcement; proposed",
+      "material": true
+    },
+    {
+      "date": "2026-10-13",
+      "name": "New Mexico economic benefit $13B",
+      "status": "issuer projected local economic impact, not Oracle revenue",
+      "material": false,
+      "reason": "projection does not change cashflows directly; related Jupiter project remains covered"
+    },
+    {
+      "date": "2026-10-04",
+      "name": "Nashville Symphony $10M donation",
+      "status": "issuer release",
+      "material": false,
+      "reason": "non-core philanthropy, minimal to ORCL valuation"
+    },
+    {
+      "date": "2026-10-02",
+      "name": "Point Beach $300M energy commitment",
+      "status": "issuer statement conditional on Wisconsin PSC approval",
+      "material": true
+    },
+    {
+      "date": "2026-09-29",
+      "name": "Fusion Claw product",
+      "status": "released, price/ARR unknown",
+      "material": true
+    },
+    {
+      "date": "2026-09-29",
+      "name": "NetApp OCI service",
+      "status": "planned, economics unknown",
+      "material": true
+    },
+    {
+      "date": "2026-09-23",
+      "name": "Oracle Health planned revenue-cycle AI",
+      "status": "future GA",
+      "material": true
+    },
+    {
+      "date": "2026-09-10",
+      "name": "Oracle FY2027 Q1 / 20B ATM",
+      "status": "quarterly official results",
+      "material": true
+    },
+    {
+      "date": "2026-08-12",
+      "name": "Oracle Health patient portal GA",
+      "status": "released",
+      "material": true
+    },
+    {
+      "date": "2026-06-10",
+      "name": "Oracle FY2026 results and funding plan",
+      "status": "official earnings",
+      "material": true
+    },
+    {
+      "date": "2026-02-04",
+      "name": "multi-tranche debt funding",
+      "status": "SEC 8-K",
+      "material": true
+    },
+    {
+      "date": "2025-10-30",
+      "name": "Stargate Michigan",
+      "status": "OpenAI announced planned capacity",
+      "material": true
+    },
+    {
+      "date": "2025-10-22",
+      "name": "Stargate Wisconsin confirmation",
+      "status": "OpenAI announcement update",
+      "material": true
+    }
+  ],
+  "references": [
+    "https://www.oracle.com/news/announcement/q1fy27-earnings-release-2026-09-10/",
+    "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/",
+    "https://www.oracle.com/news/announcement/oracle-proposes-plan-to-offset-customers-utility-costs-2026-10-13/",
+    "https://www.oracle.com/news/announcement/project-jupiter-microgrid-cuts-permitted-emissions-by-35-percent-2026-10-15/",
+    "https://www.reuters.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-than-now-known-sp-global-warns-2026-10-19/",
+    "https://stockanalysis.com/stocks/orcl/history/",
+    "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+  ]
+}
