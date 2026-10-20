@@ -1,0 +1,439 @@
+{
+  "research_date": "2026-10-20",
+  "security": "Marvell Technology Inc (NASDAQ MRVL common USD) plus NVIDIA participating convertible Series A",
+  "CIK": "0001835632",
+  "cutoff": "after US 2026-10-19 16:00 EDT regular close, prior to Oct20 NY session",
+  "quote": {
+    "priceUSD": 237.09,
+    "date": "2026-10-19",
+    "session": "regular close 16:00 EDT",
+    "sources": [
+      "https://www.investing.com/equities/marvell-technology-group-ltd-historical-data",
+      "https://finance.yahoo.com/quote/MRVL/",
+      "https://chartexchange.com/symbol/nasdaq-mrvl/historical/"
+    ],
+    "vendor_discrepancy": "ChartExchange $237.12 vs Investing and Yahoo $237.09, use $237.09",
+    "prior_20261009": 275.28,
+    "change_pct": -13.873147340889268
+  },
+  "financials_USD_m": {
+    "FY2025": {
+      "revenue": 5767.3,
+      "gross": 2382.2,
+      "op": -720.3,
+      "net": -885,
+      "OCF": 1681.2,
+      "capex": 284.6,
+      "FCF": 1396.6
+    },
+    "FY2026": {
+      "revenue": 8194.6,
+      "gross": 4180.7,
+      "op": 1322.9,
+      "net": 2670.1,
+      "OCF": 1750.5,
+      "capex": 354.1,
+      "FCF": 1396.4,
+      "divestmentGain_m": 1830.4
+    },
+    "FY2026_H1": {
+      "revenue": 3901.4,
+      "gross": 1963,
+      "op": 560.7,
+      "net": 372.7,
+      "OCF": 794.5,
+      "capex": 166.3,
+      "FCF": 628.2
+    },
+    "FY2027_H1": {
+      "revenue": 5157.1,
+      "gross": 2716.4,
+      "op": 799.1,
+      "net": 342.5,
+      "OCF": 1244.3,
+      "capex": 282.4,
+      "FCF": 961.9,
+      "stockComp": 533.8,
+      "techLicensePaid": 5,
+      "relatedIPcashPaid": 56.6,
+      "FCFafterEconomicStress": 366.5
+    },
+    "TTM_to_20260801": {
+      "revenue": 9450.3,
+      "gross": 4934.1,
+      "op": 1561.3,
+      "net": 2639.9,
+      "OCF": 2200.3,
+      "capex": 470.2,
+      "FCF": 1730.1
+    },
+    "FY2027_Q2": {
+      "revenue": 2739.3,
+      "DC": 2171.5,
+      "DC_yoy": 46,
+      "DC_share": 79.3,
+      "comms": 567.8,
+      "company_yoy": 37,
+      "GAAPmargin_pct": 53.1,
+      "nonGAAPmargin_pct": 58.9,
+      "net": 308
+    },
+    "FY2027_Q3_management_guidance_NOT_actual": {
+      "revenue_m": 3150,
+      "range_percent": 5,
+      "GAAPgross_pct": [
+        52.9,
+        53.9
+      ],
+      "nonGAAPgross_pct": [
+        57.5,
+        58.5
+      ],
+      "diluted_weighted_sharesM": 921
+    },
+    "TTM_formula": "FY2026 + FY2027H1 - FY2026H1",
+    "FCF_definition": "OCF minus property equipment expenditures; SBC pressure is alternative economic interpretation not cash statement"
+  },
+  "capital": {
+    "asof": "2026-08-01 financials, 2026-08-21 actual common shares",
+    "cashB": 3.9328,
+    "debtB": 4.9629,
+    "leasesB": 0.3232,
+    "netDebtLeasesB": 1.3533000000000004,
+    "earnoutCelestialFairValueB": 0.7495,
+    "earnoutFutureShareCapM": 24.4,
+    "actualCommonM": 876.9,
+    "NVIDIA_prefInvestedB": 2,
+    "NVIDIA_asConvertedM": 21.8,
+    "participatingEconomicSharesM": 898.7,
+    "economicMarketCapB": 213.07278300000002,
+    "conditionalEVB": 214.426083,
+    "EVtoTTMRevenue": 22.68987048030221,
+    "marketCapToTTMFCF": 123.15633951794695,
+    "GoogleWarrant": {
+      "contract": "2026-07-29",
+      "warrantGranted": "2026-08-18",
+      "maxSharesM": 58.970907,
+      "strikeUSD": 206.58,
+      "timeVestM": 1.360867,
+      "revenueLinkedTranches": 240,
+      "perTrancheRevenueUSDm": 500,
+      "allTrancheRevenueThresholdB": 120,
+      "expiration": "2033-08-18",
+      "revenueBinding": "DISCRETIONARY purchases; $120B NOT binding backlog",
+      "dilutionMaxPercentOfKnownEconomicShares": 6.561801157227105
+    },
+    "warning": "NVIDIA preferred stock counts as common-equivalent economics (21.8M), so do NOT subtract $2B again as debt. Celestial initial 24.5M merger shares already in 876.9M, future 24.4M earnout to monitor; do not duplicate forecast shares and same earnout liability. Google unvested shares NOT current issued."
+  },
+  "valuation": {
+    "model": "FY2029 terminal economic FCFF = projected sales x economic FCFF margin after SBC/IP cash capex and reinvestment; PV = exit EV multiple divided by (1.12^2.29158) minus dated net borrowing+lease, divided by projected scenario economic share count",
+    "targetDateAssumed": "2029-02-03",
+    "asof": "2026-10-20",
+    "days": 837,
+    "years": 2.291581108829569,
+    "discountRate": 0.12,
+    "discountFactor": 1.2965434961542819,
+    "claimsB": 1.3533000000000004,
+    "scenarios": [
+      {
+        "name": "Bear",
+        "revenueB": 18,
+        "economicFCFFMargin": 0.16,
+        "FCFFB": 2.88,
+        "multiples": [
+          25,
+          30
+        ],
+        "futureSharesM": 950,
+        "presentUSD": [
+          57.03049189918908,
+          68.72149554218478
+        ],
+        "futureUSD": [
+          74.36494736842106,
+          89.52284210526314
+        ]
+      },
+      {
+        "name": "Base",
+        "revenueB": 26,
+        "economicFCFFMargin": 0.24,
+        "FCFFB": 6.24,
+        "multiples": [
+          30,
+          35
+        ],
+        "futureSharesM": 975,
+        "presentUSD": [
+          146.69804614461236,
+          171.3790538353811
+        ],
+        "futureUSD": [
+          190.61200000000005,
+          222.61200000000002
+        ]
+      },
+      {
+        "name": "Bull",
+        "revenueB": 34,
+        "economicFCFFMargin": 0.3,
+        "FCFFB": 10.2,
+        "multiples": [
+          35,
+          40
+        ],
+        "futureSharesM": 1020,
+        "presentUSD": [
+          268.62175691190055,
+          307.18583142872666
+        ],
+        "futureUSD": [
+          348.67323529411766,
+          398.67323529411766
+        ]
+      }
+    ],
+    "reverseAtCurrentPrice": {
+      "revenueB": 26,
+      "sharesM": 975,
+      "FCFFMultiple": 32.5,
+      "requiredFCFFB": 9.275912996276423,
+      "requiredMargin": 0.3567658844721701
+    },
+    "GoogleExtra59MStress": {
+      "baseNoExtraUSD": [
+        146.69804614461236,
+        171.3790538353811
+      ],
+      "baseWith59MExtraUSD": [
+        138.33135344783648,
+        161.6047186224134
+      ],
+      "disclaimer": "gross incremental 59M above scenario shares deliberately extreme, ignores strike proceeds and related revenue and may overlap forecast equity. Not expected realized exact dilution."
+    },
+    "marketForwardPE": "not verified contemporaneous GAAP/nonGAAP EPS period",
+    "pastYearForwardPE": "historical daily EPS forecast series unavailable",
+    "companyGoalsNOTfacts": {
+      "FY2028RevenueB": 20,
+      "FY2029CustomRevenueB_moreThan": 12,
+      "FY2031RevenueB_range": [
+        70,
+        90
+      ],
+      "FY2031_nonGAAP_operatingMarginRange": [
+        0.44,
+        0.46
+      ],
+      "FY2031_FCFMarginMoreThan": 0.36,
+      "FY2031_nonGAAPEPS_moreThan": 30
+    }
+  },
+  "sources": [
+    {
+      "date": "2026-08-28",
+      "publisher": "Marvell SEC 10-Q",
+      "link": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000025/mrvl-20260801.htm",
+      "purpose": "FY2027 Q2 primary financials, share counts, prior events and contracts"
+    },
+    {
+      "date": "2026-03-05",
+      "publisher": "Marvell FY2026 10-K",
+      "link": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000011/mrvl-20260131.htm",
+      "purpose": "annual GAAP financial statements"
+    },
+    {
+      "date": "2026-08-27",
+      "publisher": "Marvell Q2 earnings",
+      "link": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+      "purpose": "DC segment and Q3 outlook"
+    },
+    {
+      "date": "2026-08-19",
+      "publisher": "US SEC 8-K original Google warrant",
+      "link": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526356217/d412696d8k.htm",
+      "purpose": "contract signed July29, warrant Aug18, 1.36M time and remainder 240 discretionary milestones"
+    },
+    {
+      "date": "2026-10-06",
+      "publisher": "Marvell investor day event",
+      "link": "https://www.marvell.com/company/events/investor-day-2026.html",
+      "purpose": "2028/29/31 goals, investor slide primary"
+    },
+    {
+      "date": "2026-10-06",
+      "publisher": "Investor Day transcript",
+      "link": "https://stockanalysis.com/stocks/mrvl/transcripts/724088-investor-day-2026/",
+      "purpose": "management spoken explanation, third-party transcript"
+    },
+    {
+      "date": "2026-10-13",
+      "publisher": "Marvell new Alaska retimers",
+      "link": "https://investor.marvell.com/news-events/press-releases/detail/1039/marvell-bolsters-connectivity-portfolio-with-new-3-2t-protocol-aware-retimer-and-second-generation-1-6t-aec-dsp",
+      "purpose": "product is sampling not production"
+    },
+    {
+      "date": "2026-10-13",
+      "publisher": "Marvell Microsoft Oracle OCP standard",
+      "link": "https://investor.marvell.com/news-events/press-releases/detail/1038/marvell-microsoft-and-oracle-establish-ocp-working-group-to-standardize-data-center-hardware-security",
+      "purpose": "technical standards collaboration, NOT Marvell Maia 300 win"
+    },
+    {
+      "date": "2026-10-12",
+      "publisher": "Marvell Structera X revised",
+      "link": "https://investor.marvell.com/news-events/press-releases/detail/1037/adding-and-replacing-marvell-unveils-second-generation-structera-x-industry-first-six-channel-cxl-3-2-memory-expanders-for-ai-inference",
+      "purpose": "product launch and same-day correction"
+    },
+    {
+      "date": "2026-10-12",
+      "publisher": "Microsoft Maia 300 partner",
+      "link": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "purpose": "partner primary plan; no primary confirm Marvell Maia auxiliary supplier"
+    },
+    {
+      "date": "2026-10-19",
+      "publisher": "Investing MRVL dated quote",
+      "link": "https://www.investing.com/equities/marvell-technology-group-ltd-historical-data",
+      "purpose": "regular close vs Oct9"
+    }
+  ],
+  "eventCoverage": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "discovery": "Marvell issuer IR indexed news pages1-5 reaches Oct2025; decisive SEC FY26 10K FY27 Q2 10Q Google8K and customer joint announcement",
+    "coverageLimit": "index date coverage from Dec2025 and Feb2026 through Oct2026; several 2025 Nov & 2026 Jan events not fully opened; all twelve months SEC 8Ks not exhaustively audited; partner internal purchasing confidential",
+    "keyEntities": [
+      "Marvell issuer",
+      "Google custom customer",
+      "NVIDIA investor and ecosystem",
+      "Microsoft/Oracle OCP",
+      "Celestial AI",
+      "XConn",
+      "Broadcom competitor",
+      "TSMC foundry"
+    ],
+    "events": [
+      [
+        "2026-10-13",
+        "Alaska 3.2T and 1.6T products",
+        "sampling, not volume sales"
+      ],
+      [
+        "2026-10-13",
+        "OCP group with Microsoft Oracle",
+        "standards only, not an order"
+      ],
+      [
+        "2026-10-12",
+        "Structera X revised announcement",
+        "product not confirmed mass revenue"
+      ],
+      [
+        "2026-10-06",
+        "Investor Day FY2028 $20B / FY2031 $70-90B",
+        "issuer targets"
+      ],
+      [
+        "2026-09-21",
+        "2nm optical demo",
+        "demonstration"
+      ],
+      [
+        "2026-08-27",
+        "Q2 reported and Q3 guide",
+        "Q2 actual; Q3 projection"
+      ],
+      [
+        "2026-07-29",
+        "Google custom chips agreement",
+        "executed contract, discretionary buys"
+      ],
+      [
+        "2026-08-18",
+        "Google warrant issued",
+        "conditional 58.97M potential shares"
+      ],
+      [
+        "2026-07-29",
+        "India $250M R&D planned",
+        "capital plan not all cash spent"
+      ],
+      [
+        "2026-06-11",
+        "Dan Durn CFO effective June15",
+        "completed"
+      ],
+      [
+        "2026-06-01",
+        "102.4 Tbps switch launch",
+        "product availability, not volume"
+      ],
+      [
+        "2026-04-22",
+        "Polariton optics acquisition",
+        "announced; full consideration not reviewed"
+      ],
+      [
+        "2026-03-31",
+        "NVIDIA $2B preferred and NVLink Fusion partnership",
+        "equity issued completed"
+      ],
+      [
+        "2026-02-02",
+        "Celestial AI deal closed",
+        "cash/stock used, up to24.4M earnout"
+      ],
+      [
+        "2026-02-10",
+        "XConn deal closed",
+        "completed"
+      ],
+      [
+        "2025-12-02",
+        "Celestial announced and Q3 results",
+        "subsequently closed"
+      ],
+      [
+        "2025-12-09",
+        "AEC program design traction",
+        "not fixed backlog"
+      ]
+    ],
+    "limitations": [
+      "Actual Oct20 stock count, new warrant vest and cash/debt post Q2 not verified",
+      "Google complete customer orders/contract pricing confidential",
+      "Celestial earnout detailed timing/stock/cash and all other claims not fully reconciled",
+      "2026 Investor Day entire official webcast Q&A not independently checked",
+      "no matched daily FY2027/28 forward PE history",
+      "Microsoft Maia300 possible Marvell role is analyst speculation only",
+      "not exhaustive regulatory/counterparty 12 month event audit"
+    ]
+  },
+  "changesFromPrior": [
+    {
+      "asof": "2026-10-11",
+      "input": "Oct9 $275.28, base PV $150.4-175.7",
+      "new": "Oct19 $237.09, base $146.7-171.4",
+      "effect": "Price -13.87%; valuation method harmonized 12% all cases with higher modeled dilution. Not an earnings guidance cut."
+    },
+    {
+      "asof": "2026-10-11",
+      "input": "Google warrant not separately full stressed",
+      "new": "Aug18 SEC warrant 58.97M with up to 120B discretionary revenue vest, no firm minimum",
+      "effect": "client overlap and dilution explicitly modeled as contingent"
+    },
+    {
+      "asof": "2026-10-11",
+      "input": "Oct 6 target documented",
+      "new": "Oct12/13 product announcements follow",
+      "effect": "connectivity pipeline news not cash sales"
+    },
+    {
+      "asof": "2026-10-11",
+      "input": "$2B Nvidia preferred converted economics 21.8M shares",
+      "new": "no new actual share disclosure after Aug21 confirmed",
+      "effect": "same dated denominator rather than pretending real-time shares"
+    }
+  ]
+}
