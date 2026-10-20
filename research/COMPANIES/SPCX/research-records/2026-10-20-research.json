@@ -1,0 +1,250 @@
+{
+  "ticker": "SPCX",
+  "issuer": "Space Exploration Technologies Corp (SpaceX)",
+  "CIK": "0001181412",
+  "security": "Nasdaq quoted Class A + economic Class B, former SPCX ETF renamed SPCK April 7 2026",
+  "cutoff": "2026-10-20 before NY Oct20 session and Q3 after close",
+  "quote": {
+    "USD": 147.96,
+    "date": "2026-10-19 NY 16:00 EDT regular close",
+    "url": "https://stockanalysis.com/stocks/spcx/history/",
+    "priorOct9USD": 162.57,
+    "change_pct": -8.986897951651585,
+    "afterHoursExcluded": true
+  },
+  "financials": {
+    "accounting": "US GAAP, USD millions",
+    "rows": {
+      "FY2024": {
+        "revenueM": 14015,
+        "costM": 7996,
+        "grossM": 6019,
+        "operatingM": 466,
+        "netM": 791,
+        "CFOm": 5776,
+        "capexM": 11163,
+        "FCFm": -5387
+      },
+      "FY2025": {
+        "revenueM": 18674,
+        "costM": 9451,
+        "grossM": 9223,
+        "operatingM": -2589,
+        "netM": -4937,
+        "CFOm": 6785,
+        "capexM": 20737,
+        "FCFm": -13952
+      },
+      "H1FY2025": {
+        "revenueM": 8138,
+        "costM": 4244,
+        "grossM": 3894,
+        "operatingM": -943,
+        "netM": -1536,
+        "CFOm": 351,
+        "capexM": 6965,
+        "FCFm": -6614
+      },
+      "H1FY2026": {
+        "revenueM": 12508,
+        "costM": 5883,
+        "grossM": 6625,
+        "operatingM": -2086,
+        "netM": -4817,
+        "CFOm": 3466,
+        "capexM": 28476,
+        "FCFm": -25010
+      },
+      "TTM": {
+        "revenueM": 23044,
+        "costM": 11090,
+        "grossM": 11954,
+        "operatingM": -3732,
+        "netM": -8218,
+        "CFOm": 9900,
+        "capexM": 42248,
+        "FCFm": -32348
+      }
+    },
+    "TTMformula": "FY2025-H1FY2025+H1FY2026",
+    "FCFformula": "CFO-cash capex before equipment rebates",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+      "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+    ],
+    "H12026EquipmentRebateM": 1195,
+    "H12026RebateAdjustedFCFM": -23815,
+    "H12026SBCexpenseM": 1470,
+    "H12026SBCcapitalizedM": 110,
+    "H12026DebtExtinguishmentLossM": 1545
+  },
+  "Q22026": {
+    "totalRevenueM": 7814,
+    "grossM": 4319,
+    "operatingLossM": -143,
+    "netLossM": -541,
+    "connectivity": {
+      "revenueM": 4291,
+      "operatingIncomeM": 1656,
+      "subscribersM": 12,
+      "ARPU_USD_perMonth": 66,
+      "previousARPU": 85
+    },
+    "AI": {
+      "revenueM": 2561,
+      "operatingLossM": -1257,
+      "capexM": 15828
+    },
+    "Space": {
+      "revenueM": 962,
+      "operatingLossM": -542
+    }
+  },
+  "funds": {
+    "date": "2026-06-30",
+    "cashM": 93522,
+    "marketableSecuritiesM": 6487,
+    "cashAndSecuritiesM": 100009,
+    "debtPrincipalM": 38433,
+    "financeLeasesM": 1079,
+    "totalBorrowingsPlusFinanceLeasesM": 39512,
+    "netCashM": 60497,
+    "restrictedCashSeparatelyM": 830,
+    "otherFinancingIncludedInDebtM": 13406,
+    "operatingLeasesIncomplete": true,
+    "IPOissuedShares": 638888888,
+    "IPOpriceUSD": 135,
+    "IPONetProceedsM": 85675,
+    "IPOAlreadyInsideCash": true,
+    "June26NewSeniorNotesM": 25000,
+    "annualCouponM": 1463.75,
+    "bridgeFullyRepaid": true,
+    "newNotesAlreadyInsideJune30Debt": true
+  },
+  "shares": {
+    "A_atJuly28": 7696293669,
+    "B_atJuly28": 5485486276,
+    "preCursorEconomic": 13181779945,
+    "CursorSEC": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+    "CursorClosed": "2026-08-14",
+    "CursorIssueCommon": 389289254,
+    "CursorVestedRSUShares": 1752426,
+    "CursorGrossIssued": 391041680,
+    "postClosingKnownProxy": 13572821625,
+    "postClosingAdditionPct": 2.966531694745265,
+    "CursorAssumedFutureRSU": 29128326,
+    "CursorAssumedFutureOptions": 44365047,
+    "priorAntiDilutiveAwardsM": 564,
+    "priorUnmetPerformanceAwardsM": 1331,
+    "awardsDedupRequired": true,
+    "exactOctoberSharesNotVerified": true
+  },
+  "valuation": {
+    "referencePriceUSD": 147.96,
+    "staticReferenceEquityCapB": 2008.234687635,
+    "netCashB": 60.497,
+    "staticEVB": 1947.737687635,
+    "EVtoTTMRevenue": 84.5225519716629,
+    "equityToTTMRevenue": 87.14783404074814,
+    "hypothetical30xNetIncomeB": 66.9411562545,
+    "hypothetical40xNetIncomeB": 50.205867190875,
+    "hypothetical25xFCFB": 80.3293875054,
+    "ForwardPE": "not meaningful due GAAP loss",
+    "historyForwardPE": "unavailable valid same time consensus; IPO June2026",
+    "scenario": {
+      "bear": "Starlink ARPU weakness and GPU churn + financing dilution",
+      "base": "Connectivity scale with AI usage but persistently high capex",
+      "bull": "AI recurring cash margin, repeatable Starship and Starlink mobile with capital intensity falling"
+    },
+    "perSharePresentValue": "cannot reliably estimate without future capex, supplier economics, late financing and net diluted shares; older $110-230 quote withdrawn, no invented ranges"
+  },
+  "materialContracts": [
+    [
+      "2026-10-16",
+      "Official scheduled Oct20 NY after-close Q3, 16:30ET webcast",
+      "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/",
+      "Future, not reported"
+    ],
+    [
+      "2026-10-08",
+      "Grain nationwide 800MHz spectrum definitive subject FCC",
+      "https://www.prnewswire.com/news-releases/grain-management-announces-definitive-agreement-to-sell-nationwide-800-mhz-spectrum-portfolio-to-spacex-302902974.html",
+      "Seller undisclosed price; Reuters ~$8B, not paid June30"
+    ],
+    [
+      "2026-09-28",
+      "Starship Flight14 first orbital entry and 26 Starlink V3 deployed",
+      "https://www.spacex.com/launches/starship-flight-14",
+      "Technical milestone, ended early, not fully repeatable recovery"
+    ],
+    [
+      "2026-08-28",
+      "OpenAI public notice proposed Nov12 Cursor model service ending",
+      "https://openai.com/zh-Hans-CN/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+      "One-sided intention; not stopped by Oct20"
+    ],
+    [
+      "2026-08-14",
+      "Cursor closed with 391m gross shares plus assumed RSU/options",
+      "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+      "SEC completed transaction"
+    ],
+    [
+      "2026-08-04",
+      "Q2 financial actual and capex",
+      "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+      "Actual latest"
+    ],
+    [
+      "2026-06-05",
+      "Google 110k GPU cloud capacity ~$920m monthly nominal",
+      "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
+      "Oct2026-Jun2029 nominal, Dec31 onward either party can terminate with 90-day notice"
+    ],
+    [
+      "2026-05-22",
+      "EchoStar spectrum escrow trust and projected Nov30 2027 closing",
+      "https://www.sec.gov/Archives/edgar/data/1415404/000110465926089370/sats-20260630x10q.htm",
+      "~$20B incl up to $11B stock, conditions/price split adjustments"
+    ],
+    [
+      "2026-01-09",
+      "FCC extra 7500 Gen2 authorized total15000",
+      "https://docs.fcc.gov/public/attachments/DOC-417881A1.pdf",
+      "Authorization not all operating"
+    ]
+  ],
+  "eventCoverage": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "inspected": [
+      "SpaceX SEC 424B4, Aug4 10Q, Aug14 8K, Google FWP",
+      "SpaceX IR Q3 calendar and Flight14",
+      "OpenAI supply notice",
+      "EchoStar June 10Q",
+      "Grain seller release and Reuters price commentary",
+      "FCC Gen2 authorization",
+      "Reuters Oct15 Starshield Ukraine reporting"
+    ],
+    "notExhaustive": [
+      "all 12months SEC 8Ks and Forms4",
+      "individual late2025 and early2026 launches",
+      "FAA/FCC all dockets",
+      "underlying full GPU cloud contract and private profit terms",
+      "actual Oct fully diluted shares and all award offsets",
+      "after Q2 Oct financing and spectrum cash terms",
+      "FY2026 Q3 report after close"
+    ],
+    "excludedRumor": "No verified SpaceX Tesla merger; do not assume"
+  },
+  "changesFromOct11": [
+    "Oct9 $162.57 to Oct19 $147.96 (-8.99%)",
+    "Cursor closed 8/14; actual 391041680 new A shares and assumed 73493373 contingent RSU/options now verified",
+    "Sep28 Flight14 first orbit and 26 Starlink V3 actual deployment",
+    "OpenAI proposed 11/12 cutoff confirmed supplier statement not completed cutoff",
+    "Oct8 Grain additional spectrum signing not part of EchoStar $20B",
+    "Oct20 Q3 earnings officially scheduled after US close; not yet result"
+  ]
+}
