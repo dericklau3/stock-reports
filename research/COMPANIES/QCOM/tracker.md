@@ -1,12 +1,70 @@
-# 高通公司（QCOM）
+# 高通公司（QCOM）Tracker
+
+Last updated: 2026-10-20
+
+## Current Research View（2026-10-20）
+
+**中性偏谨慎，业务值得长期跟踪，约$173.53未提供厚安全边际。** NASDAQ QCOM在2026-10-19纽约常规交易收盘参考价$173.53，较10-09旧报告价$175.50下降约1.12%。2029年经济盈利条件估值**保守$78–93、基础$142–162、乐观$224–250**（**折现至2026-10-20**），不是2029未折现目标价或交易建议。本次报告与底稿：
+- [完整2026-10-20深研](deep-research/2026-10-20-deep-research.md)
+- [2026-10-20研究证据、模型和事件底稿](research-records/2026-10-20-research.json)
+- [2026-10-11旧版深研](deep-research/2026-10-11-deep-research.md)
+- [2026-10-11旧版估值](valuation/2026-10-11-valuation.json)
+
+## Core Thesis / Business and Evidence
+
+QCT芯片与QTL无线专利许可已产生实际现金流，高客户替换成本和QTL授权利润率支持既有商业质量；汽车Q3 FY2026收入$1.588B同比+61%，但手机业务$5.086B同比-20%。云端AI的Meta、Amazon、HUMAIN/Adobe等有客户及部署方向证据，**尚不足以将FY2029目标营收>$15B全额视为已确认订单或可分配利润**。
+
+最近一期完整报表仍是截至2026-06-28的FY2026 Q3 10-Q。FY2026 Q4虽然财期已结束，**官方财报尚未公布**。TTM收入$44.069B、经营利润$10.220B、经营现金流$12.401B、现金资本开支$1.985B、简易自由现金流$10.416B；2026-06-28自由可用现金/证券$8.304B，账面借款$15.270B，粗略净借款$6.966B；约$1.991B长期债务于2027年5月到期。FY2025税费与FY2026递延税资产减值准备回转不可机械外推净利润。原始来源：[Q3 10-Q](https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm)、[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm)。
+
+## 2026-10-20 Important New Events / Changed Assumptions
+
+1. **2026-10-13 Arm诉讼有部分陪审团结果，不再是“待判决”**：陪审团认定Arm在部分架构许可和Meta商业干扰方面不利，但只赔偿$2；Arm在其他多项请求获胜，未来是否可暂停Arm许可费、其他法官裁决及可能上诉仍待处理。绝不把数十亿美元潜在授权费暂停收益计入利润。原文：[Qualcomm声明](https://www.qualcomm.com/news/releases/2026/10/qualcomm-statement-on-trial-verdict-win)、[Arm观点](https://newsroom.arm.com/news/arm-qualcomm-legal-dispute)、[Reuters审判报道](https://www.reuters.com/legal/litigation/qualcomm-says-jury-found-arm-breached-license-agreement-2026-10-13/)。
+2. **2026-09-08 Amazon重大AI数据中心商业合作附带权证**（9月3日发行）：[原始SEC 8-K](https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm)披露最高25M普通股认购权、行权价$161.26、2036-09-03到期、cashless可行权，**初期3.75M已归属**。其余分期与正式商业安排、绑定采购单及实际购买挂钩，**最多$60B付款只是权证归属里程碑上限**，不等于不可撤销$60B订单、已付费收入或利润。报告对最多25M净新增股做了压力测试（1075M旧期后示意股数的约2.33%）。
+3. **2026-09-24 Apple全球专利许可续签**，生效2027-04-01；有利QTL授权，但**不等于苹果继续采购高通基带QCT**。原文：[QCOM](https://www.qualcomm.com/news/releases/2026/09/qualcomm-announces-renewal-of-global-patent-license-agreement-wi)。
+4. **2026-10-05 Huawei跨领域许可、10-06 QCOM澄清**：交叉许可与美国非蜂窝专利购买是相关但不同条款；公司否认许可“净付款方”说法，专利购买需监管条件，许可经济金额保密。[双边原文及修订](https://www.qualcomm.com/news/releases/2026/10/huawei-and-qualcomm-announce-broad-patent-license-agreement)。
+5. **2026-10-16 Transsion传音专利许可延续至2031年底**；合同价格未公开，不凭续签编造收入增量。[公告](https://www.qualcomm.com/news/releases/2026/10/qualcomm-announces-long-term-patent-cross-license-agreement-with)。
+6. **2026-07-28 Modular已交割**，约$3.1B总交易价值，以约18M QCOM股为主要对价、部分附员工服务要求。2026-06-28实际普通股约1057M加18M作为期后**示意1075M**；**2026-10-20真实股份尚未得到可靠新原件**。Alphawave 2025-12-18约11M股已包含在2026-06-28实际股数，不能再重复相加。
+7. **2026-06-24 FY2029管理层目标**非手机$40B、数据中心>$15B、汽车$10B、Non-GAAP EPS>$18，同时**GAAP EPS目标>$14.50**。2026 Q3官网明确Non-GAAP剔除员工股权薪酬（Q3当季$827M，FY2026前九个月$2579M），不可直接当股东经济利润。原文：[官方投资者日及GAAP桥](https://investor.qualcomm.com/news-events/press-releases/news-details/2026/Qualcomm-Accelerates-Diversification-with-Comprehensive-Strategy-for-Data-Center-and-Sees-Multiple-Inflection-Points-Over-the-Next-3-to-5-Years/default.aspx)、[SEC财务和non-GAAP调节](https://www.sec.gov/Archives/edgar/data/804328/000080432826000085/qcom062826erex991.htm)。
+8. Q3 FY2026非手机增长未能抵销手机压力；FY2026 Q4管理层收入指引9.7–10.5B、Non-GAAP EPS2.05–2.25，**并非已报告实际结果**。
+
+## Valuation Accounting Bridge (not a changed management guide)
+
+报价$173.53乘参考1075M股=**$186.545B**条件市值；FCF10.416B对应收益率约**5.58%**。最新实际股数与期后Amazon认购权未来归属、员工奖励均未全结算，不能把示意市值当完全实时。
+
+新模型假设FY2029年末2029-09-30、2026-10-20折现起点，1076天/365.25约2.94593年，10%年股权要求回报，对应**1.324158**折现因子，不计未宣告未来股息。先假设FY2029 Non-GAAP EPS分别12、16、20，再减FY2026九个月SBC2579M年化3438.67M、示意20%税盾/1075M股=**2.559/股**经济成本，得经济EPS9.441/13.441/17.441；配对退出P/E为Bear11–13×、Base14–16×、Bull17–19×。
+
+- Bear：约$78.43–92.69（相对$173.53为-54.8%至-46.6%）
+- Base：约$142.11–162.41（-18.1%至-6.4%）
+- Bull：约$223.91–250.26（+29.0%至+44.2%）
+- Amazon极端25M净新增股份、盈利不变且忽略行权现金的示意Base：**$138.88–158.72**；真实全部归属又应有相应采购，不得当作“零利润+全稀释”的最可能发生组合。
+- 按当前$173.53及FY2029**15倍经济EPS**反向估值，需要FY2029经济EPS约**$15.32**，本SBC桥换算Non-GAAP约**$17.88**，接近公司2029 Non-GAAP>$18雄心。
+- 旧版2026-10-11基础**$168–192**没有显式扣持续SBC，本版$142–162主要是**方法与经济费用假设更新**；非管理层下调指引，也不是仅因股价从$175.50跌至$173.53。连续SBC税盾/未来股数实际可变，估值应重算。
+- 当前可比市场一致预期NTM Forward P/E及一年逐日历史当时有效预测序列**未核实**，不能以今日EPS代除旧股价生成假极值。所有详细输入/来源/取舍记录见2026-10-20 research-records。
+
+## Operating and Forward Gates
+
+- MOBILE：守住高端安卓量产与毛利；Q3 handset -20%须看Q4实际出货和苹果自研基带替代速度。
+- AUTO：FY2026 Q3汽车+61%，BMW下一代协议7-29签、2029汽车$10B仍是计划；看新车型量产和贡献利润。
+- DATACENTER：Amazon权证3.75M初始归属不等于60B已付费；逐季度验证绑定采购、芯片交付、毛利、现金回收；Meta计划使用Dragonfly C1000和HUMAIN/Adobe工作负载只说明采用进展。
+- MNA：Alphawave、Modular股数、SBC及软件营收，PickNik仅计划收购；不能让回购被股权收购与长期股票奖励完全抵消。
+- LEGAL/LICENSE：Arm法官书面令及上诉；Huawei专利购买监管批准；Apple 2027-04-01 QTL生效、Transsion2031许可持续。
+- FUTURE：2026 FYQ4财报**正式日期未核实**，不能凭上一年度日期断言；注意现金、收入指引、当前真实股份和新市场预期。
+
+## Evidence limitations
+
+近12个月已检索公司IR可见公告及关键产品、Amazon权证SEC 8-K、FY2025 10-K/FY2026 Q3 10-Q、主要合作方声明，但**未完成全期间逐月SEC/所有合作方完整档案核查**；完整Amazon商业合同与订单、Meta正式采购/利润、Huawei许可经济条款和法院最终命令未知。报价服务商同一常规交易收盘有几美分差异（投资站点$173.53与另一源$173.46），本次统一采用$173.53用于模型并保留差异。旧研究历史完整保留。
+
+---
+
+## Previous Tracker (2026-10-11 historical snapshot; below is NOT the current conclusion)
 
 Last updated: 2026-10-11
 
-## Current Research View
+## 2026-10-11 Research View (historical)
 
 **中性、谨慎等待。** 研究日 2026-10-11；最新已确认常规交易收盘为 **2026-10-09 $175.50**。公司有成熟盈利与自由现金流，但手机业务明显承压，数据中心远期增长仍需要付费验证；按研究者 FY2029 条件性估值，当前价接近基础情景，不构成明显安全边际。
 
-## Current Main Thesis
+## 2026-10-11 Main Thesis (historical)
 
 高通的芯片与无线专利许可带来实际现金流；智能汽车已经高速增长，而 AI 数据中心、工业与 PC 是业务分散化的重要机会。核心不在产品发布数量，而在 2027–2029 年实际交付、利润率、自由现金流以及扣除增发后的每股经济收益是否增长。
 
