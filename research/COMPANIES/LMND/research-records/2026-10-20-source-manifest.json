@@ -1,0 +1,26 @@
+{
+  "originals": [
+    {
+      "name": "q2-letter",
+      "url": "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/docs/LMND-Shareholder-Letter-Q2-2026.pdf",
+      "sha256": "4b42fbb6615ccf7064ff468857a03a484044b716856b2c34877722e41efe4840",
+      "text_sha256": "10f5135fa87fbd5279627d1710db1a0729ee31cc19a83ca258bfbd5a48c555c6",
+      "pdf_magic_verified": true
+    },
+    {
+      "name": "q2-10q",
+      "url": "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/2026/07/LMND-Q2-2026-Form-10-Q-Final.pdf",
+      "sha256": "3d526384d294c5ced2c9f6d0d676f10778080f44a5911901cecc49177ae23cb4",
+      "text_sha256": "cc4a6a2eeeb4f6ec7fc271a69967e40c1e9f0dac876ea2eab6ed385aa5885b36",
+      "pdf_magic_verified": true
+    },
+    {
+      "name": "fy25-10k",
+      "url": "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/docs/LMND-2025-Form-10-K_FINAL.pdf",
+      "sha256": "fd7cabd8a038b99b5a0427c37d7156120c23b2ca07b41d5581353d6422882698",
+      "text_sha256": "a2a03b06d74d296e5ce23a2a42fbdc4bd013271273eef081a37cb16c675feec5",
+      "pdf_magic_verified": true
+    }
+  ],
+  "text_normalization": "Extracted PDF/page text, removed contact email, stripped line trailing whitespace before evidence hashing; archived text not republished wholesale."
+}

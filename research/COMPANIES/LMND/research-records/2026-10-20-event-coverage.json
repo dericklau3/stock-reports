@@ -1,0 +1,400 @@
+{
+  "issuer": "Lemonade Inc NYSE LMND",
+  "as_of": "2026-10-20T07:33:00+08:00",
+  "window_start": "2025-10-20",
+  "window_end": "2026-10-20",
+  "latest_complete_us_session": "2026-10-19",
+  "overall_status": "部分完成：公司新闻时间索引完整覆盖；重要非归档线索有保留；对手/监管及SEC完整性有具体缺口，不得写完成全部12月核查",
+  "archive": {
+    "url": "https://www.lemonade.com/investor/news?f=1",
+    "method": "browser rendered archive + requests exact Next.js news array, including 2025 year-index entries, no hidden server pagination in provided array",
+    "all_index_count": 123,
+    "in_window_count": 24,
+    "articles_read_count": 24,
+    "index_file": "archive-index-next-data.json",
+    "texts_file": "official-news-pages.json",
+    "limitation": "全量IR索引并不覆盖所有公司发布：例如6/22 Colorado仅由wire搜索和call找到，因此不是全新闻穷尽保证"
+  },
+  "monthly_coverage": [
+    {
+      "month": "2025-10",
+      "actual_archive_scope": "2025-10-20—2025-10-31",
+      "news_index_matches": 0,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2025-11",
+      "actual_archive_scope": "2025-11",
+      "news_index_matches": 1,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-announces-third-quarter-2025-financial-results"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2025-12",
+      "actual_archive_scope": "2025-12",
+      "news_index_matches": 0,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "FINANCING-GC-amendment"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。December Tesla连接帖只确认IR索引存在，原帖正文未读取。"
+    },
+    {
+      "month": "2026-01",
+      "actual_archive_scope": "2026-01",
+      "news_index_matches": 2,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-to-announce-fourth-quarter-2025-financial-results",
+        "lemonade-unveils-autonomous-car-insurance-slashing-rates-for-tesla-fsd-miles-by-50"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-02",
+      "actual_archive_scope": "2026-02",
+      "news_index_matches": 2,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-to-attend-the-citizens-technology-conference",
+        "lemonade-announces-fourth-quarter-and-full-year-2025-financial-results",
+        "PROFIT-targets"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-03",
+      "actual_archive_scope": "2026-03",
+      "news_index_matches": 0,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-04",
+      "actual_archive_scope": "2026-04",
+      "news_index_matches": 2,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-announces-first-quarter-2026-financial-results",
+        "lemonade-to-announce-first-quarter-2026-financial-results"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-05",
+      "actual_archive_scope": "2026-05",
+      "news_index_matches": 1,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-to-present-at-upcoming-investor-conferences"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-06",
+      "actual_archive_scope": "2026-06",
+      "news_index_matches": 2,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-renews-reinsurance-program-improving-costs-coverage-and-capital-efficiency",
+        "lemonade-brings-autonomous-car-insurance-to-indiana",
+        "FINANCING-Hannover",
+        "REG-Rhode-Island-consent",
+        "CAR-FSD-Colorado"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-07",
+      "actual_archive_scope": "2026-07",
+      "news_index_matches": 5,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-announces-second-quarter-2026-financial-results",
+        "lemonade-expands-renters-insurance-to-nebraska",
+        "lemonade-to-announce-second-quarter-2026-financial-results",
+        "lemonade-expands-renters-insurance-to-maine",
+        "lemonade-expands-renters-insurance-to-vermont",
+        "CFO-transition"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-08",
+      "actual_archive_scope": "2026-08",
+      "news_index_matches": 3,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-continues-us-expansion-with-launch-of-car-insurance-in-florida",
+        "lemonade-to-present-at-the-oppenheimer-29th-annual-technology-internet-communications-conference",
+        "lemonade-brings-autonomous-car-insurance-to-tennessee",
+        "LEGAL-data-exposure-settlement"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-09",
+      "actual_archive_scope": "2026-09",
+      "news_index_matches": 4,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-renters-expands-to-alaska",
+        "lemonade-continues-us-expansion-with-launch-of-pet-insurance-in-kentucky",
+        "lemonade-cfo-to-participate-in-upcoming-investor-conferences",
+        "lemonade-expands-renters-insurance-to-kansas"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    },
+    {
+      "month": "2026-10",
+      "actual_archive_scope": "2026-10-01—2026-10-20 07:33 Asia/Shanghai",
+      "news_index_matches": 2,
+      "method": "全量__NEXT_DATA__.props.pageProps.news时间索引（2020—2026全部123条）本地日期筛选，窗口24条逐一读content；另读IR feed全量时间线及10/13-15三帖。",
+      "status": "issuer-news-index-covered; not comprehensive all-channel clearance",
+      "candidate_keys": [
+        "lemonade-to-announce-third-quarter-2026-financial-results",
+        "lemonade-autonomous-car-adds-support-for-tesla-fsd-v14-lite",
+        "CAR-FSD-LITE-Oregon-Missouri",
+        "CAR-Pennsylvania",
+        "AGENTIC-OS",
+        "CFO-compensation-amendment"
+      ],
+      "gaps": "SEC全窗口逐份8K未独立遍历；非IR收录的公司wire/社交可能缺项；监管逐州未穷尽。"
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Lemonade",
+      "role": "发行人/保险运营",
+      "sources": [
+        "https://www.lemonade.com/investor",
+        "https://www.lemonade.com/investor/news?f=1",
+        "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/2026/07/LMND-Q2-2026-Form-10-Q-Final.pdf",
+        "https://stockanalysis.com/stocks/lmnd/transcripts/656800-q2-2026/"
+      ],
+      "actual_scope": "全12个月IR索引+IR feed；Q2 10Q全文；Q2 call完整真实Q&A镜像",
+      "status": "partial",
+      "gaps": "SEC父代理已独立检查submissions；本代理未全遍历SEC附件。官方原始audio/transcript未取，镜像不冒充官方转录。"
+    },
+    {
+      "name": "Hannover Re / Hannover Re Ireland DAC",
+      "role": "核心再保险对手及2027起获客融资提供者",
+      "sources": [
+        "site.hannover-re.com Lemonade 2026 financing",
+        "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/2026/07/LMND-Q2-2026-Form-10-Q-Final.pdf"
+      ],
+      "actual_scope": "有限域名定向搜索，返回公司SEC/行业原稿线索，无Hannover对手原始公告；公司10Q条款复核",
+      "status": "issuer-only evidence",
+      "gaps": "未取得对手2025-10—2026-10完整新闻归档/原始相关披露；不能说对手没有公告"
+    },
+    {
+      "name": "General Catalyst / GC Customer Value Arranger LLC",
+      "role": "现有获客融资及旧cohort偿还",
+      "sources": [
+        "https://www.generalcatalyst.com/companies/lemonade",
+        "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/2026/07/LMND-Q2-2026-Form-10-Q-Final.pdf"
+      ],
+      "actual_scope": "有限2026域名搜索及官方portfolio正文；10Q复核December2025无重大条款修改",
+      "status": "partial; economic terms issuer only",
+      "gaps": "GC原始融资修订原稿未取；portfolio不是条款独立佐证"
+    },
+    {
+      "name": "Tesla",
+      "role": "客户授权Fleet API技术数据接口；不是保证采购方",
+      "sources": [
+        "site.tesla.com Lemonade insurance 2026",
+        "https://developer.tesla.com/docs/fleet-api",
+        "https://www.lemonade.com/investor/news/lemonade-unveils-autonomous-car-insurance-slashing-rates-for-tesla-fsd-miles-by-50"
+      ],
+      "actual_scope": "有限域名搜索未取Tesla就Lemonade的独立公告；Fleet docs requests200但页面JS正文空；发行人1/21与10/8原文已读",
+      "status": "issuer-only terms",
+      "gaps": "Tesla公司确认未取得；技术集成不升级订单/最低采购/商业保证"
+    },
+    {
+      "name": "US state insurance regulators / Rhode Island DBR / California FAIR",
+      "role": "保险市场准入、市场行为、资本/费用监管",
+      "sources": [
+        "https://dbr.ri.gov/insurance/consumers/insurance-enforcement-actions",
+        "https://dbr.ri.gov/sites/g/files/xkgbur696/files/2026-06/INS-2025-IN-016%20Lemonade%20Consent%20Agreement%20Executed.pdf",
+        "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/2026/07/LMND-Q2-2026-Form-10-Q-Final.pdf"
+      ],
+      "actual_scope": "RI监管索引搜索返回6/2 consent order 2025-IN-016，直连均403；CA FAIR recoupment读公司10Q",
+      "status": "partial with unresolved negative candidate",
+      "gaps": "RI金额/事实/整改未取得；各扩州州DOI许可与费率原件未逐州读取；不能断言没有监管负面"
+    },
+    {
+      "name": "SEC / CFO remuneration",
+      "role": "公司重大事项申报",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000061/lmnd-20260727.htm",
+        "https://ebs.publicnow.com/view/DDC92E8533C1ACF78A55EA728075DDC06E7B71C7"
+      ],
+      "actual_scope": "10/15 8KA原件403、Publicnow403，StockTitan DNS失败；搜索返回详细条款候选",
+      "status": "pending original; parent to verify",
+      "gaps": "80k RSU及Bixby补偿仍须父代理原件确认；reportDate7/27不得掩盖10/15修订"
+    }
+  ],
+  "negative_screen": {
+    "searched": [
+      "Lemonade insurance regulator consent 2026 2025 Rhode Island"
+    ],
+    "issuer_document": "Q2 10Q note15及PartII Item1全文已读",
+    "findings": [
+      "2026 July car quote data exposure final settlement net accrued liability $0.9M",
+      "RI 2026-06-02 consent candidate unresolved",
+      "PPR再保险6/30到期不续是已核实取消节点，整合6/30再保险续约"
+    ],
+    "limitation": "不是完整诉讼数据库或全50州执法检索；未发现不能写不存在"
+  },
+  "date_conflicts": [
+    "10/19正式公告确认11/5盘前，旧11/4第三方估计作废",
+    "10/14 Pennsylvania帖和10/15 Agentic帖在浏览器local显示分别10/15及10/16；按IR日期并保留display冲突，不猜ET时间",
+    "Hannover6/22是签署日；首公开8K filing日期尚待核实",
+    "10/15 8KA reportDate/filename保留7/27是修订对象日期，不是公告无变化"
+  ],
+  "parent_SEC_index": {
+    "url": "https://data.sec.gov/submissions/CIK0001691421.json",
+    "window_records": 103,
+    "latest_form": "2026-10-15 8-K/A 0001691421-26-000061",
+    "latest_quarterly": "2026-08-04 10-Q period2026-06-30",
+    "full_body_coverage": false,
+    "Hannover_filing_date_confirmed": "2026-06-24; agreement signed June22",
+    "relevant_filings": [
+      {
+        "filingDate": "2026-10-15",
+        "reportDate": "2026-07-27",
+        "form": "8-K/A",
+        "accessionNumber": "0001691421-26-000061",
+        "primaryDocument": "lmnd-20260727.htm"
+      },
+      {
+        "filingDate": "2026-08-04",
+        "reportDate": "2026-06-30",
+        "form": "10-Q",
+        "accessionNumber": "0001691421-26-000055",
+        "primaryDocument": "lmnd-20260630.htm"
+      },
+      {
+        "filingDate": "2026-07-29",
+        "reportDate": "2026-07-27",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000050",
+        "primaryDocument": "lmnd-20260727.htm"
+      },
+      {
+        "filingDate": "2026-07-29",
+        "reportDate": "2026-07-29",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000047",
+        "primaryDocument": "lmnd-20260729.htm"
+      },
+      {
+        "filingDate": "2026-06-24",
+        "reportDate": "2026-06-22",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000041",
+        "primaryDocument": "lmnd-20260622.htm"
+      },
+      {
+        "filingDate": "2026-06-05",
+        "reportDate": "2026-06-03",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000038",
+        "primaryDocument": "lmnd-20260603.htm"
+      },
+      {
+        "filingDate": "2026-04-30",
+        "reportDate": "2026-03-31",
+        "form": "10-Q",
+        "accessionNumber": "0001691421-26-000034",
+        "primaryDocument": "lmnd-20260331.htm"
+      },
+      {
+        "filingDate": "2026-04-29",
+        "reportDate": "2026-04-29",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000029",
+        "primaryDocument": "lmnd-20260429.htm"
+      },
+      {
+        "filingDate": "2026-02-25",
+        "reportDate": "",
+        "form": "S-8",
+        "accessionNumber": "0001691421-26-000018",
+        "primaryDocument": "lmnd2026evergreenforms-8.htm"
+      },
+      {
+        "filingDate": "2026-02-25",
+        "reportDate": "2025-12-31",
+        "form": "10-K",
+        "accessionNumber": "0001691421-26-000016",
+        "primaryDocument": "lmnd-20251231.htm"
+      },
+      {
+        "filingDate": "2026-02-19",
+        "reportDate": "2026-02-19",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000006",
+        "primaryDocument": "lmnd-20260219.htm"
+      },
+      {
+        "filingDate": "2026-01-27",
+        "reportDate": "2026-01-27",
+        "form": "8-K",
+        "accessionNumber": "0001691421-26-000003",
+        "primaryDocument": "lmnd-20260127.htm"
+      },
+      {
+        "filingDate": "2025-11-05",
+        "reportDate": "2025-09-30",
+        "form": "10-Q",
+        "accessionNumber": "0001691421-25-000149",
+        "primaryDocument": "lmnd-20250930.htm"
+      },
+      {
+        "filingDate": "2025-11-05",
+        "reportDate": "2025-11-05",
+        "form": "8-K",
+        "accessionNumber": "0001691421-25-000146",
+        "primaryDocument": "lmnd-20251105.htm"
+      }
+    ]
+  },
+  "parent_additional_failures": [
+    {
+      "name": "ri-order",
+      "url": "https://dbr.ri.gov/sites/g/files/xkgbur696/files/2026-06/INS-2025-IN-016%20Lemonade%20Consent%20Agreement%20Executed.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "ri-index",
+      "url": "https://dbr.ri.gov/insurance/consumers/insurance-enforcement-actions",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "8ka-stocktitan-bare",
+      "url": "https://stocktitan.net/sec-filings/LMND/8-k-a-lemonade-inc-amends-material-event-report-c31f3042997d.html",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ],
+  "parent_financial_originals_independently_downloaded": true,
+  "no_claim_full_year_all_channel_completion": true
+}

@@ -1,0 +1,420 @@
+{
+  "checks": [
+    {
+      "name": "FY2024_GP",
+      "calculated": 166.9,
+      "reported_or_expected": 166.9,
+      "difference": -0.0,
+      "passed": true,
+      "details": "Issuer GP deducts insurance D&A; not vendor revenue-minus-two-cost-lines GP"
+    },
+    {
+      "name": "FY2024_pretax",
+      "calculated": -203.9,
+      "reported_or_expected": -203.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Income statement does NOT separately label operating profit; this is pretax, includes investment income and interest cost within G&A"
+    },
+    {
+      "name": "FY2024_FCF",
+      "calculated": -20.8,
+      "reported_or_expected": -20.8,
+      "difference": 0.0,
+      "passed": true,
+      "details": "ordinary_fcf = OCF - cash PPE capex"
+    },
+    {
+      "name": "FY2024_net_borrowing",
+      "calculated": 68.4,
+      "reported_or_expected": 68.4,
+      "difference": -0.0,
+      "passed": true,
+      "details": "Borrowing flows do not include stock option exercises"
+    },
+    {
+      "name": "FY2024_adjustedFCF",
+      "calculated": 47.6,
+      "reported_or_expected": 47.6,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Company adjusted FCF adds financing; not unlevered/distributable FCF"
+    },
+    {
+      "name": "FY2024_financing",
+      "calculated": 87.7,
+      "reported_or_expected": 87.7,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Total net financing cash flow includes option exercises"
+    },
+    {
+      "name": "FY2025_GP",
+      "calculated": 293.4,
+      "reported_or_expected": 293.4,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Issuer GP deducts insurance D&A; not vendor revenue-minus-two-cost-lines GP"
+    },
+    {
+      "name": "FY2025_pretax",
+      "calculated": -160.9,
+      "reported_or_expected": -160.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Income statement does NOT separately label operating profit; this is pretax, includes investment income and interest cost within G&A"
+    },
+    {
+      "name": "FY2025_FCF",
+      "calculated": -25.9,
+      "reported_or_expected": -25.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "ordinary_fcf = OCF - cash PPE capex"
+    },
+    {
+      "name": "FY2025_net_borrowing",
+      "calculated": 74.7,
+      "reported_or_expected": 74.7,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Borrowing flows do not include stock option exercises"
+    },
+    {
+      "name": "FY2025_adjustedFCF",
+      "calculated": 48.8,
+      "reported_or_expected": 48.8,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Company adjusted FCF adds financing; not unlevered/distributable FCF"
+    },
+    {
+      "name": "FY2025_financing",
+      "calculated": 106.6,
+      "reported_or_expected": 106.6,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Total net financing cash flow includes option exercises"
+    },
+    {
+      "name": "H12025_GP",
+      "calculated": 102.9,
+      "reported_or_expected": 102.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Issuer GP deducts insurance D&A; not vendor revenue-minus-two-cost-lines GP"
+    },
+    {
+      "name": "H12025_pretax",
+      "calculated": -104.0,
+      "reported_or_expected": -104.0,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Income statement does NOT separately label operating profit; this is pretax, includes investment income and interest cost within G&A"
+    },
+    {
+      "name": "H12025_FCF",
+      "calculated": -46.1,
+      "reported_or_expected": -46.1,
+      "difference": 0.0,
+      "passed": true,
+      "details": "ordinary_fcf = OCF - cash PPE capex"
+    },
+    {
+      "name": "H12025_net_borrowing",
+      "calculated": 40.1,
+      "reported_or_expected": 40.1,
+      "difference": -0.0,
+      "passed": true,
+      "details": "Borrowing flows do not include stock option exercises"
+    },
+    {
+      "name": "H12025_adjustedFCF",
+      "calculated": -6.0,
+      "reported_or_expected": -6.0,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Company adjusted FCF adds financing; not unlevered/distributable FCF"
+    },
+    {
+      "name": "H12025_financing",
+      "calculated": 44.1,
+      "reported_or_expected": 44.1,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Total net financing cash flow includes option exercises"
+    },
+    {
+      "name": "H12026_GP",
+      "calculated": 213.3,
+      "reported_or_expected": 213.3,
+      "difference": -0.0,
+      "passed": true,
+      "details": "Issuer GP deducts insurance D&A; not vendor revenue-minus-two-cost-lines GP"
+    },
+    {
+      "name": "H12026_pretax",
+      "calculated": -76.4,
+      "reported_or_expected": -76.4,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Income statement does NOT separately label operating profit; this is pretax, includes investment income and interest cost within G&A"
+    },
+    {
+      "name": "H12026_FCF",
+      "calculated": -12.1,
+      "reported_or_expected": -12.1,
+      "difference": 0.0,
+      "passed": true,
+      "details": "ordinary_fcf = OCF - cash PPE capex"
+    },
+    {
+      "name": "H12026_net_borrowing",
+      "calculated": 48.3,
+      "reported_or_expected": 48.3,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Borrowing flows do not include stock option exercises"
+    },
+    {
+      "name": "H12026_adjustedFCF",
+      "calculated": 36.2,
+      "reported_or_expected": 36.2,
+      "difference": -0.0,
+      "passed": true,
+      "details": "Company adjusted FCF adds financing; not unlevered/distributable FCF"
+    },
+    {
+      "name": "H12026_financing",
+      "calculated": 54.4,
+      "reported_or_expected": 54.4,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Total net financing cash flow includes option exercises"
+    },
+    {
+      "name": "TTM2026Q2_GP",
+      "calculated": 403.8,
+      "reported_or_expected": 403.8,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Issuer GP deducts insurance D&A; not vendor revenue-minus-two-cost-lines GP"
+    },
+    {
+      "name": "TTM2026Q2_pretax",
+      "calculated": -133.3,
+      "reported_or_expected": -133.3,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Income statement does NOT separately label operating profit; this is pretax, includes investment income and interest cost within G&A"
+    },
+    {
+      "name": "TTM2026Q2_FCF",
+      "calculated": 8.1,
+      "reported_or_expected": 8.1,
+      "difference": 0.0,
+      "passed": true,
+      "details": "ordinary_fcf = OCF - cash PPE capex"
+    },
+    {
+      "name": "TTM2026Q2_net_borrowing",
+      "calculated": 82.9,
+      "reported_or_expected": 82.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Borrowing flows do not include stock option exercises"
+    },
+    {
+      "name": "TTM2026Q2_adjustedFCF",
+      "calculated": 91.0,
+      "reported_or_expected": 91.0,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Company adjusted FCF adds financing; not unlevered/distributable FCF"
+    },
+    {
+      "name": "TTM2026Q2_financing",
+      "calculated": 116.9,
+      "reported_or_expected": 116.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Total net financing cash flow includes option exercises"
+    },
+    {
+      "name": "Q22025_GLR_components",
+      "calculated": 67,
+      "reported_or_expected": 67,
+      "difference": 0,
+      "passed": true,
+      "details": "Published whole-point components; GLR already includes LAE"
+    },
+    {
+      "name": "Q22025_PPD",
+      "calculated": -3,
+      "reported_or_expected": -3,
+      "difference": 0,
+      "passed": true,
+      "details": "Prior-period claims reserve development"
+    },
+    {
+      "name": "Q32025_GLR_components",
+      "calculated": 62,
+      "reported_or_expected": 62,
+      "difference": 0,
+      "passed": true,
+      "details": "Published whole-point components; GLR already includes LAE"
+    },
+    {
+      "name": "Q32025_PPD",
+      "calculated": -5,
+      "reported_or_expected": -5,
+      "difference": 0,
+      "passed": true,
+      "details": "Prior-period claims reserve development"
+    },
+    {
+      "name": "Q42025_GLR_components",
+      "calculated": 52,
+      "reported_or_expected": 52,
+      "difference": 0,
+      "passed": true,
+      "details": "Published whole-point components; GLR already includes LAE"
+    },
+    {
+      "name": "Q42025_PPD",
+      "calculated": -9,
+      "reported_or_expected": -9,
+      "difference": 0,
+      "passed": true,
+      "details": "Prior-period claims reserve development"
+    },
+    {
+      "name": "Q12026_GLR_components",
+      "calculated": 62,
+      "reported_or_expected": 62,
+      "difference": 0,
+      "passed": true,
+      "details": "Published whole-point components; GLR already includes LAE"
+    },
+    {
+      "name": "Q12026_PPD",
+      "calculated": -3,
+      "reported_or_expected": -3,
+      "difference": 0,
+      "passed": true,
+      "details": "Prior-period claims reserve development"
+    },
+    {
+      "name": "Q22026_GLR_components",
+      "calculated": 60,
+      "reported_or_expected": 60,
+      "difference": 0,
+      "passed": true,
+      "details": "Published whole-point components; GLR already includes LAE"
+    },
+    {
+      "name": "Q22026_PPD",
+      "calculated": -7,
+      "reported_or_expected": -7,
+      "difference": 0,
+      "passed": true,
+      "details": "Prior-period claims reserve development"
+    },
+    {
+      "name": "Q22026_GLR_exPPD",
+      "calculated": 67,
+      "reported_or_expected": 67,
+      "difference": 0,
+      "passed": true,
+      "details": "Not reported GLR; calculation before -7pp PPD"
+    },
+    {
+      "name": "Balance_sheet_equation",
+      "calculated": 2011.9,
+      "reported_or_expected": 2011.9,
+      "difference": 0.0,
+      "passed": true,
+      "details": "June 30 2026 liabilities + equity = assets"
+    },
+    {
+      "name": "Cash_restricted_bridge",
+      "calculated": 380.3,
+      "reported_or_expected": 380.3,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Q2 10-Q PDF 11"
+    },
+    {
+      "name": "Investment_components",
+      "calculated": 777.7,
+      "reported_or_expected": 777.7,
+      "difference": 0.0,
+      "passed": true,
+      "details": "Q2 10-Q PDF 6"
+    },
+    {
+      "name": "Borrowing_balance_bridge",
+      "calculated": 206.4,
+      "reported_or_expected": 206.4,
+      "difference": 0.0,
+      "passed": true,
+      "details": "December 2025 borrowings plus H1 net cash borrowing"
+    },
+    {
+      "name": "Antidilutive_count",
+      "calculated": 12111290,
+      "reported_or_expected": 12111290,
+      "difference": 0,
+      "passed": true,
+      "details": "Not treasury-stock-method incremental shares"
+    }
+  ],
+  "passed": 46,
+  "failed": 0,
+  "TTM_formula": "FY2025+H12026-H12025",
+  "notes": "Numerical tie-outs do not resolve disclosure anomalies. Source verification is single issuer original plus arithmetic, not independent economic audit.",
+  "source_validation": [
+    {
+      "id": "q2_2026_letter",
+      "pdf_magic_valid": true,
+      "sha256_matches": true,
+      "identity_and_period_matches": true,
+      "text_email_count": 0,
+      "normalized_trailing_whitespace": true
+    },
+    {
+      "id": "q2_2026_10q",
+      "pdf_magic_valid": true,
+      "sha256_matches": true,
+      "identity_and_period_matches": true,
+      "text_email_count": 0,
+      "normalized_trailing_whitespace": true
+    },
+    {
+      "id": "fy2025_10k",
+      "pdf_magic_valid": true,
+      "sha256_matches": true,
+      "identity_and_period_matches": true,
+      "text_email_count": 0,
+      "normalized_trailing_whitespace": true
+    },
+    {
+      "id": "fy2025_letter",
+      "pdf_magic_valid": true,
+      "sha256_matches": true,
+      "identity_and_period_matches": true,
+      "text_email_count": 0,
+      "normalized_trailing_whitespace": true
+    }
+  ],
+  "source_count": 4,
+  "open_disclosure_conflicts": [
+    "Investments 777.7 BS vs 695.2 MD&A",
+    "Software note42.4/33.0 vs cash PPE9.4/9.4; annual software cash additions unresolved"
+  ],
+  "latest_quarter_validation": {
+    "company_directory_2026_Q1_Q2_only": true,
+    "Q3_release_date_in_original_PR": true,
+    "announcement_date_in_original_PR": true
+  }
+}

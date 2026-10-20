@@ -1,0 +1,142 @@
+{
+  "valuation_date": "2026-10-20",
+  "quote": {
+    "price": 43.12,
+    "date": "2026-10-19",
+    "time": "16:00 America/New_York",
+    "session": "regular-session close",
+    "source": "https://api.nasdaq.com/api/quote/LMND/info?assetclass=stocks",
+    "field": "data.secondaryData.lastSalePrice / Closed at Oct 19, 2026 4:00 PM ET",
+    "not_used": "primaryData is after-hours USD43.80, not the regular close; historical endpoint still ends October16"
+  },
+  "target_date": "2028-12-31",
+  "years": 2.198494182067077,
+  "discount_factor": 1.3338438312165048,
+  "reference_market_cap_USD_millions": 3337.3420387999995,
+  "share_denominator_date": "2026-08-03",
+  "P_TTM_revenue": 3.4229149115897433,
+  "P_FY2026_guidance_mid_revenue": 2.7422695470829908,
+  "P_current_IFP": 2.326808923377257,
+  "P_FY2026_end_guidance_mid_IFP": 2.040563765698563,
+  "P_book": 6.681365443043042,
+  "book_value_per_reference_share": 6.4537706203301015,
+  "H1_SBC_to_revenue": 0.08272990586531499,
+  "FY2026_SBC_to_guidance_revenue": 0.0780608052588332,
+  "H1_ordinary_FCF": -12.1,
+  "H1_net_financing": 48.300000000000004,
+  "Q2_GLR_sum": 0.6,
+  "Q2_GLR_without_PPD_proxy": 0.6699999999999999,
+  "Q2_2025_GLR_without_PPD_proxy": 0.7000000000000001,
+  "scenarios": {
+    "bear": {
+      "future_equity_value_USD_millions": [
+        1875.0,
+        2625.0
+      ],
+      "future_economic_shares_millions": 90.0,
+      "terminal_per_share_USD": [
+        20.833333333333332,
+        29.166666666666668
+      ],
+      "present_per_share_USD": [
+        15.619019892555727,
+        21.86662784957802
+      ],
+      "present_price_difference": [
+        -0.6377778318052939,
+        -0.4928889645274114
+      ],
+      "implied_PE_given_assumed_after_SBC_net_margin_range": [
+        25.0,
+        87.5
+      ],
+      "illustrative_IFP_2026_to_2028_CAGR": 0.10583345246001641,
+      "illustrative_required_capital_if_unchanged_current_intensity": 460.1547793348672,
+      "increment_to_current_required_capital_under_that_stress": 130.15477933486721,
+      "capital_warning": "Illustrative only: apply current required regulatory surplus/IFP intensity330/1434.3 to hypothetical future IFP. Not a legal RBC forecast; product mix, reinsurance, captives and regulation can materially change it. Do not add this capital need to valuation or subtract it again without a full capital plan."
+    },
+    "base": {
+      "future_equity_value_USD_millions": [
+        5250.0,
+        6825.0
+      ],
+      "future_economic_shares_millions": 90.0,
+      "terminal_per_share_USD": [
+        58.333333333333336,
+        75.83333333333333
+      ],
+      "present_per_share_USD": [
+        43.73325569915604,
+        56.85323240890284
+      ],
+      "present_price_difference": [
+        0.014222070945177245,
+        0.3184886922287302
+      ],
+      "implied_PE_given_assumed_after_SBC_net_margin_range": [
+        31.25,
+        65.0
+      ],
+      "illustrative_IFP_2026_to_2028_CAGR": 0.30843978631479074,
+      "illustrative_required_capital_if_unchanged_current_intensity": 644.216691068814,
+      "increment_to_current_required_capital_under_that_stress": 314.21669106881404,
+      "capital_warning": "Illustrative only: apply current required regulatory surplus/IFP intensity330/1434.3 to hypothetical future IFP. Not a legal RBC forecast; product mix, reinsurance, captives and regulation can materially change it. Do not add this capital need to valuation or subtract it again without a full capital plan."
+    },
+    "bull": {
+      "future_equity_value_USD_millions": [
+        10400.0,
+        13000.0
+      ],
+      "future_economic_shares_millions": 94.0,
+      "terminal_per_share_USD": [
+        110.63829787234043,
+        138.29787234042553
+      ],
+      "present_per_share_USD": [
+        82.94696521663637,
+        103.68370652079547
+      ],
+      "present_price_difference": [
+        0.9236309187531626,
+        1.4045386484414535
+      ],
+      "implied_PE_given_assumed_after_SBC_net_margin_range": [
+        33.333333333333336,
+        62.5
+      ],
+      "illustrative_IFP_2026_to_2028_CAGR": 0.4628801533325855,
+      "illustrative_required_capital_if_unchanged_current_intensity": 805.2708638360176,
+      "increment_to_current_required_capital_under_that_stress": 475.2708638360176,
+      "capital_warning": "Illustrative only: apply current required regulatory surplus/IFP intensity330/1434.3 to hypothetical future IFP. Not a legal RBC forecast; product mix, reinsurance, captives and regulation can materially change it. Do not add this capital need to valuation or subtract it again without a full capital plan."
+    }
+  },
+  "base_midpoint_present_USD": 50.29324405402944,
+  "reverse": {
+    "FY2028_revenue_at_base_mid_PS": 1800.480396586091,
+    "FY2028_equity_at_current_price_and_base_share_discount_assumptions": 5176.381140185012,
+    "net_income_required_at_terminal_PE25": 207.05524560740048,
+    "required_net_margin_at_revenue2100_PE25": 0.09859773600352403,
+    "warning": "At a different terminal multiple, shares, horizon or required return, the reverse requirement changes. Not a current EPS consensus or probability."
+  },
+  "sensitivities": {
+    "base_revenue_minus20pct": 40.23459524322355,
+    "base_mid_PS_to2x": 34.986604559324824,
+    "base_shares95M": 47.646231209080526,
+    "base_shares100M": 45.2639196486265,
+    "bear_shares110M_low_PS": 12.779198093909233,
+    "base_discount18pct": 46.62109390367016
+  },
+  "previous_bridge": {
+    "price_change_fraction": -0.07188979767541981,
+    "reference_actual_share_change_millions": 0.06989699999999743,
+    "hypothesis_changes": "No new complete-quarter results justify changing 2028 revenue/multiple hypotheses merely because price declined. Update quote, newer August3 cover shares and time discount; new CFO-related8-K/A metadata and product availability do not receive separate platform value. The amendment body is unavailable and compensation search snippets are not accepted as verified issued shares."
+  },
+  "checks": {
+    "GLR_components_equal_reported": true,
+    "adjusted_FCF_equals_ordinary_plus_borrowing": true,
+    "cash_investments_including_restricted": true,
+    "excluded_nominal_awards_sum": true,
+    "discount_is_future_and_positive": true,
+    "all_present_values_discounted_once": true
+  }
+}

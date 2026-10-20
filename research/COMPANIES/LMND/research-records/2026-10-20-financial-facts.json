@@ -1,0 +1,564 @@
+{
+  "issuer": {
+    "legal_name": "Lemonade, Inc.",
+    "ticker": "LMND",
+    "exchange": "NYSE",
+    "security": "Common stock, $0.00001 par value",
+    "currency": "USD",
+    "accounting": "US GAAP",
+    "cutoff_beijing": "2026-10-20",
+    "latest_completed_us_session": "2026-10-19",
+    "latest_applicable_financial_report": "2026 Q2 10-Q / six months ended 2026-06-30",
+    "latest_report_evidence": "Company quarterly-results page downloaded lists 2026 Q1 and Q2 only; company-origin PRNewswire announcement for Nov 5 Q3 release; parent separately verified SEC no Q3"
+  },
+  "unit": "USD millions except shares, percentages and per-customer USD",
+  "financial_periods": {
+    "FY2024": {
+      "revenue": 526.5,
+      "gross_profit": 166.9,
+      "adjusted_gross_profit": 174.9,
+      "pretax_loss": -203.9,
+      "net_loss": -202.2,
+      "total_expenses": 730.4,
+      "net_investment_income": 34.0,
+      "net_loss_lae_expense": 277.0,
+      "other_insurance_expense": 76.8,
+      "gross_profit_da": 5.8,
+      "ocf": -11.4,
+      "ppe_capex": 9.4,
+      "ordinary_fcf": -20.8,
+      "borrowing_proceeds": 96.1,
+      "borrowing_repayments": 27.7,
+      "net_borrowings": 68.4,
+      "financing_cash_flow": 87.7,
+      "stock_exercise_proceeds": 19.3,
+      "company_adjusted_fcf": 47.6,
+      "sbc": 64.5,
+      "adjusted_ebitda": -149.7,
+      "gross_margin_pct": 31.6999,
+      "sbc_pct_revenue": 12.2507,
+      "reported_operating_income": null,
+      "separate_software_cash_capex": null,
+      "capex_definition": "Cash flow statement purchases of property and equipment; issuer reconciliation capital expenditures equals same amount. Internal-use software is included in PPE category; separate cash software additions are not disclosed. Do not add the 10-K note 9 software figures again."
+    },
+    "FY2025": {
+      "revenue": 737.9,
+      "gross_profit": 293.4,
+      "adjusted_gross_profit": 304.5,
+      "pretax_loss": -160.9,
+      "net_loss": -165.5,
+      "total_expenses": 898.8,
+      "net_investment_income": 37.8,
+      "net_loss_lae_expense": 347.0,
+      "other_insurance_expense": 93.7,
+      "gross_profit_da": 3.8,
+      "ocf": -16.5,
+      "ppe_capex": 9.4,
+      "ordinary_fcf": -25.9,
+      "borrowing_proceeds": 133.0,
+      "borrowing_repayments": 58.3,
+      "net_borrowings": 74.7,
+      "financing_cash_flow": 106.6,
+      "stock_exercise_proceeds": 31.9,
+      "company_adjusted_fcf": 48.8,
+      "sbc": 61.3,
+      "adjusted_ebitda": -118.1,
+      "gross_margin_pct": 39.7615,
+      "sbc_pct_revenue": 8.3074,
+      "reported_operating_income": null,
+      "separate_software_cash_capex": null,
+      "capex_definition": "Cash flow statement purchases of property and equipment; issuer reconciliation capital expenditures equals same amount. Internal-use software is included in PPE category; separate cash software additions are not disclosed. Do not add the 10-K note 9 software figures again."
+    },
+    "H12025": {
+      "revenue": 315.3,
+      "gross_profit": 102.9,
+      "adjusted_gross_profit": 111.6,
+      "pretax_loss": -104.0,
+      "net_loss": -106.3,
+      "total_expenses": 419.3,
+      "net_investment_income": 18.9,
+      "net_loss_lae_expense": 162.9,
+      "other_insurance_expense": 47.5,
+      "gross_profit_da": 2.0,
+      "ocf": -41.7,
+      "ppe_capex": 4.4,
+      "ordinary_fcf": -46.1,
+      "borrowing_proceeds": 66.1,
+      "borrowing_repayments": 26.0,
+      "net_borrowings": 40.1,
+      "financing_cash_flow": 44.1,
+      "stock_exercise_proceeds": 4.0,
+      "company_adjusted_fcf": -6.0,
+      "sbc": 25.7,
+      "adjusted_ebitda": -87.9,
+      "gross_margin_pct": 32.6356,
+      "sbc_pct_revenue": 8.151,
+      "reported_operating_income": null,
+      "separate_software_cash_capex": null,
+      "capex_definition": "Cash flow statement purchases of property and equipment; issuer reconciliation capital expenditures equals same amount. Internal-use software is included in PPE category; separate cash software additions are not disclosed. Do not add the 10-K note 9 software figures again."
+    },
+    "H12026": {
+      "revenue": 552.4,
+      "gross_profit": 213.3,
+      "adjusted_gross_profit": 215.2,
+      "pretax_loss": -76.4,
+      "net_loss": -79.2,
+      "total_expenses": 628.8,
+      "net_investment_income": 19.5,
+      "net_loss_lae_expense": 287.3,
+      "other_insurance_expense": 50.8,
+      "gross_profit_da": 1.0,
+      "ocf": -4.0,
+      "ppe_capex": 8.1,
+      "ordinary_fcf": -12.1,
+      "borrowing_proceeds": 89.9,
+      "borrowing_repayments": 41.6,
+      "net_borrowings": 48.3,
+      "financing_cash_flow": 54.4,
+      "stock_exercise_proceeds": 6.1,
+      "company_adjusted_fcf": 36.2,
+      "sbc": 45.7,
+      "adjusted_ebitda": -35.8,
+      "gross_margin_pct": 38.6133,
+      "sbc_pct_revenue": 8.273,
+      "reported_operating_income": null,
+      "separate_software_cash_capex": null,
+      "capex_definition": "Cash flow statement purchases of property and equipment; issuer reconciliation capital expenditures equals same amount. Internal-use software is included in PPE category; separate cash software additions are not disclosed. Do not add the 10-K note 9 software figures again."
+    },
+    "TTM2026Q2": {
+      "revenue": 975.0,
+      "gross_profit": 403.8,
+      "adjusted_gross_profit": 408.1,
+      "pretax_loss": -133.3,
+      "net_loss": -138.4,
+      "total_expenses": 1108.3,
+      "net_investment_income": 38.4,
+      "net_loss_lae_expense": 471.4,
+      "other_insurance_expense": 97.0,
+      "gross_profit_da": 2.8,
+      "ocf": 21.2,
+      "ppe_capex": 13.1,
+      "ordinary_fcf": 8.1,
+      "borrowing_proceeds": 156.8,
+      "borrowing_repayments": 73.9,
+      "net_borrowings": 82.9,
+      "financing_cash_flow": 116.9,
+      "stock_exercise_proceeds": 34.0,
+      "company_adjusted_fcf": 91.0,
+      "sbc": 81.3,
+      "adjusted_ebitda": -66.0,
+      "gross_margin_pct": 41.4154,
+      "sbc_pct_revenue": 8.3385,
+      "reported_operating_income": null,
+      "separate_software_cash_capex": null,
+      "capex_definition": "Cash flow statement purchases of property and equipment; issuer reconciliation capital expenditures equals same amount. Internal-use software is included in PPE category; separate cash software additions are not disclosed. Do not add the 10-K note 9 software figures again."
+    }
+  },
+  "H1_yoy": {
+    "revenue": {
+      "H12025": 315.3,
+      "H12026": 552.4,
+      "change_usd_m": 237.1,
+      "change_div_abs_prior_pct": 75.198,
+      "interpretation": "ordinary growth rate"
+    },
+    "gross_profit": {
+      "H12025": 102.9,
+      "H12026": 213.3,
+      "change_usd_m": 110.4,
+      "change_div_abs_prior_pct": 107.289,
+      "interpretation": "ordinary growth rate"
+    },
+    "adjusted_gross_profit": {
+      "H12025": 111.6,
+      "H12026": 215.2,
+      "change_usd_m": 103.6,
+      "change_div_abs_prior_pct": 92.832,
+      "interpretation": "ordinary growth rate"
+    },
+    "pretax_loss": {
+      "H12025": -104.0,
+      "H12026": -76.4,
+      "change_usd_m": 27.6,
+      "change_div_abs_prior_pct": 26.538,
+      "interpretation": "positive value denotes less loss/outflow"
+    },
+    "net_loss": {
+      "H12025": -106.3,
+      "H12026": -79.2,
+      "change_usd_m": 27.1,
+      "change_div_abs_prior_pct": 25.494,
+      "interpretation": "positive value denotes less loss/outflow"
+    },
+    "ocf": {
+      "H12025": -41.7,
+      "H12026": -4.0,
+      "change_usd_m": 37.7,
+      "change_div_abs_prior_pct": 90.408,
+      "interpretation": "positive value denotes less loss/outflow"
+    },
+    "ppe_capex": {
+      "H12025": 4.4,
+      "H12026": 8.1,
+      "change_usd_m": 3.7,
+      "change_div_abs_prior_pct": 84.091,
+      "interpretation": "ordinary growth rate"
+    },
+    "ordinary_fcf": {
+      "H12025": -46.1,
+      "H12026": -12.1,
+      "change_usd_m": 34.0,
+      "change_div_abs_prior_pct": 73.753,
+      "interpretation": "positive value denotes less loss/outflow"
+    },
+    "net_borrowings": {
+      "H12025": 40.1,
+      "H12026": 48.3,
+      "change_usd_m": 8.2,
+      "change_div_abs_prior_pct": 20.449,
+      "interpretation": "ordinary growth rate"
+    },
+    "financing_cash_flow": {
+      "H12025": 44.1,
+      "H12026": 54.4,
+      "change_usd_m": 10.3,
+      "change_div_abs_prior_pct": 23.356,
+      "interpretation": "ordinary growth rate"
+    },
+    "company_adjusted_fcf": {
+      "H12025": -6.0,
+      "H12026": 36.2,
+      "change_usd_m": 42.2,
+      "change_div_abs_prior_pct": 703.333,
+      "interpretation": "positive value denotes less loss/outflow"
+    },
+    "sbc": {
+      "H12025": 25.7,
+      "H12026": 45.7,
+      "change_usd_m": 20.0,
+      "change_div_abs_prior_pct": 77.821,
+      "interpretation": "ordinary growth rate"
+    },
+    "adjusted_ebitda": {
+      "H12025": -87.9,
+      "H12026": -35.8,
+      "change_usd_m": 52.1,
+      "change_div_abs_prior_pct": 59.272,
+      "interpretation": "positive value denotes less loss/outflow"
+    },
+    "gross_margin_change_pp": 5.9777
+  },
+  "formulas": {
+    "TTM2026Q2": "FY2025 + H12026 - H12025; period 2025-07-01 to 2026-06-30",
+    "gross_profit": "Revenue - net losses/LAE - other insurance expense - insurance D&A per issuer reconciliation",
+    "ordinary_fcf": "OCF - cash PPE purchases",
+    "company_adjusted_fcf": "ordinary FCF + net borrowing under financing agreement",
+    "operating_income": "NOT separately disclosed in GAAP statement. Do not silently label loss-before-tax as operating income."
+  },
+  "financial_source_map": {
+    "FY2024_FY2025_GAAP": "fy2025_10k.pdf PDF 100 and 102 (printed 98,100); fy2025_letter.pdf PDF23,25",
+    "FY2024_FY2025_GP": "fy2025_letter.pdf PDF26 (printed25)",
+    "FY2024_FY2025_FCF": "fy2025_letter.pdf PDF29 (printed28)",
+    "H12025_H12026_GAAP": "q2_2026_10q.pdf PDF7,9 (printed6,8); q2_2026_letter.pdf PDF20,22",
+    "H12025_H12026_GP": "q2_2026_letter.pdf PDF23 (printed22)",
+    "H12025_H12026_FCF": "q2_2026_letter.pdf PDF25 (printed24)",
+    "software_note": "fy2025_10k.pdf PDF121 (printed119); interim has no separate cash software additions table"
+  },
+  "insurance": {
+    "Q22025": {
+      "gross_loss_ratio_pct": 67,
+      "gross_loss_ratio_excat_pct": 60,
+      "ttm_glr_pct": 70,
+      "net_loss_ratio_pct": 69,
+      "attritional_pct": 58,
+      "cat_exPPD_pct": 5,
+      "lae_exPPD_pct": 7,
+      "ppd_pct": -3,
+      "cat_ppd_pct": 2,
+      "noncat_ppd_pct": -5,
+      "homeowners_multiperil_glr_pct": 60,
+      "pet_glr_pct": 70,
+      "car_glr_pct": 82,
+      "europe_glr_pct": 83,
+      "ifp_usd_m": 1083,
+      "pet_ifp_usd_m": 350,
+      "car_ifp_usd_m": 150,
+      "homeowners_multiperil_ifp_usd_m": 523,
+      "europe_ifp_usd_m": 43,
+      "other_ifp_usd_m": 17,
+      "premium_per_customer_usd": 402
+    },
+    "Q32025": {
+      "gross_loss_ratio_pct": 62,
+      "gross_loss_ratio_excat_pct": 56,
+      "ttm_glr_pct": 67,
+      "net_loss_ratio_pct": 64,
+      "attritional_pct": 56,
+      "cat_exPPD_pct": 4,
+      "lae_exPPD_pct": 7,
+      "ppd_pct": -5,
+      "cat_ppd_pct": 2,
+      "noncat_ppd_pct": -7,
+      "homeowners_multiperil_glr_pct": 51,
+      "pet_glr_pct": 69,
+      "car_glr_pct": 76,
+      "europe_glr_pct": 70,
+      "ifp_usd_m": 1158,
+      "pet_ifp_usd_m": 394,
+      "car_ifp_usd_m": 163,
+      "homeowners_multiperil_ifp_usd_m": 531,
+      "europe_ifp_usd_m": 51,
+      "other_ifp_usd_m": 19,
+      "premium_per_customer_usd": 403
+    },
+    "Q42025": {
+      "gross_loss_ratio_pct": 52,
+      "gross_loss_ratio_excat_pct": 51,
+      "ttm_glr_pct": 64,
+      "net_loss_ratio_pct": 53,
+      "attritional_pct": 54,
+      "cat_exPPD_pct": 1,
+      "lae_exPPD_pct": 6,
+      "ppd_pct": -9,
+      "cat_ppd_pct": 0,
+      "noncat_ppd_pct": -9,
+      "homeowners_multiperil_glr_pct": 39,
+      "pet_glr_pct": 71,
+      "car_glr_pct": 40,
+      "europe_glr_pct": 64,
+      "ifp_usd_m": 1237,
+      "pet_ifp_usd_m": 439,
+      "car_ifp_usd_m": 187,
+      "homeowners_multiperil_ifp_usd_m": 530,
+      "europe_ifp_usd_m": 60,
+      "other_ifp_usd_m": 21,
+      "premium_per_customer_usd": 414
+    },
+    "Q12026": {
+      "gross_loss_ratio_pct": 62,
+      "gross_loss_ratio_excat_pct": 58,
+      "ttm_glr_pct": 61,
+      "net_loss_ratio_pct": 63,
+      "attritional_pct": 54,
+      "cat_exPPD_pct": 5,
+      "lae_exPPD_pct": 6,
+      "ppd_pct": -3,
+      "cat_ppd_pct": -1,
+      "noncat_ppd_pct": -2,
+      "homeowners_multiperil_glr_pct": 49,
+      "pet_glr_pct": 69,
+      "car_glr_pct": 74,
+      "europe_glr_pct": 85,
+      "ifp_usd_m": 1333,
+      "pet_ifp_usd_m": 490,
+      "car_ifp_usd_m": 214,
+      "homeowners_multiperil_ifp_usd_m": 540,
+      "europe_ifp_usd_m": 67,
+      "other_ifp_usd_m": 23,
+      "premium_per_customer_usd": 424
+    },
+    "Q22026": {
+      "gross_loss_ratio_pct": 60,
+      "gross_loss_ratio_excat_pct": 58,
+      "ttm_glr_pct": 59,
+      "net_loss_ratio_pct": 61,
+      "attritional_pct": 59,
+      "cat_exPPD_pct": 3,
+      "lae_exPPD_pct": 5,
+      "ppd_pct": -7,
+      "cat_ppd_pct": -1,
+      "noncat_ppd_pct": -6,
+      "homeowners_multiperil_glr_pct": 44,
+      "pet_glr_pct": 74,
+      "car_glr_pct": 61,
+      "europe_glr_pct": 71,
+      "ifp_usd_m": 1434,
+      "pet_ifp_usd_m": 543,
+      "car_ifp_usd_m": 239,
+      "homeowners_multiperil_ifp_usd_m": 554,
+      "europe_ifp_usd_m": 74,
+      "other_ifp_usd_m": 24,
+      "premium_per_customer_usd": 433,
+      "customers": 3308666,
+      "adr_pct": 85,
+      "ifp_growth_reported_pct": 32.4,
+      "customer_growth_reported_pct": 23,
+      "premium_per_customer_growth_reported_pct": 8,
+      "pet_premium_per_customer_usd": 839,
+      "car_premium_per_customer_usd": 2089,
+      "car_lae_pct": 7
+    },
+    "definitions": {
+      "IFP": "Annualized active-policy premium, including placed policies (~4%); not future GAAP revenue forecast",
+      "ADR": "12-month premium retention including price/policy changes, cross-sell and churn; not pure customer retention",
+      "gross_loss_ratio": "Gross losses and loss adjustment expense / GEP",
+      "attritional": "Gross losses excluding catastrophe, LAE and prior-period development / GEP",
+      "PPD": "Change in ultimate loss/LAE for prior-quarter claims"
+    },
+    "quality_notes": [
+      "Q2 reported GLR improved 67% to 60%, but pre-PPD component sum was 70% to 67%: improvement 3pp, versus 7pp headline; favorable PPD grew from 3pp to 7pp. Components are rounded.",
+      "Attritional 58% to 59% worsened 1pp, CAT 5% to 3% improved 2pp, LAE 7% to 5% improved 2pp. Do not add LAE again to GLR.",
+      "Q2 Pet GLR 74% versus 70% prior year while Pet IFP grew; Car 61% versus 82%; Q4 2025 Car 40% explicitly benefited from year-end reserve movements. Product-specific PPD is not disclosed; normalized product ratios cannot be reconstructed.",
+      "Revenue rose faster than GEP/IFP due to lower reinsurance cession; not all revenue acceleration is underlying premium growth."
+    ]
+  },
+  "insurance_source": "q2_2026_letter.pdf PDF34-35 (printed33-34), PDF5 (Car LAE), PDF8 (customers/ADR)",
+  "reinsurance": {
+    "old_effective": "2025-07-01",
+    "old_end": "2026-06-30",
+    "old_effective_quota_cession_pct": 20,
+    "new_effective": "2026-07-01",
+    "new_end": "2027-06-30",
+    "new_effective_quota_cession_pct": 18,
+    "per_event_recovery_limit_usd_m": 40,
+    "aggregate_limit_usd_m": 100,
+    "named_storm_coverage": "Shareholder letter says introduced coverage previously excluded",
+    "whole_account_previous_nonhurricane_event_limit_usd_m": 10,
+    "PPR": "2025 contract ceded 100% above $0.75m up to $2.25m recovery; not renewed",
+    "captives": "Group retains risks through captive; LIC captive XOL renewed $50m per event/aggregate; MIC captive XOL not renewed. Captive QS MIC 35% to40%, LIC15% to25%; these are NOT independent external group risk transfer percentages.",
+    "source": "q2_2026_10q.pdf PDF16 (printed15); q2_2026_letter.pdf PDF5"
+  },
+  "financing": {
+    "GC": {
+      "original_signed": "2023-06-28",
+      "original_limit_usd_m": 150,
+      "original_commitment_end": "2024-12-31",
+      "2024_amendment_signed": "2024-01-08",
+      "2025_additional_financing_limit_usd_m": 140,
+      "2025_amendment_signed": "2025-02-03",
+      "2026_additional_financing_limit_usd_m": 200,
+      "funding_share_growth_spend_pct": [
+        50,
+        80
+      ],
+      "return_pct": 16,
+      "borrowings_20260630_usd_m": 206.4,
+      "H12026_interest_expense_usd_m": 13.2,
+      "H12026_cash_interest_paid_usd_m": 12.5,
+      "legacy_cohorts": "Continue repaying GC under existing arrangements; no retroactive repricing to Hannover return"
+    },
+    "Hannover": {
+      "counterparty": "Hannover Re (Ireland) DAC",
+      "signed": "2026-06-22",
+      "funding_begin": "2027-01-01",
+      "2027_max_outstanding_usd_m": 150,
+      "2028_max_outstanding_usd_m": 250,
+      "max_funding_share_growth_spend_pct": 80,
+      "max_per_reference_cohort_usd_m": 20,
+      "return_formula": "max(0%, three-year U.S. Treasury Bill rate) + 5.8%; shareholder letter ~9.8% is approximate not permanent fixed coupon",
+      "repayment": "Specific percentage of premiums collected for assigned financed customer cohorts; principal plus agreed return until fully repaid, then all future reference premium retained",
+      "covenants": "Financial covenants and cancellation/commitment termination provisions disclosed; precise threshold tests not in note",
+      "drawn_cash_as_of_20260630": "Future agreement; not available cash or current draw"
+    },
+    "source": "q2_2026_10q.pdf PDF17 (printed16), PDF9 cash interest; q2_2026_letter.pdf PDF5"
+  },
+  "balance_sheet_20260630": {
+    "cash_and_cash_equivalents": 367.6,
+    "restricted_cash": 12.7,
+    "cash_including_restricted": 380.3,
+    "investments_preferred": 777.7,
+    "investments_mdna_conflicting": 695.2,
+    "cash_plus_investments_ex_restricted": 1145.3,
+    "borrowings": 206.4,
+    "equity": 499.5,
+    "assets": 2011.9,
+    "liabilities": 1512.4,
+    "unpaid_loss_lae": 307.5,
+    "unearned_premium": 661.7,
+    "funds_held_reinsurance": 153.0,
+    "reinsurance_recoverable": 132.1,
+    "prepaid_reinsurance": 125.3,
+    "insurance_entities_cash_and_investments": 810.5,
+    "held_regulatory_surplus": 352.4,
+    "required_regulatory_surplus_approx": 330,
+    "source": "q2_2026_10q.pdf PDF6,11,45 and q2_2026_letter.pdf PDF10,21",
+    "restriction": "Consolidated cash plus investments is not parent excess/distributable cash. Dividend limits, claims, premium and reinsurance obligations apply. Held surplus 352.4 and required approx330 are different labels; difference is NOT established distributable buffer."
+  },
+  "shares": {
+    "cover_date": "2026-08-03",
+    "cover_actual": 77396615,
+    "period_end": "2026-06-30",
+    "period_end_actual": 77326718,
+    "20251231_actual": 75907215,
+    "Q22026_eps_weighted_basic_diluted": 76983877,
+    "H12026_eps_weighted_basic_diluted": 76647656,
+    "excluded_antidilutive_options": 6786537,
+    "excluded_antidilutive_unvested_stock": 5324753,
+    "excluded_antidilutive_warrants": 0,
+    "excluded_total": 12111290,
+    "source": "q2_2026_10q.pdf PDF1,6,18,23",
+    "notes": "Use latest disclosed actual cover shares for indicative market cap, not period-end or EPS weighted-average. Loss makes basic=diluted, not zero economic dilution. Adding all excluded awards is not treasury-stock diluted shares. Parent verified Oct15 8-K/A: future 80k CFO RSU grant, not issued shares."
+  },
+  "guidance": {
+    "as_of": "Q2 2026 shareholder letter",
+    "Q32026": {
+      "ifp": [
+        1537,
+        1540
+      ],
+      "gep": [
+        356,
+        359
+      ],
+      "revenue": [
+        323,
+        326
+      ],
+      "adjusted_ebitda": [
+        -23,
+        -20
+      ],
+      "sbc": 24,
+      "weighted_average_common_shares_m": 77
+    },
+    "FY2026": {
+      "ifp": [
+        1632,
+        1639
+      ],
+      "gep": [
+        1374,
+        1378
+      ],
+      "revenue": [
+        1214,
+        1220
+      ],
+      "adjusted_ebitda": [
+        -51,
+        -47
+      ],
+      "sbc": 95,
+      "weighted_average_common_shares_m": 78
+    },
+    "Q42026_adjusted_ebitda_management_implied_approx": 8,
+    "source": "q2_2026_letter.pdf PDF7 (printed6)",
+    "status": "management forecast, not GAAP earnings or realized result"
+  },
+  "conflicts_and_gaps": [
+    {
+      "item": "Investment total",
+      "evidence": "BS Q2 10Q PDF6 + shareholder letter PDF21 =777.7, components768.5+9.2; MD&A PDF45=695.2",
+      "resolution": "Use corroborated BS 777.7; internal inconsistency unresolved; cannot label 82.5 difference restricted/short-term without evidence"
+    },
+    {
+      "item": "Software capitalization note",
+      "evidence": "FY25 10K PDF121 says capitalized internal-use software costs42.4/33.0 for 2025/2024; cashflow PPE purchases only9.4 each and gross computer/software balances47.3/37.8",
+      "resolution": "Do not assume 42.4/33.0 are incremental cash capex nor add again. Separate annual cash software additions not reliably resolved. FCF above follows cashflow + issuer reconciliation."
+    },
+    {
+      "item": "Operating income",
+      "resolution": "GAAP statement does not separately disclose operating income; provide null and pretax result explicitly"
+    },
+    {
+      "item": "Product normalized ratios",
+      "resolution": "Product-level PPD not disclosed, so no normalized Pet/Car GLR"
+    },
+    {
+      "item": "Cutoff completeness",
+      "resolution": "SEC direct403; company results page only Q1/Q2 and future Q3 release announcement support latest Q2. Parent separately verified filings through Oct19; this subagent did not independently retrieve SEC submissions."
+    }
+  ],
+  "sources_manifest": "sources.json; exact source URLs, locally saved original PDFs, SHA256, PDF page counts; normalized extracts label physical PDF page numbers",
+  "parent_message_note": "Cover shares, investment conflict and held/required regulatory surplus independently read again here after parent steering; subsequent CFO Oct15 event only parent-verified, not new original retrieved in this directory."
+}

@@ -1,0 +1,105 @@
+{
+  "financials": {
+    "FY2024": {
+      "revenue": 526.5,
+      "issuer_gross_profit": 166.9,
+      "net_income": -202.2,
+      "adjusted_EBITDA": -149.7,
+      "OCF": -11.4,
+      "capex": 9.4,
+      "SBC": 64.5,
+      "ordinary_FCF": -20.8
+    },
+    "FY2025": {
+      "revenue": 737.9,
+      "issuer_gross_profit": 293.4,
+      "net_income": -165.5,
+      "adjusted_EBITDA": -118.1,
+      "OCF": -16.5,
+      "capex": 9.4,
+      "SBC": 61.3,
+      "ordinary_FCF": -25.9
+    },
+    "H12025": {
+      "revenue": 315.3,
+      "issuer_gross_profit": 102.9,
+      "net_income": -106.3,
+      "adjusted_EBITDA": -87.9,
+      "OCF": -41.7,
+      "capex": 4.4,
+      "SBC": 25.7,
+      "ordinary_FCF": -46.1
+    },
+    "H12026": {
+      "revenue": 552.4,
+      "issuer_gross_profit": 213.3,
+      "net_income": -79.2,
+      "adjusted_EBITDA": -35.8,
+      "OCF": -4.0,
+      "capex": 8.1,
+      "SBC": 45.7,
+      "ordinary_FCF": -12.1
+    },
+    "TTM2026Q2": {
+      "revenue": 975.0,
+      "issuer_gross_profit": 403.8,
+      "net_income": -138.4,
+      "adjusted_EBITDA": -66.0,
+      "OCF": 21.2,
+      "capex": 13.1,
+      "SBC": 81.3,
+      "ordinary_FCF": 8.1
+    }
+  },
+  "checks": {
+    "FY25_GP": true,
+    "FY24_GP": true,
+    "H126_GP": true,
+    "H125_GP": true,
+    "Q226_GP": true,
+    "funding_borrowing_bridge": true,
+    "all_TTM_FCF_bridges": true
+  },
+  "H1_revenue_growth": 0.7519822391373294,
+  "H1_net_loss_reduction": 0.25493885230479774,
+  "H1_SBC_growth": 0.7782101167315176,
+  "Q2_IFP_growth": 0.32388776075318426,
+  "Q2_revenue_growth": 0.7940280316879951,
+  "Q2_GEP_growth": 0.31747919143876313,
+  "rounded_product_increment_analysis": {
+    "pet_share_of_IFP_increment": 0.5498575498575499,
+    "car_share": 0.2535612535612536,
+    "pet_plus_car_share": 0.8034188034188035,
+    "limitation": "Uses rounded product supplement, not precise statutory contribution"
+  },
+  "GLR_change_points": {
+    "attritional": 1,
+    "CAT": -2,
+    "LAE": -2,
+    "PPD": -4,
+    "total": -7
+  },
+  "source_locators": {
+    "FY24_FY25": [
+      "fy25-10k.txt PDF pages78/84/100/102"
+    ],
+    "H1": [
+      "q2-10q.txt PDF pages7/9",
+      "q2-letter.txt PDF pages11/23/24/25"
+    ],
+    "insurance": [
+      "q2-letter.txt PDF page34"
+    ],
+    "capital": [
+      "q2-10q.txt PDF pages6/17/18/23/45",
+      "q2-letter.txt PDF page10"
+    ]
+  },
+  "parent_original_review": true,
+  "source_conflict": {
+    "MDA_investments": 695.2,
+    "statement_investments": 777.7,
+    "action": "Prefer balance sheet plus issuer shareholder letter; unexplained, not relabeled as restricted cash."
+  },
+  "Chewy_distinction": "Q2 10Q PDFp18: Omnibus/Warrant Agreements terminated April4,2025; 3,170,834 unvested warrants canceled; agency agreement explicitly remains in effect."
+}

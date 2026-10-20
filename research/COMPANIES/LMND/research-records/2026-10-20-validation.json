@@ -1,0 +1,28 @@
+{
+  "research_date": "2026-10-20",
+  "numbered_sections": 9,
+  "event_rows": 19,
+  "candidate_records": 37,
+  "company_archive_entries": 123,
+  "company_archive_window_articles_read": 24,
+  "parent_financial_checks": 7,
+  "financial_worker_checks_passed": 46,
+  "valuation_assertions": 6,
+  "cited_sources_with_literal_quotes": 24,
+  "source_gate_note": "Citation evidence gate is not a factual-completeness certificate; source coverage limitations explicit in section2/8 and records.",
+  "site_tests_pass": 3,
+  "site_tests_fail": 0,
+  "built_pages": 52,
+  "ticker_scoped_index_verified": true,
+  "old_report_bytes_retained": true,
+  "generated_index_changes": [
+    "LMND"
+  ],
+  "built_live_body_checked": true,
+  "disclosed_missing_originals": [
+    "Rhode Island consent order body",
+    "Oct15 CFO amendment body",
+    "some counterparty/regulatory originals",
+    "current exact share rollforward"
+  ]
+}
