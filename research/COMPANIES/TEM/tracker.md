@@ -1,12 +1,65 @@
 # Tempus AI（TEM）Tracker
 
-Last updated: 2026-10-11
+Last updated: 2026-10-20
 
 ## Current Research View
 
-**投资观点：**中性等待进一步证据，经营方向仍建设性。较5月研究，调整盈利和检测采用有进步，但现价更高、Personalis并购后的每股价值尚不能可靠核定。
+**中性偏谨慎，经营趋势积极但$64.34缺少厚安全边际。** 截至2026-10-20、价格取10-19 Nasdaq常规收盘$64.34，较旧10/9 $70.93下降约9.29%。更新后研究者2028末**合并Personalis条件估值折现现值**：Bear ~$16–30，Base ~$40–66，Bull ~$77–117，每股美元；不同业务、股数与现金成本前提分别在底稿，而非公司目标价或已完成并购估值。参考价提供商有$64.32与$64.34的小额冲突，按Investing $64.34统一模型。
 
 ## Current Main Thesis
+
+Tempus已存在真实医生/保险检测及药企数据付款两条业务流；2026Q2营收$382.486M（Diagnostics $289.333M, Data/Apps $93.153M），Oncology量+31%，MRD约9千测试，Insights同比+36%，数据约$200M新签授权。2026H1收入$730.602M，TTM收入$1.432B，但**TTM GAAP经营亏-$283.033M、FCF -$272.973M**。Q2净利润+$5.642M主要受到**$98.5M市价证券未实现收益**驱动，主营仍亏损$75.913M。Q2调整后EBITDA +$8.044M是non-GAAP，不代表现金流转正。2026H1股票薪酬$106.827M（14.6% H1收入），还要判断普通股每股资本成本。
+
+## Latest Events and Corrected Prior Views — 2026-10-20
+
+- **2026-10-19** Tempus披露NSCLC病理AI生物标志物预筛研究，60k+病例、12标志物敏感度均>80%，**研究而非商业化收入**。[原文](https://investors.tempus.com/news-releases/news-release-details/tempus-presents-data-demonstrating-ai-enabled-pre-screening-can)
+- **2026-10-15** 公司**官方确定2026-11-02美国盘前**公布2026Q3财报、8:45am ET电话会（旧版“日期未核实”已过时）；截止研究日Q3财报尚未公布。[官方日程](https://investors.tempus.com/news-releases/news-release-details/tempus-report-third-quarter-2026-financial-results-november-2)
+- **2026-10-07** [Moderna/Merck多年个性化肿瘤治疗合作](https://investors.tempus.com/news-releases/news-release-details/tempus-announces-multi-year-collaboration-moderna-and-merck)，帮助样本收集与NGS，相关药物的商业化、审批及经济条款未确认；不凭合作方品牌推算订单。
+- **2026-10-02** [Personalis收购S-4/A正式修订稿](https://investors.tempus.com/static-files/92ccddd7-9534-44b6-a1ba-a439fd60aace)已取得（旧10-11研究未取得S4的状态现已失效）。S4第111页披露2026-08-15 PSNL实际普通股106.875990M、Tempus/CEO共同表决及处分权关联股份13.039067M；第21–22页披露$16.25/股、TEM收盘前15日VWAP大于$48.42时交换比率=16.25/VWAP、否则上限0.3356，以及最多50%现金选择及税务条件；**最终增发TEM数、奖励/支付仍留白**，并购截至本次仍未确认交割。
+- **换股示意（非实际汇率）**：仅把2026-10-19当日价$64.34代替未来15日VWAP做演算，尚待收购约93.836923M PSNL股×($16.25/$64.34)=约**23.6999M TEM新股**，相对2026-07-24两类股180.434756M的13.13%“新增/原有”比例；不包括PSNL未来奖励、Tempus期后SBC/可转债。若约50%现金选择则现金约**$762.425M**、股票约**11.85M**，但实际税务最低股票部分和融资费用可能限制现金比例。不同选择对股东价值并非同价（减少新增股数不等于无需支付现金）。
+- **2026-09-21** Recursion合同变更是**可酌情支付最多$84M/2年换成确定$42M/3年**+新RNA模型非独家许可，不能说无条件新增$42M订单。[公告](https://investors.tempus.com/news-releases/news-release-details/tempus-and-recursion-extend-existing-data-license-agreement-and)
+- **2026-09-28及08-24** ECG-MR、ECG-PH分别获适用FDA 510(k)许可；不等于独立确诊/规模化获利。[心瓣反流AI原文](https://investors.tempus.com/news-releases/news-release-details/tempus-receives-fda-clearance-its-ecg-mr-ai-product-designed)
+- **2026-09-11** 100k疾病相关全基因组数据、远期1m是构建**计划**；9/09 up to $9.5M ARPA-H奖励是条件资金上限。
+- **2026-08-04** Personalis Q2官方确认收入**$22.4M**、单季GAAP净亏**-$31.683M**、约$212.7M现金及短期投资；Q2对Tempus相关方收入**$8.4M**，合并必须抵销，不能把双方收入无脑相加。[Personalis Q2](https://investors.personalis.com/news-releases/news-release-details/personalis-reports-second-quarter-results-and-recent-highlights)
+- **2026-05-29** [xT CDx tumor-only FDA批准](https://investors.tempus.com/news-releases/news-release-details/tempus-receives-fda-approval-tumor-only-xt-cdx-enabling)：CFO预计2027起适用检测ASP有约**$200**潜在改善，**不是2026所有样本真实净回款**。
+- **2026Q2现金融资更新**：2026-06-30不受限现金$599.614M，市场化股权证券$216.377M（含Personalis股票，受价格波动），受限现金$4.724M；2030可转债$750M面值，2032 0%可转债实际发$460M（不是早期定价400M），Google票据账面$187.929M、票据应息$19.155M、经营租赁$83.458M。简化**单独Tempus净优先索偿$684.551M**，若合并Personalis，则TEM原持股必须抵销且Personalis估计净现金约$211M不可重复加值。
+- **FY2026指引**：独立Tempus收入**$1.595–1.605B**、调整EBITDA约**$65M**，**不含Personalis**；不能把收购前公司指导当全部合并体指导。
+
+## Current Valuation Record
+
+[2026-10-20研究与复算JSON](research-records/2026-10-20-research.json)记录买方与目标主体、事件核验覆盖矩阵、换股公式、资本桥、三个一致性情景及现值。条件独立TEM市值：$64.34×2026-07-24 A/B股180.434756M≈**$11.609B**；简化EV≈**$12.294B**，相对于2026**独立TEM**收入$1.6B指引中值≈7.68x。并非10月实时股数/并购后EV。基于**2028-12-31合并且去重后的收入**、情景EV/收入、未来总索偿、已假设包含SBC与并购稀释的未来股数，按14%股权要求收益率折现**803天至2026-10-20**（因子1.333844）：
+- **Bear** 2028合并收入$1.95–2.25B、倍数3.5–4.5x、净索偿1.2–1.5B、股数225–242M，约**$16.50–29.74**现值。
+- **Base** 收入$2.45–2.85B、倍数5.5–7x、净索偿.75–1.0B、股数219–231M，约**$40.49–65.73**现值。
+- **Bull** 收入$3.0–3.6B、倍数8–9.5x、净索偿.3–.7B、股数217–228M，约**$76.62–117.12**现值。
+- 反推现价若2028并表销售$2.7B、220M股、净索偿$0.9B，要求2028企业价值约**$19.78B**/销售约**7.33x**，位于本研究基础倍数假设上沿之上。收入倍数为主观经营质量假设，未独立证明完整同业倍数序列；未来净债/股数强烈受交易现金选项影响。当前和过去一年Forward P/E因GAAP盈利为负不适用。
+- **不重复扣可转债与转换股份**：当债券作为未转债被减入净索偿时，不给同一债券增加转换股数；未来普通股数已包含研究假设的奖励净稀释，不再对同一SBC双扣现金。不同交易终态要完整重算。
+
+## Gates, Risks, Evidence Boundary
+
+**最重要下一验证**：2026-11-02 Q3财报（已确定）、Personalis股东投票及最终S-4/交割/现金选择（日期/金额尚未确认）、2027 xT真实净检测ASP提升、Recursion/Moderna/Merck药企现金付款、新融资与SBC对净流通股的影响。
+
+**最强反证**：①Q2净利+$5.642M有$98.5M市价证券未实现收益，经营亏-$75.913M、TTM FCF -$272.973M；②Personalis Q2自身仍亏31.683M，且合并需抵消关联交易；③高估TCV、诊断总检测量、FDA产品数量和未来研究计划会高估股东现金；④10月股数、并购最终奖酬/现金、医保净价、药企私有合同仍未核实。加分条件是实际收款、MRD毛利、数据续费、合并股数闭合且FCF缺口收窄；减分条件是融资/股本超预期或报销弱于目标。
+
+**重大事件覆盖并非穷尽**：按2025-10-20—2026-10-20窗口检查公司可见IR及关键SEC 10-K/10-Q/S4、Personalis财报、部分药企/监管原文；没有全量分页核查所有SEC和所有合作方/医保机构，不能声明全年“事件覆盖已完成”。S4/A最终发行股数/现金选择/股东会议日期仍空白，旧版基于无S4的结论在此处由“**已存在关键但仍初步的原始文件**”替代。
+
+## Current and Historical Reports
+
+- **[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)**
+- **[2026-10-20来源和公式](research-records/2026-10-20-research.json)**
+- [2026-10-11旧版完整报告](deep-research/2026-10-11-deep-research-update.md)
+- [2026-10-11旧版计算记录](research-records/2026-10-11-research.json)
+
+---
+
+## Historical tracker — snapshot before 2026-10-20 (not current opinion)
+
+Historical Last updated: 2026-10-11
+
+## 2026-10-11 Research View (historical)
+
+**投资观点：**中性等待进一步证据，经营方向仍建设性。较5月研究，调整盈利和检测采用有进步，但现价更高、Personalis并购后的每股价值尚不能可靠核定。
+
+## 2026-10-11 Main Thesis (historical)
 
 **核心逻辑：**检测服务形成临床与分子数据，药企付费使用数据和模型；这不是纯软件生意，报销、实验室成本与合同续约决定平台溢价。
 
