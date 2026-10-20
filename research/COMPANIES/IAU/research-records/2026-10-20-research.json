@@ -1,0 +1,190 @@
+{
+  "identity": {
+    "ticker": "IAU",
+    "issuer": "iShares Gold Trust",
+    "CIK": "0001278680",
+    "market": "NYSE Arca",
+    "asof": "2026-10-20",
+    "type": "Physical bullion grantor trust, not corporate equity",
+    "fiscalYearEnd": "12-31"
+  },
+  "quote": {
+    "asof": "2026-10-19 NY 4pm",
+    "price": 77.85,
+    "nav": 77.95,
+    "discountPct": -0.12828736369469018,
+    "source": "https://stockanalysis.com/etf/iau/history/",
+    "official": "https://www.ishares.com/us/products/239561/ishares-gold-trust-fund",
+    "officialClosingFieldStale": "Oct16 $78.34, exclude",
+    "LBMAUSD": 4147.8
+  },
+  "holdings": {
+    "asof": "2026-10-19",
+    "ounces": 14883534.15,
+    "tonnes": 462.93,
+    "shares": 791850000,
+    "AUM": 61725847860,
+    "ouncesPerShare": 0.0187959009282061,
+    "sponsorFee": 0.0025,
+    "bidAskMedian30day": 0.0001,
+    "bidAskAsOf": "2026-10-16",
+    "APBasketShares": 50000,
+    "custodian": "JPMorgan London",
+    "trustee": "BNY Mellon",
+    "sponsor": "iShares Delaware Trust Sponsor LLC"
+  },
+  "financial": {
+    "unit": "USD",
+    "columnNames": [
+      "Sponsor fee",
+      "Gold realized+unrealized result",
+      "GAAP net change from operations"
+    ],
+    "periods": {
+      "FY2024": [
+        73384206,
+        6625748061,
+        6552363855
+      ],
+      "FY2025": [
+        124023218,
+        24386779760,
+        24262756542
+      ],
+      "H12025": [
+        51389242,
+        8914467580,
+        8863078338
+      ],
+      "H12026": [
+        90772866,
+        -3983282976,
+        -4074055842
+      ],
+      "TTM": [
+        163406842,
+        11489029204,
+        11325622362
+      ]
+    },
+    "TTM": "FY2025-H12025+H12026",
+    "operatingCashFlow": 0,
+    "corporateFCF": "N/A",
+    "Jun2026NAV": 60092738000,
+    "Jun2026Shares": 793600000,
+    "Jun2026GoldOunces": 14929282,
+    "Jun2026FeePayable": 13298722,
+    "Dec2025GoldOunces": 15875516,
+    "Dec2025Shares": 842850000,
+    "H12026SharesCreated": 42750000,
+    "H12026SharesRedeemed": 92000000
+  },
+  "valuation": {
+    "method": "same-date gold-backed NAV and future 1-year gold-price shock, not discounted DCF",
+    "todayNAV": 77.95,
+    "annualFee": 0.0025,
+    "goal": "2027-10-20",
+    "scenarios": {
+      "bear": [
+        {
+          "goldPct": -20,
+          "LBMAPrice": 3318.2400000000002,
+          "futureUndiscountedNAV": 62.20410000000001
+        },
+        {
+          "goldPct": -10,
+          "LBMAPrice": 3733.0200000000004,
+          "futureUndiscountedNAV": 69.9796125
+        }
+      ],
+      "base": [
+        {
+          "goldPct": -5,
+          "LBMAPrice": 3940.41,
+          "futureUndiscountedNAV": 73.86736875
+        },
+        {
+          "goldPct": 10,
+          "LBMAPrice": 4562.580000000001,
+          "futureUndiscountedNAV": 85.53063750000001
+        }
+      ],
+      "bull": [
+        {
+          "goldPct": 15,
+          "LBMAPrice": 4769.97,
+          "futureUndiscountedNAV": 89.41839375
+        },
+        {
+          "goldPct": 30,
+          "LBMAPrice": 5392.14,
+          "futureUndiscountedNAV": 101.08166250000001
+        }
+      ]
+    },
+    "formula": "NAV 77.95*(1+gold move)*(1-0.0025)",
+    "discountedToToday": false,
+    "forwardPE": "N/A",
+    "currentFeeAnnualUSDper10000": 25,
+    "annualSavingIAUMper10000": 16,
+    "annualSavingGLDMper10000": 15,
+    "ouncePerShareDec2025": 0.01883551758913211,
+    "ouncePerShareOct2026": 0.0187959009282061
+  },
+  "comparables": {
+    "IAUM": {
+      "fee": 0.0009,
+      "priceOct19": 41.28,
+      "NAVOct19": 41.32,
+      "assetsOct19": 7998069525,
+      "source": "https://www.ishares.com/us/products/306979/ishares-gold-trust-micro"
+    },
+    "GLDM": {
+      "fee": 0.001,
+      "source": "https://www.ssga.com/us/en/individual/etfs/spdr-gold-minishares-gldm"
+    },
+    "GLD": {
+      "fee": 0.004,
+      "source": "https://www.ssga.com/us/en/individual/resources/doc-viewer"
+    }
+  },
+  "sources": [
+    {
+      "name": "IAU 2025 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1278680/000143774926006055/iau20251231_10k.htm"
+    },
+    {
+      "name": "IAU 2026 H1 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1278680/000143774926026002/iau20260630c_10q.htm"
+    },
+    {
+      "name": "Federal Reserve Sep16 hike",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+    },
+    {
+      "name": "WGC Oct7 gold ETF flows",
+      "url": "https://www.gold.org/goldhub/data/global-gold-backed-etf-holdings-and-flows"
+    },
+    {
+      "name": "WGC Q2 Central Banks",
+      "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q2-2026/central-banks"
+    }
+  ],
+  "eventAudit": {
+    "window": [
+      "2025-10-20",
+      "2026-10-20"
+    ],
+    "examined": "iShares product Oct19, audited 2025 10K, 2026 H1 10Q, March 424i administrative, Fed Sept16 release, WGC July and Oct, IAUM GLDM sponsors, Reuters Oct14 CPI",
+    "facts": "Oct19 NAV and physical tonnes; Sept gold ETF Q3 flows $31B global (not IAU), Fed Sep16 +25bps; IAU quarterly SEC disclosures",
+    "notMaterial": "Mar30 424i is registration fee calculation not expense cut",
+    "coverage": "Partial, not comprehensive twelve-month every SEC filing and physical inspection",
+    "gaps": [
+      "independent gold-bar inspections and full bar list",
+      "all SEC documents over 12mo",
+      "all daily LBMA fixing history",
+      "counterparty insurance and broker commission details"
+    ]
+  },
+  "tax": "US individual >1y collectibles maximum federal capital gains tax 28%; not applicable as fixed tax rate to every non-US tax resident"
+}
