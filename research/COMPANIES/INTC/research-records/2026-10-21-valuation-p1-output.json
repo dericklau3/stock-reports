@@ -1,0 +1,256 @@
+{
+  "schema_version": 2,
+  "ticker": "INTC",
+  "valuation_date": "2026-10-21",
+  "currency": "USD",
+  "reference_price_usd": 91.69,
+  "reference_price_as_of": "2026-10-20",
+  "capital": {
+    "shares_m": 5286.105262,
+    "cash_m": 49427,
+    "debt_m": 50537,
+    "other_claims_m": 16074
+  },
+  "capital_status": "provisional",
+  "results": [
+    {
+      "pv_explicit_fcff_m": 29927.11455262397,
+      "pv_terminal_m": 93399.16759708214,
+      "enterprise_value_m": 123326.28214970611,
+      "present_value_per_share_usd": 20.07948704932658,
+      "wacc": 0.115,
+      "terminal_method": "perpetuity",
+      "terminal_parameter": 0.025,
+      "years": [
+        {
+          "end_date": "2027-10-21",
+          "years_from_valuation": 0.999315537303217,
+          "ebit_m": 7800,
+          "cash_taxes_m": 1560,
+          "fcff_m": 1940,
+          "revenue_m": 65000
+        },
+        {
+          "end_date": "2028-10-21",
+          "years_from_valuation": 2.001368925393566,
+          "ebit_m": 13500,
+          "cash_taxes_m": 2700,
+          "fcff_m": 6700,
+          "revenue_m": 75000
+        },
+        {
+          "end_date": "2029-10-21",
+          "years_from_valuation": 3.0006844626967832,
+          "ebit_m": 16600,
+          "cash_taxes_m": 3320,
+          "fcff_m": 9280,
+          "revenue_m": 83000
+        },
+        {
+          "end_date": "2030-10-21",
+          "years_from_valuation": 4,
+          "ebit_m": 20020,
+          "cash_taxes_m": 4004,
+          "fcff_m": 12216,
+          "revenue_m": 91000
+        },
+        {
+          "end_date": "2031-10-21",
+          "years_from_valuation": 4.999315537303217,
+          "ebit_m": 22540,
+          "cash_taxes_m": 4508,
+          "fcff_m": 14132,
+          "revenue_m": 98000
+        }
+      ],
+      "terminal_share_of_ev": 0.7573338461926926,
+      "sensitivity": [
+        {
+          "wacc": 0.10500000000000001,
+          "cells": [
+            {
+              "terminal_parameter": 0.02,
+              "per_share_usd": 22.067786554006574
+            },
+            {
+              "terminal_parameter": 0.025,
+              "per_share_usd": 23.38637565350239
+            },
+            {
+              "terminal_parameter": 0.030000000000000002,
+              "per_share_usd": 24.880776632930996
+            }
+          ]
+        },
+        {
+          "wacc": 0.115,
+          "cells": [
+            {
+              "terminal_parameter": 0.02,
+              "per_share_usd": 19.067896881059664
+            },
+            {
+              "terminal_parameter": 0.025,
+              "per_share_usd": 20.07948704932658
+            },
+            {
+              "terminal_parameter": 0.030000000000000002,
+              "per_share_usd": 21.21008782562491
+            }
+          ]
+        },
+        {
+          "wacc": 0.125,
+          "cells": [
+            {
+              "terminal_parameter": 0.02,
+              "per_share_usd": 16.64893195687431
+            },
+            {
+              "terminal_parameter": 0.025,
+              "per_share_usd": 17.443760490071277
+            },
+            {
+              "terminal_parameter": 0.030000000000000002,
+              "per_share_usd": 18.322255184657404
+            }
+          ]
+        }
+      ],
+      "reverse": {
+        "type": "required_perpetual_growth",
+        "value": 0.0959555724026392,
+        "implied_market_ev_m": 501866.99147278,
+        "required_terminal_ev_m": 813258.5802337498
+      },
+      "name": "dcf_base",
+      "scenario": "base",
+      "method": "fcff_dcf",
+      "upside_vs_reference": -0.781006794096122
+    },
+    {
+      "pv_explicit_fcff_m": 69800.93114024962,
+      "pv_terminal_m": 276442.0588560047,
+      "enterprise_value_m": 346242.9899962543,
+      "present_value_per_share_usd": 62.24979898938954,
+      "wacc": 0.1,
+      "terminal_method": "perpetuity",
+      "terminal_parameter": 0.03,
+      "years": [
+        {
+          "end_date": "2027-10-21",
+          "years_from_valuation": 0.999315537303217,
+          "ebit_m": 11520,
+          "cash_taxes_m": 2419.2,
+          "fcff_m": 6200.799999999999,
+          "revenue_m": 72000
+        },
+        {
+          "end_date": "2028-10-21",
+          "years_from_valuation": 2.001368925393566,
+          "ebit_m": 22500,
+          "cash_taxes_m": 4725,
+          "fcff_m": 14475,
+          "revenue_m": 90000
+        },
+        {
+          "end_date": "2029-10-21",
+          "years_from_valuation": 3.0006844626967832,
+          "ebit_m": 30449.999999999996,
+          "cash_taxes_m": 6394.499999999999,
+          "fcff_m": 20855.5,
+          "revenue_m": 105000
+        },
+        {
+          "end_date": "2030-10-21",
+          "years_from_valuation": 4,
+          "ebit_m": 38080,
+          "cash_taxes_m": 7996.799999999999,
+          "fcff_m": 25983.199999999997,
+          "revenue_m": 119000
+        },
+        {
+          "end_date": "2031-10-21",
+          "years_from_valuation": 4.999315537303217,
+          "ebit_m": 44880,
+          "cash_taxes_m": 9424.8,
+          "fcff_m": 30255.199999999997,
+          "revenue_m": 132000
+        }
+      ],
+      "terminal_share_of_ev": 0.7984047817372281,
+      "sensitivity": [
+        {
+          "wacc": 0.09000000000000001,
+          "cells": [
+            {
+              "terminal_parameter": 0.024999999999999998,
+              "per_share_usd": 69.04210214880106
+            },
+            {
+              "terminal_parameter": 0.03,
+              "per_share_usd": 74.24073616009674
+            },
+            {
+              "terminal_parameter": 0.034999999999999996,
+              "per_share_usd": 80.38457635526436
+            }
+          ]
+        },
+        {
+          "wacc": 0.1,
+          "cells": [
+            {
+              "terminal_parameter": 0.024999999999999998,
+              "per_share_usd": 58.52646055637748
+            },
+            {
+              "terminal_parameter": 0.03,
+              "per_share_usd": 62.24979898938954
+            },
+            {
+              "terminal_parameter": 0.034999999999999996,
+              "per_share_usd": 66.54595871978805
+            }
+          ]
+        },
+        {
+          "wacc": 0.11,
+          "cells": [
+            {
+              "terminal_parameter": 0.024999999999999998,
+              "per_share_usd": 50.51001384272949
+            },
+            {
+              "terminal_parameter": 0.03,
+              "per_share_usd": 53.28246829214965
+            },
+            {
+              "terminal_parameter": 0.034999999999999996,
+              "per_share_usd": 56.424583334825826
+            }
+          ]
+        }
+      ],
+      "reverse": {
+        "type": "required_perpetual_growth",
+        "value": 0.05416235626156576,
+        "implied_market_ev_m": 501866.99147278,
+        "required_terminal_ev_m": 695801.3178679672
+      },
+      "name": "dcf_bull",
+      "scenario": "bull",
+      "method": "fcff_dcf",
+      "upside_vs_reference": -0.3210840987088064
+    }
+  ],
+  "crosschecks": [],
+  "warnings": [
+    "Provisional capital bridge: dated inputs debt_m. Interim financing and dilution MUST be independently reconciled.",
+    "dcf_base: terminal value exceeds 75% of EV; conclusions are terminal-assumption sensitive",
+    "dcf_bull: terminal value exceeds 75% of EV; conclusions are terminal-assumption sensitive",
+    "Forward P/E peer matching not executed: no verified point-in-time GAAP/adjusted peer EPS for matching horizons.",
+    "Foundry SOTP not executed: internal foundry transfers, noncontrolling claims, future capex and ownership cannot yet be sufficiently isolated; do not assign unsupported standalone EV.",
+    "No model blends/weights outputs; reconcile differences explicitly rather than averaging prices."
+  ]
+}
