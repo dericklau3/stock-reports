@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "ticker": "INTC",
+  "valuation_date": "2026-10-21",
+  "currency": "USD",
+  "units": "USD millions and million shares; per-share USD",
+  "price": 91.69,
+  "price_as_of": "2026-10-20",
+  "capital": null,
+  "capital_status": "not_needed",
+  "results": [
+    {
+      "name": "bear_low",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "years": 2.19575633,
+      "discount_factor": 1.35918217,
+      "terminal_price_usd": 9.649123,
+      "present_value_per_share_usd": 7.099212,
+      "upside_vs_reference": -0.92257376,
+      "bridge_method": "terminal EV plus signed terminal net cash; discount equity at cost of equity",
+      "inputs": {
+        "revenue_m": 60000,
+        "ebit_margin": 0.1,
+        "exit_ev_ebit": 15,
+        "terminal_net_cash_m": -35000,
+        "forecast_shares_m": 5700,
+        "cost_of_equity": 0.15
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 60000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "参考Q2 2026 TTM收入57032百万美元和2025年全年52853百万美元；持续资本压力，外部Foundry付款规模难以扩大，2028盈利率只有10%，研究者预测而非共识。"
+        },
+        "ebit_margin": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "合并GAAP正常化EBIT利润率，考虑持续SBC、制造固定成本与持续资本压力，外部Foundry付款规模难以扩大，2028盈利率只有10%；不是公司承诺。"
+        },
+        "exit_ev_ebit": {
+          "value": 15,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028年15倍EV/EBIT终值，系周期性半导体与资本投入风险的主观倍数，不作为同行验证结果。"
+        },
+        "terminal_net_cash_m": {
+          "value": -35000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日EV向普通股价值桥接的有符号净现金与优先索偿综合假设；2026Q2现金短投29727m、债务50537m、少数权益15601m，8月发行完成后的现金未调和；并非现实净债数字。"
+        },
+        "forecast_shares_m": {
+          "value": 5700,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日经济稀释股数；2026-07-17报告5044m，8月新增发行242.105m，政府托管及条件权证和RSU仍需追踪，假设未来稀释。"
+        },
+        "cost_of_equity": {
+          "value": 0.15,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "对Intel的资本密集、执行风险和高不确定性采用15%股权要求回报率，非WACC、非市场数据。"
+        }
+      }
+    },
+    {
+      "name": "bear_high",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "years": 2.19575633,
+      "discount_factor": 1.35918217,
+      "terminal_price_usd": 14.912281,
+      "present_value_per_share_usd": 10.97151,
+      "upside_vs_reference": -0.88034126,
+      "bridge_method": "terminal EV plus signed terminal net cash; discount equity at cost of equity",
+      "inputs": {
+        "revenue_m": 60000,
+        "ebit_margin": 0.1,
+        "exit_ev_ebit": 20,
+        "terminal_net_cash_m": -35000,
+        "forecast_shares_m": 5700,
+        "cost_of_equity": 0.15
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 60000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "参考Q2 2026 TTM收入57032百万美元和2025年全年52853百万美元；持续资本压力，外部Foundry付款规模难以扩大，2028盈利率只有10%，研究者预测而非共识。"
+        },
+        "ebit_margin": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "合并GAAP正常化EBIT利润率，考虑持续SBC、制造固定成本与持续资本压力，外部Foundry付款规模难以扩大，2028盈利率只有10%；不是公司承诺。"
+        },
+        "exit_ev_ebit": {
+          "value": 20,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028年20倍EV/EBIT终值，系周期性半导体与资本投入风险的主观倍数，不作为同行验证结果。"
+        },
+        "terminal_net_cash_m": {
+          "value": -35000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日EV向普通股价值桥接的有符号净现金与优先索偿综合假设；2026Q2现金短投29727m、债务50537m、少数权益15601m，8月发行完成后的现金未调和；并非现实净债数字。"
+        },
+        "forecast_shares_m": {
+          "value": 5700,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日经济稀释股数；2026-07-17报告5044m，8月新增发行242.105m，政府托管及条件权证和RSU仍需追踪，假设未来稀释。"
+        },
+        "cost_of_equity": {
+          "value": 0.15,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "对Intel的资本密集、执行风险和高不确定性采用15%股权要求回报率，非WACC、非市场数据。"
+        }
+      }
+    },
+    {
+      "name": "base_low",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "years": 2.19575633,
+      "discount_factor": 1.30781805,
+      "terminal_price_usd": 43.103448,
+      "present_value_per_share_usd": 32.958291,
+      "upside_vs_reference": -0.6405465,
+      "bridge_method": "terminal EV plus signed terminal net cash; discount equity at cost of equity",
+      "inputs": {
+        "revenue_m": 75000,
+        "ebit_margin": 0.18,
+        "exit_ev_ebit": 20,
+        "terminal_net_cash_m": -20000,
+        "forecast_shares_m": 5800,
+        "cost_of_equity": 0.13
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 75000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "参考Q2 2026 TTM收入57032百万美元和2025年全年52853百万美元；DCAI延续增长，18A成本趋稳，Foundry亏损收窄但无过度盈利跃升，研究者预测而非共识。"
+        },
+        "ebit_margin": {
+          "value": 0.18,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "合并GAAP正常化EBIT利润率，考虑持续SBC、制造固定成本与DCAI延续增长，18A成本趋稳，Foundry亏损收窄但无过度盈利跃升；不是公司承诺。"
+        },
+        "exit_ev_ebit": {
+          "value": 20,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028年20倍EV/EBIT终值，系周期性半导体与资本投入风险的主观倍数，不作为同行验证结果。"
+        },
+        "terminal_net_cash_m": {
+          "value": -20000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日EV向普通股价值桥接的有符号净现金与优先索偿综合假设；2026Q2现金短投29727m、债务50537m、少数权益15601m，8月发行完成后的现金未调和；并非现实净债数字。"
+        },
+        "forecast_shares_m": {
+          "value": 5800,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日经济稀释股数；2026-07-17报告5044m，8月新增发行242.105m，政府托管及条件权证和RSU仍需追踪，假设未来稀释。"
+        },
+        "cost_of_equity": {
+          "value": 0.13,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "对Intel的资本密集、执行风险和高不确定性采用13%股权要求回报率，非WACC、非市场数据。"
+        }
+      }
+    },
+    {
+      "name": "base_high",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "years": 2.19575633,
+      "discount_factor": 1.30781805,
+      "terminal_price_usd": 54.741379,
+      "present_value_per_share_usd": 41.85703,
+      "upside_vs_reference": -0.54349406,
+      "bridge_method": "terminal EV plus signed terminal net cash; discount equity at cost of equity",
+      "inputs": {
+        "revenue_m": 75000,
+        "ebit_margin": 0.18,
+        "exit_ev_ebit": 25,
+        "terminal_net_cash_m": -20000,
+        "forecast_shares_m": 5800,
+        "cost_of_equity": 0.13
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 75000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "参考Q2 2026 TTM收入57032百万美元和2025年全年52853百万美元；DCAI延续增长，18A成本趋稳，Foundry亏损收窄但无过度盈利跃升，研究者预测而非共识。"
+        },
+        "ebit_margin": {
+          "value": 0.18,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "合并GAAP正常化EBIT利润率，考虑持续SBC、制造固定成本与DCAI延续增长，18A成本趋稳，Foundry亏损收窄但无过度盈利跃升；不是公司承诺。"
+        },
+        "exit_ev_ebit": {
+          "value": 25,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028年25倍EV/EBIT终值，系周期性半导体与资本投入风险的主观倍数，不作为同行验证结果。"
+        },
+        "terminal_net_cash_m": {
+          "value": -20000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日EV向普通股价值桥接的有符号净现金与优先索偿综合假设；2026Q2现金短投29727m、债务50537m、少数权益15601m，8月发行完成后的现金未调和；并非现实净债数字。"
+        },
+        "forecast_shares_m": {
+          "value": 5800,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日经济稀释股数；2026-07-17报告5044m，8月新增发行242.105m，政府托管及条件权证和RSU仍需追踪，假设未来稀释。"
+        },
+        "cost_of_equity": {
+          "value": 0.13,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "对Intel的资本密集、执行风险和高不确定性采用13%股权要求回报率，非WACC、非市场数据。"
+        }
+      }
+    },
+    {
+      "name": "bull_low",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "years": 2.19575633,
+      "discount_factor": 1.2825396,
+      "terminal_price_usd": 92.916667,
+      "present_value_per_share_usd": 72.447405,
+      "upside_vs_reference": -0.20986579,
+      "bridge_method": "terminal EV plus signed terminal net cash; discount equity at cost of equity",
+      "inputs": {
+        "revenue_m": 90000,
+        "ebit_margin": 0.25,
+        "exit_ev_ebit": 25,
+        "terminal_net_cash_m": -5000,
+        "forecast_shares_m": 6000,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 90000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "参考Q2 2026 TTM收入57032百万美元和2025年全年52853百万美元；服务器增长持续，外部14A付费客户转化，Foundry亏损显著收敛并推动集团利润率达到25%，研究者预测而非共识。"
+        },
+        "ebit_margin": {
+          "value": 0.25,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "合并GAAP正常化EBIT利润率，考虑持续SBC、制造固定成本与服务器增长持续，外部14A付费客户转化，Foundry亏损显著收敛并推动集团利润率达到25%；不是公司承诺。"
+        },
+        "exit_ev_ebit": {
+          "value": 25,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028年25倍EV/EBIT终值，系周期性半导体与资本投入风险的主观倍数，不作为同行验证结果。"
+        },
+        "terminal_net_cash_m": {
+          "value": -5000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日EV向普通股价值桥接的有符号净现金与优先索偿综合假设；2026Q2现金短投29727m、债务50537m、少数权益15601m，8月发行完成后的现金未调和；并非现实净债数字。"
+        },
+        "forecast_shares_m": {
+          "value": 6000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日经济稀释股数；2026-07-17报告5044m，8月新增发行242.105m，政府托管及条件权证和RSU仍需追踪，假设未来稀释。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "对Intel的资本密集、执行风险和高不确定性采用12%股权要求回报率，非WACC、非市场数据。"
+        }
+      }
+    },
+    {
+      "name": "bull_high",
+      "method": "equity_exit_ebit",
+      "target_date": "2028-12-31",
+      "years": 2.19575633,
+      "discount_factor": 1.2825396,
+      "terminal_price_usd": 111.666667,
+      "present_value_per_share_usd": 87.066837,
+      "upside_vs_reference": -0.05042167,
+      "bridge_method": "terminal EV plus signed terminal net cash; discount equity at cost of equity",
+      "inputs": {
+        "revenue_m": 90000,
+        "ebit_margin": 0.25,
+        "exit_ev_ebit": 30,
+        "terminal_net_cash_m": -5000,
+        "forecast_shares_m": 6000,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 90000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "参考Q2 2026 TTM收入57032百万美元和2025年全年52853百万美元；服务器增长持续，外部14A付费客户转化，Foundry亏损显著收敛并推动集团利润率达到25%，研究者预测而非共识。"
+        },
+        "ebit_margin": {
+          "value": 0.25,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "合并GAAP正常化EBIT利润率，考虑持续SBC、制造固定成本与服务器增长持续，外部14A付费客户转化，Foundry亏损显著收敛并推动集团利润率达到25%；不是公司承诺。"
+        },
+        "exit_ev_ebit": {
+          "value": 30,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028年30倍EV/EBIT终值，系周期性半导体与资本投入风险的主观倍数，不作为同行验证结果。"
+        },
+        "terminal_net_cash_m": {
+          "value": -5000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日EV向普通股价值桥接的有符号净现金与优先索偿综合假设；2026Q2现金短投29727m、债务50537m、少数权益15601m，8月发行完成后的现金未调和；并非现实净债数字。"
+        },
+        "forecast_shares_m": {
+          "value": 6000,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2028目标日经济稀释股数；2026-07-17报告5044m，8月新增发行242.105m，政府托管及条件权证和RSU仍需追踪，假设未来稀释。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "对Intel的资本密集、执行风险和高不确定性采用12%股权要求回报率，非WACC、非市场数据。"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "Terminal-multiple stress tests, NOT full FCFF/FCFE DCF; no interim cash flows or shareholder distributions valued.",
+    "HTTPS sources and analyst rationales are required but NOT independently verified by this offline calculator.",
+    "2028 terminal net cash and economic share counts are illustrative due to unverified August 2026 offering settlement and government escrow accounting."
+  ]
+}
