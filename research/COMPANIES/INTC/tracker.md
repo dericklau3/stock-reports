@@ -1,22 +1,34 @@
 # INTC Tracker — Intel Corporation
 
-Last updated: 2026-10-20
+Last updated: 2026-10-21
 
 ## Current Research View
 
-- **投资观点：**中性等待；10月19日收盘92.03美元较10月9日104.70美元下跌12.1%，价格压力缓解但仍缺乏外部Foundry盈利和现金净回报确认。
+- **投资观点：**中性偏谨慎；2026-10-20收盘91.69美元，CPU业务恢复，但Foundry外部客户经济回报、资本开支和增发后资本结构仍需正式Q3核验。
 
 ## Current Main Thesis
 
-- **核心逻辑：**Q2 Intel Products分部利润48.17亿美元；Foundry分部总收入57.65亿美元中外部代工及封测收入仅2.93亿美元，且Foundry亏20.89亿美元。下一阶段需看18A/14A外部客户持续付款、资本效率与普通股每股现金。
+- **核心逻辑：**2026Q2 Products经营利润48.17亿美元、Foundry亏20.89亿美元；外部Foundry/封测收入仅2.93亿美元（占Foundry总收入约5.1%）。P0/P1估值明显分歧，需警惕FCF和股数。
 
 ## Key Risks
 
-- **主要风险：**制造资本开支与约20.89亿美元的季度Foundry亏损、政府托管/认股权、8月大规模公开发行交叉影响；2026-08发行最终净现金和最新实际经济股数未调和，不应以国家战略地位替代每股估值。
+- **主要风险：**18A/14A持续资本开支、Foundry亏损、美元230亿总价增发后现金与经济股数尚未调和，且政府托管/权证易双计。
 
 ## Latest Research
 
-[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[2026-10-20研究底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11深研](deep-research/2026-10-11-deep-research-update.md)、[旧JSON底稿](research-records/2026-10-11-research.json)。
+[2026-10-21完整深研](deep-research/2026-10-21-deep-research.md)；[2026-10-21研究底稿](research-records/2026-10-21-research.md)；[P0/P1估值输入输出](research-records/2026-10-21-valuation-p1-output.json)。历史：[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)、[2026-10-11深研](deep-research/2026-10-11-deep-research-update.md)、[旧JSON底稿](research-records/2026-10-11-research.json)。
+## 2026-10-21 完整深研更新（追加历史）
+
+- **本次完整报告：**[2026-10-21-deep-research.md](deep-research/2026-10-21-deep-research.md)；[本次证据/计算/缺口研究底稿](research-records/2026-10-21-research.md)；[P0输入](research-records/2026-10-21-valuation-input.json)、[P0结果](research-records/2026-10-21-valuation-output.json)、[P1输入](research-records/2026-10-21-valuation-p1-input.json)、[P1结果](research-records/2026-10-21-valuation-p1-output.json)。保留10月20日与历史报告不覆盖。
+- **实际新增事实与时点：**2026-10-20 INTC常规收盘**$91.69**，较2026-10-19 **$92.03**下降0.37%；2026-10-21时最新仍为2026-06-27截止Q2 10-Q，Q3财报官方日程**2026-10-29美股盘后**。没有将未发布的Q3真实业绩、期后资产负债表或新14A外部客户收费认定为事实。
+- **继续成立的核心经济事实：**Q2 Products营业利润$4.817bn、Foundry亏$2.089bn；外部代工及封测收入仅$0.293bn，占Foundry总分部$5.765bn约5.1%；2026 H1调整FCF−$10.435bn但含Apollo大额回购。必须分别判断财务会计利润、FCF、实际外部客户付费和经济股份分母。
+- **P0 2028股权退出EBIT条件现值，基准$91.69：**保守$7.10–10.97、基础$32.96–41.86、乐观$72.45–87.07；2028末EBIT目标日与净现金代理同日，按15%/13%/12%股权回报要求折现2.196年。模型不是逐年现金流；2028盈利与净现金、退出倍数均为分析师假设。
+- **P1逐年FCFF DCF：**基础$20.08、强乐观$62.25（滚动未来5年2027–2031），终值占比约75.7%和79.8%；明显低于P0，主要因为逐年资本开支。不得简单平均模型；逆推现价需异常积极的长期FCF假设。Bear DCF因长期现金流难以界定未提供正价；Forward P/E同比同行和SOTP缺关键同口径证据未硬编。
+- **资本和稀释的优先核验：**2026Q2现金+短投$29.727bn、债$50.537bn、NCI$15.601bn，7月17日报告股数约5.044bn；8月10/11公开发行210.526m股+$31.579m超额配售，**合计242.105m股、总价$23bn**。最终实际净现金、Q3现金消耗、政府143m escrow股份及241m条件warrants经济口径未充分调和；不得把全部托管股份既作为新增股数又当衍生负债重复索偿。P1采用5.286bn股及现金49.427bn等**未审计临时代理**，不应作为精确已验证市值或公允价值。
+- **重要日期与来源：**2026-10-12 D-series送样（[Intel原文](https://www.intc.com/news-events/press-releases/detail/1783/intel-accelerates-open-infrastructure-for-the-agentic-ai-era)）；09-08 High-NA（[Intel](https://www.intc.com/news-events/press-releases/detail/1781/intel-foundry-and-asml-collaborate-to-accelerate-industry)、[ASML](https://investor.asml.com/news-releases/news-release-details/intel-foundry-and-asml-collaborate-accelerate-industry-readiness-high-na-euv)）；08-10/11发行及全额配售（[8-K](https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-346806/d117670d8k.htm)）；07-21 Fortinet（[双方新闻](https://www.intc.com/news-events/press-releases/detail/1775/intel-and-fortinet-collaborate-to-advance-cybersecurity)）；04-09 Google（[Intel](https://www.intc.com/news-events/press-releases/detail/1766/intel-and-google-deepen-collaboration-to-advance-ai)）；04-01/04-08 Apollo Fab34回购协议/交割（[Intel](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab)）；2025-12-26完成NVIDIA投资，12-29披露（[8-K](https://www.sec.gov/Archives/edgar/data/50863/000005086325000204/intc-20251226.htm)）。它们对工程/资金有不同影响，但无证据证明均已形成外部利润。
+- **研究限制/下一关：**本次近12个月事件IR新闻归档及已知主要SEC/伙伴定点查阅，不是全量8-K、全部DOC/伙伴原始披露逐项覆盖；P0/P1输入输出已记录数学复算，尚缺在仓库工作目录实际调用原Python CLI的执行日志和P2 SHA256密封快照，故不宣称全部计算脚本验收已通过。下次优先在2026-10-29财报后重建最新股权/净索偿、外部Foundry付费和现金CAPEX、14A客户商业合同，并完成CLI/P2冻结，比较历史时点预测（尚无到期回测）。
+- **观点保持：**中性偏谨慎。只有长期客户付费、Foundry亏损收窄、未来融资和股本稳定且FCF改善并存才增加信心；若相反则下调。
+
 ## 2026-10-20 深研更新（追加历史）
 
 - 本次研究：[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)，[研究与估值底稿](research-records/2026-10-20-research.md)。不覆盖2026-10-11版本。
