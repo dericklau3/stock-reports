@@ -1,0 +1,478 @@
+{
+  "schema_version": 2,
+  "ticker": "INTC",
+  "currency": "USD",
+  "valuation_date": "2026-10-21",
+  "price": {
+    "value": 91.69,
+    "basis": "market",
+    "as_of": "2026-10-20",
+    "source_url": "https://stockanalysis.com/stocks/intc/history/"
+  },
+  "capital": {
+    "bridge_as_of": "2026-10-21",
+    "reconciliation_note": "Pro forma, not reconciled. 2026-07-17 reported 5,044m shares + August 2026 fully exercised 242.105m offering = 5,286.105m. Government escrow shares may overlap. Cash uses 2026Q2 unrestricted cash plus short investments 29,727m + an illustrative 19,700m assumed base offering net cash; does not include the entire 3bn extra allotment, actual fees, Q3 operating and capital spending. 15,601m noncontrolling interests plus 473m historic lease proxy. Does not double-subtract government escrow derivative. All Q3 capital entries remain unconfirmed.",
+    "shares_m": {
+      "value": 5286.105262,
+      "basis": "analyst",
+      "as_of": "2026-10-21",
+      "rationale": "2026-07-17 actual 5044m shares plus Aug 10/11 242.105262m offered/option exercised; pro forma not audited and escrow classification unknown."
+    },
+    "cash_m": {
+      "value": 49427,
+      "basis": "analyst",
+      "as_of": "2026-10-21",
+      "rationale": "2026Q2 29727m cash and short-term investments + only 19700m assumed net proceeds of basic Aug 20bn offering, ignoring extra 3bn exercise and later Q3 expenditure; assumption rather than current cash evidence."
+    },
+    "debt_m": {
+      "value": 50537,
+      "basis": "filing",
+      "as_of": "2026-07-24",
+      "source_url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000157/intc-20260627.htm"
+    },
+    "other_claims_m": {
+      "value": 16074,
+      "basis": "analyst",
+      "as_of": "2026-10-21",
+      "rationale": "2026Q2 GAAP NCI 15601m plus 473m old leases proxy, governmental escrow fair value liability excluded to avoid double charging economic shares."
+    }
+  },
+  "analyses": [
+    {
+      "name": "dcf_base",
+      "scenario": "base",
+      "method": "fcff_dcf",
+      "wacc": {
+        "value": 0.115,
+        "basis": "analyst",
+        "as_of": "2026-10-21",
+        "rationale": "制造业风险及资金成本主观WACC 11.5%，不是股权成本；CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入"
+      },
+      "justification": "Five rolling forward years beginning after 2026-10-21 model cash-tax EBIT, depreciation, cash capex, operating working capital separately; avoids recognizing already elapsed FY2026 quarters again.",
+      "years": [
+        {
+          "end_date": "2027-10-21",
+          "revenue_m": {
+            "value": 65000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.12,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 13500,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 17000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 800,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2028-10-21",
+          "revenue_m": {
+            "value": 75000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.18,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 14300,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 17500,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 900,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2029-10-21",
+          "revenue_m": {
+            "value": 83000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 15000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 18000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2030-10-21",
+          "revenue_m": {
+            "value": 91000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.22,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 15300,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 18000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1100,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2031-10-21",
+          "revenue_m": {
+            "value": 98000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.23,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 15500,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 18200,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1200,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。CPU收入恢复、制造成本吸收逐渐改善，Foundry仍需资本投入；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        }
+      ],
+      "terminal": {
+        "method": "perpetuity",
+        "growth": {
+          "value": 0.025,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2031年后可持续名义FCFF增长 2.5%，这是终值主观假设且低于WACC；不把公司战略目标视为历史。"
+        }
+      }
+    },
+    {
+      "name": "dcf_bull",
+      "scenario": "bull",
+      "method": "fcff_dcf",
+      "wacc": {
+        "value": 0.1,
+        "basis": "analyst",
+        "as_of": "2026-10-21",
+        "rationale": "制造业风险及资金成本主观WACC 10%，不是股权成本；DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景"
+      },
+      "justification": "Five rolling forward years beginning after 2026-10-21 model cash-tax EBIT, depreciation, cash capex, operating working capital separately; avoids recognizing already elapsed FY2026 quarters again.",
+      "years": [
+        {
+          "end_date": "2027-10-21",
+          "revenue_m": {
+            "value": 72000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.16,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.21,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 14000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 16000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 900,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2027-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2028-10-21",
+          "revenue_m": {
+            "value": 90000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.21,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 15000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 17000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1300,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2028-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2029-10-21",
+          "revenue_m": {
+            "value": 105000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.29,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.21,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 16200,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 18000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1400,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2029-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2030-10-21",
+          "revenue_m": {
+            "value": 119000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.32,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.21,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 17400,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 20000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1500,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2030-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        },
+        {
+          "end_date": "2031-10-21",
+          "revenue_m": {
+            "value": 132000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。"
+          },
+          "ebit_margin": {
+            "value": 0.34,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。按GAAP EBIT正常化，含持续SBC费用。"
+          },
+          "cash_tax_rate": {
+            "value": 0.21,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。简单现金税率，未单独给NOL收益。"
+          },
+          "d_and_a_m": {
+            "value": 18500,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。制造密集型折旧估计。"
+          },
+          "capex_m": {
+            "value": 22000,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。维护及增长现金CAPEX，排除已发生的Apollo一次性回购。"
+          },
+          "delta_nwc_m": {
+            "value": 1700,
+            "basis": "analyst",
+            "as_of": "2026-10-21",
+            "rationale": "滚动年度 2031-10-21，参考2026Q2 TTM 57032m收入、2026H1现金资本开支7615m。DCAI、18A/14A良率、外部客户和规模效应全面兑现的强乐观情景；以下均为未获发行人确认的研究假设。运营营运资金增加，正值消耗现金。"
+          }
+        }
+      ],
+      "terminal": {
+        "method": "perpetuity",
+        "growth": {
+          "value": 0.03,
+          "basis": "analyst",
+          "as_of": "2026-10-21",
+          "rationale": "2031年后可持续名义FCFF增长 3.0%，这是终值主观假设且低于WACC；不把公司战略目标视为历史。"
+        }
+      }
+    }
+  ]
+}
