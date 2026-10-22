@@ -53,12 +53,14 @@ def model_result(doc, name):
         if case is None:
             fail("name", "P0 case not found")
         target = case["target_date"]
-    elif ver == 2:
+    elif ver in (2, 4):
         output = evaluate_p1(doc)
         matches = [r for r in output["results"] if r["name"] == name]
         if not matches:
             fail("name", "P1 analysis not found")
         selected = matches[0]
+        if ver == 4 and not selected.get("market_comparable", False):
+            fail("scope", "P2 price review requires whole equity without material omissions; archive partial input/output separately")
         if selected["method"] == "forward_pe":
             fail("name", "forward_pe is a market comparable, not a standalone intrinsic forecast")
         if selected["method"] == "fcff_dcf":
@@ -67,7 +69,7 @@ def model_result(doc, name):
             # Segment terminal horizons can differ. Never invent one consolidated realization date.
             target = None
     else:
-        fail("schema_version", "P2 freeze supports original P0 v1 or P1 v2 only")
+        fail("schema_version", "P2 freeze supports P0 v1 or P1 v2/v4 only")
     if len(matches) != 1:
         fail("name", "expected exactly one named model result")
     result = matches[0]

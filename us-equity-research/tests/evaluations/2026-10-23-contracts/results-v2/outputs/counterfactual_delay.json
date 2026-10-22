@@ -1,0 +1,61 @@
+{
+  "schema_version": 4,
+  "ticker": "DEMO",
+  "valuation_date": "2026-10-20",
+  "currency": "USD",
+  "reference_price_usd": 25.0,
+  "reference_price_as_of": "2026-10-19",
+  "capital": {
+    "shares_m": 100.0,
+    "cash_m": 120.0,
+    "debt_m": 80.0,
+    "other_claims_m": 10.0
+  },
+  "capital_status": "as_of_declared",
+  "results": [
+    {
+      "method": "sotp",
+      "segments": [
+        {
+          "name": "legacy",
+          "kind": "current_ev",
+          "ownership": 1.0,
+          "owned_enterprise_pv_m": 500.0
+        },
+        {
+          "name": "growth",
+          "kind": "milestone_ev",
+          "ownership": 1.0,
+          "owned_enterprise_pv_m": 14.269736701475978,
+          "owned_preterminal_cost_pv_m": 70.24766462070893,
+          "cost_treatment": "separate"
+        }
+      ],
+      "owned_segments_ev_m": 514.269736701476,
+      "corporate_cost_pv_m": 40.0,
+      "nonoperating_assets_m": 5.0,
+      "enterprise_and_nonoperating_m": 479.26973670147595,
+      "equity_value_m": 509.26973670147595,
+      "present_value_per_share_usd": 5.092697367014759,
+      "warning": "Ownership %, corporate costs, net debt, minority claims, intercompany eliminations and financing must be reconciled manually.",
+      "name": "counterfactual_delay",
+      "scenario": "base",
+      "scope": {
+        "kind": "partial",
+        "description": "synthetic 材料E：仅在E不存在且无其他业务遗漏的整体反事实条件版本，不能用于现实整体判断；融资与每股影响未完成，仍属局部条件计算，不能进行整股比较或冻结。",
+        "material_omissions": [
+          "synthetic 材料A/D：延期成功路径累计投入140超过当日现金120至少20；资金来源、融资成本与未来股数未界定，不能以成熟业务EV500代替可用现金。"
+        ]
+      },
+      "market_comparable": false,
+      "market_gap_review_required": null
+    }
+  ],
+  "crosschecks": [],
+  "warnings": [
+    "analyses[0].segments[1]: milestone probability is subjective unless independently supported; both outcomes exclude duplicated legacy operations",
+    "No model blends/weights outputs; reconcile differences explicitly rather than averaging prices.",
+    "P1 is an offline assumption calculator. Source URLs and financial forecasts MUST be checked by the researcher.",
+    "FCFF DCF uses current economic shares and does not automatically model future equity issuance or financing shortfalls; material expected dilution requires independent adjustment."
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "skill/valuation_p1.py",
+      "results-v2/inputs/partial_normal.json",
+      "--output",
+      "results-v2/outputs/partial_normal.json"
+    ],
+    "cwd": "/private/tmp/equity-contract-e2e-20261023",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "skill/valuation_p1.py",
+      "results-v2/inputs/partial_delay.json",
+      "--output",
+      "results-v2/outputs/partial_delay.json"
+    ],
+    "cwd": "/private/tmp/equity-contract-e2e-20261023",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "skill/valuation_p1.py",
+      "results-v2/inputs/counterfactual_normal.json",
+      "--output",
+      "results-v2/outputs/counterfactual_normal.json"
+    ],
+    "cwd": "/private/tmp/equity-contract-e2e-20261023",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "skill/valuation_p2.py",
+      "freeze",
+      "results-v2/inputs/counterfactual_normal.json",
+      "--name",
+      "counterfactual_normal",
+      "--output",
+      "results-v2/snapshots/counterfactual_normal.json"
+    ],
+    "cwd": "/private/tmp/equity-contract-e2e-20261023",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "skill/valuation_p1.py",
+      "results-v2/inputs/counterfactual_delay.json",
+      "--output",
+      "results-v2/outputs/counterfactual_delay.json"
+    ],
+    "cwd": "/private/tmp/equity-contract-e2e-20261023",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "skill/valuation_p2.py",
+      "freeze",
+      "results-v2/inputs/counterfactual_delay.json",
+      "--name",
+      "counterfactual_delay",
+      "--output",
+      "results-v2/snapshots/counterfactual_delay.json"
+    ],
+    "cwd": "/private/tmp/equity-contract-e2e-20261023",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "P2 REVIEW BLOCKED: scope: P2 price review requires whole equity without material omissions; archive partial input/output separately\n"
+  }
+]

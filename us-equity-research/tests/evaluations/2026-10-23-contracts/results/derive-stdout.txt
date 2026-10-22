@@ -1,0 +1,36 @@
+{
+  "normal": {
+    "source": "synthetic 材料A/B/C/D/E，非真实估值",
+    "discount_years": 2.001368925393566,
+    "expected_terminal_ev_m": 112.5,
+    "expected_first_cost_m": 50,
+    "expected_additional_cost_m": 0,
+    "project_pv_m": 47.50556585695408,
+    "preterminal_cost_pv_m": 45.45751083593777,
+    "equity_m": 542.505565856954,
+    "conditional_per_share_usd": 5.425055658569541,
+    "counterfactual_gap": -0.7829977736572183,
+    "market_gap_review_required": true,
+    "required_project_pv_m_at_reference": 2005,
+    "implied_success_probability_unchanged_evs_costs": 4.159094032656628,
+    "implied_success_terminal_ev_m_at_probability_25pct": 10075.50927422913,
+    "success_path_total_cost_m": 80
+  },
+  "delay": {
+    "source": "synthetic 材料A/B/C/D/E，非真实估值",
+    "discount_years": 3.0006844626967832,
+    "expected_terminal_ev_m": 112.5,
+    "expected_first_cost_m": 50,
+    "expected_additional_cost_m": 30,
+    "project_pv_m": 14.269736701475978,
+    "preterminal_cost_pv_m": 70.24766462070893,
+    "equity_m": 509.26973670147595,
+    "conditional_per_share_usd": 5.092697367014759,
+    "counterfactual_gap": -0.7962921053194096,
+    "market_gap_review_required": true,
+    "required_project_pv_m_at_reference": 2005,
+    "implied_success_probability_unchanged_evs_costs": 5.002243923099388,
+    "implied_success_terminal_ev_m_at_probability_25pct": 11199.339360534626,
+    "success_path_total_cost_m": 140
+  }
+}

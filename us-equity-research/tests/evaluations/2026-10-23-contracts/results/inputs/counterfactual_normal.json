@@ -1,0 +1,143 @@
+{
+  "schema_version": 4,
+  "ticker": "DEMO",
+  "currency": "USD",
+  "valuation_date": "2026-10-20",
+  "price": {
+    "value": 25,
+    "basis": "market",
+    "as_of": "2026-10-19",
+    "source_url": "https://example.org/DEMO/quote"
+  },
+  "capital": {
+    "bridge_as_of": "2026-10-20",
+    "reconciliation_note": "synthetic 材料A：9月末80股、现金20；10月20日收盘前增发20股，每股5，募资100、零费用，无其他变动，故当日100股、现金120；债80及其他索偿10不变。",
+    "shares_m": {
+      "value": 100,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "synthetic 材料A，虚构题设，仅限本实验；80+20=100百万经济股。详见 results/notes.md。",
+      "source_url": "https://example.org/DEMO/financing"
+    },
+    "cash_m": {
+      "value": 120,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "synthetic 材料A，虚构题设，仅限本实验；20+20×5=120百万可用现金。详见 results/notes.md。",
+      "source_url": "https://example.org/DEMO/financing"
+    },
+    "debt_m": {
+      "value": 80,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "synthetic 材料A，虚构题设，仅限本实验；当日有息债务，期间无其他变动。详见 results/notes.md。",
+      "source_url": "https://example.org/DEMO/financing"
+    },
+    "other_claims_m": {
+      "value": 10,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "synthetic 材料A，虚构题设，仅限本实验；当日其他索偿，期间无其他变动。详见 results/notes.md。",
+      "source_url": "https://example.org/DEMO/financing"
+    }
+  },
+  "analyses": [
+    {
+      "name": "counterfactual_normal",
+      "scenario": "base",
+      "method": "sotp",
+      "overlap_reconciliation": "synthetic 材料A/B/C/D：成熟业务与项目独立，持有100%；总部费用仅扣一次；非经营资产和现金分列；融资仅桥接现金及股数；项目期间投入不含于终值或其他分部，失败退出义务只含在失败EV。",
+      "corporate_cost_pv_m": {
+        "value": 40,
+        "basis": "analyst",
+        "as_of": "2026-10-20",
+        "rationale": "synthetic 材料B，虚构题设，仅限本实验；未分配总部费用现值。详见 results/notes.md。"
+      },
+      "nonoperating_assets_m": {
+        "value": 5,
+        "basis": "analyst",
+        "as_of": "2026-10-20",
+        "rationale": "synthetic 材料B，虚构题设，仅限本实验；独立非经营资产，不含在分部EV或现金中。详见 results/notes.md。"
+      },
+      "segments": [
+        {
+          "name": "legacy",
+          "kind": "current_ev",
+          "ownership": {
+            "value": 1,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料B，虚构题设，仅限本实验；经济持有比例100%。详见 results/notes.md。"
+          },
+          "boundary_note": "synthetic 材料B：不含总部、项目、现金、债务或独立非经营资产。",
+          "enterprise_value_m": {
+            "value": 500,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料B，虚构题设，仅限本实验；成熟业务当期独立EV，非实证估值。详见 results/notes.md。"
+          }
+        },
+        {
+          "name": "growth",
+          "kind": "milestone_ev",
+          "ownership": {
+            "value": 1,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料B/C，虚构题设，仅限本实验；题设持有比例100%。详见 results/notes.md。"
+          },
+          "boundary_note": "synthetic 材料C/D：新项目独立经营价值，不含成熟业务、总部、非经营资产或资本桥接。",
+          "target_date": "2028-10-20",
+          "wacc": {
+            "value": 0.1,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料C，虚构题设，仅限本实验；题设WACC，不额外重复惩罚成功失败风险。详见 results/notes.md。"
+          },
+          "success_probability": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料C，虚构题设，仅限本实验；题设条件概率25%，依据仅限本虚构实验，无真实统计或同业参照证据。详见 results/notes.md。"
+          },
+          "success_ev_m": {
+            "value": 600,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料C，虚构题设，仅限本实验；目标日成功经营EV，不含此前投入。详见 results/notes.md。"
+          },
+          "failure_ev_m": {
+            "value": -50,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "synthetic 材料C，虚构题设，仅限本实验；目标日净经营残值已含退出义务，不含此前投入，保留负值。详见 results/notes.md。"
+          },
+          "cost_treatment": "separate",
+          "costs": [
+            {
+              "on": "2027-10-20",
+              "success_cost_m": {
+                "value": 80,
+                "basis": "analyst",
+                "as_of": "2026-10-20",
+                "rationale": "synthetic 材料C，虚构题设，仅限本实验；成功路径当日投入。详见 results/notes.md。"
+              },
+              "failure_cost_m": {
+                "value": 40,
+                "basis": "analyst",
+                "as_of": "2026-10-20",
+                "rationale": "synthetic 材料C，虚构题设，仅限本实验；失败路径当日投入。详见 results/notes.md。"
+              }
+            }
+          ],
+          "cost_note": "synthetic 材料C/D：期间投入独立扣除，未在A/B及终值扣除；失败EV已含目标日退出义务，costs不重复扣除。"
+        }
+      ],
+      "scope": {
+        "kind": "whole",
+        "description": "synthetic 材料E：仅在E不存在且无其他业务遗漏的整体反事实条件版本，不能用于现实整体判断",
+        "material_omissions": []
+      }
+    }
+  ]
+}

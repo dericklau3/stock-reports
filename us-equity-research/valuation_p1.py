@@ -36,8 +36,8 @@ def v(node, path, asof, *, minimum=None, maximum=None):
 
 def root_metadata(doc):
     fields(doc, {"schema_version", "ticker", "valuation_date", "currency", "price", "capital", "analyses"}, "root")
-    if doc.get("schema_version") != 2:
-        fail("schema_version", "required: 2")
+    if doc.get("schema_version") not in (2, 4):
+        fail("schema_version", "required: 2 (legacy) or 4")
     nonempty(required(doc, "ticker", "root"), "ticker")
     asof = day(required(doc, "valuation_date", "root"), "valuation_date")
     if doc.get("currency") != "USD":
@@ -194,8 +194,73 @@ def reverse_dcf(dcf, market_price, capital):
     return dcf
 
 
-def forward_pe(node, asof, price, quote_on, prefix):
-    fields(node, {"name", "scenario", "method", "basis", "horizon", "period_start", "period_end", "eps", "peers", "history"}, prefix)
+def check_horizon(start, end, observed, horizon, anchor, path, strict=False):
+    # 财年标签依赖数据商滚动规则；新版保留当时FY1锚点，不能用今日锚点回填历史。
+    if not 300 <= (end-start).days <= 430 or end <= observed:
+        fail(path, "invalid forecast period")
+    if horizon == "NTM":
+        if abs((start-observed).days) > 31 or not 300 <= (end-observed).days <= 400:
+            fail(path, "NTM must cover the next twelve months")
+    elif horizon in ("FY1", "FY2"):
+        if anchor is None:
+            if strict:
+                fail(path, "FY1/FY2 requires contemporaneous fy1_end_date")
+            remaining = (end-observed).days
+            if remaining > (430 if horizon == "FY1" else 860) or (horizon == "FY2" and remaining < 300):
+                fail(path, "forecast period incompatible with horizon")
+        else:
+            first = day(anchor, path + ".fy1_end_date")
+            if not -120 <= (first-observed).days <= 430:
+                fail(path, "FY1 anchor must match contemporaneous fiscal calendar")
+            if (horizon == "FY1" and end != first) or (horizon == "FY2" and not 300 <= (end-first).days <= 430):
+                fail(path, "forecast period disagrees with FY1 anchor")
+    else:
+        fail(path, "invalid horizon")
+
+
+def valuation_scope(value, path):
+    value = mapping(value, path)
+    fields(value, {"kind", "description", "material_omissions"}, path)
+    if value.get("kind") not in ("whole", "partial"):
+        fail(path, "scope kind must be whole or partial")
+    nonempty(value.get("description"), path + ".description", 20)
+    omissions = required(value, "material_omissions", path)
+    if not isinstance(omissions, list):
+        fail(path, "material_omissions must be an explicit list")
+    for item in omissions:
+        nonempty(item, path + ".material_omissions")
+    return value
+
+
+def project_costs(segment, asof, target, wacc, probability, path, strict):
+    treatment = segment.get("cost_treatment")
+    if treatment is None and not strict:
+        if any(k in segment for k in ("costs", "cost_note")):
+            fail(path, "cost_treatment required with cost data")
+        return 0.0
+    if treatment not in ("separate", "included"):
+        fail(path, "cost_treatment must be separate or included")
+    nonempty(segment.get("cost_note"), path + ".cost_note", 30)
+    costs = required(segment, "costs", path)
+    if not isinstance(costs, list) or (treatment == "included" and costs):
+        fail(path, "included costs cannot also be deducted separately")
+    pv, seen = 0.0, set()
+    for i, cost in enumerate(costs):
+        q = f"{path}.costs[{i}]"
+        cost = mapping(cost, q)
+        fields(cost, {"on", "success_cost_m", "failure_cost_m"}, q)
+        on = day(required(cost, "on", q), q + ".on")
+        if not asof <= on <= target or on in seen:
+            fail(q, "cost date must be unique and within projection period")
+        seen.add(on)
+        success = v(required(cost, "success_cost_m", q), q, asof, minimum=0)
+        failure = v(required(cost, "failure_cost_m", q), q, asof, minimum=0)
+        pv += (probability*success + (1-probability)*failure)/(1+wacc)**((on-asof).days/365.25)
+    return pv
+
+
+def forward_pe(node, asof, price, quote_on, prefix, strict=False):
+    fields(node, {"name", "scenario", "method", "basis", "horizon", "period_start", "period_end", "eps", "peers", "history", "fy1_end_date"}, prefix)
     basis = node.get("basis")
     horizon = node.get("horizon")
     if basis not in ("gaap", "adjusted") or horizon not in ("NTM", "FY1", "FY2"):
@@ -204,6 +269,7 @@ def forward_pe(node, asof, price, quote_on, prefix):
     end = day(required(node, "period_end", prefix), prefix + ".period_end")
     if end <= quote_on or not 300 <= (end-start).days <= 430:
         fail(prefix, "forecast EPS must refer to a real 300–430-day fiscal/NTM period ending after quote")
+    check_horizon(start, end, quote_on, horizon, node.get("fy1_end_date"), prefix, strict)
     eps, eps_day = num(required(node, "eps", prefix), prefix + ".eps", asof, minimum=0)
     if eps <= 0 or eps_day > quote_on or (quote_on-eps_day).days > 7:
         fail(prefix + ".eps", "positive EPS with point-in-time snapshot <= price date within 7 days required")
@@ -216,7 +282,7 @@ def forward_pe(node, asof, price, quote_on, prefix):
     for i, peer in enumerate(peers):
         q = f"{prefix}.peers[{i}]"
         peer = mapping(peer, q)
-        fields(peer, {"ticker", "basis", "horizon", "period_start", "period_end", "price", "eps", "comparable_reason"}, q)
+        fields(peer, {"ticker", "basis", "horizon", "period_start", "period_end", "price", "eps", "comparable_reason", "fy1_end_date"}, q)
         peer_name = nonempty(required(peer, "ticker", q), q + ".ticker")
         if peer_name in names:
             fail(q, "duplicate comparable")
@@ -230,8 +296,9 @@ def forward_pe(node, asof, price, quote_on, prefix):
             fail(q, "peer EPS period misaligned to target")
         pp, pp_day = num(required(peer, "price", q), q + ".price", asof, minimum=0)
         ep, ep_day = num(required(peer, "eps", q), q + ".eps", asof, minimum=0)
-        if pp <= 0 or ep <= 0 or max(abs((quote_on-d).days) for d in (pp_day,ep_day)) > 7 or pp_day>quote_on or ep_day>quote_on:
+        if pp <= 0 or ep <= 0 or max(abs((quote_on-d).days) for d in (pp_day,ep_day)) > 7 or pp_day>quote_on or ep_day>quote_on or ep_day>pp_day:
             fail(q, "positive peer price/EPS and matched historical snapshots within 7 days of reference quote required")
+        check_horizon(ps, pe, pp_day, horizon, peer.get("fy1_end_date"), q, strict)
         ratio = pp/ep
         multiples.append(ratio)
         matched_peers.append({"ticker": peer_name, "forward_pe": ratio, "price_as_of": str(pp_day), "eps_as_of": str(ep_day), "forecast_period": [str(ps),str(pe)]})
@@ -239,7 +306,7 @@ def forward_pe(node, asof, price, quote_on, prefix):
     for i, point in enumerate(node.get("history", [])):
         q=f"{prefix}.history[{i}]"
         point=mapping(point,q)
-        fields(point,{"observed_on","price","eps","basis","period_start","period_end"},q)
+        fields(point,{"observed_on","price","eps","basis","period_start","period_end","horizon","fy1_end_date"},q)
         on=day(required(point,"observed_on",q),q+".observed_on")
         if on>quote_on or (quote_on-on).days>366 or point.get("basis")!=basis:
             fail(q,"history must be from last year with same EPS basis")
@@ -249,8 +316,12 @@ def forward_pe(node, asof, price, quote_on, prefix):
             fail(q,"history requires contemporaneous future EPS period")
         hp,hpd=num(required(point,"price",q),q+".price",asof,minimum=0)
         heps,hed=num(required(point,"eps",q),q+".eps",asof,minimum=0)
-        if hp<=0 or heps<=0 or hpd>on or hed>on or max((on-hpd).days,(on-hed).days)>7:
+        if hp<=0 or heps<=0 or hpd>on or hed>on or hed>hpd or max((on-hpd).days,(on-hed).days)>7:
             fail(q,"history EPS and price must be observed at historical time (no look-ahead)")
+        historical_horizon = point.get("horizon", None if strict else horizon)
+        if historical_horizon != horizon:
+            fail(q, "historical horizon must match target")
+        check_horizon(hs, he, hpd, historical_horizon, point.get("fy1_end_date"), q, strict)
         history_rows.append({"observed_on":str(on),"forward_pe":hp/heps,"forecast_period":[str(hs),str(he)]})
     multiples.sort()
     median = statistics.median(multiples)
@@ -261,7 +332,7 @@ def forward_pe(node, asof, price, quote_on, prefix):
             "warning":"Trading-comparable benchmark, NOT an independent intrinsic-value target; peer multiple needs qualitative adjustment."}
 
 
-def sotp(node, asof, capital, prefix, warnings):
+def sotp(node, asof, capital, prefix, warnings, strict=False):
     fields(node, {"name", "scenario", "method", "segments", "corporate_cost_pv_m", "nonoperating_assets_m", "overlap_reconciliation"}, prefix)
     if capital is None:
         fail(prefix, "SOTP needs valuation-date capital bridge")
@@ -281,7 +352,7 @@ def sotp(node, asof, capital, prefix, warnings):
         methods={
             "current_ev":{"enterprise_value_m"},
             "exit_ebit":{"target_date","revenue_m","ebit_margin","exit_ev_ebit","wacc"},
-            "milestone_ev":{"target_date","success_ev_m","failure_ev_m","success_probability","wacc"},
+            "milestone_ev":{"target_date","success_ev_m","failure_ev_m","success_probability","wacc","cost_treatment","costs","cost_note"},
             "fcff_dcf":{"wacc","years","terminal","justification"}}
         if kind not in methods:
             fail(q+".kind","unknown segment kind")
@@ -294,6 +365,7 @@ def sotp(node, asof, capital, prefix, warnings):
         ownership=v(required(s,"ownership",q),q+".ownership",asof,minimum=0,maximum=1)
         if ownership<=0:
             fail(q+".ownership","must exceed zero")
+        cost_pv = 0.0
         if kind=="current_ev":
             ev, observed=num(required(s,"enterprise_value_m",q),q+".enterprise_value_m",asof)
             if (asof-observed).days>7:
@@ -317,12 +389,16 @@ def sotp(node, asof, capital, prefix, warnings):
                 future_ev=revenue*margin*multiple
             else:
                 success=v(required(s,"success_ev_m",q),q+".success_ev_m",asof,minimum=0)
-                failure=v(required(s,"failure_ev_m",q),q+".failure_ev_m",asof,minimum=0)
+                failure=v(required(s,"failure_ev_m",q),q+".failure_ev_m",asof,minimum=None if strict else 0)
                 probability=v(required(s,"success_probability",q),q+".success_probability",asof,minimum=0,maximum=1)
                 future_ev=success*probability+failure*(1-probability)
+                cost_pv=project_costs(s, asof, target, wacc, probability, q, strict)
                 warnings.append(q+": milestone probability is subjective unless independently supported; both outcomes exclude duplicated legacy operations")
-            ev=future_ev/(1+wacc)**((target-asof).days/365.25)
+            ev=future_ev/(1+wacc)**((target-asof).days/365.25)-cost_pv
         rows.append({"name":name,"kind":kind,"ownership":ownership,"owned_enterprise_pv_m":ev*ownership})
+        if strict and kind == "milestone_ev":
+            rows[-1]["owned_preterminal_cost_pv_m"] = cost_pv*ownership
+            rows[-1]["cost_treatment"] = s["cost_treatment"]
     ev_owned=sum(r["owned_enterprise_pv_m"] for r in rows) - cost + assets
     equity=ev_owned+capital["cash_m"]-capital["debt_m"]-capital["other_claims_m"]
     if equity<=0:
@@ -339,6 +415,7 @@ def evaluate(doc):
     analyses=required(doc,"analyses","root")
     if not isinstance(analyses,list) or not analyses:
         fail("analyses","must be a nonempty array")
+    strict = doc["schema_version"] == 4
     results=[]
     ids=set()
     for i,analysis in enumerate(analyses):
@@ -352,22 +429,36 @@ def evaluate(doc):
         if scenario not in ("bear","base","bull"):
             fail(q+".scenario","use bear/base/bull")
         method=required(analysis,"method",q)
+        coverage = None
+        comparable = True
+        if strict and method in ("fcff_dcf", "sotp"):
+            analysis = dict(analysis)
+            coverage = valuation_scope(analysis.pop("scope", None), q + ".scope")
+            comparable = coverage["kind"] == "whole" and not coverage["material_omissions"]
         if method=="fcff_dcf":
             result=calc_dcf(analysis,asof,capital,q,warnings)
-            reverse_dcf(result,price,capital)
+            if comparable:
+                reverse_dcf(result,price,capital)
+            else:
+                result.pop("reverse", None)
         elif method=="forward_pe":
-            result=forward_pe(analysis,asof,price,quote_on,q)
+            result=forward_pe(analysis,asof,price,quote_on,q,strict)
         elif method=="sotp":
-            result=sotp(analysis,asof,capital,q,warnings)
+            result=sotp(analysis,asof,capital,q,warnings,strict)
         else:
             fail(q+".method","unknown P1 method")
         result.update({"name":name,"scenario":scenario,"method":method})
         if "present_value_per_share_usd" in result:
-            result["upside_vs_reference"]=result["present_value_per_share_usd"]/price-1
+            if comparable:
+                result["upside_vs_reference"]=result["present_value_per_share_usd"]/price-1
+            if strict:
+                result["scope"] = coverage
+                result["market_comparable"] = comparable
+                result["market_gap_review_required"] = (abs(result["upside_vs_reference"]) > .5 if comparable and scenario == "base" else None)
         results.append(result)
     checks=[]
     for scenario in ("bear","base","bull"):
-        intrinsic=[r for r in results if r["scenario"]==scenario and r["method"] in ("fcff_dcf","sotp")]
+        intrinsic=[r for r in results if r["scenario"]==scenario and r["method"] in ("fcff_dcf","sotp") and r.get("market_comparable",True)]
         if len(intrinsic)>=2:
             low=min(r["present_value_per_share_usd"] for r in intrinsic)
             high=max(r["present_value_per_share_usd"] for r in intrinsic)
@@ -377,7 +468,7 @@ def evaluate(doc):
     warnings.extend(["No model blends/weights outputs; reconcile differences explicitly rather than averaging prices.",
                      "P1 is an offline assumption calculator. Source URLs and financial forecasts MUST be checked by the researcher.",
                      "FCFF DCF uses current economic shares and does not automatically model future equity issuance or financing shortfalls; material expected dilution requires independent adjustment."])
-    return {"schema_version":2,"ticker":doc["ticker"],"valuation_date":str(asof),"currency":"USD",
+    return {"schema_version":doc["schema_version"],"ticker":doc["ticker"],"valuation_date":str(asof),"currency":"USD",
             "reference_price_usd":price,"reference_price_as_of":str(quote_on),
             "capital":capital,"capital_status": "not_provided" if capital is None else ("provisional" if any(w.startswith("Provisional capital") for w in warnings) else "as_of_declared"),
             "results":results,"crosschecks":checks,"warnings":warnings}

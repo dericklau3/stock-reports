@@ -1,0 +1,421 @@
+{
+  "schema_version": 4,
+  "ticker": "DEMO",
+  "currency": "USD",
+  "valuation_date": "2026-10-20",
+  "price": {
+    "value": 25,
+    "basis": "market",
+    "as_of": "2026-10-19",
+    "source_url": "https://example.org/illustrative-report"
+  },
+  "analyses": [
+    {
+      "name": "dcf_base",
+      "scenario": "base",
+      "method": "fcff_dcf",
+      "wacc": {
+        "value": 0.1,
+        "basis": "analyst",
+        "as_of": "2026-10-20",
+        "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+      },
+      "justification": "Five annual projection periods allow capital expenditures and reinvestment to be modeled explicitly.",
+      "years": [
+        {
+          "end_date": "2027-10-20",
+          "revenue_m": {
+            "value": 200,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "ebit_margin": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "cash_tax_rate": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "d_and_a_m": {
+            "value": 10,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "capex_m": {
+            "value": 25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "delta_nwc_m": {
+            "value": 5,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          }
+        },
+        {
+          "end_date": "2028-10-20",
+          "revenue_m": {
+            "value": 200,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "ebit_margin": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "cash_tax_rate": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "d_and_a_m": {
+            "value": 10,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "capex_m": {
+            "value": 25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "delta_nwc_m": {
+            "value": 5,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          }
+        },
+        {
+          "end_date": "2029-10-20",
+          "revenue_m": {
+            "value": 200,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "ebit_margin": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "cash_tax_rate": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "d_and_a_m": {
+            "value": 10,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "capex_m": {
+            "value": 25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "delta_nwc_m": {
+            "value": 5,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          }
+        },
+        {
+          "end_date": "2030-10-20",
+          "revenue_m": {
+            "value": 200,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "ebit_margin": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "cash_tax_rate": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "d_and_a_m": {
+            "value": 10,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "capex_m": {
+            "value": 25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "delta_nwc_m": {
+            "value": 5,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          }
+        },
+        {
+          "end_date": "2031-10-20",
+          "revenue_m": {
+            "value": 200,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "ebit_margin": {
+            "value": 0.2,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "cash_tax_rate": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "d_and_a_m": {
+            "value": 10,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "capex_m": {
+            "value": 25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "delta_nwc_m": {
+            "value": 5,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          }
+        }
+      ],
+      "terminal": {
+        "method": "perpetuity",
+        "growth": {
+          "value": 0.02,
+          "basis": "analyst",
+          "as_of": "2026-10-20",
+          "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+        }
+      },
+      "scope": {
+        "kind": "whole",
+        "description": "All operating businesses and corporate claims reconciled.",
+        "material_omissions": []
+      }
+    },
+    {
+      "name": "sotp_base",
+      "scenario": "base",
+      "method": "sotp",
+      "overlap_reconciliation": "Client and manufacturing segment contributions exclude all intercompany transfers; parent cash, claims and minority interests are only bridged once.",
+      "corporate_cost_pv_m": {
+        "value": 40,
+        "basis": "analyst",
+        "as_of": "2026-10-20",
+        "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+      },
+      "nonoperating_assets_m": {
+        "value": 5,
+        "basis": "analyst",
+        "as_of": "2026-10-20",
+        "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+      },
+      "segments": [
+        {
+          "name": "legacy",
+          "kind": "current_ev",
+          "ownership": {
+            "value": 1,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "boundary_note": "Operating enterprise value does not include corporate assets or intercompany revenue.",
+          "enterprise_value_m": {
+            "value": 500,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          }
+        },
+        {
+          "name": "growth",
+          "kind": "milestone_ev",
+          "ownership": {
+            "value": 1,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "boundary_note": "Independent future program; excludes legacy operations and corporate funding.",
+          "target_date": "2027-10-20",
+          "wacc": {
+            "value": 0.1,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "success_probability": {
+            "value": 0.25,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "success_ev_m": {
+            "value": 600,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "failure_ev_m": {
+            "value": -50,
+            "basis": "analyst",
+            "as_of": "2026-10-20",
+            "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+          },
+          "cost_treatment": "separate",
+          "costs": [
+            {
+              "on": "2027-04-20",
+              "success_cost_m": {
+                "value": 80,
+                "basis": "analyst",
+                "as_of": "2026-10-20",
+                "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+              },
+              "failure_cost_m": {
+                "value": 40,
+                "basis": "analyst",
+                "as_of": "2026-10-20",
+                "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+              }
+            }
+          ],
+          "cost_note": "Synthetic separate outcome costs; terminal values exclude these cash investments and parent excludes them."
+        }
+      ],
+      "scope": {
+        "kind": "whole",
+        "description": "All operating businesses and corporate claims reconciled.",
+        "material_omissions": []
+      }
+    },
+    {
+      "name": "pe_base",
+      "scenario": "base",
+      "method": "forward_pe",
+      "basis": "gaap",
+      "horizon": "FY1",
+      "period_start": "2026-10-01",
+      "period_end": "2027-09-30",
+      "eps": {
+        "value": 2,
+        "basis": "consensus",
+        "as_of": "2026-10-19",
+        "source_url": "https://example.org/illustrative-report"
+      },
+      "peers": [
+        {
+          "ticker": "AAA",
+          "basis": "gaap",
+          "horizon": "FY1",
+          "period_start": "2026-10-01",
+          "period_end": "2027-09-30",
+          "price": {
+            "value": 30,
+            "basis": "market",
+            "as_of": "2026-10-19",
+            "source_url": "https://example.org/illustrative-report"
+          },
+          "eps": {
+            "value": 2,
+            "basis": "consensus",
+            "as_of": "2026-10-19",
+            "source_url": "https://example.org/illustrative-report"
+          },
+          "comparable_reason": "Comparable growth and cash conversion, only a fixture.",
+          "fy1_end_date": "2027-09-30"
+        },
+        {
+          "ticker": "BBB",
+          "basis": "gaap",
+          "horizon": "FY1",
+          "period_start": "2026-10-01",
+          "period_end": "2027-09-30",
+          "price": {
+            "value": 60,
+            "basis": "market",
+            "as_of": "2026-10-19",
+            "source_url": "https://example.org/illustrative-report"
+          },
+          "eps": {
+            "value": 3,
+            "basis": "consensus",
+            "as_of": "2026-10-19",
+            "source_url": "https://example.org/illustrative-report"
+          },
+          "comparable_reason": "Similar reinvestment intensity, only a fixture.",
+          "fy1_end_date": "2027-09-30"
+        }
+      ],
+      "fy1_end_date": "2027-09-30"
+    }
+  ],
+  "capital": {
+    "bridge_as_of": "2026-10-20",
+    "shares_m": {
+      "value": 100,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+    },
+    "cash_m": {
+      "value": 20,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+    },
+    "debt_m": {
+      "value": 80,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+    },
+    "other_claims_m": {
+      "value": 10,
+      "basis": "analyst",
+      "as_of": "2026-10-20",
+      "rationale": "DEMO research assumption, not a market forecast; based on illustrative financial bridge."
+    }
+  }
+}

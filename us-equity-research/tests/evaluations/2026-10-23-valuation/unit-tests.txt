@@ -1,0 +1,53 @@
+test_agent_config (test_skill_package.SkillPackageTests.test_agent_config) ... ok
+test_all_references_reachable (test_skill_package.SkillPackageTests.test_all_references_reachable) ... ok
+test_discovery_metadata (test_skill_package.SkillPackageTests.test_discovery_metadata) ... ok
+test_package_isolated_from_sibling_skills (test_skill_package.SkillPackageTests.test_package_isolated_from_sibling_skills) ... ok
+test_prepare_blind_behavior_packet (test_skill_package.SkillPackageTests.test_prepare_blind_behavior_packet) ... ok
+test_reference_links (test_skill_package.SkillPackageTests.test_reference_links) ... ok
+test_report_structure (test_skill_package.SkillPackageTests.test_report_structure) ... ok
+test_single_discoverable_skill (test_skill_package.SkillPackageTests.test_single_discoverable_skill) ... ok
+test_bridge_requires_same_date_and_stale_disclosure (test_valuation_engine.ValuationTests.test_bridge_requires_same_date_and_stale_disclosure) ... ok
+test_cli_fixture_roundtrip (test_valuation_engine.ValuationTests.test_cli_fixture_roundtrip) ... ok
+test_enterprise_rejects_equity_rate_or_future_shares (test_valuation_engine.ValuationTests.test_enterprise_rejects_equity_rate_or_future_shares) ... ok
+test_enterprise_wacc_bridge_before_current_shares (test_valuation_engine.ValuationTests.test_enterprise_wacc_bridge_before_current_shares) ... ok
+test_equity_pe_uses_equity_discount_and_forecast_shares (test_valuation_engine.ValuationTests.test_equity_pe_uses_equity_discount_and_forecast_shares) ... ok
+test_future_equity_bridge_discounted_together (test_valuation_engine.ValuationTests.test_future_equity_bridge_discounted_together) ... ok
+test_negative_earnings_cannot_have_positive_pe_target (test_valuation_engine.ValuationTests.test_negative_earnings_cannot_have_positive_pe_target) ... ok
+test_no_unsourced_market_data_or_undocumented_analyst_guesses (test_valuation_engine.ValuationTests.test_no_unsourced_market_data_or_undocumented_analyst_guesses) ... ok
+test_nonfinite_booleans_and_negative_bridge_rejected (test_valuation_engine.ValuationTests.test_nonfinite_booleans_and_negative_bridge_rejected) ... ok
+test_stale_price_look_ahead_and_wrong_units_rejected (test_valuation_engine.ValuationTests.test_stale_price_look_ahead_and_wrong_units_rejected) ... ok
+test_bad_gordon_spread_and_negative_terminal_fcff_blocked (test_valuation_p1.P1ValuationTests.test_bad_gordon_spread_and_negative_terminal_fcff_blocked) ... ok
+test_capital_dated_provisional_vs_fresh (test_valuation_p1.P1ValuationTests.test_capital_dated_provisional_vs_fresh) ... ok
+test_crosscheck_warns_on_divergence_without_average (test_valuation_p1.P1ValuationTests.test_crosscheck_warns_on_divergence_without_average) ... ok
+test_dcf_accounts_for_cash_taxes_and_reinvestment (test_valuation_p1.P1ValuationTests.test_dcf_accounts_for_cash_taxes_and_reinvestment) ... ok
+test_exit_multiple_reverse_and_sensitivity (test_valuation_p1.P1ValuationTests.test_exit_multiple_reverse_and_sensitivity) ... ok
+test_forward_pe_median_and_no_blind_full_year_claim (test_valuation_p1.P1ValuationTests.test_forward_pe_median_and_no_blind_full_year_claim) ... ok
+test_future_eps_and_historical_lookahead_rejected (test_valuation_p1.P1ValuationTests.test_future_eps_and_historical_lookahead_rejected) ... ok
+test_future_years_must_be_consecutive_full_years (test_valuation_p1.P1ValuationTests.test_future_years_must_be_consecutive_full_years) ... ok
+test_json_cli_roundtrip_and_rejects_bad_schema (test_valuation_p1.P1ValuationTests.test_json_cli_roundtrip_and_rejects_bad_schema) ... ok
+test_negative_ebit_does_not_create_tax_refund (test_valuation_p1.P1ValuationTests.test_negative_ebit_does_not_create_tax_refund) ... ok
+test_peer_basis_mismatch_rejected (test_valuation_p1.P1ValuationTests.test_peer_basis_mismatch_rejected) ... ok
+test_sotp_bridge_ownership_and_corporate_cost (test_valuation_p1.P1ValuationTests.test_sotp_bridge_ownership_and_corporate_cost) ... ok
+test_sotp_includes_independent_dcf_segment (test_valuation_p1.P1ValuationTests.test_sotp_includes_independent_dcf_segment) ... ok
+test_sotp_requires_explicit_overlap_and_disallows_duplicate_names (test_valuation_p1.P1ValuationTests.test_sotp_requires_explicit_overlap_and_disallows_duplicate_names) ... ok
+test_actual_publication_lag_is_guarded (test_valuation_p2.P2Tests.test_actual_publication_lag_is_guarded) ... ok
+test_changed_target_horizon_refused (test_valuation_p2.P2Tests.test_changed_target_horizon_refused) ... ok
+test_cli_freeze_and_review (test_valuation_p2.P2Tests.test_cli_freeze_and_review) ... ok
+test_duplicate_dates_or_mixed_ticker_rejected (test_valuation_p2.P2Tests.test_duplicate_dates_or_mixed_ticker_rejected) ... ok
+test_equity_pe_shapley_exact_and_market_gap_distinct (test_valuation_p2.P2Tests.test_equity_pe_shapley_exact_and_market_gap_distinct) ... ok
+test_freeze_refuses_fake_earlier_capture (test_valuation_p2.P2Tests.test_freeze_refuses_fake_earlier_capture) ... ok
+test_maturity_and_no_actuals_are_not_silent_success (test_valuation_p2.P2Tests.test_maturity_and_no_actuals_are_not_silent_success) ... ok
+test_nonfinite_actual_disallowed (test_valuation_p2.P2Tests.test_nonfinite_actual_disallowed) ... ok
+test_p0_snapshot_is_replayed_and_sealed (test_valuation_p2.P2Tests.test_p0_snapshot_is_replayed_and_sealed) ... ok
+test_p1_dcf_replay_and_aggregate_attribution (test_valuation_p2.P2Tests.test_p1_dcf_replay_and_aggregate_attribution) ... ok
+test_price_backtest_and_fundamental_metrics_are_separate (test_valuation_p2.P2Tests.test_price_backtest_and_fundamental_metrics_are_separate) ... ok
+test_price_timing_not_future_leaked (test_valuation_p2.P2Tests.test_price_timing_not_future_leaked) ... ok
+test_shapley_order_symmetry (test_valuation_p2.P2Tests.test_shapley_order_symmetry) ... ok
+test_snapshot_input_lookahead_blocked (test_valuation_p2.P2Tests.test_snapshot_input_lookahead_blocked) ... ok
+test_snapshot_mutation_detected (test_valuation_p2.P2Tests.test_snapshot_mutation_detected) ... ok
+test_unscored_p1_dcf_future (test_valuation_p2.P2Tests.test_unscored_p1_dcf_future) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.430s
+
+OK

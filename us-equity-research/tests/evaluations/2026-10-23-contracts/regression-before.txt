@@ -1,0 +1,144 @@
+test_cost_double_count_and_out_of_period_rejected (test_valuation_contracts.ContractTests.test_cost_double_count_and_out_of_period_rejected) ... ok
+test_current_period_horizon_and_anchor (test_valuation_contracts.ContractTests.test_current_period_horizon_and_anchor) ... ERROR
+test_far_future_fy1_history_rejected (test_valuation_contracts.ContractTests.test_far_future_fy1_history_rejected) ... FAIL
+test_history_future_eps_relative_to_actual_quote_rejected (test_valuation_contracts.ContractTests.test_history_future_eps_relative_to_actual_quote_rejected) ... FAIL
+test_legacy_numerical_result_unchanged (test_valuation_contracts.ContractTests.test_legacy_numerical_result_unchanged) ... ERROR
+test_new_format_requires_scope (test_valuation_contracts.ContractTests.test_new_format_requires_scope) ... ok
+test_omissions_prevent_whole_comparison (test_valuation_contracts.ContractTests.test_omissions_prevent_whole_comparison) ... ERROR
+test_outcome_costs_and_negative_failure_value (test_valuation_contracts.ContractTests.test_outcome_costs_and_negative_failure_value) ... ERROR
+test_partial_not_crosschecked_against_whole (test_valuation_contracts.ContractTests.test_partial_not_crosschecked_against_whole) ... ERROR
+test_peer_future_eps_rejected (test_valuation_contracts.ContractTests.test_peer_future_eps_rejected) ... FAIL
+test_scope_controls_market_comparison_and_reverse (test_valuation_contracts.ContractTests.test_scope_controls_market_comparison_and_reverse) ... ERROR
+
+======================================================================
+ERROR: test_current_period_horizon_and_anchor (test_valuation_contracts.ContractTests.test_current_period_horizon_and_anchor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 91, in test_current_period_horizon_and_anchor
+    r=model.evaluate(doc)['results'][0]
+      ~~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 338, in evaluate
+    asof,price,quote_on,capital,warnings=root_metadata(doc)
+                                         ~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 40, in root_metadata
+    fail("schema_version", "required: 2")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_engine.py", line 23, in fail
+    raise ValidationError(f"{path}: {reason}")
+valuation_engine.ValidationError: schema_version: required: 2
+
+======================================================================
+ERROR: test_legacy_numerical_result_unchanged (test_valuation_contracts.ContractTests.test_legacy_numerical_result_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 98, in test_legacy_numerical_result_unchanged
+    new=model.evaluate(modern([sotp()]))['results'][0]['present_value_per_share_usd']
+        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 338, in evaluate
+    asof,price,quote_on,capital,warnings=root_metadata(doc)
+                                         ~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 40, in root_metadata
+    fail("schema_version", "required: 2")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_engine.py", line 23, in fail
+    raise ValidationError(f"{path}: {reason}")
+valuation_engine.ValidationError: schema_version: required: 2
+
+======================================================================
+ERROR: test_omissions_prevent_whole_comparison (test_valuation_contracts.ContractTests.test_omissions_prevent_whole_comparison)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 59, in test_omissions_prevent_whole_comparison
+    r=model.evaluate(doc)['results'][0]
+      ~~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 338, in evaluate
+    asof,price,quote_on,capital,warnings=root_metadata(doc)
+                                         ~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 40, in root_metadata
+    fail("schema_version", "required: 2")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_engine.py", line 23, in fail
+    raise ValidationError(f"{path}: {reason}")
+valuation_engine.ValidationError: schema_version: required: 2
+
+======================================================================
+ERROR: test_outcome_costs_and_negative_failure_value (test_valuation_contracts.ContractTests.test_outcome_costs_and_negative_failure_value)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 74, in test_outcome_costs_and_negative_failure_value
+    r=model.evaluate(doc)['results'][0]
+      ~~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 338, in evaluate
+    asof,price,quote_on,capital,warnings=root_metadata(doc)
+                                         ~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 40, in root_metadata
+    fail("schema_version", "required: 2")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_engine.py", line 23, in fail
+    raise ValidationError(f"{path}: {reason}")
+valuation_engine.ValidationError: schema_version: required: 2
+
+======================================================================
+ERROR: test_partial_not_crosschecked_against_whole (test_valuation_contracts.ContractTests.test_partial_not_crosschecked_against_whole)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 68, in test_partial_not_crosschecked_against_whole
+    self.assertEqual(model.evaluate(doc)['crosschecks'],[])
+                     ~~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 338, in evaluate
+    asof,price,quote_on,capital,warnings=root_metadata(doc)
+                                         ~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 40, in root_metadata
+    fail("schema_version", "required: 2")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_engine.py", line 23, in fail
+    raise ValidationError(f"{path}: {reason}")
+valuation_engine.ValidationError: schema_version: required: 2
+
+======================================================================
+ERROR: test_scope_controls_market_comparison_and_reverse (test_valuation_contracts.ContractTests.test_scope_controls_market_comparison_and_reverse)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 46, in test_scope_controls_market_comparison_and_reverse
+    out=model.evaluate(doc)
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 338, in evaluate
+    asof,price,quote_on,capital,warnings=root_metadata(doc)
+                                         ~~~~~~~~~~~~~^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_p1.py", line 40, in root_metadata
+    fail("schema_version", "required: 2")
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/valuation_engine.py", line 23, in fail
+    raise ValidationError(f"{path}: {reason}")
+valuation_engine.ValidationError: schema_version: required: 2
+
+======================================================================
+FAIL: test_far_future_fy1_history_rejected (test_valuation_contracts.ContractTests.test_far_future_fy1_history_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 42, in test_far_future_fy1_history_rejected
+    with self.assertRaises(model.ValidationError): model.evaluate(meta([a]))
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_history_future_eps_relative_to_actual_quote_rejected (test_valuation_contracts.ContractTests.test_history_future_eps_relative_to_actual_quote_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 36, in test_history_future_eps_relative_to_actual_quote_rejected
+    with self.assertRaises(model.ValidationError): model.evaluate(meta([a]))
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValidationError not raised
+
+======================================================================
+FAIL: test_peer_future_eps_rejected (test_valuation_contracts.ContractTests.test_peer_future_eps_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/derick/Documents/git-project/finance/stock/us-equity-research/tests/test_valuation_contracts.py", line 30, in test_peer_future_eps_rejected
+    with self.assertRaises(model.ValidationError): model.evaluate(meta([a]))
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValidationError not raised
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.005s
+
+FAILED (failures=3, errors=6)

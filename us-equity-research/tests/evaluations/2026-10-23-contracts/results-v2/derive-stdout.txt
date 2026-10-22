@@ -1,0 +1,1 @@
+{"source": "synthetic A/B/C/E; mechanical counterfactual only", "required_project_pv_m": 2005, "implied_success_probability": 4.159094032656628, "implied_success_ev_m": 10075.50927422913}
