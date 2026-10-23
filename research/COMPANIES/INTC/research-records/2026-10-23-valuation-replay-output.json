@@ -1,0 +1,276 @@
+{
+  "ticker": "INTC",
+  "valuation_date": "2026-10-23",
+  "price": {
+    "usd": 85.49,
+    "as_of": "2026-10-22",
+    "session": "US regular close"
+  },
+  "valuation_status": "conditional stress tests; NOT verified full-equity fair value",
+  "models": {
+    "p0_equity_exit_ebit": {
+      "scope": "economic whole-company proxy with material unverified funding, share and claim assumptions",
+      "target_date": "2028-12-31",
+      "scenarios": [
+        {
+          "scenario": "bear",
+          "revenue_bn": 60,
+          "ebit_margin": 0.1,
+          "multiples": [
+            15,
+            20
+          ],
+          "terminal_net_cash_claims_bn": -35,
+          "terminal_shares_bn": 5.7,
+          "discount_rate": 0.15,
+          "discount_years": 2.190280629705681,
+          "present_value_per_share_usd": [
+            7.104647413806003,
+            10.979909639518368
+          ]
+        },
+        {
+          "scenario": "base",
+          "revenue_bn": 75,
+          "ebit_margin": 0.18,
+          "multiples": [
+            20,
+            25
+          ],
+          "terminal_net_cash_claims_bn": -20,
+          "terminal_shares_bn": 5.8,
+          "discount_rate": 0.13,
+          "discount_years": 2.190280629705681,
+          "present_value_per_share_usd": [
+            32.98035518378278,
+            41.88505108340412
+          ]
+        },
+        {
+          "scenario": "bull",
+          "revenue_bn": 90,
+          "ebit_margin": 0.25,
+          "multiples": [
+            25,
+            30
+          ],
+          "terminal_net_cash_claims_bn": -5,
+          "terminal_shares_bn": 6,
+          "discount_rate": 0.12,
+          "discount_years": 2.190280629705681,
+          "present_value_per_share_usd": [
+            72.49237688280454,
+            87.12088342866195
+          ]
+        }
+      ]
+    },
+    "p1_fcff_dcf": {
+      "scope": "legacy v2 assumption replay, material omissions: Q3 funding and share dilution",
+      "capital": {
+        "economic_shares_m": 5286.105262,
+        "cash_m": 49427,
+        "debt_m": 50537,
+        "other_claims_m": 16074,
+        "status": "provisional; unreconciled future financing/dilution and government escrow"
+      },
+      "scenarios": [
+        {
+          "scenario": "base",
+          "params": {
+            "scenario": "base",
+            "revenues_bn": [
+              65,
+              75,
+              83,
+              91,
+              98
+            ],
+            "ebit_margins": [
+              0.12,
+              0.18,
+              0.2,
+              0.22,
+              0.23
+            ],
+            "tax_rate": 0.2,
+            "da_bn": [
+              13.5,
+              14.3,
+              15,
+              15.3,
+              15.5
+            ],
+            "capex_bn": [
+              17,
+              17.5,
+              18,
+              18,
+              18.2
+            ],
+            "nwc_bn": [
+              0.8,
+              0.9,
+              1,
+              1.1,
+              1.2
+            ],
+            "wacc": 0.115,
+            "perpetual_g": 0.025
+          },
+          "periods": [
+            {
+              "end": "2027-10-23",
+              "t_years": 0.999315537303217,
+              "revenue_bn": 65,
+              "ebit_bn": 7.8,
+              "fcff_bn": 1.940000000000002,
+              "pv_fcff_bn": 1.7400399538449967
+            },
+            {
+              "end": "2028-10-23",
+              "t_years": 2.001368925393566,
+              "revenue_bn": 75,
+              "ebit_bn": 13.5,
+              "fcff_bn": 6.700000000000001,
+              "pv_fcff_bn": 5.388406510114677
+            },
+            {
+              "end": "2029-10-23",
+              "t_years": 3.0006844626967832,
+              "revenue_bn": 83,
+              "ebit_bn": 16.6,
+              "fcff_bn": 9.280000000000001,
+              "pv_fcff_bn": 6.694081817869391
+            },
+            {
+              "end": "2030-10-23",
+              "t_years": 4,
+              "revenue_bn": 91,
+              "ebit_bn": 20.02,
+              "fcff_bn": 12.216,
+              "pv_fcff_bn": 7.903683750075503
+            },
+            {
+              "end": "2031-10-23",
+              "t_years": 4.999315537303217,
+              "revenue_bn": 98,
+              "ebit_bn": 22.540000000000003,
+              "fcff_bn": 14.132000000000005,
+              "pv_fcff_bn": 8.20090252071941
+            }
+          ],
+          "pv_explicit_bn": 29.927114552623976,
+          "pv_terminal_bn": 93.39916759708215,
+          "ev_bn": 123.32628214970613,
+          "terminal_ev_fraction": 0.7573338461926926,
+          "present_value_per_share_usd": 20.079487049326588
+        },
+        {
+          "scenario": "bull",
+          "params": {
+            "scenario": "bull",
+            "revenues_bn": [
+              72,
+              90,
+              105,
+              119,
+              132
+            ],
+            "ebit_margins": [
+              0.16,
+              0.25,
+              0.29,
+              0.32,
+              0.34
+            ],
+            "tax_rate": 0.21,
+            "da_bn": [
+              14,
+              15,
+              16.2,
+              17.4,
+              18.5
+            ],
+            "capex_bn": [
+              16,
+              17,
+              18,
+              20,
+              22
+            ],
+            "nwc_bn": [
+              0.9,
+              1.3,
+              1.4,
+              1.5,
+              1.7
+            ],
+            "wacc": 0.1,
+            "perpetual_g": 0.03
+          },
+          "periods": [
+            {
+              "end": "2027-10-23",
+              "t_years": 0.999315537303217,
+              "revenue_bn": 72,
+              "ebit_bn": 11.52,
+              "fcff_bn": 6.200799999999999,
+              "pv_fcff_bn": 5.6374586638296575
+            },
+            {
+              "end": "2028-10-23",
+              "t_years": 2.001368925393566,
+              "revenue_bn": 90,
+              "ebit_bn": 22.5,
+              "fcff_bn": 14.474999999999998,
+              "pv_fcff_bn": 11.961249201152082
+            },
+            {
+              "end": "2029-10-23",
+              "t_years": 3.0006844626967832,
+              "revenue_bn": 105,
+              "ebit_bn": 30.45,
+              "fcff_bn": 20.8555,
+              "pv_fcff_bn": 15.66802367355402
+            },
+            {
+              "end": "2030-10-23",
+              "t_years": 4,
+              "revenue_bn": 119,
+              "ebit_bn": 38.08,
+              "fcff_bn": 25.983199999999997,
+              "pv_fcff_bn": 17.746875213441697
+            },
+            {
+              "end": "2031-10-23",
+              "t_years": 4.999315537303217,
+              "revenue_bn": 132,
+              "ebit_bn": 44.88,
+              "fcff_bn": 30.255200000000006,
+              "pv_fcff_bn": 18.787324388272168
+            }
+          ],
+          "pv_explicit_bn": 69.80093114024962,
+          "pv_terminal_bn": 276.44205885600473,
+          "ev_bn": 346.2429899962543,
+          "terminal_ev_fraction": 0.7984047817372283,
+          "present_value_per_share_usd": 62.24979898938953
+        }
+      ]
+    }
+  },
+  "reverse_price": {
+    "assumptions": "bull case net cash, diluted future shares, discount rate, upper 30x multiple",
+    "required_2028_ebit_bn": 22.081925001140032,
+    "required_margin_on_90bn_revenue": 0.24535472223488924
+  },
+  "model_execution": "Independent JavaScript implementation of repository documented P0/P1 formulas; original Python P0/P1 CLI NOT executed; P2 sealed snapshot NOT created.",
+  "limitations": [
+    "Forward P/E peer quote/EPS same timestamp and basis unavailable.",
+    "SOTP cannot separate internal foundry transfers, unassigned HQ, future fab capex or noncontrolling claims without unverifiable assumptions.",
+    "Potential government escrow/conditional warrants overlap with debt and share counts.",
+    "Q3 reported actual shares, offering net proceeds and capital expenditures not yet available.",
+    "P1 DCF terminal value >75% EV and 2031 steady-state re-investment unproven; mathematical calculations are not investment forecasts."
+  ]
+}
