@@ -1,0 +1,36 @@
+{
+  "calculation_date": "2026-10-23",
+  "status": "conditional reverse valuation; not an intrinsic value estimate",
+  "inputs": {
+    "price_usd": 144.75,
+    "price_date": "2026-10-22",
+    "shares_as_of": "2026-10-15",
+    "a_shares": 8246541218,
+    "b_shares": 5334522491,
+    "cash_and_investment_m": 89855,
+    "debt_finance_lease_m": 38844
+  },
+  "calculated": {
+    "economic_shares": 13581063709,
+    "market_equity_bn": 1965.85897187775,
+    "net_cash_simple_bn": 51.011,
+    "ev_simple_bn": 1914.84797187775,
+    "ttm_revenue_m": 32043,
+    "ttm_net_income_m": -2760,
+    "ttm_cfo_m": 15762,
+    "ttm_capex_m": 54960,
+    "ttm_fcf_m": -39198,
+    "q3_fcf_m": -9962,
+    "normalized_net_profit_hurdle_30x_bn": 65.528632395925,
+    "normalized_net_profit_hurdle_40x_bn": 49.14647429694375,
+    "normalized_fcf_hurdle_25x_bn": 78.63435887511,
+    "ev_ttm_sales": 59.75869837024467,
+    "equity_ttm_sales": 61.35065293130325
+  },
+  "method": "Stock price times A+B shares; net cash from Sep30 10-Q; TTM FY2025 - first nine months 2025 + first nine months 2026; reversal from market capitalization at illustrative normalized earnings/FCF multiples 30x,40x,25x. Not a valuation forecast. Original P0/P1/P2 not applicable or run due material uncovered forward cash and shares.",
+  "sources": [
+    "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001181412/b47786db-efbf-4d78-a475-cf153ee82f29.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+    "https://stockanalysis.com/stocks/spcx/transcripts/723936-q3-2026/"
+  ]
+}
