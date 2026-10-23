@@ -1,0 +1,141 @@
+{
+  "ticker": "TSLA",
+  "valuation_date": "2026-10-23",
+  "valuation_cutoff": "2026-10-23 22:15 China Standard Time (UTC+8)",
+  "latest_regular_close_date": "2026-10-22",
+  "market_price_usd": 374.58,
+  "market_source": "https://stockanalysis.com/stocks/tsla/history/",
+  "financial_statement_end": "2026-09-30",
+  "filing_date": "2026-10-21",
+  "filing_10q": "https://ir.tesla.com/_flysystem/s3/sec/000162828026066775/tsla-20260930-gen.pdf",
+  "filing_8k": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
+  "shares_outstanding_asof": "2026-10-15",
+  "shares": 3952757946,
+  "capital_m": {
+    "cash_and_equivalents": 17853,
+    "short_term_investments": 27594,
+    "debt_and_finance_lease_current": 1387,
+    "debt_and_finance_lease_noncurrent": 8136,
+    "noncontrolling_regular": 546,
+    "noncontrolling_redeemable": 54,
+    "restricted_cash_separate_estimate": 1153,
+    "operating_lease_current": 1075,
+    "operating_lease_longterm": 5847
+  },
+  "financials_m": {
+    "FY2024": {
+      "revenue": 97690,
+      "gross_profit": 17450,
+      "operating_profit": 7076,
+      "net_income_to_common": 7091,
+      "cfo": 14923,
+      "capex": 11342,
+      "fcf": 3581
+    },
+    "FY2025": {
+      "revenue": 94827,
+      "gross_profit": 17094,
+      "operating_profit": 4355,
+      "net_income_to_common": 3794,
+      "cfo": 14747,
+      "capex": 8527,
+      "fcf": 6220
+    },
+    "NineMonths2025": {
+      "revenue": 69926,
+      "gross_profit": 12085,
+      "operating_profit": 2946,
+      "net_income_to_common": 2954,
+      "cfo": 10934,
+      "capex": 6134,
+      "fcf": 4800
+    },
+    "NineMonths2026": {
+      "revenue": 78669,
+      "gross_profit": 14965,
+      "operating_profit": 2057,
+      "net_income_to_common": 2378,
+      "cfo": 14897,
+      "capex": 13014,
+      "fcf": 1883
+    },
+    "Q32026": {
+      "revenue": 28046,
+      "gross_profit": 5494,
+      "operating_profit": 718,
+      "net_income_to_common": 787,
+      "cfo": 6263,
+      "capex": 4732,
+      "fcf": 1531
+    }
+  },
+  "ttm_m": {
+    "revenue": 103570,
+    "gross_profit": 19974,
+    "operating_profit": 3466,
+    "net_income_to_common": 3218,
+    "cfo": 18710,
+    "capex": 15407,
+    "fcf": 3303
+  },
+  "valuation_scope": "current consolidated market implied earnings only; excludes explicit scenario valuation of robotaxi, Optimus, potential SpaceX combination, future equity dilution and major planned capex",
+  "full_company_fair_value_status": "incomplete_due_to_material_operating_cash_and_dilution_omissions",
+  "economics": {
+    "mktcap_bn": 1480.62407141268,
+    "simple_net_cash_bn": 35.924,
+    "simple_ev_bn": 1444.70007141268,
+    "ttm_pe": 460.1069208864761,
+    "ttm_pfcf": 448.26644608316076,
+    "ttm_price_sales": 14.29587787402414,
+    "ttm_ev_sales": 13.949020675993822,
+    "reverse_required_common_income": [
+      {
+        "hypothetical_stable_pe": 25,
+        "required_yearly_common_profit_bn": 59.2249628565072,
+        "required_net_margin_if_revenue_200bn": 0.296124814282536
+      },
+      {
+        "hypothetical_stable_pe": 40,
+        "required_yearly_common_profit_bn": 37.015601785317,
+        "required_net_margin_if_revenue_200bn": 0.18507800892658502
+      },
+      {
+        "hypothetical_stable_pe": 60,
+        "required_yearly_common_profit_bn": 24.677067856878,
+        "required_net_margin_if_revenue_200bn": 0.12338533928439001
+      },
+      {
+        "hypothetical_stable_pe": 100,
+        "required_yearly_common_profit_bn": 14.8062407141268,
+        "required_net_margin_if_revenue_200bn": 0.074031203570634
+      }
+    ],
+    "reverse_required_fcf": [
+      {
+        "hypothetical_stable_pfcf": 20,
+        "required_yearly_owner_fcf_bn": 74.031203570634
+      },
+      {
+        "hypothetical_stable_pfcf": 25,
+        "required_yearly_owner_fcf_bn": 59.2249628565072
+      },
+      {
+        "hypothetical_stable_pfcf": 40,
+        "required_yearly_owner_fcf_bn": 37.015601785317
+      }
+    ],
+    "q3_fcf_m": 1531,
+    "consensus_q3_fcf_m": -4506,
+    "fcf_surprise_m": 6037,
+    "annual_capex_if_management_guidance_m": 20000
+  },
+  "warnings": [
+    "Reverse market implied thresholds are not a valuation target or probability-weighted fair value.",
+    "No full SOTP or DCF: missing verified recurring autonomous ride revenues and marginal costs, Optimus commercial economics, 2027+ capex and fully diluted equity capital.",
+    "Do not add CEO 2025 performance restricted shares on top of legal current shares without reconciling economic denominator; stock-based compensation has continued future vesting contingencies.",
+    "The SpaceX special committee is considering possible combination, not a signed acquisition; no Tesla/SpaceX asset/price or financing included.",
+    "New $30bn credit commitments are not cash or borrowings; no double-count.",
+    "Cash flow Q3 partially driven by working-capital release and deferred revenue; not sustainable CFO normalized without further evidence.",
+    "No P0/P1 native engine executed and P2 not available for reverse market hurdle."
+  ]
+}
