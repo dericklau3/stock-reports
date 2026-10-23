@@ -1,22 +1,33 @@
 # INTC Tracker — Intel Corporation
 
-Last updated: 2026-10-21
+Last updated: 2026-10-23
 
 ## Current Research View
 
-- **投资观点：**中性偏谨慎；2026-10-20收盘91.69美元，CPU业务恢复，但Foundry外部客户经济回报、资本开支和增发后资本结构仍需正式Q3核验。
+- **投资观点：**中性偏谨慎；截至2026-10-23 09:00 UTC+8，最近常规收盘2026-10-22为$85.49。Q2 CPU产品业务盈利与Foundry持续亏损并存；当前仍缺可核实的安全边际，不能将条件模型数值当成完整股权公允价。
 
 ## Current Main Thesis
 
-- **核心逻辑：**2026Q2 Products经营利润48.17亿美元、Foundry亏20.89亿美元；外部Foundry/封测收入仅2.93亿美元（占Foundry总收入约5.1%）。P0/P1估值明显分歧，需警惕FCF和股数。
+- **核心逻辑：**Q2 Intel Products经营利润$4.817bn而Foundry经营亏损$2.089bn，外部Foundry及封测仅$0.293bn（约5.1%分部收入）。2026-10-21 Ohio One结构桁架进展属于建设非投产，真正关注第三方客户付费、长期CapEx与每股FCF。
 
 ## Key Risks
 
-- **主要风险：**18A/14A持续资本开支、Foundry亏损、美元230亿总价增发后现金与经济股数尚未调和，且政府托管/权证易双计。
+- **主要风险：**2026-08总价约$23bn公开增发后的净现金、经济股数/政府托管股份与权证没有正式Q3报表调和；14A与Ohio/Arizona工厂长期支出、Foundry亏损和估值终值假设仍是主要不确定性。
 
 ## Latest Research
 
-[2026-10-21完整深研](deep-research/2026-10-21-deep-research.md)；[2026-10-21研究底稿](research-records/2026-10-21-research.md)；[P0/P1估值输入输出](research-records/2026-10-21-valuation-p1-output.json)。历史：[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)、[2026-10-11深研](deep-research/2026-10-11-deep-research-update.md)、[旧JSON底稿](research-records/2026-10-11-research.json)。
+[2026-10-23完整深研](deep-research/2026-10-23-deep-research.md)；[2026-10-23来源/口径/事件及估值底稿](research-records/2026-10-23-research.md)；[独立可复算JS脚本](research-records/2026-10-23-valuation-replay.js)和[实际输出JSON](research-records/2026-10-23-valuation-replay-output.json)。历史报告：[2026-10-21](deep-research/2026-10-21-deep-research.md)、[2026-10-20](deep-research/2026-10-20-deep-research.md)、[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+## 2026-10-23 完整深研更新（追加历史）
+
+- **本次研究：**[完整报告](deep-research/2026-10-23-deep-research.md)、[详细底稿及范围缺口](research-records/2026-10-23-research.md)、[独立程序复算源码](research-records/2026-10-23-valuation-replay.js)、[输入/输出存档](research-records/2026-10-23-valuation-replay-output.json)。报告和底稿均以2026-10-23 09:00 UTC+8为知识截止；没有覆盖2026Q3未来财报。
+- **与上次估值差异：**上次2026-10-21报告报价参考2026-10-20 $91.69，本次已核2026-10-22常规收盘$85.49（相比10/21 $92.96为-8.04%）。并无经确认的新季度GAAP利润或真实期后现金数据支持改变长期收入/利润路径。
+- **新的重大事件：**2026-10-21 [JobsOhio披露](https://www.jobsohio.com/newsroom/news-press/intel-foundry-provides-us-manufacturing-capacity-update) Ohio One第一大型结构桁架已吊装安装，仍是厂房施工非开始晶圆量产；2026-10-22 [Reuters报道](https://www.reuters.com/technology/fcc-grants-intel-waiver-foreign-made-robotic-devices-2026-10-22/) FCC给Intel特定老旧外国产AGV设备一年豁免，**未获取FCC最终裁决原文，保留待核实**。正反消息均不代表可直接确认更高外部Foundry收入。
+- **财务未变：**最近正式文件2026Q2 10-Q，Foundry外部付费相关Q2收入$0.293bn/分部收入$5.765bn、Foundry单季经营亏损$2.089bn；资本现金与7月实际股数依然是8月大额发行前时点。预计2026-10-29盘后Q3财报方能开始重建资本索偿桥。
+- **独立P0条件价（估值日10/23、2028-12-31退出并折现）**：保守$7.10–10.98、基础$32.98–41.89、强乐观$72.49–87.12。采用旧研究尚未新证据改变的2028经营假设；未完整反映未来CapEx与后续融资。
+- **独立P1五年逐年FCFF条件复算（旧v2财务假设、尚未调和临时资本代理）**：基础$20.08、强乐观$62.25，终值约占EV 75.7%/79.8%；与P0显著不一致，不机械平均。以$85.49反推在30x、12%股权回报、2028预期经济股60亿与净现金索偿-50亿美元的极有利假设下，仍需2028 EBIT约$22.08bn，即以$90bn销售测算24.54%正常化经营利润率。
+- **不确定性/模型验收状态：**该轮实际计算为独立JS公式复算，并未运行仓库P0/P1 Python CLI，也没有P2密封冻结。2026年8月发行实际净到款、Q3资金耗用与股数、政府托管/权证、租赁、未来14A/Ohio/Arizona现金CapEx和第三方Foundry现金毛利均不完整，因此严格的whole-equity估值仍未完成；不得以任何条件价格对整股宣称已量化精确折价%。将来若有足够材料再以P1 v4 whole scope完整重算并冻结P2。
+- **下一验证：**2026-10-29 Q3收入/Foundry外部付费及亏损、Q3 10-Q发行到账和股本、未来工厂资本开支及采购合同；补齐近12个月SEC 8-K、美国DOC及FCC原始披露、主要伙伴定点与整段时间的覆盖证据。
+
 ## 2026-10-21 完整深研更新（追加历史）
 
 - **本次完整报告：**[2026-10-21-deep-research.md](deep-research/2026-10-21-deep-research.md)；[本次证据/计算/缺口研究底稿](research-records/2026-10-21-research.md)；[P0输入](research-records/2026-10-21-valuation-input.json)、[P0结果](research-records/2026-10-21-valuation-output.json)、[P1输入](research-records/2026-10-21-valuation-p1-input.json)、[P1结果](research-records/2026-10-21-valuation-p1-output.json)。保留10月20日与历史报告不覆盖。
