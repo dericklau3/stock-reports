@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "ticker": "HOOD",
+  "valuation_date": "2026-10-28",
+  "currency": "USD",
+  "units": "USD millions and million shares; per-share USD",
+  "price": 94.56,
+  "price_as_of": "2026-10-27",
+  "capital": null,
+  "capital_status": "not_needed",
+  "results": [
+    {
+      "name": "bear_low",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 21.884817,
+      "present_value_per_share_usd": 19.157308,
+      "upside_vs_reference": -0.7974058,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 5500,
+        "net_margin": 0.2,
+        "forecast_shares_m": 955,
+        "exit_pe": 19,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 5500,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：低交易活跃度，crypto持续疲软，事件合约遇监管阻碍，信贷损失侵蚀盈利。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.2,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：低交易活跃度，crypto持续疲软，事件合约遇监管阻碍，信贷损失侵蚀盈利。"
+        },
+        "forecast_shares_m": {
+          "value": 955,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者955m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 19,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "低信用调整后盈利质量对应收缩倍数；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    },
+    {
+      "name": "bear_high",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 39.473684,
+      "present_value_per_share_usd": 34.554071,
+      "upside_vs_reference": -0.63458046,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 6000,
+        "net_margin": 0.25,
+        "forecast_shares_m": 950,
+        "exit_pe": 25,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 6000,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：净入金与会员仍增长，但交易收入放缓，信用成本偏高。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.25,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：净入金与会员仍增长，但交易收入放缓，信用成本偏高。"
+        },
+        "forecast_shares_m": {
+          "value": 950,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者950m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 25,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "交易周期风险缓和但不能按高成长平台定价；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    },
+    {
+      "name": "base_low",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 55.479581,
+      "present_value_per_share_usd": 48.56515,
+      "upside_vs_reference": -0.48640916,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 6300,
+        "net_margin": 0.29,
+        "forecast_shares_m": 955,
+        "exit_pe": 29,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 6300,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：以2026Q3全年化与FY2027历史共识6.74bn为锚，净入金转化偏弱。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.29,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：以2026Q3全年化与FY2027历史共识6.74bn为锚，净入金转化偏弱。"
+        },
+        "forecast_shares_m": {
+          "value": 955,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者955m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 29,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "仍给予高于成熟券商的增长溢价；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    },
+    {
+      "name": "base_center",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 69.815126,
+      "present_value_per_share_usd": 61.114053,
+      "upside_vs_reference": -0.35370079,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 6700,
+        "net_margin": 0.32,
+        "forecast_shares_m": 952,
+        "exit_pe": 31,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 6700,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：截至研究日可取得的FY2027共识约6.74bn，Gold/期权贡献与信用损失中性演进。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.32,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：截至研究日可取得的FY2027共识约6.74bn，Gold/期权贡献与信用损失中性演进。"
+        },
+        "forecast_shares_m": {
+          "value": 952,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者952m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 31,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "扩张中金融科技平台的条件中枢，不代表市场一致倍数；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    },
+    {
+      "name": "base_high",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 82.673684,
+      "present_value_per_share_usd": 72.370047,
+      "upside_vs_reference": -0.23466532,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 7000,
+        "net_margin": 0.34,
+        "forecast_shares_m": 950,
+        "exit_pe": 33,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 7000,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：预测市场、Gold和保证金息差持续扩张，2027收入接近此前预测高端。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.34,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：预测市场、Gold和保证金息差持续扩张，2027收入接近此前预测高端。"
+        },
+        "forecast_shares_m": {
+          "value": 950,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者950m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 33,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "较高持续成长与风控质量已兑现方可支持；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    },
+    {
+      "name": "bull_low",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 102.068394,
+      "present_value_per_share_usd": 89.34759,
+      "upside_vs_reference": -0.05512278,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 7600,
+        "net_margin": 0.36,
+        "forecast_shares_m": 965,
+        "exit_pe": 36,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 7600,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：期权和事件合约强增长且加密反弹，国际业务贡献增强。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.36,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：期权和事件合约强增长且加密反弹，国际业务贡献增强。"
+        },
+        "forecast_shares_m": {
+          "value": 965,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者965m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 36,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "多收入线扩张的高成长估值但股本偏稀释；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    },
+    {
+      "name": "bull_high",
+      "method": "equity_pe",
+      "target_date": "2027-12-31",
+      "years": 1.17453799,
+      "discount_factor": 1.14237433,
+      "terminal_price_usd": 153.04712,
+      "present_value_per_share_usd": 133.972828,
+      "upside_vs_reference": 0.41680233,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 8700,
+        "net_margin": 0.4,
+        "forecast_shares_m": 955,
+        "exit_pe": 42,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 8700,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3官方9M收入3,799百万美元、TTM 5,082百万美元，历史FY2027分析师收入均值约6,740百万美元（Yahoo旧快照）；该案例路径：所有主要增长引擎扩张，监管阻力轻，信贷与获客效率优良。来源：https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results；历史预期：https://finance.yahoo.com/quote/HOOD/analysis/"
+        },
+        "net_margin": {
+          "value": 0.4,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026Q3归属净利润468百万美元、9M合计1,379百万美元但含非经常项；净利率须含持续SBC、所得税、信用坏账、利息、少数股权与估值损益正常化，该场景假定：所有主要增长引擎扩张，监管阻力轻，信贷与获客效率优良。"
+        },
+        "forecast_shares_m": {
+          "value": 955,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "2026-09-30法定A793m+B108m≈901m；考虑2027员工授予、权证、潜在可转债结算与部分回购的净经济稀释，此为研究者955m压力假设，非已发行股份。"
+        },
+        "exit_pe": {
+          "value": 42,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "极强乐观终值倍数，不能视为基础或概率均值；模型使用2027年底正常化归属利润的股权P/E，并非公司指引、市场已验证的历史极值或任何同行同口径共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-28",
+          "rationale": "12%为研究者针对交易量和金融/监管波动的股权必要回报率；固定各情景用于可比性，未以现价校准，不代表公司WACC。"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "Terminal-multiple stress tests, NOT full FCFF/FCFE DCF; no interim cash flows or shareholder distributions valued.",
+    "HTTPS sources and analyst rationales are required but NOT independently verified by this offline calculator.",
+    "Calculated by independent JavaScript implementation of the checked-in P0 equity_pe equation; original Python engine was not executed in this session; run official valuation_engine.py for canonical verification."
+  ],
+  "execution_note": "2026-10-28: independently computed with JavaScript numeric program using the exact documented P0 formula; original repository Python engine not executed. Re-run official Python before treating this as an engine-certified output."
+}
