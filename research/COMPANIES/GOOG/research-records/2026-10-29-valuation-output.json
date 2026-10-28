@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "ticker": "GOOG",
+  "valuation_date": "2026-10-29",
+  "currency": "USD",
+  "units": "USD millions and million shares; per-share USD",
+  "price": 321.89,
+  "price_as_of": "2026-10-28",
+  "capital": null,
+  "capital_status": "not_needed",
+  "results": [
+    {
+      "name": "bear_low",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 144.847059,
+      "present_value_per_share_usd": 113.218373,
+      "upside_vs_reference": -0.64826999,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 540000,
+        "net_margin": 0.19,
+        "forecast_shares_m": 12750,
+        "exit_pe": 18,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 540000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：Search AI广告回报减弱，Google Cloud增速较快降温，外购容量/折旧/电力及监管费拖累；年净利润率19%"
+        },
+        "net_margin": {
+          "value": 0.19,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：Search AI广告回报减弱，Google Cloud增速较快降温，外购容量/折旧/电力及监管费拖累；年净利润率19%"
+        },
+        "forecast_shares_m": {
+          "value": 12750,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12750m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 18,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：成熟平台下修至18倍的风险退出倍数；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    },
+    {
+      "name": "bear_high",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 210.992126,
+      "present_value_per_share_usd": 164.920057,
+      "upside_vs_reference": -0.48765088,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 580000,
+        "net_margin": 0.22,
+        "forecast_shares_m": 12700,
+        "exit_pe": 21,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 580000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：搜索仍有单位增长，Cloud放缓但利润尚存；净利率22%须负担新增算力成本"
+        },
+        "net_margin": {
+          "value": 0.22,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：搜索仍有单位增长，Cloud放缓但利润尚存；净利率22%须负担新增算力成本"
+        },
+        "forecast_shares_m": {
+          "value": 12700,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12700m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 21,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：较低的增长溢价21倍；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    },
+    {
+      "name": "base_low",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 269.480315,
+      "present_value_per_share_usd": 210.636813,
+      "upside_vs_reference": -0.34562486,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 620000,
+        "net_margin": 0.23,
+        "forecast_shares_m": 12700,
+        "exit_pe": 24,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 620000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：FY2026旧共识约500.3bn+截至Q3 TTM471.1bn为基线；Google Services中低双位数、Cloud增速逐年回落，成本和折旧先行；2年约11.3%复增"
+        },
+        "net_margin": {
+          "value": 0.23,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：FY2026旧共识约500.3bn+截至Q3 TTM471.1bn为基线；Google Services中低双位数、Cloud增速逐年回落，成本和折旧先行；2年约11.3%复增"
+        },
+        "forecast_shares_m": {
+          "value": 12700,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12700m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 24,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：24倍退出倍数反映资本开支强度和收入质量风险；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    },
+    {
+      "name": "base_center",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 320.386435,
+      "present_value_per_share_usd": 250.427114,
+      "upside_vs_reference": -0.22201027,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 650000,
+        "net_margin": 0.25,
+        "forecast_shares_m": 12680,
+        "exit_pe": 25,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 650000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：2026FY旧共识500.3bn，2028两年约14%复增；搜索和Cloud增长、Wiz/TPU变现但资本开支未回到成熟期；25%常态归属净利润率已扣税、优先股息、SBC和债务成本"
+        },
+        "net_margin": {
+          "value": 0.25,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：2026FY旧共识500.3bn，2028两年约14%复增；搜索和Cloud增长、Wiz/TPU变现但资本开支未回到成熟期；25%常态归属净利润率已扣税、优先股息、SBC和债务成本"
+        },
+        "forecast_shares_m": {
+          "value": 12680,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12680m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 25,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：25倍非历史同行共识，金融紧张时具有显著下修余地；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    },
+    {
+      "name": "base_high",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 408,
+      "present_value_per_share_usd": 318.909452,
+      "upside_vs_reference": -0.00925952,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 680000,
+        "net_margin": 0.27,
+        "forecast_shares_m": 12600,
+        "exit_pe": 28,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 680000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：Q3 Cloud30.709bn同比+103%、Cloud EBIT11.121bn，假设新增订单顺利交付、搜索增长维持，2028收入较2026旧共识两年复增约16.6%；27%归属净率考虑总部AI研发及资金成本"
+        },
+        "net_margin": {
+          "value": 0.27,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：Q3 Cloud30.709bn同比+103%、Cloud EBIT11.121bn，假设新增订单顺利交付、搜索增长维持，2028收入较2026旧共识两年复增约16.6%；27%归属净率考虑总部AI研发及资金成本"
+        },
+        "forecast_shares_m": {
+          "value": 12600,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12600m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 28,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：28倍要求可持续高成长和正经营现金流；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    },
+    {
+      "name": "bull_low",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 503.503937,
+      "present_value_per_share_usd": 393.559227,
+      "upside_vs_reference": 0.2226513,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 735000,
+        "net_margin": 0.29,
+        "forecast_shares_m": 12700,
+        "exit_pe": 30,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 735000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：2027/28 TPU系统交付和AI云需求推动增长，Search AI转化获益，信用/资本开支风险改善；未把网络API令牌数直接当利润"
+        },
+        "net_margin": {
+          "value": 0.29,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：2027/28 TPU系统交付和AI云需求推动增长，Search AI转化获益，信用/资本开支风险改善；未把网络API令牌数直接当利润"
+        },
+        "forecast_shares_m": {
+          "value": 12700,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12700m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 30,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：30倍较高成长溢价含风险；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    },
+    {
+      "name": "bull_high",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "years": 2.17385352,
+      "discount_factor": 1.27936001,
+      "terminal_price_usd": 792,
+      "present_value_per_share_usd": 619.059524,
+      "upside_vs_reference": 0.9232021,
+      "bridge_method": "future after-interest equity income; no debt/cash bridge",
+      "inputs": {
+        "revenue_m": 840000,
+        "net_margin": 0.33,
+        "forecast_shares_m": 12600,
+        "exit_pe": 36,
+        "cost_of_equity": 0.12
+      },
+      "provenance": {
+        "revenue_m": {
+          "value": 840000,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026Q3 SEC披露9M revenues357269m、TTM471098m；FY2026财报前S&P Global一致预期约500.29bn（10/26旧快照）。情景经营路径：强假设：搜索份额稳、云/TPU高度增长、AI推理单位成本大降、CapEx回落并优先股/股数稀释受控；相对FY2026旧共识两年增长约30%复增"
+        },
+        "net_margin": {
+          "value": 0.33,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "税后归属普通股正常化净利润率；剔除股权证券价格未实现损益，不把Q2巨大投资浮盈常态化；含持续SBC、税、利息与优先股分红，并由当年实际资本开支/未来折旧制约倍数。路径：强假设：搜索份额稳、云/TPU高度增长、AI推理单位成本大降、CapEx回落并优先股/股数稀释受控；相对FY2026旧共识两年增长约30%复增"
+        },
+        "forecast_shares_m": {
+          "value": 12600,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2026-09-30实际A5888m+B828m+C5578m=12294m；Q3 ATM发行A12m+C24m、尚可发行27.6bn美元并且9M SBC23338m；未来经济股12600m含额外净稀释缓冲，不包括2029转换前的优先股转股，同一优先股的股息在净利率内扣除。"
+        },
+        "exit_pe": {
+          "value": 36,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "2028未来正常化归属净利的假设退出P/E：36倍是非常乐观退出条件，不是已核实同行估值；绝不视为2026现在的市场Forward PE或公司指引"
+        },
+        "cost_of_equity": {
+          "value": 0.12,
+          "basis": "analyst",
+          "as_of": "2026-10-29",
+          "rationale": "12%研究者股权必要回报率，反映AI技术、巨额现金资本开支及广告监管双重风险。该股权折现率不同于企业WACC，不根据现价反向调参。"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "Terminal-multiple stress tests, NOT full FCFF/FCFE DCF; no interim cash flows or shareholder distributions valued.",
+    "The complete Q3 10-Q and holdings composition were unavailable at study cutoff; scenario excludes separate mark-to-market asset value and does not establish complete independently audited NAV.",
+    "Price endpoints independently calculated programmatically from documented P0 equity_pe formula but original repository Python valuation_engine.py and P2 freeze were not executed in this environment. Sources and assumptions independently require audit."
+  ],
+  "calculation_metadata": {
+    "engine": "P0 documented equation separately implemented in JavaScript; no claim of official Python engine execution",
+    "years": 2.1738535249828885,
+    "discount_factor": 1.2793600117016177,
+    "price_quote_session": "2026-10-28 GOOG regular close before Q3 earnings release",
+    "post_close_price_note": "Oct28 17:11 EDT after-hours reference 289.74 USD, not model reference quote"
+  }
+}
