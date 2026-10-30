@@ -32,7 +32,7 @@ function valueCase(s,shock={}){
   const terminalEnterpriseValue=terminalFCFF*(1+s.terminal_g)/(s.wacc-s.terminal_g);
   const terminalPV=terminalEnterpriseValue/Math.pow(1+s.wacc,last.year_fraction);
   const enterpriseValue=pvflows+terminalPV, equityValue=enterpriseValue+bridge;
-  return {per_share_usd:round(equityValue/s.economic_shares_b,4),equity_value_b:round(equityValue),enterprise_value_b:round(enterpriseValue),bridge_b:round(bridge),pv_explicit_fcff_b:round(pvflows),pv_terminal_b:round(terminalPV),terminal_pct_of_ev:round(terminalPV/enterpriseValue,5),q4_2026_fcff_b:round(q4fcff),capex2036_b:round(capex2036),normalized_terminal_fcff2036_b:round(terminalFCFF),yearly:rows};
+  return {per_share_usd:round(Math.max(0,equityValue)/s.economic_shares_b,4),equity_value_b:round(equityValue),enterprise_value_b:round(enterpriseValue),bridge_b:round(bridge),pv_explicit_fcff_b:round(pvflows),pv_terminal_b:round(terminalPV),terminal_pct_of_ev:round(terminalPV/enterpriseValue,5),q4_2026_fcff_b:round(q4fcff),capex2036_b:round(capex2036),normalized_terminal_fcff2036_b:round(terminalFCFF),yearly:rows};
 }
 const outputs=Object.fromEntries(Object.entries(spec.scenario_endpoints).map(([name,s])=>[name,{inputs:s,results:valueCase(s),sensitivity_wacc_plus_1pp:valueCase(s,{wacc:s.wacc+0.01}).per_share_usd,sensitivity_capex2027_plus_4b:valueCase(s,{capex2027:s.capex2027+4}).per_share_usd}]));
 for(const prefix of ["bear","base","bull"])if(outputs[prefix+"_low"].results.per_share_usd>outputs[prefix+"_high"].results.per_share_usd)throw Error("Scenario bounds reversed");
