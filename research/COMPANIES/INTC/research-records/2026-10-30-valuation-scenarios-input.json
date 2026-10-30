@@ -1,0 +1,149 @@
+{
+  "model": "INTC_2026-10-30_conditional_10_year_fcff_dcf",
+  "model_version": "1.0.0",
+  "valuation_date": "2026-10-30",
+  "balance_sheet_date": "2026-09-26",
+  "latest_earnings_published": "2026-10-29",
+  "price_reference": {
+    "post_earnings_after_hours_usd": 70.9,
+    "as_of": "2026-10-29 20:00 EDT",
+    "regular_close_usd": 92.07,
+    "regular_as_of": "2026-10-29 16:00 EDT"
+  },
+  "units": "USD billions except per-share price and economic shares billions",
+  "historic_baseline": {
+    "rev_fy2026_first_three_quarters": 46.218,
+    "q4_revenue_company_guidance_midpoint": 15.5,
+    "fy2026_revenue_implied": 61.718,
+    "q3_revenue_actual": 16.513,
+    "q3_operating_profit": 2.522
+  },
+  "balance": {
+    "cash": 21.846,
+    "short_term_investments": 32.159,
+    "short_term_debt": 3.817,
+    "long_term_debt": 46.317,
+    "non_controlling_interests_book_value": 16.642,
+    "escrow_derivative_liability_separately_subtracted": false
+  },
+  "q4_2026_analyst_projection": {
+    "ebit": 0.7,
+    "da": 3.3,
+    "capex": 8.166,
+    "delta_nwc": 0.3,
+    "cash_tax_rate": 0.2,
+    "period_fraction_years": 0.25,
+    "reason": "FY2026 management approx $20B gross capex less 2026 9M cash PPE $11.834B; operational EBIT/D&A/NWC analyst assumptions, not management outlook"
+  },
+  "forecast": {
+    "years": [
+      2027,
+      2028,
+      2029,
+      2030,
+      2031,
+      2032,
+      2033,
+      2034,
+      2035,
+      2036
+    ],
+    "cash_tax_rate": 0.2,
+    "nwc_incremental_sales_pct": 0.04,
+    "ebit_includes_recurring_sbc": true,
+    "excluded_cash_flow_items": "financial interest, non-recurring proceeds, new equity proceeds; FCFF is pre-financing"
+  },
+  "scenario_endpoints": {
+    "bear_low": {
+      "rev2027": 63,
+      "rev2036": 115,
+      "ebit_margin2027": 0.07,
+      "ebit_margin2036": 0.19,
+      "capex2027": 32,
+      "da2027": 13.5,
+      "da2036": 18,
+      "wacc": 0.118,
+      "terminal_g": 0.02,
+      "incremental_roic": 0.12,
+      "economic_shares_b": 6.2
+    },
+    "bear_high": {
+      "rev2027": 65,
+      "rev2036": 127,
+      "ebit_margin2027": 0.08,
+      "ebit_margin2036": 0.225,
+      "capex2027": 28,
+      "da2027": 14,
+      "da2036": 20,
+      "wacc": 0.112,
+      "terminal_g": 0.022,
+      "incremental_roic": 0.14,
+      "economic_shares_b": 6
+    },
+    "base_low": {
+      "rev2027": 67,
+      "rev2036": 145,
+      "ebit_margin2027": 0.095,
+      "ebit_margin2036": 0.24,
+      "capex2027": 29,
+      "da2027": 14,
+      "da2036": 20,
+      "wacc": 0.11,
+      "terminal_g": 0.023,
+      "incremental_roic": 0.16,
+      "economic_shares_b": 5.9
+    },
+    "base_high": {
+      "rev2027": 72,
+      "rev2036": 169,
+      "ebit_margin2027": 0.115,
+      "ebit_margin2036": 0.29,
+      "capex2027": 26,
+      "da2027": 14,
+      "da2036": 22,
+      "wacc": 0.1,
+      "terminal_g": 0.027,
+      "incremental_roic": 0.18,
+      "economic_shares_b": 5.8
+    },
+    "bull_low": {
+      "rev2027": 73,
+      "rev2036": 195,
+      "ebit_margin2027": 0.13,
+      "ebit_margin2036": 0.32,
+      "capex2027": 26,
+      "da2027": 14,
+      "da2036": 24,
+      "wacc": 0.095,
+      "terminal_g": 0.028,
+      "incremental_roic": 0.21,
+      "economic_shares_b": 5.75
+    },
+    "bull_high": {
+      "rev2027": 76,
+      "rev2036": 225,
+      "ebit_margin2027": 0.14,
+      "ebit_margin2036": 0.36,
+      "capex2027": 24,
+      "da2027": 14,
+      "da2036": 26,
+      "wacc": 0.09,
+      "terminal_g": 0.03,
+      "incremental_roic": 0.24,
+      "economic_shares_b": 5.65
+    }
+  },
+  "facts_source_urls": [
+    "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+    "https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/",
+    "https://www.marketscreener.com/quote/stock/INTEL-CORPORATION-4829/quotes/"
+  ],
+  "limitations": [
+    "2027 and later revenue, EBIT, cash capex, D&A, WACC, ROIC, economic shares are analyst conditional assumptions, not management forecasts.",
+    "Latest reconciled financial balance is 2026-09-26; 2026-10-30 capital bridge uses this historical balance and not undocumented intervening transactions.",
+    "Non-controlling interests valued using reported carrying amount, not independently derived market value.",
+    "Other government escrow/warrant economic rights are reflected approximately in conditional future share count; corresponding derivative liabilities in accrued liabilities are not subtracted separately to avoid double deduction; full reconciliation outstanding.",
+    "Acquisition price for unclosed Classiq transaction not disclosed and not separately quantified; adverse outcome would lower price.",
+    "Terminal value is material and projections should not be interpreted as high-confidence 12-month price targets."
+  ]
+}
