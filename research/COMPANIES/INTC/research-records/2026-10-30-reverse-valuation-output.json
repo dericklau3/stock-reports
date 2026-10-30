@@ -1,0 +1,60 @@
+{
+  "model": "reverse_exit_ebit_only_not_whole_equity",
+  "as_of": "2026-10-30",
+  "target": "2028-12-31",
+  "year_fraction": 2.1711156741957565,
+  "assumptions": {
+    "shares2028B": 5.8,
+    "netCashLessClaims2028B": -15,
+    "costOfEquity": 0.12,
+    "assumedRevenue2028B": 80
+  },
+  "source_urls": [
+    "https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/",
+    "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm"
+  ],
+  "snapshots": [
+    {
+      "price": 92.07,
+      "phase": "2026-10-29 16:00 EDT regular close, before earnings",
+      "requirements": [
+        {
+          "exitMultipleEVtoEBIT": 20,
+          "required2028EbitB": 34.898699,
+          "requiredMarginOnAssumedRevenue": 0.436234
+        },
+        {
+          "exitMultipleEVtoEBIT": 25,
+          "required2028EbitB": 27.918959,
+          "requiredMarginOnAssumedRevenue": 0.348987
+        },
+        {
+          "exitMultipleEVtoEBIT": 30,
+          "required2028EbitB": 23.265799,
+          "requiredMarginOnAssumedRevenue": 0.290822
+        }
+      ]
+    },
+    {
+      "price": 70.9,
+      "phase": "2026-10-29 19:59 EDT after-hours indicative",
+      "requirements": [
+        {
+          "exitMultipleEVtoEBIT": 20,
+          "required2028EbitB": 27.046761,
+          "requiredMarginOnAssumedRevenue": 0.338085
+        },
+        {
+          "exitMultipleEVtoEBIT": 25,
+          "required2028EbitB": 21.637409,
+          "requiredMarginOnAssumedRevenue": 0.270468
+        },
+        {
+          "exitMultipleEVtoEBIT": 30,
+          "required2028EbitB": 18.031174,
+          "requiredMarginOnAssumedRevenue": 0.22539
+        }
+      ]
+    }
+  ]
+}
