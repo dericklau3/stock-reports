@@ -1,5 +1,50 @@
 # Amazon（AMZN）Tracker
 
+Last updated: **2026-10-30**
+
+## Current Research View
+
+**投资观点：中性偏谨慎。** 2026Q3 AWS快速增长、经营利润率创高点，但现金资本支出增得更快，TTM公司定义FCF已跌至**−$42.357bn**。资本回收、2027–2028真实现金和广告恢复没有充分证据，不把低表面GAAP P/E视为确定低估。
+
+**核心逻辑：** Q3 AWS收入**$45.984bn（同比+39.3%）**、分部经营利润**$17.773bn（38.65% margin）**；广告收入**$19.637bn，恒定汇率+12%**（Q2 +26%）；Q3 TTM经营现金流**$168.300bn**，毛现金PPE购建**$215.192bn**，毛口径FCF **−$46.892bn**（公司扣资产处置/激励款口径**−$42.357bn**）。
+
+**主要风险：** 2026现金资本开支指导**约$220bn**、公司电话会预计2027可能更多；9月底非流动长债**$173.125bn**、非流动租赁**$98.824bn**，流动部分/期限未完整核验；OpenAI/Anthropic云合同与股权融资双向依赖、广告FTC诉讼、Globalstar未完成交易以及Leo/Zoox资金需求。
+
+## Current Study & Research Records
+
+- [**2026-10-30 完整深度研究（九章）**](deep-research/2026-10-30-deep-research.md)
+- [2026-10-30 核验、事件覆盖、经营与估值底稿](research-records/2026-10-30-research.md)
+- [2026-10-30 P0 equity_pe输入（可运行）](research-records/2026-10-30-valuation-input.json)
+- [2026-10-30 独立算术输出及验收限制](research-records/2026-10-30-valuation-check.json)
+- [2026-10-20 历史研究](deep-research/2026-10-20-deep-research.md)
+
+## 2026-10-30 更新与历史假设差异
+
+| 研究事项 | 10/20旧假设或资料 | 10/30已核实新事实 | 判断变化与下一验证 |
+|---|---|---|---|
+| 报价与市值 | 2026-10-19常规收盘$262.45，6月底10.786bn法定股 | 2026-10-29 16:00 EDT常规收盘**$243.79**，当日**财报前**；2026-09-30法定**10.811bn股**，参考市值**$2.636trn** | 研究收盘价下降**7.11%**；盘后多个市场源$226–229不同时间戳，未采用为市场基准，不能称当日正式收盘 |
+| AWS与Trainium | Q2 +37%，margin39.36%，TorchNeuron尚处待开源 | Q3收入$45.984bn、**+39.3%**，利润$17.773bn、margin38.65%；公司Q3财报称TorchNeuron已提供、Bedrock Fortune500客户支出同比近7倍 | 运营证据强化、AWS margin略降；管理层称2027/28 AWS增速各超40%属预测，下一关真实账款/利润/资本收益 |
+| 广告和零售 | Q2广告$19.809bn、恒定汇率+26% | Q3广告$19.637bn、恒定汇率+12%，北美分部利润$8.723bn；Prime Day跨季迁移是部分增长扰动 | 广告增长假设收敛，FTC诉讼尚未终局；2026Q4高十几广告指引须验证 |
+| 经营现金与开支 | Q2 TTM简化FCF−$11.625bn、公司口径−$7.604bn | Q3 TTM毛口径**−$46.892bn**、公司口径**−$42.357bn**；2026Q3单季毛PPE开支$77.259bn，9M合计$175.670bn | 现金下行已实质加剧，2027 capex可能再增加；可持续FCF为估值最大不确定性 |
+| 债务/流动性 | 6/30现金+可交易证券$122.988bn，长期债非流动$128.894bn | 9/30现金+可交易证券**$114.226bn**、长期债非流动**$173.125bn**，非流动租赁$98.824bn | 流动债、全部租赁及契约承诺需正式2026Q3 10-Q附注复核；不重扣长期采购名义承诺 |
+| 新经营进度 | Globalstar、Leo未形成可证实规模化现金利润，Zoox仅有收费豁免 | 10/29 Q3公告称Leo已签AT&T战略合作、Zoox开始在拉斯维加斯收费服务；Globalstar交割尚未确认 | 阶段改善非贡献利润已兑现；核对客户付款、许可与资本投入 |
+| 归一化估值 | 2028条件现值Bear$84.30–122.94、Base$186–256.95、Bull$324.65–420.33；旧价$262.45 | 新独立权益倍数模型Bear **$80–119**、Base **$168–260**、Bull **$319–449**，截至10/30折现，参考价$243.79 | 下界更审慎、上界条件更强且不稳定；2028模型尚未到期，不能据此计算预测命中率。P0官方Python脚本及P2冻结待本地复核 |
+
+### 核验依据与行动条件
+
+- [Amazon Q3 2026 IR新闻稿](https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx)，2026-10-29；[SEC 8-K Exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm)。
+- [2026-10-29历史股价](https://stockanalysis.com/stocks/amzn/history/)；[Q2 SEC](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm)与[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm)。
+- 上修观察：AWS连续季度增速维持约30%及分部margin稳定、广告在2026Q4及2027回升、2027资本开支和债务与现金流可匹配、AI合同独立现金收入可核；下修观察：FCF连续恶化且融资迅速增加、AWS毛利回落、监管正式不利结果、项目延期。以上非保证或交易指令。
+- 估值复现命令：`python3 us-equity-research/valuation_engine.py research/COMPANIES/AMZN/research-records/2026-10-30-valuation-input.json --output research/COMPANIES/AMZN/research-records/2026-10-30-valuation-p0-output.json`。本次独立JS和Python公式交叉验算，未真实运行仓库Python P0引擎，P2冻结亦未执行，**不得写成P0/P2通过**。
+- 重要未知：2026Q3 10-Q全部债与租赁附注、已发行股本时点后变化、2027/28逐年CapEx与真实FCF、历史同口径Forward P/E日频、Globalstar条款交割、AI模型客户商业关系与投资证券真正可变现价值。
+- 事件实际公告日、发生日区分、核心条款与仍缺文献见[2026-10-30底稿](research-records/2026-10-30-research.md)；未穷尽2025Q4/2026全年所有8-K、监管和供应商资料，不宣称12个月全量完成。
+
+---
+
+## 2026-10-20及更早历史原始追踪（保留）
+
+### 2026-10-20历史快照
+
 Last updated: 2026-10-20
 
 ## Current Research View
