@@ -1,22 +1,35 @@
 # INTC Tracker — Intel Corporation
 
-Last updated: 2026-10-23
+Last updated: 2026-10-30
 
 ## Current Research View
 
-- **投资观点：**中性偏谨慎；截至2026-10-23 09:00 UTC+8，最近常规收盘2026-10-22为$85.49。Q2 CPU产品业务盈利与Foundry持续亏损并存；当前仍缺可核实的安全边际，不能将条件模型数值当成完整股权公允价。
+- **投资观点：**中性偏谨慎。2026-10-29 Q3 GAAP经营利润$2.522bn，DCAI收入$7.318bn，Foundry亏损收窄至-$1.853bn；资本开支和PC市场弱势使2027普通股FCF尚不稳定。**Q3财报发布于10-29常规交易收盘后：当日常规收盘$92.07，19:59 EDT盘后$70.90。两者信息集不同，不混成单一实时价格。**
+- **研究截止：**2026-10-30 08:12（UTC+8；美东2026-10-29 20:12 EDT）；Q3会计期间截至2026-09-26，10-29已发布8-K附件EX99.1，独立Q3 10-Q截至研究时点尚未核实。
 
 ## Current Main Thesis
 
-- **核心逻辑：**Q2 Intel Products经营利润$4.817bn而Foundry经营亏损$2.089bn，外部Foundry及封测仅$0.293bn（约5.1%分部收入）。2026-10-21 Ohio One结构桁架进展属于建设非投产，真正关注第三方客户付费、长期CapEx与每股FCF。
+- **核心逻辑：**Q3 Intel Products经营利润$5.324bn，Foundry分部经营亏$1.853bn，对外Foundry收入仅$0.411bn且环比+$0.118bn主要来自非经常性项目。Q3经营现金流$5.082bn、毛现金CapEx$4.219bn，公司调整FCF$1.639bn。2027资本支出预计明显增加；外部代工真实毛利与普通股每股FCF是决定性的下次验证。
+- **业务判断：**DCAI收入同比+78%；CCPG收入同比-5%。Oracle 2026-10-27合作属未来协作规划、最低新增订单未披露；2026-10-26 Classiq为尚未交割的量子软件收购，交易对价未知。
 
 ## Key Risks
 
-- **主要风险：**2026-08总价约$23bn公开增发后的净现金、经济股数/政府托管股份与权证没有正式Q3报表调和；14A与Ohio/Arizona工厂长期支出、Foundry亏损和估值终值假设仍是主要不确定性。
+- **主要风险：**PC需求弱、Q4 Fab28事故影响、先进工艺外部客户未商业化、2027高资本支出、收购对价和经济股数/托管权证索偿的不完整调和。此前“8月公开发行净募资未知”的缺口**已解决**：2026Q3现金流正式确认公开发行净收益**$22.617bn**；2026-09-26实际在外股数约**5.310bn**，现金+短投$54.005bn、债务$50.134bn、NCI$16.642bn。
 
 ## Latest Research
 
-[2026-10-23完整深研](deep-research/2026-10-23-deep-research.md)；[2026-10-23来源/口径/事件及估值底稿](research-records/2026-10-23-research.md)；[独立可复算JS脚本](research-records/2026-10-23-valuation-replay.js)和[实际输出JSON](research-records/2026-10-23-valuation-replay-output.json)。历史报告：[2026-10-21](deep-research/2026-10-21-deep-research.md)、[2026-10-20](deep-research/2026-10-20-deep-research.md)、[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+[2026-10-30完整深研](deep-research/2026-10-30-deep-research.md)；[2026-10-30来源、覆盖、财务与估值底稿](research-records/2026-10-30-research.md)；[反向估值可复算JS](research-records/2026-10-30-reverse-valuation.js)和[机算输出](research-records/2026-10-30-reverse-valuation-output.json)。上一版完整报告：[2026-10-23](deep-research/2026-10-23-deep-research.md)；更早报告见下方历史记录。
+
+## 2026-10-30 完整深研更新（追加历史）
+
+- **Q3财报：**[10-29正式8-K附件EX99.1](https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm)，单季GAAP收入$16.513bn、经营利润$2.522bn、归属母公司净利润$3.320bn，调整后EPS$0.52；Q4营收指引$15bn–$16bn，GAAP毛利率37.1%。
+- **关键分部：**DCAI营收$7.318bn、经营利润$3.039bn；CCPG营收$8.097bn、经营利润$2.285bn；Foundry分部收入$6.697bn，经营亏$1.853bn，**对外**收入$0.411bn（约6.1%，环比增量主要非经常性）；内部收入不能重复计入合并销售。[10-29管理层电话会](https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/)。
+- **融资与现金核验：**2026Q3披露公开普通股增发实际净筹**$22.617bn**、2026-09-26现金及短投**$54.005bn**、有息债**$50.134bn**、非控股权益**$16.642bn**、当前实际普通股约**5.310bn股**（不等于2026Q4预计平均稀释5.44bn）。关闭旧2026-10-23档案关于增发最终净到款不明的事实缺口，**保留**权益托管/条件warrants/租赁和未来FD桥接缺口。
+- **现金流：**Q3 GAAP OCF $5.082bn，现金毛CapEx $4.219bn，简单FCF $0.863bn；公司口径调整FCF $1.639bn（包括政府/伙伴现金流及租赁调节），不可混淆。自算TTM 2026Q3 revenue $59.892bn、OCF $17.472bn、现金PP&E $15.855bn、简单FCF $1.617bn；2027 CapEx将增加，不能将Q3正现金流机械年化为稳态。
+- **已公布变化：**2026-10-29 [Fab28事故对Q4预计约$0.3bn收入影响](https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/)；2026-10-27 [Oracle Xeon/OCI规划合作](https://www.intc.com/news-events/press-releases/detail/1785/intel-and-oracle-plan-expanded-collaboration-to-support)（采购条款未公开）；2026-10-26 [Classiq拟收购](https://www.intc.com/news-events/press-releases/detail/1784/intel-to-acquire-classiq-to-create-a-full-stack-quantum)（2027H1目标交割、对价未披露）。核查了Intel IR新闻2025-10至2026-10归档，但全年全部SEC/监管/伙伴来源仍**未完成覆盖**；10-22 FCC媒体线索未取得行政原文。
+- **当前报价、估值边界：**10-29常规收盘$92.07（财报**之前**），10-29 19:59 EDT盘后$70.90（发布后）。以09-26 5.310bn在外股数做市值代理为$488.89bn/$376.48bn，TTM P/S约8.16x/6.29x；这不等于完全稀释经济权益。未来2027–2030逐年CapEx、外部Foundry长期现金边际、Classiq价格、政府托管/权证与未来融资仍不可精确估计，故**未完成可靠whole-equity保守/基础/乐观内在价**；不沿用10-23条件P0/P1价格与时点比较。只保留可复算的2028 **反向EBIT门槛**：假设2028经济股份5.8bn、有符号净现金及其他索偿-$15bn、12%股权要求回报，现价盘后$70.90在25x退出EV/EBIT下，要求2028正常化EBIT约$21.637bn；所有假设明确标为分析师假设，不是正式价值目标。未运行仓库P0/P1 CLI，也不伪造P2冻结。
+- **下一验证：**正式Q3 10-Q（独立申报未核实取得）、2026Q4业绩/PC库存、Fab28产线恢复、2027 gross CapEx与FCF、14A商业客户合同、Classiq审批交割价、资本结构稀释；逐项与历史不可回改的2026-10-23预测对照。历史2028预测未到期，不报告命中率。
+
 ## 2026-10-23 完整深研更新（追加历史）
 
 - **本次研究：**[完整报告](deep-research/2026-10-23-deep-research.md)、[详细底稿及范围缺口](research-records/2026-10-23-research.md)、[独立程序复算源码](research-records/2026-10-23-valuation-replay.js)、[输入/输出存档](research-records/2026-10-23-valuation-replay-output.json)。报告和底稿均以2026-10-23 09:00 UTC+8为知识截止；没有覆盖2026Q3未来财报。
