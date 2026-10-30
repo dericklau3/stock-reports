@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "ticker": "AMZN",
+  "valuation_date": "2026-10-30",
+  "currency": "USD",
+  "price": {
+    "value": 243.79,
+    "basis": "market",
+    "as_of": "2026-10-29",
+    "source_url": "https://stockanalysis.com/stocks/amzn/history/"
+  },
+  "cases": [
+    {
+      "name": "bear_low",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 870000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026Q3 TTM收入797455百万美元，管理层对2027-28 AWS增速>40%为预测而非保证；bear_low假设集团2028营收870000百万美元，并考虑零售/广告变化。"
+        },
+        "net_margin": {
+          "value": 0.06810344827586207,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028归一化GAAP经营利润率10.0%，扣年度净利息8000百万美元及现金所得税25%，故净利率=(收入×经营率−净利息)×(1−税率)/收入；持续SBC与折旧包含在经营利润率中；不计入Anthropic浮盈。"
+        },
+        "forecast_shares_m": {
+          "value": 11400,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026-09-30已发行流通普通股10811百万股，2026Q3加权稀释股10929百万股；情景股数11400百万股考虑未来股权激励和潜在稀释，尚未把未交割Globalstar换股计作已发生。"
+        },
+        "exit_pe": {
+          "value": 19,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028终期归一化净利PE 19倍，基于AWS持续盈利和2027-28资本开支/现金回收不确定性作情景压力测试；无同步可比公司PE完整样本，不代表市场共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：股权要求回报率10%，作为利率、宏观、资本强度和长期AI项目风险的压力测试参数；未获得可审计隐含股权资本成本。"
+        }
+      }
+    },
+    {
+      "name": "bear_high",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 930000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026Q3 TTM收入797455百万美元，管理层对2027-28 AWS增速>40%为预测而非保证；bear_high假设集团2028营收930000百万美元，并考虑零售/广告变化。"
+        },
+        "net_margin": {
+          "value": 0.08060483870967743,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028归一化GAAP经营利润率11.5%，扣年度净利息7000百万美元及现金所得税25%，故净利率=(收入×经营率−净利息)×(1−税率)/收入；持续SBC与折旧包含在经营利润率中；不计入Anthropic浮盈。"
+        },
+        "forecast_shares_m": {
+          "value": 11300,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026-09-30已发行流通普通股10811百万股，2026Q3加权稀释股10929百万股；情景股数11300百万股考虑未来股权激励和潜在稀释，尚未把未交割Globalstar换股计作已发生。"
+        },
+        "exit_pe": {
+          "value": 22,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028终期归一化净利PE 22倍，基于AWS持续盈利和2027-28资本开支/现金回收不确定性作情景压力测试；无同步可比公司PE完整样本，不代表市场共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：股权要求回报率10%，作为利率、宏观、资本强度和长期AI项目风险的压力测试参数；未获得可审计隐含股权资本成本。"
+        }
+      }
+    },
+    {
+      "name": "base_low",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 1030000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026Q3 TTM收入797455百万美元，管理层对2027-28 AWS增速>40%为预测而非保证；base_low假设集团2028营收1030000百万美元，并考虑零售/广告变化。"
+        },
+        "net_margin": {
+          "value": 0.09400388349514563,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028归一化GAAP经营利润率13.0%，扣年度净利息6500百万美元及现金所得税24%，故净利率=(收入×经营率−净利息)×(1−税率)/收入；持续SBC与折旧包含在经营利润率中；不计入Anthropic浮盈。"
+        },
+        "forecast_shares_m": {
+          "value": 11250,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026-09-30已发行流通普通股10811百万股，2026Q3加权稀释股10929百万股；情景股数11250百万股考虑未来股权激励和潜在稀释，尚未把未交割Globalstar换股计作已发生。"
+        },
+        "exit_pe": {
+          "value": 24,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028终期归一化净利PE 24倍，基于AWS持续盈利和2027-28资本开支/现金回收不确定性作情景压力测试；无同步可比公司PE完整样本，不代表市场共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：股权要求回报率10%，作为利率、宏观、资本强度和长期AI项目风险的压力测试参数；未获得可审计隐含股权资本成本。"
+        }
+      }
+    },
+    {
+      "name": "base_high",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 1130000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026Q3 TTM收入797455百万美元，管理层对2027-28 AWS增速>40%为预测而非保证；base_high假设集团2028营收1130000百万美元，并考虑零售/广告变化。"
+        },
+        "net_margin": {
+          "value": 0.11175221238938053,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028归一化GAAP经营利润率15.0%，扣年度净利息5500百万美元及现金所得税23%，故净利率=(收入×经营率−净利息)×(1−税率)/收入；持续SBC与折旧包含在经营利润率中；不计入Anthropic浮盈。"
+        },
+        "forecast_shares_m": {
+          "value": 11050,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026-09-30已发行流通普通股10811百万股，2026Q3加权稀释股10929百万股；情景股数11050百万股考虑未来股权激励和潜在稀释，尚未把未交割Globalstar换股计作已发生。"
+        },
+        "exit_pe": {
+          "value": 28,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028终期归一化净利PE 28倍，基于AWS持续盈利和2027-28资本开支/现金回收不确定性作情景压力测试；无同步可比公司PE完整样本，不代表市场共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：股权要求回报率10%，作为利率、宏观、资本强度和长期AI项目风险的压力测试参数；未获得可审计隐含股权资本成本。"
+        }
+      }
+    },
+    {
+      "name": "bull_low",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 1180000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026Q3 TTM收入797455百万美元，管理层对2027-28 AWS增速>40%为预测而非保证；bull_low假设集团2028营收1180000百万美元，并考虑零售/广告变化。"
+        },
+        "net_margin": {
+          "value": 0.12313474576271187,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028归一化GAAP经营利润率16.5%，扣年度净利息6000百万美元及现金所得税23%，故净利率=(收入×经营率−净利息)×(1−税率)/收入；持续SBC与折旧包含在经营利润率中；不计入Anthropic浮盈。"
+        },
+        "forecast_shares_m": {
+          "value": 11100,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026-09-30已发行流通普通股10811百万股，2026Q3加权稀释股10929百万股；情景股数11100百万股考虑未来股权激励和潜在稀释，尚未把未交割Globalstar换股计作已发生。"
+        },
+        "exit_pe": {
+          "value": 30,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028终期归一化净利PE 30倍，基于AWS持续盈利和2027-28资本开支/现金回收不确定性作情景压力测试；无同步可比公司PE完整样本，不代表市场共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：股权要求回报率10%，作为利率、宏观、资本强度和长期AI项目风险的压力测试参数；未获得可审计隐含股权资本成本。"
+        }
+      }
+    },
+    {
+      "name": "bull_high",
+      "method": "equity_pe",
+      "target_date": "2028-12-31",
+      "interim_distributions": "excluded",
+      "inputs": {
+        "revenue_m": {
+          "value": 1300000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026Q3 TTM收入797455百万美元，管理层对2027-28 AWS增速>40%为预测而非保证；bull_high假设集团2028营收1300000百万美元，并考虑零售/广告变化。"
+        },
+        "net_margin": {
+          "value": 0.1374,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028归一化GAAP经营利润率18.0%，扣年度净利息5000百万美元及现金所得税22%，故净利率=(收入×经营率−净利息)×(1−税率)/收入；持续SBC与折旧包含在经营利润率中；不计入Anthropic浮盈。"
+        },
+        "forecast_shares_m": {
+          "value": 11000,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2026-09-30已发行流通普通股10811百万股，2026Q3加权稀释股10929百万股；情景股数11000百万股考虑未来股权激励和潜在稀释，尚未把未交割Globalstar换股计作已发生。"
+        },
+        "exit_pe": {
+          "value": 34,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：2028终期归一化净利PE 34倍，基于AWS持续盈利和2027-28资本开支/现金回收不确定性作情景压力测试；无同步可比公司PE完整样本，不代表市场共识。"
+        },
+        "cost_of_equity": {
+          "value": 0.1,
+          "basis": "analyst",
+          "as_of": "2026-10-30",
+          "rationale": "研究假设：股权要求回报率10%，作为利率、宏观、资本强度和长期AI项目风险的压力测试参数；未获得可审计隐含股权资本成本。"
+        }
+      }
+    }
+  ]
+}
