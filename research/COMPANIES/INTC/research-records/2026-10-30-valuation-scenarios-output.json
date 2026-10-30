@@ -150,7 +150,7 @@
           }
         ]
       },
-      "sensitivity_wacc_plus_1pp": -0.069,
+      "sensitivity_wacc_plus_1pp": 0,
       "sensitivity_capex2027_plus_4b": -0.8541
     },
     "bear_high": {
