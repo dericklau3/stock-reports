@@ -1,0 +1,863 @@
+{
+  "model": "INTC_2026-10-30_conditional_10_year_fcff_dcf",
+  "as_of": "2026-10-30",
+  "usd_bn_unless_noted": true,
+  "reference_after_hours_price_usd": 70.9,
+  "baseline": {
+    "rev_fy2026_first_three_quarters": 46.218,
+    "q4_revenue_company_guidance_midpoint": 15.5,
+    "fy2026_revenue_implied": 61.718,
+    "q3_revenue_actual": 16.513,
+    "q3_operating_profit": 2.522
+  },
+  "capital_bridge_2026_09_26_b": -12.771,
+  "scenario_outputs": {
+    "bear_low": {
+      "inputs": {
+        "rev2027": 63,
+        "rev2036": 115,
+        "ebit_margin2027": 0.07,
+        "ebit_margin2036": 0.19,
+        "capex2027": 32,
+        "da2027": 13.5,
+        "da2036": 18,
+        "wacc": 0.118,
+        "terminal_g": 0.02,
+        "incremental_roic": 0.12,
+        "economic_shares_b": 6.2
+      },
+      "results": {
+        "per_share_usd": 1.3134,
+        "equity_value_b": 8.1433,
+        "enterprise_value_b": 20.9143,
+        "bridge_b": -12.771,
+        "pv_explicit_fcff_b": -27.9189,
+        "pv_terminal_b": 48.8332,
+        "terminal_pct_of_ev": 2.33492,
+        "q4_2026_fcff_b": -4.606,
+        "capex2036_b": 20.6158,
+        "normalized_terminal_fcff2036_b": 14.5667,
+        "yearly": [
+          {
+            "year": 2027,
+            "revenue_b": 63,
+            "ebit_margin": 0.07,
+            "ebit_b": 4.41,
+            "da_b": 13.5,
+            "capex_b": 32,
+            "delta_nwc_b": 0.0513,
+            "fcff_b": -15.0233,
+            "year_fraction": 1.156913
+          },
+          {
+            "year": 2028,
+            "revenue_b": 67.3566,
+            "ebit_margin": 0.083333,
+            "ebit_b": 5.6131,
+            "da_b": 14,
+            "capex_b": 30.7351,
+            "delta_nwc_b": 0.1743,
+            "fcff_b": -12.4189,
+            "year_fraction": 2.156913
+          },
+          {
+            "year": 2029,
+            "revenue_b": 72.0145,
+            "ebit_margin": 0.096667,
+            "ebit_b": 6.9614,
+            "da_b": 14.5,
+            "capex_b": 29.4702,
+            "delta_nwc_b": 0.1863,
+            "fcff_b": -9.5874,
+            "year_fraction": 3.156913
+          },
+          {
+            "year": 2030,
+            "revenue_b": 76.9945,
+            "ebit_margin": 0.11,
+            "ebit_b": 8.4694,
+            "da_b": 15,
+            "capex_b": 28.2053,
+            "delta_nwc_b": 0.1992,
+            "fcff_b": -6.629,
+            "year_fraction": 4.156913
+          },
+          {
+            "year": 2031,
+            "revenue_b": 82.3189,
+            "ebit_margin": 0.123333,
+            "ebit_b": 10.1527,
+            "da_b": 15.5,
+            "capex_b": 26.9404,
+            "delta_nwc_b": 0.213,
+            "fcff_b": -3.5312,
+            "year_fraction": 5.156913
+          },
+          {
+            "year": 2032,
+            "revenue_b": 88.0114,
+            "ebit_margin": 0.136667,
+            "ebit_b": 12.0282,
+            "da_b": 16,
+            "capex_b": 25.6754,
+            "delta_nwc_b": 0.2277,
+            "fcff_b": -0.2806,
+            "year_fraction": 6.156913
+          },
+          {
+            "year": 2033,
+            "revenue_b": 94.0976,
+            "ebit_margin": 0.15,
+            "ebit_b": 14.1146,
+            "da_b": 16.5,
+            "capex_b": 24.4105,
+            "delta_nwc_b": 0.2434,
+            "fcff_b": 3.1377,
+            "year_fraction": 7.156913
+          },
+          {
+            "year": 2034,
+            "revenue_b": 100.6047,
+            "ebit_margin": 0.163333,
+            "ebit_b": 16.4321,
+            "da_b": 17,
+            "capex_b": 23.1456,
+            "delta_nwc_b": 0.2603,
+            "fcff_b": 6.7398,
+            "year_fraction": 8.156913
+          },
+          {
+            "year": 2035,
+            "revenue_b": 107.5618,
+            "ebit_margin": 0.176667,
+            "ebit_b": 19.0026,
+            "da_b": 17.5,
+            "capex_b": 21.8807,
+            "delta_nwc_b": 0.2783,
+            "fcff_b": 10.5431,
+            "year_fraction": 9.156913
+          },
+          {
+            "year": 2036,
+            "revenue_b": 115,
+            "ebit_margin": 0.19,
+            "ebit_b": 21.85,
+            "da_b": 18,
+            "capex_b": 20.6158,
+            "delta_nwc_b": 0.2975,
+            "fcff_b": 14.5667,
+            "year_fraction": 10.156913
+          }
+        ]
+      },
+      "sensitivity_wacc_plus_1pp": -0.069,
+      "sensitivity_capex2027_plus_4b": -0.8541
+    },
+    "bear_high": {
+      "inputs": {
+        "rev2027": 65,
+        "rev2036": 127,
+        "ebit_margin2027": 0.08,
+        "ebit_margin2036": 0.225,
+        "capex2027": 28,
+        "da2027": 14,
+        "da2036": 20,
+        "wacc": 0.112,
+        "terminal_g": 0.022,
+        "incremental_roic": 0.14,
+        "economic_shares_b": 6
+      },
+      "results": {
+        "per_share_usd": 9.9542,
+        "equity_value_b": 59.7255,
+        "enterprise_value_b": 72.4965,
+        "bridge_b": -12.771,
+        "pv_explicit_fcff_b": -1.9349,
+        "pv_terminal_b": 74.4314,
+        "terminal_pct_of_ev": 1.02669,
+        "q4_2026_fcff_b": -4.606,
+        "capex2036_b": 23.2279,
+        "normalized_terminal_fcff2036_b": 19.2677,
+        "yearly": [
+          {
+            "year": 2027,
+            "revenue_b": 65,
+            "ebit_margin": 0.08,
+            "ebit_b": 5.2,
+            "da_b": 14,
+            "capex_b": 28,
+            "delta_nwc_b": 0.1313,
+            "fcff_b": -9.9713,
+            "year_fraction": 1.156913
+          },
+          {
+            "year": 2028,
+            "revenue_b": 70.022,
+            "ebit_margin": 0.096111,
+            "ebit_b": 6.7299,
+            "da_b": 14.6667,
+            "capex_b": 27.4698,
+            "delta_nwc_b": 0.2009,
+            "fcff_b": -7.6201,
+            "year_fraction": 2.156913
+          },
+          {
+            "year": 2029,
+            "revenue_b": 75.432,
+            "ebit_margin": 0.112222,
+            "ebit_b": 8.4651,
+            "da_b": 15.3333,
+            "capex_b": 26.9395,
+            "delta_nwc_b": 0.2164,
+            "fcff_b": -5.0505,
+            "year_fraction": 3.156913
+          },
+          {
+            "year": 2030,
+            "revenue_b": 81.26,
+            "ebit_margin": 0.128333,
+            "ebit_b": 10.4284,
+            "da_b": 16,
+            "capex_b": 26.4093,
+            "delta_nwc_b": 0.2331,
+            "fcff_b": -2.2997,
+            "year_fraction": 4.156913
+          },
+          {
+            "year": 2031,
+            "revenue_b": 87.5383,
+            "ebit_margin": 0.144444,
+            "ebit_b": 12.6444,
+            "da_b": 16.6667,
+            "capex_b": 25.8791,
+            "delta_nwc_b": 0.2511,
+            "fcff_b": 0.652,
+            "year_fraction": 5.156913
+          },
+          {
+            "year": 2032,
+            "revenue_b": 94.3016,
+            "ebit_margin": 0.160556,
+            "ebit_b": 15.1406,
+            "da_b": 17.3333,
+            "capex_b": 25.3489,
+            "delta_nwc_b": 0.2705,
+            "fcff_b": 3.8265,
+            "year_fraction": 6.156913
+          },
+          {
+            "year": 2033,
+            "revenue_b": 101.5875,
+            "ebit_margin": 0.176667,
+            "ebit_b": 17.9471,
+            "da_b": 18,
+            "capex_b": 24.8186,
+            "delta_nwc_b": 0.2914,
+            "fcff_b": 7.2476,
+            "year_fraction": 7.156913
+          },
+          {
+            "year": 2034,
+            "revenue_b": 109.4363,
+            "ebit_margin": 0.192778,
+            "ebit_b": 21.0969,
+            "da_b": 18.6667,
+            "capex_b": 24.2884,
+            "delta_nwc_b": 0.314,
+            "fcff_b": 10.9418,
+            "year_fraction": 8.156913
+          },
+          {
+            "year": 2035,
+            "revenue_b": 117.8915,
+            "ebit_margin": 0.208889,
+            "ebit_b": 24.6262,
+            "da_b": 19.3333,
+            "capex_b": 23.7582,
+            "delta_nwc_b": 0.3382,
+            "fcff_b": 14.9379,
+            "year_fraction": 9.156913
+          },
+          {
+            "year": 2036,
+            "revenue_b": 127,
+            "ebit_margin": 0.225,
+            "ebit_b": 28.575,
+            "da_b": 20,
+            "capex_b": 23.2279,
+            "delta_nwc_b": 0.3643,
+            "fcff_b": 19.2677,
+            "year_fraction": 10.156913
+          }
+        ]
+      },
+      "sensitivity_wacc_plus_1pp": 7.5258,
+      "sensitivity_capex2027_plus_4b": 7.6739
+    },
+    "base_low": {
+      "inputs": {
+        "rev2027": 67,
+        "rev2036": 145,
+        "ebit_margin2027": 0.095,
+        "ebit_margin2036": 0.24,
+        "capex2027": 29,
+        "da2027": 14,
+        "da2036": 20,
+        "wacc": 0.11,
+        "terminal_g": 0.023,
+        "incremental_roic": 0.16,
+        "economic_shares_b": 5.9
+      },
+      "results": {
+        "per_share_usd": 15.3092,
+        "equity_value_b": 90.3243,
+        "enterprise_value_b": 103.0953,
+        "bridge_b": -12.771,
+        "pv_explicit_fcff_b": 5.9807,
+        "pv_terminal_b": 97.1146,
+        "terminal_pct_of_ev": 0.94199,
+        "q4_2026_fcff_b": -4.606,
+        "capex2036_b": 23.5252,
+        "normalized_terminal_fcff2036_b": 23.838,
+        "yearly": [
+          {
+            "year": 2027,
+            "revenue_b": 67,
+            "ebit_margin": 0.095,
+            "ebit_b": 6.365,
+            "da_b": 14,
+            "capex_b": 29,
+            "delta_nwc_b": 0.2113,
+            "fcff_b": -10.1193,
+            "year_fraction": 1.156913
+          },
+          {
+            "year": 2028,
+            "revenue_b": 73.0011,
+            "ebit_margin": 0.111111,
+            "ebit_b": 8.1112,
+            "da_b": 14.6667,
+            "capex_b": 28.3917,
+            "delta_nwc_b": 0.24,
+            "fcff_b": -7.4761,
+            "year_fraction": 2.156913
+          },
+          {
+            "year": 2029,
+            "revenue_b": 79.5398,
+            "ebit_margin": 0.127222,
+            "ebit_b": 10.1192,
+            "da_b": 15.3333,
+            "capex_b": 27.7834,
+            "delta_nwc_b": 0.2615,
+            "fcff_b": -4.6162,
+            "year_fraction": 3.156913
+          },
+          {
+            "year": 2030,
+            "revenue_b": 86.6641,
+            "ebit_margin": 0.143333,
+            "ebit_b": 12.4219,
+            "da_b": 16,
+            "capex_b": 27.1751,
+            "delta_nwc_b": 0.285,
+            "fcff_b": -1.5226,
+            "year_fraction": 4.156913
+          },
+          {
+            "year": 2031,
+            "revenue_b": 94.4265,
+            "ebit_margin": 0.159444,
+            "ebit_b": 15.0558,
+            "da_b": 16.6667,
+            "capex_b": 26.5668,
+            "delta_nwc_b": 0.3105,
+            "fcff_b": 1.834,
+            "year_fraction": 5.156913
+          },
+          {
+            "year": 2032,
+            "revenue_b": 102.8842,
+            "ebit_margin": 0.175556,
+            "ebit_b": 18.0619,
+            "da_b": 17.3333,
+            "capex_b": 25.9584,
+            "delta_nwc_b": 0.3383,
+            "fcff_b": 5.4861,
+            "year_fraction": 6.156913
+          },
+          {
+            "year": 2033,
+            "revenue_b": 112.0995,
+            "ebit_margin": 0.191667,
+            "ebit_b": 21.4857,
+            "da_b": 18,
+            "capex_b": 25.3501,
+            "delta_nwc_b": 0.3686,
+            "fcff_b": 9.4698,
+            "year_fraction": 7.156913
+          },
+          {
+            "year": 2034,
+            "revenue_b": 122.1401,
+            "ebit_margin": 0.207778,
+            "ebit_b": 25.378,
+            "da_b": 18.6667,
+            "capex_b": 24.7418,
+            "delta_nwc_b": 0.4016,
+            "fcff_b": 13.8256,
+            "year_fraction": 8.156913
+          },
+          {
+            "year": 2035,
+            "revenue_b": 133.0801,
+            "ebit_margin": 0.223889,
+            "ebit_b": 29.7952,
+            "da_b": 19.3333,
+            "capex_b": 24.1335,
+            "delta_nwc_b": 0.4376,
+            "fcff_b": 18.5983,
+            "year_fraction": 9.156913
+          },
+          {
+            "year": 2036,
+            "revenue_b": 145,
+            "ebit_margin": 0.24,
+            "ebit_b": 34.8,
+            "da_b": 20,
+            "capex_b": 23.5252,
+            "delta_nwc_b": 0.4768,
+            "fcff_b": 23.838,
+            "year_fraction": 10.156913
+          }
+        ]
+      },
+      "sensitivity_wacc_plus_1pp": 12.0151,
+      "sensitivity_capex2027_plus_4b": 12.9762
+    },
+    "base_high": {
+      "inputs": {
+        "rev2027": 72,
+        "rev2036": 169,
+        "ebit_margin2027": 0.115,
+        "ebit_margin2036": 0.29,
+        "capex2027": 26,
+        "da2027": 14,
+        "da2036": 22,
+        "wacc": 0.1,
+        "terminal_g": 0.027,
+        "incremental_roic": 0.18,
+        "economic_shares_b": 5.8
+      },
+      "results": {
+        "per_share_usd": 35.6409,
+        "equity_value_b": 206.717,
+        "enterprise_value_b": 219.488,
+        "bridge_b": -12.771,
+        "pv_explicit_fcff_b": 41.4063,
+        "pv_terminal_b": 178.0817,
+        "terminal_pct_of_ev": 0.81135,
+        "q4_2026_fcff_b": -4.606,
+        "capex2036_b": 27.2698,
+        "normalized_terminal_fcff2036_b": 33.3268,
+        "yearly": [
+          {
+            "year": 2027,
+            "revenue_b": 72,
+            "ebit_margin": 0.115,
+            "ebit_b": 8.28,
+            "da_b": 14,
+            "capex_b": 26,
+            "delta_nwc_b": 0.4113,
+            "fcff_b": -5.7873,
+            "year_fraction": 1.156913
+          },
+          {
+            "year": 2028,
+            "revenue_b": 79.1599,
+            "ebit_margin": 0.134444,
+            "ebit_b": 10.6426,
+            "da_b": 14.8889,
+            "capex_b": 26.1411,
+            "delta_nwc_b": 0.2864,
+            "fcff_b": -3.0245,
+            "year_fraction": 2.156913
+          },
+          {
+            "year": 2029,
+            "revenue_b": 87.0318,
+            "ebit_margin": 0.153889,
+            "ebit_b": 13.3932,
+            "da_b": 15.7778,
+            "capex_b": 26.2822,
+            "delta_nwc_b": 0.3149,
+            "fcff_b": -0.1047,
+            "year_fraction": 3.156913
+          },
+          {
+            "year": 2030,
+            "revenue_b": 95.6865,
+            "ebit_margin": 0.173333,
+            "ebit_b": 16.5857,
+            "da_b": 16.6667,
+            "capex_b": 26.4233,
+            "delta_nwc_b": 0.3462,
+            "fcff_b": 3.1657,
+            "year_fraction": 4.156913
+          },
+          {
+            "year": 2031,
+            "revenue_b": 105.2018,
+            "ebit_margin": 0.192778,
+            "ebit_b": 20.2806,
+            "da_b": 17.5556,
+            "capex_b": 26.5643,
+            "delta_nwc_b": 0.3806,
+            "fcff_b": 6.8351,
+            "year_fraction": 5.156913
+          },
+          {
+            "year": 2032,
+            "revenue_b": 115.6634,
+            "ebit_margin": 0.212222,
+            "ebit_b": 24.5463,
+            "da_b": 18.4444,
+            "capex_b": 26.7054,
+            "delta_nwc_b": 0.4185,
+            "fcff_b": 10.9576,
+            "year_fraction": 6.156913
+          },
+          {
+            "year": 2033,
+            "revenue_b": 127.1653,
+            "ebit_margin": 0.231667,
+            "ebit_b": 29.46,
+            "da_b": 19.3333,
+            "capex_b": 26.8465,
+            "delta_nwc_b": 0.4601,
+            "fcff_b": 15.5947,
+            "year_fraction": 7.156913
+          },
+          {
+            "year": 2034,
+            "revenue_b": 139.811,
+            "ebit_margin": 0.251111,
+            "ebit_b": 35.1081,
+            "da_b": 20.2222,
+            "capex_b": 26.9876,
+            "delta_nwc_b": 0.5058,
+            "fcff_b": 20.8153,
+            "year_fraction": 8.156913
+          },
+          {
+            "year": 2035,
+            "revenue_b": 153.7142,
+            "ebit_margin": 0.270556,
+            "ebit_b": 41.5882,
+            "da_b": 21.1111,
+            "capex_b": 27.1287,
+            "delta_nwc_b": 0.5561,
+            "fcff_b": 26.6969,
+            "year_fraction": 9.156913
+          },
+          {
+            "year": 2036,
+            "revenue_b": 169,
+            "ebit_margin": 0.29,
+            "ebit_b": 49.01,
+            "da_b": 22,
+            "capex_b": 27.2698,
+            "delta_nwc_b": 0.6114,
+            "fcff_b": 33.3268,
+            "year_fraction": 10.156913
+          }
+        ]
+      },
+      "sensitivity_wacc_plus_1pp": 28.9385,
+      "sensitivity_capex2027_plus_4b": 33.1942
+    },
+    "bull_low": {
+      "inputs": {
+        "rev2027": 73,
+        "rev2036": 195,
+        "ebit_margin2027": 0.13,
+        "ebit_margin2036": 0.32,
+        "capex2027": 26,
+        "da2027": 14,
+        "da2036": 24,
+        "wacc": 0.095,
+        "terminal_g": 0.028,
+        "incremental_roic": 0.21,
+        "economic_shares_b": 5.75
+      },
+      "results": {
+        "per_share_usd": 54.9281,
+        "equity_value_b": 315.8368,
+        "enterprise_value_b": 328.6078,
+        "bridge_b": -12.771,
+        "pv_explicit_fcff_b": 64.5378,
+        "pv_terminal_b": 264.0701,
+        "terminal_pct_of_ev": 0.8036,
+        "q4_2026_fcff_b": -4.606,
+        "capex2036_b": 29.8493,
+        "normalized_terminal_fcff2036_b": 43.264,
+        "yearly": [
+          {
+            "year": 2027,
+            "revenue_b": 73,
+            "ebit_margin": 0.13,
+            "ebit_b": 9.49,
+            "da_b": 14,
+            "capex_b": 26,
+            "delta_nwc_b": 0.4513,
+            "fcff_b": -4.8593,
+            "year_fraction": 1.156913
+          },
+          {
+            "year": 2028,
+            "revenue_b": 81.4208,
+            "ebit_margin": 0.151111,
+            "ebit_b": 12.3036,
+            "da_b": 15.1111,
+            "capex_b": 26.4277,
+            "delta_nwc_b": 0.3368,
+            "fcff_b": -1.8106,
+            "year_fraction": 2.156913
+          },
+          {
+            "year": 2029,
+            "revenue_b": 90.8129,
+            "ebit_margin": 0.172222,
+            "ebit_b": 15.64,
+            "da_b": 16.2222,
+            "capex_b": 26.8554,
+            "delta_nwc_b": 0.3757,
+            "fcff_b": 1.5031,
+            "year_fraction": 3.156913
+          },
+          {
+            "year": 2030,
+            "revenue_b": 101.2885,
+            "ebit_margin": 0.193333,
+            "ebit_b": 19.5824,
+            "da_b": 17.3333,
+            "capex_b": 27.2831,
+            "delta_nwc_b": 0.419,
+            "fcff_b": 5.2972,
+            "year_fraction": 4.156913
+          },
+          {
+            "year": 2031,
+            "revenue_b": 112.9724,
+            "ebit_margin": 0.214444,
+            "ebit_b": 24.2263,
+            "da_b": 18.4444,
+            "capex_b": 27.7108,
+            "delta_nwc_b": 0.4674,
+            "fcff_b": 9.6473,
+            "year_fraction": 5.156913
+          },
+          {
+            "year": 2032,
+            "revenue_b": 126.0042,
+            "ebit_margin": 0.235556,
+            "ebit_b": 29.681,
+            "da_b": 19.5556,
+            "capex_b": 28.1385,
+            "delta_nwc_b": 0.5213,
+            "fcff_b": 14.6406,
+            "year_fraction": 6.156913
+          },
+          {
+            "year": 2033,
+            "revenue_b": 140.5392,
+            "ebit_margin": 0.256667,
+            "ebit_b": 36.0717,
+            "da_b": 20.6667,
+            "capex_b": 28.5662,
+            "delta_nwc_b": 0.5814,
+            "fcff_b": 20.3764,
+            "year_fraction": 7.156913
+          },
+          {
+            "year": 2034,
+            "revenue_b": 156.7508,
+            "ebit_margin": 0.277778,
+            "ebit_b": 43.5419,
+            "da_b": 21.7778,
+            "capex_b": 28.9939,
+            "delta_nwc_b": 0.6485,
+            "fcff_b": 26.9689,
+            "year_fraction": 8.156913
+          },
+          {
+            "year": 2035,
+            "revenue_b": 174.8325,
+            "ebit_margin": 0.298889,
+            "ebit_b": 52.2555,
+            "da_b": 22.8889,
+            "capex_b": 29.4216,
+            "delta_nwc_b": 0.7233,
+            "fcff_b": 34.5484,
+            "year_fraction": 9.156913
+          },
+          {
+            "year": 2036,
+            "revenue_b": 195,
+            "ebit_margin": 0.32,
+            "ebit_b": 62.4,
+            "da_b": 24,
+            "capex_b": 29.8493,
+            "delta_nwc_b": 0.8067,
+            "fcff_b": 43.264,
+            "year_fraction": 10.156913
+          }
+        ]
+      },
+      "sensitivity_wacc_plus_1pp": 44.5474,
+      "sensitivity_capex2027_plus_4b": 52.4217
+    },
+    "bull_high": {
+      "inputs": {
+        "rev2027": 76,
+        "rev2036": 225,
+        "ebit_margin2027": 0.14,
+        "ebit_margin2036": 0.36,
+        "capex2027": 24,
+        "da2027": 14,
+        "da2036": 26,
+        "wacc": 0.09,
+        "terminal_g": 0.03,
+        "incremental_roic": 0.24,
+        "economic_shares_b": 5.65
+      },
+      "results": {
+        "per_share_usd": 87.5787,
+        "equity_value_b": 494.8198,
+        "enterprise_value_b": 507.5908,
+        "bridge_b": -12.771,
+        "pv_explicit_fcff_b": 101.9596,
+        "pv_terminal_b": 405.6312,
+        "terminal_pct_of_ev": 0.79913,
+        "q4_2026_fcff_b": -4.606,
+        "capex2036_b": 33.0775,
+        "normalized_terminal_fcff2036_b": 56.7,
+        "yearly": [
+          {
+            "year": 2027,
+            "revenue_b": 76,
+            "ebit_margin": 0.14,
+            "ebit_b": 10.64,
+            "da_b": 14,
+            "capex_b": 24,
+            "delta_nwc_b": 0.5713,
+            "fcff_b": -2.0593,
+            "year_fraction": 1.156913
+          },
+          {
+            "year": 2028,
+            "revenue_b": 85.7409,
+            "ebit_margin": 0.164444,
+            "ebit_b": 14.0996,
+            "da_b": 15.3333,
+            "capex_b": 25.0086,
+            "delta_nwc_b": 0.3896,
+            "fcff_b": 1.2148,
+            "year_fraction": 2.156913
+          },
+          {
+            "year": 2029,
+            "revenue_b": 96.7302,
+            "ebit_margin": 0.188889,
+            "ebit_b": 18.2713,
+            "da_b": 16.6667,
+            "capex_b": 26.0172,
+            "delta_nwc_b": 0.4396,
+            "fcff_b": 4.8269,
+            "year_fraction": 3.156913
+          },
+          {
+            "year": 2030,
+            "revenue_b": 109.1281,
+            "ebit_margin": 0.213333,
+            "ebit_b": 23.2807,
+            "da_b": 18,
+            "capex_b": 27.0258,
+            "delta_nwc_b": 0.4959,
+            "fcff_b": 9.1028,
+            "year_fraction": 4.156913
+          },
+          {
+            "year": 2031,
+            "revenue_b": 123.115,
+            "ebit_margin": 0.237778,
+            "ebit_b": 29.274,
+            "da_b": 19.3333,
+            "capex_b": 28.0345,
+            "delta_nwc_b": 0.5595,
+            "fcff_b": 14.1586,
+            "year_fraction": 5.156913
+          },
+          {
+            "year": 2032,
+            "revenue_b": 138.8946,
+            "ebit_margin": 0.262222,
+            "ebit_b": 36.4212,
+            "da_b": 20.6667,
+            "capex_b": 29.0431,
+            "delta_nwc_b": 0.6312,
+            "fcff_b": 20.1294,
+            "year_fraction": 6.156913
+          },
+          {
+            "year": 2033,
+            "revenue_b": 156.6966,
+            "ebit_margin": 0.286667,
+            "ebit_b": 44.9197,
+            "da_b": 22,
+            "capex_b": 30.0517,
+            "delta_nwc_b": 0.7121,
+            "fcff_b": 27.172,
+            "year_fraction": 7.156913
+          },
+          {
+            "year": 2034,
+            "revenue_b": 176.7803,
+            "ebit_margin": 0.311111,
+            "ebit_b": 54.9983,
+            "da_b": 23.3333,
+            "capex_b": 31.0603,
+            "delta_nwc_b": 0.8033,
+            "fcff_b": 35.4683,
+            "year_fraction": 8.156913
+          },
+          {
+            "year": 2035,
+            "revenue_b": 199.4381,
+            "ebit_margin": 0.335556,
+            "ebit_b": 66.9226,
+            "da_b": 24.6667,
+            "capex_b": 32.0689,
+            "delta_nwc_b": 0.9063,
+            "fcff_b": 45.2295,
+            "year_fraction": 9.156913
+          },
+          {
+            "year": 2036,
+            "revenue_b": 225,
+            "ebit_margin": 0.36,
+            "ebit_b": 81,
+            "da_b": 26,
+            "capex_b": 33.0775,
+            "delta_nwc_b": 1.0225,
+            "fcff_b": 56.7,
+            "year_fraction": 10.156913
+          }
+        ]
+      },
+      "sensitivity_wacc_plus_1pp": 70.5739,
+      "sensitivity_capex2027_plus_4b": 84.9878
+    }
+  },
+  "interpretation": "Conditional discounted present-value ranges, not guaranteed future prices. Full legal claims and unclosed Classiq transaction remain materially uncertain."
+}
