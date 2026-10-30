@@ -1,0 +1,110 @@
+{
+  "ticker": "AMZN",
+  "date": "2026-10-30",
+  "method": "P0 equity_pe formula independently recomputed in JavaScript and cross-checked by Python arithmetic; repository Python P0 validation and P2 freeze not executed",
+  "years": 2.17111567,
+  "discount_factor": 1.22989577,
+  "reference_price": 243.79,
+  "reference_market_cap_m": 2635613.69,
+  "actual_common_shares_m_asof_2026_09_30": 10811,
+  "reported_diluted_weighted_average_shares_m_2026Q3": 10929,
+  "cases": [
+    {
+      "name": "bear_low",
+      "normalized_net_income_m": 59250,
+      "revenue_m": 870000,
+      "ebit_margin": 0.1,
+      "net_interest_m": 8000,
+      "tax_rate": 0.25,
+      "forecast_shares_m": 11400,
+      "exit_pe": 19,
+      "net_margin": 0.06810344827586207,
+      "terminal_price_usd": 98.75,
+      "present_value_per_share_usd": 80.291357,
+      "upside_vs_regular_close": -0.67065361
+    },
+    {
+      "name": "bear_high",
+      "normalized_net_income_m": 74962.5,
+      "revenue_m": 930000,
+      "ebit_margin": 0.115,
+      "net_interest_m": 7000,
+      "tax_rate": 0.25,
+      "forecast_shares_m": 11300,
+      "exit_pe": 22,
+      "net_margin": 0.08060483870967743,
+      "terminal_price_usd": 145.94469,
+      "present_value_per_share_usd": 118.664275,
+      "upside_vs_regular_close": -0.51325208
+    },
+    {
+      "name": "base_low",
+      "normalized_net_income_m": 96824,
+      "revenue_m": 1030000,
+      "ebit_margin": 0.13,
+      "net_interest_m": 6500,
+      "tax_rate": 0.24,
+      "forecast_shares_m": 11250,
+      "exit_pe": 24,
+      "net_margin": 0.09400388349514563,
+      "terminal_price_usd": 206.557867,
+      "present_value_per_share_usd": 167.947457,
+      "upside_vs_regular_close": -0.31109784
+    },
+    {
+      "name": "base_high",
+      "normalized_net_income_m": 126280,
+      "revenue_m": 1130000,
+      "ebit_margin": 0.15,
+      "net_interest_m": 5500,
+      "tax_rate": 0.23,
+      "forecast_shares_m": 11050,
+      "exit_pe": 28,
+      "net_margin": 0.11175221238938053,
+      "terminal_price_usd": 319.98552,
+      "present_value_per_share_usd": 260.172877,
+      "upside_vs_regular_close": 0.06720077
+    },
+    {
+      "name": "bull_low",
+      "normalized_net_income_m": 145299,
+      "revenue_m": 1180000,
+      "ebit_margin": 0.165,
+      "net_interest_m": 6000,
+      "tax_rate": 0.23,
+      "forecast_shares_m": 11100,
+      "exit_pe": 30,
+      "net_margin": 0.12313474576271187,
+      "terminal_price_usd": 392.7,
+      "present_value_per_share_usd": 319.29535,
+      "upside_vs_regular_close": 0.30971471
+    },
+    {
+      "name": "bull_high",
+      "normalized_net_income_m": 178620,
+      "revenue_m": 1300000,
+      "ebit_margin": 0.18,
+      "net_interest_m": 5000,
+      "tax_rate": 0.22,
+      "forecast_shares_m": 11000,
+      "exit_pe": 34,
+      "net_margin": 0.1374,
+      "terminal_price_usd": 552.098182,
+      "present_value_per_share_usd": 448.89835,
+      "upside_vs_regular_close": 0.84133209
+    }
+  ],
+  "source_urls": {
+    "earnings": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+    "sec_exhibit": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+    "price": "https://stockanalysis.com/stocks/amzn/history/"
+  },
+  "limitations": [
+    "Exit P/E scenarios only, not FCFF DCF or a verified market consensus",
+    "No complete forward P/E historical series or independent capex return projections",
+    "No added cash, debt or AI investment fair-value asset since equity net income already bears financing and capital effects",
+    "Distributions excluded, terminal 2028-12-31; 2027 capex may exceed 2026 guidance",
+    "Market reference is regular close prior to earnings; after-hours reaction not in reference price",
+    "Full Q3 10-Q note disclosures have not been checked; only 8-K Exhibit 99.1 earnings data"
+  ]
+}
