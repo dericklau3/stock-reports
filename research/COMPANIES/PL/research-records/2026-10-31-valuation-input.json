@@ -8,7 +8,7 @@
   "share_count_m": 363.847989,
   "cash_and_short_term_investments_usd_m": 865.418,
   "convertible_principal_usd_m": 460,
-  "leases_undiscounted_in_financials_not_subtracted_usd_m": 50.368,
+  "operating_lease_liability_not_subtracted_usd_m": 50.368,
   "short_stub_fy27_q4_fcff_usd_m": -10,
   "stub_years": 0.25,
   "financials_source": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526382016/pl-20260731.htm",
