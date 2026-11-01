@@ -149,11 +149,17 @@ export async function buildReportIndex(companiesDir) {
       extractSection(tracker.content, ["Current Research View", "Current view", "Current research view"]) ||
       firstReadableParagraph(tracker.content);
 
+    // Prefer the newest known research date; a Tracker header can be absent
+    // (e.g. the Chinese PL first-coverage Tracker) or stale after a new report.
+    const trackerDate = extractLastUpdated(tracker.content);
+    const reportDates = reports.map((report) => report.date).filter(Boolean);
+    const lastUpdated = [trackerDate, ...reportDates].filter(Boolean).sort().at(-1) || "";
+
     companies.push({
       symbol,
       companyName: extractCompanyName(title, symbol),
       title,
-      lastUpdated: extractLastUpdated(tracker.content),
+      lastUpdated,
       currentView,
       summary: extractSection(tracker.content, ["Current Main Thesis", "Main thesis"]) || currentView,
       keyRisks: extractSection(tracker.content, ["Key Risks", "Key risks"]),
