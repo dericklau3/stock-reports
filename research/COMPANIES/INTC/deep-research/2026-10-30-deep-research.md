@@ -70,29 +70,23 @@ Intel向电脑品牌商、设备制造商和渠道销售Core等处理器及配�
 
 ## 2. 近期已公布的重大事件
 
-检索窗口为**2025-10-30至2026-10-30 08:12北京时间**，补列在窗口外但仍影响股权的政府股份安排。已对照Intel IR新闻稿2025年10月—2026年10月的归档页、Q3的8-K财报附件、旧10-K/Q2 10-Q和若干合作方公告。**覆盖仍为部分完成**：没有逐件遍历全部SEC 8-K附件、美国商务部及FCC行政文件，也未对Google、NVIDIA、Classiq等伙伴完整归档逐条查证；尤其2026-10-22 FCC豁免仅核得媒体报道，未取得正式裁决。详细候选清单与缺口见[本次研究底稿](../research-records/2026-10-30-research.md)。
+检索窗口仍为**2025-10-30至2026-10-30 08:12北京时间**；窗口外仍影响股权的政府股份安排保留于历史背景。已检查Intel IR 2025年10月—2026年10月新闻归档、Q3 8-K财报附件、旧10-K/Q2 10-Q及部分合作方公告。**来源覆盖仍为部分完成**：尚未逐一核查全部SEC 8-K附件、商务部/FCC行政原件、Google/NVIDIA/Classiq等合作方全年归档；不能宣称没有其他重大事件。详见[原始候选与核验底稿](../research-records/2026-10-30-research.md)。
+
+**本表只保留A类：有直接财务、股权或生产中断影响，或已跨过关键制造商业化门槛、足以改变核心投资假设的事件。** 不再用普通合作、施工或研发节点凑表格。
 
 | 公告日期与事件 | 公布了什么 | 对公司的实际意义 |
 |---|---|---|
 | **2026-10-29 · [Q3财报及Q4指引](https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm)**，财务期间于09-26结束 | Q3营收165.13亿美元、GAAP经营利润25.22亿美元；Q4营收指引150亿—160亿美元，低于Q3，预计GAAP毛利率37.1%。 | 服务器业务有实质贡献，但客户端疲弱、毛利回落和制造资本压力同时存在。 |
 | **2026-10-29 · [Fab 28事故影响评估（电话会披露）](https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/)**，事故发生在2026年10月上旬、准确事故日未核实 | 管理层估计对Q4收入造成约3亿美元不利影响，并拖累当季毛利率约2个百分点；是否还有Q1后续影响仍须复核。 | 工厂安全与供给中断的财务风险已量化为短期指引组成，不是纯传闻。 |
-| **2026-10-27 · [Oracle拟扩大Xeon合作](https://www.intc.com/news-events/press-releases/detail/1785/intel-and-oracle-plan-expanded-collaboration-to-support)** | 双方提出将Xeon计算扩展到Oracle Cloud Infrastructure，包含未来Diamond Rapids/OCI X14方案；未披露新增最低采购金额。 | 有明确合作方及路线，但“计划扩大”不等于2026年已收到确定订单/现金。 |
-| **2026-10-26 · [拟收购Classiq](https://www.intc.com/news-events/press-releases/detail/1784/intel-to-acquire-classiq-to-create-a-full-stack-quantum)** | 达成确定性收购协议，将量子软件与Intel硬件研究结合；拟于**2027上半年**交割，取决于审批，**对价未披露**。 | 可能开辟长期产品线，但现时不能并表其收入或假设免费获得资产；交易现金及整合成本待核。 |
-| **2026-10-22 · [FCC设备豁免（媒体披露，待核）](https://www.reuters.com/technology/fcc-grants-intel-waiver-foreign-made-robotic-devices-2026-10-22/)** | 媒体称Intel特定旧式海外机器人设备获一年过渡豁免；未取得FCC正式决定原件。 | 若成立可降低产线更换风险，不是新增订单；因原文缺失，本项仍为待核实候选。 |
-| **2026-10-21 · [俄亥俄Ohio One建设里程碑](https://www.jobsohio.com/newsroom/news-press/intel-foundry-provides-us-manufacturing-capacity-update)** | 重要大型钢结构安装；**仍在施工，不是晶圆投产**。 | 项目向前推进，但未来资本投入、产能利用与外部合同尚未兑现。 |
-| **2026-10-12 · [D-series与AI基础设施方案](https://www.intc.com/news-events/press-releases/detail/1783/intel-accelerates-open-infrastructure-for-the-agentic-ai-era)** | 公布GPU/AI方案及送样或设计进度，未披露可审计规模收入。 | 样品到客户付费仍有商业验证距离。 |
-| **2026-09-08 · [Intel与ASML推进High-NA EUV](https://www.intc.com/news-events/press-releases/detail/1781/intel-foundry-and-asml-collaborate-to-accelerate-industry)** | 联合宣布逾100万片晶圆经过相关工艺流程，[ASML独立公告](https://investor.asml.com/news-releases/news-release-details/intel-foundry-and-asml-collaborate-accelerate-industry-readiness-high-na-euv)。 | 证明工艺验证进度，不等于对外有100万片付费量产订单。 |
 | **2026-08-10至08-12 · [普通股公开发行](https://www.intc.com/filings-reports/all-sec-filings/content/0001193125-26-346806/d117670d8k.htm)** | 发行242,105,262股、每股95美元，**总发行额约230亿美元**；10-29 Q3现金流表已确认**净募集226.17亿美元**。 | 现金增强，也实质摊薄股东；以前研究未核实到账的缺口本次得以纠正。 |
-| **2026-07-23 · [Q2财报](https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results)** | Q2营收161.28亿美元，Foundry亏20.89亿美元，指引Q3营收158亿—168亿美元。 | Q3实际165.13亿美元在公司指引内，不能无同期财报前共识就断言超市场预期。 |
-| **2026-07-21 · [与Fortinet开发安全处理器](https://www.intc.com/news-events/press-releases/detail/1775/intel-and-fortinet-collaborate-to-advance-cybersecurity)** | 双方宣布SP6相关合作，[Fortinet原文](https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/intel-and-fortinet-collaborate-to-advance-cybersecurity-innovation-and-strengthen-global-supply-chain-resilience)；最低采购金额未披露。 | 有明确技术/客户关系，利润仍待实际出货核实。 |
-| **2026-06-16 · [18A-P进入风险生产](https://www.intc.com/news-events/press-releases/detail/1772/intel-foundry-details-process-milestones-and-future)** | 工艺进入初始生产验证。 | 未自动意味着外部代工已经达到可盈利的批量良率。 |
 | **2026-04-23 · [Q1业绩及减值](https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results)** | 计入Mobileye相关商誉减值约39亿美元。 | 非现金会计损失但反映历史投资配置风险，不能当成经常资本开支。 |
-| **2026-04-09 · [Google深化Xeon/IPU合作](https://www.intc.com/news-events/press-releases/detail/1766/intel-and-google-deepen-collaboration-to-advance-ai)** | 长期计算合作深化，未披露新增强制采购量。 | 合作真实，不能把Google全部AI预算推算为Intel收入。 |
 | **2026-04-01 · [回购Apollo Fab34的49%权益](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab)**，**04-08实际交割** | 交易约142亿美元，[交割8-K](https://www.sec.gov/Archives/edgar/data/50863/000005086326000072/intc-20260408.htm)。 | 减少未来少数权益分流，但使用大量现金，不应机械年化为经常亏损。 |
 | **2026-01-05 · [18A商用CPU产品推出](https://www.intc.com/news-events/press-releases/detail/1757/ces-2026-intel-core-ultra-series-3-debuts-as-first-built)** | Core Ultra Series 3等自家芯片采用18A。 | 自有产品商用与第三方代工商业成功是不同证据。 |
 | **2025-12-29 · [NVIDIA战略入股交割披露](https://www.sec.gov/Archives/edgar/data/50863/000005086325000204/intc-20251226.htm)**，**12-26完成** | NVIDIA以约50亿美元认购股份。 | 实际资本注入及稀释，不代表合作产品已产生同规模利润。 |
 
-窗口前仍重要：2025-08美国政府投资、托管股份与潜在认股权安排（[Intel原公告](https://www.intc.com/news-events/press-releases/detail/1748/intel-and-trump-administration-reach-historic-agreement-to)）；2025-09 Altera控股权出售改变报表可比性。**最重要的变化不是新闻合作数量增加，而是Q3盈利与实收融资被验证；代工对外收入的经常性和2027资金需求仍未验证。**
+**不列为独立重大事件的原候选**：Oracle（2026-10-27）、Google（04-09）、Fortinet（07-21）均为合作深化/研发协作，尚无新增最低采购或收入承诺足以改变估值；Ohio One（10-21）安装大型钢结构、ASML（09-08）技术测试、18A-P（06-16）风险生产、D-series（10-12）产品方案属于项目执行/研发中间进度，放在第3节/未来验证而非重大事件表。Classiq（10-26）确定性拟收购目前对价和资金影响未公开，暂在资本分配/风险章节跟踪，待规模与权益影响明确后再决定是否升级。Q2例行财报（07-23）由最新Q3财务覆盖，无须重复。FCC（10-22）豁免仅取得媒体报道、尚无原始裁决，作为底稿**待核实候选**，不属于已核实重大监管事件。
+
+以上区分不否认事件发生，也不删除原候选。最需要重估的变化是Q3业绩与Q4供给风险、已完成的大额资本与股权交易、18A自有产品商业化门槛；未来合作若有真正订单、研发若实现有经济贡献的批量交付，才升级为A级。
 
 ## 3. 公司正在做什么、做到哪一步？
 
