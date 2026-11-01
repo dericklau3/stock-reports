@@ -67,15 +67,15 @@ test("buildReportIndex falls back to the newest report date when Tracker has no 
   await mkdir(reportsDir, { recursive: true });
   await writeFile(
     path.join(plDir, "tracker.md"),
-    "# PL｜Planet Labs PBC 投资研究跟踪\\n创建于2026-10-31，首次覆盖。\\n",
+    "# PL｜Planet Labs PBC 投资研究跟踪\n创建于2026-10-31，首次覆盖。\n",
   );
   await writeFile(
     path.join(reportsDir, "2026-10-31-deep-research.md"),
-    "# Planet Labs 深度研究\\n",
+    "# Planet Labs 深度研究\n",
   );
   await writeFile(
     path.join(reportsDir, "2026-10-20-deep-research.md"),
-    "# Earlier Planet Labs 深度研究\\n",
+    "# Earlier Planet Labs 深度研究\n",
   );
 
   const index = await buildReportIndex(companiesDir);
@@ -92,11 +92,11 @@ test("buildReportIndex does not keep a stale Tracker date over a newer report", 
   await mkdir(reportsDir, { recursive: true });
   await writeFile(
     path.join(companyDir, "tracker.md"),
-    "# ABC Tracker\\n\\nLast updated: 2026-10-20\\n",
+    "# ABC Tracker\n\nLast updated: 2026-10-20\n",
   );
   await writeFile(
     path.join(reportsDir, "2026-10-31-deep-research.md"),
-    "# Updated research\\n",
+    "# Updated research\n",
   );
 
   const index = await buildReportIndex(companiesDir);
