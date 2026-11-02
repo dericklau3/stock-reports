@@ -1,4 +1,31 @@
 {
+  "model": "issuer_own_4fiscal_year_historical_EV_to_actual_sales_median",
+  "valuation_date": "2026-11-02",
+  "quote_date": "2026-10-30",
+  "historical_valuation_source": "https://stockanalysis.com/stocks/pl/financials/ratios/",
+  "own_historical_ev_to_revenue": [
+    {
+      "fiscal_year": "FY2023",
+      "period_end": "2023-01-31",
+      "ev_to_actual_revenue": 4.91
+    },
+    {
+      "fiscal_year": "FY2024",
+      "period_end": "2024-01-31",
+      "ev_to_actual_revenue": 1.63
+    },
+    {
+      "fiscal_year": "FY2025",
+      "period_end": "2025-01-31",
+      "ev_to_actual_revenue": 6.57
+    },
+    {
+      "fiscal_year": "FY2026",
+      "period_end": "2026-01-31",
+      "ev_to_actual_revenue": 26.49
+    }
+  ],
+  "own_history_median_ev_to_revenue": 5.74,
   "market_cap_m": 4901.0324118300005,
   "net_cash_m": 405.418,
   "enterprise_value_m": 4495.614411830001,
@@ -11,5 +38,13 @@
   "trailing_ev_to_gross_profit": 21.443733570382594,
   "price_to_book": 8.684369145850722,
   "approx_ttm_fcf_yield": 0.0040603689851072666,
-  "disclaimer": "Trading multiples reflect only the stock's observed price relative to already-reported company financials. They do not establish an intrinsic fair value. Cash, share count and price dates are not perfectly aligned."
+  "reference_enterprise_value_m": 2171.31572,
+  "reference_equity_value_m": 2576.73372,
+  "fair_price_reference_usd": 7.0818962805920584,
+  "model_gap_vs_quote_pct": -47.42467497704486,
+  "history_window_sensitivity": {
+    "if_FY2023_through_FY2025_median": 6.218978937382556,
+    "if_FY2022_through_FY2026_median": 7.94481362380156
+  },
+  "caveat": "Fair-price reference reflects PL's own historical market-multiple median, not a provable unique intrinsic value. Historic company fundamentals/capital structure vary; cash, shares and price are not strictly contemporaneous. No peers or future cash-flow forecasts."
 }
