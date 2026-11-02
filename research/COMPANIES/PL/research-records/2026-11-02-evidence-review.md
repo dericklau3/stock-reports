@@ -1,5 +1,8 @@
 # PL｜2026-11-02 再次完整深研：来源覆盖、重大性筛选与估值复核
 
+> **同日研究方法修订（2026-11-02）**：本文件部分段落仍记录先前采用的FY2028–2042十五年DCF，**只作历史分析证据**，不再作为当前PL报告第6节的主要估值依据。最新读者版改为使用已实现TTM营收/毛利/营业亏损、现实市值/EV/股本及同期同行倍数进行当期估值。最新可复算输入：[2026-11-02-current-valuation-input.json](2026-11-02-current-valuation-input.json)，计算器：[2026-11-02-current-valuation.js](2026-11-02-current-valuation.js)，结果：[2026-11-02-current-valuation-output.json](2026-11-02-current-valuation-output.json)。**同行倍数映射只用于示意，现金和股数日期差及转债结算的不确定性仍然存在；不把$7.98同行倍数映射视为内在公允价值。**
+
+
 研究日期：2026-11-02（Asia/Tokyo，NYSE常规开市前）。股票PL为Planet Labs PBC的NYSE上市A类普通股；B类享相同每股经济权，持有人主要是创始人，A+B计入股权总价值。
 
 ## 1. 今日确定的事实与资料时点
