@@ -35,19 +35,12 @@
       "free_cashflow_m": 19.9
     }
   },
-  "comparison": {
-    "BKSY": {
-      "quote_date": "2026-10-30",
-      "ev_ttm_sales": 6.6,
-      "source": "https://stockanalysis.com/stocks/bksy/statistics/",
-      "note": "Single peer only. Growth, segment mix, government exposure and cash needs differ; not an intrinsic value anchor."
-    }
-  },
   "caveats": [
     "FY2027 Q3 financial results not published as of valuation date",
     "July 31 cash/equity and August 27 share count not contemporaneous with October 30 price",
     "Convertible note conversions and possible new equity/SBC after August 27 not reconciled",
     "Positive TTM FCF affected by working capital and advance payments; not sustainable evidence",
     "EV excludes operating leases treated as operating costs; restricted cash excluded; convertible debt principal cash-settled assumption"
-  ]
+  ],
+  "method": "only company-specific actual TTM financials, balance sheet and present-market trading ratios; no peer comparisons or forward discounted cashflows"
 }
