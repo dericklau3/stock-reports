@@ -42,5 +42,36 @@
     "Positive TTM FCF affected by working capital and advance payments; not sustainable evidence",
     "EV excludes operating leases treated as operating costs; restricted cash excluded; convertible debt principal cash-settled assumption"
   ],
-  "method": "only company-specific actual TTM financials, balance sheet and present-market trading ratios; no peer comparisons or forward discounted cashflows"
+  "method": "issuer_own_historical_trailing_ev_sales_median_anchor",
+  "historical_valuation_source": "https://stockanalysis.com/stocks/pl/financials/ratios/",
+  "historical_valuation_source_read_as_of": "2026-11-02",
+  "historical_window_reason": "Use 4 most recently completed fiscal years ending Jan 2023 through Jan 2026, excluding initial FY2022 SPAC-era window; median avoids relying directly on FY2026 26.49x speculative extreme; these are historic market prices, not objective fair multiples.",
+  "own_historical_ev_to_revenue": [
+    {
+      "fiscal_year": "FY2023",
+      "period_end": "2023-01-31",
+      "ev_to_actual_revenue": 4.91
+    },
+    {
+      "fiscal_year": "FY2024",
+      "period_end": "2024-01-31",
+      "ev_to_actual_revenue": 1.63
+    },
+    {
+      "fiscal_year": "FY2025",
+      "period_end": "2025-01-31",
+      "ev_to_actual_revenue": 6.57
+    },
+    {
+      "fiscal_year": "FY2026",
+      "period_end": "2026-01-31",
+      "ev_to_actual_revenue": 26.49
+    }
+  ],
+  "valuation_limitations": [
+    "Historical market pricing does not prove true intrinsic value; own business and revenue quality changed, and FY2026 is a large outlier.",
+    "Balance-sheet net cash and economic shares are from Jul/Aug 2026, not exactly the Oct 30, 2026 quote date.",
+    "Convertible note conversions or extra equity issuance after the disclosed dates have not been fully reconciled.",
+    "No other companies and no projected future cash flows are used."
+  ]
 }
