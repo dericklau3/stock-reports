@@ -1,0 +1,53 @@
+{
+  "title": "Planet Labs current realized valuation 2026-11-02",
+  "as_of_date": "2026-11-02",
+  "quote_date": "2026-10-30",
+  "quote_source": "https://investors.planet.com/stock-info/default.aspx",
+  "financial_report_date": "2026-07-31",
+  "reporting_source": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526382016/pl-20260731.htm",
+  "FY2026_source": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526119957/pl-20260131.htm",
+  "units": "USD millions / millions of shares; dollars per share",
+  "price_usd": 13.47,
+  "economic_shares_m": 363.847989,
+  "shares_asof": "2026-08-27",
+  "cash_and_short_investments_m": 865.418,
+  "convertible_principal_m": 460,
+  "latest_stockholders_equity_m": 564.351,
+  "actuals": {
+    "FY2026": {
+      "revenue_m": 307.727,
+      "gross_profit_m": 172.485,
+      "operating_income_m": -95.073
+    },
+    "FY2026_H1": {
+      "revenue_m": 139.651,
+      "gross_profit_m": 78.871,
+      "operating_income_m": -40.731
+    },
+    "FY2027_H1": {
+      "revenue_m": 210.202,
+      "gross_profit_m": 116.033,
+      "operating_income_m": -48.397
+    },
+    "TTM_cashflow_estimates_from_prior_research": {
+      "operating_cashflow_m": 117.6,
+      "capex_including_software_m": 97.8,
+      "free_cashflow_m": 19.9
+    }
+  },
+  "comparison": {
+    "BKSY": {
+      "quote_date": "2026-10-30",
+      "ev_ttm_sales": 6.6,
+      "source": "https://stockanalysis.com/stocks/bksy/statistics/",
+      "note": "Single peer only. Growth, segment mix, government exposure and cash needs differ; not an intrinsic value anchor."
+    }
+  },
+  "caveats": [
+    "FY2027 Q3 financial results not published as of valuation date",
+    "July 31 cash/equity and August 27 share count not contemporaneous with October 30 price",
+    "Convertible note conversions and possible new equity/SBC after August 27 not reconciled",
+    "Positive TTM FCF affected by working capital and advance payments; not sustainable evidence",
+    "EV excludes operating leases treated as operating costs; restricted cash excluded; convertible debt principal cash-settled assumption"
+  ]
+}
