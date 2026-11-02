@@ -123,7 +123,7 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn("仍排除同行比较和未来DCF", skill)
         self.assertIn("公司自身历史估值中位数", valuation)
         self.assertIn("至少三个有效且可比的观察值", valuation)
-        self.assertIn("当前合理价格参考估计", valuation)
+        self.assertIn("合理价格估计", valuation)
         self.assertNotIn("### 7. 未来值得关注的事件", template)
         self.assertNotIn("### 9. 四种投资视角", template)
         financial_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
