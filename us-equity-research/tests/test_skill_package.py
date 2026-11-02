@@ -90,15 +90,21 @@ class SkillPackageTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_report_structure(self):
-        # Protect the agreed nine-section layout, not wording or example years.
+        # Seven distinct reader sections: key future validations live in section 3.
         template = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
         sections = re.findall(r"^### (\d+)\. (.+)$", template, re.M)
-        self.assertEqual([int(n) for n, _ in sections], list(range(1, 10)))
+        self.assertEqual([int(n) for n, _ in sections], list(range(1, 8)))
+        self.assertEqual(sections[-1][1], "主要投资风险")
         bodies = re.split(r"^### \d+\. .+$", template, flags=re.M)[1:]
-        for number, width in {2: 3, 3: 3, 6: 2, 7: 2, 8: 3, 9: 3}.items():
+        for number, width in {2: 3, 3: 3, 6: 2, 7: 3}.items():
             rows = [line for line in bodies[number - 1].splitlines() if line.startswith("|")]
             self.assertGreaterEqual(len(rows), 3)
             self.assertTrue(all(len(row.strip("|").split("|")) == width for row in rows))
+        self.assertIn("下一关是什么", bodies[2])
+        self.assertIn("不为凑行数", bodies[2])
+        self.assertIn("不另建", bodies[2])
+        self.assertNotIn("### 7. 未来值得关注的事件", template)
+        self.assertNotIn("### 9. 四种投资视角", template)
         financial_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
         widths = {len(row.strip("|").split("|")) for row in financial_rows}
         self.assertEqual(len(widths), 1)
