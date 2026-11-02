@@ -1,0 +1,18 @@
+{
+  "market_cap_m": 4901.0324118300005,
+  "net_cash_m": 405.418,
+  "enterprise_value_m": 4495.614411830001,
+  "realized_ttm_revenue_m": 378.27799999999996,
+  "realized_ttm_gross_profit_m": 209.64700000000005,
+  "realized_ttm_operating_income_m": -102.739,
+  "realized_ttm_gross_margin": 0.5542140965110317,
+  "trailing_price_to_sales": 12.956165602625585,
+  "trailing_ev_to_sales": 11.88441942653287,
+  "trailing_ev_to_gross_profit": 21.443733570382594,
+  "price_to_book": 8.684369145850722,
+  "approx_ttm_fcf_yield": 0.0040603689851072666,
+  "peer_BKSY_ev_ttm_sales": 6.6,
+  "PL_EV_sales_premium_vs_BKSY_multiple": 0.800669610080738,
+  "mechanical_peer_multiple_price_usd": 7.97600340729106,
+  "disclaimer": "The peer-price mapping is a single market multiple reference, NOT an intrinsic value or price target. Balance sheet and shares are from different dates."
+}
