@@ -107,6 +107,13 @@ class SkillPackageTests(unittest.TestCase):
         self.assertNotIn("三项结论之后附一行研究截止日期", template)
         self.assertIn("不为凑行数", bodies[2])
         self.assertIn("不另建", bodies[2])
+        self.assertIn("默认只用截至研究日已经披露的实际经营", bodies[5])
+        self.assertIn("不预测", bodies[5])
+        self.assertIn("EV/TTM收入", bodies[5])
+        self.assertIn("当前合理股价无法可靠量化", bodies[5])
+        self.assertNotIn("| 保守情景估值 |", bodies[5])
+        self.assertNotIn("| 基础情景估值 |", bodies[5])
+        self.assertNotIn("| 乐观情景估值 |", bodies[5])
         self.assertNotIn("### 7. 未来值得关注的事件", template)
         self.assertNotIn("### 9. 四种投资视角", template)
         financial_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
