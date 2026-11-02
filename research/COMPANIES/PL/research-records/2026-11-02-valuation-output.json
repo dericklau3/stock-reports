@@ -1,0 +1,531 @@
+{
+  "model": "15y_fcff_dcf_conditional_not_P1",
+  "date": "2026-11-02",
+  "reference_quote_date": "2026-10-30",
+  "model_source_repository_path": "research/COMPANIES/PL/research-records/2026-10-31-valuation-model.js",
+  "unit": "USD millions except per-share price",
+  "assumptions": "FY2028-2042 15y FCFF, positive EBIT 22% tax, NWC increase 3% of incremental revenue, FY2027 Q4 conditional -10m stub, historical cash 2026-07-31, debt treated principal cash settlement, no extra equity issuance",
+  "capital_status": "provisional",
+  "scope": "conditional whole-business operations with material capital and future dilution omissions; not complete economic equity fair value",
+  "material_omissions": [
+    "Missing actual 2026-10-31 quarter operating cash flow, asset/debt and equity update",
+    "Current model includes only FY2027 Q4 stub but not FY2027 Q3 cash reconciliation from last available balance sheet date",
+    "Unverified 2030 convertible note settlement or new issuance since 2026-08-27",
+    "Future financings, cash spend and equity award dilution not fully projected"
+  ],
+  "scenario_results": {
+    "bear": {
+      "enterprise_value_m": -156.07696904663723,
+      "explicit_pv_m": -263.73044804012693,
+      "terminal_pv_m": 117.34185609663686,
+      "stub_pv_m": -9.688377103147173,
+      "net_cash_m": 405.418,
+      "estimated_equity_m": 249.34103095336278,
+      "price_usd": 0.6852890176434719,
+      "terminal_value_share": -0.7518204435503488,
+      "rows": [
+        {
+          "fy": 2028,
+          "revenue_m": 496.47,
+          "ebit_m": -39.717600000000004,
+          "da_m": 34.752900000000004,
+          "capex_m": 104.2587,
+          "incremental_nwc_m": 1.8291000000000008,
+          "fcff_m": -111.0525,
+          "present_value_m": -94.79458134337017
+        },
+        {
+          "fy": 2029,
+          "revenue_m": 556.0464000000001,
+          "ebit_m": -33.362784000000005,
+          "da_m": 38.92324800000001,
+          "capex_m": 111.20928000000002,
+          "incremental_nwc_m": 1.787292000000001,
+          "fcff_m": -107.43610800000002,
+          "present_value_m": -80.79966844289213
+        },
+        {
+          "fy": 2030,
+          "revenue_m": 611.6510400000001,
+          "ebit_m": -18.3495312,
+          "da_m": 42.81557280000001,
+          "capex_m": 116.21369760000002,
+          "incremental_nwc_m": 1.6681392000000004,
+          "fcff_m": -93.4157952,
+          "present_value_m": -61.89901884344776
+        },
+        {
+          "fy": 2031,
+          "revenue_m": 672.8161440000001,
+          "ebit_m": 0,
+          "da_m": 47.097130080000014,
+          "capex_m": 121.10690592000002,
+          "incremental_nwc_m": 1.834953120000001,
+          "fcff_m": -75.84472896,
+          "present_value_m": -44.278509388746976
+        },
+        {
+          "fy": 2032,
+          "revenue_m": 733.3695969600002,
+          "ebit_m": 22.001087908800006,
+          "da_m": 51.33587178720002,
+          "capex_m": 124.67283148320004,
+          "incremental_nwc_m": 1.816603588800002,
+          "fcff_m": -57.99271471593601,
+          "present_value_m": -29.82944452237476
+        },
+        {
+          "fy": 2033,
+          "revenue_m": 792.0391647168003,
+          "ebit_m": 39.601958235840016,
+          "da_m": 55.44274153017603,
+          "capex_m": 126.72626635468805,
+          "incremental_nwc_m": 1.7600870327040035,
+          "fcff_m": -42.15408443326082,
+          "present_value_m": -19.103613654938734
+        },
+        {
+          "fy": 2034,
+          "revenue_m": 847.4819062469763,
+          "ebit_m": 59.32373343728835,
+          "da_m": 59.32373343728835,
+          "capex_m": 127.12228593704644,
+          "incremental_nwc_m": 1.6632822459052805,
+          "fcff_m": -23.18932266457847,
+          "present_value_m": -9.259084924178794
+        },
+        {
+          "fy": 2035,
+          "revenue_m": 898.3308206217949,
+          "ebit_m": 80.84977385596154,
+          "da_m": 62.883157443525654,
+          "capex_m": 125.76631488705131,
+          "incremental_nwc_m": 1.5254674312445582,
+          "fcff_m": -1.3458012671202022,
+          "present_value_m": -0.4734401389254908
+        },
+        {
+          "fy": 2036,
+          "revenue_m": 943.2473616528847,
+          "ebit_m": 94.32473616528847,
+          "da_m": 66.02731531570194,
+          "capex_m": 122.62215701487501,
+          "incremental_nwc_m": 1.3474962309326928,
+          "fcff_m": 15.630956278819239,
+          "present_value_m": 4.844777417826281
+        },
+        {
+          "fy": 2037,
+          "revenue_m": 985.6934929272644,
+          "ebit_m": 108.42628422199908,
+          "da_m": 68.99854450490851,
+          "capex_m": 118.28321915127172,
+          "incremental_nwc_m": 1.2733839382313907,
+          "fcff_m": 34.01444310856468,
+          "present_value_m": 9.288718131927952
+        },
+        {
+          "fy": 2038,
+          "revenue_m": 1025.121232644355,
+          "ebit_m": 123.01454791732259,
+          "da_m": 71.75848628510485,
+          "capex_m": 112.76333559087904,
+          "incremental_nwc_m": 1.1828321915127151,
+          "fcff_m": 53.76366587822473,
+          "present_value_m": 12.935565853315675
+        },
+        {
+          "fy": 2039,
+          "revenue_m": 1061.0004757869071,
+          "ebit_m": 127.32005709442885,
+          "da_m": 74.2700333050835,
+          "capex_m": 116.71005233655978,
+          "incremental_nwc_m": 1.0763772942765673,
+          "fcff_m": 55.793248207901655,
+          "present_value_m": 11.827210936486162
+        },
+        {
+          "fy": 2040,
+          "revenue_m": 1098.1354924394489,
+          "ebit_m": 142.75761401712836,
+          "da_m": 76.86948447076142,
+          "capex_m": 120.79490416833937,
+          "incremental_nwc_m": 1.1140504995762512,
+          "fcff_m": 66.31146873620594,
+          "present_value_m": 12.384927880747423
+        },
+        {
+          "fy": 2041,
+          "revenue_m": 1131.0795572126324,
+          "ebit_m": 147.0403424376422,
+          "da_m": 79.17556900488428,
+          "capex_m": 118.7633535073264,
+          "incremental_nwc_m": 0.9883219431955058,
+          "fcff_m": 74.11536065572332,
+          "present_value_m": 12.195993928725617
+        },
+        {
+          "fy": 2042,
+          "revenue_m": 1165.0119439290113,
+          "ebit_m": 163.1016721500616,
+          "da_m": 81.5508360750308,
+          "capex_m": 116.50119439290114,
+          "incremental_nwc_m": 1.0179716014913673,
+          "fcff_m": 91.25097435768633,
+          "present_value_m": 13.229719069718863
+        }
+      ],
+      "low_price_usd": 0.6180217532716775,
+      "high_price_usd": 0.7794287808577898,
+      "sensitivities": {
+        "higher_wacc_lower_terminal_growth": 0.6180217532716775,
+        "lower_wacc_higher_terminal_growth": 0.7794287808577898
+      },
+      "dilution_10pct_sensitivity": 0.6229900160395199
+    },
+    "base": {
+      "enterprise_value_m": 1769.0390316652047,
+      "explicit_pv_m": 734.5787384807002,
+      "terminal_pv_m": 1044.1918267102176,
+      "stub_pv_m": -9.73153352571298,
+      "net_cash_m": 405.418,
+      "estimated_equity_m": 2174.457031665205,
+      "price_usd": 5.97627882358642,
+      "terminal_value_share": 0.5902593487308841,
+      "rows": [
+        {
+          "fy": 2028,
+          "revenue_m": 557.44,
+          "ebit_m": -22.297600000000003,
+          "da_m": 44.595200000000006,
+          "capex_m": 105.91360000000002,
+          "incremental_nwc_m": 3.6582000000000017,
+          "fcff_m": -87.27420000000002,
+          "present_value_m": -76.17146217307443
+        },
+        {
+          "fy": 2029,
+          "revenue_m": 696.8000000000001,
+          "ebit_m": 6.968000000000001,
+          "da_m": 55.74400000000001,
+          "capex_m": 125.424,
+          "incremental_nwc_m": 4.1808000000000005,
+          "fcff_m": -68.42576,
+          "present_value_m": -53.5613084890016
+        },
+        {
+          "fy": 2030,
+          "revenue_m": 850.0960000000001,
+          "ebit_m": 42.50480000000001,
+          "da_m": 63.757200000000005,
+          "capex_m": 136.01536000000002,
+          "incremental_nwc_m": 4.598880000000001,
+          "fcff_m": -43.703296,
+          "present_value_m": -30.68109622012531
+        },
+        {
+          "fy": 2031,
+          "revenue_m": 1020.1152000000001,
+          "ebit_m": 91.810368,
+          "da_m": 71.40806400000001,
+          "capex_m": 142.81612800000002,
+          "incremental_nwc_m": 5.1005759999999984,
+          "fcff_m": -4.896552959999989,
+          "present_value_m": -3.0829910908481297
+        },
+        {
+          "fy": 2032,
+          "revenue_m": 1203.735936,
+          "ebit_m": 144.44831231999999,
+          "da_m": 84.26151552000002,
+          "capex_m": 156.48567168000002,
+          "incremental_nwc_m": 5.5086220799999985,
+          "fcff_m": 34.936905369599984,
+          "present_value_m": 19.72837796699681
+        },
+        {
+          "fy": 2033,
+          "revenue_m": 1396.33368576,
+          "ebit_m": 209.45005286399999,
+          "da_m": 90.7616895744,
+          "capex_m": 167.5600422912,
+          "incremental_nwc_m": 5.777932492799998,
+          "fcff_m": 80.79475602431998,
+          "present_value_m": 40.91808052660716
+        },
+        {
+          "fy": 2034,
+          "revenue_m": 1591.8204017664002,
+          "ebit_m": 270.60946830028803,
+          "da_m": 103.46832611481602,
+          "capex_m": 175.10024419430403,
+          "incremental_nwc_m": 5.8646014801920066,
+          "fcff_m": 133.5788657145447,
+          "present_value_m": 60.672929234259854
+        },
+        {
+          "fy": 2035,
+          "revenue_m": 1782.8388499783684,
+          "ebit_m": 338.73938149589003,
+          "da_m": 115.88452524859396,
+          "capex_m": 178.28388499783685,
+          "incremental_nwc_m": 5.730553446359047,
+          "fcff_m": 196.08680437119227,
+          "present_value_m": 79.8786493653056
+        },
+        {
+          "fy": 2036,
+          "revenue_m": 1961.1227349762055,
+          "ebit_m": 411.83577434500313,
+          "da_m": 127.47297777345337,
+          "capex_m": 176.5010461478585,
+          "incremental_nwc_m": 5.348516549935111,
+          "fcff_m": 266.85531906476217,
+          "present_value_m": 97.49522378014568
+        },
+        {
+          "fy": 2037,
+          "revenue_m": 2118.012553774302,
+          "ebit_m": 465.96276183034644,
+          "da_m": 137.67081599532963,
+          "capex_m": 180.03106707081568,
+          "incremental_nwc_m": 4.706694563942895,
+          "fcff_m": 316.3840085882412,
+          "present_value_m": 103.668576120559
+        },
+        {
+          "fy": 2038,
+          "revenue_m": 2266.273432538503,
+          "ebit_m": 521.2428894838557,
+          "da_m": 147.3077731150027,
+          "capex_m": 188.10069490069577,
+          "incremental_nwc_m": 4.447826362926034,
+          "fcff_m": 361.32870564878834,
+          "present_value_m": 106.18427527383889
+        },
+        {
+          "fy": 2039,
+          "revenue_m": 2402.2498384908135,
+          "ebit_m": 564.5287120453412,
+          "da_m": 156.1462395019029,
+          "capex_m": 196.98448675624672,
+          "incremental_nwc_m": 4.079292178569312,
+          "fcff_m": 395.414855962453,
+          "present_value_m": 104.21634948335462
+        },
+        {
+          "fy": 2040,
+          "revenue_m": 2522.3623304153543,
+          "ebit_m": 605.366959299685,
+          "da_m": 163.95355147699803,
+          "capex_m": 201.78898643322836,
+          "incremental_nwc_m": 3.6033747577362236,
+          "fcff_m": 430.74741853978776,
+          "present_value_m": 101.81943682371013
+        },
+        {
+          "fy": 2041,
+          "revenue_m": 2623.2568236319685,
+          "ebit_m": 629.5816376716724,
+          "da_m": 170.51169353607796,
+          "capex_m": 209.8605458905575,
+          "incremental_nwc_m": 3.026834796498424,
+          "fcff_m": 448.69799023292654,
+          "present_value_m": 95.12337791419654
+        },
+        {
+          "fy": 2042,
+          "revenue_m": 2715.070812459087,
+          "ebit_m": 651.6169949901808,
+          "da_m": 176.47960280984066,
+          "capex_m": 217.20566499672697,
+          "incremental_nwc_m": 2.754419664813554,
+          "fcff_m": 464.78077424064116,
+          "present_value_m": 88.37031996477523
+        }
+      ],
+      "low_price_usd": 5.055311473945157,
+      "high_price_usd": 7.240158391399767,
+      "sensitivities": {
+        "higher_wacc_lower_terminal_growth": 5.055311473945157,
+        "lower_wacc_higher_terminal_growth": 7.240158391399767
+      },
+      "dilution_10pct_sensitivity": 5.432980748714927
+    },
+    "bull": {
+      "enterprise_value_m": 5291.122103312745,
+      "explicit_pv_m": 2111.11562811489,
+      "terminal_pv_m": 3189.7710160946176,
+      "stub_pv_m": -9.764540896763105,
+      "net_cash_m": 405.418,
+      "estimated_equity_m": 5696.540103312745,
+      "price_usd": 15.656373748193905,
+      "terminal_value_share": 0.6028534125299279,
+      "rows": [
+        {
+          "fy": 2028,
+          "revenue_m": 609.6999999999999,
+          "ebit_m": 0,
+          "da_m": 42.679,
+          "capex_m": 121.94,
+          "incremental_nwc_m": 5.225999999999998,
+          "fcff_m": -84.487,
+          "present_value_m": -74.99788788589312
+        },
+        {
+          "fy": 2029,
+          "revenue_m": 823.0949999999999,
+          "ebit_m": 49.38569999999999,
+          "da_m": 57.61665,
+          "capex_m": 148.15709999999999,
+          "incremental_nwc_m": 6.40185,
+          "fcff_m": -58.42145399999998,
+          "present_value_m": -47.145345192674725
+        },
+        {
+          "fy": 2030,
+          "revenue_m": 1070.0235,
+          "ebit_m": 117.702585,
+          "da_m": 74.901645,
+          "capex_m": 171.20376000000002,
+          "incremental_nwc_m": 7.407855000000002,
+          "fcff_m": -11.901953700000025,
+          "present_value_m": -8.731563760708578
+        },
+        {
+          "fy": 2031,
+          "revenue_m": 1348.22961,
+          "ebit_m": 202.2344415,
+          "da_m": 94.37607270000001,
+          "capex_m": 188.75214540000002,
+          "incremental_nwc_m": 8.346183300000002,
+          "fcff_m": 55.02060837,
+          "present_value_m": 36.69496486535423
+        },
+        {
+          "fy": 2032,
+          "revenue_m": 1658.3224203000002,
+          "ebit_m": 315.081259857,
+          "da_m": 116.08256942100003,
+          "capex_m": 215.58191463900005,
+          "incremental_nwc_m": 9.302784309000003,
+          "fcff_m": 136.96125316145998,
+          "present_value_m": 83.03976738840494
+        },
+        {
+          "fy": 2033,
+          "revenue_m": 1989.9869043600002,
+          "ebit_m": 437.7971189592,
+          "da_m": 139.2990833052,
+          "capex_m": 238.79842852320002,
+          "incremental_nwc_m": 9.949934521799998,
+          "fcff_m": 232.032473048376,
+          "present_value_m": 127.89232617211314
+        },
+        {
+          "fy": 2034,
+          "revenue_m": 2328.2846781012,
+          "ebit_m": 570.429746134794,
+          "da_m": 162.979927467084,
+          "capex_m": 256.111314591132,
+          "incremental_nwc_m": 10.148933212235992,
+          "fcff_m": 341.6548816488553,
+          "present_value_m": 171.19483707712135
+        },
+        {
+          "fy": 2035,
+          "revenue_m": 2654.244533035368,
+          "ebit_m": 690.1035785891958,
+          "da_m": 185.7971173124758,
+          "capex_m": 278.69567596871366,
+          "incremental_nwc_m": 9.778795648025042,
+          "fcff_m": 435.60343699530983,
+          "present_value_m": 198.4274015365508
+        },
+        {
+          "fy": 2036,
+          "revenue_m": 2972.7538769996127,
+          "ebit_m": 817.5073161748935,
+          "da_m": 208.0927713899729,
+          "capex_m": 297.2753876999613,
+          "incremental_nwc_m": 9.55528031892734,
+          "fcff_m": 538.9178099875012,
+          "present_value_m": 223.1722533838415
+        },
+        {
+          "fy": 2037,
+          "revenue_m": 3270.029264699574,
+          "ebit_m": 915.6081941158808,
+          "da_m": 228.9020485289702,
+          "capex_m": 310.6527801464595,
+          "incremental_nwc_m": 8.91826163099884,
+          "fcff_m": 623.5053981618989,
+          "present_value_m": 234.728160307392
+        },
+        {
+          "fy": 2038,
+          "revenue_m": 3531.63160587554,
+          "ebit_m": 1006.5150076745289,
+          "da_m": 247.21421241128783,
+          "capex_m": 317.8468445287986,
+          "incremental_nwc_m": 7.848070235278983,
+          "fcff_m": 706.6010036333428,
+          "present_value_m": 241.82797650358765
+        },
+        {
+          "fy": 2039,
+          "revenue_m": 3761.1876602574503,
+          "ebit_m": 1071.9384831733732,
+          "da_m": 263.2831362180215,
+          "capex_m": 319.7009511218833,
+          "incremental_nwc_m": 6.8866816314573045,
+          "fcff_m": 772.8075203399121,
+          "present_value_m": 240.44234030184413
+        },
+        {
+          "fy": 2040,
+          "revenue_m": 3968.05298157161,
+          "ebit_m": 1150.7353646557667,
+          "da_m": 277.76370871001274,
+          "capex_m": 325.380344488872,
+          "incremental_nwc_m": 6.2059596394247905,
+          "fcff_m": 843.750989013214,
+          "present_value_m": 238.64987792832503
+        },
+        {
+          "fy": 2041,
+          "revenue_m": 4146.615365742332,
+          "ebit_m": 1202.5184560652763,
+          "da_m": 290.26307560196324,
+          "capex_m": 331.72922925938656,
+          "incremental_nwc_m": 5.35687152512166,
+          "fcff_m": 891.1413705483707,
+          "present_value_m": 229.13996499776468
+        },
+        {
+          "fy": 2042,
+          "revenue_m": 4312.479980372025,
+          "ebit_m": 1250.6191943078873,
+          "da_m": 301.87359862604177,
+          "capex_m": 344.998398429762,
+          "incremental_nwc_m": 4.975938438890799,
+          "fcff_m": 927.3822333175409,
+          "present_value_m": 216.78055449186724
+        }
+      ],
+      "low_price_usd": 12.747031156762091,
+      "high_price_usd": 19.934035052868655,
+      "sensitivities": {
+        "higher_wacc_lower_terminal_growth": 12.747031156762091,
+        "lower_wacc_higher_terminal_growth": 19.934035052868655
+      },
+      "dilution_10pct_sensitivity": 14.23306704381264
+    }
+  },
+  "reference_market": {
+    "price_usd": 13.47,
+    "market_cap_m": 4901.0324118300005,
+    "enterprise_value_m": 4495.614411830001,
+    "fy27_guidance_midpoint_m": 435.5
+  }
+}
