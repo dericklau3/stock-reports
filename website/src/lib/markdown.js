@@ -30,5 +30,12 @@ export function renderMarkdown(markdown) {
     (_whole, opening, body, closing) =>
       `${opening}\n<div class="business-detail-content">\n${marked.parse(body.trim())}\n</div>\n${closing}`,
   );
-  return marked.parse(renderedDetails);
+  // Event Roadmap bodies live inside raw HTML <details>. Parse their Markdown
+  // once so GitHub's source keeps readable text while website dialogs have rich HTML.
+  const renderedEvents = renderedDetails.replace(
+    /(<div class="event-detail-content">)([\s\S]*?)(<\/div>)/g,
+    (_whole, opening, body, closing) =>
+      `${opening}\n${marked.parse(body.trim())}\n${closing}`,
+  );
+  return marked.parse(renderedEvents);
 }
