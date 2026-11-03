@@ -505,3 +505,63 @@ h1 {
   line-height: 1.65;
   margin-top: 0.35rem;
 }
+
+
+/* Revenue-business explanations: independently expandable, closed by default. */
+.markdown-body details.business-detail {
+  margin: 0.9rem 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdfb;
+  overflow: hidden;
+}
+
+.markdown-body details.business-detail > summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.95rem 2.7rem 0.95rem 1rem;
+  font-weight: 750;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.markdown-body details.business-detail > summary::-webkit-details-marker {
+  display: none;
+}
+
+.markdown-body details.business-detail > summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--accent-dark);
+}
+
+.markdown-body details.business-detail[open] > summary::after {
+  content: "−";
+}
+
+.markdown-body details.business-detail > summary:hover {
+  background: var(--surface-muted);
+}
+
+.markdown-body details.business-detail > summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -3px;
+}
+
+.markdown-body details.business-detail[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.markdown-body .business-detail-content {
+  padding: 0.95rem 1rem 1rem;
+}
+
+.markdown-body .business-detail-content > :last-child {
+  margin-bottom: 0;
+}
