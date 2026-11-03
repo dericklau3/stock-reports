@@ -8,7 +8,47 @@
 
 Intel是既自己设计芯片、也建厂制造芯片的公司。第三季度主营业务不是一项“卖CPU”：**CCPG个人电脑/边缘芯片、DCAI服务器/数据中心/AI芯片、Intel Foundry制造封测、Mobileye汽车辅助驾驶产品、IMS掩模制造设备**各有不同的客户、收款环节和成本结构。其中Mobileye、IMS属于集团的“All Other”；已剥离的Altera不能再当成集团当前合并营业收入。
 
-<details class="business-detail">\n<summary>${sums[i]}</summary>\n\n${content}\n</details>\n\n<details class="business-detail">\n<summary>${sums[i]}</summary>\n\n${content}\n</details>\n\n<details class="business-detail">\n<summary>${sums[i]}</summary>\n\n${content}\n</details>\n\n<details class="business-detail">\n<summary>${sums[i]}</summary>\n\n${content}\n</details>\n\n<details class="business-detail">\n<summary>${sums[i]}</summary>\n\n${content}\n</details>\n\n**其他及合并边界：**All Other还有尚处于早期阶段的项目，公司未证实每一个新项目都有独立收入，不能假装所有研发项目已商业化。Altera（FPGA可编程逻辑芯片）于**2025-09-12**出售多数权益并停止合并收入，2026年的Altera对Intel所购代工服务可以是外部客户收入，而不是继续把Altera的整项FPGA销售收入并表。
+<details class="business-detail">
+<summary>① CCPG：个人电脑及边缘设备芯片｜2026Q3收入80.97亿美元</summary>
+
+Intel向电脑整机品牌、设备厂商及经销渠道销售Core等处理器及平台。客户采购是为了让笔记本、台式机或工控边缘设备运行软件、减少功耗、改善兼容性；电脑消费者通常向整机厂商付款，而不是给Intel付款。Intel以产品采购合同/芯片交付形成销售收入，研发、晶圆制造、封装测试、库存和渠道费用是主要成本。2026Q3分部收入**80.97亿美元**，其中传统客户端约**69亿美元**，其他CCPG约**12亿美元**；子项均已包含在分部总额内，官方金额四舍五入。[原始分部披露](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)。
+
+**举例假设（非真实订单）：**某笔记本厂商为新办公电脑采购Intel处理器并支付芯片货款，最后将整机卖给企业；企业付的是笔记本钱，Intel收到的是芯片订单款。
+</details>
+
+<details class="business-detail">
+<summary>② DCAI：服务器、数据中心与AI计算产品｜2026Q3收入73.18亿美元</summary>
+
+主要包括Xeon服务器CPU，以及网络接口芯片、IPU基础设施处理器、专用定制硅芯片和AI计算产品。云服务商、企业机房、服务器厂商需要运行数据库、虚拟机、企业应用或AI负载；通常直接向Intel采购的是设备制造/云平台采购方，终端云租户支付的云服务费不直接构成Intel收入。Intel主要按芯片/平台出货或项目合同收款；高性能芯片研发、制程、封测及软件适配形成成本。2026Q3分部收入**73.18亿美元**，其中“其他DCAI”约**14亿美元**（属于该分部，不额外加总）；**分部经营利润30.39亿美元**，主要增长来自服务器产品需求和售价/组合。公司并未分别披露每种IPU、NIC、ASIC的收入。[官方10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)。
+
+**举例假设（非真实订单）：**某云平台向服务器厂采购搭载Xeon的整机，服务器厂向Intel下CPU采购单并付款；云平台再向企业客户销售云算力，这是两段不同交易。
+</details>
+
+<details class="business-detail">
+<summary>③ Intel Foundry：晶圆制造、先进封装与测试｜分部收入66.97亿美元（对外4.11亿美元）</summary>
+
+有些芯片公司只有设计、没有自己的工厂，委托代工厂完成晶圆制造与封装测试。Intel对第三方按代工合同、约定加工交付与服务环节取得收入；成本包括建厂设备和折旧、良率损失、工艺研发、材料、电力及人员。**2026Q3 Foundry分部收入66.97亿美元，实际对外代工/封测只有4.11亿美元，经营亏损18.53亿美元。** 分部中的绝大多数服务是制造集团自家的CCPG/DCAI芯片，对内收入须在集团合并时抵销，不代表66.97亿美元均由外部客户付费。10-Q进一步说明：本季对外收入增长主要涉及**非经常性的代工客户合同收入**，不可直接年化为长期合同流水。[Foundry分部披露](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)。
+
+**举例假设（非真实订单）：**一家芯片设计公司与Intel签约，由Intel制造并封装晶圆，设计公司按合同向Intel付款；相反，Intel工厂给集团自己的Xeon产线供货只是内部核算，不会产生新的第三方营业收入。
+</details>
+
+<details class="business-detail">
+<summary>④ Mobileye：汽车辅助驾驶系统与EyeQ芯片｜2026Q3收入4.93亿美元</summary>
+
+其产品用于帮助车辆辨识车道、行人、车辆等；汽车零部件一级供应商（Tier 1）或车企采购芯片与方案，并安装进汽车。Mobileye依量产芯片/系统交货及具体合同确认收入，负担感知算法、芯片、车规测试和系统整合成本。2026Q3在Intel合并口径下收入**4.93亿美元**，属于All Other；与Mobileye独立报表四舍五入的口径可能略有差异。先进自动驾驶技术展示不等于相关方案已形成相同规模付费订单。[Intel 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)、[Mobileye年报](https://www.sec.gov/Archives/edgar/data/1910139/000110465926014300/mbly-20251227x10k.htm)。
+
+**举例假设（非真实订单）：**一家Tier 1供应商向Mobileye采购EyeQ芯片，将它与摄像头及控制器集成后卖给汽车厂；Tier 1是该示例直接付款方，最终车主不是。
+</details>
+
+<details class="business-detail">
+<summary>⑤ IMS：多电子束掩模写入设备｜季度收入未单独披露</summary>
+
+芯片工厂先通过光掩模把精细电路图形转移到晶圆；Intel旗下IMS向这一制造环节提供精密多电子束掩模写入设备。行业客户是专业掩模制造商或相关半导体制造企业，主要成本为电子束技术、机械精密零件、安装与服务。该业务包含于All Other，**IMS单项季度收入、具体客户合同金额、收费和验收条款未单独公开**，不能把所有All Other余额当作IMS的收入。[Intel 10-Q业务组成](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)。
+
+**举例假设（非真实订单）：**一家掩模生产企业采购IMS的写入设备以提高掩模生产能力，并按双方真实设备合同结算；具体价格、收款节点没有公开证据，不作假设。
+</details>
+
+**其他及合并边界：**All Other还有尚处于早期阶段的项目，公司未证实每一个新项目都有独立收入，不能假装所有研发项目已商业化。Altera（FPGA可编程逻辑芯片）于**2025-09-12**出售多数权益并停止合并收入，2026年的Altera对Intel所购代工服务可以是外部客户收入，而不是继续把Altera的整项FPGA销售收入并表。
 
 **收入同比（YoY）**是本季度相对去年同一季度（2026Q3对2025Q3）的增长；**环比（QoQ）**是相对紧邻上一季度（2026Q3对2026Q2）的增长。计算式均为**（本期收入－比较期收入）÷比较期收入×100%**，使用原始百万美元数据而非已舍入十亿美元数字。
 
