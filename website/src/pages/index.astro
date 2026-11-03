@@ -53,40 +53,39 @@ function toneFromView(value) {
 ---
 
 <BaseLayout title="股票研究报告 · Stock Reports" pageType="home" description="浏览上市公司深度研究报告、商业模式、关键事件、财务表现、估值及投资风险。">
-  <section class="library-hero" aria-labelledby="home-title">
-    <div class="hero-art" aria-hidden="true">
-      <img src={withBase(base, "hero-finance.svg")} alt="" decoding="async" />
-    </div>
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="hero-eyebrow"><span class="hero-eyebrow-line"></span> RESEARCH LIBRARY</p>
+  <section class="library-content" id="stock-library" aria-labelledby="home-title">
+    <div class="library-intro">
+      <div class="library-intro-copy">
+        <p class="intro-eyebrow"><span aria-hidden="true"></span> RESEARCH LIBRARY</p>
         <h1 id="home-title">股票研究报告</h1>
-        <p class="hero-description">聚合上市公司深度研究报告，提供投资观点、业务分析与深度跟踪，帮助你更高效地理解企业价值。</p>
-        <dl class="hero-stats">
-          <div class="hero-stat">
-            <span class="stat-icon" aria-hidden="true">▱</span>
-            <span><dt>{companies.length}</dt><dd>Stocks</dd></span>
-          </div>
-          <div class="hero-stat">
-            <span class="stat-icon" aria-hidden="true">▤</span>
-            <span><dt>{reportCount}</dt><dd>Reports</dd></span>
-          </div>
-          <div class="hero-stat hero-stat-date">
-            <span class="stat-icon" aria-hidden="true">▦</span>
-            <span><dd>最近更新</dd><dt>{latestUpdated}</dt></span>
-          </div>
-        </dl>
+        <p class="intro-description">聚合上市公司深度研究，快速查看投资观点、商业模式、财务表现与核心风险。</p>
       </div>
-      <form class="hero-search" id="stock-search-form" role="search" aria-label="搜索研究报告">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
-        <label class="sr-only" for="stock-search">搜索股票代码、公司名称或研究观点</label>
-        <input id="stock-search" type="search" autocomplete="off" placeholder="搜索股票代码或公司名称（如 PL、AAPL、Intel）" />
-        <button type="submit">搜索 <span aria-hidden="true">→</span></button>
-      </form>
+      <dl class="overview-stats">
+        <div class="overview-stat">
+          <dt>{companies.length}</dt>
+          <dd>覆盖股票</dd>
+        </div>
+        <div class="overview-stat">
+          <dt>{reportCount}</dt>
+          <dd>研究报告</dd>
+        </div>
+        <div class="overview-stat overview-stat-date">
+          <dt>{latestUpdated}</dt>
+          <dd>最近更新</dd>
+        </div>
+      </dl>
     </div>
-  </section>
 
-  <section class="library-content" id="stock-library" aria-labelledby="library-title">
+    <div class="library-controls">
+      <form class="library-search" id="stock-search-form" role="search" aria-label="搜索股票">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/>
+        </svg>
+        <label class="sr-only" for="stock-search">搜索股票代码或公司名称</label>
+        <input id="stock-search" type="search" autocomplete="off" placeholder="搜索股票代码或公司名称，例如 AAPL、PL、Intel" />
+        <button type="submit">搜索</button>
+      </form>
+
     <div class="filter-bar" role="group" aria-label="报告分类筛选">
       <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">全部</button>
       <button type="button" class="filter-chip" data-filter="latest" aria-pressed="false"><span aria-hidden="true">◷</span> 最近更新</button>
@@ -94,6 +93,7 @@ function toneFromView(value) {
       <button type="button" class="filter-chip" data-filter="ai" aria-pressed="false"><span aria-hidden="true">✧</span> AI</button>
       <button type="button" class="filter-chip" data-filter="consumer" aria-pressed="false"><span aria-hidden="true">◈</span> 消费</button>
       <button type="button" class="filter-chip" data-filter="cloud" aria-pressed="false"><span aria-hidden="true">☁</span> 云计算</button>
+    </div>
     </div>
 
     <div class="library-section-head">
