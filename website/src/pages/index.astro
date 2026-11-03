@@ -4,78 +4,224 @@ import index from "../data/report-index.json";
 import { withBase } from "../lib/markdown.js";
 
 const base = import.meta.env.BASE_URL;
-const companies = index.companies;
+const companies = [...index.companies].sort((a, b) =>
+  (b.lastUpdated || "").localeCompare(a.lastUpdated || "") || a.symbol.localeCompare(b.symbol),
+);
 const reportCount = companies.reduce((total, company) => total + company.reports.length, 0);
+const latestUpdated = companies.find((company) => company.lastUpdated)?.lastUpdated || "—";
+
+const groupBySymbol = {
+  INTC: ["semiconductors", "ai"], NVDA: ["semiconductors", "ai"],
+  QCOM: ["semiconductors"], SKHY: ["semiconductors", "ai"],
+  CBRS: ["semiconductors", "ai"], MU: ["semiconductors"],
+  AAPL: ["consumer"], TSLA: ["consumer", "ai"], AMZN: ["consumer", "cloud"],
+  GOOG: ["ai", "cloud"], MSFT: ["ai", "cloud"], ORCL: ["cloud", "ai"],
+  PL: ["ai"], TEM: ["ai"], HOOD: ["consumer"],
+  LMND: ["consumer", "ai"], CRCL: ["consumer"],
+};
+const marks = {
+  INTC: "intel.", PL: "P", AMZN: "a", GOOG: "G", HOOD: "↗",
+  SPCX: "X", TSLA: "T", AAPL: "●", NVDA: "N",
+  MSFT: "M", ORCL: "O", QCOM: "Q", RKLB: "R",
+  TEM: "T", CBRS: "C", VST: "V", SKHY: "SK",
+};
+const shortName = {
+  INTC: "Intel", PL: "Planet Labs PBC", AMZN: "Amazon",
+  GOOG: "Alphabet", HOOD: "Robinhood Markets",
+  SPCX: "Space Exploration Technologies", TSLA: "Tesla",
+  AAPL: "Apple",
+};
+
+function cleanView(value) {
+  return (value || "")
+    .replace(/^\s*[-–]\s*/, "")
+    .replace(/^\**投资观点[：:]\**\s*/, "")
+    .replace(/\*+/g, "")
+    .trim();
+}
+function labelFromView(value) {
+  const view = cleanView(value);
+  const label = view.split(/[，,。；;！!\n]/)[0].trim();
+  return label.length > 0 && label.length <= 9 ? label : "研究观点";
+}
+function toneFromView(value) {
+  const view = cleanView(value).slice(0, 24);
+  if (/谨慎|风险|偏空|高估/.test(view)) return "cautious";
+  if (/乐观|看好|积极/.test(view)) return "positive";
+  return "neutral";
+}
 ---
 
-<BaseLayout title="Stock Research Reports">
-  <section class="page-head">
-    <div>
-      <p class="eyebrow">Research Library</p>
-      <h1>股票研究报告</h1>
-      <p class="lede">从 <code>research/COMPANIES</code> 自动生成，可按股票代码、公司名和研究观点检索。</p>
+<BaseLayout title="股票研究报告 · Stock Reports" pageType="home" description="浏览上市公司深度研究报告、商业模式、关键事件、财务表现、估值及投资风险。">
+  <section class="library-hero" aria-labelledby="home-title">
+    <div class="hero-art" aria-hidden="true">
+      <img src={withBase(base, "hero-finance.jpg")} alt="" decoding="async" />
     </div>
-    <dl class="stats">
-      <div>
-        <dt>{companies.length}</dt>
-        <dd>Stocks</dd>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-eyebrow"><span class="hero-eyebrow-line"></span> RESEARCH LIBRARY</p>
+        <h1 id="home-title">股票研究报告</h1>
+        <p class="hero-description">聚合上市公司深度研究报告，提供投资观点、业务分析与深度跟踪，帮助你更高效地理解企业价值。</p>
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-icon" aria-hidden="true">▱</span>
+            <span><dt>{companies.length}</dt><dd>Stocks</dd></span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-icon" aria-hidden="true">▤</span>
+            <span><dt>{reportCount}</dt><dd>Reports</dd></span>
+          </div>
+          <div class="hero-stat hero-stat-date">
+            <span class="stat-icon" aria-hidden="true">▦</span>
+            <span><dd>最近更新</dd><dt>{latestUpdated}</dt></span>
+          </div>
+        </dl>
       </div>
-      <div>
-        <dt>{reportCount}</dt>
-        <dd>Reports</dd>
-      </div>
-    </dl>
+      <form class="hero-search" id="stock-search-form" role="search" aria-label="搜索研究报告">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+        <label class="sr-only" for="stock-search">搜索股票代码、公司名称或研究观点</label>
+        <input id="stock-search" type="search" autocomplete="off" placeholder="搜索股票代码、公司名称或研究观点（如 AAPL、AI、半导体…）" />
+        <button type="submit">搜索 <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
   </section>
 
-  <section class="toolbar" aria-label="Stock filters">
-    <label class="search-field">
-      <span>Search</span>
-      <input id="stock-search" type="search" autocomplete="off" />
-    </label>
-    <p id="result-count" class="result-count">{companies.length} stocks</p>
-  </section>
+  <section class="library-content" id="stock-library" aria-labelledby="library-title">
+    <div class="filter-bar" role="group" aria-label="报告分类筛选">
+      <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">全部</button>
+      <button type="button" class="filter-chip" data-filter="latest" aria-pressed="false"><span aria-hidden="true">◷</span> 最近更新</button>
+      <button type="button" class="filter-chip" data-filter="semiconductors" aria-pressed="false"><span aria-hidden="true">▦</span> 半导体</button>
+      <button type="button" class="filter-chip" data-filter="ai" aria-pressed="false"><span aria-hidden="true">✧</span> AI</button>
+      <button type="button" class="filter-chip" data-filter="consumer" aria-pressed="false"><span aria-hidden="true">◈</span> 消费</button>
+      <button type="button" class="filter-chip" data-filter="cloud" aria-pressed="false"><span aria-hidden="true">☁</span> 云计算</button>
+    </div>
 
-  <section class="stock-grid" id="stock-grid" aria-label="Stock list">
-    {
-      companies.map((company) => (
+    <div class="library-section-head">
+      <div class="library-section-heading">
+        <span class="section-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <h2 id="library-title">研究报告库</h2>
+      </div>
+      <div class="library-section-tools">
+        <span class="result-count" id="result-count" role="status" aria-live="polite">共 {companies.length} 只股票 · {reportCount} 份研究报告</span>
+        <div class="view-switch" role="group" aria-label="切换展示方式">
+          <button type="button" data-view="grid" class="is-active" aria-label="网格视图" aria-pressed="true">▦</button>
+          <button type="button" data-view="list" aria-label="列表视图" aria-pressed="false">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="stock-grid" id="stock-grid" aria-label="股票研究报告">
+      {companies.map((company) => (
         <a
           class="stock-card"
-          href={withBase(base, `stocks/${company.symbol}/`)}
+          href={withBase(base, "stocks/" + company.symbol + "/")}
           data-stock-card
-          data-search={`${company.symbol} ${company.companyName} ${company.currentView} ${company.summary}`}
+          data-updated={company.lastUpdated || ""}
+          data-categories={(groupBySymbol[company.symbol] || []).join(" ")}
+          data-search={[company.symbol, company.companyName, company.currentView, company.summary].join(" ")}
         >
           <div class="stock-card-top">
-            <span class="ticker">{company.symbol}</span>
-            <span class="report-pill">{company.reports.length} reports</span>
+            <span class:list={["stock-logo", "stock-logo-" + company.symbol.toLowerCase()]} aria-hidden="true">{marks[company.symbol] || company.symbol.slice(0, 2)}</span>
+            <div class="stock-identity">
+              <strong class="ticker">{company.symbol}</strong>
+              <span class="stock-company">{shortName[company.symbol] || company.companyName}</span>
+            </div>
+            <span class="report-pill">{company.reports.length} 份报告</span>
           </div>
-          <h2>{company.companyName}</h2>
-          <p>{company.currentView}</p>
+          <div class="stock-card-middle">
+            <span class:list={["view-tag", "view-tag-" + toneFromView(company.currentView)]}>{labelFromView(company.currentView)}</span>
+            <span class="card-accent-graph" aria-hidden="true">
+              <svg viewBox="0 0 84 38" fill="none" preserveAspectRatio="none">
+                <path d="M2 33L13 28L20 31L29 18L38 23L47 14L56 18L66 9L73 12L82 2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+          <p class="stock-description">{cleanView(company.currentView) || company.summary || "查看公司完整研究报告及分析。"}</p>
           <div class="card-meta">
-            <span>Updated {company.lastUpdated || "Unknown"}</span>
-            <span>Open</span>
+            <span class="card-updated"><span aria-hidden="true">▣</span> {company.lastUpdated || "日期未记录"}</span>
+            <span class="card-report-count">▤ {company.reports.length} 份</span>
+            <span class="card-open">查看 <span aria-hidden="true">→</span></span>
           </div>
         </a>
-      ))
-    }
+      ))}
+    </section>
+    <div id="no-results" class="no-results" hidden>
+      <span aria-hidden="true">⌕</span>
+      <h3>没有找到匹配的股票</h3>
+      <p>试试其他股票代码、公司名称，或切换分类。</p>
+      <button type="button" id="reset-filters">清除筛选</button>
+    </div>
   </section>
 
   <script>
-    const input = document.querySelector("#stock-search");
+    const search = document.querySelector("#stock-search");
+    const form = document.querySelector("#stock-search-form");
+    const grid = document.querySelector("#stock-grid");
     const cards = Array.from(document.querySelectorAll("[data-stock-card]"));
+    const chips = Array.from(document.querySelectorAll(".filter-chip"));
+    const views = Array.from(document.querySelectorAll("[data-view]"));
     const count = document.querySelector("#result-count");
+    const empty = document.querySelector("#no-results");
+    let activeFilter = "all";
+    const recentDate = cards.reduce((latest, card) =>
+      (card.dataset.updated || "") > latest ? (card.dataset.updated || "") : latest, "");
+    const recentThreshold = recentDate ? new Date(recentDate + "T00:00:00Z").getTime() - (30 * 86400000) : 0;
 
-    input?.addEventListener("input", () => {
-      const query = input.value.trim().toLowerCase();
+    function applyFilters() {
+      const query = search?.value.trim().toLocaleLowerCase() || "";
       let visible = 0;
-
+      let reports = 0;
       for (const card of cards) {
-        const haystack = card.dataset.search?.toLowerCase() ?? "";
-        const match = !query || haystack.includes(query);
-        card.hidden = !match;
-        if (match) visible += 1;
+        const matchesText = !query || (card.dataset.search || "").toLocaleLowerCase().includes(query);
+        let matchesCategory = activeFilter === "all";
+        if (activeFilter === "latest") {
+          const updated = Date.parse((card.dataset.updated || "") + "T00:00:00Z");
+          matchesCategory = Number.isFinite(updated) && updated >= recentThreshold;
+        } else if (activeFilter !== "all") {
+          matchesCategory = (card.dataset.categories || "").split(" ").includes(activeFilter);
+        }
+        const matches = matchesText && matchesCategory;
+        card.hidden = !matches;
+        if (matches) {
+          visible += 1;
+          reports += Number(card.querySelector(".report-pill")?.textContent?.match(/\d+/)?.[0] || 0);
+        }
       }
+      if (count) count.textContent = "共 " + visible + " 只股票 · " + reports + " 份研究报告";
+      if (empty) empty.hidden = visible !== 0;
+    }
 
-      if (count) count.textContent = `${visible} stocks`;
+    function selectFilter(value) {
+      activeFilter = value;
+      chips.forEach((chip) => {
+        const active = chip.dataset.filter === value;
+        chip.classList.toggle("is-active", active);
+        chip.setAttribute("aria-pressed", String(active));
+      });
+      applyFilters();
+    }
+
+    search?.addEventListener("input", applyFilters);
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      applyFilters();
+      document.querySelector("#stock-library")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
+    chips.forEach((chip) => chip.addEventListener("click", () => selectFilter(chip.dataset.filter || "all")));
+    views.forEach((button) => button.addEventListener("click", () => {
+      const mode = button.dataset.view === "list" ? "list" : "grid";
+      grid?.classList.toggle("is-list-view", mode === "list");
+      views.forEach((view) => {
+        const selected = view.dataset.view === mode;
+        view.classList.toggle("is-active", selected);
+        view.setAttribute("aria-pressed", String(selected));
+      });
+    }));
+    document.querySelector("#reset-filters")?.addEventListener("click", () => {
+      if (search) search.value = "";
+      selectFilter("all");
+      search?.focus();
+    });
+    applyFilters();
   </script>
 </BaseLayout>
