@@ -86,14 +86,14 @@ function toneFromView(value) {
         <button type="submit">搜索</button>
       </form>
 
-    <div class="filter-bar" role="group" aria-label="报告分类筛选">
-      <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">全部</button>
-      <button type="button" class="filter-chip" data-filter="latest" aria-pressed="false"><span aria-hidden="true">◷</span> 最近更新</button>
-      <button type="button" class="filter-chip" data-filter="semiconductors" aria-pressed="false"><span aria-hidden="true">▦</span> 半导体</button>
-      <button type="button" class="filter-chip" data-filter="ai" aria-pressed="false"><span aria-hidden="true">✧</span> AI</button>
-      <button type="button" class="filter-chip" data-filter="consumer" aria-pressed="false"><span aria-hidden="true">◈</span> 消费</button>
-      <button type="button" class="filter-chip" data-filter="cloud" aria-pressed="false"><span aria-hidden="true">☁</span> 云计算</button>
-    </div>
+      <div class="filter-bar" role="group" aria-label="报告分类筛选">
+        <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">全部</button>
+        <button type="button" class="filter-chip" data-filter="latest" aria-pressed="false"><span aria-hidden="true">◷</span> 最近更新</button>
+        <button type="button" class="filter-chip" data-filter="semiconductors" aria-pressed="false"><span aria-hidden="true">▦</span> 半导体</button>
+        <button type="button" class="filter-chip" data-filter="ai" aria-pressed="false"><span aria-hidden="true">✧</span> AI</button>
+        <button type="button" class="filter-chip" data-filter="consumer" aria-pressed="false"><span aria-hidden="true">◈</span> 消费</button>
+        <button type="button" class="filter-chip" data-filter="cloud" aria-pressed="false"><span aria-hidden="true">☁</span> 云计算</button>
+      </div>
     </div>
 
     <div class="library-section-head">
@@ -212,7 +212,7 @@ function toneFromView(value) {
     form?.addEventListener("submit", (event) => {
       event.preventDefault();
       applyFilters();
-      document.querySelector("#stock-library")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      document.querySelector("#library-title")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     chips.forEach((chip) => chip.addEventListener("click", () => selectFilter(chip.dataset.filter || "all")));
     views.forEach((button) => button.addEventListener("click", () => {
