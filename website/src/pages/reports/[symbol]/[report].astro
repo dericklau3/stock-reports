@@ -29,4 +29,69 @@ const reportHtml = renderMarkdown(report.content);
   </section>
 
   <article class="markdown-body report-body" set:html={reportHtml} />
+
+  <dialog id="event-detail-dialog" class="event-dialog" aria-labelledby="event-dialog-title">
+    <div class="event-dialog-panel">
+      <button type="button" class="event-dialog-close" aria-label="关闭事件详情">×</button>
+      <p class="event-dialog-kicker">重大事件 · <span id="event-dialog-month"></span></p>
+      <h2 id="event-dialog-title"></h2>
+      <div id="event-dialog-content" class="event-dialog-content"></div>
+    </div>
+  </dialog>
 </BaseLayout>
+
+<script>
+  const dialog = document.querySelector("#event-detail-dialog");
+  const title = document.querySelector("#event-dialog-title");
+  const month = document.querySelector("#event-dialog-month");
+  const content = document.querySelector("#event-dialog-content");
+  const closeButton = dialog?.querySelector(".event-dialog-close");
+  let lastTrigger;
+
+  // Native details remain usable if JS is disabled; with JS the same summary
+  // becomes a button-like trigger for the accessible, modal HTML <dialog>.
+  if (dialog && typeof dialog.showModal === "function") {
+    for (const item of document.querySelectorAll(".report-body .event-roadmap .event-entry")) {
+      const summary = item.querySelector(":scope > summary");
+      const detail = item.querySelector(":scope > .event-detail-content");
+      if (!summary || !detail) continue;
+
+      summary.addEventListener("click", (event) => {
+        event.preventDefault();
+        item.open = false;
+        lastTrigger = summary;
+        title.textContent =
+          summary.querySelector(".event-entry-title")?.textContent?.trim() ||
+          summary.textContent?.trim() ||
+          "重大事件";
+        month.textContent = item.closest(".event-month")?.dataset.month || "日期未核实";
+        content.replaceChildren(...Array.from(detail.childNodes, (node) => node.cloneNode(true)));
+        dialog.showModal();
+        closeButton?.focus();
+      });
+    }
+
+    for (const group of document.querySelectorAll(".report-body .event-roadmap .event-month")) {
+      const count = group.querySelectorAll(":scope > .event-entry").length;
+      const heading = group.querySelector(".event-month-heading");
+      if (heading && !heading.querySelector(".event-month-count")) {
+        const countLabel = document.createElement("span");
+        countLabel.className = "event-month-count";
+        countLabel.textContent = `${count} 项`;
+        heading.append(countLabel);
+      }
+    }
+
+    for (const roadmap of document.querySelectorAll(".report-body .event-roadmap")) {
+      // Show newest months first when the timeline overflows: older months
+      // remain accessible by scrolling left, preserving chronological order.
+      roadmap.scrollLeft = roadmap.scrollWidth - roadmap.clientWidth;
+    }
+  }
+
+  closeButton?.addEventListener("click", () => dialog.close());
+  dialog?.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog?.addEventListener("close", () => lastTrigger?.focus());
+</script>
