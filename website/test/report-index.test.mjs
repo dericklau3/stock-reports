@@ -114,7 +114,7 @@ test("business sections are default-closed and retain rendered Markdown", () => 
     "",
     "客户购买芯片并付款。[官方来源](https://example.com/source)。",
     "",
-    "**举例假设（非真实订单）：**设备厂向制造商下单。",
+    "**举例假设（非真实订单）：** 设备厂向制造商下单。",
     "</details>",
     "",
     "| 业务 | 最新季 |",
