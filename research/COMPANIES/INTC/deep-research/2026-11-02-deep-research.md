@@ -72,17 +72,201 @@ Intel向电脑整机品牌、设备厂商及经销渠道销售Core等处理器�
 
 以下覆盖**2025-11-02至2026-11-02**与更早但仍影响资本结构的事项，按是否已实质改变利润、资产、资金、股本、生产或重要商业化阶段筛选。公告日与签约/交割/事故发生日不同则分别标明；2026-10-30的新10-Q补充了旧版报告缺失的**Classiq收购价格与基板采购现金义务**，是本次实质修正。
 
-| 公告日期与重大事件 | 公布了什么 | 对公司的实际意义 |
-|---|---|---|
-| **2026-10-30 · [Q3 10-Q披露期后基板供货合同](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)**（实际签约在Q3结束后，准确日未披露） | 新签两项基板供应协议，估计**资金需求53亿—61亿美元**，其中到2027年底预计约**33亿美元**付出；部分合同细节尚未敲定。 | 能帮助锁定稀缺封装基板，但新增已公布的重大资金义务，使单看当前现金余额低估未来支出。 |
-| **2026-10-26 · [Classiq确定性收购](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)**（10-30 10-Q补充经济条款） | 将收购Classiq全部股权，**对价约19亿美元，另最多3.5亿美元附条件支付**；可以现金或Intel股票付款，预计2027上半年交割，仍待监管等条件。 | 不是免费AI/量子选择权：可能直接减少现金，或增加普通股股数；目前尚未完成收购，营收协同未验证。 |
-| **2026-10-29 · [Q3财报及Q4指引](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)**（财报期截至09-26） | Q3收入**165.13亿美元**，GAAP经营利润**25.22亿美元**；Q4收入指引**150亿—160亿美元**，GAAP每股收益指引**$0.10**。 | 服务器驱动已实现改善，但短期收入预期回落；这不是单纯的“业绩大好”。 |
-| **2026-10-29 · [Fab 28停产及影响披露](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)**（事故发生于2026年10月中旬，准确日未核实） | 以色列工厂发生严重事故并导致产能受限，管理层在业绩电话会估计Q4收入损失约**3亿美元**，毛利率约受**2个百分点**影响。 | 已涉及具体销售交付与毛利；生产恢复是否波及2027仍待验证，不能当成纯传闻。 |
-| **2026-08-10至12 · [大规模公开发行普通股](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)** | 按**$95/股**发行**242,105,262股**，总发行额约230亿美元；三季报确认**净募集226.17亿美元**。 | 大幅改善流动性但明显稀释每股权益；以前研究中“净款待核”现可关闭。 |
-| **2026-04-23 · [Q1 Mobileye减值](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)** | Mobileye相关商誉计提约**39亿美元**非现金减值。 | 警示资产配置与汽车技术商业预期下修；与现金资本开支不是同一个概念。 |
-| **2026-04-01 · [回购Apollo爱尔兰Fab 34股权](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab)**（04-08完成） | 支付约**142亿美元**回购49%权益。 | 降低未来非控股权益索取，但减少大量现金；属于股权和资金结构交易。 |
-| **2026-01-05 · [18A工艺自有产品正式商用](https://www.intc.com/news-events/press-releases/detail/1757/ces-2026-intel-core-ultra-series-3-debuts-as-first-built)** | Core Ultra Series 3采用18A，完成从工艺研发向自有产品商用的重要节点。 | 证明Intel自家芯片应用不等于已获得大型第三方Foundry收费订单。 |
-| **2025-12-29 · [NVIDIA股权投资完成披露](https://www.sec.gov/Archives/edgar/data/50863/000005086325000204/intc-20251226.htm)**（12-26完成） | NVIDIA投资约**50亿美元**，以股权融资形式落实。 | 确认现金注入和股本稀释，但合作本身不是已实现的芯片长期采购收入。 |
+<div class="event-roadmap" aria-label="重大事件时间轴">
+<section class="event-month" data-month="2025-12">
+<h3 class="event-month-heading">2025-12</h3>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">NVIDIA股权投资完成披露</span>
+<span class="event-entry-preview">NVIDIA约50亿美元的股权投资完成。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2025-12-29
+
+**相关时间或状态：** （12-26完成）
+
+**公布了什么：** NVIDIA投资约**50亿美元**，以股权融资形式落实。
+
+**对公司的实际意义：** 确认现金注入和股本稀释，但合作本身不是已实现的芯片长期采购收入。
+
+**原始来源：** [NVIDIA股权投资完成披露](https://www.sec.gov/Archives/edgar/data/50863/000005086325000204/intc-20251226.htm)
+
+</div>
+</details>
+</section>
+
+<section class="event-month" data-month="2026-01">
+<h3 class="event-month-heading">2026-01</h3>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">18A工艺自有产品正式商用</span>
+<span class="event-entry-preview">Intel 18A工艺进入自有产品正式商用阶段。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-01-05
+
+**公布了什么：** Core Ultra Series 3采用18A，完成从工艺研发向自有产品商用的重要节点。
+
+**对公司的实际意义：** 证明Intel自家芯片应用不等于已获得大型第三方Foundry收费订单。
+
+**原始来源：** [18A工艺自有产品正式商用](https://www.intc.com/news-events/press-releases/detail/1757/ces-2026-intel-core-ultra-series-3-debuts-as-first-built)
+
+</div>
+</details>
+</section>
+
+<section class="event-month" data-month="2026-04">
+<h3 class="event-month-heading">2026-04</h3>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">回购Apollo爱尔兰Fab 34股权</span>
+<span class="event-entry-preview">支付约142亿美元，回购Fab 34的49%权益。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-04-01
+
+**相关时间或状态：** （04-08完成）
+
+**公布了什么：** 支付约**142亿美元**回购49%权益。
+
+**对公司的实际意义：** 降低未来非控股权益索取，但减少大量现金；属于股权和资金结构交易。
+
+**原始来源：** [回购Apollo爱尔兰Fab 34股权](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab)
+
+</div>
+</details>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">Q1 Mobileye减值</span>
+<span class="event-entry-preview">Mobileye相关商誉计提约39亿美元非现金减值。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-04-23
+
+**公布了什么：** Mobileye相关商誉计提约**39亿美元**非现金减值。
+
+**对公司的实际意义：** 警示资产配置与汽车技术商业预期下修；与现金资本开支不是同一个概念。
+
+**原始来源：** [Q1 Mobileye减值](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)
+
+</div>
+</details>
+</section>
+
+<section class="event-month" data-month="2026-08">
+<h3 class="event-month-heading">2026-08</h3>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">大规模公开发行普通股</span>
+<span class="event-entry-preview">公开发行约2.42亿股，净募集约226.17亿美元。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-08-10至12
+
+**公布了什么：** 按**$95/股**发行**242,105,262股**，总发行额约230亿美元；三季报确认**净募集226.17亿美元**。
+
+**对公司的实际意义：** 大幅改善流动性但明显稀释每股权益；以前研究中“净款待核”现可关闭。
+
+**原始来源：** [大规模公开发行普通股](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)
+
+</div>
+</details>
+</section>
+
+<section class="event-month" data-month="2026-10">
+<h3 class="event-month-heading">2026-10</h3>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">Classiq确定性收购</span>
+<span class="event-entry-preview">拟收购Classiq全部股权，约19亿美元基本对价。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-10-26
+
+**相关时间或状态：** （10-30 10-Q补充经济条款）
+
+**公布了什么：** 将收购Classiq全部股权，**对价约19亿美元，另最多3.5亿美元附条件支付**；可以现金或Intel股票付款，预计2027上半年交割，仍待监管等条件。
+
+**对公司的实际意义：** 不是免费AI/量子选择权：可能直接减少现金，或增加普通股股数；目前尚未完成收购，营收协同未验证。
+
+**原始来源：** [Classiq确定性收购](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)
+
+</div>
+</details>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">Q3财报及Q4指引</span>
+<span class="event-entry-preview">Q3收入165.13亿美元，并公布Q4收入指引。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-10-29
+
+**相关时间或状态：** （财报期截至09-26）
+
+**公布了什么：** Q3收入**165.13亿美元**，GAAP经营利润**25.22亿美元**；Q4收入指引**150亿—160亿美元**，GAAP每股收益指引**$0.10**。
+
+**对公司的实际意义：** 服务器驱动已实现改善，但短期收入预期回落；这不是单纯的“业绩大好”。
+
+**原始来源：** [Q3财报及Q4指引](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)
+
+</div>
+</details>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">Fab 28停产及影响披露</span>
+<span class="event-entry-preview">以色列工厂事故影响产能，预计Q4收入受损。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-10-29
+
+**相关时间或状态：** （事故发生于2026年10月中旬，准确日未核实）
+
+**公布了什么：** 以色列工厂发生严重事故并导致产能受限，管理层在业绩电话会估计Q4收入损失约**3亿美元**，毛利率约受**2个百分点**影响。
+
+**对公司的实际意义：** 已涉及具体销售交付与毛利；生产恢复是否波及2027仍待验证，不能当成纯传闻。
+
+**原始来源：** [Fab 28停产及影响披露](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)
+
+</div>
+</details>
+
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">Q3 10-Q披露期后基板供货合同</span>
+<span class="event-entry-preview">新签基板供应协议，估计资金需求53亿—61亿美元。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-10-30
+
+**相关时间或状态：** （实际签约在Q3结束后，准确日未披露）
+
+**公布了什么：** 新签两项基板供应协议，估计**资金需求53亿—61亿美元**，其中到2027年底预计约**33亿美元**付出；部分合同细节尚未敲定。
+
+**对公司的实际意义：** 能帮助锁定稀缺封装基板，但新增已公布的重大资金义务，使单看当前现金余额低估未来支出。
+
+**原始来源：** [Q3 10-Q披露期后基板供货合同](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)
+
+</div>
+</details>
+</section>
+</div>
 
 Intel亦公告与Google、Oracle、Fortinet等合作、18A-P风险生产和D系列送样，以及Ohio建设及设备测试节点；缺乏明确大额约束订单或当期经济影响时列为**B类在执行项目或C类普通信息**，不冒充重大已兑现商业事件。原候选筛选及原始来源覆盖详情存于本次[研究底稿](../research-records/2026-11-02-research.md)。**覆盖局限：**已检查公司Q3 10-Q、财报附件、旧年报和若干重要公告与历史研究；并未逐一完成过去12个月每一页SEC 8-K、商务部/FCC裁决或所有合作方公告，故不宣称“所有重大事件已穷尽”。
 
