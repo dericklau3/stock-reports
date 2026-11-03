@@ -22,6 +22,13 @@ export function rewriteResearchLinks(markdown, baseUrl, symbol) {
   });
 }
 
+// Marked preserves raw HTML blocks verbatim. Parse the Markdown body of our
+// native, default-closed <details> elements before handing the page to Marked.
 export function renderMarkdown(markdown) {
-  return marked.parse(markdown);
+  const renderedDetails = markdown.replace(
+    /(<details class="business-detail">\s*<summary>[\s\S]*?<\/summary>)([\s\S]*?)(<\/details>)/g,
+    (_whole, opening, body, closing) =>
+      `${opening}\n<div class="business-detail-content">\n${marked.parse(body.trim())}\n</div>\n${closing}`,
+  );
+  return marked.parse(renderedDetails);
 }
