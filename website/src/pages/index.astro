@@ -131,11 +131,6 @@ function toneFromView(value) {
           </div>
           <div class="stock-card-middle">
             <span class:list={["view-tag", "view-tag-" + toneFromView(company.currentView)]}>{labelFromView(company.currentView)}</span>
-            <span class="card-accent-graph" aria-hidden="true">
-              <svg viewBox="0 0 84 38" fill="none" preserveAspectRatio="none">
-                <path d="M2 33L13 28L20 31L29 18L38 23L47 14L56 18L66 9L73 12L82 2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-              </svg>
-            </span>
           </div>
           <p class="stock-description">{cleanView(company.currentView) || company.summary || "查看公司完整研究报告及分析。"}</p>
           <div class="card-meta">
