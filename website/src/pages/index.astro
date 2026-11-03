@@ -80,7 +80,7 @@ function toneFromView(value) {
       <form class="hero-search" id="stock-search-form" role="search" aria-label="搜索研究报告">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
         <label class="sr-only" for="stock-search">搜索股票代码、公司名称或研究观点</label>
-        <input id="stock-search" type="search" autocomplete="off" placeholder="搜索股票代码、公司名称或研究观点（如 AAPL、AI、半导体…）" />
+        <input id="stock-search" type="search" autocomplete="off" placeholder="搜索股票代码或公司名称（如 PL、AAPL、Intel）" />
         <button type="submit">搜索 <span aria-hidden="true">→</span></button>
       </form>
     </div>
@@ -118,7 +118,8 @@ function toneFromView(value) {
           data-stock-card
           data-updated={company.lastUpdated || ""}
           data-categories={(groupBySymbol[company.symbol] || []).join(" ")}
-          data-search={[company.symbol, company.companyName, company.currentView, company.summary].join(" ")}
+          data-symbol={company.symbol}
+          data-company-name={[company.companyName, shortName[company.symbol] || ""].join(" ")}
         >
           <div class="stock-card-top">
             <span class:list={["stock-logo", "stock-logo-" + company.symbol.toLowerCase()]} aria-hidden="true">{marks[company.symbol] || company.symbol.slice(0, 2)}</span>
@@ -154,6 +155,8 @@ function toneFromView(value) {
   </section>
 
   <script>
+    import { findMatchingStocks } from "../lib/stock-search.js";
+
     const search = document.querySelector("#stock-search");
     const form = document.querySelector("#stock-search-form");
     const grid = document.querySelector("#stock-grid");
@@ -168,11 +171,20 @@ function toneFromView(value) {
     const recentThreshold = recentDate ? new Date(recentDate + "T00:00:00Z").getTime() - (30 * 86400000) : 0;
 
     function applyFilters() {
-      const query = search?.value.trim().toLocaleLowerCase() || "";
+      const query = search?.value.trim() || "";
+      const matchedSymbols = new Set(
+        findMatchingStocks(
+          cards.map((card) => ({
+            symbol: card.dataset.symbol || "",
+            companyName: card.dataset.companyName || "",
+          })),
+          query,
+        ).map((company) => company.symbol),
+      );
       let visible = 0;
       let reports = 0;
       for (const card of cards) {
-        const matchesText = !query || (card.dataset.search || "").toLocaleLowerCase().includes(query);
+        const matchesText = matchedSymbols.has(card.dataset.symbol || "");
         let matchesCategory = activeFilter === "all";
         if (activeFilter === "latest") {
           const updated = Date.parse((card.dataset.updated || "") + "T00:00:00Z");
