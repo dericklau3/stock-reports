@@ -565,3 +565,208 @@ h1 {
 .markdown-body .business-detail-content > :last-child {
   margin-bottom: 0;
 }
+
+
+/* Monthly event roadmap: one timeline month per column, events stacked below. */
+.markdown-body .event-roadmap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(245px, 290px);
+  gap: 0.9rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0.5rem 0.2rem 1.3rem;
+  margin: 1rem 0;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.markdown-body .event-month {
+  position: relative;
+  min-width: 0;
+  border: 1px solid #d9e7f4;
+  border-radius: 10px;
+  background: linear-gradient(#eff6ff 0, #f9fbff 76px, #fff 76px);
+  padding: 0.75rem 0.65rem;
+  scroll-snap-align: start;
+}
+
+.markdown-body .event-month::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0.2rem auto 0.8rem;
+  border: 3px solid #e9f3ff;
+  border-radius: 50%;
+  background: #247ad8;
+  box-shadow: 0 0 0 1px #247ad8;
+}
+
+.markdown-body h3.event-month-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0 0 0.9rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #184a88;
+}
+
+.markdown-body .event-month-count {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.markdown-body details.event-entry {
+  margin: 0 0 0.6rem;
+  background: #fff;
+  border: 1px solid #e0e8f0;
+  border-radius: 9px;
+  box-shadow: 0 2px 8px rgba(20, 49, 83, 0.035);
+}
+
+.markdown-body details.event-entry:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body details.event-entry > summary {
+  display: grid;
+  gap: 0.42rem;
+  position: relative;
+  padding: 0.85rem 1.6rem 0.85rem 0.75rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.markdown-body details.event-entry > summary::-webkit-details-marker {
+  display: none;
+}
+
+.markdown-body details.event-entry > summary::after {
+  content: "›";
+  position: absolute;
+  right: 0.55rem;
+  top: 0.75rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #3577bf;
+}
+
+.markdown-body details.event-entry > summary:hover,
+.markdown-body details.event-entry > summary:focus-visible {
+  background: #f0f7ff;
+  outline-color: #4c9be8;
+  border-radius: 9px;
+}
+
+.markdown-body .event-entry-title {
+  font-size: 0.91rem;
+  font-weight: 800;
+  color: #142338;
+  line-height: 1.35;
+}
+
+.markdown-body .event-entry-preview {
+  font-size: 0.81rem;
+  color: #506175;
+  line-height: 1.5;
+}
+
+.markdown-body .event-entry .event-detail-content {
+  padding: 0.85rem;
+  border-top: 1px solid #e3eaf3;
+  font-size: 0.91rem;
+  line-height: 1.6;
+}
+
+.markdown-body .event-detail-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* The popup is outside article.markdown-body but uses the same report font. */
+.event-dialog {
+  position: fixed;
+  width: min(680px, calc(100vw - 1.5rem));
+  max-height: min(85vh, 900px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #dbe5f1;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--text);
+  box-shadow: 0 22px 80px rgba(18, 31, 48, 0.23);
+}
+
+.event-dialog::backdrop {
+  background: rgba(13, 30, 52, 0.53);
+}
+
+.event-dialog-panel {
+  position: relative;
+  max-height: min(85vh, 900px);
+  overflow-y: auto;
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.event-dialog-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  border: 0;
+  border-radius: 7px;
+  padding: 0.25rem 0.65rem;
+  background: #f0f5f9;
+  color: #475569;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.event-dialog-close:hover,
+.event-dialog-close:focus-visible {
+  background: #e1ecf9;
+  outline-color: #247ad8;
+}
+
+.event-dialog-kicker {
+  margin: 0 3rem 0.5rem 0;
+  color: #2170bd;
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+#event-dialog-title {
+  margin: 0 2rem 1.15rem 0;
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+  line-height: 1.35;
+}
+
+.event-dialog-content {
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+
+.event-dialog-content p {
+  margin: 0 0 1rem;
+}
+
+.event-dialog-content a {
+  color: #0968b6;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .markdown-body .event-roadmap {
+    grid-auto-columns: minmax(235px, 82vw);
+  }
+
+  .event-dialog,
+  .event-dialog-panel {
+    max-height: 90dvh;
+  }
+}
