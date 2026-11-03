@@ -131,3 +131,43 @@ test("business sections are default-closed and retain rendered Markdown", () => 
   assert.match(html, /<a href="https:\/\/example.com\/source">官方来源<\/a>/);
   assert.match(html, /<table>/);
 });
+
+
+test("monthly event roadmap keeps grouped cards and detailed evidence", () => {
+  const source = [
+    "## 2. 近期已公布的重大事件",
+    "",
+    '<div class="event-roadmap" aria-label="重大事件时间轴">',
+    '<section class="event-month" data-month="2026-04">',
+    '<h3 class="event-month-heading">2026-04</h3>',
+    '<details class="event-entry">',
+    "<summary>",
+    '<span class="event-entry-title">资产交易</span>',
+    '<span class="event-entry-preview">一句话介绍。</span>',
+    "</summary>",
+    '<div class="event-detail-content">',
+    "",
+    "**公告日期：** 2026-04-23",
+    "",
+    "**公布了什么：** 已公布实质交易。",
+    "",
+    "**对公司的实际意义：** 影响现金。",
+    "",
+    "**原始来源：** [IR公告](https://example.com/ir)",
+    "",
+    "</div>",
+    "</details>",
+    "</section>",
+    "</div>",
+  ].join("\n");
+
+  const html = renderMarkdown(source);
+  assert.match(html, /<div class="event-roadmap"/);
+  assert.match(html, /<section class="event-month" data-month="2026-04">/);
+  assert.match(html, /<h3 class="event-month-heading">2026-04<\/h3>/);
+  assert.match(html, /<details class="event-entry">/);
+  assert.doesNotMatch(html, /<details class="event-entry"[^>]*\sopen(?:\s|=|>)/);
+  assert.match(html, /<summary>\s*<span class="event-entry-title">资产交易<\/span>/);
+  assert.match(html, /<div class="event-detail-content">[\s\S]*<strong>公告日期：<\/strong>/);
+  assert.match(html, /<a href="https:\/\/example.com\/ir">IR公告<\/a>/);
+});
