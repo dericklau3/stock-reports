@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { reportUrl, withBase } from "../src/lib/markdown.js";
+import { renderMarkdown, reportUrl, withBase } from "../src/lib/markdown.js";
 import { buildReportIndex, slugForReport } from "../scripts/report-index.mjs";
 
 test("slugForReport removes markdown extension and keeps readable report names", () => {
@@ -101,4 +101,33 @@ test("buildReportIndex does not keep a stale Tracker date over a newer report", 
 
   const index = await buildReportIndex(companiesDir);
   assert.equal(index.companies[0].lastUpdated, "2026-10-31");
+});
+
+test("business sections are default-closed and retain rendered Markdown", () => {
+  const source = [
+    "## 1. 公司到底是做什么生意的？",
+    "",
+    "公司整体定位保持直接可见。",
+    "",
+    '<details class="business-detail">',
+    "<summary>① 芯片业务｜本季已核实收入</summary>",
+    "",
+    "客户购买芯片并付款。[官方来源](https://example.com/source)。",
+    "",
+    "**举例假设（非真实订单）：**设备厂向制造商下单。",
+    "</details>",
+    "",
+    "| 业务 | 最新季 |",
+    "|---|---:|",
+    "| 芯片 | 100 |",
+  ].join("\n");
+
+  const html = renderMarkdown(source);
+  assert.match(html, /<details class="business-detail">/);
+  assert.doesNotMatch(html, /<details[^>]+\sopen(?:\s|=|>)/);
+  assert.match(html, /<summary>① 芯片业务｜本季已核实收入<\/summary>/);
+  assert.match(html, /<div class="business-detail-content">/);
+  assert.match(html, /<strong>举例假设（非真实订单）：<\/strong>/);
+  assert.match(html, /<a href="https:\/\/example.com\/source">官方来源<\/a>/);
+  assert.match(html, /<table>/);
 });
