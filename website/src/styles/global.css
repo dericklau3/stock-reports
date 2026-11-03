@@ -593,23 +593,40 @@ h1 {
 
 .markdown-body .event-month::before {
   content: "";
-  display: block;
+  position: absolute;
+  top: 3.4rem;
+  left: -0.6rem;
+  right: -0.6rem;
+  height: 2px;
+  background: #bed8f8;
+}
+
+.markdown-body .event-month::after {
+  content: "";
+  position: absolute;
+  top: calc(3.4rem - 5px);
+  left: calc(50% - 5px);
   width: 10px;
   height: 10px;
-  margin: 0.2rem auto 0.8rem;
-  border: 3px solid #e9f3ff;
+  border: 2px solid #eaf3ff;
   border-radius: 50%;
   background: #247ad8;
   box-shadow: 0 0 0 1px #247ad8;
 }
 
 .markdown-body h3.event-month-heading {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin: 0 0 0.9rem;
-  font-size: 1rem;
+  justify-content: center;
+  gap: 0.55rem;
+  width: fit-content;
+  margin: 0 auto 2.9rem;
+  border-radius: 999px;
+  background: #dcecff;
+  padding: 0.32rem 0.8rem;
+  font-size: 0.91rem;
   font-weight: 800;
   color: #184a88;
 }
