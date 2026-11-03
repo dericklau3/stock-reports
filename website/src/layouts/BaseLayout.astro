@@ -10,8 +10,6 @@ const {
 
 const base = import.meta.env.BASE_URL;
 const homeHref = withBase(base);
-const stocksHref = pageType === "home" ? "#stock-library" : homeHref + "#stock-library";
-const searchHref = pageType === "home" ? "#stock-search" : homeHref + "#stock-search";
 ---
 
 <!doctype html>
@@ -20,7 +18,7 @@ const searchHref = pageType === "home" ? "#stock-search" : homeHref + "#stock-se
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0c4d3b" />
+    <meta name="theme-color" content="#f6f8f7" />
     <title>{title}</title>
   </head>
   <body class={pageType === "home" ? "home-page" : "inner-page"}>
@@ -33,18 +31,6 @@ const searchHref = pageType === "home" ? "#stock-search" : homeHref + "#stock-se
             <small>Research Library</small>
           </span>
         </a>
-        <nav class="site-nav" aria-label="主要导航">
-          <a class:list={["nav-link", { "is-active": pageType === "home" }]} href={homeHref}>首页</a>
-          <a class="nav-link" href={stocksHref}>Stocks</a>
-          <a class="nav-link" href={stocksHref}>Reports</a>
-          <a class="nav-link" href="https://github.com/dericklau3/stock-reports" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <span class="nav-divider" aria-hidden="true"></span>
-          <a class="nav-icon-link" href={searchHref} aria-label="搜索股票">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-              <circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/>
-            </svg>
-          </a>
-        </nav>
       </div>
     </header>
     <main class="site-main">
