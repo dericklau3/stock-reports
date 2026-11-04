@@ -23,7 +23,7 @@ export const intcConversation = {
 
 当时的研究使用英特尔自身FY2022—FY2025历史EV/收入中位数，以及已实现TTM业务收入，计算出**$32.07/股的模型价格参考**；比较基准是**2026-10-30常规收盘$65.76**，模型价差约-51.2%。这是带有样本选择和资本结构局限的**历史交易锚点**，不是未来股价预测、保证可成交的合理价或投资建议。旧版基于2028—2036年预测的DCF情景不再用于本次估值。
 
-[阅读完整七章深度研究](../../../../reports/INTC/2026-11-02-deep-research/)（以网站内部链接为准）或[查看GitHub研究原文](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/INTC/deep-research/2026-11-02-deep-research.md)。
+[阅读网站内的完整七章深度研究](../../../reports/INTC/2026-11-02-deep-research/)或[查看GitHub研究原文](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/INTC/deep-research/2026-11-02-deep-research.md)。
 
 **原始资料：**[英特尔2026Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)；[2026Q3财报公告](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)。
 `.trim(),
