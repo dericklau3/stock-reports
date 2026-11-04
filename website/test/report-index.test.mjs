@@ -7,100 +7,46 @@ import test from "node:test";
 import { renderMarkdown, reportUrl, withBase } from "../src/lib/markdown.js";
 import { buildReportIndex, extractInvestmentView, slugForReport } from "../scripts/report-index.mjs";
 
-test("slugForReport removes markdown extension and keeps readable report names", () => {
+test("slugForReport preserves report names", () => {
   assert.equal(slugForReport("2026-07-22-deep-research.md"), "2026-07-22-deep-research");
 });
-
 test("withBase keeps GitHub Pages links under the repository base path", () => {
   assert.equal(withBase("/stock-reports", "stocks/TSLA/"), "/stock-reports/stocks/TSLA/");
   assert.equal(reportUrl("/stock-reports", "TSLA", "2026-07-22-deep-research.md"), "/stock-reports/reports/TSLA/2026-07-22-deep-research/");
 });
 
-test("buildReportIndex scans tracker and deep research files", async () => {
+test("buildReportIndex discovers reports without any tracker.md", async () => {
   const root = await mkdtemp(path.join(tmpdir(), "stock-reports-"));
-  const companiesDir = path.join(root, "COMPANIES");
-  const tslaDir = path.join(companiesDir, "TSLA");
-  const reportsDir = path.join(tslaDir, "deep-research");
-
-  await mkdir(reportsDir, { recursive: true });
-  await writeFile(
-    path.join(tslaDir, "tracker.md"),
-    `# Tesla（TSLA）Tracker
-
-Last updated: 2026-07-22
-
-## Current Research View
-
-**中性 / 等待确认**，中等置信度。Amazon zone remains intact.
-
-## Current Main Thesis
-
-- Thesis one.
-- Thesis two.
-`,
-  );
-  await writeFile(
-    path.join(reportsDir, "2026-07-22-deep-research.md"),
-    `# Tesla 深度研究
-
-Report body.
-`,
-  );
-
-  const index = await buildReportIndex(companiesDir);
-
+  const dir = path.join(root, "COMPANIES", "TSLA", "deep-research");
+  await mkdir(dir, { recursive: true });
+  await writeFile(path.join(dir, "2026-11-04-deep-research.md"),
+    "# Tesla（TSLA）完整深度研究\n\n- **投资观点：**中性偏谨慎。现金流仍有压力。\n- **核心逻辑：**汽车与储能需要继续验证。\n- **主要风险：**高资本开支。\n");
+  const index = await buildReportIndex(path.join(root, "COMPANIES"));
   assert.equal(index.companies.length, 1);
-  assert.equal(index.companies[0].symbol, "TSLA");
-  assert.equal(index.companies[0].companyName, "Tesla");
-  assert.equal(index.companies[0].lastUpdated, "2026-07-22");
-  assert.equal(index.companies[0].currentView, "中性 / 等待确认，中等置信度。Amazon zone remains intact.");
-  assert.equal(index.companies[0].reports.length, 1);
-  assert.equal(index.companies[0].reports[0].slug, "2026-07-22-deep-research");
+  const company = index.companies[0];
+  assert.equal(company.symbol, "TSLA");
+  assert.equal(company.companyName, "Tesla");
+  assert.equal(company.lastUpdated, "2026-11-04");
+  assert.equal(company.investmentView, "中性偏谨慎");
+  assert.equal(company.reports.length, 1);
+  assert.equal(company.reports[0].slug, "2026-11-04-deep-research");
+  assert.ok(!("tracker" in company));
 });
 
-test("buildReportIndex falls back to the newest report date when Tracker has no canonical update date", async () => {
-  const root = await mkdtemp(path.join(tmpdir(), "stock-reports-pl-"));
-  const companiesDir = path.join(root, "COMPANIES");
-  const plDir = path.join(companiesDir, "PL");
-  const reportsDir = path.join(plDir, "deep-research");
-
-  await mkdir(reportsDir, { recursive: true });
-  await writeFile(
-    path.join(plDir, "tracker.md"),
-    "# PL｜Planet Labs PBC 投资研究跟踪\n创建于2026-10-31，首次覆盖。\n",
-  );
-  await writeFile(
-    path.join(reportsDir, "2026-10-31-deep-research.md"),
-    "# Planet Labs 深度研究\n",
-  );
-  await writeFile(
-    path.join(reportsDir, "2026-10-20-deep-research.md"),
-    "# Earlier Planet Labs 深度研究\n",
-  );
-
-  const index = await buildReportIndex(companiesDir);
-  assert.equal(index.companies[0].lastUpdated, "2026-10-31");
+test("index uses latest report date and excludes companies without reports", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "stock-reports-dates-"));
+  const companyDir = path.join(root, "COMPANIES", "PL");
+  const reports = path.join(companyDir, "deep-research");
+  await mkdir(reports, { recursive: true });
+  await mkdir(path.join(root, "COMPANIES", "EMPTY"), { recursive: true });
+  await writeFile(path.join(reports, "2026-11-01-deep-research.md"), "# Old report\n");
+  await writeFile(path.join(reports, "2026-11-04-deep-research.md"), "# Planet Labs PBC（NYSE: PL）深度研究\n\n**投资观点：**谨慎看好。\n");
+  const index = await buildReportIndex(path.join(root, "COMPANIES"));
+  assert.equal(index.companies.length, 1);
+  assert.equal(index.companies[0].companyName, "Planet Labs PBC");
+  assert.equal(index.companies[0].lastUpdated, "2026-11-04");
+  assert.equal(index.companies[0].investmentView, "谨慎看好");
   assert.equal(index.companies[0].reports.length, 2);
-});
-
-test("buildReportIndex does not keep a stale Tracker date over a newer report", async () => {
-  const root = await mkdtemp(path.join(tmpdir(), "stock-reports-updated-"));
-  const companiesDir = path.join(root, "COMPANIES");
-  const companyDir = path.join(companiesDir, "ABC");
-  const reportsDir = path.join(companyDir, "deep-research");
-
-  await mkdir(reportsDir, { recursive: true });
-  await writeFile(
-    path.join(companyDir, "tracker.md"),
-    "# ABC Tracker\n\nLast updated: 2026-10-20\n",
-  );
-  await writeFile(
-    path.join(reportsDir, "2026-10-31-deep-research.md"),
-    "# Updated research\n",
-  );
-
-  const index = await buildReportIndex(companiesDir);
-  assert.equal(index.companies[0].lastUpdated, "2026-10-31");
 });
 
 test("business sections are default-closed and retain rendered Markdown", () => {
@@ -173,16 +119,8 @@ test("monthly event roadmap keeps grouped cards and detailed evidence", () => {
 });
 
 
-test("investment view extraction excludes research dates, sources and valuation notes", () => {
-  const tracker = [
-    "# INTC Tracker",
-    "## Current Research View",
-    "- **投资观点：**中性偏谨慎；Xeon业务改善但Foundry仍亏损。",
-    "- **研究截止：**2026-11-02。",
-    "- **证券身份：**NASDAQ INTC。",
-  ].join("\n");
-  assert.equal(extractInvestmentView(tracker), "中性偏谨慎");
-  assert.equal(extractInvestmentView("## Current Research View\n\n**中性 / 等待确认**，研究证据尚不足。"), "中性");
-  assert.equal(extractInvestmentView("## Current Research View\n\n- **研究截止：**2026-11-02"), "研究中");
-  assert.equal(extractInvestmentView("## Current Research View\n\n没有标准评级", "**投资观点：谨慎看好。** 最新证据支持增长"), "谨慎看好");
+test("view extraction reads only report conclusions and not long metadata", () => {
+  assert.equal(extractInvestmentView("# Intel\n\n- **投资观点：**中性偏谨慎。Xeon盈利强劲。\n- **研究截止：**2026-11-02"), "中性偏谨慎");
+  assert.equal(extractInvestmentView("# NVDA\n\n**谨慎看好。** 数据中心增长强劲。"), "谨慎看好");
+  assert.equal(extractInvestmentView("# ABC\n\n- **核心逻辑：**增长中。"), "研究中");
 });

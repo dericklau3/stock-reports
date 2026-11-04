@@ -13,3 +13,12 @@ test("stock detail header only shows short investment view and an optional gloss
   assert.doesNotMatch(detail, /\{company\.currentView\}/);
   assert.doesNotMatch(detail, /Source: research\/COMPANIES/);
 });
+
+test("stock detail renders questions instead of a tracker panel", () => {
+  assert.match(detail, /class="topic-panel"/);
+  assert.match(detail, /<details class="topic-entry"/);
+  assert.match(detail, /topics\.map/);
+  assert.match(detail, /intcConversation\.entries/);
+  assert.match(detail, /renderMarkdown\(topic\.answer\)/);
+  assert.doesNotMatch(detail, /trackerHtml|tracker-body|company\.tracker/);
+});

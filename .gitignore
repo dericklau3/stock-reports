@@ -2,3 +2,6 @@
 website/node_modules/
 website/dist/
 .astro/
+
+# Generated from current deep-research reports (not committed)
+website/src/data/report-index.json

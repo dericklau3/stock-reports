@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import index from "../../data/report-index.json";
-import { renderMarkdown, reportUrl, rewriteResearchLinks, withBase } from "../../lib/markdown.js";
+import { renderMarkdown, reportUrl, withBase } from "../../lib/markdown.js";
+import { intcConversation } from "../../data/intc-conversation.js";
 
 export function getStaticPaths() {
   return index.companies.map((company) => ({
@@ -12,7 +13,8 @@ export function getStaticPaths() {
 
 const { company } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const trackerHtml = renderMarkdown(rewriteResearchLinks(company.tracker.content, base, company.symbol));
+const topics = company.symbol === "INTC" ? intcConversation.entries : [];
+const topicCutoff = company.symbol === "INTC" ? intcConversation.researchCutoff : "";
 const investmentView = company.investmentView || "研究中";
 const investmentTone = /看空|偏空/.test(investmentView)
   ? "negative"
@@ -66,14 +68,6 @@ const viewMeaning = investmentView === "研究中"
 
   <section class="two-column">
     <aside class="report-list-panel">
-      {company.symbol === "INTC" && (
-        <a class="conversation-feature" href={withBase(base, "stocks/INTC/conversation/")}>
-          <span class="conversation-feature-kicker">INTC · 专题问答</span>
-          <strong>陈立武改革、NVIDIA投资与公开交易</strong>
-          <span class="conversation-feature-summary">3个专题 · 管理改革、公开交易、战略投资</span>
-          <span class="conversation-feature-action">阅读专题 →</span>
-        </a>
-      )}
       <h2>研究报告</h2>
       <div class="report-list">
         {
@@ -87,7 +81,48 @@ const viewMeaning = investmentView === "研究中"
       </div>
     </aside>
 
-    <article class="markdown-body tracker-body" set:html={trackerHtml} />
+    <article class="topic-panel" aria-labelledby="topic-panel-heading">
+      <div class="topic-panel-head">
+        <div>
+          <p class="topic-kicker">STOCK DISCUSSION</p>
+          <h2 id="topic-panel-heading">专题问题</h2>
+          <p class="topic-panel-description">围绕公司重要经营决策、资本交易和投资疑问的专题研究。</p>
+        </div>
+        {topics.length > 0 && (
+          <span class="topic-count">{topics.length} 个专题</span>
+        )}
+      </div>
+      {topics.length > 0 ? (
+        <div class="topic-list">
+          {topics.map((topic, i) => (
+            <details class="topic-entry" id={topic.id}>
+              <summary>
+                <span class="topic-number">{String(i + 1).padStart(2, "0")}</span>
+                <span class="topic-copy">
+                  <span class="topic-category">{topic.topic}</span>
+                  <strong>{topic.question}</strong>
+                </span>
+                <span class="topic-toggle" aria-hidden="true">+</span>
+              </summary>
+              <div class="topic-answer-wrapper">
+                <p class="topic-source-date">研究资料截至 {topicCutoff}，不代表实时行情或实时持仓。</p>
+                <div class="markdown-body topic-answer" set:html={renderMarkdown(topic.answer)} />
+              </div>
+            </details>
+          ))}
+          {company.symbol === "INTC" && (
+            <a class="topic-full-link" href={withBase(base, "stocks/INTC/conversation/")}>
+              查看完整专题页面 →
+            </a>
+          )}
+        </div>
+      ) : (
+        <div class="topic-empty">
+          <p>这只股票暂时没有独立整理的专题问题。</p>
+          <p>可以先阅读左侧的最新深度研究报告。</p>
+        </div>
+      )}
+    </article>
   </section>
 </BaseLayout>
 
@@ -140,24 +175,83 @@ const viewMeaning = investmentView === "研究中"
     .investment-meaning { flex-basis: 100%; }
     .view-glossary dl > div { grid-template-columns: 1fr; gap: .15rem; }
   }
-  .conversation-feature {
-    display: grid;
-    gap: .48rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #cfe2d5;
-    border-radius: 9px;
-    background: linear-gradient(135deg, #f5faf6, #fff);
-    padding: 1rem;
-    text-decoration: none;
+  .topic-panel {
+    min-width: 0;
+    padding: clamp(1.2rem, 3vw, 2rem);
+    border: 1px solid #dce7df;
+    border-radius: 12px;
+    background: #fff;
   }
-  .conversation-feature:hover, .conversation-feature:focus-visible {
-    border-color: #53a27c;
-    box-shadow: 0 4px 16px rgba(13, 105, 66, .09);
+  .topic-panel-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid #e2eae4;
   }
-  .conversation-feature-kicker {
-    color: #168055; font-size: .71rem; font-weight: 800; letter-spacing: .03em;
+  .topic-kicker {
+    margin-bottom: .5rem;
+    color: #187351;
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .07em;
   }
-  .conversation-feature strong { color: #233b2c; font-size: .99rem; line-height: 1.48; }
-  .conversation-feature-summary { color: #76877b; font-size: .76rem; line-height: 1.5; }
-  .conversation-feature-action { color: #0b7851; font-size: .83rem; font-weight: 800; }
+  .topic-panel-head h2 {
+    margin: 0;
+    font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+    line-height: 1.2;
+    color: #1d3427;
+  }
+  .topic-panel-description {
+    margin: .65rem 0 0;
+    color: #718077;
+    font-size: .87rem;
+    line-height: 1.65;
+  }
+  .topic-count {
+    padding: .3rem .6rem;
+    border-radius: 999px;
+    background: #edf5ef;
+    color: #176f4d;
+    font-size: .74rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .topic-list { display: grid; gap: .85rem; margin-top: 1.3rem; }
+  .topic-entry {
+    border: 1px solid #e1e9e3;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .topic-entry[open] { border-color: #99c6ac; box-shadow: 0 7px 18px rgba(24, 78, 48, .05); }
+  .topic-entry > summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.15rem;
+    list-style: none;
+    cursor: pointer;
+  }
+  .topic-entry > summary::-webkit-details-marker { display: none; }
+  .topic-entry > summary:hover { background: #f7faf7; }
+  .topic-number { padding-top: .12rem; color: #80aa90; font-size: .9rem; font-weight: 850; }
+  .topic-copy { display: grid; flex: 1; gap: .45rem; min-width: 0; }
+  .topic-category { font-size: .7rem; font-weight: 800; color: #147851; }
+  .topic-copy strong { color: #27392e; font-size: 1rem; line-height: 1.6; }
+  .topic-toggle { font-size: 1.2rem; color: #287c53; font-weight: 500; }
+  .topic-entry[open] .topic-toggle { transform: rotate(45deg); }
+  .topic-answer-wrapper { padding: 1rem 1.15rem 1.3rem; border-top: 1px solid #e7efe9; }
+  .topic-source-date { color: #73837b; font-size: .78rem; }
+  .topic-answer { border: 0; padding: 0; font-size: .9rem; overflow-x: auto; }
+  .topic-answer h2 { margin-top: 1.5rem; }
+  .topic-full-link { justify-self: start; font-size: .84rem; color: #126c4e; font-weight: 750; text-decoration: none; }
+  .topic-full-link:hover { text-decoration: underline; }
+  .topic-empty { padding: 2.5rem 1rem; text-align: center; color: #74877a; }
+  .topic-empty p { margin: 0 0 .45rem; }
+  @media (max-width: 680px) {
+    .topic-entry > summary { padding: 1rem .8rem; gap: .65rem; }
+    .topic-panel { padding: 1rem; }
+  }
 </style>

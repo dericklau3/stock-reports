@@ -131,7 +131,7 @@ function toneFromView(value) {
           <div class="stock-card-middle">
             <span class:list={["view-tag", "view-tag-" + toneFromView(company.investmentView || "研究中")]}>{company.investmentView || "研究中"}</span>
           </div>
-          <p class="stock-description">{cleanView(company.currentView) || company.summary || "查看公司完整研究报告及分析。"}</p>
+          <p class="stock-description">{cleanView(company.currentView).slice(0, 200) || company.summary || "查看公司完整研究报告及分析。"}</p>
           <div class="card-meta">
             <span class="card-updated"><span aria-hidden="true">▣</span> {company.lastUpdated || "日期未记录"}</span>
             <span class="card-report-count">▤ {company.reports.length} 份</span>
