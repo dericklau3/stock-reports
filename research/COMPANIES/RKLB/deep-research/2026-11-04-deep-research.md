@@ -241,6 +241,26 @@ Rocket Lab提供**两大当前报告分部：Launch Services（发射服务）�
 </div>
 </details>
 </section>
+<section class="event-month" data-month="2026-07">
+<h3 class="event-month-heading">2026-07</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">美国太空军授予2.66亿美元亚轨道发射合同</span>
+<span class="event-entry-preview">12次确定任务并含至多6次选项，创公司当时最大单项发射合同</span>
+</summary>
+<div class="event-detail-content">
+
+**合同签署/授予日期：**2026-07-21（Q2 10-Q期后事项）；**公司对外公告日期：2026-07-27**。
+
+**公布了什么：**美国太空军Space Systems Command的Rocket Systems Launch Program（RSLP）向Rocket Lab授予总额**2.66亿美元**多次亚轨道试验发射合同，包含**12次任务和最多6次额外选项**。首批发射最早预计2026年年底前后开始，计划主要利用阿拉斯加Kodiak发射设施；选项和发射进度不能当成已执行/全部已确认收入。该合同与2026-03-18的约1.90亿美元20次HASTE服务项目**不是同一笔，不能混为一个合同**。
+
+**对公司实际意义：**国防/导弹防御试验需求进一步验证HASTE发射服务市场，真实确认收入仍依赖任务执行与客户验收，固定价任务的实际成本/利润率尚未公开。
+
+**原始来源：**[Rocket Lab 2026-07-27原始新闻公告](https://rocketlabcorp.com/updates/record-contract-rslp-kodiak/)｜[SEC 2026Q2 10-Q期后事项](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm)
+
+</div>
+</details>
+</section>
 <section class="event-month" data-month="2026-08">
 <h3 class="event-month-heading">2026-08</h3>
 <details class="event-entry">
