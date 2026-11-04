@@ -1,5 +1,7 @@
 # 高通公司（QCOM）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View（2026-10-20）
@@ -7,7 +9,7 @@ Last updated: 2026-10-20
 **中性偏谨慎，业务值得长期跟踪，约$173.53未提供厚安全边际。** NASDAQ QCOM在2026-10-19纽约常规交易收盘参考价$173.53，较10-09旧报告价$175.50下降约1.12%。2029年经济盈利条件估值**保守$78–93、基础$142–162、乐观$224–250**（**折现至2026-10-20**），不是2029未折现目标价或交易建议。本次报告与底稿：
 - [完整2026-10-20深研](deep-research/2026-10-20-deep-research.md)
 - [2026-10-20研究证据、模型和事件底稿](research-records/2026-10-20-research.json)
-- [2026-10-11旧版深研](deep-research/2026-10-11-deep-research.md)
+- 2026-10-11旧版深研（旧版已清理）
 - [2026-10-11旧版估值](valuation/2026-10-11-valuation.json)
 
 ## Core Thesis / Business and Evidence

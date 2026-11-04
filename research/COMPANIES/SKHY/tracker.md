@@ -1,5 +1,7 @@
 # SKHY / SK hynix Inc. Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-18（完整深度研究）
 
 ## 当前报告与判断
@@ -65,7 +67,7 @@ Last updated: 2026-10-15（定向修订估值及相关财务，非全篇新研�
 
 ## Latest Research
 
-[原2026-10-11深研，10月15日已修订估值](deep-research/2026-10-11-deep-research-update.md)；[当前估值输入及来源](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/SKHY/research-records/2026-10-15-valuation-inputs.json)；[真实复算结果](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/SKHY/research-records/2026-10-15-valuation-results.json)；[复算脚本](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/SKHY/research-records/recalculate-2026-10-15.py)。10月11日JSON/validation只代表当时研究，不再是当前估值状态。
+原2026-10-11深研，10月15日已修订估值（旧版已清理）；[当前估值输入及来源](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/SKHY/research-records/2026-10-15-valuation-inputs.json)；[真实复算结果](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/SKHY/research-records/2026-10-15-valuation-results.json)；[复算脚本](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/SKHY/research-records/recalculate-2026-10-15.py)。10月11日JSON/validation只代表当时研究，不再是当前估值状态。
 
 ## 2026-10-15：用户要求具体ADS价格后的估值修订
 
@@ -224,7 +226,7 @@ Last updated: 2026-10-15（定向修订估值及相关财务，非全篇新研�
 - 10月当前股本、完整员工奖励/可交换债/优先索偿与当前/历史Forward P/E未核验
 - 直接ADS报价已闭合；需要KRW盈利转USD模型时仍缺当期汇率，不能用3月方便换算率冒充
 
-新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+新报告拟存：`2026-10-11-deep-research.md`（旧版已清理）；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
 
 
 ## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）

@@ -1,5 +1,7 @@
 # Space Exploration Technologies（SPCX / SpaceX）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-04
 
 ## Current Research View — 2026-11-04
@@ -42,7 +44,7 @@ Last updated: 2026-11-04
 
 ## Latest Research Artifacts — 2026-10-23
 
-- **[完整中文9章节深研](deep-research/2026-10-23-deep-research.md)**
+- **完整中文9章节深研（旧版已清理）**
 - **[最新Q3正式财报和事件、现金/股本桥接、证据覆盖/限制底稿](research-records/2026-10-23-research.md)**
 - **[可运行的独立反向估值JS](research-records/2026-10-23-valuation-reverse.js)** 和 **[计算结果JSON](research-records/2026-10-23-valuation-reverse-output.json)**
 
@@ -77,9 +79,9 @@ Last updated: 2026-11-04
 
 ## Latest Artifacts
 
-- **[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)**
+- **2026-10-20完整深研（旧版已清理）**
 - **[2026-10-20财务/事件/估值底稿](research-records/2026-10-20-research.json)**
-- [2026-10-11上一版完整深研](deep-research/2026-10-11-deep-research-update.md)
+- 2026-10-11上一版完整深研（旧版已清理）
 - [2026-10-11旧计算底稿](research-records/2026-10-11-research.json)
 
 ## Current Thesis and Operating Gates
@@ -135,7 +137,7 @@ Historical last updated: 2026-10-11
 
 ## Latest Research
 
-[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+2026-10-11完整深研（旧版已清理）；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
 
 ## 2026-10-11 新增深研更新块（保留旧文）
 
@@ -267,7 +269,7 @@ Historical last updated: 2026-10-11
 - 当前非流动经营租赁、10月现金/债务与未来盈利/历史Forward P/E无法完整闭合
 - Q2财报及公告缓存原件完整并已读，但旧下载精确远端URL未在当前文件留存；不能用新拼接SEC路径伪补来源。
 
-新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+新报告拟存：`2026-10-11-deep-research.md`（旧版已清理）；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
 
 父代理补充：提供Q2原缓存的公开短摘录、财务事实及内容哈希；原下载URL仍缺失。移除未读供应商完整公告所涉及的具体终止日期，不把索引线索作为确定合同事件。
 
@@ -390,5 +392,5 @@ Downgrade to **Negative / thesis weakening** if AI capex remains uncontrolled, c
 
 ## Research Files
 
-- `deep-research/2026-06-17-deep-research.md`
-- `deep-research/2026-07-09-deep-research-v2.md`
+- `2026-06-17-deep-research.md`（旧版已清理）
+- `2026-07-09-deep-research-v2.md`（旧版已清理）

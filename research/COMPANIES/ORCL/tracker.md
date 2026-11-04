@@ -1,5 +1,7 @@
 # Oracle（ORCL）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-04
 
 ## Current Research View — 2026-11-04
@@ -17,7 +19,7 @@ Last updated: 2026-11-04
 **研究文件：**
 - [2026-11-04 完整七章节深研](deep-research/2026-11-04-deep-research.md)
 - [2026-11-04 可复算研究底稿](research-records/2026-11-04-research-audit.json)
-- [2026-10-20 历史报告](deep-research/2026-10-20-deep-research.md)
+- 2026-10-20 历史报告（旧版已清理）
 
 **与 2026-10-20 上次研究变化：** 替换旧前瞻年度 EPS/假设退出 P/E 估值为当前已实现 TTM 和公司自身历史实际 EV/收入中位数；加入投资者日和已定价 20B 融资，旧估值不再是当前价格参考。保留所有旧研究与历史底稿，不能把历史所说的“2026-10-20 当前”继续当本次时点。
 
@@ -53,9 +55,9 @@ Oracle数据库和企业应用具有真实转换成本；OCI Q1 FY2027收入7.38
 
 ## Current Research Files
 
-- [2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)
+- 2026-10-20完整深研（旧版已清理）
 - [2026-10-20核验及计算底稿](research-records/2026-10-20-research-audit.json)
-- [2026-10-10旧深研，历史版本](deep-research/2026-10-10-deep-research-update.md)
+- 2026-10-10旧深研，历史版本（旧版已清理）
 - [2026-10-10旧财务底稿，仍为本次原始数字依据](research-records/2026-10-10-financial-audit.json)
 - [2026-10-10旧估值底稿](research-records/2026-10-10-valuation.json)
 
@@ -160,11 +162,11 @@ Last updated (historical snapshot): 2026-10-10
 
 ## Research Files
 
-- `deep-research/2026-06-12-deep-research.md`
-- `deep-research/2026-06-27-deep-research.md`
-- `deep-research/2026-07-14-deep-research.md`
-- `deep-research/2026-09-14-deep-research-update.md`
-- `deep-research/2026-10-10-deep-research-update.md`
+- `2026-06-12-deep-research.md`（旧版已清理）
+- `2026-06-27-deep-research.md`（旧版已清理）
+- `2026-07-14-deep-research.md`（旧版已清理）
+- `2026-09-14-deep-research-update.md`（旧版已清理）
+- `2026-10-10-deep-research-update.md`（旧版已清理）
 - `research-records/2026-10-10-valuation.json`
 - `research-records/2026-10-10-financial-audit.json`
 

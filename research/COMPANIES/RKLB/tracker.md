@@ -1,5 +1,7 @@
 # Rocket Lab（RKLB）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-04
 
 ## Latest Full Research — 2026-11-04
@@ -51,11 +53,11 @@ Last updated: 2026-11-04
 
 ## Latest Research
 
-[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[当日来源/公告覆盖/估值研究底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)及[旧计算JSON](research-records/2026-10-11-research.json)。
+2026-10-20完整深研（旧版已清理）；[当日来源/公告覆盖/估值研究底稿](research-records/2026-10-20-research.md)。历史：2026-10-11完整深研（旧版已清理）及[旧计算JSON](research-records/2026-10-11-research.json)。
 
 ## 2026-10-20 重新研究与完整新报告（保留下方历史）
 
-**本次文件**：[完整深度研究](deep-research/2026-10-20-deep-research.md) · [源证据、事件候选与现金/股份/情景复算](research-records/2026-10-20-research.md)。
+**本次文件**：完整深度研究（旧版已清理） · [源证据、事件候选与现金/股份/情景复算](research-records/2026-10-20-research.md)。
 
 ### 10/11旧假设 → 10/20新事实 → 经营/估值的变化
 
@@ -94,7 +96,7 @@ Last updated: 2026-11-04
 
 ## 2026-10-11 新完整研究更新块（保留历史）
 
-- 新报告：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)，承接[2026-09-14](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/RKLB/deep-research/2026-09-14-deep-research-update.md)。观点中性等待：已有业务基础，但现价需要接近非常乐观路径；旧40–60倍收入、未明确折现不能作为公平价值。最强反方是发射/通信平台获得高于工业企业回报，尚需每股现金证明。
+- 新报告：2026-10-11（旧版已清理），承接[2026-09-14](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/RKLB/deep-research/2026-09-14-deep-research-update.md)。观点中性等待：已有业务基础，但现价需要接近非常乐观路径；旧40–60倍收入、未明确折现不能作为公平价值。最强反方是发射/通信平台获得高于工业企业回报，尚需每股现金证明。
 - Iridium股东9月24日已经批准，旧等待投票催化失效；仍需监管和交割条件，双方预计2027年中完成。3.6B桥接承诺非已到账现金，27美元现金加换股、67.50–112.50换股区间，最终债务/利息/新股与协同必须重新调和。
 - H1收入434.414M、GAAP经营亏损113.483M、OCF -134.407M、cash capex53.112M、FCF -187.519M；TTM收入769.146M、FCF -371.139M。现金增长以ATM融资为主；H1毛融资1529.639M。
 - 普通股598.180438M+参与型优先40.951250M=639.131688M经济权益（6/30），库藏已交换common不能另加；8/5cover普通股598.350482M仅校验，不是10/9分母。Q2加权629.682M、Q3指引641M各单列。现价68.21美元，参考全经济市值43.595B，reference EV41.237B，融资租赁current未分解有小额下估。
@@ -281,8 +283,8 @@ Downgrade toward **Neutral / Negative** if:
 
 ## Research Files
 
-- `deep-research/2026-05-13-deep-research.md`
-- `deep-research/2026-07-08-deep-research-v2.md`
-- `deep-research/2026-08-20-deep-research-update.md`
-- `deep-research/2026-09-01-deep-research-update.md`
-- `deep-research/2026-09-14-deep-research-update.md`
+- `2026-05-13-deep-research.md`（旧版已清理）
+- `2026-07-08-deep-research-v2.md`（旧版已清理）
+- `2026-08-20-deep-research-update.md`（旧版已清理）
+- `2026-09-01-deep-research-update.md`（旧版已清理）
+- `2026-09-14-deep-research-update.md`（旧版已清理）
