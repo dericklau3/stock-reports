@@ -1,0 +1,198 @@
+{
+  "ticker": "TEM",
+  "issuer": "Tempus AI, Inc.",
+  "ex": "NASDAQ",
+  "research_date": "2026-11-04",
+  "security": {
+    "ref_close_usd": 77.8,
+    "quote_date": "2026-11-03",
+    "market": "US regular",
+    "url": "https://stockanalysis.com/stocks/tem/history/",
+    "a_shares": 177357848,
+    "b_shares": 5043789,
+    "shares_date": "2026-10-29"
+  },
+  "primary": {
+    "q3": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526442624/tem-20260930.htm",
+    "q2": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526326090/tem-20260630.htm",
+    "q3_release": "https://tempus.gcs-web.com/news-releases/news-release-details/tempus-reports-third-quarter-2026-results",
+    "historical_ev": "https://ca.finance.yahoo.com/quote/TEM/key-statistics/"
+  },
+  "quarterly_usd_m": [
+    {
+      "period": "2025Q3",
+      "diagnostics": 252.878,
+      "data_apps": 81.328,
+      "total": 334.206,
+      "insights_approx": 69,
+      "trials_approx": 9.2,
+      "next_approx": 3.2
+    },
+    {
+      "period": "2026Q2",
+      "diagnostics": 289.333,
+      "data_apps": 93.153,
+      "total": 382.486,
+      "insights_approx": 77.7,
+      "trials_approx": 9,
+      "next_approx": 6.3
+    },
+    {
+      "period": "2026Q3",
+      "diagnostics": 303.47,
+      "data_apps": 108.067,
+      "total": 411.537,
+      "insights_approx": 88.9,
+      "trials_approx": 9.6,
+      "next_approx": 9.6
+    }
+  ],
+  "latest_quarter_usd_m": {
+    "gross_profit": 266.701,
+    "gaap_operating": -56.864,
+    "gaap_net": -14.851,
+    "adjusted_ebitda": 25.572,
+    "unrealized_equity_gain_approx": 42.8,
+    "sbc_and_employer_tax_approx": 50.8,
+    "ocf_q3_reconstructed": 9.216,
+    "capex_and_software_q3_reconstructed": 14.758,
+    "fcf_q3_reconstructed": -5.542
+  },
+  "annual_and_ttm_usd_m": {
+    "FY2024": {
+      "sales": 693.398,
+      "gross": 381.113,
+      "operating": -691.082,
+      "net": -705.809,
+      "ocf": -189.045,
+      "capex_and_software": 22.121,
+      "fcf": -211.166
+    },
+    "FY2025": {
+      "sales": 1271.789,
+      "gross": 797.897,
+      "operating": -252.872,
+      "net": -245.028,
+      "ocf": -218.09,
+      "capex_and_software": 27.265,
+      "fcf": -245.355
+    },
+    "9M2025": {
+      "sales": 904.578,
+      "gross": 560.184,
+      "operating": -191.459,
+      "net": -190.862,
+      "ocf": -181.302,
+      "capex_and_software": 20.929,
+      "fcf": -202.231
+    },
+    "9M2026": {
+      "sales": 1142.139,
+      "gross": 735.24,
+      "operating": -217.488,
+      "net": -135.128,
+      "ocf": -71.586,
+      "capex_and_software": 35.917,
+      "fcf": -107.503
+    },
+    "TTM2026Q3": {
+      "sales": 1509.35,
+      "gross": 972.953,
+      "operating": -278.901,
+      "net": -189.294,
+      "ocf": -108.374,
+      "capex_and_software": 42.253,
+      "fcf": -150.627
+    }
+  },
+  "historical_valuation": {
+    "approach": "median own historical quarter snapshot EV/TTM sales; no peer, no future DCF",
+    "samples": [
+      {
+        "date": "2025-06-30",
+        "historical_mcap_b": 11.03,
+        "historical_ev_b": 11.67,
+        "historical_ps": 13.69,
+        "derived_ev_sales": 14.484
+      },
+      {
+        "date": "2025-09-30",
+        "historical_mcap_b": 14.34,
+        "historical_ev_b": 14.9,
+        "historical_ps": 14.72,
+        "derived_ev_sales": 15.295
+      },
+      {
+        "date": "2025-12-31",
+        "historical_mcap_b": 10.53,
+        "historical_ev_b": 11.1,
+        "historical_ps": 9.49,
+        "derived_ev_sales": 10.0037
+      },
+      {
+        "date": "2026-03-31",
+        "historical_mcap_b": 8.11,
+        "historical_ev_b": 8.68,
+        "historical_ps": 6.2,
+        "derived_ev_sales": 6.636
+      },
+      {
+        "date": "2026-06-30",
+        "historical_mcap_b": 10.44,
+        "historical_ev_b": 11.12,
+        "historical_ps": 7.49,
+        "derived_ev_sales": 7.978
+      }
+    ],
+    "median": 10.0037037,
+    "current_ttm_sales_usd_m": 1509.35,
+    "net_senior_claims_usd_m": 639.906,
+    "net_claims_bridge_usd_m": {
+      "convertible_notes_principal": 1210,
+      "google_note_book": 175.967,
+      "accrued_interest": 22.501,
+      "lease": 81.067,
+      "cash": -590.479,
+      "current_marketable": -46.874,
+      "long_term_marketable": -212.276
+    },
+    "share_denominator": 182401637,
+    "reference_usd_per_share": 79.27,
+    "pct_vs_reference_stock": 1.89,
+    "caveats": [
+      "IPO June 2024; not four full listed fiscal years",
+      "quarterly Yahoo historical PS denominator may have retrospective TTM timing",
+      "September 30 cash and October 29 share dates differ",
+      "Personalis deal unclosed; shares and assets will change after closing",
+      "convertible settlement conditions may trigger cash/share and capped-call changes"
+    ]
+  },
+  "delta_from_last_2026_10_20": [
+    "Q3 released November 2 and superseded Q2-only data",
+    "Price Nov 3 $77.80 replaces Oct 19 $64.34",
+    "New actual TTM and historical multiple valuation replaces disallowed 2028 forward scenarios",
+    "Personalis finalized proxy and planned November 30 shareholder vote; not closed",
+    "BMS/Pathos new five-year licensing terms; distinguish bookings from revenue",
+    "Main report transformed to 7 sections, nested income details, roadmap and two-column valuation"
+  ],
+  "event_screen": {
+    "A": [
+      "2026-05-29 xT FDA",
+      "2026-07-20 Personalis merger",
+      "2026-09-21 Recursion $42M amendment",
+      "2026-08-24 ECG-PH and 2026-09-28 ECG-MR",
+      "2026-10-21 424B3 merger proxy",
+      "2026-10-23 BMS/Pathos commercial licensing",
+      "2026-11-02 Q3 results"
+    ],
+    "B": [
+      "2026-08-07 Center Health $18.8M smaller acquisition",
+      "2026-10-07 Merck/Moderna support relationship, terms unpublished",
+      "2026-09 whole genome initiative unbuilt"
+    ],
+    "C": [
+      "ordinary research posters and promotional announcements"
+    ]
+  },
+  "coverage": "Checked Q2 and Q3 SEC filings, issuer IR, Recursion and Pathos press releases and Personalis proxy. Not exhaustive for all filings 2025-11 through 2026-04 or each partner archive."
+}
