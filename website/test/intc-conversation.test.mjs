@@ -9,7 +9,7 @@ const reportPage = await readFile(new URL("../src/pages/reports/[symbol]/[report
 
 test("Intel conversation combines related topics into three sourced sections", () => {
   assert.equal(intcConversation.entries.length, 3);
-  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 7);
+  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 3);
   for (const item of intcConversation.entries) {
     assert.ok(item.id && item.topic && item.question, "Q&A metadata required");
     assert.ok(item.answer.length > 200, item.id + " should provide useful detail");
