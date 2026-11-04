@@ -1,0 +1,378 @@
+{
+  "ticker": "VST",
+  "issuer": "Vistra Corp.",
+  "security": "NYSE common",
+  "asOf": "2026-11-04",
+  "lastUSMarketClose": {
+    "date": "2026-11-03",
+    "usd": 139.59,
+    "reference": "https://stockanalysis.com/stocks/vst/history/"
+  },
+  "cutoff": "Latest full issuer financials Q2/H1 2026 ended 2026-06-30; Q3 earnings explicitly scheduled for 2026-11-06 at 10:00 ET (future as of 11/04).",
+  "sources": {
+    "q2Sec": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+    "q2IR": "https://investor.vistracorp.com/2026-08-07-Vistra-Reports-Second-Quarter-2026-Results",
+    "FY2025": "https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+    "FY2024": "https://investor.vistracorp.com/2025-02-27-Vistra-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+    "Q3Date": "https://investor.vistracorp.com/2026-09-29-Vistra-to-Report-Third-Quarter-Results-on-Nov-6,-2026",
+    "historicalEV": "https://stockanalysis.com/stocks/vst/financials/ratios/",
+    "historicalPrice": "https://finance.yahoo.com/quote/VST/history/",
+    "cogentrixInitial": "https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix",
+    "cogentrixClose": "https://investor.vistracorp.com/2026-10-30-Vistra-Completes-Acquisition-of-Cogentrix-Energy,-Expanding-Diverse-Generation-Fleet",
+    "meta": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid",
+    "metaCustomerConfirmation": "https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/",
+    "doe": "https://www.energy.gov/articles/energy-department-announces-42-billion-investment-boost-nuclear-power-and-help-lower",
+    "notes": "https://investor.vistracorp.com/2026-09-10-Vistra-Prices-Registered-Offering-of-1-5-Billion-of-Junior-Subordinated-Notes",
+    "preferred": "https://investor.vistracorp.com/2026-10-15-Vistra-Announces-Redemption-of-All-Outstanding-Series-A-Preferred-Stock",
+    "helix": "https://www.helixdi.com/news-insights/kkr-launches-helix-digital-infrastructure-to-finance-and-deliver-the-next-generation-of-ai-infrastructure"
+  },
+  "periods": "2025 Q2 / 2026 Q1 / 2026 Q2. Units $USD millions. Q1 2026 derived as H1 2026 minus Q2 2026 in SEC 10-Q.",
+  "segment_rows": {
+    "Retail": [
+      3532,
+      3689,
+      3610
+    ],
+    "Texas": [
+      1788,
+      2987,
+      1418
+    ],
+    "East": [
+      1480,
+      2260,
+      954
+    ],
+    "West": [
+      25,
+      89,
+      71
+    ],
+    "AssetClosure": [
+      20,
+      6,
+      0
+    ],
+    "CorporateAndEliminations": [
+      -2595,
+      -3391,
+      -2036
+    ],
+    "Consolidated": [
+      4250,
+      5640,
+      4017
+    ]
+  },
+  "segment_reconciliations": [
+    "2025Q2 3532+1788+1480+25+20-2595=4250",
+    "2026Q1 3689+2987+2260+89+6-3391=5640",
+    "2026Q2 3610+1418+954+71+0-2036=4017"
+  ],
+  "revenue_nature_rows": {
+    "RetailERCOTContracts": [
+      2206,
+      1894,
+      2253
+    ],
+    "RetailNortheastMidwestContracts": [
+      793,
+      1259,
+      1091
+    ],
+    "WholesaleISOEnergy": [
+      474,
+      1376,
+      620
+    ],
+    "WholesaleCapacity": [
+      30,
+      122,
+      134
+    ],
+    "OtherWholesalePPAContracts": [
+      250,
+      350,
+      303
+    ],
+    "ExternalCustomerContractsSubtotal": [
+      3753,
+      5001,
+      4401
+    ],
+    "TransferablePTC": [
+      4,
+      2,
+      3
+    ],
+    "RealizedCommodityHedges": [
+      427,
+      -3,
+      154
+    ],
+    "UnrealizedCommodityHedges": [
+      50,
+      636,
+      -562
+    ],
+    "BusinessInterruptionInsurance": [
+      21,
+      6,
+      22
+    ],
+    "OtherIntangibleNet": [
+      -5,
+      -2,
+      -1
+    ],
+    "Consolidated": [
+      4250,
+      5640,
+      4017
+    ]
+  },
+  "nature_reconciliation": "2025Q2 3753+4+427+50+21-5=4250; 2026Q1 5001+2-3+636+6-2=5640; 2026Q2 4401+3+154-562+22-1=4017",
+  "interpretation": "Customer contracts +17.27% YoY while consolidated GAAP revenue -5.48% YoY, caused largely by reversal from +$50m unrealized derivative gain to -$562m unrealized derivative loss. Segment totals include intercompany sales and need eliminations. Nature and segment revenue are alternative classifications, not additive.",
+  "gaap_usd_m": {
+    "FY2024": {
+      "revenue": 17224,
+      "operating": 4081,
+      "net": 2812,
+      "common": 2467,
+      "OCF": 4563,
+      "capexNuclearAndLTSA": 2078,
+      "FCF": 2485
+    },
+    "FY2025": {
+      "revenue": 17738,
+      "operating": 1906,
+      "net": 944,
+      "common": 752,
+      "OCF": 4070,
+      "capexNuclearAndLTSA": 2752,
+      "FCF": 1318
+    },
+    "H12025": {
+      "revenue": 8183,
+      "operating": 395,
+      "net": 59,
+      "common": -37,
+      "OCF": 1171,
+      "capexNuclearAndLTSA": 1458,
+      "FCF": -287
+    },
+    "H12026": {
+      "revenue": 9657,
+      "operating": 2052,
+      "net": 1334,
+      "common": 1238,
+      "OCF": 2222,
+      "capexNuclearAndLTSA": 1572,
+      "FCF": 650
+    },
+    "TTM20260630": {
+      "revenue": 19212,
+      "operating": 3563,
+      "net": 2219,
+      "common": 2027,
+      "OCF": 5121,
+      "capexNuclearAndLTSA": 2866,
+      "FCF": 2255
+    }
+  },
+  "ttmReconciliation": "FY2025 - H12025 + H12026",
+  "q2AdjustedEbitda": 1767,
+  "q2AdjustedEbitdaPriorYear": 1349,
+  "management2026NonGAAPEbitdaGuidanceB": [
+    6.8,
+    7.6
+  ],
+  "management2026NonGAAPFCFBeforeGrowthGuidanceB": [
+    3.925,
+    4.725
+  ],
+  "cashAndCapital_usd_m": {
+    "q2UnrestrictedCash": 435,
+    "q2RestrictedCashExcluded": 46,
+    "q2BorrowingsAndARFinancingAndForwardRepurchases": 20508,
+    "q2PreferredLiquidation": 2476.066,
+    "q2MinorityClaims": 12,
+    "q2SimplifiedNetClaims": 22561.066,
+    "q2SimpleNetClaimsMath": "20508-435+2476.066+12",
+    "actualSharesAug3_m": 335.635195,
+    "sep24JunSubNotesGross": 1500,
+    "sep24JunSubNotesAnnualInitialCoupon": 106.625,
+    "oct15RedeemedPreferredA": 1000,
+    "cogentrixCashConsiderationOriginalApprox": 2300,
+    "cogentrixDebtAssumedOriginalApprox": 1500,
+    "cogentrixShareConsiderationOriginalApprox_m": 5,
+    "initialProformaNetClaims_m": 26361.066,
+    "initialProformaEconomicShares_m": 340.635195,
+    "notes": "Sep24 notes proceeds and Oct15 preferred cash redemption were initially offset in net claims; post-acquisition actual financial position and final closing-share adjustments not verified. This is a provisional not exact capitalization."
+  },
+  "historicalOwnEVRevenue": {
+    "selectedSnapshots": [
+      {
+        "date": "2024-12-31",
+        "EV_m": 67513,
+        "actualRevenue_m": 17224,
+        "multiple": 3.919705062703205,
+        "source": "https://stockanalysis.com/stocks/vst/financials/ratios/"
+      },
+      {
+        "date": "2025-12-31",
+        "EV_m": 75384,
+        "actualRevenue_m": 17738,
+        "multiple": 4.249859059645958,
+        "source": "https://stockanalysis.com/stocks/vst/financials/ratios/"
+      },
+      {
+        "date": "2026-08-07",
+        "closingPrice": 140.59,
+        "shares_m": 335.635195,
+        "netClaims_m": 22561.066,
+        "EV_m": 69748.01806505,
+        "actualTTMRevenue_m": 19212,
+        "multiple": 3.6304402490656877,
+        "source": "https://finance.yahoo.com/quote/VST/history/"
+      }
+    ],
+    "median": 3.919705062703205,
+    "actualTTMRevenue_m": 19212,
+    "proformaNetClaims_m": 26361.066,
+    "proformaShareCount_m": 340.635195,
+    "referencePriceUsd": 143.68541003126225,
+    "reportedPriceUsd": 143.69,
+    "spotPriceUsd": 139.59,
+    "modelGapPct": 2.9338849711743276,
+    "currentIndicativeEV_m": 73910.33287005,
+    "currentEVToTTMRevenue": 3.8470920711039973,
+    "formula": "(historical median EV/actual TTM revenue 3.9197050627 * actual TTM revenue 19212 - approximate pro forma net claims 26361.066) / approximate shares 340.635195 = 143.6854",
+    "majorLimits": [
+      "2024 Energy Harbor merger structurally transformed portfolio, so 2022/2023 multiples ~1.72x/~1.80x excluded as economically noncomparable. Only three comparable posttransformation snapshots, not 4 complete historical years; this is a judgmental sample.",
+      "Current TTM excludes Cogentrix acquired October 30 but pro forma debt/cash/stocks assume initial closing deal terms. Asymmetric numerator/claims may bias price down; valuation is transitional not true full pro forma.",
+      "2026-08-07 historical share/cash uses 2026Q2/ Aug3 financial amounts, time mismatch relative closing quote.",
+      "Sep debt, Oct preferred redemption and Cogentrix actual closing cash/shares need reconciled postclosing financial statements; no DCF, forecast year or peers.",
+      "Older all-4-FY 2022-25 median 2.86x would produce ~$83.92 with identical current input; this is a sensitivity showing valuation-method fragility, not alternative official target."
+    ]
+  },
+  "events_A": [
+    [
+      "2025-10-22",
+      "Lotus 2.6GW seven gas plant deal closed",
+      "historically important just before window"
+    ],
+    [
+      "2025-12-02",
+      "S&P credit upgraded to investment grade; restated by company Mar17",
+      "effective date older than press release"
+    ],
+    [
+      "2026-01-05",
+      "Cogentrix 5.5GW deal announced (signed Dec31 2025)",
+      "completed Oct30"
+    ],
+    [
+      "2026-01-09",
+      "Meta 20y existing 2176MW nuclear plus planned 433MW",
+      "future power delivery, no prices"
+    ],
+    [
+      "2026-03-17",
+      "Fitch investment grade BBB-",
+      "confirmed"
+    ],
+    [
+      "2026-04-08",
+      "$4B senior notes pricing/refinancing",
+      "gross not net debt"
+    ],
+    [
+      "2026-06-11",
+      "Helix capital commitment and preferred power provision",
+      "conditional investing"
+    ],
+    [
+      "2026-08-07",
+      "Q2 adjusted operating improvement and FERC approval for Cogentrix",
+      "not then closed"
+    ],
+    [
+      "2026-09-10",
+      "$1.5B junior subordinated priced",
+      "actual issued Sep24"
+    ],
+    [
+      "2026-10-05",
+      "DOE conditional loan up to $4.2B",
+      "not cash or grant"
+    ],
+    [
+      "2026-10-15",
+      "Series A preferred $1B redeemed",
+      "completed, financed"
+    ],
+    [
+      "2026-10-30",
+      "Cogentrix 10 plants/5496MW closed",
+      "completed; final consideration not verified"
+    ]
+  ],
+  "events_B": [
+    [
+      "2026-09-29",
+      "Q3 earnings schedule",
+      "calendar only"
+    ],
+    [
+      "2026Q2",
+      "~754MW older gas plant divestiture agreement",
+      "closing and exact materiality to verify"
+    ],
+    [
+      "2025-09",
+      "AWS 1200MW Comanche Peak 20yr PPA",
+      "earlier than primary 12mo event window, track progress in section 3"
+    ],
+    [
+      "2026 plan",
+      "Permian 860MW development",
+      "uncommissioned, tracked in section 3"
+    ]
+  ],
+  "events_C": [
+    [
+      "various",
+      "routine dividend notices and promotional sponsorships",
+      "not material independent strategy pivot"
+    ]
+  ],
+  "coverage": {
+    "eventsTimeWindow": "2025-11-04–2026-11-04; includes 2025-10 Lotus close and older AWS for active thesis",
+    "issuerSources": "Vistra SEC 2024FY, 2025FY, Q1/Q2 2026, 2025-2026 relevant IR press releases",
+    "thirdParties": "Meta official independent confirmation, DOE primary official, Helix platform partner; FERC approval sourced from issuer",
+    "gaps": [
+      "2026Q3 results not released until scheduled Nov6",
+      "Individual customer PPA prices / gross versus incremental profitability undisclosed",
+      "Post-Cogentrix Oct 30 final share/cash/debt recap not available to verify",
+      "Full NRC/FERC/PJM dockets and all historical 8-K in all months not exhaustively reviewed",
+      "Q2 historical revenue comparisons have derivatives and intercompany trading",
+      "Assets and capital mix 2022/2023 not comparable with post Energy Harbor acquisition 2024"
+    ]
+  },
+  "changeVsOld": {
+    "oldReport": "2026-10-20",
+    "oldClose": 149.7,
+    "newClose": 139.59,
+    "oldCogentrix": "FERC approved pending",
+    "newCogentrix": "CLOSED 2026-10-30",
+    "oldValuation": "2027 forward EBITDA scenario discounted to 2026",
+    "newValuation": "Own history EV / actual 2026Q2 TTM revenues, estimated $143.69/stock, no future assumptions",
+    "newFormat": "Seven sections, per-business foldouts, roadmap with native fallback, full YoY/QoQ official revenue reconciliation, no tracker"
+  },
+  "files": {
+    "report": "research/COMPANIES/VST/deep-research/2026-11-04-deep-research.md",
+    "record": "research/COMPANIES/VST/research-records/2026-11-04-research.json",
+    "superseded": "research/COMPANIES/VST/deep-research/2026-10-20-deep-research.md"
+  }
+}
