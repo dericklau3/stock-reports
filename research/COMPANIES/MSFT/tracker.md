@@ -1,5 +1,7 @@
 # Microsoft（MSFT）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View
@@ -16,7 +18,7 @@ Last updated: 2026-10-20
 
 ## Latest Research
 
-[2026-10-20九章完整深研](deep-research/2026-10-20-deep-research.md)；[2026-10-20原始来源、重大事件和估值复算底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11旧报告](deep-research/2026-10-11-deep-research-update.md)、[旧JSON](research-records/2026-10-11-research.json)和[旧验收](research-records/2026-10-11-validation.json)。
+[2026-10-20九章完整深研](deep-research/2026-10-20-deep-research.md)；[2026-10-20原始来源、重大事件和估值复算底稿](research-records/2026-10-20-research.md)。历史：2026-10-11旧报告（旧版已清理）、[旧JSON](research-records/2026-10-11-research.json)和[旧验收](research-records/2026-10-11-validation.json)。
 
 ## 2026-10-20 完整重新研究更新块（下方保留2026-10-11、07-08历史）
 
@@ -181,7 +183,7 @@ Last updated: 2026-10-20
 - 下载公告为Fast-EDGAR原公告镜像，与搜索确认的Microsoft公告同源，非独立交叉验证
 - 一项SEC及镜像URL未由已取回索引验证且访问失败，不作为已阅读证据
 
-新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+新报告拟存：`2026-10-11-deep-research.md`（旧版已清理）；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
 
 
 ## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
@@ -302,5 +304,5 @@ MSFT 仍是 AI 时代最完整的企业软件 + 云 + 开发者平台之一，�
 
 ## Research Files
 
-- `deep-research/2026-05-20-deep-research.md`
-- `deep-research/2026-07-08-deep-research.md`
+- `2026-05-20-deep-research.md`（旧版已清理）
+- `2026-07-08-deep-research.md`（旧版已清理）

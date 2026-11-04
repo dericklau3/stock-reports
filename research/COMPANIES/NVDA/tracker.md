@@ -1,5 +1,7 @@
 # NVIDIA（NVDA）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View
@@ -16,7 +18,7 @@ Last updated: 2026-10-20
 
 ## Latest Research
 
-[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[2026-10-20研究核验及估值底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)及[10-11旧计算](research-records/2026-10-11-research.json)。
+[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[2026-10-20研究核验及估值底稿](research-records/2026-10-20-research.md)。历史：2026-10-11完整深研（旧版已清理）及[10-11旧计算](research-records/2026-10-11-research.json)。
 ## 2026-10-20 完整深研新增记录（保留旧版全部原文）
 
 完整新报告：[2026-10-20深度个股研究](deep-research/2026-10-20-deep-research.md)；底稿：[来源核验、重大事件候选、会计和三情景复算](research-records/2026-10-20-research.md)。
@@ -56,7 +58,7 @@ SEC FY2026 10-K：https://www.sec.gov/Archives/edgar/data/1045810/00010458102600
 ## 2026-10-11 深研更新（待父代理合并，不删除历史）
 
 - 观点：谨慎看好；最强反证为信用支持与真实需求混在一起。
-- 历史：[2026-05-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVDA/deep-research/2026-05-20-deep-research.md)；新稿：[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 历史：[2026-05-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/NVDA/deep-research/2026-05-20-deep-research.md)；新稿：2026-10-11（旧版已清理）。
 - 财务：Q2收入96.221bn；H1经营利润117.270bn、净利118.010bn、CFO74.421bn，证券收益23.707bn。资本开支统一现金口径，年度FY26为6.042bn，非旧粗略6.062bn。
 - 项目：Rubin已全面量产但须看现金；AI云容量36bn、供应279bn、担保最大108.5bn是新的核心风险，不能全部当即时债务，不能当无资本风险。
 - 价格220.61→229.28；不是凭股价改评级。模型为FY28利润情景折现，完整输入见 research-records/2026-10-11-research.json；原件 /home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-10q.pdf、/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/NVDA/q2-transcript.pdf。
@@ -141,4 +143,4 @@ NVDA 是 AI data center scale infrastructure 的核心平台公司。FY2026 reve
 
 ## Research Files
 
-- `deep-research/2026-05-20-deep-research.md`
+- `2026-05-20-deep-research.md`（旧版已清理）

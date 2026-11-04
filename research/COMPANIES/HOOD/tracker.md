@@ -1,5 +1,7 @@
 # Robinhood Markets（HOOD）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-28
 
 ## Current Research View（2026-10-28，美国Q3财报后）
@@ -14,7 +16,7 @@ Last updated: 2026-10-28
 
 **2026-10-28估值（2027-12-31目标、12%股权折现的P0股权归属正常化净利退出PE条件现值）：** 保守**$19.16–34.55**、基础**$48.57–72.37**（中枢研究假设**$61.11**）、乐观**$89.35–133.97**。不是公司指导价、市场共识或完整多阶段DCF；当前参考价94.56美元高于基础情景上限。按2027收入7.0bn、950m经济股和33倍市盈率反推，该市价要求约3.11bn税后归属利润或44.4%净利率。数值由程序实现原P0公式复算，但**原仓库Python估值引擎和P2冻结未在本次会话运行**。
 
-**当前报告**：[2026-10-28完整九章研究](deep-research/2026-10-28-deep-research.md) | [核验、事件覆盖及复算底稿](research-records/2026-10-28-research.md) | [估值输入](research-records/2026-10-28-valuation-input.json) | [估值输出](research-records/2026-10-28-valuation-output.json)。旧报告保留：[2026-10-20完整研究](deep-research/2026-10-20-deep-research.md)。
+**当前报告**：[2026-10-28完整九章研究](deep-research/2026-10-28-deep-research.md) | [核验、事件覆盖及复算底稿](research-records/2026-10-28-research.md) | [估值输入](research-records/2026-10-28-valuation-input.json) | [估值输出](research-records/2026-10-28-valuation-output.json)。旧报告保留：2026-10-20完整研究（旧版已清理）。
 
 ## 2026-10-28 新事实与 2026-10-20 基线变化
 
@@ -49,11 +51,11 @@ Last updated: 2026-10-28
 
 ## Historical Research Links (2026-10-20)
 
-[2026-10-20九章完整深研](deep-research/2026-10-20-deep-research.md)；[2026-10-20来源、重大事件及情景复算底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11研究](deep-research/2026-10-11-deep-research-update.md)、[旧计算JSON](research-records/2026-10-11-research.json)、[旧验收](research-records/2026-10-11-validation.json)。
+2026-10-20九章完整深研（旧版已清理）；[2026-10-20来源、重大事件及情景复算底稿](research-records/2026-10-20-research.md)。历史：2026-10-11研究（旧版已清理）、[旧计算JSON](research-records/2026-10-11-research.json)、[旧验收](research-records/2026-10-11-validation.json)。
 
 ## 2026-10-20 全新完整深研及变化记录（保留10/11、5/12旧版）
 
-**完整版**：[2026-10-20九章深度研究](deep-research/2026-10-20-deep-research.md)；**完整底稿**：[2026-10-20原始文书核验、事件时间线、GAAP现金和估值计算](research-records/2026-10-20-research.md)。
+**完整版**：2026-10-20九章深度研究（旧版已清理）；**完整底稿**：[2026-10-20原始文书核验、事件时间线、GAAP现金和估值计算](research-records/2026-10-20-research.md)。
 
 | 稳定项目 | 上版2026-10-11研究基线/旧承诺 | 2026-10-20新事实与发生/公告日期 | 投资观点/估值影响 |
 |---|---|---|---|
@@ -236,7 +238,7 @@ Last updated: 2026-10-28
 - 10月经济股数与当前/历史Forward P/E未取得；发布前共识未核验
 - 可转债公告精确远端URL未在继承缓存中留存；本地正文在，契约全文和当前FD桥未闭合。
 
-新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+新报告拟存：`2026-10-11-deep-research.md`（旧版已清理）；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
 
 父代理补充：融资公告精确URL已定位；新取正文403，财务数字仍取完整缓存。可转债契约与最新完全稀释桥仍未闭合。
 
@@ -310,4 +312,4 @@ HOOD 已经从单一零售交易 App 转向更广义的个人金融平台，盈�
 
 ## Research Files
 
-- `deep-research/2026-05-12-deep-research.md`
+- `2026-05-12-deep-research.md`（旧版已清理）

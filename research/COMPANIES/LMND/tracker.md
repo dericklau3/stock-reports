@@ -1,5 +1,7 @@
 # Lemonade（LMND）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-04
 
 ## Current Research View — 2026-11-04
@@ -26,7 +28,7 @@ Last updated: 2026-11-04
 
 - [2026-11-04 完整七章节深度研究](deep-research/2026-11-04-deep-research.md)
 - [2026-11-04 财务、估值与事件核验底稿](research-records/2026-11-04-research-audit.json)
-- [2026-10-20 历史研究](deep-research/2026-10-20-deep-research.md)
+- 2026-10-20 历史研究（旧版已清理）
 - 旧 2026-10-20 事件覆盖与财务核验文件保留，不重写历史记录。
 
 ### What Changed vs 2026-10-20
@@ -49,7 +51,7 @@ Last updated: 2026-11-04
 
 ## Latest Research
 
-[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[估值输入](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/LMND/research-records/2026-10-20-valuation-inputs.json)；[复算结果](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/LMND/research-records/2026-10-20-valuation-results.json)；[事件覆盖及缺口](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/LMND/research-records/2026-10-20-event-coverage.json)。旧报告与底稿保留，不是当前状态。
+2026-10-20完整深研（旧版已清理）；[估值输入](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/LMND/research-records/2026-10-20-valuation-inputs.json)；[复算结果](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/LMND/research-records/2026-10-20-valuation-results.json)；[事件覆盖及缺口](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/LMND/research-records/2026-10-20-event-coverage.json)。旧报告与底稿保留，不是当前状态。
 
 ## 2026-10-20 完整深研更新（保留历史）
 
@@ -72,7 +74,7 @@ Last updated: 2026-11-04
 
 ## 2026-10-11研究更新（追加，不替换旧历史）
 
-观点：中性等待；旧研究 [2026-10-07](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/LMND/deep-research/2026-10-07-deep-research-update.md)，新拟稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+观点：中性等待；旧研究 [2026-10-07](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/LMND/deep-research/2026-10-07-deep-research-update.md)，新拟稿 2026-10-11（旧版已清理）。
 
 事实：10月8日FSD Lite支持HW3三州，合格里程折扣30%，HW4为50%；仍需监督，成熟赔付经济性未公布。价格46.30→46.46美元，涨0.35%；经营模型不因此上调。最新财务继续采用Q2/H1，公司官方PDF已保存，SEC直连403，不能排除全部新申报。
 
@@ -93,9 +95,9 @@ Last updated: 2026-11-04
 - **Last updated**: 2026-10-07
 - **Current research view**：中性／等待确认；经营方向建设性，当前价格不是厚安全边际。
 - **Confidence**：中等。
-- **Latest report**：`deep-research/2026-10-07-deep-research-update.md`
-- **Previous report**：`deep-research/2026-08-17-deep-research-update.md`
-- **Earlier report**：`deep-research/2026-05-12-deep-research.md`
+- **Latest report**：`2026-10-07-deep-research-update.md`（旧版已清理）
+- **Previous report**：`2026-08-17-deep-research-update.md`（旧版已清理）
+- **Earlier report**：`2026-05-12-deep-research.md`（旧版已清理）
 
 ## Current Research View
 
@@ -238,9 +240,9 @@ Q2毛赔付分解为 **59% attritional＋3% CAT＋5% LAE－7% PPD＝60%**；去�
 
 ## Research Files
 
-- `deep-research/2026-05-12-deep-research.md` — 最早已保存覆盖。
-- `deep-research/2026-08-17-deep-research-update.md` — 前次Q2研究快照，保持不改写。
-- `deep-research/2026-10-07-deep-research-update.md` — 当前执行进展、经济性与估值深度更新。
+- `2026-05-12-deep-research.md`（旧版已清理） — 最早已保存覆盖。
+- `2026-08-17-deep-research-update.md`（旧版已清理） — 前次Q2研究快照，保持不改写。
+- `2026-10-07-deep-research-update.md`（旧版已清理） — 当前执行进展、经济性与估值深度更新。
 
 ## Sources
 

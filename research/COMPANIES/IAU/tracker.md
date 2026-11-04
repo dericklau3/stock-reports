@@ -1,5 +1,7 @@
 # IAU (iShares Gold Trust) Research Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View

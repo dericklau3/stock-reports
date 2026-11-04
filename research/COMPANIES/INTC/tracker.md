@@ -1,5 +1,7 @@
 # INTC Tracker — Intel Corporation
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-02
 
 ## Current Research View
@@ -26,7 +28,7 @@ Last updated: 2026-11-02
 
 - **[2026-11-02完整七章深研](deep-research/2026-11-02-deep-research.md)**。
 - **[2026-11-02来源、估值逐项复算、历史倍数与重大事件台账](research-records/2026-11-02-research.md)**。
-- 历史上一版：[2026-10-30完整深研](deep-research/2026-10-30-deep-research.md)、[2026-10-30旧估值研究记录](research-records/2026-10-30-research.md)；旧DCF与逆推模型仅历史参考。
+- 历史上一版：2026-10-30完整深研（旧版已清理）、[2026-10-30旧估值研究记录](research-records/2026-10-30-research.md)；旧DCF与逆推模型仅历史参考。
 
 ## 2026-11-02 完整深研更新（追加历史）
 
@@ -78,7 +80,7 @@ Last updated: 2026-11-02
 
 ## 2026-10-23 完整深研更新（追加历史）
 
-- **本次研究：**[完整报告](deep-research/2026-10-23-deep-research.md)、[详细底稿及范围缺口](research-records/2026-10-23-research.md)、[独立程序复算源码](research-records/2026-10-23-valuation-replay.js)、[输入/输出存档](research-records/2026-10-23-valuation-replay-output.json)。报告和底稿均以2026-10-23 09:00 UTC+8为知识截止；没有覆盖2026Q3未来财报。
+- **本次研究：**完整报告（旧版已清理）、[详细底稿及范围缺口](research-records/2026-10-23-research.md)、[独立程序复算源码](research-records/2026-10-23-valuation-replay.js)、[输入/输出存档](research-records/2026-10-23-valuation-replay-output.json)。报告和底稿均以2026-10-23 09:00 UTC+8为知识截止；没有覆盖2026Q3未来财报。
 - **与上次估值差异：**上次2026-10-21报告报价参考2026-10-20 $91.69，本次已核2026-10-22常规收盘$85.49（相比10/21 $92.96为-8.04%）。并无经确认的新季度GAAP利润或真实期后现金数据支持改变长期收入/利润路径。
 - **新的重大事件：**2026-10-21 [JobsOhio披露](https://www.jobsohio.com/newsroom/news-press/intel-foundry-provides-us-manufacturing-capacity-update) Ohio One第一大型结构桁架已吊装安装，仍是厂房施工非开始晶圆量产；2026-10-22 [Reuters报道](https://www.reuters.com/technology/fcc-grants-intel-waiver-foreign-made-robotic-devices-2026-10-22/) FCC给Intel特定老旧外国产AGV设备一年豁免，**未获取FCC最终裁决原文，保留待核实**。正反消息均不代表可直接确认更高外部Foundry收入。
 - **财务未变：**最近正式文件2026Q2 10-Q，Foundry外部付费相关Q2收入$0.293bn/分部收入$5.765bn、Foundry单季经营亏损$2.089bn；资本现金与7月实际股数依然是8月大额发行前时点。预计2026-10-29盘后Q3财报方能开始重建资本索偿桥。
@@ -89,7 +91,7 @@ Last updated: 2026-11-02
 
 ## 2026-10-21 完整深研更新（追加历史）
 
-- **本次完整报告：**[2026-10-21-deep-research.md](deep-research/2026-10-21-deep-research.md)；[本次证据/计算/缺口研究底稿](research-records/2026-10-21-research.md)；[P0输入](research-records/2026-10-21-valuation-input.json)、[P0结果](research-records/2026-10-21-valuation-output.json)、[P1输入](research-records/2026-10-21-valuation-p1-input.json)、[P1结果](research-records/2026-10-21-valuation-p1-output.json)。保留10月20日与历史报告不覆盖。
+- **本次完整报告：**2026-10-21-deep-research.md（旧版已清理）；[本次证据/计算/缺口研究底稿](research-records/2026-10-21-research.md)；[P0输入](research-records/2026-10-21-valuation-input.json)、[P0结果](research-records/2026-10-21-valuation-output.json)、[P1输入](research-records/2026-10-21-valuation-p1-input.json)、[P1结果](research-records/2026-10-21-valuation-p1-output.json)。保留10月20日与历史报告不覆盖。
 - **实际新增事实与时点：**2026-10-20 INTC常规收盘**$91.69**，较2026-10-19 **$92.03**下降0.37%；2026-10-21时最新仍为2026-06-27截止Q2 10-Q，Q3财报官方日程**2026-10-29美股盘后**。没有将未发布的Q3真实业绩、期后资产负债表或新14A外部客户收费认定为事实。
 - **继续成立的核心经济事实：**Q2 Products营业利润$4.817bn、Foundry亏$2.089bn；外部代工及封测收入仅$0.293bn，占Foundry总分部$5.765bn约5.1%；2026 H1调整FCF−$10.435bn但含Apollo大额回购。必须分别判断财务会计利润、FCF、实际外部客户付费和经济股份分母。
 - **P0 2028股权退出EBIT条件现值，基准$91.69：**保守$7.10–10.97、基础$32.96–41.86、乐观$72.45–87.07；2028末EBIT目标日与净现金代理同日，按15%/13%/12%股权回报要求折现2.196年。模型不是逐年现金流；2028盈利与净现金、退出倍数均为分析师假设。
@@ -101,7 +103,7 @@ Last updated: 2026-11-02
 
 ## 2026-10-20 深研更新（追加历史）
 
-- 本次研究：[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)，[研究与估值底稿](research-records/2026-10-20-research.md)。不覆盖2026-10-11版本。
+- 本次研究：2026-10-20完整深研（旧版已清理），[研究与估值底稿](research-records/2026-10-20-research.md)。不覆盖2026-10-11版本。
 - 研究/行情基准：2026-10-20；2026-10-19常规收盘92.03美元（EDT），较旧报价104.70美元下跌12.10%，未有Q3财报；最新财务仍为2026-06-27 Q2 10-Q。官方下一财报2026-10-29盘后。
 - 观点演变：2026-10-11中性等待→2026-10-20中性等待。主要改变是报价显著下降、2026-10-12 GPU D-series采样及2026-09-08 ASML High-NA工艺公开证据得到补充；不代表已经有新收入、外部14A确定订单或资产负债表更新。
 - 核心经济事实重新突出：Q2 Foundry总分部收入$5.765bn、外部foundry及封测仅$0.293bn，约5.1%（2025Q2 $0.022bn）；Foundry经营亏损$2.089bn。H1外部foundry及封测$0.467bn（2025H1 $0.053bn）。产品分部Q2 EBIT$4.817bn但不分配部分SBC/总部费用。来源[2026 Q2 10-Q Note 2](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000157/intc-20260627.htm)。
@@ -113,7 +115,7 @@ Last updated: 2026-11-02
 
 ## 2026-10-11 深研更新（追加历史）
 
-- 观点：中性等待；业务恢复承接8月，但报价104.70高于92.80，没有新季报验证现金改善。历史 [2026-08-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/INTC/deep-research/2026-08-20-deep-research-update.md)；新稿 [2026-10-11](deep-research/2026-10-11-deep-research-update.md)。
+- 观点：中性等待；业务恢复承接8月，但报价104.70高于92.80，没有新季报验证现金改善。历史 [2026-08-20](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/INTC/deep-research/2026-08-20-deep-research-update.md)；新稿 2026-10-11（旧版已清理）。
 - 重要修正：此前遗漏8月公开发行；Aug12 8K显示210,526,315股@$95、额外31,578,947全行使，合计242,105,262股、gross23bn。最终现金到账未获得，不能当已证实现金。
 - 股数：July17 actual5.044bn；机械发行后5.286bn+剩余escrow143m≈5.429bn，vendor5.25bn冲突不取平均。Escrow衍生负债不再与同一股份重复扣；DOC241m warrants条件触发。
 - 现金口径：投资+融资栏H1 PP&E7.615bn，非仅6.192bn；adjustedFCF -10.435bn，自算与FY24/FY25官方调节公式一致。买回Ireland权益一次性支出非永久烧钱率。
@@ -135,8 +137,8 @@ Last updated: 2026-11-02
 - **Last updated**: 2026-08-20
 - **Current research view**: Neutral / wait for confirmation（中性 / 等待确认）
 - **Confidence**: Medium
-- **Latest memo**: `deep-research/2026-08-20-deep-research-update.md`
-- **Prior memo**: `deep-research/2026-07-24-deep-research.md`
+- **Latest memo**: `2026-08-20-deep-research-update.md`（旧版已清理）
+- **Prior memo**: `2026-07-24-deep-research.md`（旧版已清理）
 
 ## Current Research View
 
@@ -341,8 +343,8 @@ Intel reported Q2 2026 results on 2026-07-23; Q2 10-Q filed/published 2026-07-24
 
 ## Research Files
 
-- `deep-research/2026-07-24-deep-research.md` — prior full deep research report.
-- `deep-research/2026-08-20-deep-research-update.md` — latest Q2 10-Q and valuation update.
+- `2026-07-24-deep-research.md`（旧版已清理） — prior full deep research report.
+- `2026-08-20-deep-research-update.md`（旧版已清理） — latest Q2 10-Q and valuation update.
 
 ## Sources
 
