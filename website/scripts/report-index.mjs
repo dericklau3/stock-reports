@@ -26,12 +26,12 @@ const VIEW_LABELS = [
 ];
 
 function ratingFromText(value) {
-  const text = stripMarkdown(value).replace(/^\\s*[-–]\\s*/, "").replace(/^[“"「]+/, "").trim();
+  const text = stripMarkdown(value).replace(/^\s*[-–]\s*/, "").replace(/^[“"「]+/, "").trim();
   for (const label of VIEW_LABELS) {
     if (text.startsWith(label)) return label === "待研究" ? "研究中" : label;
   }
   // Legacy reports sometimes state a directional view in prose rather than a tag.
-  const opening = text.split(/[。；;\\n]/u, 1)[0].slice(0, 105);
+  const opening = text.split(/[。；;\n]/u, 1)[0].slice(0, 105);
   if (/保持建设性/.test(opening)) return "建设性";
   if (/仍需谨慎|需要谨慎|需谨慎/.test(opening)) return "谨慎观察";
   return "";
@@ -41,14 +41,14 @@ function ratingFromText(value) {
 export function extractInvestmentView(trackerMarkdown, newestReportMarkdown = "") {
   for (const markdown of [trackerMarkdown, newestReportMarkdown]) {
     const head = markdown.slice(0, 3000);
-    const match = head.match(/^\\s*(?:[-*]\\s*)?\\*{0,2}(?:当前)?(?:投资观点|观点)\\s*[：:]\\s*\\*{0,2}\\s*(.+)$/m);
+    const match = head.match(/^\s*(?:[-*]\s*)?\*{0,2}(?:当前)?(?:投资观点|观点)\s*[：:]\s*\*{0,2}\s*(.+)$/m);
     if (match) {
       const label = ratingFromText(match[1]);
       if (label) return label;
     }
-    const section = head.match(/^##\\s+Current Research View[^\\n]*\\n([\\s\\S]*?)(?=^##\\s+|$)/im);
+    const section = head.match(/^##\s+Current Research View[^\n]*\n([\s\S]*?)(?=^##\s+|$)/im);
     if (section) {
-      const first = section[1].split("\\n").map((line) => line.trim())
+      const first = section[1].split("\n").map((line) => line.trim())
         .find((line) => line && !line.startsWith("#"));
       const label = first ? ratingFromText(first) : "";
       if (label) return label;
