@@ -1,0 +1,236 @@
+{
+  "as_of": "2026-11-04 Asia/Tokyo, after Nov 03 2026 NY session",
+  "company": "Oracle Corporation",
+  "ticker": "ORCL",
+  "exchange": "NYSE",
+  "status": "2026-11-02 equity/bonds PRICED, 2026-11-04 close expected but completion NOT confirmed as research cutoff",
+  "latest_financial": "FY2027 Q1 ended 2026-08-31",
+  "pricing": {
+    "quote_date": "2026-11-03",
+    "quote_session": "NYSE regular close",
+    "quote_usd": 126.19,
+    "source": "https://jp.investing.com/equities/oracle-corp-historical-data",
+    "vendor_discrepancy": "StockAnalysis displayed 126.25 for same session; Investing and FinancialContent reported official 126.19. Do not mix price/share from stale 2.714259B vendor."
+  },
+  "data_usd_billions": {
+    "fy25": {
+      "revenue": 57.399,
+      "op_income": 17.678,
+      "common_net_income": 12.443,
+      "ocf": 20.821,
+      "capex": 21.215,
+      "fcf": -0.394
+    },
+    "fy26": {
+      "revenue": 67.357,
+      "op_income": 20.606,
+      "common_net_income": 16.984,
+      "ocf": 31.977,
+      "capex": 55.663,
+      "fcf": -23.686
+    },
+    "fy27q1": {
+      "revenue": 19.345,
+      "op_income": 6.728,
+      "common_net_income": 4.679,
+      "ocf": 23.103,
+      "capex": 28.499,
+      "fcf": -5.396,
+      "customer_prepayments_financing_component": 11.363
+    },
+    "ttm": {
+      "revenue": 71.776,
+      "op_income": 23.057,
+      "common_net_income": 18.736,
+      "ocf": 46.94,
+      "capex": 75.66,
+      "fcf": -28.72
+    }
+  },
+  "revenue_breakdown_usd_millions": [
+    {
+      "name": "OCI",
+      "fy26q1": 3347,
+      "fy26q4": 5787,
+      "fy27q1": 7388
+    },
+    {
+      "name": "SaaS cloud apps",
+      "fy26q1": 3839,
+      "fy26q4": 4126,
+      "fy27q1": 4219
+    },
+    {
+      "name": "software licenses",
+      "fy26q1": 766,
+      "fy26q4": 1881,
+      "fy27q1": 655
+    },
+    {
+      "name": "software support",
+      "fy26q1": 4955,
+      "fy26q4": 4943,
+      "fy27q1": 4895
+    },
+    {
+      "name": "hardware",
+      "fy26q1": 670,
+      "fy26q4": 924,
+      "fy27q1": 774
+    },
+    {
+      "name": "services",
+      "fy26q1": 1349,
+      "fy26q4": 1523,
+      "fy27q1": 1414
+    }
+  ],
+  "valuation": {
+    "method": "Oracle's own FY2023-FY2026 historical EV/revenue median x already-realized TTM revenue, adjusted for announced financing on pro forma basis. Not future DCF, not peer comparison.",
+    "history": [
+      {
+        "fy": "FY2023",
+        "fye": "2023-05-31",
+        "enterprise_value_usd_b": 369.568,
+        "revenue_usd_b": 49.954,
+        "ev_to_revenue": 7.4,
+        "price_usd": 101.53
+      },
+      {
+        "fy": "FY2024",
+        "fye": "2024-05-31",
+        "enterprise_value_usd_b": 400.733,
+        "revenue_usd_b": 52.961,
+        "ev_to_revenue": 7.57,
+        "price_usd": 113.93
+      },
+      {
+        "fy": "FY2025",
+        "fye": "2025-05-31",
+        "enterprise_value_usd_b": 556.069,
+        "revenue_usd_b": 57.399,
+        "ev_to_revenue": 9.69,
+        "price_usd": 162.72
+      },
+      {
+        "fy": "FY2026",
+        "fye": "2026-05-31",
+        "enterprise_value_usd_b": 777.897,
+        "revenue_usd_b": 67.357,
+        "ev_to_revenue": 11.55,
+        "price_usd": 224.17
+      }
+    ],
+    "observed_median": 8.629999999999999,
+    "ttm_revenue_usd_b": 71.776,
+    "common_shares_as_of_2026_09_07_b": 3.023736,
+    "condition_new_shares_m": 86.206897,
+    "pro_forma_shares_b": 3.109942897,
+    "pre_financial_cash_debt": {
+      "cash": 37.077,
+      "notes": 125.337,
+      "finance_lease": 9.185,
+      "preferred_claim": 5,
+      "nci_proxy": 0.424,
+      "operating_lease_excluded": 34.621,
+      "uncommenced_undiscounted_leases_excluded": 288
+    },
+    "announced_financing": {
+      "date": "2026-11-02",
+      "expected_settlement": "2026-11-04",
+      "share_price": 116,
+      "share_gross_proceeds_usd_b": 10,
+      "shares_issued": 86206897,
+      "equity_net_proceeds_usd_b": 9.9,
+      "bond_face_usd_b": 10,
+      "bond_net_proceeds_approx_usd_b": 10,
+      "bond_tranches": [
+        {
+          "usd_b": 2,
+          "coupon": 0.07,
+          "due": 2029
+        },
+        {
+          "usd_b": 1.75,
+          "coupon": 0.0745,
+          "due": 2031
+        },
+        {
+          "usd_b": 2.25,
+          "coupon": 0.0785,
+          "due": 2033
+        },
+        {
+          "usd_b": 2.5,
+          "coupon": 0.08,
+          "due": 2037
+        },
+        {
+          "usd_b": 1.5,
+          "coupon": 0.0865,
+          "due": 2046
+        }
+      ],
+      "annual_new_coupon_usd_b": 0.77675
+    },
+    "pro_forma_net_claims_usd_b": 92.969,
+    "enterprise_value_reference_usd_b": 619.4268799999999,
+    "pro_forma_equity_reference_usd_b": 526.4578799999999,
+    "reasonable_reference_usd": 169.28,
+    "quoted_price_usd": 126.19,
+    "model_to_price_difference_pct": 34.14864038271117,
+    "predeal_reference_usd": 170.83431886910756,
+    "assumptions": [
+      "Completion assumed solely for pro forma as pricing disclosed, not verified closed",
+      "Cash proceeds are initially retained; spending capex later would weaken net cash bridge",
+      "Preferred liquidation claim included, future conversion common shares NOT also included",
+      "Operating lease liabilities and uncommenced undiscounted leases excluded from base EV to avoid incompatible vendor multiple; severe economic risk remains",
+      "As-of published historical annual EV/Revenue snapshots use FY-end prices and fully disclosed FY revenue, creating potential release timing/look-ahead bias; NOT a strict as-traded backtest",
+      "Historical EV lease/pref bridge provider definition not perfectly aligned to current pro forma EV."
+    ]
+  },
+  "sources": {
+    "skill": "https://github.com/dericklau3/stock-reports/blob/main/us-equity-research/SKILL.md",
+    "q1_10q": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+    "fy26_10k": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+    "q1release": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+    "investor_day": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Investor-Day-2026-Accelerating-Value-Creation/default.aspx",
+    "nov2_pricing": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Pricing-of-20-Billion-of-Common-Stock-and-Senior-Notes/default.aspx",
+    "nov2_debt_terms": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526443918/d87441dfwp.htm",
+    "own_historical_ratios": "https://stockanalysis.com/stocks/orcl/financials/ratios/",
+    "quote": "https://jp.investing.com/equities/oracle-corp-historical-data"
+  },
+  "events_coverage": {
+    "window": "2025-11-04 to 2026-11-04 plus older material reference",
+    "covered": [
+      "Q1 FY2027 filings",
+      "FY2026 10-K and public investor day 2026-10-28",
+      "2026-11-02 issuance press + SEC terms",
+      "major power/project statements 2026-10",
+      "Oracle revenue and legacy file records"
+    ],
+    "not_exhaustive": [
+      "Full SEC monthly document-by-document archival check",
+      "Complete NMED and Wisconsin regulatory dockets",
+      "Definitive OpenAI / funding backstop contract terms",
+      "2026-11-04 actual closing confirmation",
+      "Updated actual issued share count after deal",
+      "Customer contract profitability and equipment useful lives"
+    ]
+  },
+  "research_change": {
+    "old_date": "2026-10-20",
+    "old_method": "2027 exit-forward earnings multiple model",
+    "new_method": "current realized TTM + Oracle FY2023-FY2026 own historical median",
+    "new_disclosures": [
+      "2026-10-28 investor day financial/funding plan",
+      "2026-11-02 $20b priced equity and debt sale"
+    ]
+  },
+  "validation": {
+    "history_rows": 4,
+    "report_sections": 7,
+    "business_collapsed_details": 9,
+    "roadmap_a_events": 8
+  }
+}
