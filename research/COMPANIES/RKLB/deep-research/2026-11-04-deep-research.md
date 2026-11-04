@@ -63,13 +63,25 @@ Rocket Lab提供**两大当前报告分部：Launch Services（发射服务）�
 
 **付款与确认：**直接付款方通常是卫星制造商、总包商或航天发射任务采购方；实际零件按发货交付和合同条款确认收入，不能将卫星全部成交额认作零部件收入。Motiv并购扩充空间机器人和精密机构，相关2026Q2已合并收入未单独披露。
 
-**主要成本：**高可靠元件、加工组装、测试、供应链和保修。
+**主要成本：**高可靠元件、加工组装、测试、供应链和保修。Motiv并购带来的额外精密机构单独列于下方，不把并购收入重复计入这个子项。
 
 **举例假设（非真实订单）：**某卫星工厂采购反作用轮控制卫星姿态，组件交付验收后工厂向Rocket Lab付款，工厂再将完整卫星交给最终客户。
 </details>
 
 <details class="business-detail">
-<summary>⑥ 激光星间通信终端｜Mynaric已并购并表，Space Systems产品子业务</summary>
+<summary>⑥ Motiv航天机器人与精密机构｜2026Q2并购后收入142万美元，已包含Space Systems</summary>
+
+**卖什么：**空间机器人、可展开与精密驱动机构及航天器结构系统，用于卫星、探测器及其它航天设备需要精确机械动作的场景。
+
+**客户与付款链：**商业/政府航天器主承包商或卫星制造商按硬件及项目合同向Rocket Lab采购；卫星的最终使用方未必是零部件的直接付款人。2026-05-26完成收购后，公司披露Q2部分期间收入约142万美元，已计入Space Systems的产品/服务合并收入，不能另外加一遍。
+
+**成本与利润：**高精度加工、控制系统、资格测试、质保和工程定制；Q2并表后营业亏损约21.9万美元，不意味着所有历史订单亏损。
+
+**举例假设（非真实订单）：**一家卫星制造商采购能够在轨展开设备的Motiv驱动装置，验收后直接向Rocket Lab付设备价款，由卫星制造商负责最终整星交付。
+</details>
+
+<details class="business-detail">
+<summary>⑦ 激光星间通信终端｜Mynaric已并购并表，Space Systems产品子业务</summary>
 
 **卖什么：**卫星之间的光通信终端，使卫星能够进行空间高速数据传输，减少某些情况下依赖地面中继的限制。
 
@@ -81,7 +93,19 @@ Rocket Lab提供**两大当前报告分部：Launch Services（发射服务）�
 </details>
 
 <details class="business-detail">
-<summary>⑦ 在轨任务与航天器运营服务｜Space Systems服务收入2026Q2为813.3万美元</summary>
+<summary>⑧ GEOST光电/红外空间载荷与传感器｜已并表Space Systems，单独收入未披露</summary>
+
+**卖什么：**用于航天器与国防空间系统的光电、红外传感与相关载荷硬件/技术，帮助客户进行空间态势感知、目标观测和任务数据获取。这是2025年已完成并购获得、在2026Q2持续合并经营的真实子业务，不是2026Q2新收购。
+
+**谁付款与收入确认：**政府采购部门、国防主承包商及空间系统集成商按传感器产品和开发合同付款；实际设备交付/工程合同履约条件决定收入确认。Q2没有可核实的GEOST独立收入数，禁止凭市场规模推算。
+
+**成本与利润：**光学电子器件、芯片/传感器设计、空间级资格验证、工程人员、供应和项目验收费用。
+
+**举例假设（非真实订单）：**国防空间系统总包商采购一套红外传感载荷并安装到其卫星，总包商向Rocket Lab支付合同款，最终军方使用数据不自动构成额外RKLB收入。
+</details>
+
+<details class="business-detail">
+<summary>⑨ 在轨任务与航天器运营服务｜Space Systems服务收入2026Q2为813.3万美元</summary>
 
 **卖什么：**任务集成、飞行软件、卫星运行管理、地面控制与持续工程支持等服务，让已经制造/发射的航天器完成长期任务。
 
@@ -157,22 +181,42 @@ Rocket Lab提供**两大当前报告分部：Launch Services（发射服务）�
 </div>
 </details>
 </section>
+<section class="event-month" data-month="2026-04">
+<h3 class="event-month-heading">2026-04</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">Mynaric激光通信终端收购完成</span>
+<span class="event-entry-preview">形成星间激光链路产品组合，也承担已并表业务亏损与整合成本</span>
+</summary>
+<div class="event-detail-content">
+
+**公告及完成日期：**2026-04-14。
+
+**公布了什么：**Rocket Lab正式宣布完成德国Mynaric的收购，取得星间激光光通信终端及相关制造能力。2026Q2 10-Q并购附注的初步GAAP收购对价约**1.608亿美元**，与媒体和历史名义交易估值的计算口径不同；Q2该业务并表后收入约**1,319.5万美元**、经营亏损约**1,324.5万美元**，不能把合并收入误加在Space Systems分部之外。
+
+**对公司实际意义：**扩大空间网络终端供应能力和自有星座/第三方客户整合空间；负经营利润及后续质量认证意味着协同并未实现。
+
+**原始来源：**[Rocket Lab 2026-04-14收购完成公告](https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-completes-mynaric-acquisition-adding-laser-optical)｜[SEC 2026Q2 10-Q收购附注](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm)
+
+</div>
+</details>
+</section>
 <section class="event-month" data-month="2026-05">
 <h3 class="event-month-heading">2026-05</h3>
 <details class="event-entry">
 <summary>
-<span class="event-entry-title">Mynaric及Motiv组件整合</span>
-<span class="event-entry-preview">卫星光通信及精密机构并购完成，产品范围和合并成本均扩大</span>
+<span class="event-entry-title">Motiv Space Systems收购完成</span>
+<span class="event-entry-preview">新增航天机器人、精密机构和结构系统，合并现金对价与后续激励</span>
 </summary>
 <div class="event-detail-content">
 
-**公告日期：**相关并购完成与2026年5至6月期间的公告/披露；**逐笔首次公告日和交割日未完整核实**，不得虚构单日。2026-08-10 Q2正式业绩已明确两项并购完成。
+**公告及完成日期：**2026-05-26。
 
-**公布了什么：**Mynaric激光光通信终端和Motiv航天机器人/精密机构纳入运营；Q2披露Mynaric并购贡献部分期间约1,320万美元收入、约1,320万美元经营亏损。
+**公布了什么：**Rocket Lab正式宣布完成Motiv Space Systems收购，补充航天机器人和精密机电/执行机构等能力。2026Q2 10-Q显示初步GAAP对价约**4,453.9万美元**（含对价构成、或有支付），Q2收购后部分期间并表收入约**142万美元**、营业亏损约**21.9万美元**；这笔收入已在Space Systems内，不能重复相加。
 
-**对公司实际意义：**增强空间硬件纵向整合，也带来整合、供应链与并购会计成本；不能仅按技术收购名义加利润。
+**对公司实际意义：**增强整星平台自制部件覆盖率及外部零部件销售可能性，但产品毛利、整合费用及额外绩效对价需以后续业绩验证。
 
-**原始来源：**[Rocket Lab Q2官方业绩及并购披露](https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts)｜[SEC 10-Q收购附注](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm)
+**原始来源：**[Rocket Lab 2026-05-26完成收购公告](https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-adds-mars-proven-robotics-capabilities-completion)｜[SEC 2026Q2 10-Q收购附注](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm)
 
 </div>
 </details>
