@@ -26,6 +26,11 @@ const reportHtml = renderMarkdown(report.content);
       <span>{company.companyName}</span>
       <span>{report.fileName}</span>
     </div>
+    {company.symbol === "INTC" && (
+      <a class="report-conversation-link" href={withBase(base, "stocks/INTC/conversation/")}>
+        延伸阅读：陈立武改革、NVIDIA投资与公开交易问答 →
+      </a>
+    )}
   </section>
 
   <article class="markdown-body report-body" set:html={reportHtml} />
@@ -95,3 +100,22 @@ const reportHtml = renderMarkdown(report.content);
   });
   dialog?.addEventListener("close", () => lastTrigger?.focus());
 </script>
+
+<style>
+  .report-conversation-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .62rem .78rem;
+    border: 1px solid #d0e4d6;
+    border-radius: 7px;
+    background: #f1f8f3;
+    color: #0a7250;
+    text-decoration: none;
+    font-size: .83rem;
+    font-weight: 750;
+  }
+  .report-conversation-link:hover, .report-conversation-link:focus-visible {
+    background: #e3f4e8;
+    border-color: #7db89a;
+  }
+</style>
