@@ -1,0 +1,395 @@
+{
+  "date": "2026-11-04",
+  "stock": "NYSE: LMND",
+  "currency": "USD",
+  "security": "Lemonade Inc common equity",
+  "cutoff": "2026-11-04 Japan time / through 2026-11-03 NY regular close",
+  "last_financial": "FY2026 Q2 ended 2026-06-30, released 2026-07-29; Q3 2026 scheduled 2026-11-05 before US open, NOT PUBLIC AS OF CUTOFF",
+  "quote": {
+    "price_usd": 41.34,
+    "regular_session": "2026-11-03 NYSE close",
+    "source": "https://stockanalysis.com/stocks/lmnd/financials/ratios/",
+    "secondary": "https://markets.financialcontent.com/stocks/quote?Symbol=ny:lmnd",
+    "after_hours_not_used": 42.15
+  },
+  "financials_m": {
+    "fy2024": {
+      "revenue": 526.5,
+      "gross_profit": 166.9,
+      "net_income": -202.2,
+      "adjusted_ebitda": -149.7,
+      "ocf": -11.4,
+      "capex": 9.4,
+      "fcf": -20.8,
+      "sbc": 64.5
+    },
+    "fy2025": {
+      "revenue": 737.9,
+      "gross_profit": 293.4,
+      "net_income": -165.5,
+      "adjusted_ebitda": -118.1,
+      "ocf": -16.5,
+      "capex": 9.4,
+      "fcf": -25.9,
+      "sbc": 61.3
+    },
+    "h1_2025": {
+      "revenue": 315.3,
+      "gross_profit": 102.9,
+      "net_income": -106.3,
+      "adjusted_ebitda": -87.9,
+      "ocf": -41.7,
+      "capex": 4.4,
+      "fcf": -46.1,
+      "sbc": 25.7
+    },
+    "h1_2026": {
+      "revenue": 552.4,
+      "gross_profit": 213.3,
+      "net_income": -79.2,
+      "adjusted_ebitda": -35.8,
+      "ocf": -4,
+      "capex": 8.1,
+      "fcf": -12.1,
+      "sbc": 45.7
+    },
+    "ttm": {
+      "revenue": 975,
+      "gross_profit": 403.8,
+      "net_income": -138.4,
+      "adjusted_ebitda": -66,
+      "ocf": 21.2,
+      "capex": 13.1,
+      "fcf": 8.1,
+      "sbc": 81.3
+    },
+    "q2_2026": {
+      "revenue": 294.4,
+      "net_loss": -43.4,
+      "adjusted_ebitda": -18.7,
+      "ocf": -3.4,
+      "ordinary_fcf": -8,
+      "adjusted_fcf": 18.8,
+      "net_financing_in_adjusted_fcf": 26.8
+    }
+  },
+  "revenue_by_gaap_category_m": [
+    {
+      "category": "net_earned_premiums",
+      "q2_2025": 112.5,
+      "q1_2026": 212.6,
+      "q2_2026": 252
+    },
+    {
+      "category": "ceding_commissions",
+      "q2_2025": 30.4,
+      "q1_2026": 23.6,
+      "q2_2026": 20.4
+    },
+    {
+      "category": "net_investment_income",
+      "q2_2025": 9.4,
+      "q1_2026": 9.8,
+      "q2_2026": 9.7
+    },
+    {
+      "category": "commissions_and_other",
+      "q2_2025": 11.8,
+      "q1_2026": 12,
+      "q2_2026": 12.3
+    },
+    {
+      "category": "consolidated_and_single_reportable_segment",
+      "q2_2025": 164.1,
+      "q1_2026": 258,
+      "q2_2026": 294.4
+    }
+  ],
+  "reconciliation_m": {
+    "q2_net_earned": 252,
+    "q2_ceding": 20.4,
+    "q2_investment": 9.7,
+    "q2_other": 12.3,
+    "q2_consolidated": 294.4,
+    "q1_computation": "2026 H1 category minus 2026 Q2 category",
+    "segment": "One reportable segment (property and casualty insurance in US+Europe); product IFP is supplementary and not GAAP revenue"
+  },
+  "product_ifp_m": {
+    "as_of": "2026-06-30",
+    "total": 1434.3,
+    "source_rounded_1434_by_product": {
+      "homeowners_multi_peril_including_renters_policies_without_split": 554,
+      "pet": 543,
+      "car": 239,
+      "europe_all_products": 74,
+      "other": 24
+    },
+    "q2_2025_rounded": {
+      "homeowners_multi_peril": 523,
+      "pet": 350,
+      "car": 150,
+      "europe": 43,
+      "other": 17
+    },
+    "q1_2026_rounded": {
+      "homeowners_multi_peril": 540,
+      "pet": 490,
+      "car": 214,
+      "europe": 67,
+      "other": 23
+    }
+  },
+  "loss_ratio": {
+    "q2_2026": {
+      "gross": 60,
+      "attritional": 59,
+      "cat_ex_ppd": 3,
+      "lae_ex_ppd": 5,
+      "favorable_ppd": -7,
+      "pet": 74,
+      "car": 61,
+      "home": 44,
+      "europe": 71,
+      "normalized_ex_ppd_arithmetic": 67
+    },
+    "q2_2025": {
+      "gross": 67,
+      "attritional": 58,
+      "cat_ex_ppd": 5,
+      "lae_ex_ppd": 7,
+      "favorable_ppd": -3,
+      "pet": 70,
+      "car": 82,
+      "home": 60,
+      "europe": 83,
+      "normalized_ex_ppd_arithmetic": 70
+    },
+    "warning": "Product-level PPD unavailable; do not normalize each product GLR by applying group PPD percentage."
+  },
+  "balances_m": {
+    "as_of": "2026-06-30",
+    "equity": 499.5,
+    "cash_unrestricted": 367.6,
+    "cash_restricted": 12.7,
+    "investments_bs": 777.7,
+    "borrowings": 206.4,
+    "leases": 20,
+    "unpaid_losses": 307.5,
+    "unearned_premium": 661.7,
+    "group_regulated_entities_cash_investments": 810.5,
+    "held_statutory_surplus": 352.4,
+    "regulatory_required_approx": 330,
+    "mdna_conflict_investments": 695.2
+  },
+  "shares": {
+    "actual_as_of": "2026-08-03",
+    "actual_m": 77.396615,
+    "period_end_as_of": "2026-06-30",
+    "period_end_actual_m": 77.326718,
+    "period_end_2025_actual_m": 75.907215,
+    "nominal_excluded_options_m": 6.786537,
+    "nominal_excluded_unvested_awards_m": 5.324753,
+    "new_cfo_future_rsu_award_shares": 80000
+  },
+  "valuation": {
+    "preferred_method": "Insurer self historical P/B instead of future DCF / peer / forward revenue because loss-making and premiums impacted by quota-share.",
+    "history": [
+      {
+        "fy": "FY2022",
+        "as_of": "2022-12-31",
+        "mcap_m": 946,
+        "equity_m": 866.8,
+        "pb_published": 1.09,
+        "pb_mcap_over_equity": 1.0913705583756346
+      },
+      {
+        "fy": "FY2023",
+        "as_of": "2023-12-31",
+        "mcap_m": 1128,
+        "equity_m": 708.9,
+        "pb_published": 1.59,
+        "pb_mcap_over_equity": 1.5911976301311892
+      },
+      {
+        "fy": "FY2024",
+        "as_of": "2024-12-31",
+        "mcap_m": 2619,
+        "equity_m": 593.4,
+        "pb_published": 4.41,
+        "pb_mcap_over_equity": 4.4135490394337715
+      },
+      {
+        "fy": "FY2025",
+        "as_of": "2025-12-31",
+        "mcap_m": 5319,
+        "equity_m": 533.6,
+        "pb_published": 9.97,
+        "pb_mcap_over_equity": 9.968140929535233
+      }
+    ],
+    "median_pb": 3,
+    "current_shareholder_equity_m": 499.5,
+    "latest_reliable_actual_shares_m": 77.396615,
+    "reference_per_share_usd": 19.36,
+    "unrounded_reference": 19.361311860990305,
+    "quote_usd": 41.34,
+    "model_vs_market_pct": -53.16567038947677,
+    "market_cap_m": 3199.5760641,
+    "reference_total_equity_value_m": 1498.5,
+    "actual_book_per_share": 6.4537706203301015,
+    "current_actual_pb": 6.405557685885886,
+    "current_actual_ps": 3.2816164760000004,
+    "alternative_three_year_median": 4.41,
+    "alternative_three_year_reference": 28.46112843565575,
+    "warning": [
+      "Historical annual PB snapshots may use FY-end market cap divided by year-end equity (book may not have been publicly released on FY-end date); not a strictly ex ante tradable series.",
+      "FY2022-2023 business mix, loss reserve risk, reinsurance cession and insurance premium size not perfectly comparable to FY2026; high growth business can trade above past median for extended time.",
+      "Financial assets and growth financing borrowing already embedded in GAAP equity; do not add gross cash/investments or subtract debt again.",
+      "Shares are as of Aug3, not confirmed on Nov3, exclude economic dilution from RSU/options; exact fully diluted not available.",
+      "Price is conditional historical benchmark, NOT known intrinsic fair value, forecast price or hard asset liquidation floor."
+    ]
+  },
+  "financing": {
+    "GC_existing_borrowings_m": 206.4,
+    "older_gc_cohort_return_approx_pct": 16,
+    "hannover_signed": "2026-06-22",
+    "h317_start": "2027-01-01",
+    "h317_outstanding_limit_m": 150,
+    "h318_outstanding_limit_m": 250,
+    "cost_formula": "max(0,3yr US Treasury reference) + 5.8 points; 9.8% only contemporary illustration",
+    "ordinary_h1_fcf_m": -12.1,
+    "net_cash_borrowings_h1_m": 48.3,
+    "adjusted_h1_fcf_m": 36.2
+  },
+  "management": {
+    "cfo_transition_announced": "2026-07-29",
+    "supplement_8k_a": "2026-10-15",
+    "effective_future": "2027-01-01",
+    "cfo_salary_usd": 412500,
+    "cfo_future_rsu_shares": 80000,
+    "adj_ebitda_positive_q4_2026": "company projection, not actual",
+    "fy2027_adj_ebitda_positive": "company projection, not actual"
+  },
+  "events": [
+    {
+      "date": "2025-11-05",
+      "key": "Q3 2025 earnings",
+      "grade": "B",
+      "reason": "Quarterly results and base case; not independently proven new A-level transaction"
+    },
+    {
+      "date": "2026-01-21",
+      "key": "Autonomous Car launch",
+      "grade": "A",
+      "reason": "Distinct insurance pricing and risk model business launch",
+      "source": "https://www.lemonade.com/investor"
+    },
+    {
+      "date": "2026-02-19",
+      "key": "FY2025 results and positive adjusted EBITDA targets",
+      "grade": "A",
+      "reason": "Capital/profitability milestone commitment",
+      "source": "https://www.lemonade.com/investor"
+    },
+    {
+      "date": "2026-06-22",
+      "filing": "2026-06-24",
+      "key": "Hannover growth finance",
+      "grade": "A",
+      "reason": "Material financing contract $250m",
+      "source": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000041/lmnd-20260622.htm"
+    },
+    {
+      "date": "2026-06-30",
+      "effective": "2026-07-01",
+      "key": "Reinsurance renewal and risk retention",
+      "grade": "A",
+      "source": "https://www.lemonade.com/investor/news/lemonade-renews-reinsurance-program-improving-costs-coverage-and-capital-efficiency"
+    },
+    {
+      "date": "2026-07-29",
+      "key": "Q2 results material claims and capital quality",
+      "grade": "A",
+      "source": "https://www.lemonade.com/investor/news/lemonade-announces-second-quarter-2026-financial-results"
+    },
+    {
+      "date": "2026-10-08",
+      "key": "FSD Lite HW3 expansion",
+      "grade": "B",
+      "reason": "Product coverage extension but independent financial significance unknown"
+    },
+    {
+      "date": "2026-10-15",
+      "key": "CFO 8-K/A compensation",
+      "grade": "B",
+      "reason": "Future RSU and salary disclosed, ordinary governance not independent A"
+    },
+    {
+      "date": "2026-10-20",
+      "key": "Alabama Renters",
+      "grade": "C",
+      "reason": "Routine state expansion, sales undisclosed"
+    },
+    {
+      "date": "2026-10-27",
+      "key": "Idaho Renters",
+      "grade": "C",
+      "reason": "Routine state expansion, sales undisclosed"
+    },
+    {
+      "date": "2026-11-05",
+      "key": "Q3 2026 report",
+      "grade": "upcoming",
+      "reason": "Do not incorporate unreleased results"
+    }
+  ],
+  "event_coverage": {
+    "window": "2025-11-04 to 2026-11-04",
+    "baseline": "Prior 2026-10-20 audit documented 37 candidates / 13-month matrix with partial third-party gaps",
+    "current_checks": [
+      "Lemonade IR annual/news index and Oct 2026 updates through 27th",
+      "2026-10-19 official Q3 press release schedule",
+      "2026-10-15 8-K/A actual compensation reproduced from SEC filing",
+      "Q2 2026 10-Q single reportable segment / insurance cash and funding",
+      "Hannover June 22 8-K",
+      "Reinsurance June 30 company press release"
+    ],
+    "unverified": [
+      "All state insurance department regulatory orders and Rhode Island docket 2025-IN-016",
+      "Direct Hannover economic covenants and source contracts",
+      "No evidence of company 2026-11-03 X post material terms after partial feed",
+      "Exact issued shares Nov3, option treasury-stock dilution",
+      "Oct-Nov complete SEC filings 2026 beyond latest visible amended 8-K"
+    ],
+    "complete": false
+  },
+  "sources": {
+    "q2_2026_10q": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+    "shareholder_letter": "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/docs/LMND-Shareholder-Letter-Q2-2026.pdf",
+    "fy2025": "https://marketing-edge-assets.lemonade.com/investor/reports/LMND%202025%20Annual%20Report%20Final%204.22.26.pdf",
+    "historical_pb": "https://stockanalysis.com/stocks/lmnd/financials/ratios/",
+    "historical_book": "https://stockanalysis.com/stocks/lmnd/financials/balance-sheet/",
+    "official_q3_date": "https://www.lemonade.com/investor/news/lemonade-to-announce-third-quarter-2026-financial-results",
+    "h_gf": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000041/lmnd-20260622.htm",
+    "renewal": "https://www.lemonade.com/investor/news/lemonade-renews-reinsurance-program-improving-costs-coverage-and-capital-efficiency",
+    "q2_release": "https://www.lemonade.com/investor/news/lemonade-announces-second-quarter-2026-financial-results",
+    "cfo_8ka_copy": "https://www.stocktitan.net/sec-filings/LMND/8-k-a-lemonade-inc-amends-material-event-report-c31f3042997d.html"
+  },
+  "research_change": {
+    "last_full_report": "2026-10-20",
+    "old_method": "2028 equity revenue multiples and discounting of forecast 2028 earnings-equivalent",
+    "current_method": "Realized GAAP book equity x own FY2022–FY2025 historical P/B median",
+    "latest_financial_changed": false,
+    "quote_changed_from": 43.12,
+    "quote_changed_to": 41.34,
+    "new_material_operating_disclosure": false,
+    "upcoming_q3_date_confirmed": "2026-11-05"
+  },
+  "validation": {
+    "reader_report_path": "research/COMPANIES/LMND/deep-research/2026-11-04-deep-research.md",
+    "seven_sections": true,
+    "collapsed_business_cards": 8,
+    "roadmap_cards_initial": 6,
+    "quoted_dollars_verified": true
+  }
+}
