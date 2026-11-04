@@ -13,6 +13,27 @@ export function getStaticPaths() {
 const { company } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const trackerHtml = renderMarkdown(rewriteResearchLinks(company.tracker.content, base, company.symbol));
+const investmentView = company.investmentView || "研究中";
+const investmentTone = /看空|偏空/.test(investmentView)
+  ? "negative"
+  : /谨慎|观望/.test(investmentView)
+    ? "cautious"
+    : /看多|看好|建设性|积极|偏多/.test(investmentView)
+      ? "positive"
+      : "neutral";
+const viewMeaning = investmentView === "研究中"
+  ? "报告尚未使用标准化方向标签，不等于中性。"
+  : /中性.*谨慎|谨慎中性/.test(investmentView)
+    ? "整体判断接近中性，但更重视估值与下行风险。"
+    : /中性.*建设性|中性.*积极/.test(investmentView)
+      ? "整体判断接近中性，对经营前景略偏积极。"
+      : /中性/.test(investmentView)
+        ? "正反因素相对均衡，暂未形成明显的看多或看空判断。"
+        : /看空|偏空/.test(investmentView)
+          ? "当前更关注负面因素与潜在下行风险。"
+          : /谨慎|观望/.test(investmentView)
+            ? "当前侧重风险控制，等待更有力的经营或估值证据。"
+            : "观点相对积极，但并不意味着价格必然上涨。";
 ---
 
 <BaseLayout title={`${company.symbol} · ${company.companyName}`}>
@@ -25,10 +46,21 @@ const trackerHtml = renderMarkdown(rewriteResearchLinks(company.tracker.content,
       </div>
       <span class="report-pill">{company.reports.length} reports</span>
     </div>
-    <p class="lede">{company.currentView}</p>
-    <div class="detail-meta">
-      <span>Last updated: {company.lastUpdated || "Unknown"}</span>
-      <span>Source: research/COMPANIES/{company.symbol}</span>
+    <div class="investment-summary" aria-label="投资观点">
+      <span class="investment-heading">投资观点</span>
+      <strong class:list={["investment-rating", "investment-rating-" + investmentTone]}>{investmentView}</strong>
+      <span class="investment-meaning">{viewMeaning}</span>
+      <details class="view-glossary">
+        <summary>观点含义</summary>
+        <dl>
+          <div><dt>研究中</dt><dd>还没有可明确归类的观点；不是中性，也不代表没有报告。</dd></div>
+          <div><dt>看多 / 看好</dt><dd>经营和估值证据支持相对积极的判断，但不保证上涨。</dd></div>
+          <div><dt>中性</dt><dd>利好与风险相互制衡，暂无明确的看多或看空倾向。</dd></div>
+          <div><dt>中性偏建设性 / 中性偏谨慎</dt><dd>以中性为基础，分别略偏积极或略偏防守。</dd></div>
+          <div><dt>谨慎 / 看空</dt><dd>更加关注风险；看空表示负面判断更明确。</dd></div>
+        </dl>
+        <p>所有观点均为研究判断，不构成买卖建议。</p>
+      </details>
     </div>
   </section>
 
@@ -60,6 +92,54 @@ const trackerHtml = renderMarkdown(rewriteResearchLinks(company.tracker.content,
 </BaseLayout>
 
 <style>
+  .investment-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .6rem .85rem;
+    margin-top: 1.15rem;
+  }
+  .investment-heading { color: #708278; font-size: .85rem; font-weight: 750; }
+  .investment-rating {
+    padding: .34rem .75rem;
+    border-radius: 999px;
+    background: #edf2ee;
+    color: #426b55;
+    font-size: .94rem;
+    font-weight: 800;
+  }
+  .investment-rating-positive { background: #eaf6ee; color: #176d48; }
+  .investment-rating-cautious { background: #fbf0e1; color: #955c1e; }
+  .investment-rating-negative { background: #fbe9e8; color: #a13d36; }
+  .investment-meaning { color: #65766b; font-size: .85rem; line-height: 1.5; }
+  .view-glossary { flex-basis: 100%; font-size: .8rem; }
+  .view-glossary > summary {
+    display: inline-flex;
+    cursor: pointer;
+    color: #087451;
+    font-weight: 750;
+    list-style-position: inside;
+    padding: .25rem 0;
+  }
+  .view-glossary[open] { margin-top: .25rem; }
+  .view-glossary dl {
+    display: grid;
+    gap: .6rem;
+    max-width: 740px;
+    margin: .55rem 0;
+    padding: .85rem 1rem;
+    border: 1px solid #e1eae2;
+    border-radius: 9px;
+    background: #f8faf8;
+  }
+  .view-glossary dl > div { display: grid; grid-template-columns: minmax(125px, auto) 1fr; gap: .8rem; }
+  .view-glossary dt { font-weight: 750; color: #2e5742; }
+  .view-glossary dd { margin: 0; color: #64746a; }
+  .view-glossary p { margin: .4rem 0 0; color: #78887c; }
+  @media (max-width: 560px) {
+    .investment-meaning { flex-basis: 100%; }
+    .view-glossary dl > div { grid-template-columns: 1fr; gap: .15rem; }
+  }
   .conversation-feature {
     display: grid;
     gap: .48rem;

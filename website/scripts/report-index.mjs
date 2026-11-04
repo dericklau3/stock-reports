@@ -18,6 +18,45 @@ function normalizeParagraph(value) {
   return stripMarkdown(value.replace(/\s+/g, " "));
 }
 
+const VIEW_LABELS = [
+  "中性偏建设性", "中性偏谨慎", "中性偏积极", "谨慎中性",
+  "建设性但谨慎", "谨慎看好", "谨慎观察", "积极看好",
+  "研究中", "待研究", "看多", "看空", "看好", "中性",
+  "建设性", "谨慎", "乐观", "观望", "偏多", "偏空",
+];
+
+function ratingFromText(value) {
+  const text = stripMarkdown(value).replace(/^\\s*[-–]\\s*/, "").replace(/^[“"「]+/, "").trim();
+  for (const label of VIEW_LABELS) {
+    if (text.startsWith(label)) return label === "待研究" ? "研究中" : label;
+  }
+  // Legacy reports sometimes state a directional view in prose rather than a tag.
+  const opening = text.split(/[。；;\\n]/u, 1)[0].slice(0, 105);
+  if (/保持建设性/.test(opening)) return "建设性";
+  if (/仍需谨慎|需要谨慎|需谨慎/.test(opening)) return "谨慎观察";
+  return "";
+}
+
+/** Extract only a short, explicitly supported view label, never a whole Tracker section. */
+export function extractInvestmentView(trackerMarkdown, newestReportMarkdown = "") {
+  for (const markdown of [trackerMarkdown, newestReportMarkdown]) {
+    const head = markdown.slice(0, 3000);
+    const match = head.match(/^\\s*(?:[-*]\\s*)?\\*{0,2}(?:当前)?(?:投资观点|观点)\\s*[：:]\\s*\\*{0,2}\\s*(.+)$/m);
+    if (match) {
+      const label = ratingFromText(match[1]);
+      if (label) return label;
+    }
+    const section = head.match(/^##\\s+Current Research View[^\\n]*\\n([\\s\\S]*?)(?=^##\\s+|$)/im);
+    if (section) {
+      const first = section[1].split("\\n").map((line) => line.trim())
+        .find((line) => line && !line.startsWith("#"));
+      const label = first ? ratingFromText(first) : "";
+      if (label) return label;
+    }
+  }
+  return "研究中";
+}
+
 function extractTitle(markdown, fallback) {
   const match = markdown.match(/^#\s+(.+)$/m);
   return match ? stripMarkdown(match[1]) : fallback;
@@ -161,6 +200,7 @@ export async function buildReportIndex(companiesDir) {
       title,
       lastUpdated,
       currentView,
+      investmentView: extractInvestmentView(tracker.content, reports[0]?.content || ""),
       summary: extractSection(tracker.content, ["Current Main Thesis", "Main thesis"]) || currentView,
       keyRisks: extractSection(tracker.content, ["Key Risks", "Key risks"]),
       tracker: {

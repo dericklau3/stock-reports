@@ -5,7 +5,7 @@ import path from "node:path";
 import test from "node:test";
 
 import { renderMarkdown, reportUrl, withBase } from "../src/lib/markdown.js";
-import { buildReportIndex, slugForReport } from "../scripts/report-index.mjs";
+import { buildReportIndex, extractInvestmentView, slugForReport } from "../scripts/report-index.mjs";
 
 test("slugForReport removes markdown extension and keeps readable report names", () => {
   assert.equal(slugForReport("2026-07-22-deep-research.md"), "2026-07-22-deep-research");
@@ -170,4 +170,19 @@ test("monthly event roadmap keeps grouped cards and detailed evidence", () => {
   assert.match(html, /<summary>\s*<span class="event-entry-title">资产交易<\/span>/);
   assert.match(html, /<div class="event-detail-content">[\s\S]*<strong>公告日期：<\/strong>/);
   assert.match(html, /<a href="https:\/\/example.com\/ir">IR公告<\/a>/);
+});
+
+
+test("investment view extraction excludes research dates, sources and valuation notes", () => {
+  const tracker = [
+    "# INTC Tracker",
+    "## Current Research View",
+    "- **投资观点：**中性偏谨慎；Xeon业务改善但Foundry仍亏损。",
+    "- **研究截止：**2026-11-02。",
+    "- **证券身份：**NASDAQ INTC。",
+  ].join("\n");
+  assert.equal(extractInvestmentView(tracker), "中性偏谨慎");
+  assert.equal(extractInvestmentView("## Current Research View\n\n**中性 / 等待确认**，研究证据尚不足。"), "中性");
+  assert.equal(extractInvestmentView("## Current Research View\n\n- **研究截止：**2026-11-02"), "研究中");
+  assert.equal(extractInvestmentView("## Current Research View\n\n没有标准评级", "**投资观点：谨慎看好。** 最新证据支持增长"), "谨慎看好");
 });

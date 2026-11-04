@@ -129,7 +129,7 @@ function toneFromView(value) {
             <span class="report-pill">{company.reports.length} 份报告</span>
           </div>
           <div class="stock-card-middle">
-            <span class:list={["view-tag", "view-tag-" + toneFromView(company.currentView)]}>{labelFromView(company.currentView)}</span>
+            <span class:list={["view-tag", "view-tag-" + toneFromView(company.investmentView || "研究中")]}>{company.investmentView || "研究中"}</span>
           </div>
           <p class="stock-description">{cleanView(company.currentView) || company.summary || "查看公司完整研究报告及分析。"}</p>
           <div class="card-meta">
