@@ -1049,10 +1049,10 @@ body { background: var(--bg); }
 }
 .home-page .stock-card {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  gap: 0;
-  min-height: 205px;
-  padding: 1rem;
+  grid-template-rows: auto auto;
+  gap: 0.85rem;
+  min-height: 132px;
+  padding: 1.15rem 1.2rem;
   border: 1px solid #e1e8e2;
   border-radius: 12px;
   background: #fff;
@@ -1070,36 +1070,10 @@ body { background: var(--bg); }
 }
 .home-page .stock-card[hidden] { display: none !important; }
 .home-page .stock-card-top { display: flex; align-items: center; justify-content: flex-start; gap: 0.65rem; min-width: 0; }
-.stock-logo {
-  flex: 0 0 43px;
-  display: grid;
-  place-items: center;
-  width: 43px;
-  height: 43px;
-  border-radius: 9px;
-  color: white;
-  background: linear-gradient(135deg,#123d2c,#0d7956);
-  font-family: system-ui,sans-serif;
-  font-weight: 850;
-  font-size: 1.05rem;
-  letter-spacing: -0.04em;
-}
-.stock-logo-intc { background: linear-gradient(125deg,#1581ce,#1254a1);font-size:0.87rem; }
-.stock-logo-pl { background: #102a29;border: 2px solid #6cb4a9; }
-.stock-logo-amzn { background: #1a242d;font:800 1.7rem Georgia,serif; }
-.stock-logo-goog { background: #fff;color:#4285f4;box-shadow:inset 0 0 0 1px #dfe5e2;font-size:1.7rem; }
-.stock-logo-hood { background: #139c43;font-size:1.45rem; }
-.stock-logo-spcx { background:#0a181e;font-size:1.5rem;font-style:italic; }
-.stock-logo-tsla { background:#df3c43;font-size:1.5rem; }
-.stock-logo-aapl { background:#202625;font-size:1.5rem; }
-.stock-logo-nvda { background:#76b900; }
-.stock-logo-msft { background:#1376bc; }
-.stock-logo-orcl { background:#ce353a; }
-.stock-identity { display: grid; flex: 1; min-width: 0; gap: 0.17rem; }
-.home-page .ticker { color: #1d3025; font-size: 1.2rem; font-weight: 850; line-height: 1.1; }
-.stock-company { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #728177; font-size: 0.76rem; }
-.home-page .report-pill { flex-shrink: 0; padding: 0.22rem 0.48rem; background: #eaf6ef; border-color: #cae6d4; font-size: 0.68rem; }
-.stock-card-middle { display: flex; align-items: center; justify-content: flex-start; min-height: 30px; margin-top: 0.48rem; }
+.stock-identity { display: grid; flex: 1; min-width: 0; gap: 0.3rem; }
+.home-page .ticker { color: #1d3025; font-size: 1.45rem; font-weight: 850; line-height: 1.1; }
+.stock-company { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #728177; font-size: 0.87rem; }
+.stock-card-middle { display: flex; align-items: center; justify-content: flex-start; }
 .view-tag {
   display: inline-block;
   max-width: 100%;
@@ -1115,42 +1089,8 @@ body { background: var(--bg); }
 }
 .view-tag-cautious { background: #f9eddf; color: #986222; }
 .view-tag-neutral { background: #ebf1ed; color: #506f5a; }
-.home-page .stock-description {
-  display: -webkit-box;
-  margin: 0.3rem 0 0.75rem;
-  min-height: 51px;
-  color: #59695f;
-  font-size: 0.81rem;
-  line-height: 1.6;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-.home-page .card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.4rem;
-  margin-top: auto;
-  padding-top: 0.67rem;
-  border-top: 1px solid #eaf0eb;
-  color: #78887e;
-  font-size: 0.72rem;
-}
-.card-updated, .card-report-count { white-space: nowrap; }
-.card-open {
-  flex-shrink: 0;
-  padding: 0.25rem 0.6rem;
-  border: 1px solid #cce4d2;
-  border-radius: 999px;
-  background: #eaf6ef;
-  color: #0b6846;
-  font-weight: 800;
-  white-space: nowrap;
-}
-.card-open span { margin-left: 0.22rem; }
 .home-page .stock-grid.is-list-view { grid-template-columns: repeat(2,minmax(0,1fr)); }
-.home-page .stock-grid.is-list-view .stock-card { min-height: 171px; }
+.home-page .stock-grid.is-list-view .stock-card { min-height: 118px; }
 
 .no-results {
   padding: 3rem 1rem;
@@ -1212,8 +1152,7 @@ body { background: var(--bg); }
   .library-section-head { padding-top: 1.25rem; align-items: flex-start; }
   .library-section-tools { width: 100%; justify-content: space-between; }
   .home-page .stock-grid, .home-page .stock-grid.is-list-view { grid-template-columns: 1fr; gap: 0.75rem; }
-  .home-page .stock-card { min-height: 188px; }
-  .home-page .stock-description { min-height: 38px; -webkit-line-clamp: 2; }
+  .home-page .stock-card { min-height: 118px; }
   .inner-page .site-main { width: calc(100% - 1rem); padding-top: 1.15rem; }
 }
 @media (prefers-reduced-motion: reduce) {

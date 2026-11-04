@@ -38,3 +38,22 @@ test("compact layout has responsive rules and keeps detailed report styling", ()
   assert.match(css, /@media \(max-width: 680px\)/);
   assert.match(css, /\.event-dialog-content\s*\{/);
 });
+
+test("each homepage stock card only renders symbol, company name and rating", () => {
+  const cardMarkup = home.split('<a\n          class="stock-card"')[1]?.split('</a>')[0] || "";
+  assert.ok(cardMarkup, "stock card markup must exist");
+  assert.match(cardMarkup, /class="stock-identity"/);
+  assert.match(cardMarkup, /class="ticker"/);
+  assert.match(cardMarkup, /class="stock-company"/);
+  assert.match(cardMarkup, /class:list=\{\["view-tag"/);
+  for (const name of ["stock-description", "report-pill", "card-meta", "stock-logo", "card-open"]) {
+    assert.doesNotMatch(cardMarkup, new RegExp(name), name + " must not be visible inside stock cards");
+  }
+  assert.match(home, /data-report-count=\{company\.reports\.length\}/);
+  assert.match(home, /card\.dataset\.reportCount/);
+  assert.doesNotMatch(home, /querySelector\("\.report-pill"\)/);
+});
+test("compact cards do not preserve empty space for deleted excerpts", () => {
+  assert.match(css, /\.home-page \.stock-card\s*\{[\s\S]*?min-height:\s*132px/);
+  assert.doesNotMatch(css, /\.home-page \.stock-description\s*\{/);
+});

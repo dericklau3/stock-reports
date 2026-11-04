@@ -19,12 +19,6 @@ const groupBySymbol = {
   PL: ["ai"], TEM: ["ai"], HOOD: ["consumer"],
   LMND: ["consumer", "ai"], CRCL: ["consumer"],
 };
-const marks = {
-  INTC: "intel.", PL: "P", AMZN: "a", GOOG: "G", HOOD: "↗",
-  SPCX: "X", TSLA: "T", AAPL: "●", NVDA: "N",
-  MSFT: "M", ORCL: "O", QCOM: "Q", RKLB: "R",
-  TEM: "T", CBRS: "C", VST: "V", SKHY: "SK",
-};
 const shortName = {
   INTC: "Intel", PL: "Planet Labs PBC", AMZN: "Amazon",
   GOOG: "Alphabet", HOOD: "Robinhood Markets",
@@ -32,22 +26,10 @@ const shortName = {
   AAPL: "Apple",
 };
 
-function cleanView(value) {
-  return (value || "")
-    .replace(/^\s*[-–]\s*/, "")
-    .replace(/^\**投资观点[：:]\**\s*/, "")
-    .replace(/\*+/g, "")
-    .trim();
-}
-function labelFromView(value) {
-  const view = cleanView(value);
-  const label = view.split(/[，,。；;！!\n]/)[0].trim();
-  return label.length > 0 && label.length <= 9 ? label : "研究观点";
-}
 function toneFromView(value) {
-  const view = cleanView(value).slice(0, 24);
-  if (/谨慎|风险|偏空|高估/.test(view)) return "cautious";
-  if (/乐观|看好|积极/.test(view)) return "positive";
+  const view = (value || "").trim();
+  if (/看空|偏空|谨慎|观望/.test(view)) return "cautious";
+  if (/看多|看好|积极|建设性|乐观|偏多/.test(view)) return "positive";
   return "neutral";
 }
 ---
@@ -115,27 +97,21 @@ function toneFromView(value) {
           class="stock-card"
           href={withBase(base, "stocks/" + company.symbol + "/")}
           data-stock-card
+          data-report-count={company.reports.length}
+          aria-label={`${company.symbol} · ${shortName[company.symbol] || company.companyName}，投资观点：${company.investmentView || "研究中"}`}
           data-updated={company.lastUpdated || ""}
           data-categories={(groupBySymbol[company.symbol] || []).join(" ")}
           data-symbol={company.symbol}
           data-company-name={[company.companyName, shortName[company.symbol] || ""].join(" ")}
         >
           <div class="stock-card-top">
-            <span class:list={["stock-logo", "stock-logo-" + company.symbol.toLowerCase()]} aria-hidden="true">{marks[company.symbol] || company.symbol.slice(0, 2)}</span>
             <div class="stock-identity">
               <strong class="ticker">{company.symbol}</strong>
               <span class="stock-company">{shortName[company.symbol] || company.companyName}</span>
             </div>
-            <span class="report-pill">{company.reports.length} 份报告</span>
           </div>
           <div class="stock-card-middle">
             <span class:list={["view-tag", "view-tag-" + toneFromView(company.investmentView || "研究中")]}>{company.investmentView || "研究中"}</span>
-          </div>
-          <p class="stock-description">{cleanView(company.currentView).slice(0, 200) || company.summary || "查看公司完整研究报告及分析。"}</p>
-          <div class="card-meta">
-            <span class="card-updated"><span aria-hidden="true">▣</span> {company.lastUpdated || "日期未记录"}</span>
-            <span class="card-report-count">▤ {company.reports.length} 份</span>
-            <span class="card-open">查看 <span aria-hidden="true">→</span></span>
           </div>
         </a>
       ))}
@@ -184,7 +160,7 @@ function toneFromView(value) {
         card.hidden = !matches;
         if (matches) {
           visible += 1;
-          reports += Number(card.querySelector(".report-pill")?.textContent?.match(/\d+/)?.[0] || 0);
+          reports += Number(card.dataset.reportCount || 0);
         }
       }
       if (count) count.textContent = "共 " + visible + " 只股票 · " + reports + " 份研究报告";
