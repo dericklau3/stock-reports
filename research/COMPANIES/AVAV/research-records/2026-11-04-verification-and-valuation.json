@@ -1,0 +1,157 @@
+{
+  "title": "AVAV 2026-11-04 dated verification and historical EV/revenue valuation",
+  "cutoff": "2026-11-04 Asia/Tokyo",
+  "last_us_market_close": "2026-11-03 16:00 America/New_York",
+  "quote_usd": 123.53,
+  "quote_source": "https://stockanalysis.com/stocks/avav/history/",
+  "fy": "Apr30",
+  "latest_quarter_end": "2026-08-01",
+  "annual_source": "https://investor.avinc.com/node/21001/html",
+  "latest_quarter_source": "https://investor.avinc.com/node/21396/html",
+  "prior_nine_months_restated_source": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926076141/avav-20260131x10qa.htm",
+  "unit": "USD million and million shares except dollars/share and ratios",
+  "year_end_ev_revenue_mult": {
+    "FY2023": 4.89,
+    "FY2024": 6.18,
+    "FY2025": 5.19,
+    "FY2026": 5.09
+  },
+  "historical_source": "https://stockanalysis.com/stocks/avav/financials/ratios/",
+  "median": 5.14,
+  "ttm_revenue_m": 2002.659,
+  "ttm_revenue_formula": "FY2026 1976.845 + Q1FY2027 480.490 - Q1FY2026 454.676",
+  "ttm_ocf_m": 58.818,
+  "ttm_fcf_ppe_and_capitalized_sales_software_m": -44.782,
+  "ttm_operating_income_m": -252.594,
+  "ttm_net_income_m": -202.818,
+  "shares_m": 50.820702,
+  "shares_asof": "2026-09-03 10-Q cover",
+  "cash_aug1_m": 278.39,
+  "short_investments_aug1_m": 301.837,
+  "bond_principal_aug1_m": 747.5,
+  "net_debt_aug1_m": 167.273,
+  "subsequent_known_uses_m": {
+    "moorpark_property_purchase": 29.25,
+    "esaero_holdback_paid": 3.593
+  },
+  "partial_adjusted_net_debt_m": 200.116,
+  "market_cap_m": 6277.88131806,
+  "partial_adjusted_ev_m": 6477.99731806,
+  "partial_adjusted_ev_ttm_sales": 3.234698127868998,
+  "historical_median_ev_ttm_revenue_value_m": 10293.66726,
+  "model_equity_m": 10093.55126,
+  "fair_price_exact": 198.61101603830664,
+  "fair_price_display": 198.61,
+  "price_gap_pct": 60.77958069967346,
+  "unadjusted_net_debt_fair_price": 199.25726842576876,
+  "not_fully_reconciled": [
+    "post-Sep3 actual share count",
+    "post-Aug1 other cash inflows/outflows",
+    "restricted cash not separately verified",
+    "historical 2023-25 EV/revenue had a much smaller pre-BlueHalo consolidation perimeter",
+    "year-end EV/Sales figures from a third-party data provider are not manually rebuilt from primary daily prices",
+    "2026-10-15 to Nov4 full EDGAR filing attachments and counterpart procurement archive not exhaustively checked"
+  ],
+  "revenue_groups": [
+    {
+      "group": "UAS",
+      "fy26q1": 70.243,
+      "fy26q4": 120.779,
+      "fy27q1": 120.206
+    },
+    {
+      "group": "Precision Strike and Defense",
+      "fy26q1": 182.438,
+      "fy26q4": 333.322,
+      "fy27q1": 197.132
+    },
+    {
+      "group": "Other",
+      "fy26q1": 32.643,
+      "fy26q4": 38.334,
+      "fy27q1": 28.631
+    },
+    {
+      "group": "Space and Directed Energy",
+      "fy26q1": 70.966,
+      "fy26q4": 73.532,
+      "fy27q1": 51.509
+    },
+    {
+      "group": "Cyber and Mission Solutions",
+      "fy26q1": 98.386,
+      "fy26q4": 75.649,
+      "fy27q1": 83.012
+    }
+  ],
+  "q4_method": "Each FY26Q4 group = FY26 Annual group total from FY26 10-K minus FY26 nine-month value from RESTATED 2026-01-31 10-Q/A; q4 sum 641.616m",
+  "events_A": [
+    {
+      "announcement_date": "2025-10-22",
+      "title": "FE-1 拦截器获军方合同",
+      "source": "https://www.avinc.com/2025/10/22/av-selected-for-u-s-army-next-generation-c-uas-missile-program-awarded-95-9m-contract-to-deliver-fe-1-for-u-s-armys-long-range-kinetic-interceptor-lrki-program"
+    },
+    {
+      "announcement_date": "2025-12-08",
+      "title": "对外军售采购框架",
+      "source": "https://www.avinc.com/2025/12/08/aerovironment-awarded-874m-foreign-military-sales-idiq-to-deliver-uas-and-c-uas-systems-to-allied-partner-forces"
+    },
+    {
+      "announcement_date": "2026-02-26",
+      "title": "Switchblade 追加交付单",
+      "source": "https://www.avinc.com/2026/02/26/av-receives-186-million-u-s-army-delivery-order-for-next-generation-switchblade-systems"
+    },
+    {
+      "announcement_date": "2026-03-16",
+      "title": "收购 ESAero 交割",
+      "source": "https://www.avinc.com/2026/03/16/av-acquires-empirical-systems-aerospace-inc"
+    },
+    {
+      "announcement_date": "2026-06-22",
+      "title": "季度报表重述",
+      "source": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926076141/avav-20260131x10qa.htm"
+    },
+    {
+      "announcement_date": "2026-06-29",
+      "title": "SCAR 合同终止及减值",
+      "source": "https://investor.avinc.com/node/21001/html"
+    },
+    {
+      "announcement_date": "2026-07-06",
+      "title": "Domestic Shield 框架与执行单",
+      "source": "https://www.avinc.com/2026/07/06/av-awarded-500-million-idiq-for-support-of-jiatf-401-domestic-shield-program"
+    },
+    {
+      "announcement_date": "2026-07-20",
+      "title": "P550 批量生产合同",
+      "source": "https://www.avinc.com/2026/07/20/av-awarded-117-3-million-u-s-army-production-contract-for-p550"
+    },
+    {
+      "announcement_date": "2026-08-24",
+      "title": "Moorpark 园区资本投入",
+      "source": "https://www.avinc.com/2026/08/24/av-to-invest-100-million-in-new-unified-campus-in-southern-california"
+    },
+    {
+      "announcement_date": "2026-09-02",
+      "title": "LOCUST 美军大额采购",
+      "source": "https://www.avinc.com/2026/09/02/avs-locust-selected-for-nearly-500-million-army-counter-uas-contract-for-enduring-high-energy-laser-e-hel-program"
+    },
+    {
+      "announcement_date": "2026-09-08",
+      "title": "LOCUST 首单出口",
+      "source": "https://www.avinc.com/2026/09/08/av-secures-first-international-order-for-locust-directed-energy-counter-drone-systems"
+    }
+  ],
+  "events_B_excluded": [
+    "2026-10-14 Thunder Tiger Taiwan exploratory MOU",
+    "2026-10-14 Alpha Spain exploratory MOU",
+    "2026-10-14 Elsight Mayhem integration",
+    "2026-10-13 NIOA non-binding localization collaboration",
+    "2026-10-08 VideoRay Navy prototype subcontract lacking disclosed contract economic size"
+  ],
+  "source_coverage_limits": [
+    "Company news first page visible through 2026-10-14, prior 2026-10-19 report candidate audit consulted; no full fresh monthly 2025-11 to 2026-11 issuer/SEC and all counterpart independent verification completed",
+    "Acquisition valuation and share bridge require future rechecks"
+  ],
+  "model_note": "Historical-relative valuation only. This is a conditional reference estimate, NOT a DCF, peer comparison, guaranteed forecast, investment recommendation, or established intrinsic value."
+}
