@@ -2,73 +2,25 @@
 // 金额、价格和持仓状态均保留相应时点，不应作为实时行情使用。
 export const intcConversation = {
   title: "英特尔深度问答",
-  subtitle: "从陈立武改革、管理层增持，到特朗普与佩洛西交易和NVIDIA的50亿美元投资",
+  subtitle: "陈立武上任与改革、特朗普及佩洛西家庭交易、NVIDIA的50亿美元战略投资",
   lastEdited: "2026-11-04",
   researchCutoff: "2026-11-02",
   entries: [
     {
-      id: "research",
-      topic: "投资框架",
-      question: "使用 us-equity-research 深度研究 INTC，当前到底值得投资吗？",
-      answer: `
-**对话中的投资观点：中性偏谨慎。** 英特尔的服务器CPU业务已有显著改善，但先进制造投入依然很大，晶圆代工仍亏损。不能因为股价大跌，就断言出现安全边际。
-
-| 核心数据 | 当时核实的数值 | 如何理解 |
-|---|---:|---|
-| 2026 Q3 集团收入 | **165.13亿美元** | 同比约+20.9%，环比约+2.4% |
-| DCAI收入 | **73.18亿美元** | 同比约+77.8%，是增长主力 |
-| Intel Foundry分部收入 | **66.97亿美元** | 包含大量集团内部交易 |
-| Foundry真实外部收入 | **4.11亿美元** | 部分增长由非经常性合同推动 |
-| Foundry季度经营亏损 | **18.53亿美元** | 代工尚未真正扭亏 |
-
-当时的研究使用英特尔自身FY2022—FY2025历史EV/收入中位数，以及已实现TTM业务收入，计算出**$32.07/股的模型价格参考**；比较基准是**2026-10-30常规收盘$65.76**，模型价差约-51.2%。这是带有样本选择和资本结构局限的**历史交易锚点**，不是未来股价预测、保证可成交的合理价或投资建议。旧版基于2028—2036年预测的DCF情景不再用于本次估值。
-
-[阅读网站内的完整七章深度研究](../../../reports/INTC/2026-11-02-deep-research/)或[查看GitHub研究原文](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/INTC/deep-research/2026-11-02-deep-research.md)。
-
-**原始资料：**[英特尔2026Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)；[2026Q3财报公告](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)。
-`.trim(),
-    },
-    {
       id: "ceo",
-      topic: "管理层",
-      question: "INTC现任CEO是谁？什么时候正式上任？",
+      topic: "陈立武与改革",
+      question: "陈立武上任后做了什么？能否带领Intel扭亏，他是否买入了INTC？",
       answer: `
+## 陈立武是谁、什么时候上任？
+
 英特尔现任CEO是**陈立武（Lip-Bu Tan）**，于**2025年3月12日宣布获任命、3月18日正式上任**。截至本次对话的研究时点，他任职约一年七个半月。
 
 陈立武曾于2009—2021年担任**Cadence Design Systems** CEO，并在半导体产业链投资领域有长期经历。他于2022—2024年曾担任英特尔董事，离开董事会后又在2025年回归担任CEO。
 
 这段履历能证明他有经营芯片设计工具企业、了解客户与资本市场的经验；但**Cadence主要销售EDA软件，而Intel需要经营高投入、高折旧的先进晶圆制造**。成功经历有参考价值，不能直接等同于代工转型必然成功。
 
-**资料：**[Intel官方CEO任命公告](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-25-000036/a03102025form8-kex991.htm)。
-`.trim(),
-    },
-    {
-      id: "ceo-buy",
-      topic: "管理层交易",
-      question: "陈立武有能力带领Intel扭亏吗？他是否公开买入过INTC？",
-      answer: `
-**可能推动经营改善，但“代工业务扭亏成功”还没有得到验证。** 2026Q3数据中心DCAI分部经营利润为**30.39亿美元**，而Foundry仍亏**18.53亿美元**。产品业务恢复是事实，却还不能证明新制程投资已能为普通股持续创造现金。
+## 上任后采取了哪些改革？
 
-**关于主动买股：**对话中核查的SEC Form 4显示，陈立武于**2026年8月11日**通过家族信托，以**每股$95.00**购买**105,263股INTC**，约投入**1,000万美元**。Form 4交易代码为**P（购买）**，与公司授予股权奖励不同；申报于8月14日提交。
-
-按2026-10-30收盘$65.76估算，这一批股票账面价格比购买时低约**30.8%**。这只是指定时点的机械比较，**没有证明他已经卖出或实现亏损**。
-
-| 判断角度 | 当前证据 |
-|---|---|
-| 经营改革 | 管理层级精简、非核心项目收缩、资产融资已执行 |
-| 芯片产品 | Xeon及服务器业务利润改善明显 |
-| 先进代工 | 18A已用于Intel自家产品，但外部订单、良率与现金回报仍待验证 |
-| CEO主动买入 | Form 4可确认购买约1,000万美元股份 |
-| 不应推出的结论 | 高管购买不等于他能准确预测股价或“$95就是底部” |
-
-**原始资料：**[陈立武2026年8月Form 4](https://www.sec.gov/Archives/edgar/data/50863/000005086326000177/xslF345X05/form4.xml)；[Intel 2026Q3 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)。
-`.trim(),
-    },
-    {
-      id: "reforms",
-      topic: "经营改革",
-      question: "陈立武上任后，具体做了哪些事来带领Intel？",
-      answer: `
 陈立武推动的变化，核心是**减少内部管理摩擦、停止没有足够客户支持的扩产、向有需求的产品集中资源，并通过资产与融资交易维持制造战略**。
 
 | 时间 | 重要行动 | 实际状态与意义 |
@@ -85,14 +37,24 @@ export const intcConversation = {
 
 **关键的后续验收：**Xeon是否连续数季保持利润、Foundry能否获得有约束的大型第三方量产订单、2027年的现金资本开支能否受控，以及是否需要再稀释股票。
 
-**原始资料：**[Intel 2025年二季度业绩及管理层说明](https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results)；[Intel 2026Q3财报](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)。
+## 能否带领Intel长期扭亏？他自己买了多少股票？
+
+**可能推动经营改善，但“代工业务扭亏成功”还没有得到验证。** 2026Q3数据中心DCAI分部经营利润为**30.39亿美元**，而Foundry仍亏**18.53亿美元**。产品业务恢复是事实，却还不能证明新制程投资已能为普通股持续创造现金。
+
+**关于主动买股：**对话中核查的SEC Form 4显示，陈立武于**2026年8月11日**通过家族信托，以**每股$95.00**购买**105,263股INTC**，约投入**1,000万美元**。Form 4交易代码为**P（购买）**，与公司授予股权奖励不同；申报于8月14日提交。
+
+按2026-10-30收盘$65.76估算，这一批股票账面价格比购买时低约**30.8%**。这只是指定时点的机械比较，**没有证明他已经卖出或实现亏损**。
+
+**核验资料：**[Intel CEO任命公告](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-25-000036/a03102025form8-kex991.htm)；[Intel 2025Q2经营改革与财报](https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results)；[陈立武2026年8月SEC Form 4](https://www.sec.gov/Archives/edgar/data/50863/000005086326000177/xslF345X05/form4.xml)；[2026Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)。
 `.trim(),
     },
     {
       id: "politicians",
-      topic: "公开交易",
-      question: "特朗普和佩洛西家庭都买入过INTC吗？他们还持有吗？",
+      topic: "公开交易与持仓",
+      question: "特朗普和佩洛西家庭买卖INTC的价格是多少？目前还持有吗？",
       answer: `
+## 两个家庭分别买了什么？现在还持有吗？
+
 **要区分个人/家庭持股与美国政府持股。** 对话中查询到的2026年公开披露显示，特朗普申报账户有INTC买入、随后也有卖出；佩洛西丈夫Paul Pelosi则申报了Intel普通股以及长期看涨期权购买。
 
 - **特朗普家庭申报：**查询到8笔买入和3笔卖出，后者分别发生于2026-04-27、05-18、08-21。公开财务披露主要给出**交易金额区间**，而非实时精确剩余股数，因此不能确认已清仓还是仍有余股。
@@ -101,14 +63,8 @@ export const intcConversation = {
 
 披露一般有滞后，且家庭申报不能总是确定由哪位成员实际执行。看涨期权也不是已经持有的普通股。这里是**当时对话对公开申报的整理，不是实时持仓追踪**。
 
-**官方文件：**[特朗普2026-09-17 OGE交易披露](https://extapps2.oge.gov/201/Presiden.nsf/PAS%2BIndex/0BDCCCE7DE13AEFA85258E8A002DE2B5/$FILE/Donald-J-Trump.09.17.2026-278T.pdf)；[佩洛西家庭5月PTR](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034836.pdf)；[佩洛西家庭7月PTR](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035143.pdf)。
-`.trim(),
-    },
-    {
-      id: "trade-prices",
-      topic: "交易价格",
-      question: "特朗普和佩洛西家庭大概以什么价格买入、卖出INTC？",
-      answer: `
+## 买入与卖出价格大概是多少？
+
 公开申报**没有给出全部精确股票成交价**。下面保留此前对话采用的交易日**普通股收盘参考价**，只用于理解大致交易时点，**不是实际成交回单**。
 
 **特朗普家庭：**
@@ -139,12 +95,12 @@ export const intcConversation = {
 
 **一句话比较：**对话中特朗普家庭普通股买入参考价主要落在**$44—65**、卖出参考价在**$85—108**；佩洛西家庭7月股票买入参考价约**$92.32**。两者不能被解读为精确成交价或仍在持仓的平均成本。
 
-**资料：**[OGE交易申报](https://extapps2.oge.gov/201/Presiden.nsf/PAS%2BIndex/0BDCCCE7DE13AEFA85258E8A002DE2B5/$FILE/Donald-J-Trump.09.17.2026-278T.pdf)；[House PTR](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035143.pdf)。
+**原始交易披露：**[特朗普2026年9月OGE Form 278-T](https://extapps2.oge.gov/201/Presiden.nsf/PAS%2BIndex/0BDCCCE7DE13AEFA85258E8A002DE2B5/$FILE/Donald-J-Trump.09.17.2026-278T.pdf)；[佩洛西家庭2026年5月PTR](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034836.pdf)；[2026年7月PTR](https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035143.pdf)。
 `.trim(),
     },
     {
       id: "nvidia",
-      topic: "战略合作",
+      topic: "NVIDIA战略投资",
       question: "NVIDIA投资Intel的50亿美元究竟是什么交易？与代工有什么关系？",
       answer: `
 **这笔钱是NVIDIA直接认购Intel新股的现金融资，不是NVIDIA在二级市场从其他投资者手里购买INTC。**
