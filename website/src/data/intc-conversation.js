@@ -39,7 +39,7 @@ export const intcConversation = {
 
 这段履历能证明他有经营芯片设计工具企业、了解客户与资本市场的经验；但**Cadence主要销售EDA软件，而Intel需要经营高投入、高折旧的先进晶圆制造**。成功经历有参考价值，不能直接等同于代工转型必然成功。
 
-**资料：**[Intel官方CEO任命公告](https://www.intc.com/news-events/press-releases/detail/1731/intel-appoints-lip-bu-tan-as-chief-executive-officer)。
+**资料：**[Intel官方CEO任命公告](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-25-000036/a03102025form8-kex991.htm)。
 `.trim(),
     },
     {
@@ -85,7 +85,7 @@ export const intcConversation = {
 
 **关键的后续验收：**Xeon是否连续数季保持利润、Foundry能否获得有约束的大型第三方量产订单、2027年的现金资本开支能否受控，以及是否需要再稀释股票。
 
-**原始资料：**[Intel 2025年二季度业绩及管理层说明](https://www.intc.com/news-events/press-releases/detail/1742/intel-reports-second-quarter-2025-financial-results)；[Intel 2026Q3财报](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)。
+**原始资料：**[Intel 2025年二季度业绩及管理层说明](https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results)；[Intel 2026Q3财报](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)。
 `.trim(),
     },
     {
