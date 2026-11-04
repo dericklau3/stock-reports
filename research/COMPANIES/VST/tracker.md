@@ -1,5 +1,7 @@
 # Vistra（VST）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View — 2026-10-20
@@ -28,7 +30,7 @@ Last updated: 2026-10-20
 
 - [2026-10-20完整深度研究](deep-research/2026-10-20-deep-research.md)
 - [2026-10-20可复算研究记录](research-records/2026-10-20-research.json)
-- [2026-10-11旧研究](deep-research/2026-10-11-deep-research-update.md)
+- 2026-10-11旧研究（旧版已清理）
 - [2026-10-11旧计算记录](research-records/2026-10-11-research.json)
 
 ---
@@ -51,7 +53,7 @@ Last updated (historical snapshot): 2026-10-11
 
 ## Latest Research
 
-[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
+2026-10-11完整深研（旧版已清理）；[可复算记录](research-records/2026-10-11-research.json)；[真实运行的验收结果](research-records/2026-10-11-validation.json)。
 
 ## 2026-10-11 新增深研更新块（保留旧文）
 
@@ -346,7 +348,7 @@ Last updated (historical snapshot): 2026-10-11
 - IR新闻索引未出现新实质进展不证明绝对没有其他重大事件；并购交割未核实
 - Q2电话会第三方转录并非完整官方音频独立核验；同源公告转载不当独立证据
 
-新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+新报告拟存：`2026-10-11-deep-research.md`（旧版已清理）；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
 
 
 ## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）

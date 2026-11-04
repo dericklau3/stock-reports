@@ -1,5 +1,7 @@
 # Tempus AI（TEM）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View
@@ -46,7 +48,7 @@ Tempus已存在真实医生/保险检测及药企数据付款两条业务流；2
 
 - **[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)**
 - **[2026-10-20来源和公式](research-records/2026-10-20-research.json)**
-- [2026-10-11旧版完整报告](deep-research/2026-10-11-deep-research-update.md)
+- 2026-10-11旧版完整报告（旧版已清理）
 - [2026-10-11旧版计算记录](research-records/2026-10-11-research.json)
 
 ---
@@ -69,10 +71,10 @@ Historical Last updated: 2026-10-11
 
 ## Latest Research
 
-[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+2026-10-11完整深研（旧版已清理）；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11追加研究
 
-观点：中性等待，经营建设性但价格和结构约束更严格。保留[2026-05-12](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md)、7月20日事件历史；[新拟稿](deep-research/2026-10-11-deep-research-update.md)。
+观点：中性等待，经营建设性但价格和结构约束更严格。保留[2026-05-12](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/TEM/deep-research/2026-05-12-deep-research.md)、7月20日事件历史；新拟稿（旧版已清理）。
 
 Q2收入382.486M、数据收入93.153M增28%、调整EBITDA8.044M；净利润5.642M含证券未实现收益98.5M，GAAP经营仍-75.913M。H1普通现金流-80.802M，扣设备和软件FCF-101.961M。SBC106.827M另雇主税5.051M。新票据实际460M而非旧400M，旧设施已还；仍有750M2030票据/Google票据。
 
@@ -189,7 +191,7 @@ Tempus 是一个差异化的精准医疗平台，拥有规模化诊断业务、�
 
 ## Research Files
 
-- `deep-research/2026-05-12-deep-research.md`
+- `2026-05-12-deep-research.md`（旧版已清理）
 - `earnings-tracking/2026-07-20-personalis-acquisition-tracking.md`
 - `tracker.md` updated 2026-07-20 with Personalis acquisition tracking and temporary price-discipline tightening.
 

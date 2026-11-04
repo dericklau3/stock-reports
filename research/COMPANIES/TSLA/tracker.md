@@ -1,5 +1,7 @@
 # Tesla（TSLA）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-23
 
 ## Current Research View
@@ -11,7 +13,7 @@ Last updated: 2026-10-23
 - **[2026-10-23完整中文九章节研究](deep-research/2026-10-23-deep-research.md)**
 - **[2026-10-23数据/事件/资本/估值底稿](research-records/2026-10-23-research.md)**
 - **[独立可执行反向估值计算脚本](research-records/2026-10-23-valuation-reverse.js)**和**[来源及时点输入与实际输出](research-records/2026-10-23-valuation-reverse-output.json)**
-- 历史完整研究：[2026-10-20](deep-research/2026-10-20-deep-research.md)、[2026-10-11](deep-research/2026-10-11-deep-research-update.md)。不覆盖既有报告或估值资料。
+- 历史完整研究：2026-10-20（旧版已清理）、2026-10-11（旧版已清理）。不覆盖既有报告或估值资料。
 
 ## Current Main Thesis
 
@@ -52,11 +54,11 @@ Last updated: 2026-10-23
 
 ## Latest Research
 
-[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[研究核验与估值底稿](research-records/2026-10-20-research.md)。历史：[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)、[旧JSON记录](research-records/2026-10-11-research.json)、[旧验收结果](research-records/2026-10-11-validation.json)。
+2026-10-20完整深研（旧版已清理）；[研究核验与估值底稿](research-records/2026-10-20-research.md)。历史：2026-10-11完整深研（旧版已清理）、[旧JSON记录](research-records/2026-10-11-research.json)、[旧验收结果](research-records/2026-10-11-validation.json)。
 
 ## 2026-10-20 新增完整深研（历史持续保留）
 
-**本次完整报告**：[2026-10-20深度个股研究](deep-research/2026-10-20-deep-research.md)。**关键来源及计算**：[2026-10-20核验底稿](research-records/2026-10-20-research.md)。
+**本次完整报告**：2026-10-20深度个股研究（旧版已清理）。**关键来源及计算**：[2026-10-20核验底稿](research-records/2026-10-20-research.md)。
 
 ### 旧假设→新事实→研究影响（日期明确）
 - **研究/报价**：旧报告2026-10-11、报价2026-10-09纽约常规收盘$382.70；新研究2026-10-20、最后可用纽约常规交易日2026-10-19收盘**$368.06**，变化**−3.82545%**。来源https://stockanalysis.com/stocks/tsla/history/。这只是价格变化，不是已实现经营恶化的证明。
@@ -192,7 +194,7 @@ Last updated: 2026-10-23
 - 当前与历史Forward P/E以及财报前共识未取得
 - Q3 BusinessWire本次访问超时；使用保存的公司公告Yahoo转载原文，非独立确认
 
-新报告拟存：`deep-research/2026-10-11-deep-research.md`；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
+新报告拟存：`2026-10-11-deep-research.md`（旧版已清理）；原历史文链接保留。研究未发布；父代理负责原件复核、合并和线上验收。
 
 
 ## 历史追踪档案（此前版本原文保留，旧日期与估值不是当前判断）
@@ -302,8 +304,8 @@ TSLA 仍是“EV/制造 + 能源储能 + FSD/Robotaxi/Cybercab/Optimus/real-worl
 
 ## Research Files
 
-- `deep-research/2026-05-13-deep-research.md`
-- `deep-research/2026-06-23-deep-research.md`
+- `2026-05-13-deep-research.md`（旧版已清理）
+- `2026-06-23-deep-research.md`（旧版已清理）
 - `earnings-tracking/2026-Q2-earnings-tracking.md`
 - `tracker.md` updated 2026-07-23 with Q2 2026 earnings tracking.
 
