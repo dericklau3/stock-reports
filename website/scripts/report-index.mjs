@@ -46,13 +46,9 @@ export function extractInvestmentView(trackerMarkdown, newestReportMarkdown = ""
       const label = ratingFromText(match[1]);
       if (label) return label;
     }
-    const section = head.match(/^##\s+Current Research View[^\n]*\n([\s\S]*?)(?=^##\s+|$)/im);
-    if (section) {
-      const first = section[1].split("\n").map((line) => line.trim())
-        .find((line) => line && !line.startsWith("#"));
-      const label = first ? ratingFromText(first) : "";
-      if (label) return label;
-    }
+    const sectionText = extractSection(head, ["Current Research View", "Current view"]);
+    const label = sectionText ? ratingFromText(sectionText) : "";
+    if (label) return label;
   }
   return "研究中";
 }
