@@ -125,23 +125,6 @@ Lemonade 是面向个人用户的数字保险公司，通过自营保险子公�
 采用 2025-11-04 至 2026-11-04 为近十二个月核查窗口，并追踪在此之前仍影响公司当前承保和资本结构的事项。严格保留影响保险风险、资金成本、业务商业化或财务假设的独立 A 级事件，普通州拓张、产品宣传、管理层例会只留研究底稿或第 3 节（若有核心项目执行意义）。
 
 <div class="event-roadmap" aria-label="重大事件时间轴">
-<section class="event-month" data-month="2025-11">
-<h3 class="event-month-heading">2025-11</h3>
-<details class="event-entry">
-<summary><span class="event-entry-title">2025 Q3 确认经营规模再增长</span><span class="event-entry-preview">大额保费增长先于 GAAP 盈利，确立后续盈利路径的比较基数</span></summary>
-<div class="event-detail-content">
-
-**公告日期：** 2025-11-05。
-
-**公布了什么：** 公司公布 2025 Q3 财务和经营数据，延续保费规模扩张、调整后盈利改善趋势；本次不把二手记述中的利润变化冒充一个未单独复核的精确金额。
-
-**实际意义：** 形成后续高速增长的真实基数；当时已披露增长仍不等于持续 GAAP 盈利。
-
-**原始来源：** [Lemonade 2025 Q3 IR 财报目录](https://www.lemonade.com/investor/quarterly-results)。
-
-</div>
-</details>
-</section>
 <section class="event-month" data-month="2026-01">
 <h3 class="event-month-heading">2026-01</h3>
 <details class="event-entry">
