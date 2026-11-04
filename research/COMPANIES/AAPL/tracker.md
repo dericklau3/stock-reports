@@ -1,5 +1,7 @@
 # Apple（AAPL）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View
@@ -8,7 +10,7 @@ Last updated: 2026-10-20
 
 - **[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)**
 - **[2026-10-20计算/来源与事件核查底稿](research-records/2026-10-20-research.json)**
-- [2026-10-11旧深研](deep-research/2026-10-11-deep-research-update.md)
+- 2026-10-11旧深研（旧版已清理）
 - [2026-10-11旧模型](research-records/2026-10-11-research.json)
 
 ## Current Main Thesis and Economic Cash Flow
@@ -80,11 +82,11 @@ Historical last updated: 2026-10-11
 
 ## Latest Research
 
-[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+2026-10-11完整深研（旧版已清理）；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11追加研究更新（保留旧历史）
 
 - 研究观点：中性等待；由2026-05-20建设性但需观察调整。理由是当前参考价格更高、一次性退款须正常化、旧未来价没有折现，非经营转坏结论。
-- 历史：[2026-05-20深研](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AAPL/deep-research/2026-05-20-deep-research.md)；新增：[2026-10-11深研](deep-research/2026-10-11-deep-research-update.md)。
+- 历史：[2026-05-20深研](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AAPL/deep-research/2026-05-20-deep-research.md)；新增：2026-10-11深研（旧版已清理）。
 - 事实变化：FY2026 Q3收入109417百万美元、iPhone54252、服务30739；Q3 EPS2.02含退款0.11，50.1%毛利率含约2个百分点退款。Siri AI于9月14日开始英文beta推送，付费/换机增量未确认。John Ternus 9月1日接任CEO；旧报告遗漏交接公告，不写成10月突发。
 - 价格桥：298.97 → 约336.64美元（2026-10-09 regular close），+12.6%；父代理已核验Nasdaq收盘336.64，Exa不同快照336.63不采用。市值按7月17日14594.180百万实际股数，不能当10月最新实股。
 - 模型桥：FY2027收入×正常化GAAP净利率÷预测稀释股数×P/E，10%折现到研究日；151–195 /234–294 /323–402美元。利润含SBC利息，权益法不重复加现金扣债。未计股息；预测股数13900–14700百万和回购是研究假设。旧未折现172–221/266–326/352–468不再作为今天价值直接比较。
@@ -172,4 +174,4 @@ AAPL 仍是全球最强消费科技生态之一。FY2026 Q2 revenue 1112 亿美�
 
 ## Research Files
 
-- `deep-research/2026-05-20-deep-research.md`
+- `2026-05-20-deep-research.md`（旧版已清理）

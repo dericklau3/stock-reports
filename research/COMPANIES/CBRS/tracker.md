@@ -1,5 +1,7 @@
 # Cerebras Systems（CBRS）研究跟踪
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-03
 
 ## 当前完整研究状态（2026-11-03）
@@ -36,14 +38,14 @@ Last updated: 2026-11-03
 
 中性偏建设性，但仍需现金回报验证。2026-10-19收盘$120.66较旧价$164.17下降26.5%，降低估值要求；尚未有Q3新财报证明2026全年指引和资本效率改善。OpenAI 750MW已确认、OpenAI GPT-5.6 Sol Ultrafast有已披露应用，但新模型长期路由及收益仍未核实；最强反方是资本投入高、客户集中及高退出收入倍数；最强看多反证是AMD/AWS渠道规模化使用可能超预期。
 
-- 最新报告：[2026-10-20 完整深研](deep-research/2026-10-20-deep-research.md)；历史：[2026-10-10 完整深研](deep-research/2026-10-10-deep-research.md)
+- 最新报告：2026-10-20 完整深研（旧版已清理）；历史：2026-10-10 完整深研（旧版已清理）
 - 本轮底稿：[2026-10-20来源/事件/模型](research-records/2026-10-20-research.md)；历史：[2026-10-10 估值 JSON](valuation/2026-10-10-valuation.json)
 - 原始股数：8/5 A112,247,109＋B111,601,424＋N13,715,508＝237,564,041；三类经济权利相同，投票/转换不同，非实时FD。
 - 最新财报：2026Q2/H1，期末6/30，8/12披露。10/10读回SEC submissions，最新文件10/7 Form4，未见更晚10-Q或8-K。该结论仅针对所读SEC清单，不代表全部新闻/社交披露。
 
 ## 2026-10-20 完整深研变更（追加历史，不覆盖10月10日）
 
-**本次报告：**[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[可复核估值、事件候选与原始来源覆盖底稿](research-records/2026-10-20-research.md)。
+**本次报告：**2026-10-20完整深研（旧版已清理）；[可复核估值、事件候选与原始来源覆盖底稿](research-records/2026-10-20-research.md)。
 
 ### 观点、价格、财务与模型对照
 
@@ -284,11 +286,11 @@ Base需AMD/Bedrock生产、OpenAIramp、多客户付费和稀释可控；未来�
 
 ## Research Files
 
-- `deep-research/2026-06-24-deep-research.md`
-- `deep-research/2026-07-07-deep-research-v2.md`
+- `2026-06-24-deep-research.md`（旧版已清理）
+- `2026-07-07-deep-research-v2.md`（旧版已清理）
 - `earnings-tracking/2026-Q2-earnings-tracking.md`
-- `deep-research/2026-08-25-deep-research-update.md`
-- `deep-research/2026-10-08-deep-research-update.md`
+- `2026-08-25-deep-research-update.md`（旧版已清理）
+- `2026-10-08-deep-research-update.md`（旧版已清理）
 
 ## Sources
 

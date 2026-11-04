@@ -1,5 +1,7 @@
 # CRCL Research Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-10-20
 
 ## Current Research View · 2026-10-20
@@ -10,9 +12,9 @@ Last updated: 2026-10-20
 
 - **[2026-10-20九章节完整深研](deep-research/2026-10-20-deep-research.md)**
 - **[2026-10-20 GAAP/股本/USDC/估值和事件底稿](research-records/2026-10-20-research.json)**
-- [2026-10-11旧深研](deep-research/2026-10-11-deep-research-update.md)
+- 2026-10-11旧深研（旧版已清理）
 - [2026-10-11旧记录](research-records/2026-10-11-research.json)
-- [2026-10-06历史完整深研](deep-research/2026-10-06-deep-research-update.md)
+- 2026-10-06历史完整深研（旧版已清理）
 
 ### 核心经营、财务和现金
 
@@ -79,7 +81,7 @@ Historical last updated: 2026-10-11
 
 ## Latest Research
 
-[2026-10-11完整深研](deep-research/2026-10-11-deep-research-update.md)；[可复算记录](research-records/2026-10-11-research.json)。
+2026-10-11完整深研（旧版已清理）；[可复算记录](research-records/2026-10-11-research.json)。
 ## 2026-10-11 深研更新（追加历史）
 - 观点：中性等待；原增长逻辑更需验证，不把数据商盘中涨幅当当前估值支持。
 - 真正变化：官方日期9月24日75.24B→10月8日约73.0B，-2.98%；低于Q2平均约4.60%。7日9.70−10.51=-0.81B，30日41.28−42.62=-1.34B，修正此前正净发行状态。官方储备73.2B属于客户偿付，不是股东净现金。
@@ -89,7 +91,7 @@ Historical last updated: 2026-10-11
 - 改判：平均余额连续两季下降或剔除预售留存<35%–38%转弱；外部平台持续净利润、留存约40%及每股增厚被验证才上调。新快照不证明储备信用受损。
 - 申报变化：CapEdge完整索引读到最新10-Q8月5日、8-K9月25日，近期开示主要Form4；不声称全网无新信息。
 - 仍缺：8月鉴证PDF正文403、Q2完整原件副本、Binance费率/Tazapay完整财务与交割、token价值分配、Q&A与日频forward P/E。
-- 历史链接：[10月6日](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md)、[7月10日](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-07-10-deep-research.md)、[Q2追踪](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/earnings-tracking/2026-Q2-earnings-tracking.md)。新：[10月11日](deep-research/2026-10-11-deep-research-update.md)。
+- 历史链接：[10月6日](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-10-06-deep-research-update.md)、[7月10日](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/deep-research/2026-07-10-deep-research.md)、[Q2追踪](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/CRCL/earnings-tracking/2026-Q2-earnings-tracking.md)。新：10月11日（旧版已清理）。
 - 证据与估值绝对路径：`/home/ubuntu/.hermes/cache/scratch/stock-reports-batch-research/CRCL/transparency.txt`、`usdc.txt`、`transparency-flow-snippets.json`、`filings.txt`、`previous-verified-research.md`、`research-record.json`、`calculate.py`、`validation.json`。尚有价格与原件缺口，需父代理出版前补核。
 
 父代理报价补核：Nasdaq 2026-10-09常规收盘84.51美元；此前未取得收盘为研究阶段限制，本次已解决。

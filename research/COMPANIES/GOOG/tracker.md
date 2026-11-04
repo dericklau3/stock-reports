@@ -1,10 +1,12 @@
 # Alphabet（GOOG）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-04
 
 ## 当前完整研究｜2026-11-04（现行）
 
-**最新完整报告：** [2026-11-04 七章节深研](deep-research/2026-11-04-deep-research.md)；[2026-11-04原始来源、估值输入与事件筛选底稿](research-records/2026-11-04-research.md)。[2026-10-29旧版](deep-research/2026-10-29-deep-research.md)以及更早版本保留历史，不回写或删除其预测。
+**最新完整报告：** [2026-11-04 七章节深研](deep-research/2026-11-04-deep-research.md)；[2026-11-04原始来源、估值输入与事件筛选底稿](research-records/2026-11-04-research.md)。2026-10-29旧版（旧版已清理）以及更早版本保留历史，不回写或删除其预测。
 
 - **投资观点：中性偏建设性，估值安全边际尚待现金流验证。** 公司2026Q3已经实现搜索广告和Cloud大幅营业利润，GOOG价格财报后回落，但2026年资本扩张使季度自由现金流明显为负，长期资本投入、关联方RPO与优先股稀释不宜忽视。
 - **最新证券与股价：** Alphabet Inc. CIK1652044；GOOG＝Class C无普通投票权，GOOGL＝Class A普通投票权，B类高投票权非上市经济股。GOOG **2026-11-03美东常规收盘$278.27**（https://finance.yahoo.com/quote/GOOG/history/），较上次使用的2026-10-28财报前收盘$321.89跌约13.55%；不是财报当天盘后成交价。
@@ -47,11 +49,11 @@ Last updated: 2026-11-04
 **最新2028条件估值**：2026-10-29至2028-12-31折现2.17385年、研究者股权资本必要回报率12%、归属普通股**正常化税后净利润**（剔非经常投资证券估值变动，含SBC/税/利息/优先股息）×2028退出P/E÷未来经济股。保守**$113.22–164.92**、基础**$210.64–318.91**（独立中枢**$250.43**）、乐观**$393.56–619.06**。基准为321.89 regular close，见财报后盘后289.74属于不同交易时段；三档情景**不是公司指引、分析师目标价或完整现金流贴现结果**。旧2026-10-20估值使用Enterprise EV/EBIT（基础$275.60–368.86），本次使用equity_pe并根据Q3新财报、股份和资本成本重设，**不能把估值差异归因于仅仅股价**。计算按公开P0公式由独立程序复算，原仓库Python引擎和P2 freeze在本次会话未运行，已列为验收缺口；不能假装已认证。
 
 **本次交付**：
-- [2026-10-29完整九章研究](deep-research/2026-10-29-deep-research.md)
+- 2026-10-29完整九章研究（旧版已清理）
 - [2026-10-29原始资料、全部事件候选/缺口和估值复算底稿](research-records/2026-10-29-research.md)
 - [2026-10-29估值条件JSON](research-records/2026-10-29-valuation-input.json)
 - [2026-10-29程序数值输出JSON](research-records/2026-10-29-valuation-output.json)
-- [2026-10-20历史报告](deep-research/2026-10-20-deep-research.md)（旧报告原文未改）
+- 2026-10-20历史报告（旧版已清理）（旧报告原文未改）
 
 ## 2026-10-29 相对2026-10-20研究的变化记录
 
@@ -88,11 +90,11 @@ Last updated: 2026-11-04
 
 ## Latest Research
 
-[2026-10-20完整深研](deep-research/2026-10-20-deep-research.md)；[当日证据来源、资本结构与估值计算](research-records/2026-10-20-research.md)。历史：[2026-10-11深研](deep-research/2026-10-11-deep-research-update.md)及[旧复算JSON](research-records/2026-10-11-research.json)。
+2026-10-20完整深研（旧版已清理）；[当日证据来源、资本结构与估值计算](research-records/2026-10-20-research.md)。历史：2026-10-11深研（旧版已清理）及[旧复算JSON](research-records/2026-10-11-research.json)。
 
 ## 2026-10-20 新完整深度研究（保留2026-10-11及更早原文）
 
-**完整新报告**：[2026-10-20](deep-research/2026-10-20-deep-research.md)，**研究核验与可复算底稿**：[2026-10-20研究原始记录](research-records/2026-10-20-research.md)。
+**完整新报告**：2026-10-20（旧版已清理），**研究核验与可复算底稿**：[2026-10-20研究原始记录](research-records/2026-10-20-research.md)。
 
 ### 旧论点/时间 → 新事实/日期 → 当前判断变化
 
@@ -231,4 +233,4 @@ GOOG 的 2026Q1 证明 AI 正在增强 Search、Cloud 和订阅业务，而不�
 
 ## Research Files
 
-- `deep-research/2026-05-20-deep-research.md`
+- `2026-05-20-deep-research.md`（旧版已清理）

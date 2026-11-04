@@ -1,5 +1,7 @@
 # AeroVironment（AVAV）Tracker
 
+**报告留存说明：** 每只股票仅保留最新一份报告；历史数据在本 Tracker、研究底稿和 Git 提交历史中留存。
+
 Last updated: 2026-11-04
 
 ## Current Research View — 2026-11-04
@@ -38,7 +40,7 @@ Last updated: 2026-11-04
 
 ## Latest Research
 
-[2026-10-19完整深研](deep-research/2026-10-19-deep-research.md)；[当前估值输入](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/AVAV/research-records/2026-10-19-valuation-inputs.json)；[复算结果](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/AVAV/research-records/2026-10-19-valuation-results.json)；[事件覆盖及缺口](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/AVAV/research-records/2026-10-19-event-coverage.json)。旧报告及底稿保留为历史，不是当前结论。
+2026-10-19完整深研（旧版已清理）；[当前估值输入](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/AVAV/research-records/2026-10-19-valuation-inputs.json)；[复算结果](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/AVAV/research-records/2026-10-19-valuation-results.json)；[事件覆盖及缺口](https://github.com/dericklau3/stock-reports/blob/main/research/COMPANIES/AVAV/research-records/2026-10-19-event-coverage.json)。旧报告及底稿保留为历史，不是当前结论。
 
 ## 2026-10-19 完整深研更新（新版九章模板）
 
@@ -60,7 +62,7 @@ Last updated: 2026-11-04
 ## 2026-10-11 完整研究新增块（保留此前历史）
 
 - 观点：结构性看好、估值与兑现仍需观察；最强反方为集团调整EBITDA同比下降和FCF为负。
-- 新报告：[2026-10-11完整更新](deep-research/2026-10-11-deep-research-update.md)；历史：[2026-10-09](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AVAV/deep-research/2026-10-09-deep-research.md)，此前7月8日、9月11日继续保留。
+- 新报告：2026-10-11完整更新（旧版已清理）；历史：[2026-10-09](https://github.com/dericklau3/stock-reports/blob/7c05fd1d8c3401e619e0441e49c48edc1fa8bac0/research/COMPANIES/AVAV/deep-research/2026-10-09-deep-research.md)，此前7月8日、9月11日继续保留。
 - 真正变化：常规收盘137.60→137.11美元；没有新的决定性季度财报证据，不将价格变动解释为经营预警。SEC最新全类型申报检查受403阻断，不能写成“没有新申报”。
 - 方法修正：2028-04-30目标价按12%和1.552年折现。熊65.35–85.61、基础115.32–151.77、牛191.79–233.25美元；以前78–102/138–181/229–278为未折现未来情景，保留但不再当今日内在价值。
 - 股本：8月1日50.822963百万实际普通股、49.822595百万季度加权；未来52–53百万。747.5M可转债本金保留，转换本金现金结算；租金留在成本，不再重复加租债。
