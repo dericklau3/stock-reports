@@ -54,8 +54,8 @@
     "LMND": {
       "quarter": "2026 Q3",
       "date": "2026-11-05",
-      "status": "scheduled",
-      "source": "https://www.lemonade.com/investor/events"
+      "status": "reported",
+      "source": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000064/lmnd-20261105.htm"
     },
     "MSFT": {
       "quarter": "FY2027 Q1",
