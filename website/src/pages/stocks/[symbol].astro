@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import index from "../../data/report-index.json";
 import { renderMarkdown, reportUrl, withBase } from "../../lib/markdown.js";
 import { intcConversation } from "../../data/intc-conversation.js";
+import { intcNotablePurchases } from "../../data/intc-notable-purchases.js";
 
 export function getStaticPaths() {
   return index.companies.map((company) => ({
@@ -15,6 +16,8 @@ const { company } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const topics = company.symbol === "INTC" ? intcConversation.entries : [];
 const topicCutoff = company.symbol === "INTC" ? intcConversation.researchCutoff : "";
+const notableBuyers = company.symbol === "INTC" ? intcNotablePurchases.people : [];
+const formatPrice = (value) => value === null ? "—" : "$" + value.toFixed(2);
 const investmentView = company.investmentView || "研究中";
 const investmentTone = /看空|偏空/.test(investmentView)
   ? "negative"
@@ -67,19 +70,75 @@ const viewMeaning = investmentView === "研究中"
   </section>
 
   <section class="two-column">
-    <aside class="report-list-panel">
-      <h2>研究报告</h2>
-      <div class="report-list">
-        {
-          company.reports.map((report) => (
-            <a href={reportUrl(base, company.symbol, report.fileName)}>
-              <span>{report.date || report.slug}</span>
-              <strong>{report.title}</strong>
-            </a>
-          ))
-        }
-      </div>
-    </aside>
+    <div class="detail-sidebar">
+      <aside class="report-list-panel">
+        <h2>研究报告</h2>
+        <div class="report-list">
+          {
+            company.reports.map((report) => (
+              <a href={reportUrl(base, company.symbol, report.fileName)}>
+                <span>{report.date || report.slug}</span>
+                <strong>{report.title}</strong>
+              </a>
+            ))
+          }
+        </div>
+      </aside>
+      {notableBuyers.length > 0 && (
+        <section class="celebrity-panel" id="celebrity-purchases" aria-labelledby="celebrity-title">
+          <div class="celebrity-head">
+            <h2 id="celebrity-title">名人购买</h2>
+            <span>{notableBuyers.length} 组记录</span>
+          </div>
+          <p class="celebrity-intro">INTC 历史公开交易。点击姓名可展开逐笔记录。</p>
+          <div class="celebrity-list">
+            {notableBuyers.map((buyer) => (
+              <details class="celebrity-entry" id={"purchase-" + buyer.id}>
+                <summary>
+                  <span class="celebrity-name">{buyer.name}</span>
+                  <small class="celebrity-identity">{buyer.identity}</small>
+                  <span class="celebrity-average">
+                    <strong>{formatPrice(buyer.average)}</strong>
+                    <small>{buyer.averageLabel}</small>
+                  </span>
+                </summary>
+                <div class="celebrity-content">
+                  <p class="celebrity-summary">{buyer.summary}</p>
+                  <p class="celebrity-subheading">2026 年交易记录 · 美元/股</p>
+                  <div class="celebrity-table-scroll">
+                    <table class="celebrity-trades">
+                      <thead><tr><th>日期</th><th>交易</th><th>价格</th></tr></thead>
+                      <tbody>
+                        {buyer.trades.map((trade) => (
+                          <>
+                            <tr>
+                              <td>{trade.date.slice(5)}</td>
+                              <td>{trade.kind}</td>
+                              <td class="celebrity-price">{formatPrice(trade.price)}</td>
+                            </tr>
+                            {trade.detail && (
+                              <tr class="celebrity-detail-row"><td colspan="3">{trade.detail}</td></tr>
+                            )}
+                          </>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="celebrity-basis">{buyer.averageBasis}</p>
+                  <p class="celebrity-note">{buyer.note}</p>
+                  <div class="celebrity-sources">
+                    {buyer.sources.map((source) => (
+                      <a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a>
+                    ))}
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
+          <p class="celebrity-disclaimer">资料截至 {intcNotablePurchases.asOf}；参考均价不等于实际成交均价或当前持仓成本。</p>
+        </section>
+      )}
+    </div>
 
     <article class="topic-panel" aria-labelledby="topic-panel-heading">
       <div class="topic-panel-head">
@@ -254,4 +313,40 @@ const viewMeaning = investmentView === "研究中"
     .topic-entry > summary { padding: 1rem .8rem; gap: .65rem; }
     .topic-panel { padding: 1rem; }
   }
+
+  .detail-sidebar { display: grid; align-content: start; gap: 1.1rem; min-width: 0; }
+  .detail-sidebar .report-list-panel { position: static; }
+  .celebrity-panel { min-width: 0; padding: 1rem; border: 1px solid #dce7df; border-radius: 12px; background: #fff; scroll-margin-top: 5rem; }
+  .celebrity-head { display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+  .celebrity-head h2 { margin: 0; font-size: 1rem; color: #26382d; }
+  .celebrity-head > span { padding: .22rem .45rem; border-radius: 99px; background: #eef4ef; font-size: .69rem; color: #557362; font-weight: 750; white-space: nowrap; }
+  .celebrity-intro { margin: .65rem 0 .8rem; color: #718078; font-size: .76rem; line-height: 1.6; }
+  .celebrity-list { display: grid; gap: .55rem; }
+  .celebrity-entry { min-width: 0; border: 1px solid #e2eae3; border-radius: 9px; overflow: hidden; }
+  .celebrity-entry[open] { border-color: #a2c7ae; }
+  .celebrity-entry > summary { position: relative; display: grid; gap: .22rem; cursor: pointer; list-style: none; padding: .73rem 1.55rem .73rem .75rem; }
+  .celebrity-entry > summary::-webkit-details-marker { display: none; }
+  .celebrity-entry > summary::after { content: "+"; position: absolute; right: .65rem; top: .7rem; color: #267b55; font-size: 1.05rem; }
+  .celebrity-entry[open] > summary::after { content: "−"; }
+  .celebrity-entry > summary:hover { background: #f8faf8; }
+  .celebrity-name { color: #273b30; font-size: .88rem; font-weight: 800; }
+  .celebrity-identity { color: #859389; font-size: .69rem; line-height: 1.4; }
+  .celebrity-average { display: flex; align-items: baseline; flex-wrap: wrap; gap: .38rem; margin-top: .25rem; }
+  .celebrity-average strong { color: #126d4e; font-size: 1.16rem; font-variant-numeric: tabular-nums; }
+  .celebrity-average small { color: #657b6d; font-size: .7rem; }
+  .celebrity-content { padding: .7rem .7rem .85rem; border-top: 1px solid #e8eee8; }
+  .celebrity-summary, .celebrity-basis, .celebrity-note { margin: 0 0 .65rem; color: #52675a; font-size: .75rem; line-height: 1.6; }
+  .celebrity-subheading { margin: .75rem 0 .35rem; color: #2a5440; font-size: .72rem; font-weight: 800; }
+  .celebrity-table-scroll { overflow-x: auto; }
+  .celebrity-trades { width: 100%; border-collapse: collapse; font-size: .7rem; font-variant-numeric: tabular-nums; }
+  .celebrity-trades th { color: #647b6b; text-align: left; font-weight: 750; }
+  .celebrity-trades th, .celebrity-trades td { padding: .33rem .15rem; border-bottom: 1px solid #edf1ed; }
+  .celebrity-trades th:last-child, .celebrity-price { text-align: right; white-space: nowrap; }
+  .celebrity-trades td:first-child, .celebrity-trades td:nth-child(2) { white-space: nowrap; }
+  .celebrity-trades .celebrity-detail-row td { border-bottom: 1px solid #edf1ed; padding: .08rem .15rem .4rem; color: #8b978e; font-size: .67rem; line-height: 1.5; white-space: normal; }
+  .celebrity-basis { margin-top: .7rem; }
+  .celebrity-note { color: #77867a; }
+  .celebrity-sources { display: flex; gap: .45rem .65rem; flex-wrap: wrap; }
+  .celebrity-sources a { color: #126d4e; text-decoration: underline; text-underline-offset: 2px; font-size: .7rem; }
+  .celebrity-disclaimer { margin: .85rem 0 0; color: #819085; font-size: .7rem; line-height: 1.6; }
 </style>
