@@ -7,9 +7,9 @@ const page = await readFile(new URL("../src/pages/stocks/INTC/conversation.astro
 const stockPage = await readFile(new URL("../src/pages/stocks/[symbol].astro", import.meta.url), "utf8");
 const reportPage = await readFile(new URL("../src/pages/reports/[symbol]/[report].astro", import.meta.url), "utf8");
 
-test("Intel conversation combines related topics into three sourced sections", () => {
-  assert.equal(intcConversation.entries.length, 3);
-  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 3);
+test("Intel conversation combines related topics into four sourced sections", () => {
+  assert.equal(intcConversation.entries.length, 4);
+  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 4);
   for (const item of intcConversation.entries) {
     assert.ok(item.id && item.topic && item.question, "Q&A metadata required");
     assert.ok(item.answer.length > 200, item.id + " should provide useful detail");
@@ -46,7 +46,7 @@ test("dated prices and holdings are described as historical, not real-time", () 
 
 
 test("removed valuation overview and merged CEO and political-trading questions", () => {
-  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "politicians", "nvidia"]);
+  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "politicians", "nvidia", "intel-18a"]);
   const ceo = intcConversation.entries[0].answer;
   assert.match(ceo, /什么时候上任/);
   assert.match(ceo, /经营改革|重要行动/);
@@ -56,4 +56,17 @@ test("removed valuation overview and merged CEO and political-trading questions"
   assert.match(trades, /2026-08-21/);
   assert.match(trades, /\$92\.32/);
   assert.doesNotMatch(page, /question-one-valuation/);
+});
+
+
+test("18A discussion integrates the process, Panther Lake, yield, and industry baseline", () => {
+  const topic = intcConversation.entries.find(item => item.id === "intel-18a");
+  assert.ok(topic);
+  assert.equal(topic.researchCutoff, "2026-11-05");
+  for (const keyword of ["RibbonFET", "PowerVia", "Core Ultra Series 3", "80%", "85%", "行业标准", "良率", "第三方"]) {
+    assert.ok(topic.answer.includes(keyword), "Missing " + keyword);
+  }
+  assert.match(topic.answer, /未公布具体百分比/);
+  assert.match(topic.answer, /没有适用于所有芯片/);
+  assert.match(page, /item\.researchCutoff \|\| intcConversation\.researchCutoff/);
 });
