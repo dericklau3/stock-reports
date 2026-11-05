@@ -26,3 +26,11 @@ test("unannounced earnings are not labeled as reported", () => {
 test("deleted IAU research has no earnings entry", () => {
   assert.equal(Object.hasOwn(earnings.entries, "IAU"), false);
 });
+
+test("LMND Q3 2026 earnings are marked reported after the November 5 release", () => {
+  const lmnd = earnings.entries.LMND;
+  assert.equal(lmnd.quarter, "2026 Q3");
+  assert.equal(lmnd.date, "2026-11-05");
+  assert.equal(lmnd.status, "reported");
+  assert.match(lmnd.source, /^https:\/\/www\.sec\.gov\/Archives\/edgar\/data\/1691421\//);
+});
