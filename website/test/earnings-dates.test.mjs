@@ -5,7 +5,7 @@ import test from "node:test";
 const earnings = JSON.parse(await readFile(new URL("../src/data/earnings-q3-2026.json", import.meta.url), "utf8"));
 
 test("each tracked 2026 Q3 reporting-season stock has a verified date state", () => {
-  const symbols = "AAPL AMZN AVAV CBRS CRCL GOOG HOOD IAU INTC LMND MSFT NVDA ORCL PL QCOM RKLB SKHY SPCX TEM TSLA VST".split(" ");
+  const symbols = "AAPL AMZN AVAV CBRS CRCL GOOG HOOD INTC LMND MSFT NVDA ORCL PL QCOM RKLB SKHY SPCX TEM TSLA VST".split(" ");
   assert.deepEqual(Object.keys(earnings.entries).sort(), symbols.sort());
   for (const [symbol, info] of Object.entries(earnings.entries)) {
     assert.ok(info.quarter, symbol + " missing fiscal quarter");
@@ -19,7 +19,10 @@ test("each tracked 2026 Q3 reporting-season stock has a verified date state", ()
   }
 });
 
-test("unannounced earnings and gold trust are not labeled as reported", () => {
+test("unannounced earnings are not labeled as reported", () => {
   for (const symbol of ["AVAV", "PL"]) assert.equal(earnings.entries[symbol].status, "unannounced");
-  assert.equal(earnings.entries.IAU.status, "not-applicable");
+});
+
+test("deleted IAU research has no earnings entry", () => {
+  assert.equal(Object.hasOwn(earnings.entries, "IAU"), false);
 });
