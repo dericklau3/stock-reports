@@ -7,9 +7,9 @@ const page = await readFile(new URL("../src/pages/stocks/INTC/conversation.astro
 const stockPage = await readFile(new URL("../src/pages/stocks/[symbol].astro", import.meta.url), "utf8");
 const reportPage = await readFile(new URL("../src/pages/reports/[symbol]/[report].astro", import.meta.url), "utf8");
 
-test("Intel conversation combines related topics into five sourced sections", () => {
-  assert.equal(intcConversation.entries.length, 5);
-  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 5);
+test("Intel conversation combines related topics into six sourced sections", () => {
+  assert.equal(intcConversation.entries.length, 6);
+  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 6);
   for (const item of intcConversation.entries) {
     assert.ok(item.id && item.topic && item.question, "Q&A metadata required");
     assert.ok(item.answer.length > 200, item.id + " should provide useful detail");
@@ -44,7 +44,7 @@ test("dated prices and holdings are described as historical, not real-time", () 
 
 
 test("removed the trading Q&A and preserved the other topics in order", () => {
-  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "nvidia", "intel-18a", "fab34-apollo", "classiq-quantum"]);
+  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "nvidia", "intel-18a", "fab34-apollo", "classiq-quantum", "substrate-supply-2026"]);
   assert.equal(intcConversation.entries.some(item => item.id === "politicians"), false);
   const ceo = intcConversation.entries[0].answer;
   assert.match(ceo, /经营改革|重要行动/);
@@ -91,4 +91,17 @@ test("Classiq discussion covers deal, CEO investment, and Intel quantum commerci
   assert.match(item.answer, /匿名人士/);
   assert.match(item.answer, /不直接带来18A良率提高/);
   assert.match(page, /Classiq/);
+});
+
+
+test("substrate supply discussion correctly separates commitments, payments and bottlenecks", () => {
+  const item = intcConversation.entries.find((topic) => topic.id === "substrate-supply-2026");
+  assert.ok(item);
+  assert.equal(item.researchCutoff, "2026-11-05");
+  for (const keyword of ["53亿—61亿美元", "33亿美元", "封装基板", "晶圆", "2027年下半年", "40%", "现金流", "12亿美元预付款"]) {
+    assert.ok(item.answer.includes(keyword), "Missing " + keyword);
+  }
+  assert.match(item.answer, /并非收购基板厂/);
+  assert.match(item.answer, /不能认定12亿美元就是两份新合同已付款/);
+  assert.match(item.answer, /sec\.gov\/Archives\/edgar/);
 });
