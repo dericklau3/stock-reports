@@ -22,3 +22,13 @@ test("stock detail renders questions instead of a tracker panel", () => {
   assert.match(detail, /renderMarkdown\(topic\.answer\)/);
   assert.doesNotMatch(detail, /trackerHtml|tracker-body|company\.tracker/);
 });
+
+test("INTC adds a notable purchases sidebar below the report list", () => {
+  assert.match(detail, /class="detail-sidebar"/);
+  assert.match(detail, /class="report-list-panel"/);
+  assert.match(detail, /id="celebrity-purchases"/);
+  assert.match(detail, /notableBuyers.length > 0/);
+  assert.match(detail, /intcNotablePurchases.people : \[\]/);
+  assert.match(detail, /buyer.trades.map/);
+  assert.match(detail, /buyer.averageBasis/);
+});
