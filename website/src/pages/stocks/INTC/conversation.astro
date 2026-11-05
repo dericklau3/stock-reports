@@ -15,8 +15,8 @@ const questions = intcConversation.entries.map((item, index) => ({
 ---
 
 <BaseLayout
-  title="INTC专题问答｜陈立武、NVIDIA与公开交易 · Stock Reports"
-  description="关于英特尔INTC的专题对话：CEO陈立武的改革、管理层股票增持、特朗普与佩洛西家庭交易、NVIDIA的50亿美元入股，等关键话题。"
+  title="INTC专题问答｜陈立武、NVIDIA与18A工艺 · Stock Reports"
+  description="关于英特尔INTC的专题问答：CEO改革、股票公开交易、NVIDIA战略投资、18A工艺、Core Ultra Series 3及良率。"
 >
   <div class="conversation-page">
     <nav class="conversation-breadcrumbs" aria-label="面包屑导航">
@@ -37,7 +37,7 @@ const questions = intcConversation.entries.map((item, index) => ({
       </div>
       <div class="conversation-head-meta" aria-label="专题信息">
         <div><span>内容整理</span><strong>{intcConversation.lastEdited}</strong></div>
-        <div><span>行情与披露参考截止</span><strong>{intcConversation.researchCutoff}</strong></div>
+        <div><span>既有交易资料截止</span><strong>{intcConversation.researchCutoff}</strong></div>
         <div><span>讨论主题</span><strong>{questions.length} 个问题</strong></div>
       </div>
     </header>
@@ -78,7 +78,7 @@ const questions = intcConversation.entries.map((item, index) => ({
               <div class="conversation-response-head">
                 <span class="response-mark" aria-hidden="true">SR</span>
                 <span>研究解答</span>
-                <span class="response-time">资料截至 {intcConversation.researchCutoff}</span>
+                <span class="response-time">资料截至 {item.researchCutoff || intcConversation.researchCutoff}</span>
               </div>
               <div class="markdown-body conversation-copy" set:html={item.html} />
             </div>
