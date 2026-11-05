@@ -1,0 +1,412 @@
+# Microsoft Corporation（MSFT）完整中文深度研究 — 2026-11-05
+
+- **投资观点：**中性偏建设性。Azure与企业云利润增长强劲，但AI/算力现金资本开支、未来租约和客户集中度压制股东自由现金收益率，现价仅略低于公司自身历史定价锚点。
+- **核心逻辑：**企业软件订阅、Azure按量计费、开发者/AI工具、广告及游戏都拥有真实付款人；FY2027 Q1 Azure收入同比+48%，但新增机器和机房首先耗用大量现金，核心检验是收费规模能否持续跑赢投入和稀释。
+- **主要风险：**AI数据中心扩容及租赁承诺规模巨大、OpenAI关联客户集中及合同变化、英国软件生态监管、成熟Windows/Xbox需求走弱及高倍数定价敏感性。
+
+## 1. 公司到底是做什么生意的？
+
+微软首先是把**企业办公、数据库与云算力、业务应用、安全和开发工具**做成持续收费产品，同时经营Windows PC授权、Xbox游戏及搜索/LinkedIn广告。微软在2026-09-02重组了披露方式，从旧三个分部变为**Agents and Infra（智能体与基础设施）**及**Devices and Consumer（设备和消费者）**两个分部；下述是最新报表确认的八大可计量收入来源，内部有独立付费业务却未分开报告金额时明确说明。
+
+<details class="business-detail">
+<summary>01｜Azure：虚拟机、数据库、存储与网络｜按云资源用量向企业和开发者收费；Q1 Azure 331.65亿美元（包含下项GPU/Foundry）</summary>
+
+**产品、需求、买方与收费：**微软提供可租用的CPU服务器、网络、SQL及其他数据库、数据分析和存储，企业无需自建完整机房。客户的IT/云采购部门或开发者账号为用量、预留容量或约定合同付款；计算/存储随服务提供确认收入。主要成本是服务器与机房折旧、CPU、带宽、电力、维护及数据中心租约。
+
+**举例假设（非真实订单）：**一家电商在Azure上运行订单API和PostgreSQL数据库，账单由其公司向微软支付；系统调用量大时计费增加，微软为计算、存储及电力承担成本。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>02｜Azure GPU与Foundry：模型训练、推理与托管｜Azure收入的一部分，未独立披露GPU/Foundry收入</summary>
+
+**产品、需求、买方与收费：**向需要训练/运行模型的企业及模型公司出租GPU容量、模型部署服务与AI调用。直接付款人按GPU小时、推理资源、令牌量或协议计费；Foundry是提供多模型与部署管理的服务渠道。Azure大类内不允许将GPU收入再加一次。微软承担GPU采购、硬件快速迭代、电力、网络、供应和软件工具成本；已签合同/RPO不是当天全部现金到账。
+
+**举例假设（非真实订单）：**一家保险公司用Foundry部署文本审阅模型，按实际处理资源向微软付费；若第三方模型参与分成，应按具体会计条件确认，不把模型公司的总收入视为微软净收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>03｜Microsoft 365企业办公订阅｜M365 cloud本季277.78亿美元的一部分，未独立披露纯Office席位金额</summary>
+
+**产品、需求、买方与收费：**向企业销售Word、Excel、Outlook、Teams、SharePoint等企业订阅，并可升级到E5/E7。企业采购或IT部门按席位和合同期付款，员工使用；合同跨期按提供服务的时间确认收入。边际交付成本含服务运维、存储、身份管理和支持，利润仍需扣销售、研发及SBC。
+
+**举例假设（非真实订单）：**一家制造公司为5,000名员工购买365席位，微软按照协议期间持续提供邮件和协作服务并逐期确认收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>04｜Microsoft 365 Copilot与Agent 365｜已通过企业席位/用量收费；收入包括在M365 cloud内，未单列</summary>
+
+**产品、需求、买方与收费：**企业采购AI助手席位、智能体管理/安全和用量服务。员工/业务团队使用，企业按订阅、席位或用量付费；已履约部分才是收入。与M365基本席位、GitHub Copilot不混同；对调用推理仍有GPU、模型、质量、安全与数据治理成本。
+
+**举例假设（非真实订单）：**法务团队开通Copilot处理内部文件，企业向微软支付新增许可并持续获得功能；模型实际推理会产生云端算力成本。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>05｜GitHub与开发者云服务｜GitHub cloud和GitHub Copilot归入M365 cloud，细项未独立披露</summary>
+
+**产品、需求、买方与收费：**企业、软件团队和个人付费使用GitHub仓库、企业代码协作、Copilot开发助手等。主要以企业席位、订阅和适用用量收款；免费用户不是同等付费客户。成本是代码托管、AI推理、存储与安全及开发维护。
+
+**举例假设（非真实订单）：**某区块链开发团队采购GitHub Enterprise及Copilot权限，企业向微软旗下GitHub服务付费，开发人员使用，订阅服务逐期确认收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>06｜Entra、Defender与安全合规云服务｜归入M365商业云等类别；单独安全收入未披露</summary>
+
+**产品、需求、买方与收费：**企业购买身份访问管理、端点防护、云安全和合规服务。付款人是企业安全/IT部门，按用户、设备、工作负载或合同收取服务费；安全防护持续提供而逐期确认收入。成本包括威胁研究、运营团队、日志存储、云资源及支持。
+
+**举例假设（非真实订单）：**一家银行启用Entra身份策略及Defender终端保护，按员工/设备数量结算企业服务费，微软提供持续监控和更新。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>07｜Microsoft 365消费者订阅｜M365 cloud内的消费云部分，未单列本季金额</summary>
+
+**产品、需求、买方与收费：**家庭和个人为Microsoft 365 Personal/Family及云存储等付费，按月/年续订；消费者是直接付款人，微软按服务履约期确认。成本来自云存储、支持、软件开发和渠道支付费用。
+
+**举例假设（非真实订单）：**一个家庭订购Family版本，按年度向微软或渠道付款，家庭成员使用Office和OneDrive，微软按服务时间确认收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>08｜Windows Server、SQL Server和Office本地授权｜Productivity and server licensing本季84.07亿美元，包含多种授权</summary>
+
+**产品、需求、买方与收费：**微软向企业及系统集成商销售本地服务器、数据库、Windows/Office商用软件授权和相关客户端许可；采购方按授权数量、覆盖期限及附加支持条款付款。一次性许可在控制权转移时与长期支持按履约条件分别确认。成本包括软件研发、渠道分成、兼容支持及销售。
+
+**举例假设（非真实订单）：**一家医院在自有服务器部署SQL Server和Windows Server，向授权渠道或微软购买合法许可；软件使用权与后续支持按各履约义务计收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>09｜Dynamics 365、Power Platform企业业务应用｜Industry solutions本季53.37亿美元的一部分，未单列Dynamics金额</summary>
+
+**产品、需求、买方与收费：**向企业提供CRM、ERP、低代码自动化与业务工作流。销售、人力、财务、业务运营员工使用，企业通过席位/模块订阅和使用量付款；微软按服务期确认。成本涵盖软件研发、云托管、实施伙伴生态和技术支持。
+
+**举例假设（非真实订单）：**批发商购买Dynamics 365管理客户及发票，向微软/合作渠道支付订阅费，员工使用云端系统。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>10｜LinkedIn招聘、销售工具与学习｜人才与销售解决方案计入Industry solutions，具体金额未单列</summary>
+
+**产品、需求、买方与收费：**招聘企业购买Talent Solutions招聘席位和职位发布；B2B销售团队购买Sales Navigator；部分学习解决方案通过企业订阅收费。付款方是企业人事/销售部门，使用者是招聘官或销售人员，按席位/订阅/发布条件确认收入。成本包括平台服务、数据、销售、内容维护及品牌。
+
+**举例假设（非真实订单）：**一家咨询公司采购LinkedIn Recruiter招聘席位，向LinkedIn支付订阅费以联系候选人；合同服务随时间确认。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>11｜医疗、生命科学行业云服务｜归入Industry solutions，独立营收未披露</summary>
+
+**产品、需求、买方与收费：**提供面向医院、医疗及生命科学行业的云工具、数据和业务工作流。直接客户为机构/服务商，通过订阅、用量和项目合同付费，最终使用者为医护人员/机构员工；服务期或项目履约决定收入确认。成本包括云基础设施、行业研发、数据安全与实施。
+
+**举例假设（非真实订单）：**医院采购医疗行业云的合规数据管理方案，院方按合同向微软/实施伙伴付费，微软按其实际合同义务确认收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>12｜LinkedIn Marketing、Bing搜索及广告｜Search and advertising本季65.54亿美元，相关广告与Premium合并列示</summary>
+
+**产品、需求、买方与收费：**广告主为Bing/搜索网络曝光、点击或广告投放付费；LinkedIn企业广告主购买职业人群广告，个人用户为部分Premium订阅付费。付款人可能是品牌、广告代理或订阅个人；按广告交付或订阅期确认收入。成本是流量获取TAC、广告投放系统、审核、销售与内容索引。
+
+**举例假设（非真实订单）：**招聘品牌投放LinkedIn赞助广告并按实际曝光/点击合同支付，微软按已交付广告确认收入，扣去应付发布渠道的流量费用。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>13｜Xbox游戏、Game Pass与Activision内容｜XBOX收入本季53.79亿美元（含硬件）</summary>
+
+**产品、需求、买方与收费：**向玩家销售游戏、应用内道具与Game Pass订阅；也对第三方发行商的平台交易按会计主代理口径确认相应收入。付款方为玩家或平台合作伙伴，服务期、内容交付或交易完成时确认。成本包括游戏开发/工作室、平台分成、版权和内容运营、服务器与销售推广。
+
+**举例假设（非真实订单）：**玩家为Game Pass付月费，微软持续提供游戏库访问；单独购买一款游戏则按相应内容交付条款确认收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>14｜Xbox主机与配件销售｜包含于XBOX收入，未单独披露主机本季金额</summary>
+
+**产品、需求、买方与收费：**向零售商和消费者销售Xbox游戏机与控制器。零售商或消费者按设备价格付款，最终玩家使用；通常设备控制权交付时确认硬件销售收入。成本包括芯片、组装、物流、库存跌价和售后。
+
+**举例假设（非真实订单）：**零售商采购Xbox主机并在实体店销售，微软向零售渠道完成交货并按控制权规则确认对应收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>15｜Windows OEM、Surface及PC设备｜Windows OEM and devices本季35.51亿美元</summary>
+
+**产品、需求、买方与收费：**PC制造商为预装Windows购买OEM授权，向微软支付许可费，最终使用者是购机消费者/企业；Surface及设备销售则由零售商、企业或用户购买硬件。授权与硬件交付条件不同。成本是Windows研发、OEM支持、Surface设计制造、渠道、物流和保修。
+
+**举例假设（非真实订单）：**某电脑厂商出货附Windows授权的笔记本，厂商/渠道依协议向微软支付许可费；另有客户采购Surface设备产生独立硬件交易。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>16｜微软客户成功、企业支持与合作伙伴服务｜Frontier and support services本季21.08亿美元</summary>
+
+**产品、需求、买方与收费：**企业客户及渠道伙伴为技术支持、培训、工程咨询、架构迁移与学习认证等服务付款；最终使用者是企业IT团队及员工。按交付工时、服务里程碑、订阅期或其他合同履约条件确认；成本是支持人员、工程师、培训、云技术交付等。
+
+**举例假设（非真实订单）：**一家银行购买Azure迁移技术支持包，由银行向微软付款，工程团队提供合同约定服务，微软按履约进展确认收入。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+<details class="business-detail">
+<summary>17｜Frontier Company与前沿AI项目服务｜包含于Frontier and support services，独立营收未披露</summary>
+
+**产品、需求、买方与收费：**该类前沿人工智能服务与高级支持被微软列为已有收费类别的组成，但具体合同、与其他支持的收入占比未公开；实际付款方是购买约定高级AI解决方案或交付服务的企业，收入仅随真实履约确认。不能把规划中未商业化项目编成已单独收费。成本主要为高级工程人员、模型推理和交付。
+
+**举例假设（非真实订单）：**一家公司向微软采购定制AI能力与实施辅导，双方完成里程碑后按协议支付，微软按明确可交付的服务义务确认收入；不是声称已发生的真实订单。
+
+**来源：**[2026Q3（FY2027 Q1）SEC 10-Q业务定义和收入注释](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+</details>
+
+**区分两个容易重复计算的指标：**微软披露的「Microsoft Cloud」$63.9bn由Azure、Microsoft 365商业云、行业解决方案云组成，是**已计入八大收入项目的跨产品管理指标**，不应加在合并收入$92.279bn之上。**OpenAI合同收入**FY2027 Q1为$10.0bn（含收入分成），已在微软实际报表营业收入相应类别内计入，不能再作为第三个额外分部；Microsoft与OpenAI的股权投资公允/权益会计收益则属于营业利润之外的投资影响。来源：[2026Q1最新10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)、[微软官方新分部重列](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm)。
+
+**同比（YoY）**：最新财季FY2027 Q1（2026年7—9月）相比去年FY2026 Q1（2025年7—9月），看一年增长；**环比（QoQ）**：最新FY2027 Q1相比紧邻的FY2026 Q4（2026年4—6月），看最近变化。统一公式＝（最新季−对比季）÷对比季×100%。季度金额单位均为**百万美元、美国GAAP**；以下全部使用2026-09-02官方重列的**同口径**2026Q4/2026Q1，与2026-10-28发布的FY27Q1实际收入对齐。
+
+| 报告层级 / 收入来源 | 去年同季FY26Q1 | 上季FY26Q4 | 最新FY27Q1 | 同比 | 环比 | 对账与收款说明 |
+|---|---:|---:|---:|---:|---:|---|
+| Azure | 22,384 | 29,417 | 33,165 | +48.2% | +12.7% | Agents and Infra子项：GPU/基础云；并非额外分部 |
+| Microsoft 365 cloud | 23,694 | 26,721 | 27,778 | +17.2% | +4.0% | Agents and Infra子项：企业和个人订阅、GitHub、安全、Copilot |
+| Productivity and server licensing | 8,678 | 11,033 | 8,407 | -3.1% | -23.8% | Agents and Infra子项：传统服务器/Office/Windows商业授权 |
+| Industry solutions | 4,894 | 5,292 | 5,337 | +9.1% | +0.9% | Agents and Infra子项：Dynamics、LinkedIn招聘/销售、行业云 |
+| Frontier and support services | 2,022 | 2,113 | 2,108 | +4.3% | -0.2% | Agents and Infra子项：支持、培训、交付 |
+| **Agents and Infra分部小计** | **61,672** | **74,576** | **76,795** | +24.5% | +3.0% | **上五项之和，不得重复加总** |
+| Search and advertising | 5,942 | 6,435 | 6,554 | +10.3% | +1.8% | Devices and Consumer子项：Bing/LinkedIn广告及部分订阅 |
+| XBOX | 5,508 | 4,983 | 5,379 | -2.3% | +7.9% | Devices and Consumer子项：游戏内容/订阅/主机 |
+| Windows OEM and devices | 4,551 | 4,013 | 3,551 | -22.0% | -11.5% | Devices and Consumer子项：PC授权/Surface |
+| **Devices and Consumer分部小计** | **16,001** | **15,431** | **15,484** | -3.2% | +0.3% | **以上三项之和，不得重复加总** |
+| 分部间合并调节 | 0 | 0 | 0 | — | — | 目前分部对外报告收入已对齐合并，无额外需加收入 |
+| **合并营业收入** | **77,673** | **90,007** | **92,279** | +18.8% | +2.5% | **两个顶层分部之和** |
+
+**算术对账：**33,165+27,778+8,407+5,337+2,108＝**76,795**（Agents and Infra）；6,554+5,379+3,551＝**15,484**（Devices and Consumer）；76,795+15,484＝**92,279百万美元**，与SEC合并营业收入一致。来源：[Q1官方八大产品收入](https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast)、[微软FY26重新列报第15/17页](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm)。表格中的两项分部小计不能再加到八条子项；旧「Intelligent Cloud」不能直接拿来与新「Agents and Infra」计算增长。
+
+**竞争和利润证据：**新Agents and Infra季度营业利润**$40.558bn**（分部经营利润率约52.8%），Devices and Consumer**$5.357bn**（约34.6%），说明真正的利润主轴仍是企业软件、云与许可证，而不是硬件。客户可以在AWS/Google Cloud自建部署，使用Google Workspace/其他AI助手、Salesforce、GitLab及其他游戏生态；微软拥有办公用户、云平台和开发者工具的销售协同，但它也须承担更贵的GPU、电力、折旧、监管及消费者迁移成本。Azure+48%和云毛利率**66%**分别反映高需求与成本压力，不能把“高增长”直接当成“高资本回报”。[公司Q1官方指标](https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/metrics)
+
+## 2. 近期已公布的重大事件
+
+检索窗口：**2025-11-05—2026-11-05**，另追溯窗外但仍直接影响当前经济权益的2025-10 OpenAI重组。只列有明确经济、资本、监管或会计口径影响的A级事件；普通产品新闻、合作营销、以及Nscale单站点进展列入底稿或第3节，不凑数。微软IR、SEC 10-K/10-Q/重要8-K及OpenAI原始博客与英国CMA重要公文已查；各国所有反垄断卷宗、部分非定期8-K及所有大型云服务合作方的合同**未做逐件穷尽审查**，因此本节不声称全年绝无遗漏。
+
+<div class="event-roadmap" aria-label="MSFT重大事件时间轴">
+<section class="event-month" data-month="2025-10">
+<h3 class="event-month-heading">2025-10（背景追溯）</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">OpenAI重组与微软持股结构变化</span>
+<span class="event-entry-preview">微软公布其对OpenAI重组后的27%折算权益，后来实际比例变化。</span>
+</summary>
+<div class="event-detail-content">
+
+**首次公告日期：**2025-10-28（**本轮近12个月窗外的重大存续事件**）。
+
+**公布了什么：**微软当时宣布重组后的OpenAI Group PBC折算权益约27%，当时官方估计对应价值约1350亿美元；此为特定时点而非永久持股比例。FY2026 10-K后续披露折算权益约25%，与后续资本与安排有关。
+
+**实际意义：**账面投资与云收入、OpenAI分成不能重复计入微软企业价值；Microsoft仍拥有大型客户与模型生态风险，不能把OpenAI当100%拥有的子公司。
+
+**原始来源：**[微软2025-10-28官方公告](https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/)、[FY2026 10-K](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm)。
+
+</div>
+</details>
+</section>
+<section class="event-month" data-month="2026-04">
+<h3 class="event-month-heading">2026-04</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">微软与OpenAI修订核心合作协议</span>
+<span class="event-entry-preview">模型许可延长至2032年但非独家，双方收入分成条款重大变化。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：**2026-04-27。
+
+**公布了什么：**微软继续作为OpenAI主要云伙伴，但OpenAI产品可在其他云提供；微软对相关模型与产品知识产权的许可延至2032年且变为非独家；微软不再向OpenAI支付收入分成，OpenAI向微软支付的分成持续至2030年、比例保持但设总额上限。
+
+**实际意义：**扩大微软商业选择，也减少独家控制权；未来模型竞争、Azure以外算力采购与投资权益收益需要分别核算，不能将商业合同额视为保底全额净现金。
+
+**原始来源：**[微软2026-04-27原始公告](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/)。
+
+</div>
+</details>
+</section>
+<section class="event-month" data-month="2026-07">
+<h3 class="event-month-heading">2026-07</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">FY2026财年业绩与AI资本承诺</span>
+<span class="event-entry-preview">全年收入增长18%，但现金设备支出1159.48亿美元，FCF下降。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告及10-K日期：**2026-07-29；**财年结束：**2026-06-30。
+
+**公布了什么：**FY2026收入$331.839bn、营业利润$155.237bn，经营现金流$182.935bn、现金购建长期资产$115.948bn，自算简化FCF仅$66.987bn，低于上年的$71.611bn。报告同时披露庞大的已生效及未起租租赁、长期采购承诺。管理层计划调整部分建筑使用年限及新租约会计分类，这不是硬件成本立即下降。
+
+**实际意义：**加速增长仍可能使每股自由现金流短期下降；会计折旧年限增加和经营租赁分类变化，不能伪装成真实减少设备付款。FY27 Q1进一步更新未来租赁余额见后续事件。
+
+**原始来源：**[FY2026 10-K](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm)、[FY26Q4官方财报](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast)。
+
+</div>
+</details>
+</section>
+<section class="event-month" data-month="2026-09">
+<h3 class="event-month-heading">2026-09</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">正式重组财报分部与历史收入定义</span>
+<span class="event-entry-preview">从三分部改为两分部，Azure与GitHub等产品重新归类。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：**2026-09-02；**生效财期：**FY2027起（2026-07-01开始的财年）。
+
+**公布了什么：**旧PBP/Intelligent Cloud/More Personal Computing三分部替换为Agents and Infra、Devices and Consumer。GitHub云、Security Copilot从旧Azure迁至M365云，LinkedIn人才/销售归行业解决方案，LinkedIn广告归搜索广告，微软官方重列FY2025/26历史季度。
+
+**实际意义：**重组没有创造新的合并收入，但**业务口径变更可造成错误同比或错误AI商业化估算**；研究必须使用新定义的同口径历史数。
+
+**原始来源：**[微软2026-09-02 SEC Exhibit 99.1及历史重列表](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm)。
+
+</div>
+</details>
+</section>
+<section class="event-month" data-month="2026-10">
+<h3 class="event-month-heading">2026-10</h3>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">英国CMA拟指定企业软件战略市场地位</span>
+<span class="event-entry-preview">这是拟决定及公开咨询，并非最终处罚。</span>
+</summary>
+<div class="event-detail-content">
+
+**拟决定公开日：**2026-10-16；**最初立案：**2026-05-14。
+
+**公布了什么：**英国CMA拟将微软企业软件生态列为具有战略市场地位SMS，针对Office/Windows/Teams/Copilot及客户跨工具选择等问题征求意见；官方咨询截至**2026-11-13**，法律规定最晚**2027-02-13**作决定。
+
+**实际意义：**可能限制未来捆绑、云迁移障碍或不公平优惠条款，但目前不等于已违规判罚；潜在收费/分销权变化是经济性风险。
+
+**原始来源：**[英国CMA正式案件页](https://www.gov.uk/cma-cases/microsofts-business-software-ecosystem)。
+
+</div>
+</details>
+<details class="event-entry">
+<summary>
+<span class="event-entry-title">FY2027Q1 Azure+48%，资本现金投入翻倍</span>
+<span class="event-entry-preview">OpenAI本季相关商业收入100亿美元，未来未起租数据中心承诺3646亿美元。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告及SEC季度报告日期：**2026-10-28；**财期截至：**2026-09-30。
+
+**公布了什么：**Azure本季$33.165bn，同比+48%；公司整体营收$92.279bn、GAAP营业利润$45.915bn。季度现金购建固定资产$39.367bn（同比$19.394bn），经营现金流$58.0bn。公司对OpenAI商业安排（包括分成）确认收入**$10.0bn**；在9月30日对OpenAI应收账款$7.2bn。未开始的主要数据中心租约名义金额从6月底约$329.1bn增至**$364.6bn**，不是已到期负债。
+
+**实际意义：**收入增长有明确订单和使用，但客户集中、账款质量及昂贵数据中心折旧/租约使“云收入增长”不能等于“每股自由现金流同步增长”；部分第三方容量交付延期令本季总CapEx低于先前目标。
+
+**原始来源：**[SEC FY2027 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)、[当季原始业绩附件](https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast)、[当季官方电话会](https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1)。
+
+</div>
+</details>
+</section>
+</div>
+
+此处重要性最高的变化是**AI云规模、投入/租约、OpenAI经济关系和英国监管**。新分部财报第2节与正在执行的项目在第3节只解释尚未实现的下一关，不重复事件内容。
+
+## 3. 公司正在做什么、做到哪一步？
+
+| 公司正在推进的重要事情 | 为什么重要、希望实现什么？ | 已经做到哪一步？下一关是什么？ |
+|---|---|---|
+| **Azure与数据中心/GPU实际交付** | GPU、AI推理和传统云都需要可用算力，决定未来高额CapEx能否回收。 | FY27Q1 Azure收入$33.165bn，同比增长48%；微软当季总CapEx（含管理层定义的租赁新增）约**$45.2bn**，比事前超过$50bn目标低，部分第三方容量**交付延期**，现金PPE$39.367bn。**下一关：**实际可用机架/供电、客户持续用量与扣折旧后的Azure毛利；Q2管理层预计CapEx超过$50bn，非实绩。[FY27Q1电话会](https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1) |
+| **Microsoft 365、Copilot与GitHub高价值订阅** | 向已有企业客户卖更多席位/AI智能体，把用户安装基础转成可持续增量收入。 | 新口径M365 cloud本季$27.778bn、同比+17%；微软称365商业云高端套餐、Copilot及GitHub Copilot推动人均收入，商业席位+5%。**下一关：**可比付费席位增长、续费率、额外AI推理成本和扣后毛利；未披露独立Copilot单季净利润。[10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm) |
+| **Maia自研AI推理芯片与多模型体系** | 减少外购GPU依赖、尝试降低每token推理成本并提高毛利。 | 2026-01-26公布Maia200并用于部分生产负载，2026-10-12宣布2027 Maia300及多GW部署目标，**后者仍是计划**，供应链效率声明为公司自身测试而非独立净利润审计。**下一关：**实际大规模上架、可靠性及包含研发/折旧/能耗的净成本；2027仅为公司目标。[Maia官方](https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/) |
+| **多模型Foundry与OpenAI相关合同的现金转化** | OpenAI收入与投资规模大，但单一模型/云供应可能变动；把合作转换为长期现金回收很关键。 | FY27Q1商业安排收入$10.0bn，季末OpenAI应收$7.2bn，商业RPO$677bn（同比+73%，但较6月末$678bn略降）；**RPO不是现金**且客户收入和股权收益不同。**下一关：**回款、RPO消耗、Azure其他客户的独立增长及许可/分成变化的实际利润；无独立承诺兑现日期。[10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm) |
+
+## 4. 财务状况：收入、利润和现金
+
+**美国GAAP，单位百万美元；微软财年每年6月30日结束。** FY2027Q1是2026年7—9月，而不是日历2027年。TTM使用已经公布的**FY2026全年－FY2026Q1＋FY2027Q1**；期末与非GAAP调整项目分别核算。原始来源：[FY2026审计10-K](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm)、[FY2027Q1 SEC 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+| 实际财务（百万美元） | FY2024 | FY2025 | FY2026 | FY2027Q1 | TTM至2026-09 |
+|---|---:|---:|---:|---:|---:|
+| GAAP营业收入 | 245,122 | 281,724 | 331,839 | 92,279 | **346,445** |
+| GAAP毛利 | 171,008 | 193,893 | 225,465 | 62,559 | **234,394** |
+| GAAP营业利润 | 109,433 | 128,528 | 155,237 | 45,915 | **163,191** |
+| GAAP净利润 | 88,136 | 101,832 | 133,749 | 36,629 | **142,631** |
+| 经营现金流 | 118,548 | 136,162 | 182,935 | 58,000 | **195,878** |
+| 现金固定资产投资 | 44,477 | 64,551 | 115,948 | 39,367 | **135,921** |
+| 简化自由现金流 | 74,071 | 71,611 | 66,987 | 18,633 | **59,957** |
+
+<small class="financial-glossary">GAAP为美国会计准则；毛利是收入减直接成本；营业利润再减研发、销售和管理费用；净利润还计其他收益与税；TTM是最近12个月已实现数据。</small>
+<small class="financial-glossary">简化FCF＝经营现金流−实际付现购买固定资产；不等于包含全部新增融资租赁本金、未起租租赁义务或未来维护投入的终极股东可分配现金。</small>
+
+**资金与履约责任：**截至2026-09-30现金及短投**$64.509bn**（20.281+44.228）；有息债务**$35.481bn**，另有**融资租赁现值$70.973bn**及**经营租赁现值$27.477bn**，因此同口径广义简化**净债务$69.422bn**，不能只以“现金减银行债务”断言净现金充裕。尚未起租的主要数据中心租赁名义款**$364.6bn**，是按未来合同的跨期付款安排，并非今天到期、也不能再无条件一次性从当前企业价值扣掉。FY27Q1尚有融资租赁本金现金流约$1.0bn，此类付现不包含在“经营现金流−现金PPE”标准FCF里，提醒计算每股现金质量。[10-Q资产负债表、租赁附注与现金流](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+**总结：**最新Q1营收同比**+18.8%**、营业利润同比**+21.0%**，集团经营利润率约**49.8%**，真正的企业软件和云营业利润质量强；Azure与M365商业云是持续增长来源，Windows硬件/游戏明显弱。财报GAAP净利润同比+32%受到去年OpenAI投资损失基数与本期投资收益影响，微软**剔除OpenAI投资的非GAAP净利本季$36.422bn，同比+18%**，不能把GAAP+32%直接当作核心业务净利增长。更重要的是，**TTM简化FCF从FY2026的$66.987bn降至$59.957bn**：算力投入已吞掉大量经营现金，当前投资关键在于新增收入带来的每股现金回报是否逐季兑现。[非GAAP调节](https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast)。
+
+## 5. 管理层与资本分配
+
+Satya Nadella继续担任董事长兼CEO，Amy Hood为财务负责人。2026-07-29管理层通过分部重列与FY27Q1旧指导强调高增长，10月Q1 Azure实际收入增长+48%，高于此前按照新口径指引的约44%—45%固定汇率增速；但本季**预计到货的第三方AI容量发生延误**，对资本开支节奏也有影响。投资纪律不能只看云增长加速，而应核对**机房真实上线、GPU有效利用率、客户回款和完整租赁本金/现金支出**。
+
+FY27Q1经营现金流$58.0bn，现金购建PPE$39.367bn；同时发生股份回购现金**$4.379bn**、已付现金股息**$6.757bn**。公司公告合计向股东返还约**$10.2bn**的通常口径，可能与现金流量表包含代扣员工税的“股份回购”分类不完全相同，不能机械用两个来源的不同定义求同一个精确回购数。同期SBC**$3.134bn**，仍需要考虑股票奖励稀释与回购抵消效果；2026-10-22正式在外**7,426,194,552股**，与GAAP摊薄季度平均7,446百万股不同。[10-Q现金流及发行股数](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)。
+
+**OpenAI关系审慎对待：**微软FY27Q1确认与OpenAI商业安排收入**$10.0bn**（包含分成，占微软合并收入约**10.8%**），9月末应收OpenAI**$7.2bn**，既是已发生收入也反映一定客户及回款集中；OpenAI当前还能使用其他云，模型IP许可非独家。2026Q1微软对OpenAI投资权益会计及非GAAP调整发生净收益，**不能把客户10亿美元级收入、股权重估与未来RPO合约当三笔不重复独立利润**。[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)、[协议修订](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/)。
+
+## 6. 估值分析：当前股价贵不贵？
+
+**合理价格参考估计：$574.80/股（截至2026-11-05，微软自身最近四个完整财年的历史EV/收入倍数中位数法）。** 以最近常规收盘**$555.80（2026-11-04美东）**比较，模型与市价价差**+3.42%**。**这是有取样局限的相对定价锚点，绝非保证可实现的内在价值或交易指令。**
+
+| 估值要素 | 经核实与复算的输入 |
+|---|---|
+| **合理价格参考** | **$574.80/股**；FY2023—FY2026微软自身财年末EV/当年已实现收入样本中位数 |
+| **当前股价与模型差额** | 2026-11-04美国常规收盘**$555.80**，模型价差约**+3.42%**；[历史报价](https://stockanalysis.com/stocks/msft/history/) |
+| **本公司历史EV/收入四期** | FY2023：**11.83×**；FY2024：**13.66×**；FY2025：**13.21×**；FY2026：**8.49×**；中位数**12.52155285×**。[Stock Analysis历年企业价值](https://stockanalysis.com/stocks/msft/financials/ratios/)及[微软财报历年收入](https://www.microsoft.com/investor/reports/ar26/index.html) |
+| **当前真实经营及交易倍数** | 已实现TTM收入**$346.445bn**、毛利**$234.394bn**、营业利润**$163.191bn**、净利润**$142.631bn**、简化FCF**$59.957bn**；按当前法律股算市值约**$4.1275tn**、广义简化EV**$4.1969tn**，EV/TTM收入**12.11×**、粗略P/E**28.94×** |
+| **净债务和经济股数桥接** | 2026-09-30现金+短投**$64.509bn**；减借款**$35.481bn**、融资租赁**$70.973bn**、经营租赁**$27.477bn**，净债务**$69.422bn**；2026-10-22法律在外**7,426,194,552股**。[SEC 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm) |
+| **关键估值局限** | 历史FY年末EV与**最终年度收入**采用事后回溯配对，当年6/30收入不一定已正式公开；2026年低估值年、AI投入带来跨期行业结构变化、模型对股权奖励和其他权益项未全面调节。历史EV提供商可能包含与当前广义债务近似但不完全一致的调整，不可将结果视作唯一客观公允值。 |
+
+**计算式：**（历史自身EV/收入中位数**12.52155285**×当前真实TTM收入**346,445百万美元**－当前广义简化净债务**69,422百万美元**）÷法律在外股份**7,426.194552百万股**＝**$574.80/股**。
+
+**总结：**当前价格已经对应约**28.94倍TTM GAAP净利润**和约**68.84倍TTM简化FCF**，按经营利润看不像没有盈利支撑的纯叙事公司，但按实际现金支出看也谈不上有充足安全边际。历史中位数参考与现价只有约3.4%差额，**不足以抵消AI资本回报、未来租赁、OpenAI客户及股权市场倍数变化的估计误差**。如果Azure继续高增而FCF仍因持续GPU采购下滑，参考价格可能向下失效；如果订阅/推理毛利真正覆盖全部资产与资本成本，历史倍数法也可能低估长期现金创造能力。本次没有同行比较或未来DCF；详细历史样本与敏感性写于[研究底稿](../research-records/2026-11-05-research.md)。
+
+## 7. 主要投资风险
+
+| 主要风险 | 对利润或股东价值会有什么影响 | 应观察的真实不利信号 |
+|---|---|---|
+| **AI GPU和数据中心投入过猛** | 高昂资本支出、折旧和融资租赁本金消耗现金，云收入增速未必转成每股FCF。 | CapEx持续高于FCF增量、Azure毛利和利用率转弱、第三方产能继续延期。 |
+| **OpenAI依赖与合同经济变动** | FY27Q1约100亿美元含分成商业收入集中在同一关联生态，合作转向多云时可能影响订单、应收款与许可收益。 | OpenAI应收持续上升、回款慢、商业RPO不能转化为可持续收入。 |
+| **监管限制Office/Teams/Copilot捆绑能力** | 英国CMA最终指定与后续救济可能削弱微软高毛利交叉销售及转换成本优势。 | 2027年2月最终决定附带实质互操作/绑定限制，客户实际替换加快。 |
+| **成熟消费者业务疲软** | Windows OEM与设备本季同比约-22%、Xbox约-2%，可能抵消部分广告与云业务增幅。 | OEM授权持续两位数下降、游戏订阅及设备库存减值扩大。 |
+| **历史高估值倍数回撤和激励稀释** | 即使增长为正，十几倍真实营收的企业价值若回到历史低档，股价仍可显著下跌。 | FCF收益率持续很低、SBC与回购互相抵消、资产减值或税务索偿扩大。 |
+
+**总结：**微软具备真实、经常性的企业软件与云营业利润，但当前最强反证是“增长越快，现金机房投入越高，TTM自由现金流反而下降”。改变估值判断应重点关注持续多个季度的**Azure扣GPU/租赁后盈利、OpenAI相关现金回款、微软全集团的每股FCF与资本纪律**，不能只看Azure+48%或Copilot客户数。
