@@ -44,7 +44,7 @@ const questions = intcConversation.entries.map((item, index) => ({
 
     <div class="conversation-quickfacts" aria-label="这组问答中的关键数字">
       <div><span class="quickfact-label">现任CEO</span><strong>陈立武</strong><small>2025-03-18 上任</small></div>
-      <div><span class="quickfact-label">名人购买</span><strong>3 组</strong><small><a href={companyHref + "#celebrity-purchases"}>查看公司页交易明细 →</a></small></div>
+      <div><span class="quickfact-label">CEO主动买入</span><strong>$10.00M</strong><small>2026-08-11 · $95/股</small></div>
       <div><span class="quickfact-label">NVIDIA入股Intel</span><strong>$5.00B</strong><small>2025-12-26 交割</small></div>
       <div><span class="quickfact-label">2026Q3 Foundry亏损</span><strong>$1.853B</strong><small>已公布季度经营亏损</small></div>
     </div>
@@ -121,7 +121,6 @@ const questions = intcConversation.entries.map((item, index) => ({
   .quickfact-label { color: #688072; font-size: .73rem; }
   .conversation-quickfacts strong { color: #153d2b; font-size: 1.4rem; letter-spacing: -.025em; font-variant-numeric: tabular-nums; }
   .conversation-quickfacts small { color: #84958a; font-size: .72rem; line-height: 1.35; }
-  .conversation-quickfacts small a { color: #147653; text-decoration: underline; text-underline-offset: 2px; }
   .conversation-layout { display: grid; grid-template-columns: 195px minmax(0, 1fr); align-items: start; gap: 1.7rem; }
   .conversation-toc { position: sticky; top: 5.4rem; }
   .conversation-toc-label { display: flex; justify-content: space-between; margin: 0 0 .7rem; color: #243c2e; font-size: .86rem; font-weight: 800; }
