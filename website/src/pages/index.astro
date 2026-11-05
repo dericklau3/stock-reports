@@ -1,12 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import index from "../data/report-index.json";
+import earningsCalendar from "../data/earnings-q3-2026.json";
 import { withBase } from "../lib/markdown.js";
 
 const base = import.meta.env.BASE_URL;
 const companies = [...index.companies].sort((a, b) =>
   (b.lastUpdated || "").localeCompare(a.lastUpdated || "") || a.symbol.localeCompare(b.symbol),
 );
+const quarterEarnings = earningsCalendar.entries;
+const earningsStateText = { reported: "已公布", scheduled: "即将公布", unannounced: "待官宣", "not-applicable": "无业绩会" };
 const reportCount = companies.reduce((total, company) => total + company.reports.length, 0);
 const latestUpdated = companies.find((company) => company.lastUpdated)?.lastUpdated || "—";
 
@@ -113,9 +116,29 @@ function toneFromView(value) {
           <div class="stock-card-middle">
             <span class:list={["view-tag", "view-tag-" + toneFromView(company.investmentView || "研究中")]}>{company.investmentView || "研究中"}</span>
           </div>
+          {quarterEarnings[company.symbol] && (
+            <div
+              class="stock-card-earnings"
+              data-earnings-status={quarterEarnings[company.symbol].status}
+              title={`财报季度：${quarterEarnings[company.symbol].quarter}。日期按美国当地日期；资料来源：${quarterEarnings[company.symbol].source}`}
+            >
+              <span class="earnings-quarter">{quarterEarnings[company.symbol].quarter} 财报</span>
+              <span class="earnings-schedule">
+                {quarterEarnings[company.symbol].date ? (
+                  <time class="earnings-date" datetime={quarterEarnings[company.symbol].date}>{quarterEarnings[company.symbol].date}</time>
+                ) : (
+                  <span class="earnings-date">{quarterEarnings[company.symbol].status === "not-applicable" ? "不适用" : "日期待公告"}</span>
+                )}
+                <span class:list={["earnings-status", "earnings-status-" + quarterEarnings[company.symbol].status]}>
+                  {earningsStateText[quarterEarnings[company.symbol].status]}
+                </span>
+              </span>
+            </div>
+          )}
         </a>
       ))}
     </section>
+    <p class="earnings-date-note">财报日期按美国当地日期展示；部分公司财年与自然季度不同。未正式宣布的日期不采用第三方预测。</p>
     <div id="no-results" class="no-results" hidden>
       <span aria-hidden="true">⌕</span>
       <h3>没有找到匹配的股票</h3>

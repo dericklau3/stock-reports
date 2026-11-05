@@ -1,0 +1,133 @@
+{
+  "asOf": "2026-11-05",
+  "dateTimezone": "America/New_York",
+  "description": "2026年第三季度财报季：对财年与自然季度不一致的公司，展示这一财报季的对应财年季度；已公布以公司实际财报为准，预告日期以公司正式披露为准。",
+  "entries": {
+    "AAPL": {
+      "quarter": "FY2026 Q4",
+      "date": "2026-11-02",
+      "status": "reported",
+      "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+    },
+    "AMZN": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-29",
+      "status": "reported",
+      "source": "https://ir.aboutamazon.com/events/event-details/"
+    },
+    "AVAV": {
+      "quarter": "FY2027 Q2",
+      "date": null,
+      "status": "unannounced",
+      "source": "https://investor.avinc.com/news-events/events-and-presentations"
+    },
+    "CBRS": {
+      "quarter": "2026 Q3",
+      "date": "2026-11-12",
+      "status": "scheduled",
+      "source": "https://investors.cerebras.ai/news-releases/news-release-details/cerebras-systems-announces-date-third-quarter-2026-financial"
+    },
+    "CRCL": {
+      "quarter": "2026 Q3",
+      "date": "2026-11-04",
+      "status": "reported",
+      "source": "https://investor.circle.com/overview/default.aspx"
+    },
+    "GOOG": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-28",
+      "status": "reported",
+      "source": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx"
+    },
+    "HOOD": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-27",
+      "status": "reported",
+      "source": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results"
+    },
+    "IAU": {
+      "quarter": "黄金信托",
+      "date": null,
+      "status": "not-applicable",
+      "source": "https://www.ishares.com/us/products/239561/iau-ishares-gold-trust-fund"
+    },
+    "INTC": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-29",
+      "status": "reported",
+      "source": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results"
+    },
+    "LMND": {
+      "quarter": "2026 Q3",
+      "date": "2026-11-05",
+      "status": "scheduled",
+      "source": "https://www.lemonade.com/investor/events"
+    },
+    "MSFT": {
+      "quarter": "FY2027 Q1",
+      "date": "2026-10-28",
+      "status": "reported",
+      "source": "https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/"
+    },
+    "NVDA": {
+      "quarter": "FY2027 Q3",
+      "date": "2026-11-17",
+      "status": "scheduled",
+      "source": "https://nvidianews.nvidia.com/helper-search-news?ct=releases&page=1&q=financial+results"
+    },
+    "ORCL": {
+      "quarter": "FY2027 Q2",
+      "date": "2026-12-14",
+      "status": "scheduled",
+      "source": "https://investor.oracle.com/faq/default.aspx"
+    },
+    "PL": {
+      "quarter": "FY2027 Q3",
+      "date": null,
+      "status": "unannounced",
+      "source": "https://investors.planet.com/financials/quarterly-results/default.aspx"
+    },
+    "QCOM": {
+      "quarter": "FY2026 Q4",
+      "date": "2026-11-04",
+      "status": "reported",
+      "source": "https://investor.qualcomm.com/files/content_files/FY2026-4th-Quarter-Earnings-Release.pdf"
+    },
+    "RKLB": {
+      "quarter": "2026 Q3",
+      "date": "2026-11-09",
+      "status": "scheduled",
+      "source": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-date-third-quarter-2026-financial-results"
+    },
+    "SKHY": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-28",
+      "status": "reported",
+      "source": "https://news.skhynix.com/en/q3-2026-business-results/"
+    },
+    "SPCX": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-20",
+      "status": "reported",
+      "source": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
+    },
+    "TEM": {
+      "quarter": "2026 Q3",
+      "date": "2026-11-02",
+      "status": "reported",
+      "source": "https://investors.tempus.com/news/news-details/2026/Tempus-Reports-Third-Quarter-2026-Results/default.aspx"
+    },
+    "TSLA": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-21",
+      "status": "reported",
+      "source": "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2026-financial-results"
+    },
+    "VST": {
+      "quarter": "2026 Q3",
+      "date": "2026-11-06",
+      "status": "scheduled",
+      "source": "https://investor.vistracorp.com/2026-09-29-Vistra-to-Report-Third-Quarter-Results-on-Nov-6%2C-2026"
+    }
+  }
+}
