@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-05",
+  "stock": "NYSE:LMND",
+  "cutoff": "2026-11-05 21:16 UTC+8 (US premarket before regular 2026-11-05 open)",
+  "latest_source": "2026-11-05 earnings 8-K and Exhibit 99.1, Q3 2026 unaudited, Q3 10-Q segment notes not separately reverified",
+  "sources": {
+    "q3_sec_8k": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000064/lmnd-20261105.htm",
+    "q3_official_exhibit": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000064/lmndshareholderletterq32.htm",
+    "q2_10q": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000055/lmnd-20260630.htm",
+    "price": "https://stockanalysis.com/stocks/lmnd/history/",
+    "pb_history": "https://stockanalysis.com/stocks/lmnd/financials/ratios/"
+  },
+  "q3_m": {
+    "revenue": 336.1,
+    "net_earned_premium": 294.8,
+    "ceding_commission": 17.4,
+    "investment_income": 10.3,
+    "other_income": 13.6,
+    "gross_profit": 118.1,
+    "gaap_net_loss": -43.7,
+    "adjusted_ebitda": -20.4,
+    "ocf": 7.3,
+    "capex": 5.4,
+    "ordinary_fcf": 1.9,
+    "net_financing_borrowings": 25.1,
+    "adjusted_fcf": 27,
+    "sbc": 23.2,
+    "gross_loss_ratio_pct": 65,
+    "attritional_ratio_pct": 60,
+    "ppd_favorable_pct": -2,
+    "pet_loss_pct": 75,
+    "europe_loss_pct": 104,
+    "car_loss_pct": 63
+  },
+  "q3_ytd_m": {
+    "revenue": 888.5,
+    "gross_profit": 331.4,
+    "net_loss": -122.9,
+    "ebitda": -56.2,
+    "ocf": 3.3,
+    "capex": 13.5,
+    "fcf": -10.2,
+    "sbc": 68.9
+  },
+  "ttm_formula": "FY2025 + 9M2026 - 9M2025",
+  "ttm_m": {
+    "revenue": 1116.6,
+    "gross_profit": 442,
+    "gaap_net_income": -144.6,
+    "adjusted_ebitda": -60.8,
+    "ocf": 24,
+    "capex": 16.6,
+    "ordinary_fcf": 7.4,
+    "sbc": 87.4
+  },
+  "q3_balance_sheet_m": {
+    "equity": 471.8,
+    "investments": 793.7,
+    "cash_including_restricted": 385.2,
+    "financing_borrowings": 231.6,
+    "assets": 2089.3,
+    "total_liabilities": 1617.5
+  },
+  "shares_m": 77.86443,
+  "shares_as_of": "2026-09-30",
+  "quote_usd": 45.9,
+  "quote_as_of": "2026-11-04 NYSE close, before Nov 5 Q3 public release",
+  "valuation": {
+    "method": "historical own P/B median x current GAAP equity / outstanding shares",
+    "historical_pb_fy2022_to_fy2025": [
+      1.09,
+      1.59,
+      4.41,
+      9.97
+    ],
+    "median": 3,
+    "equity_m": 471.8,
+    "shares_m": 77.86443,
+    "reference_usd": 18.177748170762953,
+    "market_cap_m": 3573.977337,
+    "current_pb": 7.575195712166171,
+    "current_ps": 3.200767810317034,
+    "model_vs_close_pct": -60.39706280879531,
+    "no_double_count_assets_liabilities": true,
+    "caveat": "four historical book-value observations use year-end price/book values and may be ex-post; stock quote from pre-Q3 session; excluded future dilutive unvested awards"
+  },
+  "guidance_not_actual": {
+    "q4_2026_revenue_m": [
+      342,
+      346
+    ],
+    "q4_adjusted_ebitda_m": [
+      5,
+      9
+    ],
+    "fy2026_revenue_m": [
+      1231,
+      1235
+    ],
+    "fy2027_positive_adj_ebitda_company_expectation": true
+  },
+  "event_coverage": {
+    "prior_audit": "research/COMPANIES/LMND/research-records/2026-11-04-research-audit.json",
+    "current": "Nov 5 SEC 8-K and Q3 shareholder letter and Nov 4 nationwide Renters disclosure",
+    "exhaustive": false,
+    "gaps": [
+      "new Q3 10-Q pending independently verified",
+      "all state regulator docket coverage",
+      "complete 2026-11-05 filing universe",
+      "actual post-results market quote",
+      "fully diluted economic shares"
+    ]
+  },
+  "changes_from_nov4": {
+    "previous_price_ref": 19.36,
+    "current_ref": 18.177748170762953,
+    "previous_latest_financial": "2026 Q2",
+    "new": "2026 Q3",
+    "gaap_equity_old_m": 499.5,
+    "gaap_equity_new_m": 471.8
+  },
+  "validate": {
+    "sections": 7,
+    "details": 8,
+    "summary": 14,
+    "eventSections": 5,
+    "totalLength": 19854,
+    "hasOldPrice": false,
+    "hasTodayPrice": true,
+    "hasOldReportInfo": false,
+    "hasFutureCaveat": true
+  }
+}
