@@ -105,7 +105,7 @@ const viewMeaning = investmentView === "研究中"
                 <span class="topic-toggle" aria-hidden="true">+</span>
               </summary>
               <div class="topic-answer-wrapper">
-                <p class="topic-source-date">研究资料截至 {topicCutoff}，不代表实时行情或实时持仓。</p>
+                <p class="topic-source-date">研究资料截至 {topic.researchCutoff || topicCutoff}，不代表实时行情或实时持仓。</p>
                 <div class="markdown-body topic-answer" set:html={renderMarkdown(topic.answer)} />
               </div>
             </details>

@@ -7,9 +7,9 @@ const page = await readFile(new URL("../src/pages/stocks/INTC/conversation.astro
 const stockPage = await readFile(new URL("../src/pages/stocks/[symbol].astro", import.meta.url), "utf8");
 const reportPage = await readFile(new URL("../src/pages/reports/[symbol]/[report].astro", import.meta.url), "utf8");
 
-test("Intel conversation combines related topics into three sourced sections", () => {
-  assert.equal(intcConversation.entries.length, 3);
-  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 3);
+test("Intel conversation combines related topics into four sourced sections", () => {
+  assert.equal(intcConversation.entries.length, 4);
+  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 4);
   for (const item of intcConversation.entries) {
     assert.ok(item.id && item.topic && item.question, "Q&A metadata required");
     assert.ok(item.answer.length > 200, item.id + " should provide useful detail");
@@ -43,8 +43,8 @@ test("dated prices and holdings are described as historical, not real-time", () 
 });
 
 
-test("removed the trading Q&A and kept other three topics in order", () => {
-  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "nvidia", "intel-18a"]);
+test("removed the trading Q&A and preserved the other topics in order", () => {
+  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "nvidia", "intel-18a", "fab34-apollo"]);
   assert.equal(intcConversation.entries.some(item => item.id === "politicians"), false);
   const ceo = intcConversation.entries[0].answer;
   assert.match(ceo, /经营改革|重要行动/);
@@ -62,4 +62,19 @@ test("18A discussion integrates the process, Panther Lake, yield, and industry b
   assert.match(topic.answer, /未公布具体百分比/);
   assert.match(topic.answer, /没有适用于所有芯片/);
   assert.match(page, /item\.researchCutoff \|\| intcConversation\.researchCutoff/);
+});
+
+
+test("Fab 34 discussion accurately distinguishes share ownership, deal prices and trade-off", () => {
+  const topic = intcConversation.entries.find((item) => item.id === "fab34-apollo");
+  assert.ok(topic);
+  assert.equal(topic.researchCutoff, "2026-11-05");
+  for (const term of ["112亿美元", "142亿美元", "30亿美元", "49%", "51%", "净所得", "INTC", "65亿美元过桥贷款", "2026年4月8日"]) {
+    assert.ok(topic.answer.includes(term), "Missing " + term);
+  }
+  assert.match(topic.answer, /不等于阿波罗实际净利润/);
+  assert.match(topic.answer, /不是INTC股票|不是INTC的49%/);
+  assert.match(page, /\$14\.2B/);
+  assert.match(page, /Fab 34股权回购/);
+  assert.match(stockPage, /topic\.researchCutoff \|\| topicCutoff/);
 });
