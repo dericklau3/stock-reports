@@ -2,7 +2,7 @@
 // 金额、价格和持仓状态均保留相应时点，不应作为实时行情使用。
 export const intcConversation = {
   title: "英特尔深度问答",
-  subtitle: "陈立武与公司改革、NVIDIA战略投资、18A制程良率及Fab 34股权回购",
+  subtitle: "CEO改革、NVIDIA战略投资、18A工艺、Fab 34和Classiq量子计算",
   lastEdited: "2026-11-05",
   researchCutoff: "2026-11-02",
   entries: [
@@ -205,6 +205,70 @@ Intel表示回购有望增厚未来的每股收益，并在2027年起改善其�
 **投资者接下来应重点观察**：Fab 34实际产能利用率、Intel 3/4相关产品需求、制造业务盈利与现金流，以及收回的经济利益能否覆盖额外融资成本。30亿美元的价格差并不能单独衡量这项交易是否划算。
 
 **官方资料：**[2024年Intel与Apollo原始公告](https://www.intel.com/content/www/us/en/newsroom/news/co-invest-program-news-2024.html)；[2024年6月Intel Form 8-K交易条款](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-24-000103/intc-20240604.htm)；[2026年4月1日Intel回购公告](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab)；[2026年4月8日Intel Form 8-K完成披露](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000072/intc-20260408.htm)。
+`.trim(),
+    },
+    {
+      id: "classiq-quantum",
+      topic: "Classiq与量子计算",
+      question: "Intel为什么收购Classiq？陈立武是否投资过这家公司？Intel量子芯片究竟研发到哪一步？",
+      researchCutoff: "2026-11-05",
+      answer: `
+## Classiq究竟做什么？英特尔为什么要收购？
+
+**Classiq是量子计算软件公司，不是量子芯片制造商。** 它的核心产品是量子算法设计与自动化综合平台：开发者通过高级抽象描述想解决的问题，软件再生成、优化并适配可在多种量子硬件或模拟器上执行的量子电路。它类似传统计算领域把复杂底层指令隐藏起来的编译器与设计自动化工具（EDA），目标客户包括企业、研究机构和量子计算开发者。该平台已开展商业合作，但公开材料不足以核实其最新年度营收、利润或独立盈利能力。
+
+英特尔自2015年布局硅自旋量子比特、低温控制和量子开发工具；收购Classiq，是想把**量子处理器（QPU）制造能力＋量子算法软件**结合成完整的开发与执行生态，而不是直接改善传统CPU的Intel 18A良率。英特尔承诺交易完成后仍支持Classiq的多硬件平台，并非只允许它在Intel量子芯片上运行。
+
+## 交易金额、付款方式与完成状态
+
+| 事项 | 截至2026-11-05已知情况 |
+|---|---|
+| 宣布签约 | 2026年10月26日 |
+| 收购标的 | Classiq Technologies Ltd. **100%股权** |
+| 基础收购价 | **约19亿美元**（1.9 billion USD） |
+| 附加对价 | **最多3.5亿美元**，取决于特定业绩里程碑 |
+| 潜在总对价 | **最高约22.5亿美元**（不含常规价格调整） |
+| 付款安排 | Intel可选择现金或Intel普通股支付，实际选择尚未确定 |
+| 预计交割时间 | **2027年上半年**，仍需监管批准及满足交割条件 |
+| 当时是否完成收购 | **尚未完成**，Intel与Classiq仍是独立公司 |
+
+**19亿美元不是已经花出的现金；22.5亿美元也不是固定最终成交价。** 若以现金支付会消耗流动性，若发行新股则可能摊薄原股东的每股权益。
+
+## 陈立武是不是Classiq老板？是否存在利益冲突？
+
+**不是创始人，但确实是早期个人投资者。** Classiq由Nir Minerbi、Amir Naveh和Yehuda Naveh创办。Classiq于**2022年2月17日**宣布3300万美元B轮融资时，明确将陈立武（Lip-Bu Tan）列为个人投资者；陈立武在**2025年3月18日**才正式上任Intel CEO。
+
+因此，把Classiq称为“陈立武自己创办的公司”不准确；但Intel收购CEO投资过的企业，**确实需要认真审查潜在关联方利益冲突**。公开信息未清楚说明他的具体出资额、收购签约时是否仍持股及持股比例、此次能收到多少对价。
+
+2026年10月27日CTech报道援引接近Classiq的匿名人士称，陈立武回避了收购谈判；**此说法是媒体消息，不是公开的独立治理审计结论**，不能据此判定所有潜在利益冲突都已解决，也不能没有证据就认定存在不当交易。
+
+股东值得追问：相关持股是否完整披露？是否经独立董事及必要程序审查？交易定价是否有独立估值或竞争性报价？若他持股，最终获得多少个人收益？
+
+## Intel自己已经制造量子芯片了吗？商业化到哪一步？
+
+**已经造出并向科研机构开放芯片，但截至2026年11月仍是研发、实验与工程验证阶段，尚未证实实现规模化商用QPU。**
+
+- **2023年发布Tunnel Falls**：12量子点硅自旋研究芯片，实验配置中可形成4—12个量子比特；采用与传统CMOS兼容的300毫米晶圆制造技术。
+- **英特尔当时公布95%的晶圆器件良率**：这是2023年特定器件测试口径，**不是量子计算正确率、纠错率或2026年所有量子芯片的商业生产良率**。
+- **2026年科研进展**：研究人员在Tunnel Falls设备上展示过四量子比特处理、初始化、量子门操作与重复码错误检测等实验成果；这不等于能运行足以产生广泛商业价值的大型量子应用。
+- **仍缺什么**：规模化可控制的量子比特、稳定运行、高可靠量子纠错、低温系统集成与经济上可行的付费应用。
+
+所以**Classiq的软件已开展企业商业活动，与Intel自研量子QPU尚未商业化，是两条不同的进度线**。软件可以帮助开发者，但无法靠收购直接解决硬件误差和扩展瓶颈。也不要把12量子比特研究芯片等同于当前英特尔所有研发水平的上限。
+
+## 对INTC股票意味着什么？
+
+| 维度 | 影响与验证重点 |
+|---|---|
+| 战略价值 | 补齐软件与工具链，提高建设全栈量子平台的可能性 |
+| 短期财务 | 有收购支付、整合与潜在稀释负担；Classiq收入贡献暂无充分公开数据 |
+| 长期机会 | 软件授权、技术服务、QPU及量子系统等未来业务，**尚不能按确定收入估值** |
+| 与18A/Foundry关系 | 不直接带来18A良率提高、代工订单或Xeon销量 |
+| 治理风险 | CEO早期投资关系需要透明披露、回避和独立定价审查 |
+| 后续观察 | 收购是否交割；现金与股份支付比例；Classiq付费收入、留存与客户；商用QPU交付及真实合同 |
+
+**核心判断：Intel已具备硅量子比特制造与科研验证能力，但其量子芯片并未达到Xeon那样成熟的量产商业模式。Classiq是押注未来量子计算软件生态的战略收购，而不是2026—2027年利润必然改善的证据。**
+
+**核验资料：**[Intel 2026-10-26官方收购公告](https://www.intc.com/news-events/press-releases/detail/1784/intel-to-acquire-classiq-to-create-a-full-stack-quantum)；[Intel 2026Q3 Form 10-Q（收购条款）](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)；[Classiq 2022-02-17融资公告（陈立武投资）](https://www.classiq.io/insights/33m-series-b)；[CTech 2026-10-27（关于回避谈判的媒体报道）](https://www.calcalistech.com/ctechnews/article/gl1c1k4k3)；[Intel Tunnel Falls研究芯片官方公告](https://www.intel.com/content/www/us/en/newsroom/news/quantum-computing-chip-to-advance-research.html)；[2026 APS四量子比特实验摘要](https://meetings-archive.aps.org/smt/2026/mar-s10/13/)。
 `.trim(),
     },
   ],

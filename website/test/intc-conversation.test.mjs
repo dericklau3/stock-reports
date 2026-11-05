@@ -7,9 +7,9 @@ const page = await readFile(new URL("../src/pages/stocks/INTC/conversation.astro
 const stockPage = await readFile(new URL("../src/pages/stocks/[symbol].astro", import.meta.url), "utf8");
 const reportPage = await readFile(new URL("../src/pages/reports/[symbol]/[report].astro", import.meta.url), "utf8");
 
-test("Intel conversation combines related topics into four sourced sections", () => {
-  assert.equal(intcConversation.entries.length, 4);
-  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 4);
+test("Intel conversation combines related topics into five sourced sections", () => {
+  assert.equal(intcConversation.entries.length, 5);
+  assert.equal(new Set(intcConversation.entries.map((item) => item.id)).size, 5);
   for (const item of intcConversation.entries) {
     assert.ok(item.id && item.topic && item.question, "Q&A metadata required");
     assert.ok(item.answer.length > 200, item.id + " should provide useful detail");
@@ -44,7 +44,7 @@ test("dated prices and holdings are described as historical, not real-time", () 
 
 
 test("removed the trading Q&A and preserved the other topics in order", () => {
-  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "nvidia", "intel-18a", "fab34-apollo"]);
+  assert.deepEqual(intcConversation.entries.map(item => item.id), ["ceo", "nvidia", "intel-18a", "fab34-apollo", "classiq-quantum"]);
   assert.equal(intcConversation.entries.some(item => item.id === "politicians"), false);
   const ceo = intcConversation.entries[0].answer;
   assert.match(ceo, /经营改革|重要行动/);
@@ -77,4 +77,18 @@ test("Fab 34 discussion accurately distinguishes share ownership, deal prices an
   assert.match(page, /\$14\.2B/);
   assert.match(page, /Fab 34股权回购/);
   assert.match(stockPage, /topic\.researchCutoff \|\| topicCutoff/);
+});
+
+
+test("Classiq discussion covers deal, CEO investment, and Intel quantum commercialization with careful caveats", () => {
+  const item = intcConversation.entries.find((topic) => topic.id === "classiq-quantum");
+  assert.ok(item);
+  assert.equal(item.researchCutoff, "2026-11-05");
+  for (const keyword of ["19亿美元", "3.5亿美元", "22.5亿美元", "2027年上半年", "陈立武", "2022年2月17日", "Tunnel Falls", "95%", "量子比特", "尚未完成", "尚未证实实现规模化商用QPU"]) {
+    assert.ok(item.answer.includes(keyword), "Missing " + keyword);
+  }
+  assert.match(item.answer, /不是创始人/);
+  assert.match(item.answer, /匿名人士/);
+  assert.match(item.answer, /不直接带来18A良率提高/);
+  assert.match(page, /Classiq/);
 });
