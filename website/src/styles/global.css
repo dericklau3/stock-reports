@@ -1181,3 +1181,28 @@ body { background: var(--bg); }
 .home-page .earnings-status-unannounced,
 .home-page .earnings-status-not-applicable { color: #89968d; }
 .earnings-date-note { margin: 0.9rem 0 0; color: #84938a; font-size: 0.74rem; line-height: 1.65; }
+
+/* Most recent published research report date, distinct from the earnings calendar. */
+.home-page .stock-card-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+}
+.home-page .latest-report-date {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  color: #728579;
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.home-page .latest-report-date time {
+  color: #355647;
+  font-weight: 760;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

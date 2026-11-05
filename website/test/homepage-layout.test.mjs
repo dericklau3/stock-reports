@@ -39,7 +39,7 @@ test("compact layout has responsive rules and keeps detailed report styling", ()
   assert.match(css, /\.event-dialog-content\s*\{/);
 });
 
-test("each homepage stock card renders only symbol, company name, rating and verified earnings date", () => {
+test("each homepage stock card renders symbol, company, rating, latest report date and earnings date", () => {
   const cardMarkup = home.split('<a\n          class="stock-card"')[1]?.split('</a>')[0] || "";
   assert.ok(cardMarkup, "stock card markup must exist");
   assert.match(cardMarkup, /class="stock-identity"/);
@@ -47,6 +47,9 @@ test("each homepage stock card renders only symbol, company name, rating and ver
   assert.match(cardMarkup, /class="stock-company"/);
   assert.match(cardMarkup, /class:list=\{\["view-tag"/);
   assert.match(cardMarkup, /class="stock-card-earnings"/);
+  assert.match(cardMarkup, /class="latest-report-date"/);
+  assert.match(cardMarkup, /<time datetime=\{company\.lastUpdated\}>\{company\.lastUpdated\}<\/time>/);
+  assert.match(cardMarkup, /class="stock-card-middle"/);
   assert.match(cardMarkup, /class="earnings-date"/);
   assert.match(home, /earningsCalendar\.entries/);
   for (const name of ["stock-description", "report-pill", "card-meta", "stock-logo", "card-open"]) {
@@ -59,4 +62,10 @@ test("each homepage stock card renders only symbol, company name, rating and ver
 test("compact cards do not preserve empty space for deleted excerpts", () => {
   assert.match(css, /\.home-page \.stock-card\s*\{[\s\S]*?min-height:\s*164px/);
   assert.doesNotMatch(css, /\.home-page \.stock-description\s*\{/);
+});
+
+test("latest report date is read from generated report index and styled separately from earnings", () => {
+  assert.match(home, /company\.lastUpdated &&/);
+  assert.match(css, /\.home-page \.latest-report-date\s*\{/);
+  assert.match(css, /\.home-page \.stock-card-middle\s*\{/);
 });

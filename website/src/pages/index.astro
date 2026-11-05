@@ -115,6 +115,12 @@ function toneFromView(value) {
           </div>
           <div class="stock-card-middle">
             <span class:list={["view-tag", "view-tag-" + toneFromView(company.investmentView || "研究中")]}>{company.investmentView || "研究中"}</span>
+            {company.lastUpdated && (
+              <span class="latest-report-date">
+                <span>最新报告</span>
+                <time datetime={company.lastUpdated}>{company.lastUpdated}</time>
+              </span>
+            )}
           </div>
           {quarterEarnings[company.symbol] && (
             <div
