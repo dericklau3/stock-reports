@@ -161,7 +161,7 @@ class SkillPackageTests(unittest.TestCase):
             inputs = (dest / "inputs.md").read_text()
             source = (ROOT / "tests/behavioral-cases.md").read_text().split("## 验收标准")[0]
             self.assertEqual(inputs, source)
-            self.assertEqual(manifest["case_ids"], list(range(1, 34)))
+            self.assertEqual(manifest["case_ids"], list(range(1, 35)))
             self.assertFalse((dest / "skill/tests").exists())
             self.assertEqual((dest / "skill/SKILL.md").read_bytes(), (ROOT / "SKILL.md").read_bytes())
             import hashlib
