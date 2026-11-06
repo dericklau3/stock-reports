@@ -1,0 +1,227 @@
+{
+  "company": "AeroVironment, Inc.",
+  "ticker": "AVAV",
+  "exchange": "NASDAQ",
+  "research_date": "2026-11-06",
+  "timezone": "Asia/Tokyo",
+  "last_regular_market_close": {
+    "date": "2026-11-05",
+    "currency": "USD",
+    "price": 102.08,
+    "source": "https://stockanalysis.com/stocks/avav/history/"
+  },
+  "latest_earnings": {
+    "period": "FY2027 Q1",
+    "period_end": "2026-08-01",
+    "release_date": "2026-09-09",
+    "source": "https://investor.avinc.com/node/21396/html"
+  },
+  "latest_filing": {
+    "form": "8-K",
+    "filed": "2026-11-04",
+    "signed": "2026-10-30",
+    "revolver_commitment_from_m": 350,
+    "to_m": 450,
+    "lc_sublimit_m": 150,
+    "lc_inside_revolver": true,
+    "no_cash_draw_assumed": true,
+    "source": "https://aerovironmentinc.gcs-web.com/node/21526/html"
+  },
+  "methodology": "Current already released consecutive 3 quarters only; restated Q3; mechanical annualizations; own recent market-implied EV/TTM sales; not peers, old 4-year median, or future DCF",
+  "financial_quarters": [
+    {
+      "fiscal": "FY26Q3",
+      "end": "2026-01-31",
+      "restated": true,
+      "revenue_m": 408.045,
+      "gross_m": 98.794,
+      "operating_m": -268.44,
+      "net_m": -243.823,
+      "ocf_m": -5.107,
+      "ppe_m": 12.597,
+      "software_m": 4.009,
+      "fcf_m": -21.713,
+      "sbc_m": 8.07,
+      "source": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926076141/avav-20260131x10qa.htm",
+      "cashflow_computation": "restated 9mo minus comparable first 6mo"
+    },
+    {
+      "fiscal": "FY26Q4",
+      "end": "2026-04-30",
+      "revenue_m": 641.616,
+      "gross_m": 202.625,
+      "operating_m": 56.941,
+      "net_m": 63.174,
+      "ocf_m": 95.513,
+      "ppe_m": 16.41,
+      "software_m": 6.399,
+      "fcf_m": 72.704,
+      "sbc_m": 10.269,
+      "source": "https://investor.avinc.com/node/21001/html",
+      "computation": "FY26 annual minus restated FY26 first 9mo"
+    },
+    {
+      "fiscal": "FY27Q1",
+      "end": "2026-08-01",
+      "revenue_m": 480.49,
+      "gross_m": 124.599,
+      "operating_m": -10.871,
+      "net_m": -5.066,
+      "ocf_m": 13.496,
+      "ppe_m": 44.033,
+      "software_m": 5.417,
+      "fcf_m": -35.954,
+      "sbc_m": 4.927,
+      "source": "https://investor.avinc.com/node/21396/html"
+    }
+  ],
+  "realized_ttm": {
+    "revenue_m": 2002.659,
+    "gross_m": 530.123,
+    "operating_m": -252.594,
+    "net_m": -202.818,
+    "ocf_m": 58.818,
+    "fcf_study_scope_m": -44.782,
+    "method": "FY2026 + FY2027Q1 - FY2026Q1"
+  },
+  "cap_bridge": {
+    "date": "2026-08-01",
+    "cash_m": 278.39,
+    "short_investments_m": 301.837,
+    "convertible_principal_m": 747.5,
+    "net_debt_m": 167.273,
+    "known_subsequent_cash_out_m": 32.843,
+    "partially_adjusted_net_debt_m": 200.116,
+    "shares_m": 50.820702,
+    "shares_reported": "2026-09-03",
+    "stockholders_equity_m": 4396.055,
+    "goodwill_m": 2493.886,
+    "intangibles_m": 886.469,
+    "tangible_equity_m": 1015.7,
+    "limits": [
+      "No complete August-November cash rollforward",
+      "Share count newer than Sep 3 not verified"
+    ]
+  },
+  "own_recent_market_anchor_observations": [
+    {
+      "date": "2026-09-09",
+      "price": 140.8,
+      "multiple": 3.672952230809139
+    },
+    {
+      "date": "2026-09-17",
+      "price": 163.38,
+      "multiple": 4.245956147681657
+    },
+    {
+      "date": "2026-10-16",
+      "price": 121.79,
+      "multiple": 3.190542821608671
+    },
+    {
+      "date": "2026-11-05",
+      "price": 102.08,
+      "multiple": 2.690369783452899
+    }
+  ],
+  "valuation_scenarios": {
+    "bear": [
+      {
+        "revenue": 1632.18,
+        "date": "2026-11-05",
+        "multiple": 2.690369783452899,
+        "ev_m": 4391.167753156153,
+        "equity_m": 4191.051753156153,
+        "share_usd": 82.46741166928692,
+        "gap_pct": -19.21295878792426
+      },
+      {
+        "revenue": 1921.96,
+        "date": "2026-11-05",
+        "multiple": 2.690369783452899,
+        "ev_m": 5170.783109005134,
+        "equity_m": 4970.667109005134,
+        "share_usd": 97.8079190839421,
+        "gap_pct": -4.185032245354526
+      }
+    ],
+    "base": [
+      {
+        "revenue": 1921.96,
+        "date": "2026-10-16",
+        "multiple": 3.190542821608671,
+        "ev_m": 6132.095681419001,
+        "equity_m": 5931.979681419001,
+        "share_usd": 116.72368637133351,
+        "gap_pct": 14.34530404715273
+      },
+      {
+        "revenue": 2002.659,
+        "date": "2026-09-09",
+        "multiple": 3.672952230809139,
+        "ev_m": 7355.6708416,
+        "equity_m": 7155.5548416,
+        "share_usd": 140.8,
+        "gap_pct": 37.93103448275863
+      }
+    ],
+    "bull": [
+      {
+        "revenue": 2040.2013333333334,
+        "date": "2026-09-09",
+        "multiple": 3.672952230809139,
+        "ev_m": 7493.562038566447,
+        "equity_m": 7293.446038566447,
+        "share_usd": 143.51328792283206,
+        "gap_pct": 40.589035974561185
+      },
+      {
+        "revenue": 2244.212,
+        "date": "2026-09-17",
+        "multiple": 4.245956147681657,
+        "ev_m": 9528.825738100946,
+        "equity_m": 9328.709738100946,
+        "share_usd": 183.56121365857848,
+        "gap_pct": 79.82093814515918
+      }
+    ]
+  },
+  "valuation_formula": "(revenue_m*own_market_observation_EV_TTM_sales-200.116)/50.820702",
+  "valuation_status": "All six conditional market price endpoints computed. INDEPENDENT intrinsic fair value NOT established because TTM GAAP and free cash flow negative and multiple circularity.",
+  "previous_report_old_date": "2026-11-04",
+  "previous_single_point_usd": 198.61,
+  "previous_source": "four-year historic EV/Sales median 5.14x",
+  "superseded": true,
+  "product_revenue_groups_q1_m": {
+    "UAS": 120.206,
+    "precision_strike_defense": 197.132,
+    "AxS_other": 28.631,
+    "AxS_subtotal": 345.969,
+    "space_directed_energy": 51.509,
+    "cyber_mission": 83.012,
+    "SCDE_subtotal": 134.521,
+    "total": 480.49,
+    "ESAero_approx_within_AxS": 41.8
+  },
+  "event_review": {
+    "new_A": "Nov 4 revolving credit 8-K",
+    "old_A_rechecked": "2025-10 through 2026-09 events in prior report",
+    "partial_coverage": [
+      "Government procurement counterpart records not fully checked",
+      "No independent confirmation of internet $1.7B space contract cancellation claim; omitted rather than asserted"
+    ]
+  },
+  "key_risks": [
+    "SCAR and procurement cancellation",
+    "SCDE negative EBITDA",
+    "FCF negative",
+    "Acquisition goodwill and control weaknesses",
+    "Dilution and credit capacity versus actual borrowings"
+  ],
+  "notes": [
+    "No tracker file generated",
+    "No 2026 Q2 FY27 results reported by cutoff",
+    "Only one AVAV deep-research report remains after atomic commit"
+  ]
+}
