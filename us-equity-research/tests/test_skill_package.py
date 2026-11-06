@@ -96,7 +96,7 @@ class SkillPackageTests(unittest.TestCase):
         self.assertEqual([int(n) for n, _ in sections], list(range(1, 8)))
         self.assertEqual(sections[-1][1], "主要投资风险")
         bodies = re.split(r"^### \d+\. .+$", template, flags=re.M)[1:]
-        for number, width in {2: 3, 3: 3, 6: 2, 7: 3}.items():
+        for number, width in {2: 3, 3: 3, 6: 4, 7: 3}.items():
             rows = [line for line in bodies[number - 1].splitlines() if line.startswith("|")]
             self.assertGreaterEqual(len(rows), 3)
             self.assertTrue(all(len(row.strip("|").split("|")) == width for row in rows))
@@ -108,22 +108,26 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn("不为凑行数", bodies[2])
         self.assertIn("不另建", bodies[2])
         self.assertIn("第6节必须先给价格", bodies[5])
-        self.assertIn("合理价格参考估计", bodies[5])
-        self.assertIn("自身最近四个已结束完整财年", bodies[5])
+        self.assertIn("自身历史至少三个有效样本", bodies[5])
         self.assertIn("模型价差", bodies[5])
         self.assertIn("不能使用今天股价回填历史", bodies[5])
         self.assertIn("不得预测未来的收入", bodies[5])
-        self.assertNotIn("| 保守情景估值 |", bodies[5])
-        self.assertNotIn("| 基础情景估值 |", bodies[5])
-        self.assertNotIn("| 乐观情景估值 |", bodies[5])
+        self.assertIn("本次估值未完成", bodies[5])
+        self.assertIn("不机械套用固定百分比", bodies[5])
+        valuation_rows = [line for line in bodies[5].splitlines() if line.startswith("|")]
+        self.assertEqual(
+            [row.strip("|").split("|")[0].strip() for row in valuation_rows],
+            ["估值情景", "---", "悲观", "基础", "乐观"],
+        )
+        self.assertIn("合理价格区间（USD/股）", bodies[5])
         self.assertNotIn("同期同口径同行参照", bodies[5])
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         valuation = (ROOT / "references/valuation.md").read_text(encoding="utf-8")
-        self.assertIn("必须优先给出一个明确、可复算", skill)
+        self.assertIn("必须优先给出悲观、基础、乐观三种可复算", skill)
         self.assertIn("仍排除同行比较和未来DCF", skill)
-        self.assertIn("公司自身历史估值中位数", valuation)
         self.assertIn("至少三个有效且可比的观察值", valuation)
-        self.assertIn("合理价格估计", valuation)
+        self.assertIn("六个价格端点", valuation)
+        self.assertIn("本次第6节估值未完成", valuation)
         self.assertNotIn("### 7. 未来值得关注的事件", template)
         self.assertNotIn("### 9. 四种投资视角", template)
         financial_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
