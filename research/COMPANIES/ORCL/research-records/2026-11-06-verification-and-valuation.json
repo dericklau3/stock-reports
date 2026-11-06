@@ -1,0 +1,329 @@
+{
+  "company": "Oracle Corporation",
+  "ticker": "ORCL",
+  "exchange": "NYSE",
+  "research_date": "2026-11-06",
+  "research_timezone": "Asia/Tokyo",
+  "cutoff": "2026-11-06 before NY regular trading",
+  "last_regular_close": {
+    "date": "2026-11-05",
+    "price_usd": 115.16,
+    "source": "https://stockanalysis.com/stocks/orcl/history/"
+  },
+  "financial_release_latest": {
+    "period": "FY2027Q1",
+    "end": "2026-08-31",
+    "release_date": "2026-09-10",
+    "filing": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+  },
+  "three_consecutive_quarters": [
+    {
+      "quarter": "FY2026Q3",
+      "end": "2026-02-28",
+      "revenue_b": 17.19,
+      "gross_proxy_b": 11.098,
+      "operating_income_b": 5.464,
+      "common_net_b": 3.699,
+      "ocf_b": 7.151,
+      "capex_b": 18.635,
+      "fcf_b": -11.484,
+      "sbc_b": 1.328,
+      "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/orcl-20260228.htm",
+      "cashflow_derivation": "9mo ending Feb28 2026 minus 6mo ending Nov30 2025"
+    },
+    {
+      "quarter": "FY2026Q4",
+      "end": "2026-05-31",
+      "revenue_b": 19.184,
+      "gross_proxy_b": 12.512,
+      "operating_income_b": 6.133,
+      "common_net_b": 4.223,
+      "ocf_b": 14.62,
+      "capex_b": 16.493,
+      "fcf_b": -1.873,
+      "sbc_b": 1.203,
+      "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+      "cashflow_derivation": "FY2026 full year minus first 9 months"
+    },
+    {
+      "quarter": "FY2027Q1",
+      "end": "2026-08-31",
+      "revenue_b": 19.345,
+      "gross_proxy_b": 11.612,
+      "operating_income_b": 6.728,
+      "common_net_b": 4.679,
+      "ocf_b": 23.103,
+      "capex_b": 28.499,
+      "fcf_b": -5.396,
+      "sbc_b": 1.127,
+      "customer_prepay_financing_in_ocf_b": 11.363,
+      "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+    }
+  ],
+  "fy2025": {
+    "revenue_b": 57.399,
+    "op_b": 17.678,
+    "common_net_b": 12.443,
+    "ocf_b": 20.821,
+    "capex_b": 21.215,
+    "fcf_b": -0.394
+  },
+  "fy2026": {
+    "revenue_b": 67.357,
+    "op_b": 20.606,
+    "common_net_b": 16.984,
+    "ocf_b": 31.977,
+    "capex_b": 55.663,
+    "fcf_b": -23.686
+  },
+  "realized_ttm": {
+    "end": "2026-08-31",
+    "revenue_b": 71.776,
+    "operating_income_b": 23.057,
+    "common_net_income_b": 18.736,
+    "ocf_b": 46.94,
+    "capex_b": 75.66,
+    "fcf_b": -28.72,
+    "sbc_b": 4.814,
+    "formula": "FY26 annual + FY27Q1 - FY26Q1"
+  },
+  "quarter_revenue_m": {
+    "FY26Q1": {
+      "OCI": 3347,
+      "SaaS": 3839,
+      "software_license": 766,
+      "software_support": 4955,
+      "hardware": 670,
+      "services": 1349,
+      "total": 14926
+    },
+    "FY26Q4": {
+      "OCI": 5787,
+      "SaaS": 4126,
+      "software_license": 1881,
+      "software_support": 4943,
+      "hardware": 924,
+      "services": 1523,
+      "total": 19184
+    },
+    "FY27Q1": {
+      "OCI": 7388,
+      "SaaS": 4219,
+      "software_license": 655,
+      "software_support": 4895,
+      "hardware": 774,
+      "services": 1414,
+      "total": 19345
+    }
+  },
+  "rpo_last_reported_b": 664,
+  "rpo_date": "2026-08-31",
+  "fy27_q1_customer_prepay_b": 11.363,
+  "funding_event": {
+    "priced": "2026-11-02",
+    "completed": "2026-11-04",
+    "SEC_8k": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526447507/d131790d8k.htm",
+    "new_common_shares": 86206897,
+    "offering_price_usd": 116,
+    "common_gross_b": 10,
+    "common_net_b_estimate": 9.9,
+    "new_notes_face_b": 10,
+    "note_tranches": [
+      {
+        "principal_b": 2,
+        "coupon": 0.07,
+        "maturity": 2029
+      },
+      {
+        "principal_b": 1.75,
+        "coupon": 0.0745,
+        "maturity": 2031
+      },
+      {
+        "principal_b": 2.25,
+        "coupon": 0.0785,
+        "maturity": 2033
+      },
+      {
+        "principal_b": 2.5,
+        "coupon": 0.08,
+        "maturity": 2037
+      },
+      {
+        "principal_b": 1.5,
+        "coupon": 0.0865,
+        "maturity": 2046
+      }
+    ],
+    "annual_coupon_b": 0.77675,
+    "distinct_from_earlier_20b_ATM": true
+  },
+  "capital_bridge": {
+    "financial_asof": "2026-08-31",
+    "cash_and_marketables_b": 37.077,
+    "notes_and_borrowings_b": 125.337,
+    "finance_leases_b": 9.185,
+    "operating_leases_b_excluded": 34.621,
+    "not_yet_commenced_lease_undiscounted_payments_b_excluded": 288,
+    "preferred_liquidation_b": 5,
+    "nci_b": 0.424,
+    "new_debt_b": 10,
+    "estimated_new_funding_net_cash_b": 19.9,
+    "post_financing_net_claim_b": 92.969,
+    "reference_common_shares_b": 3.023736,
+    "share_reference_asof": "2026-09-07 10-Q cover",
+    "new_issued_shares_b": 0.086206897,
+    "pro_forma_common_shares_b": 3.109942897,
+    "unknown_cash_flows_aug_to_nov": true
+  },
+  "recent_company_market_multiples_pro_forma": [
+    {
+      "date": "2026-11-05",
+      "usd": 115.16,
+      "comparable_proforma_ev_ebit": 19.56499215069263
+    },
+    {
+      "date": "2026-11-04",
+      "usd": 123.73,
+      "comparable_proforma_ev_ebit": 20.720919228252157
+    },
+    {
+      "date": "2026-10-16",
+      "usd": 128.23,
+      "comparable_proforma_ev_ebit": 21.327882104450275
+    },
+    {
+      "date": "2026-10-28",
+      "usd": 144.54,
+      "comparable_proforma_ev_ebit": 23.527785329070564
+    }
+  ],
+  "valuation_scenarios": {
+    "bear": [
+      {
+        "quarter": "FY26Q3",
+        "annualized_realized_gaap_ebit_b": 21.856,
+        "price_observation_date": "2026-11-05",
+        "pro_forma_ev_to_actual_ttm_ebit": 19.56499215069263,
+        "enterprise_value_b": 427.6124684455381,
+        "common_equity_value_b": 334.64346844553813,
+        "per_share_usd": 107.60437716343644,
+        "relative_to_last_close_pct": -6.560978496494929,
+        "formula": "(21.856 * 19.56499215069263 - 92.969) / 3.109942897"
+      },
+      {
+        "quarter": "FY26Q4",
+        "annualized_realized_gaap_ebit_b": 24.532,
+        "price_observation_date": "2026-11-05",
+        "pro_forma_ev_to_actual_ttm_ebit": 19.56499215069263,
+        "enterprise_value_b": 479.96838744079156,
+        "common_equity_value_b": 386.99938744079157,
+        "per_share_usd": 124.43938691418089,
+        "relative_to_last_close_pct": 8.057821217593686,
+        "formula": "(24.532 * 19.56499215069263 - 92.969) / 3.109942897"
+      }
+    ],
+    "base": [
+      {
+        "quarter": "FY26Q4",
+        "annualized_realized_gaap_ebit_b": 24.532,
+        "price_observation_date": "2026-11-04",
+        "pro_forma_ev_to_actual_ttm_ebit": 20.720919228252157,
+        "enterprise_value_b": 508.32559050748193,
+        "common_equity_value_b": 415.35659050748194,
+        "per_share_usd": 133.55762606064403,
+        "relative_to_last_close_pct": 15.975708632028507,
+        "formula": "(24.532 * 20.720919228252157 - 92.969) / 3.109942897"
+      },
+      {
+        "quarter": "FY27Q1",
+        "annualized_realized_gaap_ebit_b": 26.912,
+        "price_observation_date": "2026-11-04",
+        "pro_forma_ev_to_actual_ttm_ebit": 20.720919228252157,
+        "enterprise_value_b": 557.641378270722,
+        "common_equity_value_b": 464.67237827072205,
+        "per_share_usd": 149.41508370425944,
+        "relative_to_last_close_pct": 29.74564406413638,
+        "formula": "(26.912 * 20.720919228252157 - 92.969) / 3.109942897"
+      }
+    ],
+    "bull": [
+      {
+        "quarter": "FY27Q1",
+        "annualized_realized_gaap_ebit_b": 26.912,
+        "price_observation_date": "2026-10-16",
+        "pro_forma_ev_to_actual_ttm_ebit": 21.327882104450275,
+        "enterprise_value_b": 573.9759631949657,
+        "common_equity_value_b": 481.00696319496575,
+        "per_share_usd": 154.66745825428762,
+        "relative_to_last_close_pct": 34.306580630677,
+        "formula": "(26.912 * 21.327882104450275 - 92.969) / 3.109942897"
+      },
+      {
+        "quarter": "FY27Q1",
+        "annualized_realized_gaap_ebit_b": 26.912,
+        "price_observation_date": "2026-10-28",
+        "pro_forma_ev_to_actual_ttm_ebit": 23.527785329070564,
+        "enterprise_value_b": 633.179758775947,
+        "common_equity_value_b": 540.2107587759469,
+        "per_share_usd": 173.70439801227866,
+        "relative_to_last_close_pct": 50.83744183073868,
+        "formula": "(26.912 * 23.527785329070564 - 92.969) / 3.109942897"
+      }
+    ]
+  },
+  "market_scenario_method": "(annualized GAAP EBIT from actual recent quarter * recent company's own quote-implied EV / actual TTM EBIT - post-deal net claims) / post-deal shares",
+  "valuation_status": "Six scenario endpoints computed as conditional market-implied ranges only; independent reasonable intrinsic value NOT established due exceptionally negative free cash flow, large lease commitments, customer prepayments and insufficient contract-level returns.",
+  "caveats": [
+    "October quotes precede Nov issuance, comparable pro-forma multiple is NOT date-true EV",
+    "Cash net receipts temporarily assumed held, though they may rapidly fund capex",
+    "Operating leases excluded from bridge to keep EBIT consistent, economically material",
+    "SBC impacts dilution not fully resolved",
+    "Actual shares and cash after Nov4 not completely reconciled",
+    "RPO is contract consideration not cash and realization profitability is uncertain",
+    "No arbitrary historical four-FY revenue median reused"
+  ],
+  "event_review": {
+    "time_range": "2025-11-06 to 2026-11-06 with older Stargate background",
+    "primary_sources": [
+      "FY26 Q2 10-Q",
+      "FY26 Q3 10-Q",
+      "FY26 10-K",
+      "FY27Q1 10-Q",
+      "2026-10-28 Investor Day",
+      "2026-11-04 SEC 8-K",
+      "Oracle 2026-10 energy announcements"
+    ],
+    "issuer_review_partial": true,
+    "counterpart_review_partial": true,
+    "unverified": "Definitive power/regulatory permits and all AI customer contract economic guarantees"
+  },
+  "candidate_classification": {
+    "A": [
+      "FY26Q2 RPO",
+      "2026-02 funding framework",
+      "FY26 capex/FCF step change",
+      "FY27Q1 OCI+20B ATM",
+      "Point Beach energy commitment",
+      "Jupiter energy permit proposals",
+      "Oct28 financing and FCF framework",
+      "Nov4 executed financing"
+    ],
+    "B": [
+      "cross-cloud database growth",
+      "application AI releases",
+      "product partnerships"
+    ],
+    "C": [
+      "unpriced promotional collaborations and unverified claims"
+    ]
+  },
+  "previous_report": {
+    "path": "research/COMPANIES/ORCL/deep-research/2026-11-04-deep-research.md",
+    "date": "2026-11-04",
+    "old_quote_usd": 126.19,
+    "old_reference_usd": 169.28,
+    "old_method": "FY2023-FY2026 historical EV / annual revenue median 8.63x",
+    "now_invalid_for_current_skill": true
+  }
+}
