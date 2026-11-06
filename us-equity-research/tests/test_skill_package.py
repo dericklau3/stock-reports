@@ -141,7 +141,7 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn("不得决定基础区间的任一端点", valuation)
         self.assertIn("财报本身不能单独决定股票的美元价格", valuation)
         self.assertIn("最近市场交易倍数不是独立的内在价值证据", valuation)
-        self.assertIn("六个价格端点", valuation)
+        self.assertIn("六个端点都需给出计算式和中间值", valuation)
         self.assertIn("本次第6节估值未完成", valuation)
         self.assertNotIn("### 7. 未来值得关注的事件", template)
         self.assertNotIn("### 9. 四种投资视角", template)
