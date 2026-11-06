@@ -70,7 +70,13 @@ class SkillPackageTests(unittest.TestCase):
                 target = (current.parent / link).resolve()
                 if target.is_file() and target.suffix == ".md":
                     pending.append(target)
+        # Historical P0/P1/P2 valuation manuals remain archived, but are no
+        # longer linked from the active skill's seven-section research flow.
+        archived_legacy = {"valuation-engine.md", "valuation-p1.md", "valuation-p2.md"}
         for ref in (ROOT / "references").glob("*.md"):
+            if ref.name in archived_legacy:
+                self.assertTrue(ref.is_file())
+                continue
             self.assertIn(ref.resolve(), seen, ref.name)
 
     def test_package_isolated_from_sibling_skills(self):
@@ -96,10 +102,13 @@ class SkillPackageTests(unittest.TestCase):
         self.assertEqual([int(n) for n, _ in sections], list(range(1, 8)))
         self.assertEqual(sections[-1][1], "主要投资风险")
         bodies = re.split(r"^### \d+\. .+$", template, flags=re.M)[1:]
-        for number, width in {2: 3, 3: 3, 6: 4, 7: 3}.items():
+        for number, width in {3: 3, 6: 4, 7: 3}.items():
             rows = [line for line in bodies[number - 1].splitlines() if line.startswith("|")]
             self.assertGreaterEqual(len(rows), 3)
             self.assertTrue(all(len(row.strip("|").split("|")) == width for row in rows))
+        self.assertIn('class="event-roadmap"', bodies[1])
+        self.assertIn('class="event-month"', bodies[1])
+        self.assertIn('class="event-entry"', bodies[1])
         self.assertIn("下一关是什么", bodies[2])
         self.assertIn("开头", template)
         self.assertIn("直接进入第1节", template)
@@ -147,7 +156,7 @@ class SkillPackageTests(unittest.TestCase):
             inputs = (dest / "inputs.md").read_text()
             source = (ROOT / "tests/behavioral-cases.md").read_text().split("## 验收标准")[0]
             self.assertEqual(inputs, source)
-            self.assertEqual(manifest["case_ids"], list(range(1, 28)))
+            self.assertEqual(manifest["case_ids"], list(range(1, 34)))
             self.assertFalse((dest / "skill/tests").exists())
             self.assertEqual((dest / "skill/SKILL.md").read_bytes(), (ROOT / "SKILL.md").read_bytes())
             import hashlib
