@@ -214,9 +214,9 @@ Amazon向外部客户提供配送、运输等服务，客户按合同付运费�
 
 **公告日期：**2026-04-14；实际签约2026-04-13。
 
-**公布了什么：**拟以股票和现金收购Globalstar，现金比例上限40%；同时与Apple签卫星服务合作；交割需监管批准与卫星里程碑。
+**公布了什么：**2026-04-13签署以现金和亚马逊股票支付的Globalstar并购协议，2026-04-14公布并配套Apple卫星服务合作；现金对价比例上限40%。**后续实际进展：2026-10-27美国FCC已批准牌照控制权转移**；Globalstar在2026-11-05披露的Q3 10-Q确认，反垄断及适用外国投资审批已获得，仍须满足余下卫星里程碑与其他合约/许可条件，尚未交割。
 
-**对公司的实际意义：**获取频谱和卫星直连能力但尚未交割，潜在新发股与投资需求不能忽略。
+**对公司的实际意义：**FCC关键审批完成，减少了一项监管不确定性，但不等于已取得Globalstar资产或形成商业收入。卫星交付、最终交割、后续网络资本支出以及部分新发股稀释仍要观察。**后续原始披露：**[Globalstar于2026-11-05提交的Q3 10-Q（合并条件与FCC批准）](https://investors.globalstar.com/static-files/73b0a2f1-37e6-4cb5-b464-1ec2b3cc9fb8)。
 
 **原始来源：**[Amazon官方公告](https://press.aboutamazon.com/2026/4/amazon-to-acquire-globalstar-and-expand-amazon-leo-satellite-network)
 
@@ -291,7 +291,7 @@ Amazon向外部客户提供配送、运输等服务，客户按合同付运费�
 | **AWS AI计算容量、Trainium和Bedrock** | 抢占企业AI训练/推理预算；关键是扣除服务器折旧及电力后的现金回报。 | Q3 AWS已实现收入45,984m和利润17,773m；管理层预计2026现金capex约220,000m。下一关看已投用算力的收费使用率、AWS利润转化现金及资本开支回落；时间未确定。[IR](https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/) |
 | **OpenAI和Anthropic长期云算力协议履行** | 超大额承诺可能提升机房利用率，但Amazon也向客户注资/提供条件性融资。 | 2026Q1/2协议及追加投资已披露；OpenAI 2026Q2追加投入13,700m，Anthropic 2026Q2额外投入2×5,000m。下阶段看真实云服务交付、现金付款、模型企业融资及芯片里程碑；合同承诺不能一次计收入。[10-Q](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm) |
 | **零售快速配送、广告与会员变现** | 低毛利零售借会员和广告改善总利润，监管风险可能改变有效广告价格。 | Q3北美营业利润同比改善82%，广告恒汇率增长12%；公司预计Q4广告增速回到高十几。下一关是Q4真实增长及FTC案件进展（时间未披露）。[财报](https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/) |
-| **Leo卫星商业化与Globalstar整合** | 取得频谱及移动卫星服务网络以扩展新收入，但投入昂贵、仍需监管许可。 | 2026-04-13签收购协议并宣布Apple卫星服务合作；预计2027交割，尚需审批及卫星交付条件。下一关是完成交割、真实第三方付费规模、亏损与融资安排。[公告](https://press.aboutamazon.com/2026/4/amazon-to-acquire-globalstar-and-expand-amazon-leo-satellite-network) |
+| **Leo卫星商业化与Globalstar整合** | 取得频谱及移动卫星服务网络以扩展新收入，但投入昂贵、仍需监管许可。 | 2026-04-13签收购协议并宣布Apple卫星服务合作；预计2027交割；**FCC已于2026-10-27批准牌照控制权转移**，反垄断及适用外国投资审批已取得，但卫星里程碑、其他条件与真实交割仍待确认。下一关是交割证明、第三方持续付费、亏损与融资安排。[公告](https://press.aboutamazon.com/2026/4/amazon-to-acquire-globalstar-and-expand-amazon-leo-satellite-network) |
 
 ## 4. 财务状况：收入、利润和现金
 
