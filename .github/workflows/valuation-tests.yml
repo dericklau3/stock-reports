@@ -18,6 +18,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Verify research Skill and three-scenario report template
+        run: |
+          python -m pip install PyYAML
+          python -m unittest discover -s us-equity-research/tests -p 'test_skill_package.py' -v
       - name: P0 deterministic scenario regression tests
         run: python -m unittest discover -s us-equity-research/tests -p 'test_valuation_engine.py' -v
       - name: P1 annual DCF, forward P/E and SOTP regression tests
