@@ -2,8 +2,8 @@
 // 金额、价格和持仓状态均保留相应时点，不应作为实时行情使用。
 export const intcConversation = {
   title: "英特尔深度问答",
-  subtitle: "CEO改革、战略投资、18A工艺、Fab 34、Classiq量子计算与先进封装供应链",
-  lastEdited: "2026-11-05",
+  subtitle: "CEO改革、战略投资、18A/14A工艺、Terafab、Fab 34、Classiq与先进封装供应链",
+  lastEdited: "2026-11-07",
   researchCutoff: "2026-11-02",
   entries: [
     {
@@ -325,6 +325,53 @@ Intel另披露2026年前九个月部分长期供应安排曾支付**12亿美元�
 **核心判断：中长期经营方向偏积极，短期现金流有压力。**它说明英特尔正在花钱解决真实的CPU交付瓶颈，却不直接证明新增收入和利润已经落地，也不能仅凭合同金额上调INTC目标价。
 
 **核验资料：**[Intel 2026Q3 Form 10-Q（Note 14及Funding Requirements）](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)；[Intel 2026Q3官方财报公告](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)；[Intel 2026Q3财报电话会议记录](https://stockanalysis.com/stocks/intc/transcripts/714242-q3-2026/)。
+`.trim(),
+    },
+    {
+      id: "terafab-14a",
+      topic: "Terafab 与 Intel 14A",
+      question: "Intel与马斯克的Terafab合作到底干什么？14A工艺发挥什么作用，INTC是否已经拿到订单？",
+      researchCutoff: "2026-11-07",
+      answer: `
+## Terafab是什么？为什么马斯克要建？
+
+**Terafab不是一款芯片，而是一项大型半导体制造计划。**Tesla与SpaceX于2026年3月公布这一方向，目标把先进逻辑芯片、存储器及封装等环节更紧密地结合，为Tesla的自动驾驶、Robotaxi、Optimus机器人，以及SpaceX/xAI的AI计算和未来太空计算提供芯片。
+
+马斯克提出的长期目标是每年生产可支持**1太瓦（1 TW）计算功率规模**的计算硬件。**这不是晶圆年产量，也不是当前产能，更不是已经获批或完成建设的工厂规模。**目标非常激进，需要巨额资本投入及多年工程验证。
+
+## Intel到底参与哪一部分？
+
+| 时间 | 已证实的进展 |
+|---|---|
+| **2026-04-07** | Intel公开宣布加入Terafab项目，表示可利用其**芯片设计、晶圆制造和先进封装**的专业能力协助项目发展。 |
+| **2026-04-22** | 马斯克在Tesla 2026Q1财报电话会上称，计划在Terafab使用**Intel 14A制程技术**，并希望与Intel合作改善核心制造技术。 |
+| **2026年6月公开披露** | SpaceX在SEC文件中称Intel预计贡献设计、制造与封装能力，但**具体项目、时间、资金与商业条款仍需分别谈判**。 |
+
+在马斯克披露的初步分工中，**Tesla侧重研发晶圆厂**（研究新工艺、验证制造流程），**SpaceX负责大型Terafab的初期扩建**；xAI代表大规模AI计算需求。Intel的角色是重要技术合作方，**不能据此认定英特尔独资建设Terafab、拥有工厂股权或独占全部芯片代工订单**。
+
+## 14A是什么？与已经商用的18A有什么不同？
+
+Intel 18A和14A是两代先进制程名称，名称中的数字**不等于晶体管真实物理尺寸**。18A已经在Intel自有产品上进入商用阶段；14A是其更下一代的制程路线，计划继续优化晶体管、供电、能效和制造经济性。
+
+对机器人、电动车与AI计算而言，芯片要兼顾运算能力、功耗及散热，因此14A具备潜在吸引力。但**马斯克明确说14A在2026年4月尚未完全开发完成**；计划采用不代表已经达到量产良率。
+
+## 这是不是Intel已经拿下了Tesla几百亿美元芯片订单？
+
+**不是。**“Intel加入项目”“Tesla计划采用14A”与“签署有约束力的生产采购合同”是三个不同层次。SpaceX的SEC披露还明确提示：虽然与Tesla存在项目总体框架，**Tesla和Intel都不负有必须继续参与的义务**；具体合作项目需要单独协商和批准。
+
+理论上，Intel未来可能通过技术开发、工艺授权、制造服务或先进封装等方式获得收入；但**双方没有公开足以确认的Intel专属合同金额、最低采购量、分成比例、资本开支承担方式及量产订单**。不要把Tesla/SpaceX的建厂投资直接记作Intel收入，也不要把1 TW目标换算成Intel确定销售额。
+
+## 对INTC投资价值意味着什么？以后看哪几个信号？
+
+**长期利好逻辑：**Intel 14A获得重量级潜在采用方，可能改善Intel Foundry获客、工艺验证和设备利用率的前景。若未来签署长期生产/授权合同并形成可重复付费，才可能真正带来外部收入、毛利和自由现金流。
+
+**关键风险：**14A工艺成熟度和良率、建设成本与时间表、合作各方的董事会审批、客户是否采用Intel自身代工而非自行制造，以及合同经济条款均存在不确定性。
+
+未来需要跟踪：**①正式协议和Intel收款方式；②14A设计定案、良率与量产时间；③实际芯片交付及外部客户收入；④Foundry亏损与自由现金流是否改善。**
+
+**核心判断：这是一条重要的战略合作线索，而不是已确认的数十亿美元订单。Terafab的意义在于Intel 14A未来可能获得真实客户验证，估值上不应提前把尚未签约的收入当作确定业绩。**
+
+**核验资料：**[Intel 2026Q1官方电话会材料](https://download.intel.com/newsroom/2026/earnings/1Q2026-Earnings-Call.pdf)；[Tesla 2026Q1电话会完整记录](https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/)；[SpaceX向SEC提交的披露文件](https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm)；[路透社2026-04-07合作报道](https://www.investing.com/news/stock-market-news/intel-to-join-musks-terafab-mega-ai-chip-project-4600655)。
 `.trim(),
     },
   ],

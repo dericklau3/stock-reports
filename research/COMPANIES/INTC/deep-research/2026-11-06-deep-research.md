@@ -144,6 +144,28 @@ Intel向电脑整机品牌、设备厂商及经销渠道销售Core等处理器�
 
 <details class="event-entry">
 <summary>
+<span class="event-entry-title">Intel加入Terafab合作（计划采用14A）</span>
+<span class="event-entry-preview">Intel宣布参与Terafab；Tesla计划采用14A，但正式订单尚未确定。</span>
+</summary>
+<div class="event-detail-content">
+
+**公告日期：** 2026-04-07（Intel宣布加入Terafab）
+
+**后续披露：** 2026-04-22（Tesla财报电话会确认拟采用Intel 14A）
+
+**公布了什么：** Intel计划利用**芯片设计、先进制程制造和封装经验**支持Tesla、SpaceX和xAI的Terafab项目。马斯克称Terafab计划采用**Intel 14A工艺**；Tesla侧重研究晶圆厂，SpaceX承担初期大型工厂建设。
+
+**对公司的实际意义：** 属于**重大潜在客户与制造技术合作机会**，有助于14A外部采用与Foundry商业化预期；但SpaceX在SEC文件中披露具体项目仍需另行签约，且Tesla和Intel**没有持续参与义务**。目前未披露Intel确定的合同金额、最低采购量或可确认营收，**不能等同已获得大额代工订单**。
+
+**下一步验收：** 正式协议及收费模式、14A工艺成熟度和良率、实际产线量产与芯片交付、Foundry外部收入及利润改善。
+
+**原始来源：** [Intel 2026Q1官方电话会材料](https://download.intel.com/newsroom/2026/earnings/1Q2026-Earnings-Call.pdf)；[Tesla 2026Q1电话会完整记录](https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/)；[SpaceX SEC项目披露](https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm)
+
+</div>
+</details>
+
+<details class="event-entry">
+<summary>
 <span class="event-entry-title">Q1 Mobileye减值</span>
 <span class="event-entry-preview">Mobileye相关商誉计提约39亿美元非现金减值。</span>
 </summary>
@@ -277,7 +299,7 @@ Intel亦公告与Google、Oracle、Fortinet等合作、18A-P风险生产和D系�
 | 公司正在推进的重要事情 | 为什么重要、希望实现什么？ | 目前做到哪一步？下一关是什么？ |
 |---|---|---|
 | **扩大Xeon服务器与专用数据中心芯片供给** | Q3 DCAI已贡献**73.18亿美元营收及30.39亿美元分部经营利润**，是当前最有说服力的利润增长来源；若供应受限持续，订单需求无法完全转成出货。 | [2026-10-30 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)确认服务器ASP上涨和超大规模客户需求，管理层正在提升产能，但供应瓶颈预计仍可能延续至2027。下一关：实际服务器出货量、毛利、持续订单与库存，而不只是售价上升；下一具体证据日期未披露。 |
-| **18A商业规模化和14A外部代工获客** | 要让每季度**十几亿美元**的Foundry亏损变成可持续业务，关键不是芯片样品，而是独立客户正式批量付费、良率和设备使用率。 | [2026-01-05 18A商用发布](https://www.intc.com/news-events/press-releases/detail/1757/ces-2026-intel-core-ultra-series-3-debuts-as-first-built)已验证自家产品用途；[2026Q3 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)确认外部季度收入仅**4.11亿美元且主要受非经常性因素支撑**。下一关：14A第三方有约束合同、制造交付、可重复收入、Foundry亏损持续收窄；管理层长期量产愿景不应写成已锁定订单。 |
+| **18A商业规模化和14A外部代工获客** | 要让每季度**十几亿美元**的Foundry亏损变成可持续业务，关键不是芯片样品，而是独立客户正式批量付费、良率和设备使用率。 | [2026-01-05 18A商用发布](https://www.intc.com/news-events/press-releases/detail/1757/ces-2026-intel-core-ultra-series-3-debuts-as-first-built)已验证自家产品用途；[2026Q3 10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)确认外部季度收入仅**4.11亿美元且主要受非经常性因素支撑**。Terafab合作已于2026-04-07宣布，[Tesla 2026Q1电话会](https://stockanalysis.com/stocks/tsla/transcripts/547944-q1-2026/)表示计划采用14A，但[SpaceX SEC披露](https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm)明确仍需具体项目合同。下一关：14A第三方有约束合同、制造交付、可重复收入、Foundry亏损持续收窄；管理层长期量产愿景不应写成已锁定订单。 |
 | **修复Fab 28供应与应对PC需求/封装基板瓶颈** | 客户端季度收入**同比-5.1%、环比-8.8%**，而工厂事故及基板供应限制会进一步影响交付和库存。 | [2026Q3财报](https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results)预计PC疲弱至少持续至2027上半年；[10-Q](https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm)披露新基板资金安排与重大工厂风险。下一关：Fab 28何时完全恢复、PC订单与毛利是否稳定、基板预付款能否对应实际供货；尚无可靠确定恢复日。 |
 
 ## 4. 财务状况：收入、利润和现金

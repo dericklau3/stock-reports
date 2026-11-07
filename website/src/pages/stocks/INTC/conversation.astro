@@ -6,7 +6,7 @@ import { intcConversation } from "../../../data/intc-conversation.js";
 const base = import.meta.env.BASE_URL;
 const homeHref = withBase(base);
 const companyHref = withBase(base, "stocks/INTC/");
-const reportHref = withBase(base, "reports/INTC/2026-11-02-deep-research/");
+const reportHref = withBase(base, "reports/INTC/2026-11-06-deep-research/");
 const questions = intcConversation.entries.map((item, index) => ({
   ...item,
   number: String(index + 1).padStart(2, "0"),
@@ -15,8 +15,8 @@ const questions = intcConversation.entries.map((item, index) => ({
 ---
 
 <BaseLayout
-  title="INTC专题问答｜CEO、18A、Fab 34、Classiq与封装基板 · Stock Reports"
-  description="关于英特尔INTC的专题问答：CEO改革、NVIDIA战略投资、18A工艺、Fab 34股权回购、Classiq量子计算与先进封装基板供应协议。"
+  title="INTC专题问答｜CEO、18A/14A、Terafab、Fab 34与Classiq · Stock Reports"
+  description="关于英特尔INTC的专题问答：CEO改革、NVIDIA战略投资、18A/14A工艺、Terafab项目合作、Fab 34股权回购、Classiq量子计算与先进封装基板供应协议。"
 >
   <div class="conversation-page">
     <nav class="conversation-breadcrumbs" aria-label="面包屑导航">
