@@ -111,7 +111,7 @@ test("Terafab collaboration appears in the Q&A and April 2026 roadmap without cl
   const topic = intcConversation.entries.find((item) => item.id === "terafab-14a");
   assert.ok(topic);
   assert.equal(topic.researchCutoff, "2026-11-07");
-  for (const word of ["2026-04-07", "2026-04-22", "14A", "SpaceX", "xAI", "没有持续参与义务", "合同金额", "良率", "1太瓦"]) {
+  for (const word of ["2026-04-07", "2026-04-22", "14A", "SpaceX", "xAI", "不负有必须继续参与的义务", "合同金额", "良率", "1太瓦"]) {
     assert.ok(topic.answer.includes(word), "Missing Terafab evidence: " + word);
   }
   assert.match(topic.answer, /sec\.gov\/Archives\/edgar/);
