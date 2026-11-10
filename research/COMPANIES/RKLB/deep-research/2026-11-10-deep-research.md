@@ -6,7 +6,7 @@
 
 ## 1. 公司到底是做什么生意的？
 
-Rocket Lab提供**两大当前报告分部：Launch Services（发射服务）和Space Systems（航天系统）**；当前收钱的业务涵盖Electron/HASTE发射、整星设计制造、卫星组件与在轨任务服务。公司并未按Electron/HASTE、各卫星产品线分别披露季度收入，所以“业务机制讲解”不等于另造独立收入分部。Neutron仍处开发、Iridium仍待并购交割，**不应把后两者算入已实现合并收入**。[正式2026Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm)｜[2025 10-K](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm)。
+Rocket Lab提供**两大当前报告分部：Launch Services（发射服务）和Space Systems（航天系统）**；当前收钱的业务涵盖Electron/HASTE发射、整星设计制造、卫星组件与在轨任务服务。公司并未按Electron/HASTE、各卫星产品线分别披露季度收入，所以“业务机制讲解”不等于另造独立收入分部。Neutron仍处开发、Iridium仍待并购交割，**不应把后两者算入已实现合并收入**。[正式2026Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000074/rklb-20260930.htm)｜[2025 10-K](https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm)。
 
 <details class="business-detail">
 <summary>① Electron专属小卫星发射｜属于Launch Services，2026Q3分部收入5,307.4万美元（含HASTE）</summary>
