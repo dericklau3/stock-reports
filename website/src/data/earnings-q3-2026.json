@@ -51,6 +51,12 @@
       "status": "reported",
       "source": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000064/lmnd-20261105.htm"
     },
+    "META": {
+      "quarter": "2026 Q3",
+      "date": "2026-10-21",
+      "status": "reported",
+      "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+    },
     "MSFT": {
       "quarter": "FY2027 Q1",
       "date": "2026-10-28",
