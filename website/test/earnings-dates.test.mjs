@@ -36,3 +36,24 @@ test("LMND Q3 2026 earnings are marked reported after the November 5 release", (
   assert.equal(lmnd.status, "reported");
   assert.match(lmnd.source, /^https:\/\/www\.sec\.gov\/Archives\/edgar\/data\/1691421\//);
 });
+
+test("RKLB and VST Q3 2026 results are reported with actual company release dates", () => {
+  for (const [symbol, date, hostname] of [
+    ["RKLB", "2026-11-09", "investors.rocketlabcorp.com"],
+    ["VST", "2026-11-06", "investor.vistracorp.com"],
+  ]) {
+    const info = earnings.entries[symbol];
+    assert.equal(info.quarter, "2026 Q3");
+    assert.equal(info.date, date);
+    assert.equal(info.status, "reported");
+    assert.equal(new URL(info.source).hostname, hostname);
+  }
+});
+
+test("scheduled earnings must be later than the calendar verification date", () => {
+  for (const [symbol, info] of Object.entries(earnings.entries)) {
+    if (info.status === "scheduled") {
+      assert.ok(info.date > earnings.asOf, symbol + " has an outdated scheduled earnings status");
+    }
+  }
+});
