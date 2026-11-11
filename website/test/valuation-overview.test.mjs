@@ -65,13 +65,13 @@ test("unquantified scenarios are explicitly missing, and ADS units are preserved
   assert.deepEqual(ads.base, { low: 98.47, high: 129.1 });
 });
 
-test("latest reports provide report-derived valuation data, without made-up SPCX prices", async () => {
+test("latest reports provide scenario price data for all covered stocks including SPCX", async () => {
   const companiesDir = fileURLToPath(new URL("../../research/COMPANIES/", import.meta.url));
   const reportIndex = await buildReportIndex(path.resolve(companiesDir));
   assert.ok(reportIndex.companies.length >= 19);
   const companyBySymbol = new Map(reportIndex.companies.map((company) => [company.symbol, company]));
 
-  for (const symbol of "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY TEM TSLA VST".split(" ")) {
+  for (const symbol of "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA VST".split(" ")) {
     const company = companyBySymbol.get(symbol);
     assert.ok(company, symbol + " missing from index");
     for (const scenario of ["bear", "base", "bull"]) {
@@ -82,8 +82,11 @@ test("latest reports provide report-derived valuation data, without made-up SPCX
 
   const spcx = companyBySymbol.get("SPCX");
   assert.ok(spcx);
-  assert.equal(spcx.valuation.bear, null);
-  assert.equal(spcx.valuation.base, null);
-  assert.equal(spcx.valuation.bull, null);
+  assert.equal(spcx.lastUpdated, "2026-11-11");
+  assert.deepEqual(spcx.valuation.bear, { low: 97.33, high: 120.68 });
+  assert.deepEqual(spcx.valuation.base, { low: 120.68, high: 160.78 });
+  assert.deepEqual(spcx.valuation.bull, { low: 160.78, high: 221.13 });
+  assert.match(spcx.reports[0].content, /条件性市场隐含定价情景/);
+  assert.match(spcx.reports[0].content, /不是已通过现金流独立验证的内在合理价值/);
   assert.equal(companyBySymbol.get("SKHY").valuation.unit, "ADS");
 });
