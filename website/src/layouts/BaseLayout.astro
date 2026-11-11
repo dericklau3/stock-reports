@@ -10,6 +10,8 @@ const {
 
 const base = import.meta.env.BASE_URL;
 const homeHref = withBase(base);
+const valuationsHref = withBase(base, "valuations/");
+const isValuationsPage = pageType === "valuations";
 ---
 
 <!doctype html>
@@ -21,7 +23,7 @@ const homeHref = withBase(base);
     <meta name="theme-color" content="#f6f8f7" />
     <title>{title}</title>
   </head>
-  <body class={pageType === "home" ? "home-page" : "inner-page"}>
+  <body class={pageType === "home" ? "home-page" : isValuationsPage ? "valuations-page" : "inner-page"}>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href={homeHref} aria-label="Stock Reports 首页">
@@ -31,6 +33,18 @@ const homeHref = withBase(base);
             <small>Research Library</small>
           </span>
         </a>
+        <nav class="primary-nav" aria-label="网站主导航">
+          <a
+            href={homeHref}
+            class:list={["primary-nav-link", { "is-active": !isValuationsPage }]}
+            aria-current={!isValuationsPage ? "page" : undefined}
+          >研究报告</a>
+          <a
+            href={valuationsHref}
+            class:list={["primary-nav-link", { "is-active": isValuationsPage }]}
+            aria-current={isValuationsPage ? "page" : undefined}
+          >情景估值</a>
+        </nav>
       </div>
     </header>
     <main class="site-main">
