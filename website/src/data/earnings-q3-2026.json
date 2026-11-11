@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-11",
   "dateTimezone": "America/New_York",
   "description": "2026年第三季度财报季：对财年与自然季度不一致的公司，展示这一财报季的对应财年季度；已公布以公司实际财报为准，预告日期以公司正式披露为准。",
   "entries": {
@@ -78,8 +78,8 @@
     "RKLB": {
       "quarter": "2026 Q3",
       "date": "2026-11-09",
-      "status": "scheduled",
-      "source": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-date-third-quarter-2026-financial-results"
+      "status": "reported",
+      "source": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
     },
     "SKHY": {
       "quarter": "2026 Q3",
@@ -108,8 +108,8 @@
     "VST": {
       "quarter": "2026 Q3",
       "date": "2026-11-06",
-      "status": "scheduled",
-      "source": "https://investor.vistracorp.com/2026-09-29-Vistra-to-Report-Third-Quarter-Results-on-Nov-6%2C-2026"
+      "status": "reported",
+      "source": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
     }
   }
 }
