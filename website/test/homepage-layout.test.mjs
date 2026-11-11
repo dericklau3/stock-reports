@@ -13,9 +13,13 @@ test("homepage no longer contains oversized green hero or promotional illustrati
   assert.match(home, /class="overview-stats"/);
 });
 
-test("navigation links are removed but brand remains a working home link", () => {
-  assert.doesNotMatch(shell, /<nav\b/);
-  assert.match(shell, /class="brand" href=\{homeHref\}/);
+test("global header links to the report library and valuation overview", () => {
+  assert.match(shell, /class="brand" href=\\{homeHref\\}/);
+  assert.match(shell, /<nav class="primary-nav" aria-label="网站主导航">/);
+  assert.match(shell, />研究报告<\\/a>/);
+  assert.match(shell, />情景估值<\\/a>/);
+  assert.match(shell, /withBase\\(base, "valuations\\/"\\)/);
+  assert.match(css, /\\.primary-nav-link\\.is-active/);
 });
 
 test("stock discovery remains functional after compact redesign", () => {
