@@ -1206,3 +1206,30 @@ body { background: var(--bg); }
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+
+
+/* Two primary destinations: reports and scenario valuations. */
+.header-inner { justify-content: space-between; gap: 1rem; }
+.primary-nav { display: flex; align-items: center; justify-content: flex-end; gap: .35rem; margin-left: auto; }
+.primary-nav-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: .52rem .9rem;
+  border-radius: 8px;
+  color: #708377;
+  font-size: .86rem;
+  font-weight: 760;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.primary-nav-link:hover { color: #13724f; background: #f1f7f2; }
+.primary-nav-link.is-active { color: #116f4b; background: #e9f4ec; }
+.primary-nav-link:focus-visible { outline: 2px solid #0b7956; outline-offset: 2px; }
+.valuations-page .site-main { width: 100%; max-width: none; margin: 0; padding: 0 0 4.5rem; }
+
+@media (max-width: 480px) {
+  .primary-nav { gap: .1rem; }
+  .primary-nav-link { padding: .45rem .48rem; font-size: .77rem; }
+  .header-inner .brand-name small { font-size: .66rem; }
+}
