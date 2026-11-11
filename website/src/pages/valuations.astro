@@ -1,0 +1,246 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import index from "../data/report-index.json";
+import { reportUrl, withBase } from "../lib/markdown.js";
+
+const base = import.meta.env.BASE_URL;
+const companies = [...index.companies].sort((a, b) =>
+  (b.lastUpdated || "").localeCompare(a.lastUpdated || "") || a.symbol.localeCompare(b.symbol),
+);
+const scenarios = [
+  { key: "bear", label: "悲观情景" },
+  { key: "base", label: "基础情景" },
+  { key: "bull", label: "乐观情景" },
+];
+const isComplete = (company) => scenarios.every(({ key }) => company.valuation?.[key]);
+const pricedCount = companies.filter(isComplete).length;
+const priceRange = (value) =>
+  value ? `$${value.low.toFixed(2)}–$${value.high.toFixed(2)}` : "待量化";
+---
+
+<BaseLayout
+  title="情景估值 · Stock Reports"
+  pageType="valuations"
+  description="集中浏览所有研究股票的悲观、基础、乐观三种情景估值区间，数据随最新研究报告更新。"
+>
+  <section class="valuation-content" aria-labelledby="valuation-title">
+    <div class="valuation-intro">
+      <div>
+        <p class="valuation-eyebrow">VALUATION SCENARIOS</p>
+        <h1 id="valuation-title">情景估值</h1>
+        <p class="valuation-description">集中查看每只股票的悲观、基础和乐观估值区间，无须逐份打开研究报告。</p>
+      </div>
+      <div class="valuation-overview" aria-label="估值覆盖情况">
+        <div><strong>{companies.length}</strong><span>覆盖股票</span></div>
+        <div><strong>{pricedCount}</strong><span>已量化三情景</span></div>
+        <div><strong>{companies.length - pricedCount}</strong><span>待量化</span></div>
+      </div>
+    </div>
+
+    <div class="valuation-toolbar">
+      <div class="valuation-search-field">
+        <label class="sr-only" for="valuation-search">搜索股票代码或公司名称</label>
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/>
+        </svg>
+        <input id="valuation-search" type="search" autocomplete="off" placeholder="搜索股票代码或公司名称" />
+      </div>
+      <div class="valuation-filters" role="group" aria-label="估值状态筛选">
+        <button type="button" class="is-active" data-valuation-filter="all" aria-pressed="true">全部</button>
+        <button type="button" data-valuation-filter="complete" aria-pressed="false">已量化</button>
+        <button type="button" data-valuation-filter="missing" aria-pressed="false">待量化</button>
+      </div>
+    </div>
+
+    <div class="valuation-section-heading">
+      <div>
+        <h2>股票估值总览</h2>
+        <p>单位：美元 / 股（SKHY 为美元 / ADS）</p>
+      </div>
+      <span id="valuation-result-count" role="status" aria-live="polite">显示 {companies.length} / {companies.length} 只股票</span>
+    </div>
+
+    <div class="valuation-table-wrap">
+      <table class="valuation-table">
+        <thead>
+          <tr>
+            <th scope="col">股票 / 公司</th>
+            <th scope="col" class="valuation-head-bear">悲观情景</th>
+            <th scope="col" class="valuation-head-base">基础情景</th>
+            <th scope="col" class="valuation-head-bull">乐观情景</th>
+            <th scope="col">报告更新</th>
+            <th scope="col">详细依据</th>
+          </tr>
+        </thead>
+        <tbody>
+          {companies.map((company) => (
+            <tr
+              class="valuation-row"
+              data-valuation-row
+              data-valuation-search={`${company.symbol} ${company.companyName}`}
+              data-valuation-available={isComplete(company) ? "true" : "false"}
+            >
+              <th scope="row" class="valuation-company">
+                <a href={withBase(base, `stocks/${company.symbol}/`)}>
+                  <strong>{company.symbol}</strong>
+                  <span>{company.companyName}</span>
+                </a>
+                {company.valuation?.unit === "ADS" && (
+                  <span class="valuation-ads-tag">ADS</span>
+                )}
+              </th>
+              {scenarios.map(({ key, label }) => (
+                <td class:list={["valuation-cell", "valuation-cell-" + key]} data-label={label}>
+                  {company.valuation?.[key] ? (
+                    <strong class="valuation-price">{priceRange(company.valuation[key])}</strong>
+                  ) : (
+                    <span class="valuation-not-available">待量化</span>
+                  )}
+                </td>
+              ))}
+              <td class="valuation-report-date" data-label="报告更新">
+                {company.lastUpdated ? <time datetime={company.lastUpdated}>{company.lastUpdated}</time> : "—"}
+              </td>
+              <td class="valuation-report-link" data-label="详细依据">
+                {company.reports[0] && (
+                  <a href={reportUrl(base, company.symbol, company.reports[0].fileName)}>查看报告 <span aria-hidden="true">↗</span></a>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div id="valuation-empty" class="valuation-empty" hidden>没有找到符合条件的股票，请调整搜索或筛选。</div>
+    <p class="valuation-disclaimer">
+      **说明：** 表中数字取自各公司最新深度研究报告的「估值分析」章节，为基于已披露经营数据和假设的条件性价格参考，并非实时行情、已独立证实的内在公允价值或未来保证目标价。报告更新后，网站重新构建会同步刷新此页；未可靠量化的区间显示“待量化”。
+    </p>
+  </section>
+
+  <script>
+    const search = document.querySelector("#valuation-search");
+    const rows = Array.from(document.querySelectorAll("[data-valuation-row]"));
+    const buttons = Array.from(document.querySelectorAll("[data-valuation-filter]"));
+    const count = document.querySelector("#valuation-result-count");
+    const empty = document.querySelector("#valuation-empty");
+    let activeFilter = "all";
+
+    function updateValuations() {
+      const query = search?.value.trim().toLocaleLowerCase() || "";
+      let visible = 0;
+      for (const row of rows) {
+        const nameMatches = (row.dataset.valuationSearch || "").toLocaleLowerCase().includes(query);
+        const hasPrices = row.dataset.valuationAvailable === "true";
+        const statusMatches =
+          activeFilter === "all" ||
+          (activeFilter === "complete" && hasPrices) ||
+          (activeFilter === "missing" && !hasPrices);
+        const shouldShow = nameMatches && statusMatches;
+        row.hidden = !shouldShow;
+        if (shouldShow) visible += 1;
+      }
+      if (count) count.textContent = `显示 ${visible} / ${rows.length} 只股票`;
+      if (empty) empty.hidden = visible > 0;
+    }
+
+    search?.addEventListener("input", updateValuations);
+    for (const button of buttons) {
+      button.addEventListener("click", () => {
+        activeFilter = button.dataset.valuationFilter || "all";
+        for (const item of buttons) {
+          const active = item.dataset.valuationFilter === activeFilter;
+          item.classList.toggle("is-active", active);
+          item.setAttribute("aria-pressed", String(active));
+        }
+        updateValuations();
+      });
+    }
+    updateValuations();
+  </script>
+</BaseLayout>
+
+<style>
+  .valuation-content { width: min(1380px, calc(100% - 3rem)); margin: 0 auto; }
+  .valuation-intro { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 2.4rem 0 1.8rem; }
+  .valuation-eyebrow { color: #0a7753; font-size: .72rem; font-weight: 800; letter-spacing: .13em; margin-bottom: .7rem; }
+  .valuation-intro h1 { margin: 0 0 .65rem; color: #1e3428; font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.15; font-weight: 850; }
+  .valuation-description { margin: 0; color: #6f8075; font-size: .92rem; line-height: 1.65; }
+  .valuation-overview { display: grid; grid-template-columns: repeat(3, minmax(90px,1fr)); border: 1px solid #dce6df; border-radius: 12px; background: #fff; overflow: hidden; }
+  .valuation-overview div { display: flex; flex-direction: column; gap: .32rem; padding: 1rem 1.2rem; }
+  .valuation-overview div + div { border-left: 1px solid #e6ede8; }
+  .valuation-overview strong { color: #193e2d; font-size: 1.55rem; line-height: 1; }
+  .valuation-overview span { color: #75877b; font-size: .72rem; white-space: nowrap; }
+  .valuation-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem; border: 1px solid #e0e8e1; background: #fff; border-radius: 12px; }
+  .valuation-search-field { display: flex; align-items: center; gap: .7rem; flex: 1 1 280px; max-width: 520px; border: 1px solid #dce7df; border-radius: 8px; padding: .65rem .85rem; color: #6c9480; background: #f9fbfa; }
+  .valuation-search-field:focus-within { border-color: #4aa680; box-shadow: 0 0 0 3px rgba(21,112,77,.1); }
+  .valuation-search-field input { min-width: 0; width: 100%; border: 0; outline: 0; color: #223d2b; background: transparent; font: inherit; font-size: .88rem; }
+  .valuation-search-field input::placeholder { color: #92a096; }
+  .valuation-filters { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem; }
+  .valuation-filters button { padding: .53rem .8rem; border: 1px solid transparent; border-radius: 8px; background: transparent; color: #6f8576; font-weight: 740; font-size: .82rem; cursor: pointer; }
+  .valuation-filters button:hover { background: #f0f7f1; }
+  .valuation-filters button.is-active { color: #126344; background: #e6f3e9; border-color: #c7e5d3; }
+  .valuation-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding: 1.8rem 0 .9rem; }
+  .valuation-section-heading h2 { margin: 0 0 .25rem; font-size: 1.15rem; color: #213e2b; }
+  .valuation-section-heading p { margin: 0; font-size: .76rem; color: #849288; }
+  #valuation-result-count { flex-shrink: 0; color: #788a7e; font-size: .78rem; }
+  .valuation-table-wrap { overflow-x: auto; background: #fff; border: 1px solid #dce6df; border-radius: 12px; box-shadow: 0 2px 18px rgba(35,62,44,.025); }
+  .valuation-table { width: 100%; border-collapse: collapse; text-align: left; }
+  .valuation-table thead { background: #f7faf7; }
+  .valuation-table thead th { color: #63796a; font-weight: 770; font-size: .78rem; padding: 1rem 1.1rem; white-space: nowrap; }
+  .valuation-table thead .valuation-head-bear { color: #aa674d; }
+  .valuation-table thead .valuation-head-base { color: #167047; }
+  .valuation-table thead .valuation-head-bull { color: #287a90; }
+  .valuation-row { border-top: 1px solid #eaf0ea; }
+  .valuation-row:hover { background: #fbfdfb; }
+  .valuation-row[hidden] { display: none !important; }
+  .valuation-table tbody td, .valuation-table tbody th { padding: 1rem 1.1rem; vertical-align: middle; }
+  .valuation-company { width: 240px; min-width: 185px; }
+  .valuation-company > a { display: flex; flex-direction: column; gap: .25rem; text-decoration: none; }
+  .valuation-company > a:hover strong { color: #087451; }
+  .valuation-company strong { font-size: 1.07rem; color: #223b2c; }
+  .valuation-company a span { max-width: 250px; color: #718377; font-size: .76rem; line-height: 1.3; font-weight: 500; }
+  .valuation-ads-tag { display: inline-block; margin-top: .4rem; padding: .1rem .38rem; border-radius: 5px; background: #edf3f8; color: #4c6d7e; font-size: .62rem; }
+  .valuation-cell { white-space: nowrap; }
+  .valuation-cell-base { background: rgba(232,245,235,.32); }
+  .valuation-price { font-variant-numeric: tabular-nums; letter-spacing: -.015em; font-size: .89rem; font-weight: 760; }
+  .valuation-cell-bear .valuation-price { color: #a75d46; }
+  .valuation-cell-base .valuation-price { color: #136b46; }
+  .valuation-cell-bull .valuation-price { color: #267087; }
+  .valuation-not-available { color: #a1aaa3; font-size: .83rem; }
+  .valuation-report-date { color: #617a69; font-size: .77rem; font-weight: 670; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .valuation-report-link a { color: #137454; font-size: .79rem; font-weight: 730; text-decoration: none; white-space: nowrap; }
+  .valuation-report-link a:hover { text-decoration: underline; }
+  .valuation-empty { padding: 2rem; text-align: center; color: #7c8b80; background: white; border: 1px dashed #cddcd0; border-radius: 10px; margin-top: .85rem; }
+  .valuation-empty[hidden] { display: none; }
+  .valuation-disclaimer { margin: 1.2rem 0 0; max-width: 1100px; font-size: .77rem; color: #798b80; line-height: 1.85; }
+  .valuation-disclaimer strong { color: #516f5d; }
+  @media (max-width: 1050px) {
+    .valuation-intro { align-items: flex-start; }
+    .valuation-overview div { padding: .85rem; }
+    .valuation-table thead th, .valuation-table tbody td, .valuation-table tbody th { padding: .95rem .8rem; }
+  }
+  @media (max-width: 760px) {
+    .valuation-content { width: calc(100% - 1.5rem); }
+    .valuation-intro { flex-direction: column; gap: 1.2rem; padding: 1.6rem 0 1.3rem; }
+    .valuation-intro h1 { font-size: 2rem; }
+    .valuation-overview { width: 100%; }
+    .valuation-overview div { text-align: center; padding: .85rem .5rem; }
+    .valuation-overview strong { font-size: 1.3rem; }
+    .valuation-toolbar { padding: .7rem; gap: .65rem; }
+    .valuation-search-field { max-width: none; }
+    .valuation-section-heading { align-items: flex-start; }
+    .valuation-section-heading h2 { font-size: 1.02rem; }
+    .valuation-table-wrap { background: transparent; border: 0; box-shadow: none; overflow: visible; }
+    .valuation-table, .valuation-table tbody, .valuation-row, .valuation-table td, .valuation-table th { display: block; }
+    .valuation-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    .valuation-row { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem 1rem; padding: 1rem; margin-bottom: .75rem; border: 1px solid #dce7df; border-radius: 10px; background: #fff; }
+    .valuation-table tbody td, .valuation-table tbody th { padding: 0; }
+    .valuation-company { grid-column: 1 / -1; width: auto; min-width: 0; padding-bottom: .7rem !important; border-bottom: 1px solid #eaf0eb; }
+    .valuation-company a span { max-width: none; }
+    .valuation-cell::before, .valuation-report-date::before, .valuation-report-link::before { display: block; content: attr(data-label); color: #8a9b8e; font-size: .69rem; margin-bottom: .3rem; }
+    .valuation-cell-base { background: transparent; }
+    .valuation-price { font-size: .92rem; }
+    .valuation-report-date, .valuation-report-link { padding-top: .55rem !important; border-top: 1px solid #edf1ed; }
+  }
+</style>
