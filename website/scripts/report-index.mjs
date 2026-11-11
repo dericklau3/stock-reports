@@ -74,6 +74,51 @@ function extractCompanyName(title, symbol) {
   return symbol;
 }
 
+
+/**
+ * Read scenario price ranges from the latest report's valuation section.
+ * These are conditional reference prices from the report, not live quotes.
+ * Return null for unquantified scenarios; never extrapolate missing values.
+ */
+export function extractValuationRanges(markdown) {
+  const heading = /^##\s+(?:\d+[.、]\s*)?估值[^\n]*$/m.exec(markdown);
+  if (!heading) return null;
+  const rest = markdown.slice(heading.index + heading[0].length);
+  const nextHeading = rest.search(/^##\s+/m);
+  const section = nextHeading < 0 ? rest : rest.slice(0, nextHeading);
+  const prices = { bear: null, base: null, bull: null };
+  const keys = { 悲观: "bear", 基础: "base", 乐观: "bull" };
+
+  for (const line of section.split("\n")) {
+    if (!/^\s*\|/.test(line)) continue;
+    const cells = line.split("|").slice(1, -1).map((cell) => cell.trim());
+    const scenario = cells[0]?.replace(/\*/g, "").trim().match(/^(悲观|基础|乐观)(?:$|\s|[（(])/);
+    if (!scenario) continue;
+    const key = keys[scenario[1]];
+    if (prices[key]) continue;
+
+    // The first part of a table row can contain revenue/profit ranges.
+    // The last USD interval in the scenario row is the per-share price range.
+    const matches = [...cells.slice(1).join(" | ").matchAll(
+      /\$\s*(\d+(?:,\d{3})*(?:\.\d+)?)\s*[–—\-~～至]\s*\$?\s*(\d+(?:,\d{3})*(?:\.\d+)?)/g,
+    )];
+    const price = matches.at(-1);
+    if (price) {
+      const low = Number(price[1].replaceAll(",", ""));
+      const high = Number(price[2].replaceAll(",", ""));
+      if (Number.isFinite(low) && Number.isFinite(high) && low > 0 && high >= low) {
+        prices[key] = { low, high };
+      }
+    }
+  }
+
+  return {
+    ...prices,
+    currency: "USD",
+    unit: /\bADS\b/.test(section) ? "ADS" : "股",
+  };
+}
+
 async function pathExists(filePath) {
   try {
     await stat(filePath);
@@ -128,6 +173,7 @@ export async function buildReportIndex(companiesDir) {
       lastUpdated: latest.date,
       currentView,
       investmentView: extractInvestmentView(latest.content),
+      valuation: extractValuationRanges(latest.content),
       summary: extractOpeningField(latest.content, "核心逻辑") || currentView,
       keyRisks: extractOpeningField(latest.content, "主要风险"),
       reports,
