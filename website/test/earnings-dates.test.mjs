@@ -5,7 +5,7 @@ import test from "node:test";
 const earnings = JSON.parse(await readFile(new URL("../src/data/earnings-q3-2026.json", import.meta.url), "utf8"));
 
 test("each tracked 2026 Q3 reporting-season stock has a verified date state", () => {
-  const symbols = "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA VST".split(" ");
+  const symbols = "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA VST".split(" ");
   assert.deepEqual(Object.keys(earnings.entries).sort(), symbols.sort());
   for (const [symbol, info] of Object.entries(earnings.entries)) {
     assert.ok(info.quarter, symbol + " missing fiscal quarter");
@@ -56,4 +56,12 @@ test("scheduled earnings must be later than the calendar verification date", () 
       assert.ok(info.date > earnings.asOf, symbol + " has an outdated scheduled earnings status");
     }
   }
+});
+
+test("META Q3 2026 result is shown on stock card using official release date", () => {
+  const meta = earnings.entries.META;
+  assert.equal(meta.quarter, "2026 Q3");
+  assert.equal(meta.date, "2026-10-21");
+  assert.equal(meta.status, "reported");
+  assert.equal(new URL(meta.source).hostname, "investor.atmeta.com");
 });
