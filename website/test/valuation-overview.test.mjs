@@ -68,10 +68,10 @@ test("unquantified scenarios are explicitly missing, and ADS units are preserved
 test("active reports provide scenario price data and deleted stocks stay out of the index", async () => {
   const companiesDir = fileURLToPath(new URL("../../research/COMPANIES/", import.meta.url));
   const reportIndex = await buildReportIndex(path.resolve(companiesDir));
-  const expectedSymbols = "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA".split(" ");
+  const expectedSymbols = "AAPL AMZN AVAV GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA".split(" ");
   assert.ok(reportIndex.companies.length >= expectedSymbols.length);
   const companyBySymbol = new Map(reportIndex.companies.map((company) => [company.symbol, company]));
-  for (const deletedSymbol of ["QCOM", "AVGO", "VST"]) {
+  for (const deletedSymbol of ["QCOM", "AVGO", "VST", "CRCL"]) {
     assert.equal(companyBySymbol.has(deletedSymbol), false, deletedSymbol + " should not be indexed");
   }
 
