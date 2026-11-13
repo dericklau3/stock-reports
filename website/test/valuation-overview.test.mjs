@@ -65,13 +65,17 @@ test("unquantified scenarios are explicitly missing, and ADS units are preserved
   assert.deepEqual(ads.base, { low: 98.47, high: 129.1 });
 });
 
-test("latest reports provide scenario price data for all covered stocks including SPCX", async () => {
+test("active reports provide scenario price data and deleted stocks stay out of the index", async () => {
   const companiesDir = fileURLToPath(new URL("../../research/COMPANIES/", import.meta.url));
   const reportIndex = await buildReportIndex(path.resolve(companiesDir));
-  assert.ok(reportIndex.companies.length >= 19);
+  const expectedSymbols = "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA".split(" ");
+  assert.ok(reportIndex.companies.length >= expectedSymbols.length);
   const companyBySymbol = new Map(reportIndex.companies.map((company) => [company.symbol, company]));
+  for (const deletedSymbol of ["QCOM", "AVGO", "VST"]) {
+    assert.equal(companyBySymbol.has(deletedSymbol), false, deletedSymbol + " should not be indexed");
+  }
 
-  for (const symbol of "AAPL AMZN AVAV CRCL GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA VST".split(" ")) {
+  for (const symbol of expectedSymbols) {
     const company = companyBySymbol.get(symbol);
     assert.ok(company, symbol + " missing from index");
     for (const scenario of ["bear", "base", "bull"]) {
