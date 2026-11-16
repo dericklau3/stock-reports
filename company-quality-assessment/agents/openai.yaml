@@ -1,0 +1,4 @@
+interface:
+  display_name: "company-quality-assessment"
+  short_description: "用 CEO、商业模式、企业文化三要素评估公司长期质量"
+  default_prompt: "使用 $company-quality-assessment 评估指定上市公司的长期质量：CEO 五维（战略眼光、资本配置、执行能力、长期主义、人才管理），商业模式四维（定价权、客户黏性、高利润与现金流、护城河），企业文化五维（产品质量、专业决策、反馈纠错、持续创新、激励与接班）。每项给出可核查证据、主要反证和未来验证信号；区分好公司与好价格。若结合 $us-equity-research，则严格嵌入既有七章节报告，不修改估值规则。"
