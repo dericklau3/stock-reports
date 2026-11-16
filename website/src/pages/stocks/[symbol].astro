@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import index from "../../data/report-index.json";
 import { renderMarkdown, reportUrl, withBase } from "../../lib/markdown.js";
-import { intcConversation } from "../../data/intc-conversation.js";
 
 export function getStaticPaths() {
   return index.companies.map((company) => ({
@@ -13,8 +12,8 @@ export function getStaticPaths() {
 
 const { company } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const topics = company.symbol === "INTC" ? intcConversation.entries : [];
-const topicCutoff = company.symbol === "INTC" ? intcConversation.researchCutoff : "";
+const topics = [];
+const topicCutoff = "";
 const investmentView = company.investmentView || "研究中";
 const investmentTone = /看空|偏空/.test(investmentView)
   ? "negative"
@@ -110,11 +109,6 @@ const viewMeaning = investmentView === "研究中"
               </div>
             </details>
           ))}
-          {company.symbol === "INTC" && (
-            <a class="topic-full-link" href={withBase(base, "stocks/INTC/conversation/")}>
-              查看完整专题页面 →
-            </a>
-          )}
         </div>
       ) : (
         <div class="topic-empty">

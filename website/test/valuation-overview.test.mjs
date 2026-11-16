@@ -68,10 +68,10 @@ test("unquantified scenarios are explicitly missing, and ADS units are preserved
 test("active reports provide scenario price data and deleted stocks stay out of the index", async () => {
   const companiesDir = fileURLToPath(new URL("../../research/COMPANIES/", import.meta.url));
   const reportIndex = await buildReportIndex(path.resolve(companiesDir));
-  const expectedSymbols = "AAPL AMZN AVAV GOOG HOOD INTC LMND META MSFT NVDA ORCL PL RKLB SKHY SPCX TEM TSLA".split(" ");
+  const expectedSymbols = "AAPL AMZN AVAV GOOG HOOD LMND META MSFT NVDA ORCL PL RKLB SPCX TEM TSLA".split(" ");
   assert.ok(reportIndex.companies.length >= expectedSymbols.length);
   const companyBySymbol = new Map(reportIndex.companies.map((company) => [company.symbol, company]));
-  for (const deletedSymbol of ["QCOM", "AVGO", "VST", "CRCL"]) {
+  for (const deletedSymbol of ["QCOM", "AVGO", "VST", "CRCL", "INTC", "SKHY"]) {
     assert.equal(companyBySymbol.has(deletedSymbol), false, deletedSymbol + " should not be indexed");
   }
 
@@ -92,5 +92,4 @@ test("active reports provide scenario price data and deleted stocks stay out of 
   assert.deepEqual(spcx.valuation.bull, { low: 160.78, high: 221.13 });
   assert.match(spcx.reports[0].content, /条件性市场隐含定价情景/);
   assert.match(spcx.reports[0].content, /不是已通过现金流独立验证的内在合理价值/);
-  assert.equal(companyBySymbol.get("SKHY").valuation.unit, "ADS");
 });
