@@ -1,0 +1,4 @@
+interface:
+  display_name: "three-statement-review"
+  short_description: "只用最新财报三张表，看利润、现金和财务底子"
+  default_prompt: "使用 $three-statement-review 研究指定上市公司最新正式披露的完整财报，只读利润表（面子）、现金流量表（里子）、资产负债表（底子）。严格区分季度、累计期间与期末余额；每章一张直观中文表格，解释关键变化及三表勾稽，来源就近引用。不要混入 CEO、商业模式、企业文化、估值、股价或投资建议。每家公司最新结果只保留一份 three-statement-review.md。"
