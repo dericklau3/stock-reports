@@ -71,7 +71,7 @@ class SkillPackageTests(unittest.TestCase):
                 if target.is_file() and target.suffix == ".md":
                     pending.append(target)
         # Historical P0/P1/P2 valuation manuals remain archived, but are no
-        # longer linked from the active skill's seven-section research flow.
+        # longer linked from the active skill's five-section research flow.
         archived_legacy = {"valuation-engine.md", "valuation-p1.md", "valuation-p2.md"}
         for ref in (ROOT / "references").glob("*.md"):
             if ref.name in archived_legacy:
@@ -96,45 +96,47 @@ class SkillPackageTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_report_structure(self):
-        # Seven distinct reader sections: key future validations live in section 3.
+        # Five distinct reader sections: key future validations live in section 2.
         template = (ROOT / "references/report-templates.md").read_text(encoding="utf-8")
         sections = re.findall(r"^### (\d+)\. (.+)$", template, re.M)
-        self.assertEqual([int(n) for n, _ in sections], list(range(1, 8)))
-        self.assertEqual(sections[-1][1], "主要投资风险")
+        self.assertEqual([int(n) for n, _ in sections], list(range(1, 6)))
+        self.assertEqual([title for _, title in sections], ["近期已公布的重大事件", "公司正在做什么、做到哪一步？", "财务状况：收入、利润和现金", "估值分析：当前股价贵不贵？", "主要投资风险"])
+        self.assertNotIn('class="business-detail"', template)
+        self.assertNotIn("### 5. 管理层与资本分配", template)
         bodies = re.split(r"^### \d+\. .+$", template, flags=re.M)[1:]
-        for number, width in {3: 3, 6: 4, 7: 3}.items():
+        for number, width in {2: 3, 4: 4, 5: 3}.items():
             rows = [line for line in bodies[number - 1].splitlines() if line.startswith("|")]
             self.assertGreaterEqual(len(rows), 3)
             self.assertTrue(all(len(row.strip("|").split("|")) == width for row in rows))
-        self.assertIn('class="event-roadmap"', bodies[1])
-        self.assertIn('class="event-month"', bodies[1])
-        self.assertIn('class="event-entry"', bodies[1])
-        self.assertIn("下一关是什么", bodies[2])
+        self.assertIn('class="event-roadmap"', bodies[0])
+        self.assertIn('class="event-month"', bodies[0])
+        self.assertIn('class="event-entry"', bodies[0])
+        self.assertIn("下一关是什么", bodies[1])
         self.assertIn("开头", template)
         self.assertIn("直接进入第1节", template)
         self.assertIn("不要在正文开头插入研究截止日期", template)
         self.assertNotIn("三项结论之后附一行研究截止日期", template)
-        self.assertIn("不为凑行数", bodies[2])
-        self.assertIn("不另建", bodies[2])
-        self.assertIn("第6节必须先给价格", bodies[5])
-        self.assertIn("最近连续2–3个已公布季度财报", bodies[5])
-        self.assertIn("基础情景下限与上限", bodies[5])
-        self.assertIn("不能用多年之前的历史估值中位数决定基础情景上下限", bodies[5])
-        self.assertIn("模型价差", bodies[5])
-        self.assertIn("不得用当前股价倒推所谓合理倍数", bodies[5])
-        self.assertIn("不能使用同行比较、未来 DCF", bodies[5])
-        self.assertIn("本次估值未完成", bodies[5])
-        self.assertIn("固定±20%区间", bodies[5])
-        valuation_rows = [line for line in bodies[5].splitlines() if line.startswith("|")]
+        self.assertIn("不为凑行数", bodies[1])
+        self.assertIn("不另建", bodies[1])
+        self.assertIn("第4节必须先给价格", bodies[3])
+        self.assertIn("最近连续2–3个已公布季度财报", bodies[3])
+        self.assertIn("基础情景下限与上限", bodies[3])
+        self.assertIn("不能用多年之前的历史估值中位数决定基础情景上下限", bodies[3])
+        self.assertIn("模型价差", bodies[3])
+        self.assertIn("不得用当前股价倒推所谓合理倍数", bodies[3])
+        self.assertIn("不能使用同行比较、未来 DCF", bodies[3])
+        self.assertIn("本次估值未完成", bodies[3])
+        self.assertIn("固定±20%区间", bodies[3])
+        valuation_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
         self.assertEqual(
             [row.strip("|").split("|")[0].strip() for row in valuation_rows],
             ["估值情景", "---", "悲观", "基础", "乐观"],
         )
-        self.assertIn("合理价格区间（USD/股）", bodies[5])
-        self.assertNotIn("同期同口径同行参照", bodies[5])
+        self.assertIn("合理价格区间（USD/股）", bodies[3])
+        self.assertNotIn("同期同口径同行参照", bodies[3])
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         valuation = (ROOT / "references/valuation.md").read_text(encoding="utf-8")
-        self.assertIn("第6节必须给出悲观、基础、乐观三种可复算", skill)
+        self.assertIn("第4节必须给出悲观、基础、乐观三种可复算", skill)
         self.assertIn("基础情景的两个价格端点必须优先根据最近连续2–3个已公布季度财报", skill)
         self.assertIn("仍排除同行比较和未来DCF", skill)
         self.assertIn("最近连续2–3个已公布季度", valuation)
@@ -142,10 +144,10 @@ class SkillPackageTests(unittest.TestCase):
         self.assertIn("财报本身不能单独决定股票的美元价格", valuation)
         self.assertIn("最近市场交易倍数不是独立的内在价值证据", valuation)
         self.assertIn("六个端点都需给出计算式和中间值", valuation)
-        self.assertIn("本次第6节估值未完成", valuation)
+        self.assertIn("本次第4节估值未完成", valuation)
         self.assertNotIn("### 7. 未来值得关注的事件", template)
         self.assertNotIn("### 9. 四种投资视角", template)
-        financial_rows = [line for line in bodies[3].splitlines() if line.startswith("|")]
+        financial_rows = [line for line in bodies[2].splitlines() if line.startswith("|")]
         widths = {len(row.strip("|").split("|")) for row in financial_rows}
         self.assertEqual(len(widths), 1)
         self.assertGreaterEqual(widths.pop(), 4)
